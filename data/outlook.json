@@ -1,0 +1,239 @@
+{
+  "timestamp": "2025-11-29T20:57:35.212Z",
+  "hours_analyzed": 24,
+  "sentiment": {
+    "overall": "BULLISH",
+    "confidence_pct": 66,
+    "sources": {
+      "social": {
+        "bullish": 37,
+        "bearish": 18,
+        "neutral": 73,
+        "total": 128,
+        "pct": 29
+      },
+      "news": {
+        "bullish": 2,
+        "bearish": 2,
+        "neutral": 4,
+        "total": 8,
+        "pct": 25
+      },
+      "video": {
+        "bullish": 2,
+        "bearish": 1,
+        "neutral": 2,
+        "total": 5,
+        "pct": 40
+      },
+      "chat": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0,
+        "total": 0,
+        "pct": 0
+      }
+    }
+  },
+  "analysis": {
+    "narrative": "📊 **Consensus:** The market remains firmly bullish with high conviction, anticipating a short‑term pullback that will be followed by a medium‑term rally driven by crypto growth, tech earnings, and clean‑tech momentum.\n\n⚡ **Catalysts:** Bitcoin $500k–$1M range, VIX near 18, earnings releases for large U.S. tech, Fed policy announcements, clean‑tech EV rollout, crypto regulatory developments.\n\n🎯 **Action:** If BTC > $500k, target $600k; if BTC < $500k, target $450k; if VIX > 18, tighten stops on tech; if earnings release negative, exit large‑cap tech positions.",
+    "key_tickers": [
+      "BTC",
+      "SPY",
+      "QQQ"
+    ],
+    "key_themes": [
+      "Crypto Growth & Stablecoins",
+      "Tech Earnings & Fed Policy",
+      "Clean‑Tech EV Demand",
+      "Equity Fund Inflows & Risk‑On",
+      "Volatility & Regulatory Events"
+    ],
+    "risk_factors": [
+      "Earnings surprises",
+      "Fed policy tightening",
+      "Crypto regulatory crackdown",
+      "Bitcoin price volatility",
+      "Volatility spikes around earnings"
+    ],
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "Watch for breakout/breakdown",
+    "swing_bias": "BULLISH",
+    "swing_levels": "Watch for breakout/breakdown",
+    "source_alignment": "ALIGNED"
+  },
+  "metadata": {
+    "model": "AI Model",
+    "generation_time_ms": 106845
+  },
+  "trending": {
+    "macro": [
+      {
+        "ticker": "SPY",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
+      }
+    ],
+    "crypto": [
+      {
+        "ticker": "CIFR",
+        "mentions": 2,
+        "sentiment_score": 0.3,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 30,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "IREN",
+        "mentions": 2,
+        "sentiment_score": 0.3,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 30,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "BTC",
+        "mentions": 2,
+        "sentiment_score": -0.325,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 2,
+        "sentiment_score": -0.425,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 43,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "MARA",
+        "mentions": 1,
+        "sentiment_score": 0.75,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 75,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      }
+    ],
+    "other": [
+      {
+        "ticker": "OPEN",
+        "mentions": 3,
+        "sentiment_score": 0.4,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 3,
+        "sentiment_score": 0.267,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 27,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "MSFT",
+        "mentions": 2,
+        "sentiment_score": 0.425,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 43,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "META",
+        "mentions": 2,
+        "sentiment_score": 0.4,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      }
+    ]
+  },
+  "regime": {
+    "label": "NEUTRAL",
+    "color": "text-muted",
+    "vix": 16.35,
+    "pc_ratio": 1.01,
+    "sentiment_bullish_pct": 29,
+    "summary": "Market is lacking clear direction. Wait for confirmation."
+  },
+  "iv_opportunity": {
+    "label": "BUY PROTECTION",
+    "color": "text-cyan",
+    "iv_rank": 12.08,
+    "hv": 13.57,
+    "spread": 0.09,
+    "position": 20
+  },
+  "action": {
+    "summary": "NEUTRAL: No clear edge. Cash is a position."
+  }
+}

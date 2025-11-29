@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Intelligence | Scout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* Core Palette - Deep Space */
+            --bg-body: #030304;
+            --bg-card: rgba(10, 10, 12, 0.6);
+            --bg-card-hover: rgba(20, 20, 25, 0.8);
+
+            /* Tech Borders */
+            --border: #1F1F23;
+            --border-light: #333338;
+            --border-glow: rgba(0, 229, 191, 0.3);
+
+            /* Typography */
+            --text-primary: #F0F0F0;
+            --text-secondary: #A0A0A5;
+            --text-muted: #55555A;
+
+            /* Accents - Neon */
+            --accent: #00F0FF;
+            /* Cyber Blue */
+            --accent-dim: rgba(0, 240, 255, 0.1);
+            --accent-glow: 0 0 15px rgba(0, 240, 255, 0.2);
+
+            --green: #00FF9D;
+            /* Matrix Green */
+            --green-dim: rgba(0, 255, 157, 0.1);
+            --red: #FF2A6D;
+            /* Cyber Red */
+            --red-dim: rgba(255, 42, 109, 0.1);
+            --orange: #FF9E00;
+            --cyan: #00F0FF;
+
+            /* Shadows & Effects */
+            --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --glass: blur(10px);
+
+            /* Fonts */
+            --font-sans: 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            /* Tactical Grid Background */
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: center top;
+
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Vignette Overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, transparent 0%, rgba(3, 3, 4, 0.8) 100%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Utilities */
+        .mono {
+            font-family: var(--font-mono);
+        }
+
+        .text-accent {
+            color: var(--accent);
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+        }
+
+        .text-green {
+            color: var(--green);
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
+        }
+
+        .text-red {
+            color: var(--red);
+            text-shadow: 0 0 10px rgba(255, 42, 109, 0.3);
+        }
+
+        .text-orange {
+            color: var(--orange);
+        }
+
+        .text-cyan {
+            color: var(--cyan);
+        }
+
+        .text-muted {
+            color: var(--text-muted);
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-6 {
+            gap: 1.5rem;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            backdrop-filter: var(--glass);
+            /* Tech Corners */
+            clip-path: polygon(0 0,
+                    100% 0,
+                    100% calc(100% - 15px),
+                    calc(100% - 15px) 100%,
+                    0 100%);
+        }
+
+        .logo {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        .logo-mark {
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            box-shadow: var(--accent-glow);
+            transform: rotate(45deg);
+            /* Diamond shape */
+        }
+
+        .status-badge {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding: 0.35rem 1rem;
+            background: rgba(0, 255, 157, 0.05);
+            border: 1px solid var(--green);
+            color: var(--green);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            box-shadow: 0 0 8px var(--green);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Grid System */
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid-cols-12 {
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .col-span-12 {
+            grid-column: span 12;
+        }
+
+        .col-span-8 {
+            grid-column: span 8;
+        }
+
+        .col-span-4 {
+            grid-column: span 4;
+        }
+
+        /* Tech Cards */
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: var(--glass);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-card);
+
+            /* Bracket Corner Effect */
+            clip-path: polygon(0 0,
+                    100% 0,
+                    100% calc(100% - 20px),
+                    calc(100% - 20px) 100%,
+                    0 100%);
+        }
+
+        /* Top Border Glow */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+            opacity: 0.5;
+        }
+
+        .card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-2px);
+        }
+
+        .card:hover::before {
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+
+        .card-title {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Decorative Corner Data */
+        .card::after {
+            content: 'SYS.READY';
+            position: absolute;
+            bottom: 5px;
+            right: 25px;
+            font-family: var(--font-mono);
+            font-size: 0.5rem;
+            color: var(--border-light);
+            pointer-events: none;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            font-family: var(--font-mono);
+            letter-spacing: 0.05em;
+            border: 1px solid transparent;
+        }
+
+        .badge.bullish {
+            background: var(--green-dim);
+            color: var(--green);
+            border-color: rgba(0, 255, 157, 0.3);
+        }
+
+        .badge.bearish {
+            background: var(--red-dim);
+            color: var(--red);
+            border-color: rgba(255, 42, 109, 0.3);
+        }
+
+        .badge.ticker {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--accent);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .badge.ticker:hover {
+            background: var(--accent-dim);
+            border-color: var(--accent);
+            box-shadow: 0 0 10px var(--accent-dim);
+        }
+
+        /* AI Outlook */
+        .outlook-narrative-container {
+            margin-bottom: 2rem;
+        }
+
+        .outlook-section {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-left: 2px solid var(--border);
+            position: relative;
+        }
+
+        /* Tech Corner for Outlook Sections */
+        .outlook-section::after {
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid var(--border-light);
+            border-right: 2px solid var(--border-light);
+        }
+
+        .outlook-section.consensus {
+            border-left-color: var(--accent);
+        }
+
+        .outlook-section.catalysts {
+            border-left-color: var(--orange);
+        }
+
+        .outlook-section.action {
+            border-left-color: var(--red);
+        }
+
+        .outlook-title {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .outlook-content {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .outlook-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .outlook-list {
+            list-style: none;
+        }
+
+        .outlook-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-family: var(--font-mono);
+        }
+
+        .outlook-list li::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 500;
+            background: var(--bg-card-hover);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            margin: 0 2px;
+        }
+
+        .badge.ticker {
+            color: var(--accent);
+            border-color: rgba(0, 229, 191, 0.3);
+            background: rgba(0, 229, 191, 0.05);
+        }
+
+        .badge.bullish {
+            color: var(--green);
+            border-color: rgba(34, 197, 94, 0.3);
+            background: var(--green-dim);
+        }
+
+        .badge.bearish {
+            color: var(--red);
+            border-color: rgba(239, 68, 68, 0.3);
+            background: var(--red-dim);
+        }
+
+        /* Market Data */
+        .price-large {
+            font-family: var(--font-mono);
+            font-size: 2.5rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin: 0.5rem 0;
+        }
+
+        .price-change {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .price-change.positive {
+            background: var(--green-dim);
+            color: var(--green);
+        }
+
+        .price-change.negative {
+            background: var(--red-dim);
+            color: var(--red);
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .data-row:last-child {
+            border-bottom: none;
+        }
+
+        .data-label {
+            color: var(--text-muted);
+        }
+
+        .data-value {
+            color: var(--text-primary);
+        }
+
+        /* Sentiment */
+        .sentiment-meter {
+            height: 6px;
+            background: #222;
+            border-radius: 3px;
+            margin: 0.75rem 0;
+            overflow: hidden;
+        }
+
+        .sentiment-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: width 1s ease-out;
+            box-shadow: 0 0 10px var(--accent-dim);
+        }
+
+        .source-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .source-item {
+            background: var(--bg-card-hover);
+            padding: 1.25rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        /* Loading/Error */
+        .state-msg {
+            text-align: center;
+            padding: 4rem;
+            font-family: var(--font-mono);
+            color: var(--text-muted);
+        }
+
+        /* Trending */
+        .trending-card {
+            background: var(--bg-card-hover);
+            padding: 1.25rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            margin-bottom: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .trending-card:hover {
+            transform: translateX(4px);
+            border-color: var(--border-light);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .grid-cols-12 {
+                grid-template-columns: 1fr;
+            }
+
+            .col-span-8,
+            .col-span-4,
+            .col-span-12 {
+                grid-column: span 1;
+            }
+
+            .outlook-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-cols-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="#" class="logo">
+                <div class="logo-mark"></div>
+                SCOUT // MARKET INTEL
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="site/index.html" class="mono text-muted"
+                    style="text-decoration: none; font-size: 0.85rem; transition: color 0.2s;">HOME</a>
+                <div class="status-badge">
+                    <div class="status-dot"></div>
+                    <span id="lastUpdated">LIVE</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Loading -->
+        <div id="loading" class="state-msg">INITIALIZING DATA STREAMS...</div>
+        <div id="error" class="state-msg" style="display: none; color: var(--red);">CONNECTION FAILED</div>
+
+        <!-- Main Content -->
+        <main id="mainContent" class="grid grid-cols-12" style="display: none;">
+
+            <!-- AI Outlook (Full Width) -->
+            <section class="col-span-12 card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="text-accent">◆</span> AI MARKET OUTLOOK
+                    </div>
+                    <div id="sentimentBadge"></div>
+                </div>
+                <div id="outlookContent"></div>
+            </section>
+
+            <!-- Market Regime & IV Cards -->
+            <section class="col-span-12 grid grid-cols-3 gap-4" id="regimeSection" style="margin-bottom: 2rem;">
+                <!-- Market Regime -->
+                <div class="card">
+                    <div class="card-title text-muted uppercase" style="margin-bottom: 1rem;">MARKET REGIME</div>
+                    <div id="regimeLabel" class="text-center"
+                        style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: 1px;">-</div>
+                    <div id="regimeStats" class="text-center text-muted" style="font-size: 0.8rem; line-height: 1.4;">
+                    </div>
+                </div>
+
+                <!-- IV Opportunity -->
+                <div class="card">
+                    <div class="flex justify-between items-center" style="margin-bottom: 1rem;">
+                        <div class="card-title text-muted uppercase">IV OPPORTUNITY</div>
+                        <div class="text-accent" style="cursor: help;" title="IV Rank vs Historical Volatility">?</div>
+                    </div>
+
+                    <!-- Slider Bar -->
+                    <div
+                        style="position: relative; height: 8px; background: linear-gradient(90deg, var(--green) 0%, var(--orange) 50%, var(--red) 100%); border-radius: 4px; margin: 1.5rem 0;">
+                        <div id="ivSlider"
+                            style="position: absolute; left: 50%; top: -4px; width: 4px; height: 16px; background: white; border-radius: 2px; transform: translateX(-50%); box-shadow: 0 0 10px rgba(255,255,255,0.5);">
+                        </div>
+                    </div>
+                    <div class="flex justify-between text-muted mono" style="font-size: 0.7rem; margin-bottom: 1rem;">
+                        <span>Cheap</span>
+                        <span>Fair</span>
+                        <span>Rich</span>
+                    </div>
+
+                    <div id="ivLabel" class="text-center"
+                        style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">-</div>
+                    <div id="ivStats" class="text-center text-muted mono" style="font-size: 0.75rem;"></div>
+                </div>
+
+                <!-- Action Summary -->
+                <div class="card">
+                    <div class="card-title text-muted uppercase" style="margin-bottom: 1rem;">ACTION SUMMARY</div>
+                    <div id="actionText" style="font-size: 0.95rem; line-height: 1.5; color: var(--text-main);">
+                        Loading analysis...
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Data (Left Column) -->
+            <section class="col-span-8">
+                <!-- Trending Assets -->
+                <div>
+                    <div class="card-title" style="margin-bottom: 1rem;">TRENDING ASSETS</div>
+                    <div class="grid grid-cols-3" id="trendingSection"></div>
+                </div>
+            </section>
+
+            <!-- Sentiment Details (Right Column) -->
+            <section class="col-span-4 card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="text-accent">◆</span> SENTIMENT ANALYSIS
+                    </div>
+                </div>
+                <div id="sentimentDetails"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        // --- Render Logic ---
+
+        async function init() {
+            try {
+                const [outlook] = await Promise.all([
+                    fetch('data/outlook.json').then(r => r.json())
+                ]);
+
+                renderOutlook(outlook);
+                renderRegime(outlook);
+                renderTrending(outlook.trending);
+                renderSentiment(outlook);
+
+                document.getElementById('lastUpdated').textContent = `UPDATED ${new Date(outlook.timestamp).toLocaleTimeString()}`;
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('mainContent').style.display = 'grid';
+
+            } catch (e) {
+                console.error(e);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+            }
+        }
+
+        function renderOutlook(data) {
+            const container = document.getElementById('outlookContent');
+            const analysis = data.analysis;
+
+            // Highlight logic
+            const processText = (text) => {
+                return text
+                    .replace(/\*\*(.*?)\*\*/g, '<strong class="text-primary">$1</strong>')
+                    .replace(/\$([A-Z]+)/g, '<span class="badge ticker">$1</span>')
+                    .replace(/(\d+(\.\d+)?%)/g, '<span class="text-accent">$1</span>')
+                    .replace(/(\$\d+(\.\d+)?)/g, '<span class="text-orange">$1</span>');
+            };
+
+            // Sentiment Badge
+            const sentBadge = document.getElementById('sentimentBadge');
+            const sentClass = data.sentiment.overall.toLowerCase() === 'bullish' ? 'bullish' : 'bearish';
+            sentBadge.innerHTML = `<span class="badge ${sentClass} uppercase" style="font-size: 0.9rem; padding: 4px 12px;">${data.sentiment.overall} (${data.sentiment.confidence_pct}%)</span>`;
+
+            // Main Content
+            const narrativeLines = analysis.narrative.split('\n').filter(line => line.trim());
+
+            const narrativeHtml = narrativeLines.map(line => {
+                // Parse "Icon **Title:** Content"
+                // Regex handles: "📊 **Consensus:** Content"
+                const match = line.match(/^(.+?)\s*\*\*(.+?):\*\*\s*(.+)$/);
+
+                if (match) {
+                    const [_, icon, title, content] = match;
+                    const typeClass = title.toLowerCase().includes('consensus') ? 'consensus' :
+                        title.toLowerCase().includes('catalysts') ? 'catalysts' :
+                            title.toLowerCase().includes('action') ? 'action' : '';
+
+                    return `
+                        <div class="outlook-section ${typeClass}">
+                            <div class="outlook-title ${typeClass === 'consensus' ? 'text-accent' : (typeClass === 'catalysts' ? 'text-orange' : 'text-red')}">
+                                <span>${icon}</span> ${title.toUpperCase()}
+                            </div>
+                            <div class="outlook-content">
+                                ${processText(content)}
+                            </div>
+                        </div>
+                    `;
+                }
+                // Fallback for lines that don't match the format
+                return `<div class="outlook-section"><div class="outlook-content">${processText(line)}</div></div>`;
+            }).join('');
+
+            container.innerHTML = `
+                <div class="outlook-narrative-container">
+                    ${narrativeHtml}
+                </div>
+                <div class="outlook-grid">
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem;">KEY TICKERS</div>
+                        <div class="flex" style="flex-wrap: wrap; gap: 0.5rem;">
+                            ${analysis.key_tickers.map(t => `<span class="badge ticker">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem;">THEMES</div>
+                        <ul class="outlook-list">
+                            ${analysis.key_themes.map(t => `<li>${t}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem;">RISKS</div>
+                        <ul class="outlook-list">
+                            ${analysis.risk_factors.map(r => `<li>${r}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderRegime(data) {
+            if (!data.regime || !data.iv_opportunity || !data.action) return;
+
+            // 1. Market Regime
+            const r = data.regime;
+            const rLabel = document.getElementById('regimeLabel');
+            rLabel.textContent = r.label;
+            rLabel.className = `text-center ${r.color}`; // Apply color class
+            rLabel.style.fontSize = '1.5rem';
+            rLabel.style.fontWeight = '700';
+            rLabel.style.marginBottom = '1rem';
+            rLabel.style.letterSpacing = '1px';
+
+            document.getElementById('regimeStats').innerHTML = `
+                VIX ${r.vix} • P/C ${r.pc_ratio} • ${r.sentiment_bullish_pct}% bullish sentiment.<br>
+                ${r.summary}
+            `;
+
+            // 2. IV Opportunity
+            const iv = data.iv_opportunity;
+            document.getElementById('ivSlider').style.left = `${iv.position}%`;
+
+            const ivLabel = document.getElementById('ivLabel');
+            ivLabel.textContent = iv.label;
+            ivLabel.className = `text-center ${iv.color}`;
+
+            document.getElementById('ivStats').textContent = `IV Rank: ${iv.iv_rank}% • HV: ${iv.hv}% • Spread: ${iv.spread}%`;
+
+            // 3. Action Summary
+            document.getElementById('actionText').textContent = data.action.summary;
+        }
+
+        function renderTrending(trending) {
+            const container = document.getElementById('trendingSection');
+            if (!trending) return;
+
+            const renderColumn = (title, items, icon) => {
+                const listHtml = items.map(t => {
+                    const sentimentColor = t.sentiment_label === 'Bullish' ? 'text-green' : (t.sentiment_label === 'Bearish' ? 'text-red' : 'text-muted');
+                    const iconClass = t.sentiment_label === 'Bullish' ? '▲' : (t.sentiment_label === 'Bearish' ? '▼' : '■');
+
+                    return `
+                        <div class="trending-card">
+                            <div class="flex items-center gap-2">
+                                <span class="text-primary mono" style="font-weight: 700;">$${t.ticker}</span>
+                                <span class="${sentimentColor}" style="font-size: 0.75rem; font-weight: 600;">${iconClass} ${t.sentiment_pct}%</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-muted mono" style="font-size: 0.7rem;">VOL:${t.mentions}</span>
+                                <div class="flex gap-1">
+                                    ${Array(t.counts.bullish).fill('<span class="status-dot" style="background:var(--green); width:4px; height:4px;"></span>').join('')}
+                                    ${Array(t.counts.bearish).fill('<span class="status-dot" style="background:var(--red); width:4px; height:4px;"></span>').join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                return `
+                    <div class="card">
+                        <div class="card-title" style="margin-bottom: 1.5rem;">${icon} ${title}</div>
+                        ${listHtml}
+                    </div>
+                `;
+            };
+
+            container.innerHTML = `
+                ${renderColumn('MACRO', trending.macro, 'GLOBE //')}
+                ${renderColumn('STOCKS', trending.other, 'EQUITIES //')}
+                ${renderColumn('CRYPTO', trending.crypto, 'ASSETS //')}
+            `;
+        }
+
+        function renderSentiment(data) {
+            const container = document.getElementById('sentimentDetails');
+            const s = data.sentiment.sources;
+
+            const renderSource = (label, obj) => {
+                const pct = obj.pct || 0;
+                return `
+                    <div class="source-item">
+                        <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
+                            <span class="card-title" style="font-size: 0.75rem;">${label}</span>
+                            <span class="mono text-muted" style="font-size: 0.75rem;">${obj.total} posts</span>
+                        </div>
+                        <div class="sentiment-meter">
+                            <div class="sentiment-fill" style="width: ${pct}%"></div>
+                        </div>
+                        <div class="flex justify-between mono" style="font-size: 0.7rem;">
+                            <span class="text-green">B: ${obj.bullish}</span>
+                            <span class="text-red">B: ${obj.bearish}</span>
+                        </div>
+                    </div>
+                `;
+            };
+
+            container.innerHTML = `
+                <div class="source-grid">
+                    ${renderSource('SOCIAL', s.social)}
+                    ${renderSource('NEWS', s.news)}
+                    ${renderSource('VIDEO', s.video)}
+                    ${renderSource('OTHERS', s.chat)}
+                </div>
+                <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+                    <div class="card-title" style="margin-bottom: 0.5rem;">CONFIDENCE SCORE</div>
+                    <div class="flex items-center gap-4">
+                        <div class="price-large" style="font-size: 2rem;">${data.sentiment.confidence_pct}%</div>
+                        <div class="text-muted" style="font-size: 0.8rem; line-height: 1.4;">
+                            Based on ${s.social.total + s.news.total + s.video.total} data points<br>across 4 sources
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function formatVol(num) {
+            if (!num) return '-';
+            if (num > 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (num > 1000) return (num / 1000).toFixed(1) + 'K';
+            return num;
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+
+</html>

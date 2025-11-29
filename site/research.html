@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Library | Scout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #07070a;
+            --bg-secondary: #0d0d12;
+            --bg-tertiary: #14141c;
+            --bg-card: #1a1a24;
+            --text-primary: #f0f0f5;
+            --text-secondary: #8a8a9a;
+            --text-muted: #5a5a6a;
+            --accent: #00e5bf;
+            --accent-dim: #00c5a5;
+            --accent-glow: rgba(0, 229, 191, 0.15);
+            --accent-secondary: #ff6b35;
+            --accent-purple: #a855f7;
+            --accent-blue: #3b82f6;
+            --accent-amber: #f59e0b;
+            --border: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(255, 255, 255, 0.12);
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --font-body: 'Outfit', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Grain overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 1000;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, var(--bg-primary) 0%, transparent 100%);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo-mark {
+            width: 36px;
+            height: 36px;
+            border: 2px solid var(--accent);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-mark::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: var(--accent);
+            opacity: 0.1;
+        }
+
+        .logo-mark span {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        .nav-cta {
+            padding: 0.6rem 1.25rem;
+            background: var(--accent);
+            color: var(--bg-primary);
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            font-family: var(--font-mono);
+        }
+
+        .nav-cta:hover {
+            background: var(--text-primary);
+            transform: translateY(-1px);
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 10rem 4rem 4rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border), transparent);
+        }
+
+        .page-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+
+        .page-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+
+        .page-desc {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Filter Bar */
+        .filter-bar {
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.6rem 1.25rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--border-hover);
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--accent-glow);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Research Grid */
+        .research-grid {
+            padding: 2rem 4rem 6rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .research-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .research-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-image {
+            height: 180px;
+            background: var(--bg-tertiary);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+
+        .card-image-icon {
+            font-size: 3rem;
+            z-index: 1;
+            opacity: 0.5;
+        }
+
+        /* Different accent colors for variety */
+        .research-card[data-category="macro"] .card-image {
+            background: linear-gradient(135deg, rgba(0, 229, 191, 0.1), var(--bg-tertiary));
+        }
+
+        .research-card[data-category="macro"] .card-category {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .research-card[data-category="equity"] .card-image {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), var(--bg-tertiary));
+        }
+
+        .research-card[data-category="equity"] .card-category {
+            color: var(--accent-purple);
+            border-color: var(--accent-purple);
+        }
+
+        .research-card[data-category="crypto"] .card-image {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), var(--bg-tertiary));
+        }
+
+        .research-card[data-category="crypto"] .card-category {
+            color: var(--accent-blue);
+            border-color: var(--accent-blue);
+        }
+
+        .research-card[data-category="strategy"] .card-image {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), var(--bg-tertiary));
+        }
+
+        .research-card[data-category="strategy"] .card-category {
+            color: var(--accent-amber);
+            border-color: var(--accent-amber);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .card-category {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid;
+            border-radius: 2px;
+        }
+
+        .card-date {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-excerpt {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .card-read-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .card-arrow {
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            transition: transform 0.2s ease;
+        }
+
+        .research-card:hover .card-arrow {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        /* Empty State */
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .empty-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.3;
+        }
+
+        .empty-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .empty-desc {
+            color: var(--text-secondary);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Placeholder Notice */
+        .placeholder-notice {
+            background: var(--bg-secondary);
+            border: 1px dashed var(--border-hover);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin: 0 4rem 2rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .notice-icon {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .notice-text {
+            flex: 1;
+        }
+
+        .notice-title {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .notice-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .notice-path {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            background: var(--bg-tertiary);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem;
+            border-top: 1px solid var(--border);
+            background: var(--bg-secondary);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .research-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .page-header {
+                padding: 8rem 2rem 3rem;
+            }
+
+            .filter-bar {
+                padding: 1.5rem 2rem;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .placeholder-notice {
+                margin: 0 2rem 2rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-mark"><span>S</span></div>
+            <span class="logo-text">Scout</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+        </ul>
+        <a href="../dashboard.html" class="nav-cta">Launch Dashboard →</a>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-tag">Research Library</div>
+        <h1 class="page-title">Market Intelligence</h1>
+        <p class="page-desc">Deep-dive analyses, thematic reports, and AI-generated research. Updated regularly with
+            fresh insights.</p>
+    </header>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Reports</button>
+        <button class="filter-btn" data-filter="macro">Macro</button>
+        <button class="filter-btn" data-filter="equity">Equities</button>
+        <button class="filter-btn" data-filter="crypto">Crypto</button>
+        <button class="filter-btn" data-filter="strategy">Strategy</button>
+    </div>
+
+    <!-- Placeholder Notice -->
+    <div class="placeholder-notice">
+        <span class="notice-icon">◈</span>
+        <div class="notice-text">
+            <div class="notice-title">Report Drop Zone</div>
+            <div class="notice-desc">Drop AI-generated HTML reports into the research folder to display them here</div>
+        </div>
+        <code class="notice-path">scout/site/reports/</code>
+    </div>
+
+    <!-- Research Grid -->
+    <div class="research-grid" id="researchGrid">
+        <!-- New Report -->
+        <a href="reports/macro/2025-11/USD_Outlook_18mo_Analysis.html" class="research-card" data-category="macro">
+            <div class="card-image">
+                <svg class="card-image-pattern" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <rect width="100%" height="100%" fill="url(#grid1)" />
+                </svg>
+                <span class="card-image-icon">$</span>
+            </div>
+            <div class="card-content">
+                <div class="card-meta">
+                    <span class="card-category">Macro</span>
+                    <span class="card-date">Nov 29, 2025</span>
+                </div>
+                <h3 class="card-title">USD Trajectory: 18-Month Outlook & Market Impact</h3>
+                <p class="card-excerpt">An 18-month strategic outlook on the US Dollar (DXY), analyzing the collision of
+                    Federal Reserve easing, political volatility, and geopolitical realignment.</p>
+                <div class="card-footer">
+                    <span class="card-read-time">10 min read</span>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-mark" style="width: 28px; height: 28px;"><span style="font-size: 0.8rem;">S</span>
+                </div>
+                <span class="footer-text">Scout Market Intelligence</span>
+            </div>
+            <div class="footer-links">
+                <a href="../dashboard.html">Dashboard</a>
+                <a href="index.html">Home</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.research-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter cards
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'flex';
+                        card.style.animation = 'fadeIn 0.3s ease';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `all 0.5s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Add fadeIn animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
