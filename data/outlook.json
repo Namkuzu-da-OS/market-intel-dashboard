@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-11-29T21:33:41.551Z",
+  "timestamp": "2025-11-29T22:36:11.639Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 67,
     "sources": {
       "social": {
-        "bullish": 37,
+        "bullish": 38,
         "bearish": 18,
-        "neutral": 73,
-        "total": 128,
+        "neutral": 77,
+        "total": 133,
         "pct": 29
       },
       "news": {
@@ -36,22 +36,27 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is positioned for a modest uptrend driven by long‑term growth themes in tech and crypto, with a strong bullish stance across high‑weight sources.\n\n⚡ **Catalysts:** Key earnings releases (KeyCorp, Alibaba, Google) and upcoming Fed minutes/inflation data; crypto ETF inflows and Bitcoin activity; low‑VIX environment supporting momentum.\n\n🎯 **Action:** If KeyCorp’s price breaks above its 50‑day MA, target a 5% upside; if VIX falls below 15, anticipate a 5% rally; monitor Bitcoin for a 1–2% upside post‑ETF flow data.",
+    "narrative": "📊 **Consensus:** Market shows a cautiously bullish outlook with strong tech and crypto momentum, but short‑term pullbacks around earnings and macro data are likely. (conviction level: high)\n\n⚡ **Catalysts:** Fed releases, regulatory updates on Layer‑1 chains, earnings of Alibaba (BABA), Google (GOOGL), Meta (META), Bitcoin (BTC) potential breakout to $500k–$1M, VIX at 16.35.\n\n🎯 **Action:** If BTC breaks $500k, target $1M. If META breaks VWAP hammer, target higher upside. If BABA earnings beat, consider buying with a stop near recent support.",
     "key_tickers": [
-      "K",
-      "BABA",
+      "BTC",
       "GOOGL",
-      "BTC"
+      "META",
+      "BABA",
+      "F"
     ],
     "key_themes": [
-      "long‑term tech & crypto growth",
-      "earnings‑driven volatility",
-      "low‑VIX momentum"
+      "Fed releases",
+      "Crypto growth",
+      "Tech earnings",
+      "VIX volatility",
+      "Regulatory updates"
     ],
     "risk_factors": [
-      "earnings volatility",
-      "macro risk (inflation, Fed cuts)",
-      "regulatory uncertainty"
+      "High debt load",
+      "Persistent inflation",
+      "Crypto sell‑off",
+      "Earnings volatility",
+      "Macro risk"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
@@ -61,7 +66,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 95185
+    "generation_time_ms": 93681
   },
   "trending": {
     "macro": [
