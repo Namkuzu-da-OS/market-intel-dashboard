@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-29T20:57:35.212Z",
+  "timestamp": "2025-11-29T21:33:41.551Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,27 +36,24 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market remains firmly bullish with high conviction, anticipating a short‑term pullback that will be followed by a medium‑term rally driven by crypto growth, tech earnings, and clean‑tech momentum.\n\n⚡ **Catalysts:** Bitcoin $500k–$1M range, VIX near 18, earnings releases for large U.S. tech, Fed policy announcements, clean‑tech EV rollout, crypto regulatory developments.\n\n🎯 **Action:** If BTC > $500k, target $600k; if BTC < $500k, target $450k; if VIX > 18, tighten stops on tech; if earnings release negative, exit large‑cap tech positions.",
+    "narrative": "📊 **Consensus:** The market is positioned for a modest uptrend driven by long‑term growth themes in tech and crypto, with a strong bullish stance across high‑weight sources.\n\n⚡ **Catalysts:** Key earnings releases (KeyCorp, Alibaba, Google) and upcoming Fed minutes/inflation data; crypto ETF inflows and Bitcoin activity; low‑VIX environment supporting momentum.\n\n🎯 **Action:** If KeyCorp’s price breaks above its 50‑day MA, target a 5% upside; if VIX falls below 15, anticipate a 5% rally; monitor Bitcoin for a 1–2% upside post‑ETF flow data.",
     "key_tickers": [
-      "BTC",
-      "SPY",
-      "QQQ"
+      "K",
+      "BABA",
+      "GOOGL",
+      "BTC"
     ],
     "key_themes": [
-      "Crypto Growth & Stablecoins",
-      "Tech Earnings & Fed Policy",
-      "Clean‑Tech EV Demand",
-      "Equity Fund Inflows & Risk‑On",
-      "Volatility & Regulatory Events"
+      "long‑term tech & crypto growth",
+      "earnings‑driven volatility",
+      "low‑VIX momentum"
     ],
     "risk_factors": [
-      "Earnings surprises",
-      "Fed policy tightening",
-      "Crypto regulatory crackdown",
-      "Bitcoin price volatility",
-      "Volatility spikes around earnings"
+      "earnings volatility",
+      "macro risk (inflation, Fed cuts)",
+      "regulatory uncertainty"
     ],
-    "intraday_bias": "NEUTRAL",
+    "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
@@ -64,7 +61,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 106845
+    "generation_time_ms": 95185
   },
   "trending": {
     "macro": [
