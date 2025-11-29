@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-11-29T23:13:49.324Z",
+  "timestamp": "2025-11-29T23:57:35.363Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 65,
+    "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 38,
+        "bullish": 41,
         "bearish": 20,
-        "neutral": 80,
-        "total": 138,
+        "neutral": 87,
+        "total": 148,
         "pct": 28
       },
       "news": {
@@ -36,37 +36,29 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is expected to trade in a range with a moderate bullish bias, conviction level: medium\n⚡ **Catalysts:** Regulatory clarity from SEC/Treasury, Fed policy and minutes, earnings releases (KeyCorp, Alibaba, Google), VIX staying below 18, Bitcoin $500k–$1M range, UK crypto mandate, green‑tech demand (silver, EV battery, AI chips)\n🎯 **Action:** If BTC breaks above $500k, target $1M. If SPY breaks above resistance, target next support; if SPY breaks below support, target next resistance.",
+    "narrative": "📊 **Consensus:** Overall market sentiment leans bullish, with short‑term volatility expected around earnings windows but a medium‑term upside if macro and crypto fundamentals remain supportive. Conviction level: high\n\n⚡ **Catalysts:** Earnings releases, Fed policy easing, low VIX, crypto on‑chain growth, network effects, consumer‑service upside, and tech sector technical strength\n\n🎯 **Action:** If SHOP breaks above its key resistance, target 5% higher; If earnings for key tech names hold support, target 3% above entry",
     "key_tickers": [
-      "BTC",
-      "MSTR",
-      "BABA",
-      "GOOGL",
-      "NVDA"
+      "SHOP"
     ],
     "key_themes": [
-      "regulatory clarity",
-      "Fed policy",
-      "earnings volatility",
-      "crypto dynamics",
-      "green technology"
+      "Earnings windows",
+      "Fed policy easing",
+      "Crypto on‑chain growth"
     ],
     "risk_factors": [
-      "regulatory tightening",
-      "earnings volatility",
-      "crypto correction",
-      "inflation",
-      "debt risk"
+      "Earnings volatility",
+      "Support level breaches",
+      "Regulatory tightening"
     ],
-    "intraday_bias": "NEUTRAL",
+    "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 107064
+    "generation_time_ms": 81267
   },
   "trending": {
     "macro": [
@@ -81,6 +73,19 @@
           "bearish": 0,
           "neutral": 2,
           "total": 2
+        }
+      },
+      {
+        "ticker": "IWM",
+        "mentions": 1,
+        "sentiment_score": 0.75,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 75,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
         }
       }
     ],
