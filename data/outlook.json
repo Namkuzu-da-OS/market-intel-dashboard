@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-11-29T22:36:11.639Z",
+  "timestamp": "2025-11-29T23:13:49.324Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 67,
+    "confidence_pct": 65,
     "sources": {
       "social": {
         "bullish": 38,
-        "bearish": 18,
-        "neutral": 77,
-        "total": 133,
-        "pct": 29
+        "bearish": 20,
+        "neutral": 80,
+        "total": 138,
+        "pct": 28
       },
       "news": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market shows a cautiously bullish outlook with strong tech and crypto momentum, but short‑term pullbacks around earnings and macro data are likely. (conviction level: high)\n\n⚡ **Catalysts:** Fed releases, regulatory updates on Layer‑1 chains, earnings of Alibaba (BABA), Google (GOOGL), Meta (META), Bitcoin (BTC) potential breakout to $500k–$1M, VIX at 16.35.\n\n🎯 **Action:** If BTC breaks $500k, target $1M. If META breaks VWAP hammer, target higher upside. If BABA earnings beat, consider buying with a stop near recent support.",
+    "narrative": "📊 **Consensus:** The market is expected to trade in a range with a moderate bullish bias, conviction level: medium\n⚡ **Catalysts:** Regulatory clarity from SEC/Treasury, Fed policy and minutes, earnings releases (KeyCorp, Alibaba, Google), VIX staying below 18, Bitcoin $500k–$1M range, UK crypto mandate, green‑tech demand (silver, EV battery, AI chips)\n🎯 **Action:** If BTC breaks above $500k, target $1M. If SPY breaks above resistance, target next support; if SPY breaks below support, target next resistance.",
     "key_tickers": [
       "BTC",
-      "GOOGL",
-      "META",
+      "MSTR",
       "BABA",
-      "F"
+      "GOOGL",
+      "NVDA"
     ],
     "key_themes": [
-      "Fed releases",
-      "Crypto growth",
-      "Tech earnings",
-      "VIX volatility",
-      "Regulatory updates"
+      "regulatory clarity",
+      "Fed policy",
+      "earnings volatility",
+      "crypto dynamics",
+      "green technology"
     ],
     "risk_factors": [
-      "High debt load",
-      "Persistent inflation",
-      "Crypto sell‑off",
-      "Earnings volatility",
-      "Macro risk"
+      "regulatory tightening",
+      "earnings volatility",
+      "crypto correction",
+      "inflation",
+      "debt risk"
     ],
-    "intraday_bias": "BULLISH",
+    "intraday_bias": "NEUTRAL",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
+    "swing_levels": "Testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 93681
+    "generation_time_ms": 107064
   },
   "trending": {
     "macro": [
@@ -224,7 +224,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 29,
+    "sentiment_bullish_pct": 28,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
