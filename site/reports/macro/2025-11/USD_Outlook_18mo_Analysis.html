@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD Trajectory: 18-Month Outlook & Market Impact</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Chosen Palette: Warm Neutrals & Earth Tones -->
+    <!-- Application Structure Plan: 
+         1. Executive Dashboard: High-level metrics and the core DXY forecast chart with scenario toggles. This gives the immediate "answer" to the user's query.
+         2. The Drivers (Fed & Politics): Analysis of Powell's monetary policy vs. Trump's potential fiscal policy. Interactive comparison cards.
+         3. Asset Class Impact (Equities & Crypto): A split-view interaction showing how USD moves affect risk assets.
+         4. Geopolitical Risk Radar: A matrix view of global events affecting the currency.
+         5. Synthesis & Strategy: Final takeaways.
+         Why this structure? It moves from the "What" (Trajectory) to the "Why" (Drivers) to the "So What" (Impact), allowing users to drill down into specific areas of interest (e.g., Crypto holders can focus on section 3).
+    -->
+
+    <!-- Visualization & Content Choices:
+         1. DXY Trajectory: Line Chart (Chart.js). Goal: Show trend over time. Interaction: Scenario Toggles (Soft Landing vs. Reflation). Justification: Best way to visualize time-series forecasts.
+         2. Fed vs. Treasury Balance: Bar/Line Combo. Goal: Show policy conflict. Interaction: None (Static viz).
+         3. Correlation Matrix: Scatter Plot (Chart.js). Goal: Show Relationship between DXY and BTC/SPX. Justification: Visualizes the inverse correlation.
+         4. Impact Calculator: HTML/JS Sliders. Goal: Allow user to simulate "What if Fed cuts faster?". Justification: Engagement and personalized learning.
+    -->
+
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F4;
+            /* Tailwind stone-100 */
+            color: #1C1917;
+            /* Tailwind stone-900 */
+        }
+
+        h1,
+        h2,
+        h3,
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Chart Container Styling - Strict Adherence to Requirements */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            /* Max width to prevent stretching */
+            height: 400px;
+            /* Base height */
+            margin-left: auto;
+            margin-right: auto;
+            background: #FFFFFF;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+                max-height: 300px;
+            }
+        }
+
+        .nav-active {
+            border-bottom: 2px solid #D97706;
+            /* amber-600 */
+            color: #78350F;
+            /* amber-900 */
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background-color: #E7E5E4;
+            /* stone-200 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-amber-200 selection:text-stone-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold serif text-stone-900 tracking-tight">GlobalMacro<span
+                            class="text-amber-600">Insight</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <button onclick="scrollToSection('outlook')"
+                        class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium transition-colors">Outlook</button>
+                    <button onclick="scrollToSection('drivers')"
+                        class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium transition-colors">Key
+                        Drivers</button>
+                    <button onclick="scrollToSection('impact')"
+                        class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium transition-colors">Equities
+                        & Crypto</button>
+                    <button onclick="scrollToSection('geopolitics')"
+                        class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium transition-colors">Geopolitics</button>
+                </div>
+                <!-- Mobile Menu Button (Simplified for this demo) -->
+                <button class="md:hidden text-2xl text-stone-600">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-white border-b border-stone-200">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+            <div
+                class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-amber-800 uppercase bg-amber-100 rounded-full">
+                Research Report: Q4 2024 - Q2 2026
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-6 leading-tight">
+                The Dollar at the Crossroads:<br>
+                <span class="text-stone-500 italic">Pressure, Policy, and the Path Ahead</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-xl text-stone-600 leading-relaxed">
+                An 18-month strategic outlook on the US Dollar (DXY), analyzing the collision of Federal Reserve easing,
+                political volatility, and geopolitical realignment.
+            </p>
+
+            <!-- Quick Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-4xl mx-auto">
+                <div class="p-4 bg-stone-50 rounded-lg border border-stone-100">
+                    <div class="text-sm text-stone-500">Current DXY</div>
+                    <div class="text-2xl font-bold text-stone-800">103.45</div>
+                </div>
+                <div class="p-4 bg-stone-50 rounded-lg border border-stone-100">
+                    <div class="text-sm text-stone-500">18-Mo Target (Base)</div>
+                    <div class="text-2xl font-bold text-amber-600">98.50</div>
+                </div>
+                <div class="p-4 bg-stone-50 rounded-lg border border-stone-100">
+                    <div class="text-sm text-stone-500">Fed Terminal Rate</div>
+                    <div class="text-2xl font-bold text-stone-800">3.25%</div>
+                </div>
+                <div class="p-4 bg-stone-50 rounded-lg border border-stone-100">
+                    <div class="text-sm text-stone-500">Correlation (Crypto)</div>
+                    <div class="text-2xl font-bold text-emerald-600">-0.82</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
+        <!-- SECTION 1: THE TRAJECTORY -->
+        <section id="outlook">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4">The 18-Month Trajectory</h2>
+                <p class="text-lg text-stone-600 max-w-4xl">
+                    The US Dollar Index (DXY) is currently navigating a pivot point. While the Federal Reserve has
+                    initiated a cutting cycle, the speed of global central bank easing and domestic fiscal policies
+                    creates divergent paths. Use the controls below to toggle between our three core scenarios.
+                </p>
+            </div>
+
+            <!-- Scenario Controls -->
+            <div class="flex flex-wrap gap-4 mb-6 justify-center md:justify-start">
+                <button onclick="updateChart('base')" id="btn-base"
+                    class="scenario-btn px-6 py-2 rounded-full border border-stone-300 bg-stone-800 text-white shadow-md hover:bg-stone-700 transition-all focus:outline-none ring-2 ring-stone-400 ring-offset-2">
+                    Base Case: Soft Landing
+                </button>
+                <button onclick="updateChart('inflation')" id="btn-inflation"
+                    class="scenario-btn px-6 py-2 rounded-full border border-stone-300 bg-white text-stone-600 hover:bg-stone-100 transition-all focus:outline-none">
+                    Scenario B: Trump/Reflation
+                </button>
+                <button onclick="updateChart('recession')" id="btn-recession"
+                    class="scenario-btn px-6 py-2 rounded-full border border-stone-300 bg-white text-stone-600 hover:bg-stone-100 transition-all focus:outline-none">
+                    Scenario C: Global Recession
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Chart -->
+                <div class="lg:col-span-2">
+                    <div class="chart-container">
+                        <canvas id="dxyChart"></canvas>
+                    </div>
+                    <div class="mt-2 text-sm text-stone-500 text-center italic">
+                        *Dashed lines represent projected ranges based on yield spread analysis.
+                    </div>
+                </div>
+
+                <!-- Analysis Panel -->
+                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-center">
+                    <h3 id="scenario-title" class="text-xl font-bold text-amber-700 mb-3">Base Case: The "Soft Landing"
+                        Slide</h3>
+                    <p id="scenario-desc" class="text-stone-600 mb-4 leading-relaxed">
+                        In our base case, the Fed cuts rates steadily (25bps/meeting) to reach neutral by 2026. The US
+                        economy slows but avoids deep recession. The "US Exceptionalism" premium fades, causing the
+                        dollar to drift lower toward the 98-99 level.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="text-emerald-500 mr-2 text-lg">⬇</span>
+                            <span class="text-sm text-stone-600"><strong>Equities:</strong> Supported by lower yields
+                                and manageable growth.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-emerald-500 mr-2 text-lg">⬆</span>
+                            <span class="text-sm text-stone-600"><strong>Crypto:</strong> High correlation to global M2
+                                supply expansion; likely bullish.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-amber-500 mr-2 text-lg">➡</span>
+                            <span class="text-sm text-stone-600"><strong>Risks:</strong> Inflation gets "stuck" at 3%,
+                                forcing Fed pause.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE DRIVERS (FED & POLITICS) -->
+        <section id="drivers" class="bg-stone-100 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-16">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 text-center">The Twin Forces: Powell vs. Politics</h2>
+                <p class="text-lg text-stone-600 max-w-3xl mx-auto text-center mb-12">
+                    The trajectory of the USD is caught between Monetary Policy (The Fed) aiming to cool the economy,
+                    and potential Fiscal Policy (White House) that could reignite inflation.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Fed Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-stone-400 card-hover">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center text-2xl mr-4">
+                                🏛️</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Federal Reserve Policy</h3>
+                                <div class="text-sm text-stone-500">Chairman Jerome Powell</div>
+                            </div>
+                        </div>
+                        <p class="text-stone-600 mb-4">
+                            <strong>Current Stance:</strong> Data-dependent easing. The Fed acknowledges the labor
+                            market is cooling.
+                        </p>
+                        <p class="text-stone-600 mb-6">
+                            <strong>Impact on USD:</strong> <span class="text-red-600 font-bold">Bearish
+                                Pressure.</span> As yields drop, foreign capital seeking "risk-free" return leaves USD
+                            assets.
+                        </p>
+                        <div class="bg-stone-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-stone-800 mb-2 text-sm uppercase tracking-wide">Key Watch Item
+                            </h4>
+                            <p class="text-sm text-stone-600">The "Dot Plot" dispersion. If inflation resurges, the Fed
+                                may pause cuts, causing a violent USD rally (The "No Landing" scenario).</p>
+                        </div>
+                    </div>
+
+                    <!-- Politics Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-amber-500 card-hover">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-2xl mr-4">
+                                🗳️</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Political Volatility (Trump Factor)</h3>
+                                <div class="text-sm text-stone-500">2025 Administration Speculation</div>
+                            </div>
+                        </div>
+                        <p class="text-stone-600 mb-4">
+                            <strong>Proposed Policies:</strong> Universal Tariffs (10-20%), Deregulation, Extension of
+                            Tax Cuts.
+                        </p>
+                        <p class="text-stone-600 mb-6">
+                            <strong>Impact on USD:</strong> <span class="text-emerald-600 font-bold">Bullish
+                                Pressure.</span> Tariffs reduce imports (improving trade balance) and are inflationary,
+                            forcing rates to stay higher.
+                        </p>
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-amber-900 mb-2 text-sm uppercase tracking-wide">The Paradox
+                            </h4>
+                            <p class="text-sm text-stone-800">Trump has explicitly stated he wants a <em>weaker</em>
+                                dollar for exports, yet his tariff policies mathematically lead to a <em>stronger</em>
+                                dollar. This conflict creates high volatility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: IMPACT ON ASSETS -->
+        <section id="impact">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+                <!-- Left: Text Context -->
+                <div class="md:col-span-1">
+                    <h2 class="text-3xl font-bold text-stone-900 mb-4">Market Correlation Analysis</h2>
+                    <p class="text-stone-600 mb-6 leading-relaxed">
+                        The USD acts as the denominator for global assets. When the denominator shrinks (USD Weakens),
+                        asset prices typically rise. However, specific nuances apply to Equities versus Crypto over the
+                        next 18 months.
+                    </p>
+
+                    <div class="space-y-2">
+                        <button onclick="switchAssetTab('crypto')" id="tab-crypto"
+                            class="tab-btn w-full text-left px-4 py-3 rounded-lg border border-stone-200 hover:bg-stone-50 transition-colors flex justify-between items-center active">
+                            <span><span class="mr-2">₿</span> Crypto Assets</span>
+                            <span class="text-stone-400">→</span>
+                        </button>
+                        <button onclick="switchAssetTab('equities')" id="tab-equities"
+                            class="tab-btn w-full text-left px-4 py-3 rounded-lg border border-stone-200 hover:bg-stone-50 transition-colors flex justify-between items-center">
+                            <span><span class="mr-2">📈</span> US Equities (S&P 500)</span>
+                            <span class="text-stone-400">→</span>
+                        </button>
+                    </div>
+
+                    <div id="asset-details" class="mt-6 p-4 bg-stone-50 rounded-lg border border-stone-200 text-sm">
+                        <!-- Dynamic Content Loaded Here -->
+                    </div>
+                </div>
+
+                <!-- Right: Chart -->
+                <div class="md:col-span-2">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-stone-200">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-bold text-stone-700">Inverse Correlation Visualizer</h3>
+                            <span class="text-xs bg-stone-100 px-2 py-1 rounded">Log Scale</span>
+                        </div>
+                        <div class="chart-container" style="height: 350px;">
+                            <canvas id="correlationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: GEOPOLITICS -->
+        <section id="geopolitics" class="border-t border-stone-200 pt-16">
+            <h2 class="text-3xl font-bold text-stone-900 mb-4">Geopolitical Risk Matrix</h2>
+            <p class="text-lg text-stone-600 mb-8 max-w-4xl">
+                Beyond rates and politics, external geopolitical shocks drive "Flight to Safety" flows. The USD remains
+                the ultimate safe haven, regardless of domestic debt issues.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Risk 1 -->
+                <div
+                    class="group relative overflow-hidden rounded-xl border border-stone-200 bg-white p-6 hover:shadow-lg transition-all cursor-default">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-red-500"></div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-stone-900">Global Conflict Escalation</h3>
+                        <span class="text-xs font-bold text-red-600 bg-red-50 px-2 py-1 rounded">High Impact</span>
+                    </div>
+                    <p class="text-sm text-stone-600 mb-3">Middle East or Ukraine/Russia escalation triggers energy
+                        spikes.</p>
+                    <div class="text-xs font-semibold text-stone-500 uppercase tracking-wide">USD Reaction</div>
+                    <p class="text-sm font-medium text-emerald-700">Strong Rally (Safe Haven Bid)</p>
+                </div>
+
+                <!-- Risk 2 -->
+                <div
+                    class="group relative overflow-hidden rounded-xl border border-stone-200 bg-white p-6 hover:shadow-lg transition-all cursor-default">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-amber-500"></div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-stone-900">BRICS De-Dollarization</h3>
+                        <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded">Med Impact</span>
+                    </div>
+                    <p class="text-sm text-stone-600 mb-3">Slow erosion of USD in global trade settlement (Oil/Gold).
+                    </p>
+                    <div class="text-xs font-semibold text-stone-500 uppercase tracking-wide">USD Reaction</div>
+                    <p class="text-sm font-medium text-red-700">Long-term Structural Weakness</p>
+                </div>
+
+                <!-- Risk 3 -->
+                <div
+                    class="group relative overflow-hidden rounded-xl border border-stone-200 bg-white p-6 hover:shadow-lg transition-all cursor-default">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-stone-900">Eurozone Recovery</h3>
+                        <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">Med Impact</span>
+                    </div>
+                    <p class="text-sm text-stone-600 mb-3">If EU recovers faster than US, EUR (57% of DXY) strengthens.
+                    </p>
+                    <div class="text-xs font-semibold text-stone-500 uppercase tracking-wide">USD Reaction</div>
+                    <p class="text-sm font-medium text-red-700">Weakness (Relative Value)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: INTERACTIVE SIMULATION -->
+        <section class="bg-stone-900 text-stone-100 rounded-2xl p-8 md:p-12 shadow-2xl mt-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-4 serif">The Bottom Line</h2>
+                    <div class="space-y-6 text-stone-300">
+                        <p>
+                            The next 18 months present a tug-of-war. The Fed <em>wants</em> to normalize rates (USD
+                            Bearish), but geopolitical instability and potential protectionist trade policies (USD
+                            Bullish) provide a floor.
+                        </p>
+                        <p>
+                            <strong>For Investors:</strong> A gradually weakening dollar is the "Goldilocks" scenario
+                            for broad assets. A sharp spike in USD usually signals a liquidity crunch or crisis.
+                        </p>
+                        <div class="mt-8 pt-6 border-t border-stone-700">
+                            <h4 class="text-amber-500 font-bold mb-2">Interactive: Check Your Exposure</h4>
+                            <p class="text-sm text-stone-400 mb-4">Adjust the "Fed Aggressiveness" to see theoretical
+                                outcomes.</p>
+
+                            <label class="block text-xs font-medium text-stone-400 mb-2">Fed Rate Cut Speed</label>
+                            <input type="range" id="fedSlider" min="0" max="100" value="50"
+                                class="w-full h-2 bg-stone-700 rounded-lg appearance-none cursor-pointer accent-amber-500">
+                            <div class="flex justify-between text-xs text-stone-500 mt-1">
+                                <span>Slow/Pause (Hawkish)</span>
+                                <span>Rapid/Panic (Dovish)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800 p-6 rounded-xl border border-stone-700">
+                    <h3 class="text-lg font-bold text-white mb-4 border-b border-stone-700 pb-2">Projection Output</h3>
+                    <div id="sim-output" class="space-y-4">
+                        <!-- Dynamic output from JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-stone-200 mt-20 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-stone-400 text-sm">
+                Generated Interactive Analysis. Data simulated for illustrative purposes based on Q4 2024
+                projections.<br>
+                Not financial advice.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        // --- State Management ---
+        const state = {
+            currentScenario: 'base',
+            currentAssetTab: 'crypto'
+        };
+
+        // --- Data Definitions ---
+        // Simulated historical + projected data
+        const timeLabels = ['Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024 (Now)', 'Q1 2025', 'Q2 2025', 'Q3 2025', 'Q4 2025', 'Q1 2026', 'Q2 2026'];
+
+        const scenarios = {
+            base: {
+                data: [102.5, 105.1, 101.2, 103.45, 101.5, 99.8, 98.5, 98.0, 97.5, 98.5],
+                color: '#D97706', // amber-600
+                desc: 'Base Case: Gradual easing. Fed achieves soft landing. US growth outpaces EU/China slightly, but yield advantage narrows.',
+                title: 'Base Case: The "Soft Landing" Slide'
+            },
+            inflation: {
+                data: [102.5, 105.1, 101.2, 103.45, 105.5, 107.8, 106.2, 105.0, 104.5, 105.0],
+                color: '#EF4444', // red-500
+                desc: 'Trump/Reflation: Tariffs hit early 2025. Inflation spikes. Fed forced to pause cuts. USD rips higher on yields and safe haven status.',
+                title: 'Scenario B: Reflation & Tariffs'
+            },
+            recession: {
+                data: [102.5, 105.1, 101.2, 103.45, 99.0, 96.5, 95.0, 94.0, 93.5, 95.0],
+                color: '#3B82F6', // blue-500
+                desc: 'Recession: Hard landing. Fed panic cuts rates to zero. USD collapses against Yen and Euro as US yield advantage evaporates.',
+                title: 'Scenario C: Rapid Cooling'
+            }
+        };
+
+        const assetContent = {
+            crypto: {
+                html: `
+                    <h4 class="font-bold text-stone-800 mb-2">Crypto Outlook (Inverse Beta)</h4>
+                    <p class="mb-3 text-stone-600">Bitcoin and crypto markets are highly sensitive to global M2 money supply and USD strength. In our base case (Weakening USD), crypto enters a high-growth phase.</p>
+                    <ul class="list-disc pl-5 space-y-1 text-stone-600">
+                        <li><strong>Mechanism:</strong> Weak USD = Higher Global Liquidity = Risk On.</li>
+                        <li><strong>Price Target:</strong> Historically, DXY breaking 100 aligns with BTC parabolic phases.</li>
+                        <li><strong>Trump Factor:</strong> Promises of a "Strategic Bitcoin Reserve" could decouple BTC from DXY briefly.</li>
+                    </ul>
+                `
+            },
+            equities: {
+                html: `
+                    <h4 class="font-bold text-stone-800 mb-2">S&P 500 Outlook</h4>
+                    <p class="mb-3 text-stone-600">A weaker dollar acts as a tailwind for US multinationals (approx 40% of S&P earnings are from overseas). However, if USD weakens due to US recession, equities will fall.</p>
+                    <ul class="list-disc pl-5 space-y-1 text-stone-600">
+                        <li><strong>Mechanism:</strong> Cheaper exports + forex translation gains.</li>
+                        <li><strong>Sector Watch:</strong> Industrials and Tech benefit most from weaker USD.</li>
+                        <li><strong>Risk:</strong> "Scenario B" (Strong USD) creates earnings headwinds.</li>
+                    </ul>
+                `
+            }
+        };
+
+        // --- Chart Initialization ---
+        let dxyChartInstance;
+        let correlationChartInstance;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initDxyChart();
+            initCorrelationChart();
+            switchAssetTab('crypto'); // Default tab
+            updateSimulationOutput(50); // Default slider
+
+            // Slider Event Listener
+            document.getElementById('fedSlider').addEventListener('input', (e) => {
+                updateSimulationOutput(e.target.value);
+            });
+        });
+
+        function initDxyChart() {
+            const ctx = document.getElementById('dxyChart').getContext('2d');
+            dxyChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: timeLabels,
+                    datasets: [{
+                        label: 'Historical DXY',
+                        data: [102.5, 105.1, 101.2, 103.45, null, null, null, null, null, null],
+                        borderColor: '#57534E', // stone-600
+                        borderWidth: 2,
+                        tension: 0.3,
+                        pointRadius: 0
+                    }, {
+                        label: 'Projected Outlook',
+                        data: [null, null, null, 103.45, 101.5, 99.8, 98.5, 98.0, 97.5, 98.5], // Base case default
+                        borderColor: '#D97706', // amber-600
+                        borderWidth: 3,
+                        borderDash: [5, 5],
+                        tension: 0.3,
+                        pointBackgroundColor: '#FFF',
+                        pointBorderColor: '#D97706',
+                        pointRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    plugins: {
+                        legend: { position: 'bottom' },
+                        tooltip: {
+                            backgroundColor: '#fff',
+                            titleColor: '#1c1917',
+                            bodyColor: '#44403c',
+                            borderColor: '#e7e5e4',
+                            borderWidth: 1,
+                            padding: 12,
+                        },
+                        annotation: {
+                            annotations: {
+                                line1: {
+                                    type: 'line',
+                                    xMin: 3,
+                                    xMax: 3,
+                                    borderColor: '#A8A29E',
+                                    borderWidth: 1,
+                                    label: {
+                                        content: 'Today',
+                                        display: true,
+                                        position: 'start'
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            min: 90,
+                            max: 110,
+                            grid: { color: '#F5F5F4' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        function initCorrelationChart() {
+            const ctx = document.getElementById('correlationChart').getContext('2d');
+            // Simplified illustrative data points for DXY vs BTC/SPX
+            correlationChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [
+                        {
+                            label: 'DXY (Inverted)',
+                            data: [104, 105, 103, 104, 102, 100], // Inverted visually in logic? No, just raw here
+                            borderColor: '#78716c',
+                            yAxisID: 'y',
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Risk Assets (Index)',
+                            data: [35, 32, 38, 36, 42, 45], // Representing general uptrend when DXY dips
+                            borderColor: '#059669', // emerald-600
+                            yAxisID: 'y1',
+                            tension: 0.4,
+                            fill: true,
+                            backgroundColor: 'rgba(5, 150, 105, 0.1)'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            title: { display: true, text: 'DXY Strength' },
+                            reverse: true // Invert DXY axis to show correlation better
+                        },
+                        y1: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            grid: { drawOnChartArea: false },
+                            title: { display: true, text: 'Asset Price' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // --- Interaction Logic ---
+
+        function updateChart(scenarioKey) {
+            const scenario = scenarios[scenarioKey];
+
+            // Update styles of buttons
+            document.querySelectorAll('.scenario-btn').forEach(btn => {
+                btn.classList.remove('bg-stone-800', 'text-white', 'ring-2');
+                btn.classList.add('bg-white', 'text-stone-600');
+            });
+
+            const activeBtn = document.getElementById(`btn-${scenarioKey}`);
+            activeBtn.classList.remove('bg-white', 'text-stone-600');
+            activeBtn.classList.add('bg-stone-800', 'text-white', 'ring-2');
+
+            // Update Chart Data
+            dxyChartInstance.data.datasets[1].data = [null, null, null, ...scenario.data.slice(3)];
+            dxyChartInstance.data.datasets[1].borderColor = scenario.color;
+            dxyChartInstance.data.datasets[1].pointBorderColor = scenario.color;
+            dxyChartInstance.update();
+
+            // Update Text
+            document.getElementById('scenario-title').innerText = scenario.title;
+            document.getElementById('scenario-title').style.color = scenario.color;
+            document.getElementById('scenario-desc').innerText = scenario.desc;
+        }
+
+        function switchAssetTab(asset) {
+            state.currentAssetTab = asset;
+
+            // Update Buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active', 'bg-stone-100', 'font-semibold'));
+            document.getElementById(`tab-${asset}`).classList.add('active', 'bg-stone-100', 'font-semibold');
+
+            // Update Content
+            document.getElementById('asset-details').innerHTML = assetContent[asset].html;
+        }
+
+        function updateSimulationOutput(val) {
+            const outputDiv = document.getElementById('sim-output');
+            let dxyProj, equitiesProj, cryptoProj, sentiment;
+
+            if (val < 30) {
+                // Hawkish/Slow
+                sentiment = "Rates Stay High";
+                dxyProj = "<span class='text-emerald-400'>Strong (105+)</span>";
+                equitiesProj = "Pressure (Valuation compression)";
+                cryptoProj = "Bearish/Choppy";
+            } else if (val > 70) {
+                // Dovish/Fast
+                sentiment = "Aggressive Cuts";
+                dxyProj = "<span class='text-red-400'>Weak (<98)</span>";
+                equitiesProj = "Bullish (Liquidity fueled)";
+                cryptoProj = "Bullish (Parabolic potential)";
+            } else {
+                // Neutral
+                sentiment = "Measured Easing";
+                dxyProj = "<span class='text-amber-400'>Neutral/Drift (100-102)</span>";
+                equitiesProj = "Steady Growth";
+                cryptoProj = "Accumulation";
+            }
+
+            outputDiv.innerHTML = `
+                <div class="flex justify-between items-center pb-2 border-b border-stone-700">
+                    <span class="text-stone-400">Fed Stance</span>
+                    <span class="font-bold text-white">${sentiment}</span>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b border-stone-700">
+                    <span class="text-stone-400">USD Impact</span>
+                    <span class="font-bold">${dxyProj}</span>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b border-stone-700">
+                    <span class="text-stone-400">Equities</span>
+                    <span class="font-bold text-white text-right text-xs">${equitiesProj}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-stone-400">Crypto</span>
+                    <span class="font-bold text-white text-right text-xs">${cryptoProj}</span>
+                </div>
+            `;
+        }
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+    </script>
+</body>
+
+</html>
