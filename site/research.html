@@ -458,6 +458,118 @@
             animation: slideOut 0.3s ease;
         }
 
+        /* Management Modal */
+        .management-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(7, 7, 10, 0.9);
+            backdrop-filter: blur(8px);
+            z-index: 3000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .management-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .management-panel {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+        }
+
+        .management-header {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .management-close {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .management-close:hover {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        .management-item {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .management-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .management-item-title {
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .management-item-category {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+        }
+
+        .management-item-select {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .management-item-select:hover,
+        .management-item-select:focus {
+            border-color: var(--accent);
+            outline: none;
+        }
+
         /* Empty State */
         .empty-state {
             grid-column: 1 / -1;
@@ -712,6 +824,7 @@
             <li><a href="index.html#products">Products</a></li>
             <li><a href="research.html" class="active">Research</a></li>
         </ul>
+        <button id="manageBtn" style="background: transparent; border: 1px solid var(--border); color: var(--text-secondary); padding: 0.6rem 1.25rem; border-radius: 4px; cursor: pointer; font-family: var(--font-mono); font-size: 0.85rem; transition: all 0.2s ease; margin-right: 1rem;" title="Manage card categories">Manage ⚙</button>
         <a href="#" class="nav-cta" data-dashboard-link="">Launch Dashboard →</a>
     </nav>
 
@@ -881,6 +994,17 @@
         </div>
     </div>
 
+    <!-- Management Modal -->
+    <div class="management-modal" id="managementModal">
+        <div class="management-panel">
+            <div class="management-header">
+                <span>Manage Reports</span>
+                <button class="management-close" id="closeManageBtn">✕</button>
+            </div>
+            <div id="managementList"></div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -999,9 +1123,8 @@
             }, 3000);
         }
 
-        const shareButtons = document.querySelectorAll('.card-share');
-
-        shareButtons.forEach(btn => {
+        // Function to attach share button listener
+        function attachShareListener(btn) {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -1017,6 +1140,98 @@
                     console.error('Clipboard error:', err);
                 });
             });
+        }
+
+        // Attach listeners to existing share buttons
+        const shareButtons = document.querySelectorAll('.card-share');
+        shareButtons.forEach(attachShareListener);
+
+        // Watch for new cards added via API and attach listeners
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                mutation.addedNodes.forEach((node) => {
+                    if (node.nodeType === 1) { // Element node
+                        const newShareBtn = node.querySelector('.card-share');
+                        if (newShareBtn && !newShareBtn.hasListener) {
+                            attachShareListener(newShareBtn);
+                            newShareBtn.hasListener = true;
+                        }
+                    }
+                });
+            });
+        });
+
+        // Start observing the research grid for new cards
+        const researchGrid = document.getElementById('researchGrid');
+        observer.observe(researchGrid, { childList: true });
+
+        // --- Category Management ---
+        const categories = ['macro', 'equity', 'crypto', 'strategy'];
+        const managementModal = document.getElementById('managementModal');
+        const managementList = document.getElementById('managementList');
+        const manageBtn = document.getElementById('manageBtn');
+        const closeManageBtn = document.getElementById('closeManageBtn');
+
+        function populateManagementList() {
+            managementList.innerHTML = '';
+            const allCards = document.querySelectorAll('.research-card');
+            
+            allCards.forEach((card) => {
+                const title = card.querySelector('.card-title').textContent;
+                const currentCategory = card.getAttribute('data-category');
+                const categorySpan = card.querySelector('.card-category');
+                
+                const item = document.createElement('div');
+                item.className = 'management-item';
+                
+                const info = document.createElement('div');
+                info.className = 'management-item-info';
+                info.innerHTML = `<div class="management-item-title">${title}</div><div class="management-item-category">Current: ${currentCategory}</div>`;
+                
+                const select = document.createElement('select');
+                select.className = 'management-item-select';
+                categories.forEach(cat => {
+                    const option = document.createElement('option');
+                    option.value = cat;
+                    option.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+                    if (cat === currentCategory) option.selected = true;
+                    select.appendChild(option);
+                });
+                
+                select.addEventListener('change', (e) => {
+                    const newCategory = e.target.value;
+                    card.setAttribute('data-category', newCategory);
+                    categorySpan.textContent = newCategory.toUpperCase();
+                    categorySpan.className = 'card-category';
+                    info.querySelector('.management-item-category').textContent = `Current: ${newCategory}`;
+                    showToast(`✓ Changed to ${newCategory.toUpperCase()}`);
+                });
+                
+                item.appendChild(info);
+                item.appendChild(select);
+                managementList.appendChild(item);
+            });
+        }
+
+        manageBtn.addEventListener('click', () => {
+            populateManagementList();
+            managementModal.classList.add('active');
+        });
+
+        closeManageBtn.addEventListener('click', () => {
+            managementModal.classList.remove('active');
+        });
+
+        managementModal.addEventListener('click', (e) => {
+            if (e.target === managementModal) {
+                managementModal.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && managementModal.classList.contains('active')) {
+                managementModal.classList.remove('active');
+            }
         });
     </script>
 
