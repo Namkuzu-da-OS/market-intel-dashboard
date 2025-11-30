@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-29T23:57:35.363Z",
+  "timestamp": "2025-11-30T00:27:33.215Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,29 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Overall market sentiment leans bullish, with short‑term volatility expected around earnings windows but a medium‑term upside if macro and crypto fundamentals remain supportive. Conviction level: high\n\n⚡ **Catalysts:** Earnings releases, Fed policy easing, low VIX, crypto on‑chain growth, network effects, consumer‑service upside, and tech sector technical strength\n\n🎯 **Action:** If SHOP breaks above its key resistance, target 5% higher; If earnings for key tech names hold support, target 3% above entry",
+    "narrative": "📊 **Consensus:** Overall market leaning bullish but with short‑term caution; conviction level: medium\n\n⚡ **Catalysts:** BTC range $500 k–$1 M, IWM monthly candle breakout, META April VWAP, NIO daily breaker block, HYPE December unlock of 2.59 % of $HYPE\n\n🎯 **Action:** If BTC breaks above $1 M, target $1.2 M; if BTC falls below $500 k, exit long. If IWM breaks its monthly candle breakout, target 5 % above breakout level. If META breaks April VWAP, target 3 % above VWAP. If NIO breaks daily breaker block, target 4 % above. If HYPE unlock triggers, target 2 % move.",
     "key_tickers": [
-      "SHOP"
+      "BTC",
+      "IWM",
+      "META",
+      "NIO",
+      "HYPE"
     ],
     "key_themes": [
-      "Earnings windows",
-      "Fed policy easing",
-      "Crypto on‑chain growth"
+      "Crypto range",
+      "Earnings volatility",
+      "Macro risk‑on",
+      "VIX trigger",
+      "Regulatory"
     ],
     "risk_factors": [
       "Earnings volatility",
-      "Support level breaches",
-      "Regulatory tightening"
+      "Crypto liquidity",
+      "Fed rate cuts",
+      "Crypto regulation",
+      "Tech drag"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "Testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
+    "swing_levels": "Testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 81267
+    "generation_time_ms": 95531
   },
   "trending": {
     "macro": [
