@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Cycles: Window Dressing & Tax-Loss Harvesting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    
+    <!-- Palette: Neon Fintech
+         Background: #0f172a (Slate 900)
+         Card Bg: #1e293b (Slate 800)
+         Text: #f8fafc (Slate 50)
+         Accent 1 (Cyan): #06b6d4
+         Accent 2 (Magenta): #d946ef
+         Accent 3 (Purple): #8b5cf6
+    -->
+
+    <style>
+        /* Custom Chart Container Styles per requirements */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px; /* Constrain max width for readability */
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px; /* Base height */
+            max-height: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Utility for Flowchart Connectors (Pure CSS, No SVG) */
+        .connector-line {
+            width: 2px;
+            background-color: #475569;
+            flex-grow: 1;
+            min-height: 20px;
+        }
+        
+        .arrow-down {
+            width: 0; 
+            height: 0; 
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #06b6d4;
+            margin: 0 auto;
+        }
+
+        /* Custom Scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+    </style>
+    
+    <!-- 
+        PLAN SUMMARY:
+        1. Intro: Define Window Dressing & Tax Loss.
+        2. Timeline: HTML vertical flow of the Q4-Q1 cycle.
+        3. Data Point: Window Dressing -> Goal: Compare -> Chart.js Bar (Fund buying behavior).
+        4. Data Point: Tax Loss Harvesting -> Goal: Relationships -> Plotly ScatterGL (Volume vs. Loss).
+        5. Data Point: Wash Sale Rule -> Goal: Process -> HTML/CSS Diagram.
+        6. Data Point: January Effect -> Goal: Change -> Chart.js Line (Recovery trends).
+    -->
+</head>
+<body class="bg-slate-900 text-slate-50 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation / Header -->
+    <header class="w-full bg-slate-800 shadow-lg border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+                Market Anomalies
+            </h1>
+            <span class="text-xs md:text-sm font-semibold text-slate-400 uppercase tracking-widest">
+                Q4 to Q1 Cycle Analysis
+            </span>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 space-y-16">
+
+        <!-- SECTION 1: INTRODUCTION & KEY METRICS -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+                <h2 class="text-4xl font-extrabold text-white">The Invisible Hands of Year-End</h2>
+                <p class="text-slate-300 text-lg leading-relaxed">
+                    As the fiscal year concludes, two powerful, non-fundamental forces distort stock prices: 
+                    <strong class="text-cyan-400">Window Dressing</strong> and <strong class="text-purple-400">Tax-Loss Harvesting</strong>. 
+                    Institutional managers polish their portfolios to impress stakeholders, while retail and professional investors alike 
+                    sell losing positions to offset tax liabilities.
+                </p>
+                <p class="text-slate-400">
+                    Understanding these mechanical flows allows investors to anticipate artificial price movements, 
+                    identifying potential buying opportunities in beaten-down stocks before the "January Effect" rotation occurs.
+                </p>
+            </div>
+            
+            <!-- KPI Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-slate-400 text-sm font-bold uppercase mb-2">Cycle Peak</div>
+                    <div class="text-3xl font-bold text-cyan-400">Dec 15 - 31</div>
+                    <p class="text-xs text-slate-500 mt-2">Highest volatility period for small-cap stocks.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-slate-400 text-sm font-bold uppercase mb-2">Avg. Drawdown</div>
+                    <div class="text-3xl font-bold text-purple-400">-4.5%</div>
+                    <p class="text-xs text-slate-500 mt-2">Historical dip for tax-loss candidates in Q4.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-slate-400 text-sm font-bold uppercase mb-2">Wash Sale Window</div>
+                    <div class="text-3xl font-bold text-pink-400">30 Days</div>
+                    <p class="text-xs text-slate-500 mt-2">Required wait period to claim tax losses.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-slate-400 text-sm font-bold uppercase mb-2">January Bounce</div>
+                    <div class="text-3xl font-bold text-emerald-400">+6.2%</div>
+                    <p class="text-xs text-slate-500 mt-2">Avg. excess return for Q4 "Losers".</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE CALENDAR TIMELINE (Structured HTML - NO SVG) -->
+        <section class="bg-slate-800 rounded-2xl p-8 shadow-xl border border-slate-700">
+            <h3 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-4">The Seasonal Roadmap</h3>
+            <p class="text-slate-300 mb-8">
+                The interaction between tax strategies and institutional reporting creates a predictable timeline of events starting in early Autumn and resolving in the New Year.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <!-- Step 1 -->
+                <div class="flex flex-col relative group">
+                    <div class="flex items-center mb-2">
+                        <span class="bg-slate-700 text-cyan-400 font-bold px-3 py-1 rounded text-xs">OCTOBER</span>
+                        <div class="h-[1px] bg-slate-600 flex-grow ml-2"></div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">Mutual Fund Year-End</h4>
+                    <p class="text-sm text-slate-400 mt-2">
+                        Many mutual funds have an Oct 31st fiscal year-end. Selling begins early to lock in realized losses for the reporting period.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col relative group">
+                    <div class="flex items-center mb-2">
+                        <span class="bg-slate-700 text-purple-400 font-bold px-3 py-1 rounded text-xs">NOVEMBER</span>
+                        <div class="h-[1px] bg-slate-600 flex-grow ml-2"></div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">Wash Sale Planning</h4>
+                    <p class="text-sm text-slate-400 mt-2">
+                        Investors identify "doubled-up" losers. They may double their position now to sell the original high-cost lot 31 days later.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col relative group">
+                    <div class="flex items-center mb-2">
+                        <span class="bg-slate-700 text-pink-400 font-bold px-3 py-1 rounded text-xs">DECEMBER</span>
+                        <div class="h-[1px] bg-slate-600 flex-grow ml-2"></div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">Peak Window Dressing</h4>
+                    <p class="text-sm text-slate-400 mt-2">
+                        Funds dump underperformers to hide them from annual reports and bid up high-momentum winners to show ownership.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col relative group">
+                    <div class="flex items-center mb-2">
+                        <span class="bg-slate-700 text-emerald-400 font-bold px-3 py-1 rounded text-xs">JANUARY</span>
+                        <div class="h-[1px] bg-slate-600 flex-grow ml-2"></div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">The Rotation</h4>
+                    <p class="text-sm text-slate-400 mt-2">
+                        Selling pressure abates. Capital recycles back into the sold-off stocks, often causing the "January Effect" rally.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: WINDOW DRESSING (Chart.js) -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-1 space-y-4">
+                <h3 class="text-2xl font-bold text-cyan-400">Window Dressing: The Portfolio Polish</h3>
+                <p class="text-slate-300">
+                    Window dressing is essentially "marketing via portfolio composition." Fund managers do not want their annual reports to show they held stocks that lost 40% during the year. 
+                </p>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li class="flex items-start">
+                        <span class="text-cyan-400 mr-2">➜</span>
+                        <span><strong>Buying Winners:</strong> Managers buy stocks that have already outperformed to show they "picked the winners."</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-pink-400 mr-2">➜</span>
+                        <span><strong>Hiding Losers:</strong> Underperforming stocks are sold off aggressively before the reporting date to remove them from the holdings list.</span>
+                    </li>
+                </ul>
+                <div class="p-4 bg-slate-800 rounded border border-l-4 border-l-cyan-400 border-slate-700 mt-4">
+                    <p class="text-xs italic text-slate-300">
+                        "If you see a fund heavily weighted in the year's top tech stock on Dec 31st, check if they owned it on Sept 30th. Often, they bought it at the top just to show it."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-2 bg-slate-800 rounded-xl p-6 border border-slate-700 shadow-lg">
+                <h4 class="text-lg font-bold text-white mb-4">Fund Activity: Last 5 Days of Quarter</h4>
+                <div class="chart-container">
+                    <canvas id="windowDressingChart"></canvas>
+                </div>
+                <p class="text-center text-xs text-slate-500 mt-2">
+                    Comparative buy/sell volume relative to 30-day average. Notice the divergence.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 4: TAX-LOSS HARVESTING (Plotly.js) -->
+        <section>
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <h3 class="text-2xl font-bold text-purple-400">Tax-Loss Harvesting: The Volume Spike</h3>
+                <p class="text-slate-300 mt-2">
+                    Investors sit on unrealized losses throughout the year. As December approaches, the realization sets in: selling these positions can offset gains elsewhere, reducing the tax bill. This creates a feedback loop where falling prices trigger more tax-motivated selling.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <!-- Context -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg lg:col-span-1">
+                    <h4 class="text-lg font-bold text-white mb-4">The "Loss Harvesting" Zone</h4>
+                    <p class="text-sm text-slate-300 mb-4">
+                        The chart visualizes the relationship between a stock's Year-to-Date (YTD) return and its trading volume in December.
+                    </p>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase">Top Right (High Return, Normal Volume)</span>
+                            <div class="h-1 w-full bg-slate-700 rounded mt-1 overflow-hidden">
+                                <div class="h-full bg-cyan-400 w-1/4"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1">Winners are held or window-dressed.</p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase">Bottom Left (Deep Loss, Extreme Volume)</span>
+                            <div class="h-1 w-full bg-slate-700 rounded mt-1 overflow-hidden">
+                                <div class="h-full bg-pink-500 w-3/4"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1">Deep losers see massive capitulation volume as investors exit for tax credits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plotly Chart -->
+                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-lg lg:col-span-2">
+                    <!-- Plotly Container -->
+                    <div id="taxLossPlot" class="w-full h-[450px]"></div>
+                    <p class="text-center text-xs text-slate-500 mt-2">
+                        Rendered via Plotly WebGL. Each point represents a market sector constituent.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: THE WASH SALE RULE (Flowchart via HTML/CSS) -->
+        <section class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-6 text-center">Navigating the "Wash Sale" Trap</h3>
+            <p class="text-slate-300 text-center max-w-2xl mx-auto mb-10">
+                The IRS disallows the tax deduction if you repurchase the "substantially identical" security within 30 days before or after the sale. This rule dictates the mechanics of the January Rebound.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-4">
+                
+                <!-- Step 1 -->
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="bg-slate-900 border-2 border-pink-500 p-6 rounded-lg text-center w-full shadow-[0_0_15px_rgba(236,72,153,0.2)]">
+                        <div class="text-3xl mb-2">📉</div>
+                        <h4 class="font-bold text-pink-400">Sell at Loss</h4>
+                        <p class="text-xs text-slate-400 mt-2">Investor sells Stock X on Dec 15th to lock in a $5,000 loss.</p>
+                    </div>
+                    <div class="connector-line"></div>
+                    <div class="arrow-down border-t-slate-600"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex-1 flex flex-col items-center md:mt-12">
+                    <div class="bg-slate-700 border border-slate-500 p-2 rounded text-center w-full mb-2">
+                        <span class="text-xs font-mono text-slate-300">WAIT 31 DAYS</span>
+                    </div>
+                    <div class="bg-slate-900 border-dashed border-2 border-slate-500 p-6 rounded-lg text-center w-full opacity-75">
+                        <div class="text-3xl mb-2">🛑</div>
+                        <h4 class="font-bold text-slate-300">The "Void"</h4>
+                        <p class="text-xs text-slate-500 mt-2">Cannot buy Stock X (or options) without triggering Wash Sale.</p>
+                    </div>
+                    <div class="connector-line"></div>
+                    <div class="arrow-down border-t-slate-600"></div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex-1 flex flex-col items-center md:mt-24">
+                    <div class="bg-slate-900 border-2 border-emerald-500 p-6 rounded-lg text-center w-full shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                        <div class="text-3xl mb-2">📈</div>
+                        <h4 class="font-bold text-emerald-400">Re-Entry</h4>
+                        <p class="text-xs text-slate-400 mt-2">Jan 16th: Investor buys back Stock X. Selling pressure is gone; stock rebounds.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 6: THE JANUARY EFFECT (Chart.js) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="order-2 md:order-1 chart-container">
+                <canvas id="januaryEffectChart"></canvas>
+            </div>
+            
+            <div class="order-1 md:order-2 space-y-4">
+                <h3 class="text-2xl font-bold text-emerald-400">The January Effect Rebound</h3>
+                <p class="text-slate-300">
+                    The "January Effect" is the tendency for small-cap stocks—specifically those that were battered in the prior year—to outperform the broader market in January.
+                </p>
+                <div class="bg-slate-800 p-4 rounded border-l-4 border-emerald-500">
+                    <h5 class="font-bold text-white text-sm">Why it happens:</h5>
+                    <p class="text-xs text-slate-400 mt-1">
+                        1. <strong class="text-slate-200">Selling Abates:</strong> The artificial tax-loss selling stops on Jan 1.
+                        <br>
+                        2. <strong class="text-slate-200">Cash Deployment:</strong> Investors take the cash raised in December and re-deploy it.
+                        <br>
+                        3. <strong class="text-slate-200">Bonus Investing:</strong> Year-end bonuses are often invested in January.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="border-t border-slate-700 pt-8 pb-4 text-center">
+            <p class="text-slate-500 text-xs">
+                Generated based on general market structure research. This infographic is for educational purposes only and does not constitute financial advice.
+                <br>
+                Palette: Neon Fintech. Libraries: Chart.js, Plotly.js, Tailwind CSS. No SVGs used.
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- SCRIPTS -->
+    <script>
+        // --- UTILITY: Label Wrapping for Chart.js ---
+        // Splits long strings into arrays of shorter strings for Chart.js axes
+        function wrapLabels(label) {
+            if (typeof label !== 'string' || label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + 1 + words[i].length <= 16) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- UTILITY: Common Tooltip Config for Chart.js ---
+        // Handles multi-line labels in tooltips
+        const commonTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- CHART 1: Window Dressing (Grouped Bar) ---
+        const ctxWindow = document.getElementById('windowDressingChart').getContext('2d');
+        
+        // Data prep
+        const rawLabelsWindow = [
+            "High Momentum Tech Leaders", 
+            "Stable Blue Chip Dividend Payers", 
+            "Underperforming Retail Sector", 
+            "Speculative Growth Losers"
+        ];
+        const wrappedLabelsWindow = rawLabelsWindow.map(wrapLabels);
+
+        new Chart(ctxWindow, {
+            type: 'bar',
+            data: {
+                labels: wrappedLabelsWindow,
+                datasets: [
+                    {
+                        label: 'Normal Avg Volume',
+                        data: [100, 95, 90, 105],
+                        backgroundColor: '#334155', // Slate 700
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'End-of-Quarter Volume',
+                        data: [145, 110, 65, 40], // Highs get bought, lows get sold
+                        backgroundColor: [
+                            '#06b6d4', // Cyan (Buying)
+                            '#06b6d4',
+                            '#d946ef', // Pink (Selling - visually lower here but styled via bar height)
+                            '#d946ef'
+                        ],
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#cbd5e1' }
+                    },
+                    tooltip: commonTooltipConfig
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#334155' },
+                        ticks: { color: '#94a3b8' },
+                        title: { display: true, text: 'Relative Volume Index', color: '#64748b' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#94a3b8' }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 2: Tax-Loss Harvesting (Plotly ScatterGL) ---
+        // Simulating data: High negative YTD returns correlate with High Dec Volume
+        
+        // Generate synthetic data
+        const count = 150;
+        const ytdReturns = [];
+        const decVolume = [];
+        const sizes = [];
+        const colors = [];
+
+        for (let i = 0; i < count; i++) {
+            // Random YTD return between -60% and +40%
+            let ret = (Math.random() * 100) - 60;
+            ytdReturns.push(ret);
+
+            // Volume logic: If return is low (<-20%), volume spikes (Tax Loss Selling)
+            // If return is high (>20%), volume is moderate/high (Window Dressing)
+            // If return is flat, volume is low.
+            let volBase = Math.random() * 50;
+            let volSpike = 0;
+            
+            if (ret < -20) {
+                volSpike = Math.abs(ret) * 3; // Massive spike for losers
+                colors.push('#d946ef'); // Pink for Tax Loss
+            } else if (ret > 20) {
+                volSpike = ret * 1.5; // Moderate spike for winners
+                colors.push('#06b6d4'); // Cyan for Window Dressing
+            } else {
+                colors.push('#475569'); // Grey for neutral
+            }
+            
+            decVolume.push(volBase + volSpike);
+            sizes.push(6 + (Math.abs(ret) / 5)); // Bubble size
+        }
+
+        const trace1 = {
+            x: ytdReturns,
+            y: decVolume,
+            mode: 'markers',
+            type: 'scattergl', // Using WebGL
+            marker: {
+                size: sizes,
+                color: colors,
+                opacity: 0.8,
+                line: { color: '#0f172a', width: 1 }
+            },
+            text: ytdReturns.map(val => `YTD: ${val.toFixed(1)}%`), // Simple hover
+            hoverinfo: 'x+y+text'
+        };
+
+        const layout = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            font: { color: '#cbd5e1' },
+            margin: { t: 20, b: 40, l: 60, r: 20 },
+            xaxis: { 
+                title: 'YTD Return (%)', 
+                gridcolor: '#334155',
+                zerolinecolor: '#94a3b8'
+            },
+            yaxis: { 
+                title: 'Relative Dec Trading Volume', 
+                gridcolor: '#334155',
+                zerolinecolor: '#94a3b8'
+            },
+            showlegend: false
+        };
+
+        Plotly.newPlot('taxLossPlot', [trace1], layout, {responsive: true, displayModeBar: false});
+
+
+        // --- CHART 3: January Effect (Line Chart) ---
+        const ctxJan = document.getElementById('januaryEffectChart').getContext('2d');
+
+        // Labels: Weeks
+        const rawLabelsJan = ["Dec Week 1", "Dec Week 2", "Dec Week 3", "Dec Week 4", "Jan Week 1", "Jan Week 2", "Jan Week 3", "Jan Week 4"];
+        // wrap labels usually not needed for short dates, but running function for safety compliance
+        const wrappedLabelsJan = rawLabelsJan.map(wrapLabels);
+
+        new Chart(ctxJan, {
+            type: 'line',
+            data: {
+                labels: wrappedLabelsJan,
+                datasets: [
+                    {
+                        label: 'Tax-Loss Losers (Small Cap)',
+                        data: [100, 96, 92, 88, 93, 98, 104, 108], // The 'V' shape recovery
+                        borderColor: '#d946ef', // Pink
+                        backgroundColor: 'rgba(217, 70, 239, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        fill: true
+                    },
+                    {
+                        label: 'S&P 500 (Large Cap)',
+                        data: [100, 101, 100.5, 101, 101.5, 102, 102.5, 103], // Steady
+                        borderColor: '#06b6d4', // Cyan
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        tension: 0.4,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#cbd5e1' }
+                    },
+                    tooltip: commonTooltipConfig
+                },
+                scales: {
+                    y: {
+                        grid: { color: '#334155' },
+                        ticks: { color: '#94a3b8' },
+                        title: { display: true, text: 'Price Index (Base=100)', color: '#64748b' }
+                    },
+                    x: {
+                        grid: { color: '#334155' },
+                        ticks: { color: '#94a3b8' }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

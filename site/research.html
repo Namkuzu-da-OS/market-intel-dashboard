@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Library | Scout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Outfit:wght@300;400;500;600&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #07070a;
@@ -647,7 +642,7 @@
             <li><a href="index.html#products">Products</a></li>
             <li><a href="research.html" class="active">Research</a></li>
         </ul>
-        <a href="#" onclick="openDashboardModal(); return false;" class="nav-cta">Launch Dashboard →</a>
+        <a href="#" class="nav-cta" data-dashboard-link="">Launch Dashboard →</a>
     </nav>
 
     <!-- Page Header -->
@@ -670,6 +665,24 @@
 
     <!-- Research Grid -->
     <div class="research-grid" id="researchGrid">
+        <a href="reports/strategy/2025-11/the-invisible-hands-of-year-end.html" class="research-card" data-category="strategy">
+            <div class="card-image">
+                <span class="card-image-icon">📄</span>
+            </div>
+            <div class="card-content">
+                <div class="card-meta">
+                    <span class="card-category">STRATEGY</span>
+                    <span class="card-date">2025-11-30</span>
+                </div>
+                <h3 class="card-title">The Invisible Hands of Year-End</h3>
+                <p class="card-excerpt">As the fiscal year concludes, two powerful, non-fundamental forces distort stock prices: Window Dressing and Tax-Loss Harvesting. Institutional managers polish their portfolios to impress stakeholders, while retail and professional investors alike sell losing positions to offset tax liabilities.</p>
+                <div class="card-footer">
+                    <span class="card-read-time">5 min read</span>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+        </a>
+      
         <a href="reports/macro/2025-11/mstr-analysis.html" class="research-card" data-category="macro">
             <div class="card-image">
                 <span class="card-image-icon">📄</span>
@@ -759,7 +772,7 @@
                 <span class="footer-text">Scout Market Intelligence</span>
             </div>
             <div class="footer-links">
-                <a href="../dashboard.html">Dashboard</a>
+                <a href="#" data-dashboard-link="">Dashboard</a>
                 <a href="index.html">Home</a>
                 <a href="https://github.com" target="_blank">GitHub</a>
             </div>
@@ -795,6 +808,14 @@
         const iframe = document.getElementById('reportFrame');
         const closeBtn = document.getElementById('closeModal');
         const modalTitle = document.getElementById('modalTitle');
+        const DASHBOARD_URL = 'https://namkuzu-da-os.github.io/market-intel-dashboard/dashboard.html';
+
+        function openModalWith(url, title) {
+            iframe.src = url;
+            modalTitle.textContent = title;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
 
         // Open Modal
         cards.forEach(card => {
@@ -803,10 +824,16 @@
                 const url = card.getAttribute('href');
                 const title = card.querySelector('.card-title').textContent;
 
-                iframe.src = url;
-                modalTitle.textContent = title;
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                openModalWith(url, title);
+            });
+        });
+
+        const dashboardLinks = document.querySelectorAll('[data-dashboard-link]');
+
+        dashboardLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                openDashboardModal();
             });
         });
 
@@ -837,16 +864,14 @@
 
         // Open Dashboard in Modal
         function openDashboardModal() {
-            iframe.src = '../dashboard.html';
-            modalTitle.textContent = 'Market Intelligence Dashboard';
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            openModalWith(DASHBOARD_URL, 'Market Intelligence Dashboard');
         }
     </script>
 
 
 
 
-</body>
 
-</html>
+
+
+</body></html>
