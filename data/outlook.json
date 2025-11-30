@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-11-30T00:27:33.215Z",
+  "timestamp": "2025-11-30T01:48:51.230Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 68,
     "sources": {
       "social": {
-        "bullish": 41,
+        "bullish": 46,
         "bearish": 20,
-        "neutral": 87,
-        "total": 148,
-        "pct": 28
+        "neutral": 93,
+        "total": 159,
+        "pct": 29
       },
       "news": {
         "bullish": 2,
@@ -36,37 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Overall market leaning bullish but with short‑term caution; conviction level: medium\n\n⚡ **Catalysts:** BTC range $500 k–$1 M, IWM monthly candle breakout, META April VWAP, NIO daily breaker block, HYPE December unlock of 2.59 % of $HYPE\n\n🎯 **Action:** If BTC breaks above $1 M, target $1.2 M; if BTC falls below $500 k, exit long. If IWM breaks its monthly candle breakout, target 5 % above breakout level. If META breaks April VWAP, target 3 % above VWAP. If NIO breaks daily breaker block, target 4 % above. If HYPE unlock triggers, target 2 % move.",
+    "narrative": "📊 **Consensus:** The market is expected to remain range‑bound with moderate upside potential, driven by structural growth in crypto, AI, and green‑tech, but tempered by earnings‑driven volatility and fragile support levels (high conviction).\n\n⚡ **Catalysts:** • Structural crypto growth – Layer‑1 TVL expansion, regulatory clarity, and Bitcoin ETF inflows (BTC, ETH)\n• AI & green‑tech demand – EV batteries, AI‑chip production, renewable deployment (NVDA, AMD, META)\n• Earnings calendar – key tech names (NVDA, AMD, META) and potential support tests\n• Risk sentiment – VIX at 16.35 and macro‑easing backdrop\n\n🎯 **Action:** If key tech earnings beat expectations and multi‑time‑frame support holds, consider a bullish entry with a target of 5‑10% upside; if support breaks or earnings disappoint, exit or short‑cover to mitigate risk.",
     "key_tickers": [
-      "BTC",
-      "IWM",
+      "NVDA",
+      "AMD",
       "META",
-      "NIO",
-      "HYPE"
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "Crypto range",
-      "Earnings volatility",
-      "Macro risk‑on",
-      "VIX trigger",
-      "Regulatory"
+      "structural crypto growth",
+      "earnings risk",
+      "green‑tech & AI expansion"
     ],
     "risk_factors": [
-      "Earnings volatility",
-      "Crypto liquidity",
-      "Fed rate cuts",
-      "Crypto regulation",
-      "Tech drag"
+      "earnings volatility",
+      "support level fragility",
+      "stop‑loss cascades",
+      "regulatory crackdowns",
+      "debt‑driven inflation"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "Testing resistance",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 95531
+    "generation_time_ms": 72671
   },
   "trending": {
     "macro": [
@@ -151,7 +149,7 @@
         }
       },
       {
-        "ticker": "MARA",
+        "ticker": "ETH",
         "mentions": 1,
         "sentiment_score": 0.75,
         "sentiment_label": "Bullish",
@@ -165,6 +163,19 @@
       }
     ],
     "other": [
+      {
+        "ticker": "TSLA",
+        "mentions": 4,
+        "sentiment_score": 0.2,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 20,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 4
+        }
+      },
       {
         "ticker": "OPEN",
         "mentions": 3,
@@ -192,19 +203,6 @@
         }
       },
       {
-        "ticker": "TSLA",
-        "mentions": 3,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 3
-        }
-      },
-      {
         "ticker": "MSFT",
         "mentions": 2,
         "sentiment_score": 0.425,
@@ -218,7 +216,7 @@
         }
       },
       {
-        "ticker": "META",
+        "ticker": "AVGO",
         "mentions": 2,
         "sentiment_score": 0.4,
         "sentiment_label": "Bullish",
@@ -237,7 +235,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 28,
+    "sentiment_bullish_pct": 29,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
