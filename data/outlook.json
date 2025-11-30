@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-11-30T02:32:53.218Z",
+  "timestamp": "2025-11-30T13:27:45.477Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 69,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 48,
-        "bearish": 20,
-        "neutral": 98,
-        "total": 166,
-        "pct": 29
+        "bullish": 51,
+        "bearish": 18,
+        "neutral": 87,
+        "total": 156,
+        "pct": 33
       },
       "news": {
-        "bullish": 2,
-        "bearish": 2,
-        "neutral": 4,
+        "bullish": 1,
+        "bearish": 1,
+        "neutral": 6,
         "total": 8,
-        "pct": 25
+        "pct": 13
       },
       "video": {
-        "bullish": 2,
+        "bullish": 1,
         "bearish": 1,
-        "neutral": 2,
-        "total": 5,
-        "pct": 40
+        "neutral": 1,
+        "total": 3,
+        "pct": 33
       },
       "chat": {
         "bullish": 0,
@@ -36,46 +36,39 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction bullish stance across major sources, emphasizing a cautious upside driven by crypto breakout signals, regulatory clarity, and earnings‑related volatility.\n\n⚡ **Catalysts:** Gold breakout at 4263.2/4263.1 with a December ATH target of 4398, BlackRock Bitcoin ETF approval, $900 B inflow into U.S. equities, SEC/Treasury regulatory announcements, Fed policy signals, inflation data, stablecoin reserve growth, and core Layer‑1 chain momentum.\n\n🎯 **Action:** If XAU breaks 4263.2, target 4398; if BTC ETF approval triggers a breakout, consider a short‑term bullish bias on BTC pending confirmation.",
+    "narrative": "📊 **Consensus:** High conviction bullish outlook driven by Fed easing, crypto institutional momentum, and silver supply tightening. ⚡ **Catalysts:** Fed policy shift, Binance liquidity surge, gold breakout at $4,263.2 (target $4,398), December HYPE unlock, Black Friday retail rally, silver ETF upside. 🎯 **Action:** If XAUUSD breaks $4,263.2, target $4,398; if BTC pulls back to key support (per source analysis), target $28,000.",
     "key_tickers": [
-      "XAU",
-      "BTC"
+      "XAUUSD",
+      "XAGUSD",
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "Crypto breakout",
-      "Tech earnings volatility",
-      "Regulatory clarity"
+      "Fed policy easing",
+      "Crypto institutional momentum",
+      "Silver supply tightening",
+      "Gold breakout",
+      "Black Friday retail rally"
     ],
     "risk_factors": [
-      "Macro debt & inflation",
-      "Regulatory tightening",
-      "Earnings‑driven pullbacks"
+      "Debt‑to‑tax‑revenue ratio",
+      "Crypto volatility",
+      "Potential Fed rate cuts",
+      "December HYPE unlock",
+      "Market volatility around earnings"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "XAU 4263.2 support, 4398 resistance",
+    "intraday_levels": "Gold $4,263.2 resistance, $4,398 target",
     "swing_bias": "BULLISH",
-    "swing_levels": "XAU 4263.2 support, 4398 resistance",
+    "swing_levels": "Gold $4,263.2 resistance, $4,398 target",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 127933
+    "generation_time_ms": 73149
   },
   "trending": {
     "macro": [
-      {
-        "ticker": "SPY",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 2
-        }
-      },
       {
         "ticker": "IWM",
         "mentions": 1,
@@ -159,19 +152,6 @@
     ],
     "other": [
       {
-        "ticker": "TSLA",
-        "mentions": 4,
-        "sentiment_score": 0.2,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 20,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 4
-        }
-      },
-      {
         "ticker": "OPEN",
         "mentions": 3,
         "sentiment_score": 0.4,
@@ -185,7 +165,7 @@
         }
       },
       {
-        "ticker": "GOOGL",
+        "ticker": "TSLA",
         "mentions": 3,
         "sentiment_score": 0.267,
         "sentiment_label": "Bullish",
@@ -222,6 +202,19 @@
           "neutral": 1,
           "total": 2
         }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 2,
+        "sentiment_score": 0.4,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
       }
     ]
   },
@@ -230,7 +223,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 29,
+    "sentiment_bullish_pct": 33,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
