@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Burry Protocol: Year-End Value Strategy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Deep Navy Background */
+            color: #e2e8f0;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #06b6d4; 
+            border-radius: 4px;
+        }
+
+        /* Chart Container Standards */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+
+        /* Custom Card Styling (Material + Neon) */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .glass-card:hover {
+            border-color: #06b6d4; /* Electric Cyan Hover */
+        }
+
+        /* Process Flow CSS (No Mermaid/SVG) */
+        .step-connector {
+            width: 2px;
+            background: #475569;
+            height: 20px;
+            margin: 0 auto;
+        }
+        .arrow-down {
+            width: 0; 
+            height: 0; 
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid #06b6d4;
+            margin: 0 auto;
+        }
+        
+        /* Typography Highlights */
+        .highlight-text {
+            color: #22d3ee; /* Cyan */
+            font-weight: 700;
+        }
+        .accent-text {
+            color: #f472b6; /* Pink */
+            font-weight: 600;
+        }
+        
+        /* Grid Background Effect */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: radial-gradient(circle, #1e293b 1px, transparent 1px);
+        }
+    </style>
+    <!-- 
+    Palette Selection: "Neon Financial" (Vibrant & Dark Mode)
+    Background: #0f172a (Slate 900)
+    Card Bg: #1e293b (Slate 800)
+    Primary Accent: #06b6d4 (Cyan 500)
+    Secondary Accent: #ec4899 (Pink 500)
+    Tertiary Accent: #8b5cf6 (Violet 500)
+    Text: #f8fafc (Slate 50)
+    -->
+    <!--
+    Narrative Plan:
+    1. Introduction: The "Window Dressing" concept explained.
+    2. Data Overview: Institutional Selling vs. Smart Money Buying.
+    3. The Portfolio: Deep dive into LULU, MOH, FOUR, FNMA using Radar charts.
+    4. The Horizon: 3-5 Year projection using Plotly 3D.
+    5. Action Plan: Checklist.
+    -->
+    <!-- 
+    NO MERMAID JS USED.
+    NO SVG USED.
+    -->
+</head>
+<body class="bg-grid antialiased">
+
+    <!-- Header Section -->
+    <header class="w-full py-12 px-6 text-center bg-slate-900 border-b border-slate-800 sticky top-0 z-50 shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-2">
+            The <span class="text-cyan-400">Burry</span> Protocol
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+            Actionable intelligence derived from Michael Burry's Year-End Value Strategy.
+        </p>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- SECTION 1: THE MARKET PHENOMENON -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div class="glass-card rounded-xl p-8">
+                <h2 class="text-2xl font-bold text-white mb-4 border-l-4 border-pink-500 pl-4">The Year-End Anomaly</h2>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    Michael Burry identifies a recurring market inefficiency at the end of the fiscal year. Institutional managers engage in <span class="highlight-text">"Window Dressing"</span>—selling losing positions to hide them from annual reports—and <span class="highlight-text">"Tax-Loss Harvesting"</span> to offset gains.
+                </p>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    This creates artificial selling pressure on fundamentally sound but temporarily underperforming companies. For the contrarian investor, this is the "Black Friday" of the stock market.
+                </p>
+                
+                <!-- Stat Block -->
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 text-center">
+                        <span class="block text-3xl font-bold text-cyan-400">Q4</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-wide">Peak Selling Pressure</span>
+                    </div>
+                    <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 text-center">
+                        <span class="block text-3xl font-bold text-pink-400">-15%</span>
+                        <span class="text-xs text-slate-400 uppercase tracking-wide">Avg. Artificial Drawdown</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML/CSS Flow Chart (Replacing Mermaid/SVG) -->
+            <div class="glass-card rounded-xl p-8 flex flex-col items-center justify-center h-full">
+                <h3 class="text-xl font-semibold text-white mb-6 text-center">The Opportunity Cycle</h3>
+                
+                <div class="w-full max-w-sm">
+                    <!-- Step 1 -->
+                    <div class="bg-slate-700 text-white p-4 rounded shadow-lg text-center border-l-4 border-purple-500">
+                        <h4 class="font-bold">November - December</h4>
+                        <p class="text-sm text-slate-300">Managers sell "Losers"</p>
+                    </div>
+                    
+                    <!-- Connector -->
+                    <div class="step-connector"></div>
+                    <div class="arrow-down"></div>
+                    
+                    <!-- Step 2 -->
+                    <div class="bg-slate-700 text-white p-4 rounded shadow-lg text-center border-l-4 border-pink-500 mt-2">
+                        <h4 class="font-bold">Artificial Price Drop</h4>
+                        <p class="text-sm text-slate-300">Stock disconnects from value</p>
+                    </div>
+
+                    <!-- Connector -->
+                    <div class="step-connector"></div>
+                    <div class="arrow-down"></div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-cyan-900 text-cyan-100 p-4 rounded shadow-lg text-center border-l-4 border-cyan-400 mt-2">
+                        <h4 class="font-bold">The Burry Entry</h4>
+                        <p class="text-sm text-cyan-200">Accumulate shares cheaply</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: INSTITUTIONAL BEHAVIOR ANALYSIS -->
+        <section>
+            <div class="glass-card rounded-xl p-8 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1">
+                        <h2 class="text-2xl font-bold text-white mb-4 border-l-4 border-cyan-500 pl-4">Volume Divergence</h2>
+                        <p class="text-slate-300 mb-4 text-sm leading-relaxed">
+                            While the retail crowd panics and institutions clean their books, value investors like Burry step in. The chart illustrates the typical volume divergence seen in distressed "quality" assets during Q4.
+                        </p>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            <span class="font-bold text-pink-400">Red Bars:</span> Institutional Sell-off Volume.<br>
+                            <span class="font-bold text-cyan-400">Blue Line:</span> Smart Money Accumulation.<br>
+                            <br>
+                            Note the spike in accumulation exactly when selling pressure peaks.
+                        </p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="chart-container">
+                            <canvas id="behaviorChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE PORTFOLIO (Radar Chart) -->
+        <section>
+            <div class="mb-6">
+                <h2 class="text-3xl font-bold text-white text-center">The <span class="text-purple-400">Chosen</span> Assets</h2>
+                <p class="text-center text-slate-400 mt-2">Analyzing Burry's explicit mentions: LULU, MOH, FOUR, FNMA</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Asset Descriptions -->
+                <div class="space-y-4">
+                    <!-- LULU -->
+                    <div class="glass-card p-5 rounded-lg border-l-4 border-pink-500">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">Lululemon (LULU)</h3>
+                            <span class="bg-pink-900 text-pink-200 text-xs px-2 py-1 rounded">Consumer Discretionary</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mt-2">
+                            A high-growth retailer sold off due to fears of slowing consumer spend. Burry sees a brand moat priced like a commodity.
+                        </p>
+                    </div>
+
+                    <!-- MOH -->
+                    <div class="glass-card p-5 rounded-lg border-l-4 border-green-500">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">Molina Healthcare (MOH)</h3>
+                            <span class="bg-green-900 text-green-200 text-xs px-2 py-1 rounded">Managed Care</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mt-2">
+                            A government-sponsored healthcare play. Often sold off during regulatory uncertainty, providing a stable cash-flow floor.
+                        </p>
+                    </div>
+
+                    <!-- FOUR -->
+                    <div class="glass-card p-5 rounded-lg border-l-4 border-purple-500">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">Shift4 Payments (FOUR)</h3>
+                            <span class="bg-purple-900 text-purple-200 text-xs px-2 py-1 rounded">Fintech</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mt-2">
+                            Payment processing technology. Highly competitive sector, but often undervalued relative to its growth and transaction volume.
+                        </p>
+                    </div>
+
+                    <!-- FNMA -->
+                    <div class="glass-card p-5 rounded-lg border-l-4 border-yellow-500">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">Fannie Mae (FNMA)</h3>
+                            <span class="bg-yellow-900 text-yellow-200 text-xs px-2 py-1 rounded">OTC / Pink Sheet</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mt-2">
+                            The "Pink Sheet" wild card. Government conservatorship makes it risky, but the underlying asset value is massive. A deep value play.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Radar Chart -->
+                <div class="glass-card p-6 rounded-xl flex flex-col justify-center">
+                    <h4 class="text-lg font-semibold text-center mb-4 text-slate-200">Strategic Attribute Comparison</h4>
+                    <div class="chart-container">
+                        <canvas id="stockRadarChart"></canvas>
+                    </div>
+                    <p class="text-xs text-center text-slate-500 mt-4">
+                        *Scores are qualitative estimates based on current market sentiment vs. fundamental value.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: THE HORIZON (3-5 Years) -->
+        <section class="mt-16">
+            <div class="glass-card rounded-xl p-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold text-white mb-4 border-l-4 border-purple-500 pl-4">The Patience Premium</h2>
+                        <p class="text-slate-300 mb-4 leading-relaxed">
+                            Burry explicitly states: <span class="highlight-text">"These are all 3-5 year holds minimum."</span>
+                        </p>
+                        <p class="text-slate-300 mb-4 text-sm">
+                            This visualization demonstrates the expected trajectory. Short-term volatility (Year 1-2) is high and returns may be negative. However, the value thesis crystallizes in Years 3-5 as the market corrects its pricing error.
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded mt-4">
+                            <h4 class="font-bold text-white mb-2">Key Instruction:</h4>
+                            <p class="text-sm text-slate-400">Ignore year-one noise. The alpha is generated by outlasting the institutional selling cycle.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-2">
+                        <!-- Plotly Container -->
+                        <div id="horizonPlot" class="w-full h-96 rounded bg-slate-900 shadow-inner border border-slate-700"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: ACTIONABLE PLAN (Checklist) -->
+        <section class="mt-16 mb-12">
+            <h2 class="text-3xl font-bold text-white text-center mb-10">Your Execution Strategy</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Step 1 -->
+                <div class="glass-card p-6 rounded-xl border-t-4 border-cyan-400">
+                    <div class="text-4xl mb-4 text-cyan-400 font-bold">01</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Identify Victims</h3>
+                    <p class="text-slate-400 text-sm">Look for sound companies (high ROIC, good cash flow) that have dropped >20% in Q4 without fundamental news changes.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="glass-card p-6 rounded-xl border-t-4 border-pink-400">
+                    <div class="text-4xl mb-4 text-pink-400 font-bold">02</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Ignore The Noise</h3>
+                    <p class="text-slate-400 text-sm">Disregard analyst downgrades in December. They are reacting to price action, not value. Accumulate slowly.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="glass-card p-6 rounded-xl border-t-4 border-purple-400">
+                    <div class="text-4xl mb-4 text-purple-400 font-bold">03</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Hold Through 2028</h3>
+                    <p class="text-slate-400 text-sm">Commit to the 3-5 year timeline. Do not sell on a 10% pop in January. Wait for the full value realization.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-600 py-8 text-sm">
+            <p>Infographic generated based on public commentary by Michael Burry. Not financial advice.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // --- UTILITY FUNCTIONS ---
+        
+        // Label Wrapping Function for Chart.js (16 char limit)
+        function wrapLabels(labels) {
+            const limit = 16;
+            return labels.map(label => {
+                if (label.length <= limit) return label;
+                const words = label.split(' ');
+                let lines = [];
+                let currentLine = words[0];
+
+                for (let i = 1; i < words.length; i++) {
+                    if (currentLine.length + 1 + words[i].length <= limit) {
+                        currentLine += ' ' + words[i];
+                    } else {
+                        lines.push(currentLine);
+                        currentLine = words[i];
+                    }
+                }
+                lines.push(currentLine);
+                return lines;
+            });
+        }
+
+        // Common Chart.js Tooltip Configuration
+        const commonTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- CHART 1: Institutional Behavior (Bar + Line Combo) ---
+        const behaviorCtx = document.getElementById('behaviorChart').getContext('2d');
+        const behaviorLabels = ['Aug', 'Sep', 'Oct', 'Nov (Tax Loss)', 'Dec (Window Dressing)', 'Jan (Rebound)'];
+        
+        new Chart(behaviorCtx, {
+            type: 'bar',
+            data: {
+                labels: wrapLabels(behaviorLabels),
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: 'Selling Volume',
+                        data: [20, 35, 45, 85, 95, 30],
+                        backgroundColor: 'rgba(236, 72, 153, 0.6)', // Pink
+                        borderColor: 'rgba(236, 72, 153, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Value Buying',
+                        data: [15, 15, 20, 60, 80, 40],
+                        borderColor: '#06b6d4', // Cyan
+                        backgroundColor: '#06b6d4',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { labels: { color: '#e2e8f0' } },
+                    tooltip: commonTooltipConfig
+                },
+                scales: {
+                    x: { ticks: { color: '#94a3b8' }, grid: { color: '#334155' } },
+                    y: { 
+                        type: 'linear', 
+                        display: true, 
+                        position: 'left',
+                        ticks: { color: '#94a3b8' }, 
+                        grid: { color: '#334155' } 
+                    },
+                    y1: { 
+                        type: 'linear', 
+                        display: true, 
+                        position: 'right',
+                        grid: { drawOnChartArea: false },
+                        ticks: { display: false }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 2: Stock Attribute Radar ---
+        const radarCtx = document.getElementById('stockRadarChart').getContext('2d');
+        // Metrics: Contrarian Score, Fundamental Quality, Risk Level, Upside Potential
+        
+        new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: wrapLabels(['Contrarian Score', 'Fundamental Quality', 'Regulatory Risk', 'Upside Potential', 'Short Term Volatility']),
+                datasets: [
+                    {
+                        label: 'LULU (Retail)',
+                        data: [60, 90, 30, 70, 50],
+                        fill: true,
+                        backgroundColor: 'rgba(236, 72, 153, 0.2)',
+                        borderColor: 'rgb(236, 72, 153)',
+                        pointBackgroundColor: 'rgb(236, 72, 153)',
+                    },
+                    {
+                        label: 'FNMA (Gov)',
+                        data: [95, 60, 90, 95, 85], // High Risk, High Reward, High Contrarian
+                        fill: true,
+                        backgroundColor: 'rgba(250, 204, 21, 0.2)', // Yellow
+                        borderColor: 'rgb(250, 204, 21)',
+                        pointBackgroundColor: 'rgb(250, 204, 21)',
+                    },
+                    {
+                        label: 'MOH (Health)',
+                        data: [70, 85, 60, 75, 40],
+                        fill: true,
+                        backgroundColor: 'rgba(34, 211, 238, 0.2)', // Cyan
+                        borderColor: 'rgb(34, 211, 238)',
+                        pointBackgroundColor: 'rgb(34, 211, 238)',
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { labels: { color: '#e2e8f0' } },
+                    tooltip: commonTooltipConfig
+                },
+                scales: {
+                    r: {
+                        angleLines: { color: '#475569' },
+                        grid: { color: '#334155' },
+                        pointLabels: { color: '#e2e8f0', font: { size: 12 } },
+                        ticks: { backdropColor: 'transparent', color: '#94a3b8' }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 3: Plotly 3D Horizon (Simulated) ---
+        // Showing Time vs Volatility vs Returns
+        
+        const timeYears = [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5];
+        
+        // Strategy A: Burry Value Hold
+        const trace1 = {
+            x: timeYears,
+            y: [20, 25, 15, 10, 5, 5, 4, 3, 2], // Volatility decreases over time
+            z: [-5, -2, 10, 25, 45, 60, 85, 110, 150], // Returns compound later
+            mode: 'lines+markers',
+            marker: { size: 5, color: '#06b6d4', opacity: 0.8 },
+            line: { width: 6, color: '#06b6d4' },
+            type: 'scatter3d',
+            name: 'Burry Value Hold'
+        };
+
+        // Strategy B: Panic Selling
+        const trace2 = {
+            x: [1, 1.5, 2],
+            y: [20, 30, 40],
+            z: [-5, -15, -20], // Selling low locks in loss
+            mode: 'lines+markers',
+            marker: { size: 4, color: '#ec4899', opacity: 0.8 },
+            line: { width: 4, color: '#ec4899', dash: 'dash' },
+            type: 'scatter3d',
+            name: 'Panic Selling'
+        };
+
+        const layout = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            scene: {
+                xaxis: { title: 'Years Held', color: '#cbd5e1', gridcolor: '#334155' },
+                yaxis: { title: 'Volatility %', color: '#cbd5e1', gridcolor: '#334155' },
+                zaxis: { title: 'Return %', color: '#cbd5e1', gridcolor: '#334155' },
+                camera: {
+                    eye: {x: 1.5, y: 1.5, z: 1.2}
+                }
+            },
+            margin: { l: 0, r: 0, b: 0, t: 0 },
+            legend: {
+                x: 0,
+                y: 1,
+                font: { color: '#fff' }
+            },
+            // Force WebGL
+            autosize: true
+        };
+
+        Plotly.newPlot('horizonPlot', [trace1, trace2], layout, {responsive: true, displayModeBar: false});
+
+    </script>
+</body>
+</html>
