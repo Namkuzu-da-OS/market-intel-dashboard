@@ -388,6 +388,76 @@
             color: var(--accent);
         }
 
+        /* Share Button */
+        .card-share {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.75rem;
+            font-family: var(--font-mono);
+            padding: 0.3rem 0.5rem;
+            border-radius: 4px;
+            border: 1px solid transparent;
+            background: transparent;
+            white-space: nowrap;
+        }
+
+        .card-share:hover {
+            color: var(--accent);
+            border-color: var(--accent-glow);
+            background: var(--accent-glow);
+        }
+
+        .card-share-icon {
+            font-size: 0.9rem;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--accent);
+            color: var(--text-primary);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 229, 191, 0.2);
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            z-index: 2000;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+        }
+
+        .toast.hide {
+            animation: slideOut 0.3s ease;
+        }
+
         /* Empty State */
         .empty-state {
             grid-column: 1 / -1;
@@ -678,7 +748,13 @@
                 <p class="card-excerpt">Actionable intelligence derived from Michael Burry's Year-End Value Strategy.</p>
                 <div class="card-footer">
                     <span class="card-read-time">5 min read</span>
-                    <span class="card-arrow">→</span>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <button class="card-share" data-share-url="reports/macro/2025-11/the-burry-protocol.html" title="Copy share link">
+                            <span class="card-share-icon">🔗</span>
+                            <span>Share</span>
+                        </button>
+                        <span class="card-arrow">→</span>
+                    </div>
                 </div>
             </div>
         </a>
@@ -696,7 +772,13 @@
                 <p class="card-excerpt">As the fiscal year concludes, two powerful, non-fundamental forces distort stock prices: Window Dressing and Tax-Loss Harvesting. Institutional managers polish their portfolios to impress stakeholders, while retail and professional investors alike sell losing positions to offset tax liabilities.</p>
                 <div class="card-footer">
                     <span class="card-read-time">5 min read</span>
-                    <span class="card-arrow">→</span>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <button class="card-share" data-share-url="reports/strategy/2025-11/the-invisible-hands-of-year-end.html" title="Copy share link">
+                            <span class="card-share-icon">🔗</span>
+                            <span>Share</span>
+                        </button>
+                        <span class="card-arrow">→</span>
+                    </div>
                 </div>
             </div>
         </a>
@@ -717,7 +799,13 @@
                     separates secular bull markets from deep bear cycles.</p>
                 <div class="card-footer">
                     <span class="card-read-time">5 min read</span>
-                    <span class="card-arrow">→</span>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <button class="card-share" data-share-url="reports/macro/2025-11/mstr-analysis.html" title="Copy share link">
+                            <span class="card-share-icon">🔗</span>
+                            <span>Share</span>
+                        </button>
+                        <span class="card-arrow">→</span>
+                    </div>
                 </div>
             </div>
         </a>
@@ -738,7 +826,13 @@
                     technicals to form a cohesive thesis.</p>
                 <div class="card-footer">
                     <span class="card-read-time">5 min read</span>
-                    <span class="card-arrow">→</span>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <button class="card-share" data-share-url="reports/macro/2025-11/tsla-investment-thesis.html" title="Copy share link">
+                            <span class="card-share-icon">🔗</span>
+                            <span>Share</span>
+                        </button>
+                        <span class="card-arrow">→</span>
+                    </div>
                 </div>
             </div>
         </a>
@@ -761,7 +855,13 @@
                     Federal Reserve easing, political volatility, and geopolitical realignment.</p>
                 <div class="card-footer">
                     <span class="card-read-time">10 min read</span>
-                    <span class="card-arrow">→</span>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <button class="card-share" data-share-url="reports/macro/2025-11/USD_Outlook_18mo_Analysis.html" title="Copy share link">
+                            <span class="card-share-icon">🔗</span>
+                            <span>Share</span>
+                        </button>
+                        <span class="card-arrow">→</span>
+                    </div>
                 </div>
             </div>
         </a>
@@ -884,6 +984,40 @@
         function openDashboardModal() {
             openModalWith(DASHBOARD_URL, 'Market Intelligence Dashboard');
         }
+
+        // --- Share Link Functionality ---
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            // Auto-hide after 3 seconds
+            setTimeout(() => {
+                toast.classList.add('hide');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        const shareButtons = document.querySelectorAll('.card-share');
+
+        shareButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const shareUrl = btn.getAttribute('data-share-url');
+                const fullUrl = window.location.origin + window.location.pathname.replace('research.html', '') + shareUrl;
+
+                // Copy to clipboard
+                navigator.clipboard.writeText(fullUrl).then(() => {
+                    showToast('✓ Link copied to clipboard!');
+                }).catch(err => {
+                    showToast('✗ Failed to copy link');
+                    console.error('Clipboard error:', err);
+                });
+            });
+        });
     </script>
 
 
