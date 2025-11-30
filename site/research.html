@@ -647,7 +647,7 @@
             <li><a href="index.html#products">Products</a></li>
             <li><a href="research.html" class="active">Research</a></li>
         </ul>
-        <a href="../dashboard.html" class="nav-cta">Launch Dashboard →</a>
+        <a href="#" onclick="openDashboardModal(); return false;" class="nav-cta">Launch Dashboard →</a>
     </nav>
 
     <!-- Page Header -->
@@ -834,6 +834,14 @@
                 closeModal();
             }
         });
+
+        // Open Dashboard in Modal
+        function openDashboardModal() {
+            iframe.src = '../dashboard.html';
+            modalTitle.textContent = 'Market Intelligence Dashboard';
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
     </script>
 
 
