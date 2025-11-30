@@ -757,24 +757,72 @@
             .products-grid {
                 grid-template-columns: 1fr;
             }
+        }
 
-            .stats-bar {
-                padding: 2rem;
-                gap: 2rem;
-                flex-wrap: wrap;
-            }
+        .modal-container {
+            width: 95%;
+            height: 90%;
+            max-width: 1400px;
+            margin: auto;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transform: scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-            .features,
-            .products,
-            .terminal-preview {
-                padding: 4rem 2rem;
-            }
+        .modal-overlay.active .modal-container {
+            transform: scale(1);
+        }
 
-            .footer-content {
-                flex-direction: column;
-                gap: 2rem;
-                text-align: center;
-            }
+        .modal-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-secondary);
+        }
+
+        .modal-title {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .modal-close {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close:hover {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border-color: var(--text-primary);
+        }
+
+        .modal-iframe {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
         }
     </style>
 </head>
@@ -794,9 +842,7 @@
             <li><a href="#products">Products</a></li>
             <li><a href="research.html">Research</a></li>
         </ul>
-        <a href="javascript:void(0)" class="nav-cta"
-            onclick="window.open('https://namkuzu-da-os.github.io/market-intel-dashboard/dashboard.html', 'Dashboard', 'width=1400,height=900,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=yes')">Launch
-            Dashboard →</a>
+        <a href="#" onclick="openDashboardModal(); return false;" class="nav-cta">Launch Dashboard →</a>
     </nav>
 
     <!-- Hero Section -->
@@ -918,6 +964,20 @@
         </div>
     </section>
 
+    <!-- Dashboard Modal -->
+    <div class="modal-overlay" id="dashboardModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span style="color: var(--accent);">◈</span>
+                    <span id="modalTitle">Market Intelligence Dashboard</span>
+                </div>
+                <button class="modal-close" id="closeModal" title="Close Dashboard">✕</button>
+            </div>
+            <iframe class="modal-iframe" id="dashboardFrame" src=""></iframe>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -971,6 +1031,45 @@
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'all 0.6s ease';
             observer.observe(card);
+        });
+
+        // --- Dashboard Modal Logic ---
+        const modal = document.getElementById('dashboardModal');
+        const iframe = document.getElementById('dashboardFrame');
+        const closeBtn = document.getElementById('closeModal');
+        const modalTitle = document.getElementById('modalTitle');
+
+        // Open Dashboard in Modal
+        function openDashboardModal() {
+            iframe.src = 'https://namkuzu-da-os.github.io/market-intel-dashboard/dashboard.html';
+            modalTitle.textContent = 'Market Intelligence Dashboard';
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close Modal
+        function closeModal() {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                iframe.src = ''; // Clear src to stop any active content
+            }, 300);
+            document.body.style.overflow = '';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+
+        // Close on click outside
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
         });
     </script>
 </body>
