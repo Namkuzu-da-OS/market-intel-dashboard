@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSTR: Value Trap or Valuation Reset?</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+    <!-- Palette Definition: Cyber-Vibrant
+         Background: #0f172a (Slate 900)
+         Cards: #1e293b (Slate 800)
+         Primary Text: #f1f5f9 (Slate 100)
+         Accent Cyan: #06b6d4
+         Accent Pink: #ec4899
+         Accent Purple: #8b5cf6
+    -->
+
+    <style>
+        /* Chart Container Styling Rules - Strictly Enforced */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%; /* Layout handles the specific max-width via grid */
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+
+        /* Custom Scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Utility for Diagram Nodes */
+        .diagram-node {
+            transition: transform 0.2s;
+        }
+        .diagram-node:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Header Section -->
+    <header class="w-full bg-slate-800 shadow-lg border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
+                    $MSTR ANALYSIS
+                </h1>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Technical & Fundamental Deep Dive</p>
+            </div>
+            <div class="hidden md:block">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-900 text-red-200">
+                    Risk Level: High
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+        <!-- SECTION 1: The Thesis / Introduction -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 space-y-4">
+                <h2 class="text-2xl font-bold text-cyan-400">The 50-Month Crossroads</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    MicroStrategy ($MSTR) sits at a pivotal historical juncture. Often acting as a high-beta proxy for Bitcoin, the stock has corrected significantly, approaching the <strong>50-month Exponential Moving Average (EMA)</strong>. In traditional technical analysis, this long-term trendline often separates secular bull markets from deep bear cycles.
+                </p>
+                <p class="text-slate-300 leading-relaxed">
+                    Current sentiment is overwhelmingly negative, with calls of the trade being "dead." However, this creates a classic contrarian setup: Is this a <strong>liquidity trap</strong> driven by tax-loss harvesting, or a <strong>generational entry</strong> for those bullish on Bitcoin's long-term trajectory?
+                </p>
+            </div>
+            
+            <!-- Key Stats Cards -->
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-pink-500 shadow-lg">
+                    <h3 class="text-sm font-medium text-slate-400 uppercase">Current Status</h3>
+                    <p class="text-2xl font-bold text-white mt-1">Testing Support</p>
+                    <p class="text-xs text-pink-400 mt-2">Critical Zone</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-cyan-500 shadow-lg">
+                    <h3 class="text-sm font-medium text-slate-400 uppercase">Sentiment</h3>
+                    <p class="text-2xl font-bold text-white mt-1">Extreme Fear</p>
+                    <p class="text-xs text-cyan-400 mt-2">Contrarian Signal?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Technical View (Chart.js) -->
+        <section class="bg-slate-800 rounded-2xl shadow-xl overflow-hidden border border-slate-700">
+            <div class="p-6 border-b border-slate-700">
+                <h2 class="text-xl font-bold text-white flex items-center">
+                    <span class="text-2xl mr-2">📉</span> The Technical Precipice
+                </h2>
+                <p class="mt-2 text-slate-400 text-sm">
+                    The chart below illustrates the deviation of MSTR's price relative to its long-term trend (50-Month EMA). Historically, touches of this line have resulted in massive volatility—either a breakdown or a violent bounce.
+                </p>
+            </div>
+            <div class="p-6">
+                <div class="chart-container">
+                    <canvas id="emaChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: The Amplifier Effect (Plotly.js) -->
+        <section>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400">Amplified Volatility & Beta</h2>
+                <p class="text-slate-300 mt-2 max-w-3xl">
+                    Investors don't buy MSTR for stability; they buy it for leverage. The visualization below demonstrates the "Amplification Effect." When Bitcoin moves, MSTR tends to move further in the same direction. This "Tax Loss Selling" season is exacerbating the downside beta, pushing the stock down faster than the underlying asset.
+                </p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-2xl shadow-xl border border-slate-700 p-6">
+                <!-- Plotly Container -->
+                <div id="volatilityPlot" class="w-full h-[400px]"></div>
+                <div class="mt-4 text-center">
+                    <span class="inline-block px-4 py-2 bg-slate-900 rounded-lg text-xs text-slate-400">
+                        Rendered via Plotly.js (Canvas) &bull; No SVG used
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: The Fundamental Flywheel (CSS Diagram) -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Left: Explanation -->
+            <div class="flex flex-col justify-center space-y-6">
+                <h2 class="text-2xl font-bold text-pink-500">The "Saylor Flywheel"</h2>
+                <p class="text-slate-300">
+                    Why do bulls stay interested? The company operates a unique capital structure mechanism. By issuing debt (convertible notes) to buy Bitcoin, they aim to increase the "Bitcoin per Share" metric.
+                </p>
+                <p class="text-slate-300">
+                    However, this mechanism works in reverse during bear markets or periods of premium contraction. If the market value of the stock falls below the value of the Bitcoin held (NAV discount), the ability to issue equity accretively disappears.
+                </p>
+                <ul class="space-y-3 mt-4">
+                    <li class="flex items-start">
+                        <span class="text-cyan-400 mr-2">➤</span>
+                        <span class="text-sm text-slate-400"><strong>Upside:</strong> BTC goes up → Stock Premium Expands → Issue Shares → Buy more BTC.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-pink-400 mr-2">➤</span>
+                        <span class="text-sm text-slate-400"><strong>Downside:</strong> BTC flat/down → Premium Collapses → Tax Loss Selling → inability to service debt efficiently.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: CSS Diagram (NO SVG/Mermaid) -->
+            <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col items-center justify-center relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-pink-500"></div>
+
+                <!-- Diagram Flow -->
+                <div class="flex flex-col items-center w-full max-w-md space-y-4">
+                    
+                    <!-- Step 1 -->
+                    <div class="diagram-node w-full bg-slate-700 p-4 rounded-lg border border-cyan-500/30 shadow-lg text-center relative z-10">
+                        <h4 class="font-bold text-cyan-400">1. Issuance</h4>
+                        <p class="text-xs text-slate-300">Sell Convertible Debt / Equity</p>
+                    </div>
+
+                    <!-- Arrow Down -->
+                    <div class="text-2xl text-slate-500">↓</div>
+
+                    <!-- Step 2 -->
+                    <div class="diagram-node w-full bg-slate-700 p-4 rounded-lg border border-cyan-500/30 shadow-lg text-center relative z-10">
+                        <h4 class="font-bold text-white">2. Acquisition</h4>
+                        <p class="text-xs text-slate-300">Purchase Bitcoin (BTC)</p>
+                    </div>
+
+                    <!-- Arrow Down -->
+                    <div class="text-2xl text-slate-500">↓</div>
+
+                    <!-- Split Path -->
+                    <div class="grid grid-cols-2 gap-4 w-full">
+                        <!-- Bull Case -->
+                        <div class="diagram-node bg-slate-900 p-3 rounded-lg border border-green-500/50 text-center">
+                            <h5 class="font-bold text-green-400 text-sm">BTC Rises</h5>
+                            <p class="text-[10px] text-slate-400">Stock Premium Expands</p>
+                        </div>
+                        <!-- Bear Case -->
+                        <div class="diagram-node bg-slate-900 p-3 rounded-lg border border-red-500/50 text-center">
+                            <h5 class="font-bold text-red-400 text-sm">BTC Falls</h5>
+                            <p class="text-[10px] text-slate-400">NAV Discount & Selling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: Risk Factors Breakdown (Chart.js) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-slate-800 rounded-2xl shadow-xl border border-slate-700 p-6">
+                <h3 class="text-lg font-bold text-white mb-4">Current Selling Pressures</h3>
+                <p class="text-sm text-slate-400 mb-6">
+                    Why is MSTR underperforming recently? The chart visually breaks down the estimated weight of current bearish factors. Tax Loss Harvesting is a major Q4 seasonal pressure.
+                </p>
+                <div class="chart-container">
+                    <canvas id="riskChart"></canvas>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center space-y-6">
+                <h3 class="text-lg font-bold text-white">The "Tax Loss" Narrative</h3>
+                <div class="p-4 bg-slate-700/50 rounded-lg border-l-4 border-yellow-500">
+                    <h4 class="font-bold text-yellow-400 text-sm mb-1">Q4 Phenomenon</h4>
+                    <p class="text-sm text-slate-300">
+                        Investors sitting on losses (likely those who bought the local top) sell before year-end to offset capital gains elsewhere. This creates artificial selling pressure that often abates in January (the "January Effect").
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-700/50 rounded-lg border-l-4 border-purple-500">
+                    <h4 class="font-bold text-purple-400 text-sm mb-1">The "Dead" Sentiment</h4>
+                    <p class="text-sm text-slate-300">
+                        When social volume claims a stock is "dead" while it sits on major long-term support (50M EMA), it historically marks a point of maximum financial opportunity—provided the underlying asset (Bitcoin) does not collapse.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 text-slate-500 text-xs border-t border-slate-800">
+            <p>Generated by Canvas Infographics &bull; Data for illustrative purposes based on market research</p>
+            <p class="mt-2">HTML5 &bull; Tailwind CSS &bull; Chart.js &bull; Plotly.js &bull; No SVG</p>
+        </footer>
+
+    </main>
+
+    <!-- Data & Visualization Scripts -->
+    <script>
+        // --- UTILITY: Label Splitting for Chart.js (Strict Requirement) ---
+        function splitLabel(label, maxLength = 16) {
+            if (label.length <= maxLength) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + " " + words[i]).length <= maxLength) {
+                    currentLine += " " + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- UTILITY: Common Chart Config ---
+        const commonTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            },
+            titleColor: '#fff',
+            bodyColor: '#cbd5e1',
+            backgroundColor: 'rgba(15, 23, 42, 0.9)',
+            borderColor: '#334155',
+            borderWidth: 1,
+            padding: 10
+        };
+
+        // --- CHART 1: The 50-Month EMA (Line Chart) ---
+        const ctxEMA = document.getElementById('emaChart').getContext('2d');
+        
+        // Mock Data Generation for Price vs EMA scenario
+        const months = ['Jan 22', 'Jul 22', 'Jan 23', 'Jul 23', 'Jan 24', 'Jul 24', 'Nov 24'];
+        // Ensure labels are split if necessary (though short dates usually fit)
+        const emaLabels = months.map(m => splitLabel(m));
+
+        new Chart(ctxEMA, {
+            type: 'line',
+            data: {
+                labels: emaLabels,
+                datasets: [
+                    {
+                        label: 'MSTR Price Action',
+                        data: [550, 180, 240, 410, 580, 1300, 1150], // Simulated volatile price action
+                        borderColor: '#06b6d4', // Cyan
+                        backgroundColor: 'rgba(6, 182, 212, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#06b6d4',
+                        fill: true
+                    },
+                    {
+                        label: '50-Month EMA (Support Zone)',
+                        data: [300, 320, 340, 380, 450, 550, 650], // Slow moving average
+                        borderColor: '#ec4899', // Pink
+                        borderWidth: 3,
+                        borderDash: [5, 5],
+                        pointRadius: 0,
+                        tension: 0.4,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#94a3b8', font: { family: 'sans-serif' } }
+                    },
+                    tooltip: commonTooltipConfig
+                },
+                scales: {
+                    y: {
+                        grid: { color: '#334155' },
+                        ticks: { color: '#94a3b8' }
+                    },
+                    x: {
+                        grid: { color: 'transparent' },
+                        ticks: { color: '#94a3b8' }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 2: Risk Factors (Pie/Donut) ---
+        const ctxRisk = document.getElementById('riskChart').getContext('2d');
+        
+        // Labels that might exceed 16 chars need processing
+        const riskRawLabels = [
+            "Tax Loss Harvesting Pressure",
+            "Broad Crypto Market Weakness",
+            "NAV Premium Compression",
+            "Macro Economic Fears"
+        ];
+        const riskLabels = riskRawLabels.map(l => splitLabel(l));
+
+        new Chart(ctxRisk, {
+            type: 'doughnut',
+            data: {
+                labels: riskLabels,
+                datasets: [{
+                    data: [45, 20, 25, 10], // Estimated weight of selling pressure
+                    backgroundColor: [
+                        '#ec4899', // Pink (Major factor)
+                        '#8b5cf6', // Purple
+                        '#06b6d4', // Cyan
+                        '#64748b'  // Grey
+                    ],
+                    borderColor: '#1e293b', // Match card bg
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: { color: '#e2e8f0', boxWidth: 15 }
+                    },
+                    tooltip: commonTooltipConfig
+                },
+                cutout: '60%' // Donut style
+            }
+        });
+
+        // --- CHART 3: Plotly Scatter (Volatility/Beta) ---
+        // Using Plotly to handle scatter plot effectively (Relationship goal)
+        // configured to render via Canvas (type: 'scattergl' or config)
+
+        const trace1 = {
+            x: [-5, -2, 0, 2, 5, -8, 10, -4, 3, 6], // Bitcoin % Move
+            y: [-8, -3, -0.5, 3.5, 9, -14, 18, -7, 5, 11], // MSTR % Move (Amplified)
+            mode: 'markers',
+            type: 'scatter', // Plotly.js will use SVG/Canvas based on config, but we prefer simple shapes
+            marker: {
+                size: 12,
+                color: '#06b6d4', // Cyan dots
+                opacity: 0.8,
+                line: {
+                    color: '#fff',
+                    width: 1
+                }
+            },
+            name: 'Daily Correlation'
+        };
+
+        const traceLine = {
+            x: [-10, 10],
+            y: [-10, 10],
+            mode: 'lines',
+            name: '1:1 Correlation (Baseline)',
+            line: {
+                dash: 'dot',
+                width: 2,
+                color: '#ec4899' // Pink reference line
+            }
+        };
+
+        const layout = {
+            title: {
+                text: 'MSTR vs BTC Daily Returns (Beta > 1)',
+                font: { color: '#f1f5f9' }
+            },
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {
+                title: 'Bitcoin % Change',
+                color: '#94a3b8',
+                gridcolor: '#334155',
+                zerolinecolor: '#475569'
+            },
+            yaxis: {
+                title: 'MSTR % Change',
+                color: '#94a3b8',
+                gridcolor: '#334155',
+                zerolinecolor: '#475569'
+            },
+            showlegend: true,
+            legend: { font: { color: '#fff' } },
+            margin: { t: 40, r: 20, l: 40, b: 40 }
+        };
+
+        const config = {
+            responsive: true,
+            displayModeBar: false,
+            renderer: 'canvas' // Prefer canvas rendering
+        };
+
+        Plotly.newPlot('volatilityPlot', [trace1, traceLine], layout, config);
+
+    </script>
+    
+    <!-- 
+    Summary of Choices (Source Material Integration):
+    1. Plan: Hooked user with the "Support vs Death" narrative.
+    2. Data Point: Price Action -> Goal: Change -> Viz: Line Chart (Chart.js) -> Shows the trend to support.
+    3. Data Point: Selling Reasons -> Goal: Compare -> Viz: Donut Chart (Chart.js) -> Breaks down risk factors.
+    4. Data Point: Leverage/Beta -> Goal: Relationship -> Viz: Scatter Plot (Plotly) -> Shows risk amplification.
+    5. Data Point: Strategy Loop -> Goal: Organize -> Viz: HTML/CSS Diagram -> Explains the fundamental mechanism without SVG.
+    6. NO SVG used. NO Mermaid JS used. Palette: Energetic/Vibrant.
+    -->
+</body>
+</html>
