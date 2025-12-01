@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T13:29:19.897Z",
+  "timestamp": "2025-12-01T14:13:08.681Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 65,
+    "confidence_pct": 66,
     "sources": {
       "social": {
         "bullish": 36,
-        "bearish": 17,
-        "neutral": 84,
-        "total": 137,
-        "pct": 26
+        "bearish": 18,
+        "neutral": 89,
+        "total": 143,
+        "pct": 25
       },
       "news": {
-        "bullish": 4,
+        "bullish": 7,
         "bearish": 5,
-        "neutral": 1,
-        "total": 10,
-        "pct": 40
+        "neutral": 2,
+        "total": 14,
+        "pct": 50
       },
       "video": {
         "bullish": 1,
@@ -36,32 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction that markets will see a modest rally as the Fed’s quantitative tightening cycle ends and AI momentum drives upside.\n\n⚡ **Catalysts:** Fed balance‑sheet uptick, AI announcements (Accenture, Google), Bitcoin breakout above $86,500, S&P 500 futures support at 6,783.\n\n🎯 **Action:** If S&P 500 futures break 6,783, target 6,850; if Bitcoin breaks $86,500, target $90k; if GOOGL breaks $375, target $380; if ZEC breaks $295, target $310.",
+    "narrative": "📊 **Consensus:** The market sentiment is strongly bullish with high conviction, driven by favorable Fed balance‑sheet expectations, AI‑infrastructure wins, and a commodities rally. \n⚡ **Catalysts:** Fed balance‑sheet uptick, 200‑day MA breakout for SPY, Nvidia–Synopsys partnership, AI‑infrastructure deals (Accenture‑OpenAI, Google‑Foxconn), gold above $3,250, Bitcoin floor $86,500, S&P 500 support at 6,783.\n🎯 **Action:** If SPY breaks above its 200‑day MA, target 1‑2% upside; if Bitcoin stays above $86,500, target $95,000; if gold remains above $3,250, target $3,500; if S&P 500 holds 6,783 support, consider a short‑term bullish stance with a 2‑3% profit target.\n",
     "key_tickers": [
-      "BTC",
-      "GOOGL",
       "SPY",
-      "ZEC"
+      "NVDA",
+      "BTC",
+      "XAU",
+      "QQQ"
     ],
     "key_themes": [
-      "Fed QT end",
-      "AI momentum",
-      "Crypto rally",
-      "Market support levels",
-      "Macro data releases"
+      "Fed balance‑sheet dynamics",
+      "AI infrastructure wins",
+      "Commodity rally (gold)"
     ],
     "risk_factors": [
-      "Immediate bearish catalysts: S&P 500 futures drop, Bitcoin below $86,500, ZEC near $295, Joby and Airbus declines, China PMI uncertainty, Fed rate cut expectations"
+      "Fed rate decision",
+      "Airbus quality issues",
+      "China PMI downturn",
+      "Bitcoin decline",
+      "S&P support breach"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "S&P 500 futures support 6,783 and 6,715; Bitcoin $86,500; ZEC $295",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "S&P 500 support 6,783, Gold above 3,250, Bitcoin floor 86,500, ZEC 295",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing 200‑day moving average for BTC; watching for breakout of S&P 500 futures support 6,783",
+    "swing_levels": "SPY 200‑day MA breakout, SPY max pain 668",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 81882
+    "generation_time_ms": 81990
   },
   "trending": {
     "macro": [
@@ -82,15 +85,28 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": -0.14,
+        "mentions": 6,
+        "sentiment_score": -0.133,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 14,
+        "sentiment_pct": 13,
         "counts": {
           "bullish": 0,
           "bearish": 1,
-          "neutral": 4,
-          "total": 5
+          "neutral": 5,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 3,
+        "sentiment_score": -0.3,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 30,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 3
         }
       },
       {
@@ -105,15 +121,54 @@
           "neutral": 2,
           "total": 2
         }
+      },
+      {
+        "ticker": "COIN",
+        "mentions": 2,
+        "sentiment_score": -0.4,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 2
+        }
       }
     ],
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 4,
-        "sentiment_score": 0.388,
+        "mentions": 5,
+        "sentiment_score": 0.31,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
+        "sentiment_pct": 31,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 5
+        }
+      },
+      {
+        "ticker": "NVDA",
+        "mentions": 5,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 5,
+          "total": 5
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 4,
+        "sentiment_score": 0.375,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 38,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -122,7 +177,7 @@
         }
       },
       {
-        "ticker": "NVDA",
+        "ticker": "CRWD",
         "mentions": 4,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
@@ -135,42 +190,16 @@
         }
       },
       {
-        "ticker": "GOOGL",
-        "mentions": 3,
-        "sentiment_score": 0.5,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "ONDS",
-        "mentions": 3,
-        "sentiment_score": 0.483,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "CRM",
-        "mentions": 3,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "ticker": "SPX",
+        "mentions": 4,
+        "sentiment_score": -0.175,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 18,
         "counts": {
           "bullish": 0,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 3,
-          "total": 3
+          "total": 4
         }
       }
     ]
@@ -178,9 +207,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 18.32,
+    "vix": 18.11,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 26,
+    "sentiment_bullish_pct": 25,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
