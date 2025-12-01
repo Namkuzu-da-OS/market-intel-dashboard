@@ -394,7 +394,9 @@
         }
 
         /* Share Button */
-        .card-share {
+        /* Action Buttons (Share, Video, Notebook) */
+        .card-share,
+        .card-action-btn {
             display: flex;
             align-items: center;
             gap: 0.3rem;
@@ -408,9 +410,11 @@
             border: 1px solid transparent;
             background: transparent;
             white-space: nowrap;
+            text-decoration: none;
         }
 
-        .card-share:hover {
+        .card-share:hover,
+        .card-action-btn:hover {
             color: var(--accent);
             border-color: var(--accent-glow);
             background: var(--accent-glow);
@@ -762,6 +766,16 @@
                 <div class="card-footer">
                     <span class="card-read-time">5 min read</span>
                     <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="card-action-btn" target="_blank"
+                            title="Watch Video">
+                            <span class="card-share-icon">🎥</span>
+                            <span>Video</span>
+                        </a>
+                        <a href="https://notebooklm.google.com/" class="card-action-btn" target="_blank"
+                            title="Listen on NotebookLM">
+                            <span class="card-share-icon">🎧</span>
+                            <span>Listen</span>
+                        </a>
                         <button class="card-share"
                             data-share-url="reports/strategy/2025-12/the-presidential-market-cycle.html"
                             title="Copy share link">
@@ -1072,9 +1086,20 @@
             });
         }
 
+        // Function to attach generic action button listener (stop propagation)
+        function attachActionBtnListener(btn) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+
         // Attach listeners to existing share buttons
         const shareButtons = document.querySelectorAll('.card-share');
         shareButtons.forEach(attachShareListener);
+
+        // Attach listeners to existing action buttons
+        const actionButtons = document.querySelectorAll('.card-action-btn');
+        actionButtons.forEach(attachActionBtnListener);
 
         // Watch for new cards added via API and attach listeners
         const observer = new MutationObserver((mutations) => {
@@ -1086,6 +1111,14 @@
                             attachShareListener(newShareBtn);
                             newShareBtn.hasListener = true;
                         }
+
+                        const newActionBtns = node.querySelectorAll('.card-action-btn');
+                        newActionBtns.forEach(btn => {
+                            if (!btn.hasListener) {
+                                attachActionBtnListener(btn);
+                                btn.hasListener = true;
+                            }
+                        });
                     }
                 });
             });
