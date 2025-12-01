@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T05:57:13.091Z",
+  "timestamp": "2025-12-01T06:39:07.653Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 71,
+    "confidence_pct": 68,
     "sources": {
       "social": {
-        "bullish": 23,
-        "bearish": 9,
-        "neutral": 62,
-        "total": 94,
+        "bullish": 24,
+        "bearish": 10,
+        "neutral": 65,
+        "total": 99,
         "pct": 24
       },
       "news": {
         "bullish": 1,
-        "bearish": 1,
+        "bearish": 2,
         "neutral": 2,
-        "total": 4,
-        "pct": 25
+        "total": 5,
+        "pct": 20
       },
       "video": {
         "bullish": 1,
@@ -36,37 +36,31 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** A high‑conviction bullish outlook centers on Fed policy reversal and crypto momentum.\n\n⚡ **Catalysts:** Fed balance‑sheet expansion post‑December 1 2025, BTC 86,500 level, AMZN 236.50, AMGN 355, META 662, CRWV 90‑100, tech names MSFT, TSLA.\n\n🎯 **Action:** If BTC breaks 86,500, consider short; if AMZN breaks 236.50, consider short; if AMGN falls below 355, consider short; if META falls below 662, consider short; if CRWV falls below 100, consider short.",
+    "narrative": "📊 **Consensus:** Overall market sentiment is cautiously bullish with high conviction for a near‑term upside driven by expected Fed rate cuts and a potential rebound in crypto markets. \n\n⚡ **Catalysts:** Fed policy statement (rate cut), private China manufacturing PMI, Bitcoin’s $86,500 support, tech breakout signals, and gold above $3,250. \n\n🎯 **Action:** If Bitcoin breaks above $86,500, target $95,000; if Fed cuts rates, consider long positions in risk assets with stop near current resistance levels; monitor tech names for VWAP breakout before committing.",
     "key_tickers": [
       "BTC",
-      "AMZN",
-      "META",
-      "AMGN",
-      "CRWV"
+      "AMZN"
     ],
     "key_themes": [
-      "Fed policy reversal",
-      "Crypto momentum",
-      "Tech rally",
-      "Risk asset lift",
-      "Macro data releases"
+      "Fed rate cuts",
+      "Crypto recovery",
+      "Chinese manufacturing PMI"
     ],
     "risk_factors": [
-      "Fed delay in balance‑sheet expansion",
-      "China PMI disappointment",
-      "BTC 4% drop below 86,500",
-      "Fear & Greed Index at 24",
-      "2‑up/2‑down pattern potential"
+      "Crypto fear & greed extreme fear",
+      "Bitcoin below 86,500 support",
+      "40B wipe‑out risk",
+      "Volatility around Fed/PMI announcements"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "Testing resistance",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "BTC 86,500 support",
     "swing_bias": "BULLISH",
-    "swing_levels": "BTC 86,500; AMZN 236.50; AMGN 355; META 662; CRWV 90-100",
+    "swing_levels": "Watch for Fed rate cut announcement and China PMI release",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 105520
+    "generation_time_ms": 66619
   },
   "trending": {
     "macro": [
