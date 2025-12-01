@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T01:45:22.896Z",
+  "timestamp": "2025-12-01T02:36:50.471Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 88,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 22,
-        "bearish": 3,
-        "neutral": 38,
-        "total": 63,
-        "pct": 35
+        "bullish": 20,
+        "bearish": 4,
+        "neutral": 45,
+        "total": 69,
+        "pct": 29
       },
       "news": {
         "bullish": 1,
-        "bearish": 0,
+        "bearish": 1,
         "neutral": 2,
-        "total": 3,
-        "pct": 33
+        "total": 4,
+        "pct": 25
       },
       "video": {
         "bullish": 0,
@@ -36,31 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets are positioned for a modest bullish rally driven by anticipated Fed rate cuts, a positive China PMI, and key tech upside targets. Conviction level: high\n\n⚡ **Catalysts:** Fed rate cut, China PMI, AMGN $355 target, AMZN $236.50 target, META $662 target, renewable‑energy capacity surge, Bitcoin 4% drop\n\n🎯 **Action:** If AMGN breaks $355, target $355; If AMZN breaks $236.50, target $236.50; If META breaks $662, target $662",
+    "narrative": "📊 **Consensus:** The market sits on a tight split, with bullish technical cues in tech names countered by a bearish macro narrative tied to PMI contraction and Fed policy. Conviction level: medium\n\n⚡ **Catalysts:** Black Friday sales for AMZN, Microsoft contract for NBIS, Fed December decision, China PMI release, options price targets (CRWV 90‑100, AMGN 350C at 355, AMZN 235C at 236.5, META 660C at 662)\n\n🎯 **Action:** If CRWV breaks 90 resistance, target 100; if AMGN breaks 350 resistance, target 355; if META breaks 660 resistance, target 662; if AMZN breaks 236.5 resistance, target 236.5 (watch for pullback before entry)",
     "key_tickers": [
-      "AMGN",
       "AMZN",
+      "NBIS",
+      "CRWV",
+      "AMGN",
       "META"
     ],
     "key_themes": [
-      "Fed rate cut",
-      "China PMI",
-      "Tech rally targets"
+      "Tech & AI bullish",
+      "Fed policy & China PMI risk",
+      "Crypto volatility",
+      "Risk‑on vs risk‑off sentiment",
+      "Earnings catalysts"
     ],
     "risk_factors": [
-      "Bitcoin volatility",
-      "Fed policy shift",
-      "China PMI miss"
+      "Fed policy decision",
+      "China PMI outcome",
+      "Crypto market volatility",
+      "Earnings surprises",
+      "Options market pressure"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "Testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "Testing resistance",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 54442
+    "generation_time_ms": 64666
   },
   "trending": {
     "macro": [
@@ -79,6 +85,19 @@
       }
     ],
     "crypto": [
+      {
+        "ticker": "BTC",
+        "mentions": 2,
+        "sentiment_score": -0.375,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 38,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 2
+        }
+      },
       {
         "ticker": "CIFR",
         "mentions": 1,
@@ -205,7 +224,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 29,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
