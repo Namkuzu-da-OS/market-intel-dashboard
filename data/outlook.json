@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-01T03:57:12.036Z",
+  "timestamp": "2025-12-01T04:29:20.349Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,35 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is leaning bullish overall, with strong upside potential for BTC and risk‑equities, but caution around crypto volatility and upcoming Fed data. Conviction level: medium\n\n⚡ **Catalysts:** Fed’s quantitative tightening cycle ending, first rise in Fed balance‑sheet, Fed minutes, U.S. unemployment & inflation reports, China PMI release, Bitcoin’s 200‑day moving average, BTC $86,500 support, CRWV $90–$100 upside target.\n\n🎯 **Action:** If BTC breaks above the 200‑day MA, target $95k; if BTC breaks $86,500 support, consider downside stop at $84k. If CRWV RSI turns bullish, target $100; exit near $90 if RSI weakens.",
+    "narrative": "📊 **Consensus:** High conviction bullish stance driven by the anticipated end of quantitative tightening, Fed balance‑sheet expansion, and a strong earnings calendar. The market is poised for a short‑term pullback followed by a counter‑trend rally.\n\n⚡ **Catalysts:** Fed balance‑sheet release (Dec 2025), December 5th earnings for $MSFT, $TSLA, $AMZN, $META, $PYPL, Black‑Friday sales momentum, gold above $3,250, silver at $57.75, Bitcoin threshold at $86,500, and upcoming PMI/industrial data.\n\n🎯 **Action:** If BTC breaks $86,500, target $90k. If $MSFT earnings beat expectations, target a 3% rally to $310. If gold stays above $3,250, hold a long position with a 5% take‑profit.",
     "key_tickers": [
-      "BTC",
-      "CRWV",
-      "SPY"
+      "MSFT",
+      "TSLA",
+      "AMZN",
+      "META",
+      "BTC"
     ],
     "key_themes": [
-      "BTC bullish rally",
-      "Fed QT end & balance‑sheet expansion",
-      "Risk‑asset upside",
-      "Crypto volatility caution",
-      "Tech sector rally"
+      "Fed balance‑sheet easing",
+      "Earnings season momentum",
+      "Gold & silver rally",
+      "Crypto volatility",
+      "AI & tech growth"
     ],
     "risk_factors": [
-      "Fed policy surprise",
-      "China PMI surprise",
-      "Crypto volatility",
-      "BTC support break",
-      "Market volatility around data releases"
+      "Crypto weakness",
+      "Earnings miss",
+      "Fed policy reversal",
+      "Manufacturing PMI decline",
+      "EM currency tightening"
     ],
     "intraday_bias": "NEUTRAL",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Testing resistance",
-    "source_alignment": "MIXED"
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 72220
+    "generation_time_ms": 60321
   },
   "trending": {
     "macro": [
