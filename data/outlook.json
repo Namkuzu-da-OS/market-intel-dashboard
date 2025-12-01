@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T11:31:10.398Z",
+  "timestamp": "2025-12-01T12:11:12.520Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 30,
-        "bearish": 13,
-        "neutral": 70,
-        "total": 113,
+        "bullish": 32,
+        "bearish": 14,
+        "neutral": 73,
+        "total": 119,
         "pct": 27
       },
       "news": {
-        "bullish": 1,
-        "bearish": 4,
+        "bullish": 2,
+        "bearish": 5,
         "neutral": 3,
-        "total": 8,
-        "pct": 13
+        "total": 10,
+        "pct": 20
       },
       "video": {
         "bullish": 1,
@@ -36,40 +36,54 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market shows a medium‑conviction mixed outlook, with bullish expectations from Fed easing and Chinese PMI upside balanced against bearish crypto‑driven risk sentiment.\n\n⚡ **Catalysts:** Fed balance‑sheet releases, rate‑policy minutes, core inflation data, Chinese PMI, dollar index, BTC break below $86,500, gold $3,250, silver $57.75, CRWV $90–$100, AMGN $355, AMZN $236.50, META $662.\n\n🎯 **Action:** If BTC pulls back below $86,500, consider a short entry; if it rebounds above $87.2k, target $90k. For equities, watch for Fed signals of expansion to confirm a rally; if AMZN breaks $236.50, target $250, if AMGN breaks $355, target $380, if META breaks $662, target $680.",
+    "narrative": "📊 **Consensus:** Markets are leaning bullish with high conviction, driven by expected Fed balance‑sheet expansion, a potential Intel‑Apple supply deal, and a crypto rebound near the 200‑day MA.\n\n⚡ **Catalysts:** BTC $86,500 breach, AMZN 200‑day MA bounce ($236.50 target), AMGN $355 target, META $662 target, Intel‑Apple supply agreement, Fed balance‑sheet expansion.\n\n🎯 **Action:** If BTC breaks above $86,500, target $95,000 (stop $84,000). If AMZN breaks above its 200‑day MA, target $236.50 (stop $230). If AMGN breaks above $350, target $355 (stop $345). If META breaks above $650, target $662 (stop $640). If Intel‑Apple deal confirmed, consider long positions in Intel and Apple (targets TBD). If Fed balance‑sheet expands, look for broader market rally (targets TBD).",
     "key_tickers": [
       "BTC",
       "AMZN",
       "AMGN",
       "META",
-      "CRWV"
+      "INTC"
     ],
     "key_themes": [
-      "Fed policy shift",
-      "Chinese PMI",
-      "Crypto volatility",
-      "Risk‑on equities",
-      "Dollar softness"
+      "Fed balance‑sheet expansion",
+      "crypto rebound",
+      "Intel‑Apple supply agreement",
+      "metal rally",
+      "AI/robotics"
     ],
     "risk_factors": [
-      "Crypto downturn",
-      "Manufacturing weakness in China/India",
-      "Regulatory scrutiny",
-      "Fed tightening risk",
-      "Volatility spikes"
+      "Airbus quality scare",
+      "China PMI contraction",
+      "crypto regulation risk",
+      "Fed tightening",
+      "India industrial output"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "BTC $86,500 support, gold $3,250, silver $57.75, CRWV $90–$100, AMGN $355, AMZN $236.50, META $662",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "Testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "BTC $86,500 support, $90–$100 resistance; gold $3,250; silver $57.75; AMGN $355; AMZN $236.50; META $662",
-    "source_alignment": "MIXED"
+    "swing_levels": "Testing resistance",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 85260
+    "generation_time_ms": 86660
   },
   "trending": {
-    "macro": [],
+    "macro": [
+      {
+        "ticker": "SPY",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
+      }
+    ],
     "crypto": [
       {
         "ticker": "BTC",
@@ -101,15 +115,28 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 3,
-        "sentiment_score": 0.517,
+        "mentions": 4,
+        "sentiment_score": 0.388,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 52,
+        "sentiment_pct": 39,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 1,
-          "total": 3
+          "neutral": 2,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "NVDA",
+        "mentions": 4,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 4
         }
       },
       {
@@ -150,26 +177,13 @@
           "neutral": 3,
           "total": 3
         }
-      },
-      {
-        "ticker": "MDB",
-        "mentions": 3,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 3
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 17.98,
+    "vix": 18.08,
     "pc_ratio": 1.01,
     "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
