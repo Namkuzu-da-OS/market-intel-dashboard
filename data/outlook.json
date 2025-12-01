@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-01T01:06:40.313Z",
+  "timestamp": "2025-12-01T01:45:22.896Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 93,
+    "confidence_pct": 88,
     "sources": {
       "social": {
-        "bullish": 26,
-        "bearish": 2,
-        "neutral": 40,
-        "total": 68,
-        "pct": 38
+        "bullish": 22,
+        "bearish": 3,
+        "neutral": 38,
+        "total": 63,
+        "pct": 35
       },
       "news": {
         "bullish": 1,
@@ -36,25 +36,21 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is overwhelmingly bullish, with a high conviction that risk assets will rally following the anticipated Fed rate cut and the upcoming China PMI data.\n\n⚡ **Catalysts:** Fed’s scheduled rate cut, China manufacturing PMI release, Black‑Friday sales momentum, AI‑driven contracts, price targets for CRWV ($90–$100), AMZN ($236.50), AMGN ($355), META ($662).\n\n🎯 **Action:** If the Fed confirms a rate cut and the dollar weakens, consider buying CRWV near $90 with a target of $100; if Black‑Friday sales momentum holds, buy AMZN near $236.50 with a target of $260; if AI contracts are signed, buy AMGN near $355 with a target of $380; if META’s price approaches $662, enter a long position with a target of $700.",
+    "narrative": "📊 **Consensus:** Markets are positioned for a modest bullish rally driven by anticipated Fed rate cuts, a positive China PMI, and key tech upside targets. Conviction level: high\n\n⚡ **Catalysts:** Fed rate cut, China PMI, AMGN $355 target, AMZN $236.50 target, META $662 target, renewable‑energy capacity surge, Bitcoin 4% drop\n\n🎯 **Action:** If AMGN breaks $355, target $355; If AMZN breaks $236.50, target $236.50; If META breaks $662, target $662",
     "key_tickers": [
-      "CRWV",
-      "AMZN",
       "AMGN",
+      "AMZN",
       "META"
     ],
     "key_themes": [
       "Fed rate cut",
-      "Dollar/Treasury yield easing",
-      "AI‑driven contracts",
-      "Black‑Friday sales momentum"
+      "China PMI",
+      "Tech rally targets"
     ],
     "risk_factors": [
-      "Fed rate cut delay",
-      "Dollar strengthening",
-      "Bear‑cycle signals",
-      "Short‑selling take‑profit",
-      "Bitcoin volatility"
+      "Bitcoin volatility",
+      "Fed policy shift",
+      "China PMI miss"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
@@ -64,24 +60,25 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 41595
+    "generation_time_ms": 54442
   },
   "trending": {
-    "macro": [],
-    "crypto": [
+    "macro": [
       {
-        "ticker": "ETH",
+        "ticker": "SPY",
         "mentions": 1,
-        "sentiment_score": 0.75,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 0,
+          "neutral": 1,
           "total": 1
         }
-      },
+      }
+    ],
+    "crypto": [
       {
         "ticker": "CIFR",
         "mentions": 1,
@@ -107,72 +104,98 @@
           "neutral": 1,
           "total": 1
         }
+      },
+      {
+        "ticker": "COIN",
+        "mentions": 1,
+        "sentiment_score": -0.8,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 1,
+        "sentiment_score": -0.8,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 1
+        }
       }
     ],
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 4,
-        "sentiment_score": 0.588,
+        "mentions": 3,
+        "sentiment_score": 0.517,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 59,
+        "sentiment_pct": 52,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 1,
-          "total": 4
+          "total": 3
         }
       },
       {
-        "ticker": "NBIS",
-        "mentions": 2,
-        "sentiment_score": 0.4,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "ticker": "CRM",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 1,
-          "total": 2
+          "neutral": 3,
+          "total": 3
         }
       },
       {
-        "ticker": "SPX",
-        "mentions": 2,
-        "sentiment_score": 0.4,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "ticker": "CRWD",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 1,
-          "total": 2
+          "neutral": 3,
+          "total": 3
         }
       },
       {
-        "ticker": "AMZN",
-        "mentions": 2,
-        "sentiment_score": 0.39,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
+        "ticker": "MDB",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 1,
-          "total": 2
+          "neutral": 3,
+          "total": 3
         }
       },
       {
-        "ticker": "OKLO",
-        "mentions": 2,
-        "sentiment_score": 0.375,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "ticker": "MRVL",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 1,
-          "total": 2
+          "neutral": 3,
+          "total": 3
         }
       }
     ]
@@ -182,7 +205,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 38,
+    "sentiment_bullish_pct": 35,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
