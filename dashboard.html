@@ -373,11 +373,6 @@
                 </div>
             </section>
 
-            <!-- Market Cards (Middle) -->
-            <section class="market-cards" id="marketCards">
-                <!-- Populated by JS -->
-            </section>
-
             <!-- Sentiment & Other Details (Bottom) -->
             <div class="grid grid-cols-12">
                 <!-- Sentiment Analysis -->
@@ -442,7 +437,6 @@
 
         function renderDashboard(outlook, market) {
             renderOutlook(outlook);
-            renderMarketCards(market);
             renderSentiment(outlook.sentiment);
             renderRegime(outlook.regime);
         }
@@ -472,31 +466,7 @@
             document.getElementById('riskFactors').innerHTML = analysis.risk_factors.map(t => `<li>> ${t}</li>`).join('');
         }
 
-        function renderMarketCards(data) {
-            const container = document.getElementById('marketCards');
-            const symbols = ['SPY', 'QQQ', 'VIX'];
 
-            container.innerHTML = symbols.map(sym => {
-                const item = data.symbols[sym];
-                if (!item) return '';
-
-                const isVix = sym === 'VIX';
-                const price = item.price ? item.price.toFixed(2) : '-';
-                const vol = item.volume ? (item.volume / 1000000).toFixed(1) + 'M' : '-';
-                const iv = item.implied_volatility ? item.implied_volatility.toFixed(1) + '%' : '-';
-
-                return `
-                    <div class="market-card">
-                        <div class="symbol">${sym}</div>
-                        <div class="price">$${price}</div>
-                        <div class="stats mono">
-                            ${!isVix ? `<span>VOL: ${vol}</span>` : ''}
-                            ${!isVix ? `<span>IV: ${iv}</span>` : `<span>RNG: ${item.day_low}-${item.day_high}</span>`}
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
 
         function renderSentiment(sentiment) {
             const container = document.getElementById('sentimentDetails');
