@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T14:57:03.064Z",
+  "timestamp": "2025-12-01T18:04:47.606Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 67,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 38,
-        "bearish": 18,
-        "neutral": 94,
-        "total": 150,
-        "pct": 25
+        "bullish": 61,
+        "bearish": 21,
+        "neutral": 146,
+        "total": 228,
+        "pct": 27
       },
       "news": {
-        "bullish": 8,
+        "bullish": 10,
         "bearish": 5,
-        "neutral": 3,
-        "total": 16,
-        "pct": 50
+        "neutral": 4,
+        "total": 19,
+        "pct": 53
       },
       "video": {
         "bullish": 1,
@@ -27,45 +27,77 @@
         "pct": 100
       },
       "chat": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0,
-        "total": 0,
-        "pct": 0
+        "bullish": 1,
+        "bearish": 1,
+        "neutral": 1,
+        "total": 3,
+        "pct": 33
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment remains bullish, driven by an anticipated Fed balance‑sheet expansion and AI‑driven upside, though short‑term risk‑off sentiment tempers enthusiasm (conviction: high).\n\n⚡ **Catalysts:** Fed policy cycle (balance‑sheet uptick early 2026), AI model releases, Alphabet (GOOGL) earnings, crypto volatility (BTC breach 86,500), SPX futures support at 6,783.\n\n🎯 **Action:** If SPX futures break 6,783 support, target next resistance per source analysis; If GOOGL breaks its recent high, target next resistance; If BTC breaches 86,500, watch for a rally to next key level.",
+    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction, driven by positive macro‑policy cues and strong sectoral catalysts.\n\n⚡ **Catalysts:** BTC (watch for $86,500 breach), Nvidia (data‑center run‑rate $200 B+), Meta (best week performance), ASML (breakout above $1,060, target $1,074), KDP ($28.50 target), S&P 500 futures (supports at 6783 and 6715), ZEC ($295 support), Crypto Fear & Greed Index at 24, S&P Manufacturing PMI 52.2.\n\n🎯 **Action:** If ASML > $1,060, target $1,074. If KDP > $28.50, target per source analysis. If BTC > $86,500, target per source analysis. If ZEC > $295, target per source analysis. If S&P 500 futures > 6783, target per source analysis.",
     "key_tickers": [
-      "GOOGL",
+      "ASML",
       "BTC",
-      "SPX"
+      "KDP",
+      "NVDA",
+      "META"
     ],
     "key_themes": [
-      "Fed policy cycle",
-      "AI innovation",
-      "Crypto volatility"
+      "Fed policy shift",
+      "Bitcoin store‑of‑value",
+      "AI & semiconductor growth",
+      "Crypto fear & greed",
+      "Energy rotation"
     ],
     "risk_factors": [
-      "Crypto volatility",
-      "Risk‑off sentiment",
-      "Fed policy uncertainty"
+      "China PMI release",
+      "Aerospace production quality issues",
+      "Weak manufacturing in India",
+      "Fed rate cut timing",
+      "Crypto volatility"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPX 6,783 support, BTC 86,500 breach",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "S&P 500 futures support 6783, support 6715",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance at 6,783, 86,500",
+    "swing_levels": "ASML breakout $1,060, target $1,074; KDP target $28.50; BTC breach $86,500; ZEC support $295; S&P 500 futures supports 6783 & 6715; Crypto Fear & Greed Index 24; S&P Manufacturing PMI 52.2",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 91170
+    "generation_time_ms": 81919
   },
   "trending": {
     "macro": [
       {
+        "ticker": "SLV",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 3
+        }
+      },
+      {
         "ticker": "SPY",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "GLD",
         "mentions": 2,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
@@ -81,28 +113,41 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 6,
-        "sentiment_score": -0.133,
+        "mentions": 9,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 7,
+          "total": 9
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 7,
+        "sentiment_score": -0.129,
         "sentiment_label": "Bearish",
         "sentiment_pct": 13,
         "counts": {
           "bullish": 0,
           "bearish": 1,
-          "neutral": 5,
-          "total": 6
+          "neutral": 6,
+          "total": 7
         }
       },
       {
-        "ticker": "MSTR",
-        "mentions": 4,
-        "sentiment_score": -0.225,
+        "ticker": "COIN",
+        "mentions": 3,
+        "sentiment_score": -0.267,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 23,
+        "sentiment_pct": 27,
         "counts": {
           "bullish": 0,
           "bearish": 1,
-          "neutral": 3,
-          "total": 4
+          "neutral": 2,
+          "total": 3
         }
       },
       {
@@ -119,26 +164,65 @@
         }
       },
       {
-        "ticker": "COIN",
-        "mentions": 2,
-        "sentiment_score": -0.4,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 40,
+        "ticker": "ETH",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
         "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 2
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
         }
       }
     ],
     "other": [
       {
-        "ticker": "TSLA",
-        "mentions": 6,
-        "sentiment_score": 0.392,
+        "ticker": "NVDA",
+        "mentions": 9,
+        "sentiment_score": 0.267,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
+        "sentiment_pct": 27,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 6,
+          "total": 9
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 8,
+        "sentiment_score": 0.294,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 29,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 5,
+          "total": 8
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 8,
+        "sentiment_score": -0.087,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 9,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 7,
+          "total": 8
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 6,
+        "sentiment_score": 0.383,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 38,
         "counts": {
           "bullish": 3,
           "bearish": 0,
@@ -147,55 +231,16 @@
         }
       },
       {
-        "ticker": "NVDA",
-        "mentions": 6,
-        "sentiment_score": 0.133,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 13,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 5,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "SPX",
-        "mentions": 5,
-        "sentiment_score": -0.14,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 14,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 4,
-          "total": 5
-        }
-      },
-      {
         "ticker": "AMZN",
-        "mentions": 4,
-        "sentiment_score": 0.395,
+        "mentions": 6,
+        "sentiment_score": 0.263,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "sentiment_pct": 26,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 2,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "GOOGL",
-        "mentions": 4,
-        "sentiment_score": 0.375,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 4
+          "neutral": 4,
+          "total": 6
         }
       }
     ]
@@ -203,17 +248,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 17.99,
-    "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 25,
+    "vix": 17.14,
+    "pc_ratio": 0.94,
+    "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 12.08,
-    "hv": 13.66,
-    "spread": 0,
+    "iv_rank": 13.05,
+    "hv": 13.6,
+    "spread": 0.38,
     "position": 20
   },
   "action": {
