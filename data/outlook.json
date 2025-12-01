@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-01T03:17:28.094Z",
+  "timestamp": "2025-12-01T03:57:12.036Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 77,
     "sources": {
       "social": {
         "bullish": 22,
-        "bearish": 5,
-        "neutral": 49,
-        "total": 76,
-        "pct": 29
+        "bearish": 6,
+        "neutral": 55,
+        "total": 83,
+        "pct": 27
       },
       "news": {
         "bullish": 1,
@@ -20,11 +20,11 @@
         "pct": 25
       },
       "video": {
-        "bullish": 0,
+        "bullish": 1,
         "bearish": 0,
         "neutral": 0,
-        "total": 0,
-        "pct": 0
+        "total": 1,
+        "pct": 100
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction bullish stance across risk assets, driven by the Fed rate cut expectation, upcoming Chinese PMI, and strong tech earnings. \n⚡ **Catalysts:** Gold above $3,250, silver near $57.75, Bitcoin holding $86,500 support, strong earnings for MSFT, TSLA, AMZN, AMGN, META, and NBIS, plus the Fed rate cut announcement.\n🎯 **Action:** If Bitcoin holds the $86,500 support level, anticipate a rebound in crypto and related stocks; if it breaks, consider shorting crypto‑related names. For tech names, watch for a break of the 200‑day MA (AMZN) or key resistance levels as per earnings guidance.",
+    "narrative": "📊 **Consensus:** The market is leaning bullish overall, with strong upside potential for BTC and risk‑equities, but caution around crypto volatility and upcoming Fed data. Conviction level: medium\n\n⚡ **Catalysts:** Fed’s quantitative tightening cycle ending, first rise in Fed balance‑sheet, Fed minutes, U.S. unemployment & inflation reports, China PMI release, Bitcoin’s 200‑day moving average, BTC $86,500 support, CRWV $90–$100 upside target.\n\n🎯 **Action:** If BTC breaks above the 200‑day MA, target $95k; if BTC breaks $86,500 support, consider downside stop at $84k. If CRWV RSI turns bullish, target $100; exit near $90 if RSI weakens.",
     "key_tickers": [
-      "MSFT",
-      "TSLA",
-      "AMZN",
-      "AMGN",
-      "META"
+      "BTC",
+      "CRWV",
+      "SPY"
     ],
     "key_themes": [
-      "Fed rate cut",
-      "Chinese PMI",
-      "Crypto volatility",
-      "Tech earnings",
-      "Commodity strength"
+      "BTC bullish rally",
+      "Fed QT end & balance‑sheet expansion",
+      "Risk‑asset upside",
+      "Crypto volatility caution",
+      "Tech sector rally"
     ],
     "risk_factors": [
-      "Bitcoin support breach",
-      "Chinese slowdown",
-      "Fed announcement volatility",
-      "Crypto regulatory risk",
-      "Earnings revisions"
+      "Fed policy surprise",
+      "China PMI surprise",
+      "Crypto volatility",
+      "BTC support break",
+      "Market volatility around data releases"
     ],
-    "intraday_bias": "BULLISH",
+    "intraday_bias": "NEUTRAL",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "Testing resistance",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 63532
+    "generation_time_ms": 72220
   },
   "trending": {
     "macro": [
@@ -87,15 +85,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 2,
-        "sentiment_score": -0.375,
+        "mentions": 4,
+        "sentiment_score": -0.188,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 19,
         "counts": {
           "bullish": 0,
           "bearish": 1,
-          "neutral": 1,
-          "total": 2
+          "neutral": 3,
+          "total": 4
         }
       },
       {
@@ -224,7 +222,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 29,
+    "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
