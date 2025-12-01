@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T12:48:41.042Z",
+  "timestamp": "2025-12-01T13:29:19.897Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 37,
-        "bearish": 16,
-        "neutral": 83,
-        "total": 136,
-        "pct": 27
+        "bullish": 36,
+        "bearish": 17,
+        "neutral": 84,
+        "total": 137,
+        "pct": 26
       },
       "news": {
-        "bullish": 3,
+        "bullish": 4,
         "bearish": 5,
-        "neutral": 3,
-        "total": 11,
-        "pct": 27
+        "neutral": 1,
+        "total": 10,
+        "pct": 40
       },
       "video": {
         "bullish": 1,
@@ -36,36 +36,32 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment leans bullish with strong confidence, driven by expectations of a Fed policy shift, AI/robotics momentum, and positive semiconductor and consumer discretionary news. ⚡ **Catalysts:** Fed balance‑sheet releases (potential rate cut), AI/robotics partnership (TPUv7) supporting GOOGL, gold rally to $3,250, BTC support at $87.2k, semiconductor upside linked to Intel‑Apple deal. 🎯 **Action:** If GOOGL breaks $375, target $385; If BTC holds $87.2k, target $95k; If gold surpasses $3,250, target $3,350; If SPY breaks $668 max pain, target $680.",
+    "narrative": "📊 **Consensus:** High conviction that markets will see a modest rally as the Fed’s quantitative tightening cycle ends and AI momentum drives upside.\n\n⚡ **Catalysts:** Fed balance‑sheet uptick, AI announcements (Accenture, Google), Bitcoin breakout above $86,500, S&P 500 futures support at 6,783.\n\n🎯 **Action:** If S&P 500 futures break 6,783, target 6,850; if Bitcoin breaks $86,500, target $90k; if GOOGL breaks $375, target $380; if ZEC breaks $295, target $310.",
     "key_tickers": [
-      "GOOGL",
       "BTC",
-      "GOLD",
-      "TSLA"
+      "GOOGL",
+      "SPY",
+      "ZEC"
     ],
     "key_themes": [
-      "Fed policy shifts",
-      "AI & robotics momentum",
-      "Crypto slide",
-      "Semiconductor supply chain",
-      "Consumer discretionary optimism"
+      "Fed QT end",
+      "AI momentum",
+      "Crypto rally",
+      "Market support levels",
+      "Macro data releases"
     ],
     "risk_factors": [
-      "Fed tightening",
-      "Crypto downturn",
-      "EV quality concerns",
-      "Supply chain disruptions",
-      "Macroeconomic slowdown"
+      "Immediate bearish catalysts: S&P 500 futures drop, Bitcoin below $86,500, ZEC near $295, Joby and Airbus declines, China PMI uncertainty, Fed rate cut expectations"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "GOOGL $375 target, BTC $87.2k support",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "S&P 500 futures support 6,783 and 6,715; Bitcoin $86,500; ZEC $295",
     "swing_bias": "BULLISH",
-    "swing_levels": "GOOGL $375 target, gold $3,250 level, BTC $87.2k support",
+    "swing_levels": "Testing 200‑day moving average for BTC; watching for breakout of S&P 500 futures support 6,783",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 80077
+    "generation_time_ms": 81882
   },
   "trending": {
     "macro": [
@@ -182,9 +178,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 18.14,
+    "vix": 18.32,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 27,
+    "sentiment_bullish_pct": 26,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
