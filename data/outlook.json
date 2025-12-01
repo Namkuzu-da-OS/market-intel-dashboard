@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-01T04:29:20.349Z",
+  "timestamp": "2025-12-01T05:12:07.442Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 22,
+        "bullish": 23,
         "bearish": 6,
-        "neutral": 55,
-        "total": 83,
-        "pct": 27
+        "neutral": 59,
+        "total": 88,
+        "pct": 26
       },
       "news": {
         "bullish": 1,
@@ -36,37 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction bullish stance driven by the anticipated end of quantitative tightening, Fed balance‑sheet expansion, and a strong earnings calendar. The market is poised for a short‑term pullback followed by a counter‑trend rally.\n\n⚡ **Catalysts:** Fed balance‑sheet release (Dec 2025), December 5th earnings for $MSFT, $TSLA, $AMZN, $META, $PYPL, Black‑Friday sales momentum, gold above $3,250, silver at $57.75, Bitcoin threshold at $86,500, and upcoming PMI/industrial data.\n\n🎯 **Action:** If BTC breaks $86,500, target $90k. If $MSFT earnings beat expectations, target a 3% rally to $310. If gold stays above $3,250, hold a long position with a 5% take‑profit.",
+    "narrative": "📊 **Consensus:** Overall market sentiment is bullish with medium-high conviction.\n⚡ **Catalysts:** Fed balance‑sheet expansion (first uptick early 2026), end of quantitative tightening on Dec 1 2025, BTC $86,500 threshold, upcoming earnings of AMGN, AMZN, META on Dec 5, China manufacturing survey, dollar strength, commodity momentum (gold > $3,250, silver ~ $58).\n🎯 **Action:** If BTC breaks $86,500, consider a long BTC position and watch for upward momentum; if AMZN breaks $235, consider a long AMZN position and monitor for continued strength.",
     "key_tickers": [
-      "MSFT",
-      "TSLA",
+      "BTC",
       "AMZN",
       "META",
-      "BTC"
+      "AMGN"
     ],
     "key_themes": [
-      "Fed balance‑sheet easing",
-      "Earnings season momentum",
-      "Gold & silver rally",
-      "Crypto volatility",
-      "AI & tech growth"
+      "Fed balance‑sheet expansion",
+      "Crypto threshold",
+      "Upcoming earnings",
+      "Commodity momentum",
+      "Risk sentiment"
     ],
     "risk_factors": [
-      "Crypto weakness",
-      "Earnings miss",
-      "Fed policy reversal",
-      "Manufacturing PMI decline",
-      "EM currency tightening"
+      "Fed policy uncertainty",
+      "China PMI contraction",
+      "BTC volatility",
+      "Earnings surprises",
+      "Commodity demand"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "BTC 86,500 support, AMZN 235 resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "BTC 86,500 threshold, AMZN 235, Gold 3,250 resistance, Silver 58",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 60321
+    "generation_time_ms": 74103
   },
   "trending": {
     "macro": [
@@ -224,7 +223,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 27,
+    "sentiment_bullish_pct": 26,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
