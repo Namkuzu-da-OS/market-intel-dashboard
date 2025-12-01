@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-01T20:37:52.010Z",
+  "timestamp": "2025-12-01T22:48:07.069Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 71,
-        "bearish": 26,
-        "neutral": 173,
-        "total": 270,
-        "pct": 26
+        "bullish": 84,
+        "bearish": 29,
+        "neutral": 195,
+        "total": 308,
+        "pct": 27
       },
       "news": {
-        "bullish": 16,
-        "bearish": 7,
+        "bullish": 17,
+        "bearish": 8,
         "neutral": 7,
-        "total": 30,
+        "total": 32,
         "pct": 53
       },
       "video": {
         "bullish": 1,
-        "bearish": 0,
+        "bearish": 1,
         "neutral": 0,
-        "total": 1,
-        "pct": 100
+        "total": 2,
+        "pct": 50
       },
       "chat": {
         "bullish": 2,
@@ -36,37 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High‑conviction bullish stance on macro fundamentals and biotech/AI growth, tempered by significant crypto‑driven and S&P support concerns. \n\n⚡ **Catalysts:** Fed policy shift (end of quantitative tightening on Dec 1 2025), key macro releases (unemployment, inflation, rate policy), biotech/AI earnings, S&P 500 futures below 6783 with 6715 under threat, BTC near $160 zone, ZEC at $295 support, ASML breakout at 1060.\n\n🎯 **Action:** If S&P 500 futures break below 6783, target 6715; if BTC falls below $160, consider exiting or tightening stops; if ZEC drops below $295, watch for further support; if ASML breaks 1060, monitor for upward breakout.",
+    "narrative": "📊 **Consensus:** The market is poised for a short‑term bullish move driven by AI‑chip momentum, Fed balance‑sheet expansion, and a pending crypto‑ETF launch, with high conviction.\n\n⚡ **Catalysts:** NVDA 200 & 215 targets, SPX 6783 support & 6715 major, TSLA 450‑strike gamma spike, MSTR green pin bar, and the upcoming BOJ rate hike.\n\n🎯 **Action:** If NVDA breaks above 215, target 240; if SPX breaks 6783 support, target 6850; if TSLA breaks 450‑strike support, target 470; watch MSTR for a bullish pin bar confirmation before entry.",
     "key_tickers": [
-      "BTC",
-      "ZEC",
-      "SPY",
-      "ASML",
-      "NVDA"
+      "NVDA",
+      "TSLA",
+      "SPX"
     ],
     "key_themes": [
-      "Fed policy shift",
-      "crypto sell‑off",
-      "biotech/AI growth",
-      "macro data releases",
-      "S&P support erosion"
+      "AI chip surge",
+      "Fed balance‑sheet expansion",
+      "BOJ rate hike risk‑off",
+      "Crypto‑ETF launch",
+      "Heightened volatility"
     ],
     "risk_factors": [
-      "crypto volatility",
-      "S&P support breakdown",
-      "macro tightening",
-      "supply chain disruptions",
-      "regulatory changes"
+      "Regulatory crackdowns",
+      "High valuations",
+      "BOJ rate hike impact",
+      "Crypto‑ETF launch timing",
+      "Potential pullback to 6783"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY 6783 support, 6715 under threat; BTC $160 zone; ZEC $295 support",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPX 6783 support, 6715 major resistance; NVDA 200 support; TSLA 450‑strike support",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 6783 resistance, 6715 support; ASML 1060 breakout; BTC $160 support",
+    "swing_levels": "SPX 6783 support, 6715 major resistance; NVDA 200 & 215 levels; TSLA 450‑strike level",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 92031
+    "generation_time_ms": 83554
   },
   "trending": {
     "macro": [
@@ -126,28 +124,28 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 13,
-        "sentiment_score": -0.135,
+        "mentions": 15,
+        "sentiment_score": -0.073,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 14,
+        "sentiment_pct": 7,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 3,
-          "neutral": 9,
-          "total": 13
+          "neutral": 10,
+          "total": 15
         }
       },
       {
         "ticker": "BTC",
-        "mentions": 10,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "mentions": 12,
+        "sentiment_score": 0.121,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 12,
         "counts": {
-          "bullish": 1,
+          "bullish": 3,
           "bearish": 1,
           "neutral": 8,
-          "total": 10
+          "total": 12
         }
       },
       {
@@ -161,6 +159,19 @@
           "bearish": 1,
           "neutral": 2,
           "total": 3
+        }
+      },
+      {
+        "ticker": "ETH",
+        "mentions": 2,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
         }
       },
       {
@@ -179,6 +190,19 @@
     ],
     "other": [
       {
+        "ticker": "NVDA",
+        "mentions": 13,
+        "sentiment_score": 0.312,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 31,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 8,
+          "total": 13
+        }
+      },
+      {
         "ticker": "TSLA",
         "mentions": 12,
         "sentiment_score": 0.263,
@@ -192,29 +216,29 @@
         }
       },
       {
-        "ticker": "NVDA",
+        "ticker": "SPX",
         "mentions": 11,
-        "sentiment_score": 0.291,
+        "sentiment_score": 0.141,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 29,
+        "sentiment_pct": 14,
         "counts": {
-          "bullish": 4,
-          "bearish": 0,
+          "bullish": 3,
+          "bearish": 1,
           "neutral": 7,
           "total": 11
         }
       },
       {
-        "ticker": "SPX",
-        "mentions": 8,
-        "sentiment_score": -0.087,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 9,
+        "ticker": "MDB",
+        "mentions": 9,
+        "sentiment_score": 0.267,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 27,
         "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 7,
-          "total": 8
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 6,
+          "total": 9
         }
       },
       {
@@ -229,36 +253,23 @@
           "neutral": 4,
           "total": 7
         }
-      },
-      {
-        "ticker": "AMZN",
-        "mentions": 6,
-        "sentiment_score": 0.263,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 26,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 4,
-          "total": 6
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 17.11,
-    "pc_ratio": 1,
-    "sentiment_bullish_pct": 26,
+    "vix": 17.24,
+    "pc_ratio": 1.04,
+    "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 13,
-    "hv": 13.54,
-    "spread": 0.42,
+    "iv_rank": 13.36,
+    "hv": 13.6,
+    "spread": 0.48,
     "position": 20
   },
   "action": {
