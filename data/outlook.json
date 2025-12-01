@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T07:07:11.273Z",
+  "timestamp": "2025-12-01T11:31:10.398Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 68,
+    "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 24,
-        "bearish": 10,
-        "neutral": 65,
-        "total": 99,
-        "pct": 24
+        "bullish": 30,
+        "bearish": 13,
+        "neutral": 70,
+        "total": 113,
+        "pct": 27
       },
       "news": {
         "bullish": 1,
-        "bearish": 2,
-        "neutral": 2,
-        "total": 5,
-        "pct": 20
+        "bearish": 4,
+        "neutral": 3,
+        "total": 8,
+        "pct": 13
       },
       "video": {
         "bullish": 1,
@@ -36,54 +36,40 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is leaning bullish overall, driven by expectations of Fed QT conclusion and risk‑on sentiment, but with a cautionary note from recent crypto sell‑off and liquidity drain (conviction: medium)\n\n⚡ **Catalysts:** Key drivers include the Fed’s balance‑sheet release and the formal announcement of QT’s end, the upcoming China PMI, and the BTC 86,500 threshold; tickers mentioned are BTC, GLD, SLV, COP, USO.\n\n🎯 **Action:** If BTC breaks above 86,500, consider a bullish stance; if it breaks below, consider a bearish stance. For commodities, watch for breakout/breakdown levels around current market sentiment.",
+    "narrative": "📊 **Consensus:** The market shows a medium‑conviction mixed outlook, with bullish expectations from Fed easing and Chinese PMI upside balanced against bearish crypto‑driven risk sentiment.\n\n⚡ **Catalysts:** Fed balance‑sheet releases, rate‑policy minutes, core inflation data, Chinese PMI, dollar index, BTC break below $86,500, gold $3,250, silver $57.75, CRWV $90–$100, AMGN $355, AMZN $236.50, META $662.\n\n🎯 **Action:** If BTC pulls back below $86,500, consider a short entry; if it rebounds above $87.2k, target $90k. For equities, watch for Fed signals of expansion to confirm a rally; if AMZN breaks $236.50, target $250, if AMGN breaks $355, target $380, if META breaks $662, target $680.",
     "key_tickers": [
       "BTC",
-      "GLD",
-      "SLV",
-      "COP",
-      "USO"
+      "AMZN",
+      "AMGN",
+      "META",
+      "CRWV"
     ],
     "key_themes": [
-      "Fed QT conclusion",
-      "BTC 200‑day MA breakout",
-      "Risk‑on from Fed rate cuts",
-      "Crypto sell‑off",
-      "Commodity rally"
+      "Fed policy shift",
+      "Chinese PMI",
+      "Crypto volatility",
+      "Risk‑on equities",
+      "Dollar softness"
     ],
     "risk_factors": [
-      "$40bn wipeout",
-      "BTC below 86,500",
-      "Extreme fear in Fear‑and‑Greed Index",
-      "Manufacturing slowdown",
-      "Potential delay in Fed rate cuts"
+      "Crypto downturn",
+      "Manufacturing weakness in China/India",
+      "Regulatory scrutiny",
+      "Fed tightening risk",
+      "Volatility spikes"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "BTC 86,500 level",
+    "intraday_levels": "BTC $86,500 support, gold $3,250, silver $57.75, CRWV $90–$100, AMGN $355, AMZN $236.50, META $662",
     "swing_bias": "BULLISH",
-    "swing_levels": "BTC 86,500 level",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "BTC $86,500 support, $90–$100 resistance; gold $3,250; silver $57.75; AMGN $355; AMZN $236.50; META $662",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 81056
+    "generation_time_ms": 85260
   },
   "trending": {
-    "macro": [
-      {
-        "ticker": "SPY",
-        "mentions": 1,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      }
-    ],
+    "macro": [],
     "crypto": [
       {
         "ticker": "BTC",
@@ -110,45 +96,6 @@
           "neutral": 1,
           "total": 1
         }
-      },
-      {
-        "ticker": "IREN",
-        "mentions": 1,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "COIN",
-        "mentions": 1,
-        "sentiment_score": -0.8,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "MSTR",
-        "mentions": 1,
-        "sentiment_score": -0.8,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "other": [
@@ -158,6 +105,19 @@
         "sentiment_score": 0.517,
         "sentiment_label": "Bullish",
         "sentiment_pct": 52,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "ONDS",
+        "mentions": 3,
+        "sentiment_score": 0.483,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 48,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -203,28 +163,15 @@
           "neutral": 3,
           "total": 3
         }
-      },
-      {
-        "ticker": "MRVL",
-        "mentions": 3,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 3
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.35,
+    "vix": 17.98,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 24,
+    "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
