@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T19:44:11.014Z",
+  "timestamp": "2025-12-01T20:37:52.010Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 71,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 67,
-        "bearish": 25,
-        "neutral": 166,
-        "total": 258,
+        "bullish": 71,
+        "bearish": 26,
+        "neutral": 173,
+        "total": 270,
         "pct": 26
       },
       "news": {
-        "bullish": 13,
+        "bullish": 16,
         "bearish": 7,
         "neutral": 7,
-        "total": 27,
-        "pct": 48
+        "total": 30,
+        "pct": 53
       },
       "video": {
         "bullish": 1,
@@ -27,43 +27,46 @@
         "pct": 100
       },
       "chat": {
-        "bullish": 1,
+        "bullish": 2,
         "bearish": 1,
         "neutral": 1,
-        "total": 3,
-        "pct": 33
+        "total": 4,
+        "pct": 50
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market leans bullish on Fed balance‑sheet uptick and AI‑driven growth, but short‑term risk‑off pressure around S&P 500 support levels may temper intraday moves. \n⚡ **Catalysts:** Fed balance‑sheet uptick, AI & semiconductor growth, BTC safe‑haven rally, S&P 500 futures support 6,783, TSLA 450‑strike gamma exposure, Joby $10 target, Crypto Fear‑Greed Index 24. \n🎯 **Action:** If S&P 500 futures break above 6,783, consider buying SPY with target per source analysis; If BTC RSI climbs above 30 and 200‑day MA holds, consider buying BTC with target per source analysis; If TSLA breaks 450‑strike gamma, consider buying TSLA with target per source analysis; If Joby reaches $10, consider buying Joby with target per source analysis.",
+    "narrative": "📊 **Consensus:** High‑conviction bullish stance on macro fundamentals and biotech/AI growth, tempered by significant crypto‑driven and S&P support concerns. \n\n⚡ **Catalysts:** Fed policy shift (end of quantitative tightening on Dec 1 2025), key macro releases (unemployment, inflation, rate policy), biotech/AI earnings, S&P 500 futures below 6783 with 6715 under threat, BTC near $160 zone, ZEC at $295 support, ASML breakout at 1060.\n\n🎯 **Action:** If S&P 500 futures break below 6783, target 6715; if BTC falls below $160, consider exiting or tightening stops; if ZEC drops below $295, watch for further support; if ASML breaks 1060, monitor for upward breakout.",
     "key_tickers": [
       "BTC",
-      "TSLA",
-      "JOBY",
+      "ZEC",
+      "SPY",
+      "ASML",
       "NVDA"
     ],
     "key_themes": [
-      "Fed balance sheet signals",
-      "AI & semiconductor growth",
-      "Risk‑on holiday momentum"
+      "Fed policy shift",
+      "crypto sell‑off",
+      "biotech/AI growth",
+      "macro data releases",
+      "S&P support erosion"
     ],
     "risk_factors": [
-      "Regulatory crackdowns",
-      "S&P 500 support levels 6,783/6,715",
-      "Joby $10 target",
-      "Crypto fear‑greed index 24",
-      "Supply‑chain hiccups"
+      "crypto volatility",
+      "S&P support breakdown",
+      "macro tightening",
+      "supply chain disruptions",
+      "regulatory changes"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "S&P 500 futures support 6,783; TSLA 450‑strike gamma exposure; Joby $10 target; Crypto Fear‑Greed Index 24",
+    "intraday_levels": "SPY 6783 support, 6715 under threat; BTC $160 zone; ZEC $295 support",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing 200‑day MA for BTC; Watching AI‑semiconductor rally; Monitoring holiday‑end risk‑on momentum",
+    "swing_levels": "SPY 6783 resistance, 6715 support; ASML 1060 breakout; BTC $160 support",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 111617
+    "generation_time_ms": 92031
   },
   "trending": {
     "macro": [
@@ -122,6 +125,19 @@
     ],
     "crypto": [
       {
+        "ticker": "MSTR",
+        "mentions": 13,
+        "sentiment_score": -0.135,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 14,
+        "counts": {
+          "bullish": 1,
+          "bearish": 3,
+          "neutral": 9,
+          "total": 13
+        }
+      },
+      {
         "ticker": "BTC",
         "mentions": 10,
         "sentiment_score": 0,
@@ -130,19 +146,6 @@
         "counts": {
           "bullish": 1,
           "bearish": 1,
-          "neutral": 8,
-          "total": 10
-        }
-      },
-      {
-        "ticker": "MSTR",
-        "mentions": 10,
-        "sentiment_score": -0.17,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 17,
-        "counts": {
-          "bullish": 0,
-          "bearish": 2,
           "neutral": 8,
           "total": 10
         }
@@ -177,8 +180,21 @@
     "other": [
       {
         "ticker": "TSLA",
+        "mentions": 12,
+        "sentiment_score": 0.263,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 26,
+        "counts": {
+          "bullish": 4,
+          "bearish": 0,
+          "neutral": 8,
+          "total": 12
+        }
+      },
+      {
+        "ticker": "NVDA",
         "mentions": 11,
-        "sentiment_score": 0.286,
+        "sentiment_score": 0.291,
         "sentiment_label": "Bullish",
         "sentiment_pct": 29,
         "counts": {
@@ -186,19 +202,6 @@
           "bearish": 0,
           "neutral": 7,
           "total": 11
-        }
-      },
-      {
-        "ticker": "NVDA",
-        "mentions": 10,
-        "sentiment_score": 0.24,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 24,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 7,
-          "total": 10
         }
       },
       {
@@ -216,15 +219,15 @@
       },
       {
         "ticker": "GOOGL",
-        "mentions": 6,
-        "sentiment_score": 0.383,
+        "mentions": 7,
+        "sentiment_score": 0.329,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 33,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 3,
-          "total": 6
+          "neutral": 4,
+          "total": 7
         }
       },
       {
@@ -245,17 +248,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.68,
-    "pc_ratio": 0.93,
+    "vix": 17.11,
+    "pc_ratio": 1,
     "sentiment_bullish_pct": 26,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 11.84,
-    "hv": 13.52,
-    "spread": 0.06,
+    "iv_rank": 13,
+    "hv": 13.54,
+    "spread": 0.42,
     "position": 20
   },
   "action": {
