@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-01T14:13:08.681Z",
+  "timestamp": "2025-12-01T14:57:03.064Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 67,
     "sources": {
       "social": {
-        "bullish": 36,
+        "bullish": 38,
         "bearish": 18,
-        "neutral": 89,
-        "total": 143,
+        "neutral": 94,
+        "total": 150,
         "pct": 25
       },
       "news": {
-        "bullish": 7,
+        "bullish": 8,
         "bearish": 5,
-        "neutral": 2,
-        "total": 14,
+        "neutral": 3,
+        "total": 16,
         "pct": 50
       },
       "video": {
@@ -36,35 +36,31 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is strongly bullish with high conviction, driven by favorable Fed balance‑sheet expectations, AI‑infrastructure wins, and a commodities rally. \n⚡ **Catalysts:** Fed balance‑sheet uptick, 200‑day MA breakout for SPY, Nvidia–Synopsys partnership, AI‑infrastructure deals (Accenture‑OpenAI, Google‑Foxconn), gold above $3,250, Bitcoin floor $86,500, S&P 500 support at 6,783.\n🎯 **Action:** If SPY breaks above its 200‑day MA, target 1‑2% upside; if Bitcoin stays above $86,500, target $95,000; if gold remains above $3,250, target $3,500; if S&P 500 holds 6,783 support, consider a short‑term bullish stance with a 2‑3% profit target.\n",
+    "narrative": "📊 **Consensus:** Market sentiment remains bullish, driven by an anticipated Fed balance‑sheet expansion and AI‑driven upside, though short‑term risk‑off sentiment tempers enthusiasm (conviction: high).\n\n⚡ **Catalysts:** Fed policy cycle (balance‑sheet uptick early 2026), AI model releases, Alphabet (GOOGL) earnings, crypto volatility (BTC breach 86,500), SPX futures support at 6,783.\n\n🎯 **Action:** If SPX futures break 6,783 support, target next resistance per source analysis; If GOOGL breaks its recent high, target next resistance; If BTC breaches 86,500, watch for a rally to next key level.",
     "key_tickers": [
-      "SPY",
-      "NVDA",
+      "GOOGL",
       "BTC",
-      "XAU",
-      "QQQ"
+      "SPX"
     ],
     "key_themes": [
-      "Fed balance‑sheet dynamics",
-      "AI infrastructure wins",
-      "Commodity rally (gold)"
+      "Fed policy cycle",
+      "AI innovation",
+      "Crypto volatility"
     ],
     "risk_factors": [
-      "Fed rate decision",
-      "Airbus quality issues",
-      "China PMI downturn",
-      "Bitcoin decline",
-      "S&P support breach"
+      "Crypto volatility",
+      "Risk‑off sentiment",
+      "Fed policy uncertainty"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "S&P 500 support 6,783, Gold above 3,250, Bitcoin floor 86,500, ZEC 295",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPX 6,783 support, BTC 86,500 breach",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 200‑day MA breakout, SPY max pain 668",
+    "swing_levels": "Testing resistance at 6,783, 86,500",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 81990
+    "generation_time_ms": 91170
   },
   "trending": {
     "macro": [
@@ -98,15 +94,15 @@
       },
       {
         "ticker": "MSTR",
-        "mentions": 3,
-        "sentiment_score": -0.3,
+        "mentions": 4,
+        "sentiment_score": -0.225,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 30,
+        "sentiment_pct": 23,
         "counts": {
           "bullish": 0,
           "bearish": 1,
-          "neutral": 2,
-          "total": 3
+          "neutral": 3,
+          "total": 4
         }
       },
       {
@@ -139,28 +135,54 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 5,
-        "sentiment_score": 0.31,
+        "mentions": 6,
+        "sentiment_score": 0.392,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 31,
+        "sentiment_pct": 39,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 3,
-          "total": 5
+          "total": 6
         }
       },
       {
         "ticker": "NVDA",
-        "mentions": 5,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "mentions": 6,
+        "sentiment_score": 0.133,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 13,
         "counts": {
-          "bullish": 0,
+          "bullish": 1,
           "bearish": 0,
           "neutral": 5,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 5,
+        "sentiment_score": -0.14,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 14,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 4,
           "total": 5
+        }
+      },
+      {
+        "ticker": "AMZN",
+        "mentions": 4,
+        "sentiment_score": 0.395,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 4
         }
       },
       {
@@ -175,39 +197,13 @@
           "neutral": 2,
           "total": 4
         }
-      },
-      {
-        "ticker": "CRWD",
-        "mentions": 4,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 4,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "SPX",
-        "mentions": 4,
-        "sentiment_score": -0.175,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 18,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 3,
-          "total": 4
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 18.11,
+    "vix": 17.99,
     "pc_ratio": 1.01,
     "sentiment_bullish_pct": 25,
     "summary": "Market is lacking clear direction. Wait for confirmation."
@@ -216,8 +212,8 @@
     "label": "BUY PROTECTION",
     "color": "text-cyan",
     "iv_rank": 12.08,
-    "hv": 13.57,
-    "spread": 0.09,
+    "hv": 13.66,
+    "spread": 0,
     "position": 20
   },
   "action": {
