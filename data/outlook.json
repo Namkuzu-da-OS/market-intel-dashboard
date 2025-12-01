@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-01T06:39:07.653Z",
+  "timestamp": "2025-12-01T07:07:11.273Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,31 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Overall market sentiment is cautiously bullish with high conviction for a near‑term upside driven by expected Fed rate cuts and a potential rebound in crypto markets. \n\n⚡ **Catalysts:** Fed policy statement (rate cut), private China manufacturing PMI, Bitcoin’s $86,500 support, tech breakout signals, and gold above $3,250. \n\n🎯 **Action:** If Bitcoin breaks above $86,500, target $95,000; if Fed cuts rates, consider long positions in risk assets with stop near current resistance levels; monitor tech names for VWAP breakout before committing.",
+    "narrative": "📊 **Consensus:** The market is leaning bullish overall, driven by expectations of Fed QT conclusion and risk‑on sentiment, but with a cautionary note from recent crypto sell‑off and liquidity drain (conviction: medium)\n\n⚡ **Catalysts:** Key drivers include the Fed’s balance‑sheet release and the formal announcement of QT’s end, the upcoming China PMI, and the BTC 86,500 threshold; tickers mentioned are BTC, GLD, SLV, COP, USO.\n\n🎯 **Action:** If BTC breaks above 86,500, consider a bullish stance; if it breaks below, consider a bearish stance. For commodities, watch for breakout/breakdown levels around current market sentiment.",
     "key_tickers": [
       "BTC",
-      "AMZN"
+      "GLD",
+      "SLV",
+      "COP",
+      "USO"
     ],
     "key_themes": [
-      "Fed rate cuts",
-      "Crypto recovery",
-      "Chinese manufacturing PMI"
+      "Fed QT conclusion",
+      "BTC 200‑day MA breakout",
+      "Risk‑on from Fed rate cuts",
+      "Crypto sell‑off",
+      "Commodity rally"
     ],
     "risk_factors": [
-      "Crypto fear & greed extreme fear",
-      "Bitcoin below 86,500 support",
-      "40B wipe‑out risk",
-      "Volatility around Fed/PMI announcements"
+      "$40bn wipeout",
+      "BTC below 86,500",
+      "Extreme fear in Fear‑and‑Greed Index",
+      "Manufacturing slowdown",
+      "Potential delay in Fed rate cuts"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "BTC 86,500 support",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "BTC 86,500 level",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for Fed rate cut announcement and China PMI release",
+    "swing_levels": "BTC 86,500 level",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 66619
+    "generation_time_ms": 81056
   },
   "trending": {
     "macro": [
