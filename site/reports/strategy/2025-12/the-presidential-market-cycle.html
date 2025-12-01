@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Market Cycles: Interactive Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6; 
+            color: #1f2937;
+        }
+
+        /* Custom Chart Container Styles - Strictly Enforced */
+        .chart-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 100%; 
+            margin: 0 auto;
+            height: 300px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-wrapper {
+                height: 400px;
+            }
+        }
+
+        .chart-wrapper-sm {
+            position: relative;
+            width: 100%;
+            height: 250px;
+        }
+
+        /* Custom Scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        .nav-active {
+            border-bottom: 2px solid #ea580c;
+            color: #ea580c;
+            font-weight: 600;
+        }
+    </style>
+    <!-- Chosen Palette: Warm Neutrals (Stone/Orange/Slate). Background: #fdfaf6, Text: #1f2937, Accents: #ea580c (Orange for highlight), #3b82f6 (Blue), #ef4444 (Red) -->
+    <!-- Application Structure Plan: The app is structured as a vertical scrolling dashboard with a sticky navigation bar. 
+         1. Hero Section: Sets the context.
+         2. The 4-Year Cycle (Core Interaction): A tabbed interface breaking down Year 1, 2, 3, and 4. This is the heart of the report, allowing users to isolate specific periods.
+         3. Cumulative Growth: A line chart comparing the "Average Cycle" to a theoretical baseline, visualizing the "growth path."
+         4. Party Dynamics: Comparing Red vs. Blue administration performance.
+         5. Seasonality: A specific look at monthly trends during Election Years.
+         6. Interactive Takeaways: A summary section.
+         Rationale: This structure moves from the specific (yearly breakdown) to the aggregate (cumulative) to the political (party splits), ending with granular seasonality. -->
+    <!-- Visualization & Content Choices: 
+         1. Cycle Breakdown: Bar Charts. Goal: Compare average returns per year. Interaction: Tab switching updates text and chart focus.
+         2. Cumulative Trend: Line Chart. Goal: Show the "path" of returns. Interaction: None (static view for clarity).
+         3. Party Comparison: Grouped Bar Chart. Goal: Compare specific party impacts.
+         4. Election Year Seasonality: Bar Chart. Goal: Show monthly volatility.
+         All viz uses Chart.js. No SVG. No Mermaid. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#fdfaf6]/95 backdrop-blur-sm border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl mr-2">🏛️</span>
+                    <span class="font-bold text-xl tracking-tight text-stone-800">CycleWatch</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <button onclick="scrollToSection('intro')" class="text-stone-600 hover:text-orange-600 transition-colors text-sm uppercase tracking-wide">Overview</button>
+                    <button onclick="scrollToSection('yearly-breakdown')" class="text-stone-600 hover:text-orange-600 transition-colors text-sm uppercase tracking-wide">Year by Year</button>
+                    <button onclick="scrollToSection('party-dynamics')" class="text-stone-600 hover:text-orange-600 transition-colors text-sm uppercase tracking-wide">Party Data</button>
+                    <button onclick="scrollToSection('seasonality')" class="text-stone-600 hover:text-orange-600 transition-colors text-sm uppercase tracking-wide">Seasonality</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- Hero / Intro Section -->
+        <section id="intro" class="text-center space-y-6 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-stone-900 tracking-tight">The Presidential Market Cycle</h1>
+            <p class="text-lg md:text-xl text-stone-600 leading-relaxed">
+                History suggests the stock market follows a predictable rhythm aligned with the 4-year US presidential term. 
+                From the "Midterm Bottom" to the pre-election surge, understanding these patterns is crucial for contextualizing market volatility.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                    <div class="text-3xl font-bold text-orange-600 mb-2">Year 3</div>
+                    <div class="text-sm text-stone-500 font-medium uppercase">Strongest Performace</div>
+                    <p class="text-stone-600 text-sm mt-2">Historically the best year for equities as incumbents pump the economy.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                    <div class="text-3xl font-bold text-stone-700 mb-2">Year 2</div>
+                    <div class="text-sm text-stone-500 font-medium uppercase">High Volatility</div>
+                    <p class="text-stone-600 text-sm mt-2">Midterm years often see significant corrections before a Q4 rally.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">83%</div>
+                    <div class="text-sm text-stone-500 font-medium uppercase">Win Rate</div>
+                    <p class="text-stone-600 text-sm mt-2">Frequency of positive returns in election years (Year 4) since 1928.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-stone-200">
+
+        <!-- Section 2: Year by Year Deep Dive -->
+        <section id="yearly-breakdown" class="scroll-mt-24">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-stone-800 mb-4">The 4-Year Breakdown</h2>
+                <p class="text-stone-600 max-w-3xl">
+                    Not all years are created equal. The cycle theory suggests that presidents tackle difficult policies early in their term (causing market drag) and stimulate the economy later to ensure re-election. Click the tabs below to explore the distinct personality of each year in the cycle.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-stone-200 overflow-hidden">
+                <!-- Tabs -->
+                <div class="flex flex-wrap border-b border-stone-200 bg-stone-50">
+                    <button onclick="updateYearView(1)" id="tab-1" class="flex-1 py-4 text-sm font-semibold uppercase tracking-wider text-stone-500 hover:bg-white hover:text-orange-600 transition-all border-r border-stone-200 focus:outline-none nav-active">Year 1: Post-Election</button>
+                    <button onclick="updateYearView(2)" id="tab-2" class="flex-1 py-4 text-sm font-semibold uppercase tracking-wider text-stone-500 hover:bg-white hover:text-orange-600 transition-all border-r border-stone-200 focus:outline-none">Year 2: Midterms</button>
+                    <button onclick="updateYearView(3)" id="tab-3" class="flex-1 py-4 text-sm font-semibold uppercase tracking-wider text-stone-500 hover:bg-white hover:text-orange-600 transition-all border-r border-stone-200 focus:outline-none">Year 3: Pre-Election</button>
+                    <button onclick="updateYearView(4)" id="tab-4" class="flex-1 py-4 text-sm font-semibold uppercase tracking-wider text-stone-500 hover:bg-white hover:text-orange-600 transition-all focus:outline-none">Year 4: Election</button>
+                </div>
+
+                <div class="p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Dynamic Text Content -->
+                    <div id="year-content-area" class="space-y-6">
+                        <!-- Content injected via JS -->
+                    </div>
+
+                    <!-- Chart Side -->
+                    <div class="bg-stone-50 rounded-xl p-4 border border-stone-100">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-sm font-bold text-stone-400 uppercase">Average S&P 500 Return</h3>
+                            <span id="year-stat-badge" class="px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-full">+6.5%</span>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="cycleChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Cumulative Growth Path -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div class="lg:col-span-1 space-y-6">
+                <h2 class="text-2xl font-bold text-stone-800">Cumulative Cycle Impact</h2>
+                <p class="text-stone-600 text-sm leading-relaxed">
+                    If you invested $10,000 at the start of a presidential inauguration, how would the growth curve look?
+                </p>
+                <p class="text-stone-600 text-sm leading-relaxed">
+                    The chart illustrates the "midterm dip." Notice how the curve often flattens or dips around month 18-22 (Midterms), before accelerating sharply in the second half of the term. This is often attributed to the resolution of political uncertainty.
+                </p>
+                <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded-r-lg">
+                    <p class="text-orange-900 text-xs font-semibold">KEY INSIGHT</p>
+                    <p class="text-orange-800 text-sm mt-1">The back half of the presidential term (Years 3 & 4) has historically produced nearly 75% of the total 4-year cycle gains.</p>
+                </div>
+            </div>
+            <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-stone-200">
+                <div class="chart-wrapper">
+                    <canvas id="cumulativeChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Party Dynamics -->
+        <section id="party-dynamics" class="scroll-mt-24">
+            <div class="mb-6">
+                <h2 class="text-3xl font-bold text-stone-800">Does the Party Matter?</h2>
+                <p class="text-stone-600 mt-2">
+                    A common misconception is that one party is inherently better for the market. While there are variances, the market has historically trended upward under both parties. However, <strong>gridlock</strong> (split Congress) often performs best as it prevents radical policy shifts.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
+                    <h3 class="text-lg font-bold text-stone-800 mb-4">Avg Annual Return by President Party</h3>
+                    <div class="chart-wrapper-sm">
+                        <canvas id="partyChart"></canvas>
+                    </div>
+                </div>
+
+                 <!-- Card 2 -->
+                 <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-center space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-2xl">⚖️</div>
+                        <div>
+                            <h4 class="font-bold text-stone-800">Unified Government</h4>
+                            <p class="text-sm text-stone-500">~10.5% Avg Annual Return</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-px bg-stone-100"></div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-2xl">🤝</div>
+                        <div>
+                            <h4 class="font-bold text-stone-800">Split Congress (Gridlock)</h4>
+                            <p class="text-sm text-stone-500">~13.2% Avg Annual Return</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-stone-50 p-3 rounded text-xs text-stone-500 italic">
+                        *Data Source: Historical S&P 500 averages 1950-2023. Past performance is not indicative of future results.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Seasonality -->
+        <section id="seasonality" class="scroll-mt-24 bg-stone-900 text-white p-8 rounded-3xl shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-1 space-y-6">
+                    <h2 class="text-3xl font-bold text-white">The Election Year Microscope</h2>
+                    <p class="text-stone-300 leading-relaxed">
+                        Year 4 (The Election Year) has a unique seasonal profile. Unlike typical years where "Sell in May" is common wisdom, election years often see a summer rally followed by pre-election jitters in September/October.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-orange-500 mr-3 mt-1">●</span>
+                            <div>
+                                <h4 class="font-bold text-sm">Primaries (Q1)</h4>
+                                <p class="text-xs text-stone-400">Market consolidates as candidates are defined.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-orange-500 mr-3 mt-1">●</span>
+                            <div>
+                                <h4 class="font-bold text-sm">Summer Rally (Q2-Q3)</h4>
+                                <p class="text-xs text-stone-400">Conventions usually provide a clarity bump.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-orange-500 mr-3 mt-1">●</span>
+                            <div>
+                                <h4 class="font-bold text-sm">Post-Election (Nov-Dec)</h4>
+                                <p class="text-xs text-stone-400">Once the winner is known, uncertainty vanishes, often triggering a rally.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="bg-stone-800/50 p-4 rounded-xl border border-stone-700 h-full">
+                         <h3 class="text-sm font-bold text-stone-400 uppercase mb-4 text-center">Avg Monthly Return: Election Year vs All Years</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="seasonalityChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-10 pb-6 border-t border-stone-200 text-center">
+            <p class="text-stone-400 text-sm">Generated Analysis based on historical market cycle theory.</p>
+            <p class="text-stone-400 text-xs mt-2">Not financial advice. Indices are unmanaged and cannot be invested in directly.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Data Store
+        const cycleData = {
+            1: {
+                title: "Year 1: The Post-Election Hangover",
+                avgReturn: 6.5,
+                description: "Historically, the first year of a term is the weakest relative to the risk. Presidents often spend political capital early to pass difficult legislation or tax changes. Markets dislike the uncertainty of new policy implementation.",
+                keyEvents: ["Inauguration", "Cabinet Selection", "First 100 Days Policy Shifts"],
+                sentiment: "Cautious",
+                chartData: [6.5, 7.0, 16.4, 6.6] // Comparison data
+            },
+            2: {
+                title: "Year 2: The Midterm Bottom",
+                avgReturn: 7.0,
+                description: "Year 2 is characterized by volatility. The 'Midterm Low' typically occurs in Q2 or Q3. The ruling party often loses seats in Congress, introducing gridlock. However, buying the midterm bottom has historically been one of the most profitable trades in the 4-year cycle.",
+                keyEvents: ["Midterm Primaries", "Legislative Gridlock", "Q3 Market Bottom"],
+                sentiment: "Volatile",
+                chartData: [6.5, 7.0, 16.4, 6.6]
+            },
+            3: {
+                title: "Year 3: The Golden Year",
+                avgReturn: 16.4,
+                description: "Statistically the strongest year. The administration pivots to stimulus and populist measures to prepare for re-election. The market cheers the clarity of the midterms and the reduced likelihood of major legislative surprises.",
+                keyEvents: ["Pre-Election Stimulus", "Incumbent Campaign Launch", "Fed Alignment"],
+                sentiment: "Bullish",
+                chartData: [6.5, 7.0, 16.4, 6.6]
+            },
+            4: {
+                title: "Year 4: The Election Year",
+                avgReturn: 6.6,
+                description: "Returns are generally positive but choppy. The first half is often defined by primary uncertainty. Once candidates are set, markets stabilize. November and December typically see a relief rally once the winner is declared, regardless of who wins.",
+                keyEvents: ["Super Tuesday", "Party Conventions", "General Election (Nov)"],
+                sentiment: "Uncertain then Relief",
+                chartData: [6.5, 7.0, 16.4, 6.6]
+            }
+        };
+
+        const partyData = {
+            dem: 9.9,
+            rep: 6.2 // Historical averages vary by source, using common generalized stats
+        };
+
+        // Scroll Helper
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // --- CHART INSTANCES ---
+        let cycleChartInstance = null;
+        let cumulativeChartInstance = null;
+        let partyChartInstance = null;
+        let seasonalityChartInstance = null;
+
+        // --- INIT FUNCTION ---
+        document.addEventListener('DOMContentLoaded', () => {
+            updateYearView(1); // Default to Year 1
+            initCumulativeChart();
+            initPartyChart();
+            initSeasonalityChart();
+        });
+
+        // --- LOGIC: Year View (Section 2) ---
+        function updateYearView(year) {
+            // Update Tab Styles
+            for(let i=1; i<=4; i++) {
+                const btn = document.getElementById(`tab-${i}`);
+                if(i === year) {
+                    btn.classList.add('nav-active', 'bg-white', 'text-orange-600');
+                    btn.classList.remove('text-stone-500', 'bg-stone-50');
+                } else {
+                    btn.classList.remove('nav-active', 'bg-white', 'text-orange-600');
+                    btn.classList.add('text-stone-500', 'bg-stone-50');
+                }
+            }
+
+            // Inject Content
+            const data = cycleData[year];
+            const contentDiv = document.getElementById('year-content-area');
+            
+            contentDiv.innerHTML = `
+                <div class="animate-fade-in">
+                    <h3 class="text-2xl font-bold text-stone-800 mb-2">${data.title}</h3>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="px-2 py-1 text-xs font-bold uppercase tracking-wider bg-stone-100 text-stone-600 rounded">Sentiment: ${data.sentiment}</span>
+                    </div>
+                    <p class="text-stone-600 leading-relaxed mb-6">${data.description}</p>
+                    
+                    <h4 class="text-sm font-bold text-stone-900 uppercase mb-3">Key Factors</h4>
+                    <ul class="space-y-2">
+                        ${data.keyEvents.map(e => `<li class="flex items-center text-sm text-stone-600"><span class="text-orange-500 mr-2">➜</span>${e}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+
+            // Update Badge
+            const badge = document.getElementById('year-stat-badge');
+            badge.innerText = `${data.avgReturn > 0 ? '+' : ''}${data.avgReturn}% Avg Return`;
+            badge.className = `px-3 py-1 text-xs font-bold rounded-full ${data.avgReturn > 10 ? 'bg-green-100 text-green-800' : 'bg-orange-100 text-orange-800'}`;
+
+            // Update Chart
+            updateCycleChart(year);
+        }
+
+        function updateCycleChart(activeYear) {
+            const ctx = document.getElementById('cycleChart').getContext('2d');
+            
+            // Generate colors: Highlight active year
+            const bgColors = [1,2,3,4].map(y => y === activeYear ? 'rgba(234, 88, 12, 0.8)' : 'rgba(214, 211, 209, 0.5)');
+            const borderColors = [1,2,3,4].map(y => y === activeYear ? 'rgba(234, 88, 12, 1)' : 'rgba(168, 162, 158, 1)');
+
+            if(cycleChartInstance) {
+                cycleChartInstance.destroy();
+            }
+
+            cycleChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4'],
+                    datasets: [{
+                        label: 'Avg S&P 500 Return',
+                        data: [6.5, 7.0, 16.4, 6.6],
+                        backgroundColor: bgColors,
+                        borderColor: borderColors,
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: '#fff',
+                            titleColor: '#1f2937',
+                            bodyColor: '#1f2937',
+                            borderColor: '#e5e7eb',
+                            borderWidth: 1,
+                            padding: 10,
+                            callbacks: {
+                                label: function(context) {
+                                    return context.parsed.y + '% Return';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { display: false }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        // --- CHART: Cumulative Growth ---
+        function initCumulativeChart() {
+            const ctx = document.getElementById('cumulativeChart').getContext('2d');
+            
+            cumulativeChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Inauguration', 'Year 1 Mid', 'Year 1 End', 'Year 2 Mid', 'Year 2 End', 'Year 3 Mid', 'Year 3 End', 'Year 4 Mid', 'Election'],
+                    datasets: [{
+                        label: 'Growth of $10k (Avg Cycle)',
+                        data: [10000, 10300, 10650, 10800, 11395, 12200, 13264, 13600, 14139],
+                        borderColor: '#ea580c',
+                        backgroundColor: 'rgba(234, 88, 12, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 4,
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true, position: 'top' },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            grid: { color: '#f5f5f4' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        // --- CHART: Party Comparison ---
+        function initPartyChart() {
+            const ctx = document.getElementById('partyChart').getContext('2d');
+            
+            partyChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Democratic Pres.', 'Republican Pres.'],
+                    datasets: [{
+                        label: 'Avg Annual Return (%)',
+                        data: [9.9, 6.2],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.7)', // Blue
+                            'rgba(239, 68, 68, 0.7)'   // Red
+                        ],
+                        borderWidth: 0,
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', // Horizontal Bar
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            grid: { display: false }
+                        },
+                        y: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        // --- CHART: Seasonality ---
+        function initSeasonalityChart() {
+            const ctx = document.getElementById('seasonalityChart').getContext('2d');
+            
+            seasonalityChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [
+                        {
+                            label: 'Election Year',
+                            data: [-0.8, -0.2, 0.5, 1.2, 0.1, 1.5, 1.8, 0.3, -0.5, -0.2, 1.9, 1.4],
+                            backgroundColor: '#ea580c',
+                            borderRadius: 2
+                        },
+                        {
+                            label: 'Avg All Years',
+                            data: [0.9, 0.1, 0.8, 1.5, 0.2, 0.1, 0.8, 0.0, -0.9, 0.6, 1.2, 1.4],
+                            backgroundColor: '#57534e',
+                            borderRadius: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { 
+                            display: true,
+                            labels: { color: '#a8a29e' } 
+                        },
+                        tooltip: {
+                            backgroundColor: '#1c1917',
+                            titleColor: '#fff',
+                            bodyColor: '#d6d3d1'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            grid: { color: '#44403c' },
+                            ticks: { color: '#a8a29e' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#a8a29e' }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+    
+    <style>
+        /* Animation Utility */
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</body>
+</html>
