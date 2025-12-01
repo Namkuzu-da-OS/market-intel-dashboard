@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-01T05:12:07.442Z",
+  "timestamp": "2025-12-01T05:57:13.091Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 78,
+    "confidence_pct": 71,
     "sources": {
       "social": {
         "bullish": 23,
-        "bearish": 6,
-        "neutral": 59,
-        "total": 88,
-        "pct": 26
+        "bearish": 9,
+        "neutral": 62,
+        "total": 94,
+        "pct": 24
       },
       "news": {
         "bullish": 1,
@@ -36,36 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Overall market sentiment is bullish with medium-high conviction.\n⚡ **Catalysts:** Fed balance‑sheet expansion (first uptick early 2026), end of quantitative tightening on Dec 1 2025, BTC $86,500 threshold, upcoming earnings of AMGN, AMZN, META on Dec 5, China manufacturing survey, dollar strength, commodity momentum (gold > $3,250, silver ~ $58).\n🎯 **Action:** If BTC breaks $86,500, consider a long BTC position and watch for upward momentum; if AMZN breaks $235, consider a long AMZN position and monitor for continued strength.",
+    "narrative": "📊 **Consensus:** A high‑conviction bullish outlook centers on Fed policy reversal and crypto momentum.\n\n⚡ **Catalysts:** Fed balance‑sheet expansion post‑December 1 2025, BTC 86,500 level, AMZN 236.50, AMGN 355, META 662, CRWV 90‑100, tech names MSFT, TSLA.\n\n🎯 **Action:** If BTC breaks 86,500, consider short; if AMZN breaks 236.50, consider short; if AMGN falls below 355, consider short; if META falls below 662, consider short; if CRWV falls below 100, consider short.",
     "key_tickers": [
       "BTC",
       "AMZN",
       "META",
-      "AMGN"
+      "AMGN",
+      "CRWV"
     ],
     "key_themes": [
-      "Fed balance‑sheet expansion",
-      "Crypto threshold",
-      "Upcoming earnings",
-      "Commodity momentum",
-      "Risk sentiment"
+      "Fed policy reversal",
+      "Crypto momentum",
+      "Tech rally",
+      "Risk asset lift",
+      "Macro data releases"
     ],
     "risk_factors": [
-      "Fed policy uncertainty",
-      "China PMI contraction",
-      "BTC volatility",
-      "Earnings surprises",
-      "Commodity demand"
+      "Fed delay in balance‑sheet expansion",
+      "China PMI disappointment",
+      "BTC 4% drop below 86,500",
+      "Fear & Greed Index at 24",
+      "2‑up/2‑down pattern potential"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "BTC 86,500 support, AMZN 235 resistance",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "Testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "BTC 86,500 threshold, AMZN 235, Gold 3,250 resistance, Silver 58",
-    "source_alignment": "MIXED"
+    "swing_levels": "BTC 86,500; AMZN 236.50; AMGN 355; META 662; CRWV 90-100",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 74103
+    "generation_time_ms": 105520
   },
   "trending": {
     "macro": [
@@ -223,7 +224,7 @@
     "color": "text-muted",
     "vix": 16.35,
     "pc_ratio": 1.01,
-    "sentiment_bullish_pct": 26,
+    "sentiment_bullish_pct": 24,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
