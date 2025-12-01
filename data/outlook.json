@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T12:11:12.520Z",
+  "timestamp": "2025-12-01T12:48:41.042Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 65,
+    "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 32,
-        "bearish": 14,
-        "neutral": 73,
-        "total": 119,
+        "bullish": 37,
+        "bearish": 16,
+        "neutral": 83,
+        "total": 136,
         "pct": 27
       },
       "news": {
-        "bullish": 2,
+        "bullish": 3,
         "bearish": 5,
         "neutral": 3,
-        "total": 10,
-        "pct": 20
+        "total": 11,
+        "pct": 27
       },
       "video": {
         "bullish": 1,
@@ -36,37 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets are leaning bullish with high conviction, driven by expected Fed balance‑sheet expansion, a potential Intel‑Apple supply deal, and a crypto rebound near the 200‑day MA.\n\n⚡ **Catalysts:** BTC $86,500 breach, AMZN 200‑day MA bounce ($236.50 target), AMGN $355 target, META $662 target, Intel‑Apple supply agreement, Fed balance‑sheet expansion.\n\n🎯 **Action:** If BTC breaks above $86,500, target $95,000 (stop $84,000). If AMZN breaks above its 200‑day MA, target $236.50 (stop $230). If AMGN breaks above $350, target $355 (stop $345). If META breaks above $650, target $662 (stop $640). If Intel‑Apple deal confirmed, consider long positions in Intel and Apple (targets TBD). If Fed balance‑sheet expands, look for broader market rally (targets TBD).",
+    "narrative": "📊 **Consensus:** The market sentiment leans bullish with strong confidence, driven by expectations of a Fed policy shift, AI/robotics momentum, and positive semiconductor and consumer discretionary news. ⚡ **Catalysts:** Fed balance‑sheet releases (potential rate cut), AI/robotics partnership (TPUv7) supporting GOOGL, gold rally to $3,250, BTC support at $87.2k, semiconductor upside linked to Intel‑Apple deal. 🎯 **Action:** If GOOGL breaks $375, target $385; If BTC holds $87.2k, target $95k; If gold surpasses $3,250, target $3,350; If SPY breaks $668 max pain, target $680.",
     "key_tickers": [
+      "GOOGL",
       "BTC",
-      "AMZN",
-      "AMGN",
-      "META",
-      "INTC"
+      "GOLD",
+      "TSLA"
     ],
     "key_themes": [
-      "Fed balance‑sheet expansion",
-      "crypto rebound",
-      "Intel‑Apple supply agreement",
-      "metal rally",
-      "AI/robotics"
+      "Fed policy shifts",
+      "AI & robotics momentum",
+      "Crypto slide",
+      "Semiconductor supply chain",
+      "Consumer discretionary optimism"
     ],
     "risk_factors": [
-      "Airbus quality scare",
-      "China PMI contraction",
-      "crypto regulation risk",
       "Fed tightening",
-      "India industrial output"
+      "Crypto downturn",
+      "EV quality concerns",
+      "Supply chain disruptions",
+      "Macroeconomic slowdown"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "Testing resistance",
+    "intraday_levels": "GOOGL $375 target, BTC $87.2k support",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
+    "swing_levels": "GOOGL $375 target, gold $3,250 level, BTC $87.2k support",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 86660
+    "generation_time_ms": 80077
   },
   "trending": {
     "macro": [
@@ -87,28 +86,28 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 4,
-        "sentiment_score": -0.188,
+        "mentions": 5,
+        "sentiment_score": -0.14,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 19,
+        "sentiment_pct": 14,
         "counts": {
           "bullish": 0,
           "bearish": 1,
-          "neutral": 3,
-          "total": 4
+          "neutral": 4,
+          "total": 5
         }
       },
       {
         "ticker": "CIFR",
-        "mentions": 1,
+        "mentions": 2,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
         "sentiment_pct": 0,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 1,
-          "total": 1
+          "neutral": 2,
+          "total": 2
         }
       }
     ],
@@ -140,6 +139,19 @@
         }
       },
       {
+        "ticker": "GOOGL",
+        "mentions": 3,
+        "sentiment_score": 0.5,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 50,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
         "ticker": "ONDS",
         "mentions": 3,
         "sentiment_score": 0.483,
@@ -164,26 +176,13 @@
           "neutral": 3,
           "total": 3
         }
-      },
-      {
-        "ticker": "CRWD",
-        "mentions": 3,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 3
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 18.08,
+    "vix": 18.14,
     "pc_ratio": 1.01,
     "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
