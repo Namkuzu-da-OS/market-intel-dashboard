@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-02T17:18:15.515Z",
+  "timestamp": "2025-12-02T17:53:34.662Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 80,
     "sources": {
       "social": {
-        "bullish": 60,
+        "bullish": 63,
         "bearish": 14,
-        "neutral": 114,
-        "total": 188,
+        "neutral": 117,
+        "total": 194,
         "pct": 32
       },
       "news": {
         "bullish": 22,
         "bearish": 7,
-        "neutral": 10,
-        "total": 39,
-        "pct": 56
+        "neutral": 11,
+        "total": 40,
+        "pct": 55
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** A moderate rally is expected with elevated volatility, as bullish AI and Fed‑friendly catalysts clash with technical risk‑off signals – medium‑high conviction.\n\n⚡ **Catalysts:** Fed rate cuts, BOJ hike, AI‑chip surge (NVDA 185 ceiling, MSTR low), GPU supply‑chain news, Amazon/MongoDB/Nvidia/Boeing earnings, crypto trend lines (BTC 91‑95k), ISM/core PCE data.\n\n🎯 **Action:** If SPX breaks 6820 support, consider a short to 6700; if NVDA breaks 185 ceiling, target 200; if SPY breaks 683.5 pivot, target 670; monitor BTC for a breakout above 95k before a bullish move.",
+    "narrative": "📊 **Consensus:** High‑conviction bullish stance with caution, driven by upcoming Fed and BOJ policy decisions.\n\n⚡ **Catalysts:** Fed policy cuts, BOJ policy shift, core PCE data, AI‑chip momentum (NVDA), crypto ceiling (BTC, ETH).\n\n🎯 **Action:** If NVDA breaks $185, potential upside; if BTC breaks $91k, potential upside.",
     "key_tickers": [
       "NVDA",
-      "MSTR",
-      "SPY",
-      "SPX",
-      "BTC"
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "AI chip surge",
-      "Fed policy shifts",
-      "BOJ hike",
-      "technical risk‑off breaks",
-      "market volatility"
+      "AI & semiconductor breakthroughs",
+      "Fed policy & liquidity",
+      "BOJ policy shift",
+      "Crypto regulation risk",
+      "Cautious rally"
     ],
     "risk_factors": [
-      "Technical support failure (SPX 6820, SPY 683.5)",
-      "Fed policy reversal",
-      "BOJ hike risk‑off trigger",
-      "Regulatory risks to crypto",
-      "Sector‑specific caps"
+      "BOJ tightening",
+      "Crypto regulation",
+      "S&P resistance at 6,776",
+      "NVDA target at 185",
+      "Market volatility"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPX 6820 support, 6715 FVG support, SPY 683.5 pivot failure",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown at SPX 6820/6715, SPY 683.5, NVDA 185 ceiling, BTC 91‑95k range",
-    "source_alignment": "MIXED"
+    "swing_levels": "Watch for breakout/breakdown",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 91806
+    "generation_time_ms": 115739
   },
   "trending": {
     "macro": [
@@ -235,17 +233,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.83,
-    "pc_ratio": 0.79,
+    "vix": 16.72,
+    "pc_ratio": 0.87,
     "sentiment_bullish_pct": 32,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 12.03,
-    "hv": 13.36,
-    "spread": 0.28,
+    "iv_rank": 13.16,
+    "hv": 13.3,
+    "spread": 0.71,
     "position": 20
   },
   "action": {
