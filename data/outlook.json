@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-02T12:06:10.901Z",
+  "timestamp": "2025-12-02T13:05:19.070Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 80,
     "sources": {
       "social": {
         "bullish": 58,
-        "bearish": 17,
-        "neutral": 135,
-        "total": 210,
+        "bearish": 15,
+        "neutral": 136,
+        "total": 209,
         "pct": 28
       },
       "news": {
-        "bullish": 20,
-        "bearish": 3,
+        "bullish": 21,
+        "bearish": 4,
         "neutral": 10,
-        "total": 33,
-        "pct": 61
+        "total": 35,
+        "pct": 60
       },
       "video": {
         "bullish": 1,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sits in a mixed stance—neutral to mildly bullish on the short‑term, while AI‑compute momentum fuels a broader bullish swing outlook (medium conviction).\n\n⚡ **Catalysts:** \n- **BOJ policy meeting** (risk‑off trigger) \n- **Core CPI/PCE inflation releases** (monetary tightening cue) \n- **TSMC capacity & energy‑cost updates** (AI compute supply) \n- **Google‑NATO AI deal & Gemini launch** (AI demand driver) \n- **Crypto‑ETF lift tomorrow** (risk‑on boost) \n- **S&P 500 support band 6,820–6,715** (technical gauge) \n- **NVDA price 200–215** (earnings‑momentum target) \n- **ZEC support at 295** (crypto volatility indicator)\n\n🎯 **Action:** \n- If **S&P falls below 6,715**, consider short‑term bearish positions and watch for a break of the 6,820 resistance. \n- If **S&P holds above 6,820**, add long exposure to tech ETFs (e.g., QQQ) and NVDA if it breaches 215, targeting 250. \n- Monitor the **crypto‑ETF lift**: a rally in BTC and ETH could lift NVDA and related tech names; if BTC drops below 295, tighten tech positions.",
+    "narrative": "📊 **Consensus:** The market is expected to see a modest bullish trend driven by AI and tech earnings, tempered by potential risk‑off from the BOJ rate hike and sovereign debt concerns. ⚡ **Catalysts:** AI earnings (NVDA, GOOG, TSMC), BOJ policy meeting (Dec 19), Google Gemini rollout, SPX breakout above invisible MA support, Nvidia 20‑week EMA at $200/$215. 🎯 **Action:** If SPX breaks above 6,783 support, target 6,900; if NVDA breaks above $200 EMA, target $215; if SPX falls below 6,776, consider bearish stance.",
     "key_tickers": [
       "NVDA",
+      "SPX",
       "GOOG",
-      "TSMC",
-      "ZEC",
+      "TSM",
       "SPY"
     ],
     "key_themes": [
-      "AI compute cycle",
-      "BOJ policy impact",
-      "Crypto ETF lift",
-      "Tech sector growth",
-      "Risk sentiment shifts"
+      "AI infrastructure demand",
+      "BOJ rate hike risk",
+      "Tech earnings momentum",
+      "Volatility rise",
+      "Risk‑equity pressure"
     ],
     "risk_factors": [
       "BOJ rate hike",
-      "Inflation data release",
-      "TSMC capacity constraints",
-      "Crypto crackdown",
-      "Valuation concerns"
+      "Japanese sovereign debt repricing",
+      "Regulatory scrutiny",
+      "Valuation excesses",
+      "Crypto crackdown"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 6,820 resistance, 6,715 support; NVDA 200–215 range; ZEC 295 support",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPX 6,715 support, 6,783 support zone, 6,776 break below signals bearish",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 6,820 resistance, 6,715 support; NVDA 200–215 range; ZEC 295 support",
-    "source_alignment": "MIXED"
+    "swing_levels": "Nvidia 20‑week EMA at $200/$215, SPX 6,715 support, 6,783 support zone",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 84965
+    "generation_time_ms": 104638
   },
   "trending": {
     "macro": [
@@ -112,13 +112,13 @@
       {
         "ticker": "QQQ",
         "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "sentiment_score": 0.4,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
         "counts": {
-          "bullish": 0,
+          "bullish": 1,
           "bearish": 0,
-          "neutral": 2,
+          "neutral": 1,
           "total": 2
         }
       }
@@ -126,21 +126,21 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 14,
-        "sentiment_score": -0.021,
+        "mentions": 15,
+        "sentiment_score": -0.02,
         "sentiment_label": "Neutral",
         "sentiment_pct": 2,
         "counts": {
           "bullish": 2,
           "bearish": 2,
-          "neutral": 10,
-          "total": 14
+          "neutral": 11,
+          "total": 15
         }
       },
       {
         "ticker": "BTC",
         "mentions": 9,
-        "sentiment_score": 0.244,
+        "sentiment_score": 0.239,
         "sentiment_label": "Bullish",
         "sentiment_pct": 24,
         "counts": {
@@ -244,16 +244,16 @@
         }
       },
       {
-        "ticker": "NFLX",
-        "mentions": 6,
-        "sentiment_score": 0.483,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
+        "ticker": "AAPL",
+        "mentions": 7,
+        "sentiment_score": -0.086,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 9,
         "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 6
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 6,
+          "total": 7
         }
       }
     ]
@@ -261,7 +261,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.7,
+    "vix": 16.82,
     "pc_ratio": 1.04,
     "sentiment_bullish_pct": 28,
     "summary": "Market is lacking clear direction. Wait for confirmation."
