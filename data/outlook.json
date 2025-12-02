@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-02T17:53:34.662Z",
+  "timestamp": "2025-12-02T19:29:26.263Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 80,
+    "confidence_pct": 83,
     "sources": {
       "social": {
-        "bullish": 63,
-        "bearish": 14,
-        "neutral": 117,
-        "total": 194,
-        "pct": 32
+        "bullish": 60,
+        "bearish": 12,
+        "neutral": 104,
+        "total": 176,
+        "pct": 34
       },
       "news": {
         "bullish": 22,
-        "bearish": 7,
-        "neutral": 11,
-        "total": 40,
-        "pct": 55
+        "bearish": 5,
+        "neutral": 9,
+        "total": 36,
+        "pct": 61
       },
       "video": {
-        "bullish": 2,
+        "bullish": 3,
         "bearish": 1,
         "neutral": 0,
-        "total": 3,
-        "pct": 67
+        "total": 4,
+        "pct": 75
       },
       "chat": {
         "bullish": 1,
@@ -36,35 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High‑conviction bullish stance with caution, driven by upcoming Fed and BOJ policy decisions.\n\n⚡ **Catalysts:** Fed policy cuts, BOJ policy shift, core PCE data, AI‑chip momentum (NVDA), crypto ceiling (BTC, ETH).\n\n🎯 **Action:** If NVDA breaks $185, potential upside; if BTC breaks $91k, potential upside.",
+    "narrative": "📊 **Consensus:** The market is leaning bullish with high conviction, driven by AI‑chip momentum and expected Fed cuts, but remains wary of a BOJ surprise or risk‑off tilt.\n\n⚡ **Catalysts:** Fed rate cuts, Google TPU/Gemini rollout, Nvidia AI dominance (NVDA target 185), AMD trendline hold, Apple call‑volume spike, Bank of America crypto allocation (BTC target 93.4k), S&P 500 6,776 support zone.\n\n🎯 **Action:** If SPY stays above 683.50 resistance and S&P 500 holds 6,776 support, consider a long on NVDA near 180 with stop below 170; if S&P 500 breaks 6,776 support, exit tech positions and target 6,715.",
     "key_tickers": [
       "NVDA",
-      "BTC",
-      "ETH"
+      "AMD",
+      "AAPL",
+      "SPY"
     ],
     "key_themes": [
-      "AI & semiconductor breakthroughs",
-      "Fed policy & liquidity",
-      "BOJ policy shift",
-      "Crypto regulation risk",
-      "Cautious rally"
+      "AI growth",
+      "Fed policy",
+      "risk‑off sentiment",
+      "tech sector upside",
+      "crypto"
     ],
     "risk_factors": [
-      "BOJ tightening",
-      "Crypto regulation",
-      "S&P resistance at 6,776",
-      "NVDA target at 185",
-      "Market volatility"
+      "BOJ rate hike surprise",
+      "risk‑off rotation",
+      "fragility of risk assets",
+      "break below S&P 500 6,776 support",
+      "overvaluation of tech/crypto"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "S&P 500 6,776 support, 6,715 support; SPY 683.50 resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
+    "swing_levels": "S&P 500 6,776 support; SPY 683.50 resistance; 6,715 support",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 115739
+    "generation_time_ms": 101232
   },
   "trending": {
     "macro": [
@@ -93,33 +94,46 @@
           "neutral": 3,
           "total": 5
         }
+      },
+      {
+        "ticker": "GLD",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
       }
     ],
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 10,
-        "sentiment_score": -0.02,
+        "mentions": 8,
+        "sentiment_score": -0.025,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 2,
+        "sentiment_pct": 3,
         "counts": {
           "bullish": 2,
           "bearish": 2,
-          "neutral": 6,
-          "total": 10
+          "neutral": 4,
+          "total": 8
         }
       },
       {
         "ticker": "BTC",
-        "mentions": 6,
-        "sentiment_score": 0.242,
+        "mentions": 5,
+        "sentiment_score": 0.29,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 24,
+        "sentiment_pct": 29,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 4,
-          "total": 6
+          "neutral": 3,
+          "total": 5
         }
       },
       {
@@ -165,62 +179,62 @@
     "other": [
       {
         "ticker": "MDB",
-        "mentions": 10,
-        "sentiment_score": 0.315,
+        "mentions": 7,
+        "sentiment_score": 0.45,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 45,
         "counts": {
           "bullish": 4,
           "bearish": 0,
-          "neutral": 6,
-          "total": 10
+          "neutral": 3,
+          "total": 7
         }
       },
       {
         "ticker": "NVDA",
-        "mentions": 8,
-        "sentiment_score": 0.494,
+        "mentions": 7,
+        "sentiment_score": 0.45,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 49,
+        "sentiment_pct": 45,
         "counts": {
-          "bullish": 5,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 3,
-          "total": 8
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "mentions": 8,
-        "sentiment_score": 0.281,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 28,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 5,
-          "total": 8
+          "total": 7
         }
       },
       {
         "ticker": "AAPL",
-        "mentions": 6,
-        "sentiment_score": 0.025,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 3,
+        "mentions": 7,
+        "sentiment_score": 0.114,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 11,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 1,
           "neutral": 4,
-          "total": 6
+          "total": 7
         }
       },
       {
         "ticker": "SPX",
-        "mentions": 5,
-        "sentiment_score": 0.61,
+        "mentions": 6,
+        "sentiment_score": 0.508,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 61,
+        "sentiment_pct": 51,
+        "counts": {
+          "bullish": 4,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "NFLX",
+        "mentions": 5,
+        "sentiment_score": 0.59,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 59,
         "counts": {
           "bullish": 4,
           "bearish": 0,
@@ -233,17 +247,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.72,
+    "vix": 16.87,
     "pc_ratio": 0.87,
-    "sentiment_bullish_pct": 32,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 13.16,
+    "iv_rank": 13.28,
     "hv": 13.3,
-    "spread": 0.71,
+    "spread": 0.75,
     "position": 20
   },
   "action": {
