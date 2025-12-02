@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-01T22:48:07.069Z",
+  "timestamp": "2025-12-02T12:06:10.901Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 84,
-        "bearish": 29,
-        "neutral": 195,
-        "total": 308,
-        "pct": 27
+        "bullish": 58,
+        "bearish": 17,
+        "neutral": 135,
+        "total": 210,
+        "pct": 28
       },
       "news": {
-        "bullish": 17,
-        "bearish": 8,
-        "neutral": 7,
-        "total": 32,
-        "pct": 53
+        "bullish": 20,
+        "bearish": 3,
+        "neutral": 10,
+        "total": 33,
+        "pct": 61
       },
       "video": {
         "bullish": 1,
@@ -36,49 +36,64 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is poised for a short‑term bullish move driven by AI‑chip momentum, Fed balance‑sheet expansion, and a pending crypto‑ETF launch, with high conviction.\n\n⚡ **Catalysts:** NVDA 200 & 215 targets, SPX 6783 support & 6715 major, TSLA 450‑strike gamma spike, MSTR green pin bar, and the upcoming BOJ rate hike.\n\n🎯 **Action:** If NVDA breaks above 215, target 240; if SPX breaks 6783 support, target 6850; if TSLA breaks 450‑strike support, target 470; watch MSTR for a bullish pin bar confirmation before entry.",
+    "narrative": "📊 **Consensus:** The market sits in a mixed stance—neutral to mildly bullish on the short‑term, while AI‑compute momentum fuels a broader bullish swing outlook (medium conviction).\n\n⚡ **Catalysts:** \n- **BOJ policy meeting** (risk‑off trigger) \n- **Core CPI/PCE inflation releases** (monetary tightening cue) \n- **TSMC capacity & energy‑cost updates** (AI compute supply) \n- **Google‑NATO AI deal & Gemini launch** (AI demand driver) \n- **Crypto‑ETF lift tomorrow** (risk‑on boost) \n- **S&P 500 support band 6,820–6,715** (technical gauge) \n- **NVDA price 200–215** (earnings‑momentum target) \n- **ZEC support at 295** (crypto volatility indicator)\n\n🎯 **Action:** \n- If **S&P falls below 6,715**, consider short‑term bearish positions and watch for a break of the 6,820 resistance. \n- If **S&P holds above 6,820**, add long exposure to tech ETFs (e.g., QQQ) and NVDA if it breaches 215, targeting 250. \n- Monitor the **crypto‑ETF lift**: a rally in BTC and ETH could lift NVDA and related tech names; if BTC drops below 295, tighten tech positions.",
     "key_tickers": [
       "NVDA",
-      "TSLA",
-      "SPX"
+      "GOOG",
+      "TSMC",
+      "ZEC",
+      "SPY"
     ],
     "key_themes": [
-      "AI chip surge",
-      "Fed balance‑sheet expansion",
-      "BOJ rate hike risk‑off",
-      "Crypto‑ETF launch",
-      "Heightened volatility"
+      "AI compute cycle",
+      "BOJ policy impact",
+      "Crypto ETF lift",
+      "Tech sector growth",
+      "Risk sentiment shifts"
     ],
     "risk_factors": [
-      "Regulatory crackdowns",
-      "High valuations",
-      "BOJ rate hike impact",
-      "Crypto‑ETF launch timing",
-      "Potential pullback to 6783"
+      "BOJ rate hike",
+      "Inflation data release",
+      "TSMC capacity constraints",
+      "Crypto crackdown",
+      "Valuation concerns"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPX 6783 support, 6715 major resistance; NVDA 200 support; TSLA 450‑strike support",
+    "intraday_levels": "SPY 6,820 resistance, 6,715 support; NVDA 200–215 range; ZEC 295 support",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPX 6783 support, 6715 major resistance; NVDA 200 & 215 levels; TSLA 450‑strike level",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "SPY 6,820 resistance, 6,715 support; NVDA 200–215 range; ZEC 295 support",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 83554
+    "generation_time_ms": 84965
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
+        "mentions": 4,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
         "sentiment_pct": 0,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 5,
-          "total": 5
+          "neutral": 4,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "GLD",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 3
         }
       },
       {
@@ -92,19 +107,6 @@
           "bearish": 0,
           "neutral": 3,
           "total": 3
-        }
-      },
-      {
-        "ticker": "GLD",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 2
         }
       },
       {
@@ -124,41 +126,28 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 15,
-        "sentiment_score": -0.073,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 7,
+        "mentions": 14,
+        "sentiment_score": -0.021,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 2,
         "counts": {
           "bullish": 2,
-          "bearish": 3,
+          "bearish": 2,
           "neutral": 10,
-          "total": 15
+          "total": 14
         }
       },
       {
         "ticker": "BTC",
-        "mentions": 12,
-        "sentiment_score": 0.121,
+        "mentions": 9,
+        "sentiment_score": 0.244,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 12,
+        "sentiment_pct": 24,
         "counts": {
           "bullish": 3,
-          "bearish": 1,
-          "neutral": 8,
-          "total": 12
-        }
-      },
-      {
-        "ticker": "COIN",
-        "mentions": 3,
-        "sentiment_score": -0.267,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 27,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 2,
-          "total": 3
+          "bearish": 0,
+          "neutral": 6,
+          "total": 9
         }
       },
       {
@@ -175,7 +164,7 @@
         }
       },
       {
-        "ticker": "CIFR",
+        "ticker": "COIN",
         "mentions": 2,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
@@ -186,72 +175,85 @@
           "neutral": 2,
           "total": 2
         }
+      },
+      {
+        "ticker": "SOL",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
       }
     ],
     "other": [
       {
-        "ticker": "NVDA",
-        "mentions": 13,
-        "sentiment_score": 0.312,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 31,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 8,
-          "total": 13
-        }
-      },
-      {
         "ticker": "TSLA",
-        "mentions": 12,
-        "sentiment_score": 0.263,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 26,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 8,
-          "total": 12
-        }
-      },
-      {
-        "ticker": "SPX",
         "mentions": 11,
-        "sentiment_score": 0.141,
+        "sentiment_score": 0.214,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 14,
+        "sentiment_pct": 21,
         "counts": {
           "bullish": 3,
-          "bearish": 1,
-          "neutral": 7,
+          "bearish": 0,
+          "neutral": 8,
           "total": 11
         }
       },
       {
-        "ticker": "MDB",
-        "mentions": 9,
-        "sentiment_score": 0.267,
+        "ticker": "NVDA",
+        "mentions": 10,
+        "sentiment_score": 0.405,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
+        "sentiment_pct": 41,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 5,
+          "total": 10
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 9,
+        "sentiment_score": 0.172,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 17,
         "counts": {
           "bullish": 3,
-          "bearish": 0,
-          "neutral": 6,
+          "bearish": 1,
+          "neutral": 5,
           "total": 9
         }
       },
       {
-        "ticker": "GOOGL",
+        "ticker": "MDB",
         "mentions": 7,
-        "sentiment_score": 0.329,
+        "sentiment_score": 0.343,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 34,
         "counts": {
           "bullish": 3,
           "bearish": 0,
           "neutral": 4,
           "total": 7
+        }
+      },
+      {
+        "ticker": "NFLX",
+        "mentions": 6,
+        "sentiment_score": 0.483,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 48,
+        "counts": {
+          "bullish": 4,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 6
         }
       }
     ]
@@ -259,9 +261,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 17.24,
+    "vix": 16.7,
     "pc_ratio": 1.04,
-    "sentiment_bullish_pct": 27,
+    "sentiment_bullish_pct": 28,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
