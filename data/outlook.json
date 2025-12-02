@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-02T15:17:30.102Z",
+  "timestamp": "2025-12-02T16:17:49.150Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 80,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 65,
+        "bullish": 75,
         "bearish": 15,
-        "neutral": 140,
-        "total": 220,
-        "pct": 30
+        "neutral": 147,
+        "total": 237,
+        "pct": 32
       },
       "news": {
-        "bullish": 18,
-        "bearish": 5,
-        "neutral": 9,
-        "total": 32,
-        "pct": 56
+        "bullish": 22,
+        "bearish": 7,
+        "neutral": 8,
+        "total": 37,
+        "pct": 59
       },
       "video": {
         "bullish": 2,
@@ -36,63 +36,61 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is poised for heightened volatility with a likely short‑term rally in AI‑heavy equities, but risk sentiment could pull back if the BOJ signals a tighter stance. **Conviction:** medium\n\n⚡ **Catalysts:** AI chip bookings ($500 B), Nvidia‑Synopsys integration, Tesla (TSLA), Salesforce (CRM), JPMorgan (JPM) earnings, BOJ policy decision on Dec 19\n\n🎯 **Action:** If NVDA approaches its $185 ceiling, consider a short; if the S&P 500 falls below the 6,776 support zone, consider bearish positioning; if the BOJ signals tightening, consider hedging with VIX or gold",
+    "narrative": "📊 **Consensus:** The market is poised for a moderate rally driven by AI‑compute optimism and expected Fed rate cuts, but risk‑sentiment tightening from a potential BOJ hike and crypto regulation may temper upside. Conviction: medium‑high\n\n⚡ **Catalysts:** Fed rate cuts & end of QT, AI‑compute demand (NVDA, TSMC, Google), BOJ policy decision, S&P 500 thresholds (6,700 floor, 6,776 resistance, 6,715 sell), NVDA short target $185, BTC ceiling $91k, ETH ceiling $3k, VIX 16.57\n\n🎯 **Action:** If S&P stays above 6,700, consider buying SPY near 6,700 with a target of 6,776; if S&P breaks below 6,715, consider shorting SPY or taking a defensive stance. If NVDA trades above $185, consider a short position on NVDA; if NVDA falls below $185, consider a long position.\n",
     "key_tickers": [
       "NVDA",
-      "TSLA",
-      "CRM",
-      "JPM"
+      "TSMC",
+      "Boeing",
+      "MongoDB",
+      "Google"
     ],
     "key_themes": [
-      "AI‑driven equity rally",
-      "BOJ policy impact",
-      "Macro easing and risk sentiment",
-      "Crypto regulation",
-      "Earnings catalysts"
+      "AI & AI‑compute demand",
+      "Fed rate cuts & QT end",
+      "BOJ policy & risk tightening"
     ],
     "risk_factors": [
-      "BOJ tightening risk",
-      "Crypto regulatory clampdown",
-      "Market volatility from AI hype",
-      "Risk‑off flow into bonds",
-      "AI data privacy regulation"
+      "BOJ rate hike",
+      "S&P breach of 6,776",
+      "NVDA short target $185",
+      "Crypto regulation risk"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "Testing resistance",
+    "intraday_levels": "S&P 6,700 support, 6,776 resistance, 6,715 sell point, NVDA $185 short target, BTC $91k ceiling, ETH $3k ceiling, VIX 16.57",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "CONFLICTING"
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 99060
+    "generation_time_ms": 94997
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "mentions": 7,
+        "sentiment_score": 0.114,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 11,
         "counts": {
-          "bullish": 0,
+          "bullish": 1,
           "bearish": 0,
-          "neutral": 5,
-          "total": 5
+          "neutral": 6,
+          "total": 7
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 3,
-        "sentiment_score": 0.267,
+        "mentions": 4,
+        "sentiment_score": 0.4,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
+        "sentiment_pct": 40,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 2,
-          "total": 3
+          "total": 4
         }
       },
       {
@@ -125,15 +123,15 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 12,
-        "sentiment_score": -0.017,
+        "mentions": 13,
+        "sentiment_score": -0.015,
         "sentiment_label": "Neutral",
         "sentiment_pct": 2,
         "counts": {
           "bullish": 2,
           "bearish": 2,
-          "neutral": 8,
-          "total": 12
+          "neutral": 9,
+          "total": 13
         }
       },
       {
@@ -151,14 +149,27 @@
       },
       {
         "ticker": "ETH",
-        "mentions": 2,
-        "sentiment_score": 0.8,
+        "mentions": 4,
+        "sentiment_score": 0.775,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
+        "sentiment_pct": 78,
         "counts": {
-          "bullish": 2,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 0,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "APLD",
+        "mentions": 2,
+        "sentiment_score": 0.325,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
           "total": 2
         }
       },
@@ -174,22 +185,22 @@
           "neutral": 0,
           "total": 1
         }
-      },
-      {
-        "ticker": "XRP",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "other": [
+      {
+        "ticker": "NVDA",
+        "mentions": 10,
+        "sentiment_score": 0.475,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 48,
+        "counts": {
+          "bullish": 6,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 10
+        }
+      },
       {
         "ticker": "MDB",
         "mentions": 10,
@@ -217,29 +228,16 @@
         }
       },
       {
-        "ticker": "NVDA",
-        "mentions": 9,
-        "sentiment_score": 0.444,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 44,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 4,
-          "total": 9
-        }
-      },
-      {
         "ticker": "SPX",
-        "mentions": 7,
-        "sentiment_score": 0.321,
+        "mentions": 8,
+        "sentiment_score": 0.381,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 38,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 4,
-          "total": 7
+          "total": 8
         }
       },
       {
@@ -260,18 +258,18 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.67,
-    "pc_ratio": 1,
-    "sentiment_bullish_pct": 30,
+    "vix": 16.57,
+    "pc_ratio": 0.67,
+    "sentiment_bullish_pct": 32,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
-    "label": "FAIR VALUE",
-    "color": "text-orange",
-    "iv_rank": 30,
+    "label": "BUY PROTECTION",
+    "color": "text-cyan",
+    "iv_rank": 12,
     "hv": 13.32,
-    "spread": 1.68,
-    "position": 50
+    "spread": 0.31,
+    "position": 20
   },
   "action": {
     "summary": "NEUTRAL: No clear edge. Cash is a position."
