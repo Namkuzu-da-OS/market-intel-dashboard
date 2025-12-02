@@ -1098,7 +1098,9 @@
                 e.stopPropagation();
 
                 const shareUrl = btn.getAttribute('data-share-url');
-                const fullUrl = window.location.origin + window.location.pathname.replace('research.html', '') + shareUrl;
+                // Create a URL that opens the report in modal instead of direct navigation
+                const baseUrl = window.location.origin + window.location.pathname;
+                const fullUrl = baseUrl + '?report=' + encodeURIComponent(shareUrl);
 
                 // Copy to clipboard
                 navigator.clipboard.writeText(fullUrl).then(() => {
@@ -1151,6 +1153,32 @@
         // Start observing the research grid for new cards
         const researchGrid = document.getElementById('researchGrid');
         observer.observe(researchGrid, { childList: true });
+
+        // --- Auto-open modal from shared link ---
+        function checkForSharedReport() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const reportUrl = urlParams.get('report');
+
+            if (reportUrl) {
+                // Find the card with this report URL to get the title
+                const matchingCard = Array.from(cards).find(card =>
+                    card.getAttribute('href') === reportUrl
+                );
+
+                const title = matchingCard
+                    ? matchingCard.querySelector('.card-title').textContent
+                    : 'Report Viewer';
+
+                // Open the modal with the report
+                openModalWith(reportUrl, title);
+
+                // Optional: Clean up URL without page reload
+                // window.history.replaceState({}, '', window.location.pathname);
+            }
+        }
+
+        // Check for shared report on page load
+        window.addEventListener('DOMContentLoaded', checkForSharedReport);
     </script>
 
 
