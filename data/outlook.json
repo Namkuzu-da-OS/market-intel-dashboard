@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-02T19:29:26.263Z",
+  "timestamp": "2025-12-02T20:09:40.311Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -8,64 +8,64 @@
       "social": {
         "bullish": 60,
         "bearish": 12,
-        "neutral": 104,
-        "total": 176,
+        "neutral": 103,
+        "total": 175,
         "pct": 34
       },
       "news": {
-        "bullish": 22,
+        "bullish": 20,
         "bearish": 5,
         "neutral": 9,
-        "total": 36,
-        "pct": 61
+        "total": 34,
+        "pct": 59
       },
       "video": {
         "bullish": 3,
         "bearish": 1,
-        "neutral": 0,
-        "total": 4,
-        "pct": 75
+        "neutral": 1,
+        "total": 5,
+        "pct": 60
       },
       "chat": {
-        "bullish": 1,
+        "bullish": 2,
         "bearish": 0,
         "neutral": 0,
-        "total": 1,
+        "total": 2,
         "pct": 100
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is leaning bullish with high conviction, driven by AI‑chip momentum and expected Fed cuts, but remains wary of a BOJ surprise or risk‑off tilt.\n\n⚡ **Catalysts:** Fed rate cuts, Google TPU/Gemini rollout, Nvidia AI dominance (NVDA target 185), AMD trendline hold, Apple call‑volume spike, Bank of America crypto allocation (BTC target 93.4k), S&P 500 6,776 support zone.\n\n🎯 **Action:** If SPY stays above 683.50 resistance and S&P 500 holds 6,776 support, consider a long on NVDA near 180 with stop below 170; if S&P 500 breaks 6,776 support, exit tech positions and target 6,715.",
+    "narrative": "📊 **Consensus:** The market is expected to rally on AI and Fed cuts with high conviction.\n⚡ **Catalysts:** AI compute demand, Fed cuts, BOJ hike, AI/semiconductor partnerships (NVDA, AMD, HPE, AWS, GOOG), crypto allocation recommendation, SPX 683.50 resistance, NVDA 176.50‑185 target, BTC 93.4k target, ETH 3k threshold.\n🎯 **Action:** If NVDA breaks 185, target 185; If BTC breaks 93.4k, target 93.4k; If SPX breaks 683.50, target per source analysis.",
     "key_tickers": [
       "NVDA",
-      "AMD",
-      "AAPL",
-      "SPY"
+      "SPX",
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "AI growth",
-      "Fed policy",
-      "risk‑off sentiment",
-      "tech sector upside",
-      "crypto"
+      "AI compute demand",
+      "Fed cuts",
+      "BOJ policy",
+      "AI/semiconductor partnerships",
+      "crypto allocation"
     ],
     "risk_factors": [
-      "BOJ rate hike surprise",
-      "risk‑off rotation",
-      "fragility of risk assets",
-      "break below S&P 500 6,776 support",
-      "overvaluation of tech/crypto"
+      "Failure to clear key resistance levels",
+      "Tightening risk assets",
+      "Unexpected inflation data",
+      "Crypto market weakness",
+      "BOJ tightening"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "S&P 500 6,776 support, 6,715 support; SPY 683.50 resistance",
+    "intraday_levels": "SPX 683.50 resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "S&P 500 6,776 support; SPY 683.50 resistance; 6,715 support",
+    "swing_levels": "SPX 683.50 resistance; SPX 6,776/6,715 break-through levels; NVDA 185 target; BTC 93.4k target",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 101232
+    "generation_time_ms": 125249
   },
   "trending": {
     "macro": [
@@ -112,15 +112,15 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 8,
-        "sentiment_score": -0.025,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 3,
+        "mentions": 7,
+        "sentiment_score": 0.086,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 9,
         "counts": {
           "bullish": 2,
-          "bearish": 2,
+          "bearish": 1,
           "neutral": 4,
-          "total": 8
+          "total": 7
         }
       },
       {
@@ -247,17 +247,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.87,
-    "pc_ratio": 0.87,
+    "vix": 16.67,
+    "pc_ratio": 0.85,
     "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 13.28,
-    "hv": 13.3,
-    "spread": 0.75,
+    "iv_rank": 12.36,
+    "hv": 13.31,
+    "spread": 0.44,
     "position": 20
   },
   "action": {
