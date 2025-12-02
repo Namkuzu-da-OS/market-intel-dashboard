@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-02T14:22:24.957Z",
+  "timestamp": "2025-12-02T15:17:30.102Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 80,
     "sources": {
       "social": {
-        "bullish": 60,
-        "bearish": 14,
-        "neutral": 138,
-        "total": 212,
-        "pct": 28
+        "bullish": 65,
+        "bearish": 15,
+        "neutral": 140,
+        "total": 220,
+        "pct": 30
       },
       "news": {
         "bullish": 18,
-        "bearish": 4,
-        "neutral": 10,
+        "bearish": 5,
+        "neutral": 9,
         "total": 32,
         "pct": 56
       },
       "video": {
-        "bullish": 1,
+        "bullish": 2,
         "bearish": 1,
         "neutral": 0,
-        "total": 2,
-        "pct": 50
+        "total": 3,
+        "pct": 67
       },
       "chat": {
         "bullish": 2,
@@ -36,35 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market outlook is **medium** confidence: selective upside in AI‑heavy equities amid a risk‑averse backdrop, with volatility expected around key AI milestones and macro data.\n\n⚡ **Catalysts:** AI milestones (Google Gemini, TPU Rubin, TSMC capacity), holiday‑spending data, BOJ meeting minutes, and the S&P 500 futures range of 6,852‑6,862‑6,877 with 6,825 support; TSLA target $433‑$434.\n\n🎯 **Action:** If S&P 500 futures break above 6,825 support, target the 6,852‑6,862‑6,877 range; if TSLA breaks above $434, aim for the $450‑$460 zone; watch for a pullback below 6,776 as a bearish signal.",
+    "narrative": "📊 **Consensus:** The market is poised for heightened volatility with a likely short‑term rally in AI‑heavy equities, but risk sentiment could pull back if the BOJ signals a tighter stance. **Conviction:** medium\n\n⚡ **Catalysts:** AI chip bookings ($500 B), Nvidia‑Synopsys integration, Tesla (TSLA), Salesforce (CRM), JPMorgan (JPM) earnings, BOJ policy decision on Dec 19\n\n🎯 **Action:** If NVDA approaches its $185 ceiling, consider a short; if the S&P 500 falls below the 6,776 support zone, consider bearish positioning; if the BOJ signals tightening, consider hedging with VIX or gold",
     "key_tickers": [
-      "TSLA",
       "NVDA",
-      "TSMC",
-      "GOOGL",
-      "SPY"
+      "TSLA",
+      "CRM",
+      "JPM"
     ],
     "key_themes": [
-      "AI‑driven growth",
-      "risk‑sentiment tightening",
-      "holiday consumer momentum"
+      "AI‑driven equity rally",
+      "BOJ policy impact",
+      "Macro easing and risk sentiment",
+      "Crypto regulation",
+      "Earnings catalysts"
     ],
     "risk_factors": [
-      "BOJ rate hike",
-      "regulatory scrutiny in UK and China",
-      "macro tightening",
-      "supply‑chain disruptions",
-      "crypto liquidity concerns"
+      "BOJ tightening risk",
+      "Crypto regulatory clampdown",
+      "Market volatility from AI hype",
+      "Risk‑off flow into bonds",
+      "AI data privacy regulation"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "S&P 500 futures 6,825 support, 6,776 breakpoint, 6,715 breakpoint, 6,852-6,862 resistance",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "Testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "S&P 500 futures 6,825 support, 6,852-6,862-6,877 target",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "Watch for breakout/breakdown",
+    "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 101544
+    "generation_time_ms": 99060
   },
   "trending": {
     "macro": [
@@ -96,43 +97,43 @@
       },
       {
         "ticker": "GLD",
-        "mentions": 3,
+        "mentions": 2,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
         "sentiment_pct": 0,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 3,
-          "total": 3
+          "neutral": 2,
+          "total": 2
         }
       },
       {
         "ticker": "SLV",
-        "mentions": 3,
+        "mentions": 2,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
         "sentiment_pct": 0,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 3,
-          "total": 3
+          "neutral": 2,
+          "total": 2
         }
       }
     ],
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 13,
-        "sentiment_score": -0.015,
+        "mentions": 12,
+        "sentiment_score": -0.017,
         "sentiment_label": "Neutral",
         "sentiment_pct": 2,
         "counts": {
           "bullish": 2,
           "bearish": 2,
-          "neutral": 9,
-          "total": 13
+          "neutral": 8,
+          "total": 12
         }
       },
       {
@@ -190,24 +191,37 @@
     ],
     "other": [
       {
-        "ticker": "TSLA",
-        "mentions": 11,
-        "sentiment_score": 0.277,
+        "ticker": "MDB",
+        "mentions": 10,
+        "sentiment_score": 0.315,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 28,
+        "sentiment_pct": 32,
         "counts": {
           "bullish": 4,
           "bearish": 0,
+          "neutral": 6,
+          "total": 10
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 10,
+        "sentiment_score": 0.225,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 23,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
           "neutral": 7,
-          "total": 11
+          "total": 10
         }
       },
       {
         "ticker": "NVDA",
         "mentions": 9,
-        "sentiment_score": 0.45,
+        "sentiment_score": 0.444,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 45,
+        "sentiment_pct": 44,
         "counts": {
           "bullish": 5,
           "bearish": 0,
@@ -216,29 +230,16 @@
         }
       },
       {
-        "ticker": "MDB",
-        "mentions": 9,
-        "sentiment_score": 0.267,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 6,
-          "total": 9
-        }
-      },
-      {
         "ticker": "SPX",
-        "mentions": 8,
-        "sentiment_score": 0.281,
+        "mentions": 7,
+        "sentiment_score": 0.321,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 28,
+        "sentiment_pct": 32,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 5,
-          "total": 8
+          "neutral": 4,
+          "total": 7
         }
       },
       {
@@ -259,18 +260,18 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.7,
-    "pc_ratio": 1.04,
-    "sentiment_bullish_pct": 28,
+    "vix": 16.67,
+    "pc_ratio": 1,
+    "sentiment_bullish_pct": 30,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
-    "label": "BUY PROTECTION",
-    "color": "text-cyan",
-    "iv_rank": 13.36,
+    "label": "FAIR VALUE",
+    "color": "text-orange",
+    "iv_rank": 30,
     "hv": 13.32,
-    "spread": 0.76,
-    "position": 20
+    "spread": 1.68,
+    "position": 50
   },
   "action": {
     "summary": "NEUTRAL: No clear edge. Cash is a position."
