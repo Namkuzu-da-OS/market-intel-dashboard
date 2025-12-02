@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarketSignal - Peak FUD Report</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Custom scrollbar for a cleaner look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-200 font-sans selection:bg-indigo-500/30 min-h-screen">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i data-lucide="activity" class="text-indigo-500 h-6 w-6"></i>
+        <h1 class="text-xl font-bold tracking-tight text-white">
+          Market<span class="text-indigo-500">Signal</span>
+          <span class="ml-2 text-xs font-normal text-slate-500 border border-slate-800 px-2 py-0.5 rounded-full">Dec
+            2025 Edition</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+
+    <!-- Hero Section -->
+    <section class="text-center py-8 relative">
+      <span class="px-2 py-1 rounded-md text-xs font-medium bg-amber-900/30 text-amber-400 border border-amber-800">
+        Market Analysis
+      </span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4">
+        Is This "Peak FUD"?
+      </h2>
+      <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed mb-6">
+        MicroStrategy trades at a discount to its Bitcoin stack. Contrarian data suggests extreme fear may be signaling
+        a bottom.
+      </p>
+    </section>
+
+    <!-- Key Metrics Grid -->
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+
+      <!-- MSTR Valuation Flip Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg relative overflow-hidden group">
+        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+          <i data-lucide="trending-down" width="80" height="80"></i>
+        </div>
+        <div class="flex items-center gap-2 mb-4">
+          <i data-lucide="trending-down" class="text-rose-500 h-5 w-5"></i>
+          <h3 class="font-semibold text-white">The Valuation Flip</h3>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Metric 1 -->
+          <div>
+            <div class="flex justify-between text-sm mb-1">
+              <span class="text-slate-400">Peak 2025 Premium</span>
+              <span class="text-emerald-400 font-mono">3.10x NAV</span>
+            </div>
+            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+              <div class="bg-emerald-500 h-full w-full opacity-50"></div>
+            </div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div>
+            <div class="flex justify-between text-sm mb-1">
+              <span class="text-slate-400">Dec 2025 Discount</span>
+              <span class="text-rose-400 font-mono">0.86x NAV</span>
+            </div>
+            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden relative">
+              <!-- 0.86 is roughly 27% of 3.1, scaled visually -->
+              <div class="bg-rose-500 h-full" style="width: 28%"></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-950/50 p-3 rounded-lg border border-slate-800 text-xs text-slate-400">
+            <span class="text-indigo-400 font-semibold">Insight:</span> The stock has flipped from trading at a massive
+            premium to trading <strong>below</strong> the value of its Bitcoin holdings.
+          </div>
+        </div>
+      </div>
+
+      <!-- The War Chest Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg relative overflow-hidden group">
+        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+          <i data-lucide="shield-check" width="80" height="80"></i>
+        </div>
+        <div class="flex items-center gap-2 mb-4">
+          <i data-lucide="shield-check" class="text-emerald-500 h-5 w-5"></i>
+          <h3 class="font-semibold text-white">The Defense Mechanism</h3>
+        </div>
+
+        <div class="flex flex-col items-center justify-center py-2">
+          <div class="text-4xl font-bold text-white mb-1">$1.44B</div>
+          <div class="text-sm text-slate-400 uppercase tracking-wider font-semibold">USD Reserve</div>
+        </div>
+
+        <div class="mt-6 space-y-4">
+          <!-- Progress Bar -->
+          <div class="w-full">
+            <div class="flex justify-between mb-1">
+              <span class="text-sm font-medium text-slate-300">Runway Secured</span>
+              <span class="text-sm font-medium text-slate-400">21 Months</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-2.5">
+              <div class="h-2.5 rounded-full transition-all duration-1000 bg-emerald-500" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-400 leading-relaxed">
+            New cash reserve covers interest & preferred dividends for nearly 2 years.
+            <span class="text-emerald-400"> Forced selling of BTC is unlikely.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep Dive Section -->
+    <div class="grid gap-8 grid-cols-1 lg:grid-cols-3">
+
+      <!-- Left Column: MSTR Stock Logic -->
+      <div class="lg:col-span-2 space-y-6">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="trending-up" class="text-indigo-500 h-5 w-5"></i>
+          MicroStrategy Analysis
+        </h3>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Data Point 1 -->
+            <div class="p-4 bg-slate-950 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-xs font-semibold uppercase mb-1">Dec 1 Price</div>
+              <div class="text-2xl font-bold text-white">~$177</div>
+              <div class="text-rose-500 text-sm flex items-center mt-1">
+                <i data-lucide="trending-down" class="w-3 h-3 mr-1"></i>
+                61% from High
+              </div>
+            </div>
+            <!-- Data Point 2 -->
+            <div class="p-4 bg-slate-950 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-xs font-semibold uppercase mb-1">BTC Cost Basis</div>
+              <div class="text-2xl font-bold text-emerald-400">~$74,432</div>
+              <div class="text-slate-500 text-sm mt-1">
+                Breakeven Line
+              </div>
+            </div>
+            <!-- Data Point 3 -->
+            <div class="p-4 bg-slate-950 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-xs font-semibold uppercase mb-1">Cost of Debt</div>
+              <div class="text-2xl font-bold text-amber-400">10-18%</div>
+              <div class="text-slate-500 text-sm mt-1">
+                "STRE" Preferreds
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-semibold text-white">The "Convoluted" Debt Structure</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              MSTR (rebranded Strategy, Inc) issued a perpetual preferred stock (STRE) with a <span
+                class="text-white font-medium">10% dividend</span> that compounds if unpaid. This complexity scares
+              traditional investors, contributing to the discount. However, the $1.44B reserve ensures these payments
+              are made without selling Bitcoin for the foreseeable future.
+            </p>
+          </div>
+        </div>
+
+        <!-- Thesis Box -->
+        <div
+          class="bg-gradient-to-r from-indigo-900/20 to-slate-900 border border-indigo-900/50 rounded-xl p-6 shadow-lg">
+          <div class="flex items-start gap-4">
+            <div class="bg-indigo-500/10 p-3 rounded-lg">
+              <i data-lucide="info" class="text-indigo-400 h-6 w-6"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-lg">The Contrarian Thesis</h4>
+              <p class="text-slate-300 mt-2 text-sm leading-relaxed">
+                Historically, when MSTR trades at a discount to its Bitcoin holdings (NAV), it marks a cycle bottom. The
+                "Peak FUD" signal is amplified by mainstream tech investors mocking the stock precisely when it hits
+                this undervaluation zone.
+                <br /><br />
+                <span class="text-indigo-300 font-medium">Bottom Line:</span> The market has priced in a forced
+                liquidation event that the company has actively insured against.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Sentiment -->
+      <div class="space-y-6">
+
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="pie-chart" class="text-indigo-500 h-5 w-5"></i>
+          Market Sentiment
+        </h3>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
+          <div class="flex items-center justify-between mb-4">
+            <h4 class="font-semibold text-slate-200 text-sm">Polymarket Odds</h4>
+            <span
+              class="px-2 py-1 rounded-md text-xs font-medium bg-emerald-900/30 text-emerald-400 border border-emerald-800">
+              Low Risk
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 mb-6">
+            "Will MicroStrategy sell any Bitcoin in 2025?"
+          </p>
+
+          <div class="space-y-6">
+            <!-- Bar 1 -->
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-sm font-medium text-emerald-400">No Sale (HODL)</span>
+                <span class="text-sm font-bold text-white">95%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                <div class="bg-emerald-500 h-full" style="width: 95%"></div>
+              </div>
+            </div>
+            <!-- Bar 2 -->
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-sm font-medium text-rose-400">Forced Sale</span>
+                <span class="text-sm font-bold text-white">5%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                <div class="bg-rose-500 h-full" style="width: 5%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800">
+            <p class="text-xs text-slate-500 text-center">
+              Market consensus implies the "Death Spiral" theory is highly unlikely.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-900 mt-12 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-slate-500 text-sm">
+        Data sources: Corporate filings, S&P Global Ratings, CryptoQuant, Polymarket. <br />
+        <span class="opacity-50">Not financial advice. For educational purposes only.</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
