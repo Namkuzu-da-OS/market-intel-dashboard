@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-02T13:05:19.070Z",
+  "timestamp": "2025-12-02T13:47:02.596Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 80,
     "sources": {
       "social": {
-        "bullish": 58,
+        "bullish": 59,
         "bearish": 15,
         "neutral": 136,
-        "total": 209,
+        "total": 210,
         "pct": 28
       },
       "news": {
-        "bullish": 21,
+        "bullish": 20,
         "bearish": 4,
-        "neutral": 10,
+        "neutral": 11,
         "total": 35,
-        "pct": 60
+        "pct": 57
       },
       "video": {
         "bullish": 1,
@@ -36,51 +36,60 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is expected to see a modest bullish trend driven by AI and tech earnings, tempered by potential risk‑off from the BOJ rate hike and sovereign debt concerns. ⚡ **Catalysts:** AI earnings (NVDA, GOOG, TSMC), BOJ policy meeting (Dec 19), Google Gemini rollout, SPX breakout above invisible MA support, Nvidia 20‑week EMA at $200/$215. 🎯 **Action:** If SPX breaks above 6,783 support, target 6,900; if NVDA breaks above $200 EMA, target $215; if SPX falls below 6,776, consider bearish stance.",
+    "narrative": "📊 **Consensus:** The market is leaning strongly bullish on AI‑hardware and related equities, while cautioning against a potential BOJ rate hike that could tighten risk sentiment. **Conviction level:** high\n\n⚡ **Catalysts:** AI‑compute demand growth (NVDA, TSMC), BOJ policy meetings, energy price swings, regulatory developments, SPX futures at 6,852–6,877, SPX option strikes at 6,820/6,825, and key earnings (TSLA, MDB, Salesforce)\n\n🎯 **Action:** If SPX breaks above 6,852, target 6,877; if SPX falls below 6,776, consider exiting; if SPX breaks 6,820 support, target 6,715; monitor NVDA and TSLA for upside on AI‑hardware capacity announcements.",
     "key_tickers": [
       "NVDA",
-      "SPX",
-      "GOOG",
-      "TSM",
-      "SPY"
+      "TSLA",
+      "MDB"
     ],
     "key_themes": [
-      "AI infrastructure demand",
+      "AI‑hardware demand",
       "BOJ rate hike risk",
-      "Tech earnings momentum",
-      "Volatility rise",
-      "Risk‑equity pressure"
+      "regulatory and supply‑chain constraints"
     ],
     "risk_factors": [
-      "BOJ rate hike",
-      "Japanese sovereign debt repricing",
-      "Regulatory scrutiny",
-      "Valuation excesses",
-      "Crypto crackdown"
+      "BOJ policy tightening",
+      "regulatory uncertainty",
+      "high valuations",
+      "crypto liquidity risk",
+      "energy price volatility"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPX 6,715 support, 6,783 support zone, 6,776 break below signals bearish",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPX 6,820 support, 6,825 resistance, 6,852–6,877 target zone, 6,776 breakout threshold, 6,715 support",
     "swing_bias": "BULLISH",
-    "swing_levels": "Nvidia 20‑week EMA at $200/$215, SPX 6,715 support, 6,783 support zone",
+    "swing_levels": "SPX 6,820 support, 6,825 resistance, 6,852–6,877 target zone, 6,776 breakout threshold, 6,715 support",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 104638
+    "generation_time_ms": 112336
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 4,
+        "mentions": 5,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
         "sentiment_pct": 0,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 4,
-          "total": 4
+          "neutral": 5,
+          "total": 5
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 3,
+        "sentiment_score": 0.267,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 27,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 3
         }
       },
       {
@@ -108,19 +117,6 @@
           "neutral": 3,
           "total": 3
         }
-      },
-      {
-        "ticker": "QQQ",
-        "mentions": 2,
-        "sentiment_score": 0.4,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
       }
     ],
     "crypto": [
@@ -139,15 +135,15 @@
       },
       {
         "ticker": "BTC",
-        "mentions": 9,
-        "sentiment_score": 0.239,
+        "mentions": 10,
+        "sentiment_score": 0.215,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 24,
+        "sentiment_pct": 22,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 6,
-          "total": 9
+          "neutral": 7,
+          "total": 10
         }
       },
       {
@@ -218,29 +214,29 @@
         }
       },
       {
-        "ticker": "SPX",
-        "mentions": 9,
-        "sentiment_score": 0.172,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 17,
-        "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 5,
-          "total": 9
-        }
-      },
-      {
         "ticker": "MDB",
-        "mentions": 7,
-        "sentiment_score": 0.343,
+        "mentions": 8,
+        "sentiment_score": 0.3,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 34,
+        "sentiment_pct": 30,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 4,
-          "total": 7
+          "neutral": 5,
+          "total": 8
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 8,
+        "sentiment_score": 0.281,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 28,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 5,
+          "total": 8
         }
       },
       {
@@ -261,7 +257,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.82,
+    "vix": 16.76,
     "pc_ratio": 1.04,
     "sentiment_bullish_pct": 28,
     "summary": "Market is lacking clear direction. Wait for confirmation."
