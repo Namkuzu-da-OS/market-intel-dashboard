@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-03T06:23:58.371Z",
+  "timestamp": "2025-12-03T07:17:18.090Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -13,10 +13,10 @@
         "pct": 36
       },
       "news": {
-        "bullish": 26,
+        "bullish": 27,
         "bearish": 6,
-        "neutral": 11,
-        "total": 43,
+        "neutral": 12,
+        "total": 45,
         "pct": 60
       },
       "video": {
@@ -36,35 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is broadly bullish with high conviction, driven by anticipated Fed rate cuts, AI and semiconductor growth, and positive crypto momentum.\n\n⚡ **Catalysts:** Fed policy minutes, Q1 2025 core PCE data, AI product launches (e.g., Google Gemini), semiconductor supply‑chain updates, Anthropic IPO, Marvell acquisition, Amazon AI pricing, Bitcoin VWAP breakout at $93 k, SPY pivot at $683.50, S&P 500 futures above 47,500.\n\n🎯 **Action:** If SPY breaks above $683.50, target a continuation toward $700; if BTC breaks above $93 k, target further upside; if NVDA breaches $185, target a higher range.",
+    "narrative": "📊 **Consensus:** The market sentiment is overwhelmingly bullish across professional, YouTube, RSS, and Twitter sources, driven by expected Fed rate cuts, AI‑chip launches, and a strong crypto rally, with a high conviction level: high\n\n⚡ **Catalysts:** Key drivers include the Fed’s dovish stance, AI‑compute growth, QQQ volume‑shelf breakout, BTC VWAP breakout, SPY’s 683.50 pivot, NVDA’s 176.5 sell point, and WMT’s recent breakout\n\n🎯 **Action:** If QQQ breaks its volume‑shelf, target the next resistance level; if SPY breaks 683.50, target the next resistance level; if BTC breaks its VWAP, consider a bullish position; if NVDA falls below 176.5, consider a short or exit strategy",
     "key_tickers": [
-      "SPY",
       "QQQ",
-      "NVDA",
+      "SPY",
       "BTC",
-      "AMD"
+      "NVDA",
+      "WMT"
     ],
     "key_themes": [
-      "Fed policy & rate cuts",
-      "AI & semiconductor boom",
-      "Crypto regulation & stablecoins"
+      "AI‑compute growth",
+      "Fed rate cuts",
+      "Crypto rally",
+      "AI‑chip launches",
+      "Volatility from crypto"
     ],
     "risk_factors": [
-      "Regulatory tightening on stablecoins",
-      "Fed policy shift risk",
-      "Liquidity shock in crypto",
-      "Supply chain disruptions in semiconductors",
-      "Market volatility around earnings"
+      "Regulatory risk in stablecoins",
+      "EV/clean‑energy weakness",
+      "SPY failure to hold 683.50",
+      "Crypto regulatory threat",
+      "Market liquidity tightening"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 683.50 resistance; watch for breakout",
+    "intraday_levels": "SPY 683.50 pivot, QQQ volume‑shelf break, BTC VWAP breakout",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY target 700; watch for continuation beyond 683.50",
+    "swing_levels": "SPY 683.50 pivot, QQQ volume‑shelf break, BTC VWAP breakout",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 97821
+    "generation_time_ms": 94758
   },
   "trending": {
     "macro": [
