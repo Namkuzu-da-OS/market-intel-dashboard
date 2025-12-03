@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-03T16:53:18.385Z",
+  "timestamp": "2025-12-03T18:52:53.374Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 74,
     "sources": {
       "social": {
-        "bullish": 51,
-        "bearish": 17,
-        "neutral": 107,
-        "total": 175,
-        "pct": 29
+        "bullish": 53,
+        "bearish": 16,
+        "neutral": 109,
+        "total": 178,
+        "pct": 30
       },
       "news": {
-        "bullish": 25,
-        "bearish": 10,
-        "neutral": 12,
-        "total": 47,
-        "pct": 53
+        "bullish": 26,
+        "bearish": 11,
+        "neutral": 11,
+        "total": 48,
+        "pct": 54
       },
       "video": {
         "bullish": 1,
@@ -36,68 +36,81 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High – the majority of credible sources project a bullish stance for US equities and a moderate upside for silver and leading cryptocurrencies, tempered by Fed policy and geopolitical risk.\n⚡ **Catalysts:** • SPY trading above the 678‑679 zone and QQQ breaking last week’s highs; • S&P 500 near 6,799 with a 6,850 pivot; • Earnings momentum for LQDA, NEM, Uber, Amazon; • Tightening gold‑silver ratio; • Stable‑coin reserve attestations and margin requirements; • Fed policy signals.\n🎯 **Action:** • If SPY holds above 678‑679, target 6,850; if it breaks below 678, exit.\n• If QQQ breaks the 6,850 S&P 500 target, consider taking profit.\n• If the gold‑silver ratio tightens, consider adding silver; if stable‑coin reserve attestations weaken, consider shorting stable‑coin exposure.",
+    "narrative": "📊 **Consensus:** The market is leaning toward a cautiously bullish stance, driven by tech‑chip and AI sector catalysts and modest gains in banks, while risk factors such as Fed tightening and geopolitical tensions temper enthusiasm. **Conviction level:** medium\n\n⚡ **Catalysts:** • Tech‑chip & AI rally (NVDA, QQQ) – potential upside if earnings beat expectations\n• Fed policy signals – could tighten or loosen rates\n• Stablecoin regulatory scrutiny – potential downside for BTC‑linked assets\n• China‑Taiwan drills – risk‑on sentiment may shift\n• Silver tightening gold‑silver ratio – possible commodity upside\n\n🎯 **Action:** • If NVDA closes above its 50‑day moving average, target 5‑10% upside; exit if breaks 200‑day MA\n• If QQQ tests $15 above the 20‑day SMA, consider long with stop at 5% below\n• If BTC breaks $30,000 support, target $35,000; exit if falls below $28,000\n• If SPY tests resistance near $400, consider a short on pullback to $395\n• If any stablecoin falls below 80% of recent high, consider short with stop 5% above",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NEM",
-      "LQDA",
-      "AMZN"
+      "NVDA",
+      "TSLA",
+      "BTC"
     ],
     "key_themes": [
-      "Bullish US equities",
-      "Earnings momentum",
-      "Fed policy risk",
-      "Crypto‑metal correlation",
-      "Stable‑coin margin compression"
+      "Fed policy impact",
+      "Tech/AI chip rally",
+      "Stablecoin risk",
+      "Geopolitical tension",
+      "Commodity/Silver upside"
     ],
     "risk_factors": [
-      "Fed policy uncertainty",
-      "China‑Taiwan geopolitical tension",
-      "Regulatory scrutiny of tech and crypto",
-      "Margin compression in stable‑coins",
-      "Earnings surprises"
+      "Fed rate tightening",
+      "China‑Taiwan military drills",
+      "Stablecoin regulatory risk",
+      "Supply chain bottlenecks",
+      "CME outage affecting stablecoins"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 678‑679 support, 683.50 resistance; S&P 500 6,850 target",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY testing resistance, QQQ testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 678‑679 zone, S&P 500 6,850 target, QQQ last week’s highs",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 113346
+    "generation_time_ms": 94878
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
-        "sentiment_score": 0.16,
+        "mentions": 7,
+        "sentiment_score": 0.2,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 16,
+        "sentiment_pct": 20,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
-          "neutral": 4,
-          "total": 5
+          "neutral": 5,
+          "total": 7
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 4,
-        "sentiment_score": 0.363,
+        "mentions": 3,
+        "sentiment_score": 0.483,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 48,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 2,
-          "total": 4
+          "neutral": 1,
+          "total": 3
         }
       }
     ],
     "crypto": [
+      {
+        "ticker": "BTC",
+        "mentions": 4,
+        "sentiment_score": 0.238,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 24,
+        "counts": {
+          "bullish": 2,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 4
+        }
+      },
       {
         "ticker": "MSTR",
         "mentions": 3,
@@ -125,19 +138,6 @@
         }
       },
       {
-        "ticker": "BTC",
-        "mentions": 3,
-        "sentiment_score": 0.05,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 5,
-        "counts": {
-          "bullish": 1,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
         "ticker": "ETH",
         "mentions": 1,
         "sentiment_score": 0.8,
@@ -149,22 +149,22 @@
           "neutral": 0,
           "total": 1
         }
-      },
-      {
-        "ticker": "APLD",
-        "mentions": 1,
-        "sentiment_score": 0.7,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 70,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "other": [
+      {
+        "ticker": "SPX",
+        "mentions": 8,
+        "sentiment_score": 0.275,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 28,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 5,
+          "total": 8
+        }
+      },
       {
         "ticker": "MSFT",
         "mentions": 8,
@@ -179,29 +179,29 @@
         }
       },
       {
-        "ticker": "SPX",
-        "mentions": 7,
-        "sentiment_score": 0.314,
+        "ticker": "AAPL",
+        "mentions": 6,
+        "sentiment_score": 0.367,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 31,
+        "sentiment_pct": 37,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 4,
-          "total": 7
+          "neutral": 3,
+          "total": 6
         }
       },
       {
-        "ticker": "AAPL",
-        "mentions": 4,
-        "sentiment_score": 0.55,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "ticker": "NVDA",
+        "mentions": 5,
+        "sentiment_score": 0.01,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 1,
         "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 4
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 3,
+          "total": 5
         }
       },
       {
@@ -216,36 +216,23 @@
           "neutral": 2,
           "total": 4
         }
-      },
-      {
-        "ticker": "NVDA",
-        "mentions": 4,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 1,
-          "bearish": 1,
-          "neutral": 2,
-          "total": 4
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.44,
-    "pc_ratio": 0.79,
-    "sentiment_bullish_pct": 29,
+    "vix": 16.14,
+    "pc_ratio": 0.88,
+    "sentiment_bullish_pct": 30,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 12.42,
+    "iv_rank": 11.31,
     "hv": 13.31,
-    "spread": 0.46,
+    "spread": 0.09,
     "position": 20
   },
   "action": {
