@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-02T23:36:17.858Z",
+  "timestamp": "2025-12-03T05:02:25.669Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 85,
     "sources": {
       "social": {
-        "bullish": 47,
+        "bullish": 52,
         "bearish": 7,
-        "neutral": 84,
-        "total": 138,
+        "neutral": 93,
+        "total": 152,
         "pct": 34
       },
       "news": {
-        "bullish": 23,
+        "bullish": 26,
         "bearish": 6,
         "neutral": 11,
-        "total": 40,
-        "pct": 57
+        "total": 43,
+        "pct": 60
       },
       "video": {
         "bullish": 3,
-        "bearish": 0,
+        "bearish": 1,
         "neutral": 2,
-        "total": 5,
-        "pct": 60
+        "total": 6,
+        "pct": 50
       },
       "chat": {
         "bullish": 1,
@@ -36,37 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction bullish stance, driven by AI momentum and accommodative policy.\n\n⚡ **Catalysts:** AI sector (NVDA, AMD, AAPL) momentum, silver breakout (SLV), Fed policy easing, BOJ signals, AI‑hardware supply chain, FOMC minutes, core PCE.\n\n🎯 **Action:** If SPY breaks $683.50, target $700; if SPY breaks $683.50 downward, target $670. If NVDA breaks $185, target $200; if NVDA falls below $176.5, target $165.",
+    "narrative": "📊 **Consensus:** High conviction that U.S. equities will see moderate upside driven by easing Fed policy and AI momentum, while short‑term technical resistance at the S&P 500 $683.50 pivot and NVDA $185 target may temper gains.\n\n⚡ **Catalysts:** Fed policy easing, AI chip rollout (e.g., NVIDIA), S&P 500 $683.50 pivot, NVDA $185 target, crypto regulatory tightening.\n\n🎯 **Action:** If SPY breaks $683.50, target $700; if NVDA breaks $185, target $190.",
     "key_tickers": [
       "NVDA",
-      "AMD",
-      "AAPL",
-      "SLV",
-      "AMZN"
+      "SPY",
+      "YM_F",
+      "QQQ"
     ],
     "key_themes": [
-      "AI-driven growth",
-      "Accommodative monetary policy",
-      "Equity rally",
-      "AI hardware supply constraints",
-      "Volatility"
+      "AI growth",
+      "Fed policy easing",
+      "crypto volatility",
+      "tech momentum",
+      "regulatory concerns"
     ],
     "risk_factors": [
-      "Fed policy reversal",
-      "BOJ policy change",
-      "Regulatory risks",
-      "Supply chain disruptions",
-      "Market pullback if SPY breaks 683.50"
+      "stablecoin regulation",
+      "Fed policy uncertainty",
+      "S&P 500 $683.50 pivot",
+      "crypto volatility",
+      "AI chip slowdown"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 683.50 resistance; NVDA 176.5–185 range; Treasury futures 47,500",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY $683.50 resistance; NVDA $185 target",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 683.50 resistance; NVDA 185 resistance; Treasury futures 47,500",
+    "swing_levels": "SPY $683.50 resistance; YM_F $47,500 support",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 78923
+    "generation_time_ms": 94533
   },
   "trending": {
     "macro": [
@@ -99,6 +98,19 @@
     ],
     "crypto": [
       {
+        "ticker": "BTC",
+        "mentions": 4,
+        "sentiment_score": 0.188,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 19,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 4
+        }
+      },
+      {
         "ticker": "ETH",
         "mentions": 3,
         "sentiment_score": 0.767,
@@ -108,19 +120,6 @@
           "bullish": 3,
           "bearish": 0,
           "neutral": 0,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "BTC",
-        "mentions": 3,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 3,
           "total": 3
         }
       },
@@ -179,6 +178,19 @@
         }
       },
       {
+        "ticker": "SPX",
+        "mentions": 4,
+        "sentiment_score": 0.2,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 20,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 4
+        }
+      },
+      {
         "ticker": "MDB",
         "mentions": 4,
         "sentiment_score": 0.188,
@@ -189,19 +201,6 @@
           "bearish": 0,
           "neutral": 3,
           "total": 4
-        }
-      },
-      {
-        "ticker": "AMD",
-        "mentions": 3,
-        "sentiment_score": 0.5,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
         }
       }
     ]
