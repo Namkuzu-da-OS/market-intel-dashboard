@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-03T05:02:25.669Z",
+  "timestamp": "2025-12-03T06:23:58.371Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 85,
+    "confidence_pct": 86,
     "sources": {
       "social": {
-        "bullish": 52,
+        "bullish": 57,
         "bearish": 7,
-        "neutral": 93,
-        "total": 152,
-        "pct": 34
+        "neutral": 96,
+        "total": 160,
+        "pct": 36
       },
       "news": {
         "bullish": 26,
@@ -36,36 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction that U.S. equities will see moderate upside driven by easing Fed policy and AI momentum, while short‑term technical resistance at the S&P 500 $683.50 pivot and NVDA $185 target may temper gains.\n\n⚡ **Catalysts:** Fed policy easing, AI chip rollout (e.g., NVIDIA), S&P 500 $683.50 pivot, NVDA $185 target, crypto regulatory tightening.\n\n🎯 **Action:** If SPY breaks $683.50, target $700; if NVDA breaks $185, target $190.",
+    "narrative": "📊 **Consensus:** The market is broadly bullish with high conviction, driven by anticipated Fed rate cuts, AI and semiconductor growth, and positive crypto momentum.\n\n⚡ **Catalysts:** Fed policy minutes, Q1 2025 core PCE data, AI product launches (e.g., Google Gemini), semiconductor supply‑chain updates, Anthropic IPO, Marvell acquisition, Amazon AI pricing, Bitcoin VWAP breakout at $93 k, SPY pivot at $683.50, S&P 500 futures above 47,500.\n\n🎯 **Action:** If SPY breaks above $683.50, target a continuation toward $700; if BTC breaks above $93 k, target further upside; if NVDA breaches $185, target a higher range.",
     "key_tickers": [
-      "NVDA",
       "SPY",
-      "YM_F",
-      "QQQ"
+      "QQQ",
+      "NVDA",
+      "BTC",
+      "AMD"
     ],
     "key_themes": [
-      "AI growth",
-      "Fed policy easing",
-      "crypto volatility",
-      "tech momentum",
-      "regulatory concerns"
+      "Fed policy & rate cuts",
+      "AI & semiconductor boom",
+      "Crypto regulation & stablecoins"
     ],
     "risk_factors": [
-      "stablecoin regulation",
-      "Fed policy uncertainty",
-      "S&P 500 $683.50 pivot",
-      "crypto volatility",
-      "AI chip slowdown"
+      "Regulatory tightening on stablecoins",
+      "Fed policy shift risk",
+      "Liquidity shock in crypto",
+      "Supply chain disruptions in semiconductors",
+      "Market volatility around earnings"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY $683.50 resistance; NVDA $185 target",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY 683.50 resistance; watch for breakout",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY $683.50 resistance; YM_F $47,500 support",
+    "swing_levels": "SPY target 700; watch for continuation beyond 683.50",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 94533
+    "generation_time_ms": 97821
   },
   "trending": {
     "macro": [
@@ -84,15 +83,15 @@
       },
       {
         "ticker": "QQQ",
-        "mentions": 5,
-        "sentiment_score": 0.32,
+        "mentions": 6,
+        "sentiment_score": 0.375,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 38,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 3,
-          "total": 5
+          "total": 6
         }
       }
     ],
@@ -210,7 +209,7 @@
     "color": "text-muted",
     "vix": 16.59,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 34,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
