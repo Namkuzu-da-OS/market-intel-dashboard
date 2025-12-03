@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-03T07:17:18.090Z",
+  "timestamp": "2025-12-03T12:22:36.285Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 86,
+    "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 57,
-        "bearish": 7,
-        "neutral": 96,
-        "total": 160,
-        "pct": 36
+        "bullish": 62,
+        "bearish": 14,
+        "neutral": 121,
+        "total": 197,
+        "pct": 31
       },
       "news": {
         "bullish": 27,
-        "bearish": 6,
-        "neutral": 12,
+        "bearish": 9,
+        "neutral": 9,
         "total": 45,
         "pct": 60
       },
       "video": {
-        "bullish": 3,
+        "bullish": 2,
         "bearish": 1,
         "neutral": 2,
-        "total": 6,
-        "pct": 50
+        "total": 5,
+        "pct": 40
       },
       "chat": {
         "bullish": 1,
@@ -36,37 +36,32 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is overwhelmingly bullish across professional, YouTube, RSS, and Twitter sources, driven by expected Fed rate cuts, AI‑chip launches, and a strong crypto rally, with a high conviction level: high\n\n⚡ **Catalysts:** Key drivers include the Fed’s dovish stance, AI‑compute growth, QQQ volume‑shelf breakout, BTC VWAP breakout, SPY’s 683.50 pivot, NVDA’s 176.5 sell point, and WMT’s recent breakout\n\n🎯 **Action:** If QQQ breaks its volume‑shelf, target the next resistance level; if SPY breaks 683.50, target the next resistance level; if BTC breaks its VWAP, consider a bullish position; if NVDA falls below 176.5, consider a short or exit strategy",
+    "narrative": "📊 **Consensus:** U.S. equities and tech are poised for a modest rally into early 2026, driven by expected Fed rate cuts, seasonal strength, and strong AI‑heavy growth names, with high conviction. \n\n⚡ **Catalysts:** Apple’s $286.14 high, iPhone 17 launch, PayPal’s market‑cap gain, Binance’s new co‑CEO, Bitcoin’s $93 k rebound, and the looming SPY $683.50 resistance.\n\n🎯 **Action:** If AAPL breaks $286.14, consider buying; target per source analysis. If SPY breaks $683.50, consider a bullish stance; target per source analysis.",
     "key_tickers": [
-      "QQQ",
-      "SPY",
+      "AAPL",
+      "PYPL",
       "BTC",
-      "NVDA",
-      "WMT"
+      "SPY"
     ],
     "key_themes": [
-      "AI‑compute growth",
-      "Fed rate cuts",
-      "Crypto rally",
-      "AI‑chip launches",
-      "Volatility from crypto"
+      "AI‑heavy tech rally",
+      "Fed rate cuts & seasonal strength",
+      "Crypto volatility & regulatory risk"
     ],
     "risk_factors": [
-      "Regulatory risk in stablecoins",
-      "EV/clean‑energy weakness",
-      "SPY failure to hold 683.50",
-      "Crypto regulatory threat",
-      "Market liquidity tightening"
+      "Regulatory risk for crypto",
+      "Fed policy uncertainty",
+      "Market volatility around key resistance levels"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 683.50 pivot, QQQ volume‑shelf break, BTC VWAP breakout",
+    "intraday_levels": "SPY resistance $683.50",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 683.50 pivot, QQQ volume‑shelf break, BTC VWAP breakout",
+    "swing_levels": "SPY $665 max pain",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 94758
+    "generation_time_ms": 102062
   },
   "trending": {
     "macro": [
@@ -101,13 +96,13 @@
       {
         "ticker": "BTC",
         "mentions": 4,
-        "sentiment_score": 0.188,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
+        "sentiment_score": 0.038,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 4,
         "counts": {
           "bullish": 1,
-          "bearish": 0,
-          "neutral": 3,
+          "bearish": 1,
+          "neutral": 2,
           "total": 4
         }
       },
@@ -126,30 +121,30 @@
       },
       {
         "ticker": "MSTR",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "mentions": 3,
+        "sentiment_score": 0.25,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 25,
         "counts": {
-          "bullish": 0,
+          "bullish": 1,
           "bearish": 0,
           "neutral": 2,
-          "total": 2
+          "total": 3
         }
       }
     ],
     "other": [
       {
         "ticker": "AAPL",
-        "mentions": 4,
-        "sentiment_score": 0.55,
+        "mentions": 5,
+        "sentiment_score": 0.59,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "sentiment_pct": 59,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 1,
-          "total": 4
+          "total": 5
         }
       },
       {
@@ -158,19 +153,6 @@
         "sentiment_score": 0.375,
         "sentiment_label": "Bullish",
         "sentiment_pct": 38,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "mentions": 4,
-        "sentiment_score": 0.362,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -192,16 +174,29 @@
         }
       },
       {
-        "ticker": "MDB",
-        "mentions": 4,
-        "sentiment_score": 0.188,
+        "ticker": "WMT",
+        "mentions": 3,
+        "sentiment_score": 0.533,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
+        "sentiment_pct": 53,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
-          "neutral": 3,
-          "total": 4
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "AMD",
+        "mentions": 3,
+        "sentiment_score": 0.5,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 50,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 3
         }
       }
     ]
@@ -211,7 +206,7 @@
     "color": "text-muted",
     "vix": 16.59,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 31,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
