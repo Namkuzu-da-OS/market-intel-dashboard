@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-03T12:22:36.285Z",
+  "timestamp": "2025-12-03T15:42:28.328Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -7,24 +7,24 @@
     "sources": {
       "social": {
         "bullish": 62,
-        "bearish": 14,
-        "neutral": 121,
-        "total": 197,
-        "pct": 31
+        "bearish": 15,
+        "neutral": 116,
+        "total": 193,
+        "pct": 32
       },
       "news": {
-        "bullish": 27,
-        "bearish": 9,
-        "neutral": 9,
-        "total": 45,
-        "pct": 60
+        "bullish": 24,
+        "bearish": 7,
+        "neutral": 12,
+        "total": 43,
+        "pct": 56
       },
       "video": {
-        "bullish": 2,
+        "bullish": 1,
         "bearish": 1,
-        "neutral": 2,
+        "neutral": 3,
         "total": 5,
-        "pct": 40
+        "pct": 20
       },
       "chat": {
         "bullish": 1,
@@ -36,73 +36,73 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** U.S. equities and tech are poised for a modest rally into early 2026, driven by expected Fed rate cuts, seasonal strength, and strong AI‑heavy growth names, with high conviction. \n\n⚡ **Catalysts:** Apple’s $286.14 high, iPhone 17 launch, PayPal’s market‑cap gain, Binance’s new co‑CEO, Bitcoin’s $93 k rebound, and the looming SPY $683.50 resistance.\n\n🎯 **Action:** If AAPL breaks $286.14, consider buying; target per source analysis. If SPY breaks $683.50, consider a bullish stance; target per source analysis.",
+    "narrative": "📊 **Consensus:** The market is broadly bullish with moderate conviction, driven by technical breakouts in silver‑crypto and a supportive range for SPY. \n⚡ **Catalysts:** Silver‑crypto correlation, SPY 678–679 upper zone, 683.5 resistance, XLE base, Amazon Trainium, AI‑chip launches, Fed policy signals, stable‑coin liquidity. \n🎯 **Action:** If SPY holds 678–679, target 690; if SPY breaks 683.5, target 690; if XLE holds its base, target a 6% move; monitor silver‑crypto alignment for potential short‑term rallies.",
     "key_tickers": [
-      "AAPL",
-      "PYPL",
-      "BTC",
-      "SPY"
+      "SPY",
+      "XLE",
+      "AMZN",
+      "QQQ"
     ],
     "key_themes": [
-      "AI‑heavy tech rally",
-      "Fed rate cuts & seasonal strength",
-      "Crypto volatility & regulatory risk"
+      "Silver‑Crypto Correlation",
+      "AI/Cloud Tech Upside",
+      "SPY Range Breakout"
     ],
     "risk_factors": [
-      "Regulatory risk for crypto",
-      "Fed policy uncertainty",
-      "Market volatility around key resistance levels"
+      "Stable‑Coin Liquidity",
+      "Fed Dovish Easing",
+      "Regulatory Uncertainty in Autonomous Vehicles"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY resistance $683.50",
+    "intraday_levels": "SPY 678–679 upper zone, 683.5 resistance, 47,500 YM short‑side support",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY $665 max pain",
+    "swing_levels": "SPY 678–679 upper zone, 683.5 resistance, 47,500 YM short‑side support",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 102062
+    "generation_time_ms": 86757
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
         "mentions": 8,
-        "sentiment_score": 0.1,
+        "sentiment_score": 0.2,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 10,
+        "sentiment_pct": 20,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
-          "neutral": 7,
+          "neutral": 6,
           "total": 8
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 6,
-        "sentiment_score": 0.375,
+        "mentions": 5,
+        "sentiment_score": 0.45,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 45,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 3,
-          "total": 6
+          "neutral": 2,
+          "total": 5
         }
       }
     ],
     "crypto": [
       {
-        "ticker": "BTC",
+        "ticker": "MSTR",
         "mentions": 4,
-        "sentiment_score": 0.038,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 4,
+        "sentiment_score": 0.188,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 19,
         "counts": {
           "bullish": 1,
-          "bearish": 1,
-          "neutral": 2,
+          "bearish": 0,
+          "neutral": 3,
           "total": 4
         }
       },
@@ -120,20 +120,72 @@
         }
       },
       {
-        "ticker": "MSTR",
+        "ticker": "IREN",
         "mentions": 3,
-        "sentiment_score": 0.25,
+        "sentiment_score": 0.233,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 25,
+        "sentiment_pct": 23,
         "counts": {
           "bullish": 1,
           "bearish": 0,
           "neutral": 2,
           "total": 3
         }
+      },
+      {
+        "ticker": "BTC",
+        "mentions": 3,
+        "sentiment_score": 0.05,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 5,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "APLD",
+        "mentions": 2,
+        "sentiment_score": 0.4,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
       }
     ],
     "other": [
+      {
+        "ticker": "MSFT",
+        "mentions": 8,
+        "sentiment_score": -0.275,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 28,
+        "counts": {
+          "bullish": 1,
+          "bearish": 4,
+          "neutral": 3,
+          "total": 8
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 7,
+        "sentiment_score": 0.429,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 43,
+        "counts": {
+          "bullish": 4,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 7
+        }
+      },
       {
         "ticker": "AAPL",
         "mentions": 5,
@@ -148,55 +200,29 @@
         }
       },
       {
-        "ticker": "NVDA",
-        "mentions": 4,
-        "sentiment_score": 0.375,
+        "ticker": "GOOGL",
+        "mentions": 5,
+        "sentiment_score": 0.43,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 43,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 2,
-          "total": 4
+          "total": 5
         }
       },
       {
-        "ticker": "SPX",
-        "mentions": 4,
-        "sentiment_score": 0.2,
+        "ticker": "NVDA",
+        "mentions": 5,
+        "sentiment_score": 0.15,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 20,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "WMT",
-        "mentions": 3,
-        "sentiment_score": 0.533,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
+        "sentiment_pct": 15,
         "counts": {
           "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "AMD",
-        "mentions": 3,
-        "sentiment_score": 0.5,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
+          "bearish": 1,
+          "neutral": 2,
+          "total": 5
         }
       }
     ]
@@ -204,9 +230,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.59,
+    "vix": 16.29,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 31,
+    "sentiment_bullish_pct": 32,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
