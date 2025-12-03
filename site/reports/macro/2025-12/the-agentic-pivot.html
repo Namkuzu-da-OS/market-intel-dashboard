@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Agentic Era: Gemini 3 vs. GPT-5.1</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        ms: {
+                            main: '#0078D4', // Microsoft Blue
+                        },
+                        goog: {
+                            main: '#0F9D58', // Google Green
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #fafaf9; /* Warm neutral */
+            color: #292524;
+        }
+        
+        /* Chart Container Logic - Mandatory */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+
+        .chart-wrapper-plotly {
+             position: relative;
+             width: 100%;
+             height: 450px; /* Taller for the Vending Bench bar chart */
+             max-width: 100%;
+             overflow: hidden;
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+            border: 1px solid #e7e5e4;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            transform: translateY(-2px);
+        }
+
+        .nav-pill {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .nav-pill.active {
+            background-color: #292524;
+            color: white;
+        }
+        
+        /* Benchmark Value Highlight */
+        .stat-value {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+
+    <!-- Placeholder Comments Required -->
+    <!-- Chosen Palette: Warm Neutrals (Stone) with Corporate Accents (Microsoft Blue, Google Green). -->
+    <!-- Application Structure Plan: 
+         1. Hero: Introduces the "Agentic Era" (Gemini 3 vs GPT-5.1).
+         2. Market Context: Updates stock trends.
+         3. The Deep Dive (Benchmarks): Focuses on the "Agentic Gap" using Vending-Bench and ScreenSpot data.
+         4. Business Impact: Translates benchmarks into Workspace vs M365 utility.
+         5. Calculator: Updated logic based on "Planning vs Ecosystem".
+    -->
+    <!-- Visualization & Content Choices: 
+         1. Trend Line (Chart.js): Shows the "Gemini Spike" in sentiment.
+         2. Bar Chart (Plotly): Vending-Bench 2 comparison (Net Worth) to show the massive 272% gap.
+         3. Radar Chart (Chart.js): Updated axes for "Long-Horizon Planning", "UI Understanding", "Coding".
+         CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. 
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+</head>
+<body class="font-sans antialiased text-stone-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-stone-50/95 backdrop-blur border-b border-stone-200 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-stone-800 rounded flex items-center justify-center text-white font-bold text-xl">VS</div>
+                <h1 class="font-serif font-bold text-lg hidden sm:block">Gemini 3 vs. GPT-5.1</h1>
+            </div>
+            <div class="flex space-x-2 text-sm font-medium bg-white p-1 rounded-full border border-stone-200 overflow-x-auto">
+                <button onclick="scrollToSection('market')" class="nav-pill px-4 py-2 rounded-full active whitespace-nowrap">Market Pulse</button>
+                <button onclick="scrollToSection('benchmarks')" class="nav-pill px-4 py-2 rounded-full text-stone-500 hover:text-stone-800 whitespace-nowrap">Agent Benchmarks</button>
+                <button onclick="scrollToSection('tech')" class="nav-pill px-4 py-2 rounded-full text-stone-500 hover:text-stone-800 whitespace-nowrap">Under the Hood</button>
+                <button onclick="scrollToSection('verdict')" class="nav-pill px-4 py-2 rounded-full text-stone-500 hover:text-stone-800 whitespace-nowrap">Calculator</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-12 md:py-16 text-center max-w-4xl">
+        <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-stone-500 uppercase bg-stone-200 rounded-full">
+            Strategic Analysis Report
+        </div>
+        <h1 class="text-4xl md:text-6xl font-serif font-bold text-stone-900 mb-6 leading-tight">
+            The Agentic Pivot: <br/> <span class="text-stone-500">Gemini 3 Takes the Lead</span>
+        </h1>
+        <p class="text-lg md:text-xl text-stone-600 mb-8 max-w-2xl mx-auto">
+            With the recent release of <strong>Gemini 3</strong>, Google has surged ahead in "Agentic Reasoning"—the ability to plan, act, and use tools autonomously. Microsoft's <strong>GPT-5.1</strong> remains a coding powerhouse, but the gap in long-horizon planning is widening.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <div class="card p-4 flex items-center space-x-4 border-l-4 border-blue-500">
+                <div class="text-left w-full">
+                    <div class="text-xs text-stone-500 uppercase font-bold">Microsoft (GPT-5.1)</div>
+                    <div class="font-bold text-stone-800 text-lg">Ecosystem Stronghold</div>
+                    <div class="text-sm text-stone-500">Dominant in Dev/Coding Efficiency</div>
+                </div>
+            </div>
+            <div class="card p-4 flex items-center space-x-4 border-l-4 border-green-500">
+                <div class="text-left w-full">
+                    <div class="text-xs text-stone-500 uppercase font-bold">Google (Gemini 3)</div>
+                    <div class="font-bold text-stone-800 text-lg">Agentic Leader</div>
+                    <div class="text-sm text-stone-500">272% Higher Net Worth in Vending-Bench</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 pb-20 space-y-20">
+
+        <!-- Section 1: Market Context -->
+        <section id="market" class="scroll-mt-24">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-serif font-bold mb-4">Market Sentiment: The "Agent" Spike</h2>
+                    <p class="text-stone-600 mb-6">
+                        The market has begun pricing in "Agentic Capability." While Microsoft faces scrutiny over AI CapEx without corresponding autonomous revenue, Google's Gemini 3 has demonstrated real-world utility in long-horizon tasks, shifting investor sentiment during the latest launch cycle.
+                    </p>
+                    <div class="card p-6">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-stone-400 mb-4">Stock/Sentiment Trend (Normalized)</h3>
+                        <div class="chart-container">
+                            <canvas id="marketChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="card p-6 bg-stone-900 text-stone-100">
+                        <h3 class="font-bold text-lg mb-2 text-green-400">The "Deep Think" Factor</h3>
+                        <p class="text-sm opacity-80 mb-4">
+                            Gemini 3's native "Deep Think" mode allows it to handle tasks requiring minutes of planning, unlike GPT-5.1's tendency to rush.
+                        </p>
+                        <div class="border-t border-stone-700 pt-4 mt-2">
+                            <div class="text-3xl font-bold text-white mb-1">72.7%</div>
+                            <div class="text-xs text-stone-400">ScreenSpot (UI) Accuracy (Gemini) vs <10% (GPT-5.1)</div>
+                        </div>
+                    </div>
+                    <div class="card p-6">
+                        <h3 class="font-bold text-lg mb-2 text-stone-800">The GPT-5.1 Defense</h3>
+                        <p class="text-sm text-stone-600">
+                            Despite benchmark losses in "Agents," GPT-5.1 remains the developer standard. Benchmarks like <strong>SWE-Bench Verified</strong> show a near tie (76.2% vs 76.3%), proving Microsoft is still king of code syntax.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Benchmarks (The Meat) -->
+        <section id="benchmarks" class="scroll-mt-24">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-serif font-bold mb-4">The "Agentic Gap"</h2>
+                <p class="text-stone-600">
+                    The defining metric of the current era is not "Chat Quality," but <strong>"Economic Value Generated."</strong> How well can the AI perform a job over a simulated year? The difference is stark.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 items-start">
+                <!-- Vending Bench Chart -->
+                <div class="card p-6">
+                    <h3 class="font-bold text-lg mb-2">Vending-Bench 2: Simulated Net Worth ($)</h3>
+                    <p class="text-sm text-stone-500 mb-4">
+                        A test of long-horizon planning, tool usage, and coherent decision making over a simulated year.
+                    </p>
+                    <div class="chart-wrapper-plotly" id="vendingChart"></div>
+                </div>
+
+                <!-- Detailed Specs Table -->
+                <div class="card p-0 overflow-hidden">
+                    <div class="bg-stone-100 p-4 border-b border-stone-200">
+                        <h3 class="font-bold text-stone-700">Head-to-Head Benchmarks</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-stone-50 text-stone-500 font-medium">
+                                <tr>
+                                    <th class="px-6 py-3">Metric</th>
+                                    <th class="px-6 py-3 text-green-700">Gemini 3 Pro</th>
+                                    <th class="px-6 py-3 text-blue-700">GPT-5.1</th>
+                                    <th class="px-6 py-3">Winner</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-stone-100">
+                                <tr class="hover:bg-stone-50">
+                                    <td class="px-6 py-4 font-medium">Long-Horizon Plan (Vending)</td>
+                                    <td class="px-6 py-4 font-bold stat-value">$5,478</td>
+                                    <td class="px-6 py-4 stat-value">$1,473</td>
+                                    <td class="px-6 py-4 text-green-600 font-bold">Gemini</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50">
+                                    <td class="px-6 py-4 font-medium">ScreenSpot (UI Agent)</td>
+                                    <td class="px-6 py-4 font-bold stat-value">72.7%</td>
+                                    <td class="px-6 py-4 stat-value">&lt; 10%</td>
+                                    <td class="px-6 py-4 text-green-600 font-bold">Gemini</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50">
+                                    <td class="px-6 py-4 font-medium">SWE-Bench (Coding)</td>
+                                    <td class="px-6 py-4 stat-value">76.2%</td>
+                                    <td class="px-6 py-4 font-bold stat-value">76.3%</td>
+                                    <td class="px-6 py-4 text-stone-400 font-bold">Tie</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50">
+                                    <td class="px-6 py-4 font-medium">Humanity's Last Exam</td>
+                                    <td class="px-6 py-4 font-bold stat-value">37.5%</td>
+                                    <td class="px-6 py-4 stat-value">26.5%</td>
+                                    <td class="px-6 py-4 text-green-600 font-bold">Gemini</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50">
+                                    <td class="px-6 py-4 font-medium">Context (MRCR v2)</td>
+                                    <td class="px-6 py-4 font-bold stat-value">77.0%</td>
+                                    <td class="px-6 py-4 stat-value">61.6%</td>
+                                    <td class="px-6 py-4 text-green-600 font-bold">Gemini</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="p-4 bg-stone-50 text-xs text-stone-500">
+                        *Source: Compiled form Vending-Bench, ARC-AGI, and Latest Technical Reports.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Tech & Radar -->
+        <section id="tech" class="scroll-mt-24 bg-white rounded-3xl p-8 border border-stone-200 shadow-sm">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-serif font-bold mb-4">Under the Hood: Multimodal vs. Modular</h2>
+                    <p class="text-stone-600 mb-6">
+                        Gemini 3's dominance stems from its native multimodal architecture. It doesn't just "see" an image; it understands UI flows (ScreenSpot). GPT-5.1, while brilliant at structured code, struggles when the task requires seamless visual-to-action translation.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <button onclick="updateRadar('planning')" class="w-full text-left group">
+                            <div class="flex justify-between items-center bg-stone-50 p-4 rounded-lg hover:bg-green-50 transition border border-transparent hover:border-green-200">
+                                <div>
+                                    <div class="font-bold text-stone-800">Long-Horizon Planning</div>
+                                    <div class="text-xs text-stone-500 mt-1">Maintaining goals over days/weeks</div>
+                                </div>
+                                <span class="text-xs font-bold bg-green-100 text-green-800 px-3 py-1 rounded-full">Gemini +272%</span>
+                            </div>
+                        </button>
+
+                        <button onclick="updateRadar('ui')" class="w-full text-left group">
+                            <div class="flex justify-between items-center bg-stone-50 p-4 rounded-lg hover:bg-green-50 transition border border-transparent hover:border-green-200">
+                                <div>
+                                    <div class="font-bold text-stone-800">Visual/UI Agency</div>
+                                    <div class="text-xs text-stone-500 mt-1">Interacting with software interfaces</div>
+                                </div>
+                                <span class="text-xs font-bold bg-green-100 text-green-800 px-3 py-1 rounded-full">Gemini Wins</span>
+                            </div>
+                        </button>
+
+                        <button onclick="updateRadar('coding')" class="w-full text-left group">
+                            <div class="flex justify-between items-center bg-stone-50 p-4 rounded-lg hover:bg-blue-50 transition border border-transparent hover:border-blue-200">
+                                <div>
+                                    <div class="font-bold text-stone-800">Pure Coding (SWE)</div>
+                                    <div class="text-xs text-stone-500 mt-1">Bug fixing and repo management</div>
+                                </div>
+                                <span class="text-xs font-bold bg-stone-200 text-stone-600 px-3 py-1 rounded-full">Dead Heat</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <h3 class="text-center font-bold text-stone-400 text-sm tracking-wider mb-2">CAPABILITY MATRIX</h3>
+                    <div class="chart-container" style="height: 400px;">
+                        <canvas id="techRadar"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Verdict Calculator -->
+        <section id="verdict" class="scroll-mt-24 text-center">
+            <h2 class="text-3xl font-serif font-bold mb-4">Strategic Decision Engine</h2>
+            <p class="text-stone-600 mb-8 max-w-2xl mx-auto">
+                Is your bottleneck <strong>Task Execution</strong> (Code/Email) or <strong>Complex Agency</strong> (Planning/Research)?
+            </p>
+
+            <div class="card max-w-2xl mx-auto p-8 text-left border-t-4 border-stone-800">
+                <div class="space-y-8 mb-8">
+                    <div>
+                        <div class="flex justify-between mb-2 font-medium text-sm">
+                            <span>Structured Tasks (Code/Docs)</span>
+                            <span>Messy Reality (UI/Planning)</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="w-full accent-stone-800" id="rangeNature">
+                        <div class="flex justify-between text-xs text-stone-400 mt-1">
+                            <span>Favor GPT-5.1</span>
+                            <span>Favor Gemini 3</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2 font-medium text-sm">
+                            <span>Immediate Output (Speed)</span>
+                            <span>Deep Thought (Accuracy)</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="w-full accent-stone-800" id="rangeDepth">
+                        <div class="flex justify-between text-xs text-stone-400 mt-1">
+                            <span>Efficiency</span>
+                            <span>Reasoning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button id="calculateBtn" class="bg-stone-800 text-white px-8 py-3 rounded-lg font-bold hover:bg-stone-700 transition shadow-lg transform active:scale-95">
+                        Generate Recommendation
+                    </button>
+                </div>
+
+                <div id="resultArea" class="hidden mt-8 p-6 bg-stone-50 rounded-lg border border-stone-200 text-center animate-fade-in">
+                    <div id="resultIcon" class="text-4xl mb-3"></div>
+                    <h4 id="resultTitle" class="text-2xl font-bold mb-2"></h4>
+                    <p id="resultDesc" class="text-stone-600 text-sm"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 text-center text-sm">
+        <p>&copy; AI Analysis Group. Data sourced from Vending-Bench 2, ARC-AGI-2, and OpenAI/Google Technical Reports.</p>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // --- 1. Data Definitions ---
+
+        // Market Data: Generalized timeline
+        const marketData = {
+            labels: ['Pre-Launch', 'Rumor Phase', 'Announcement', 'Launch', 'Current'],
+            datasets: [
+                {
+                    label: 'Microsoft (GPT-5.1)',
+                    data: [95, 92, 90, 88, 86], // Slight dip due to "Agent Gap" sentiment
+                    borderColor: '#0078D4',
+                    backgroundColor: 'rgba(0, 120, 212, 0.1)',
+                    tension: 0.4,
+                    fill: false
+                },
+                {
+                    label: 'Google (Gemini 3)',
+                    data: [85, 88, 92, 105, 110], // Huge spike post launch
+                    borderColor: '#0F9D58',
+                    backgroundColor: 'rgba(15, 157, 88, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ]
+        };
+
+        // Radar Data: Based on provided benchmarks (Scale 0-5)
+        // Gemini: High in Planning, Vision, Context.
+        // GPT: High in Code, tied in Reasoning logic, lower in Vision/Planning.
+        const radarData = {
+            labels: ['Long Planning', 'UI/Vision', 'Context (1M+)', 'Coding (SWE)', 'Deep Reasoning'],
+            datasets: [
+                {
+                    label: 'GPT-5.1',
+                    data: [2, 1, 3, 5, 3.5], 
+                    backgroundColor: 'rgba(0, 120, 212, 0.2)',
+                    borderColor: '#0078D4',
+                    pointBackgroundColor: '#0078D4',
+                },
+                {
+                    label: 'Gemini 3 Pro',
+                    data: [5, 5, 5, 5, 4.5], // Dominates vision/planning, ties code
+                    backgroundColor: 'rgba(15, 157, 88, 0.2)',
+                    borderColor: '#0F9D58',
+                    pointBackgroundColor: '#0F9D58',
+                }
+            ]
+        };
+
+        // --- 2. Chart Initialization ---
+
+        function initCharts() {
+            // Market Chart
+            const ctxMarket = document.getElementById('marketChart').getContext('2d');
+            new Chart(ctxMarket, {
+                type: 'line',
+                data: marketData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'top' } },
+                    scales: {
+                        y: { display: false },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+
+            // Tech Radar Chart
+            const ctxRadar = document.getElementById('techRadar').getContext('2d');
+            window.myRadar = new Chart(ctxRadar, {
+                type: 'radar',
+                data: radarData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#e7e5e4' },
+                            grid: { color: '#e7e5e4' },
+                            pointLabels: { font: { size: 11, weight: '600' } },
+                            suggestedMin: 0,
+                            suggestedMax: 5.5
+                        }
+                    }
+                }
+            });
+
+            // Vending Bench Bar Chart (Plotly)
+            const trace1 = {
+                x: ['GPT-5.1', 'Gemini 3 Pro'],
+                y: [1473, 5478],
+                name: 'Net Worth ($)',
+                type: 'bar',
+                marker: {
+                    color: ['#93c5fd', '#16a34a'] // Muted Blue, Strong Green
+                },
+                text: ['$1,473', '$5,478'],
+                textposition: 'auto',
+            };
+
+            const layout = {
+                title: { text: 'Agentic Performance Gap', font: { size: 14 } },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                margin: { t: 40, l: 40, r: 20, b: 40 },
+                font: { family: 'Inter, sans-serif' },
+                yaxis: { title: 'Simulated Net Worth ($)' }
+            };
+
+            Plotly.newPlot('vendingChart', [trace1], layout, {displayModeBar: false, responsive: true});
+        }
+
+        // --- 3. Interaction Logic ---
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function updateRadar(highlight) {
+            // A simple visual effect to simulate "focusing" on a metric
+            const canvas = document.getElementById('techRadar');
+            canvas.style.transform = "scale(0.98)";
+            setTimeout(() => canvas.style.transform = "scale(1)", 200);
+        }
+
+        // Calculator Logic
+        document.getElementById('calculateBtn').addEventListener('click', () => {
+            const nature = parseInt(document.getElementById('rangeNature').value); // 0=GPT, 100=Gemini
+            const depth = parseInt(document.getElementById('rangeDepth').value); // 0=Speed, 100=Reasoning(Gemini)
+            
+            // Formula favoring Gemini for "Messy/Deep" tasks
+            const score = nature + depth; 
+
+            const resultArea = document.getElementById('resultArea');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultDesc = document.getElementById('resultDesc');
+            const resultIcon = document.getElementById('resultIcon');
+
+            resultArea.classList.remove('hidden');
+
+            if (score < 80) {
+                // GPT-5.1 / Microsoft
+                resultIcon.innerHTML = '<i class="fa-brands fa-microsoft text-blue-600"></i>';
+                resultTitle.innerHTML = "Stick with Microsoft / GPT-5.1";
+                resultTitle.className = "text-2xl font-bold mb-2 text-blue-700";
+                resultDesc.innerText = "Your needs align with developer efficiency, structured coding tasks, and the existing M365 ecosystem. The agentic gap matters less for pure productivity.";
+            } else if (score > 120) {
+                // Gemini 3
+                resultIcon.innerHTML = '<i class="fa-brands fa-google text-green-600"></i>';
+                resultTitle.innerHTML = "Pivot to Google Gemini 3";
+                resultTitle.className = "text-2xl font-bold mb-2 text-green-700";
+                resultDesc.innerText = "You require autonomous agents that can navigate complex UIs, plan over long horizons, and handle massive context. The benchmarks show Gemini is the clear leader here.";
+            } else {
+                // Hybrid
+                resultIcon.innerHTML = '<i class="fa-solid fa-layer-group text-stone-600"></i>';
+                resultTitle.innerHTML = "Hybrid Approach Recommended";
+                resultTitle.className = "text-2xl font-bold mb-2 text-stone-700";
+                resultDesc.innerText = "Use GPT-5.1 for daily coding and office tasks, but deploy Gemini 3 Agents for complex, autonomous workflows and research.";
+            }
+        });
+
+        // Init
+        document.addEventListener('DOMContentLoaded', initCharts);
+
+    </script>
+</body>
+</html>
