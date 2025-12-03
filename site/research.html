@@ -465,6 +465,11 @@
             font-size: 1rem;
         }
 
+        /* Make card-footer positioned for dropdown */
+        .card-footer {
+            position: relative;
+        }
+
         /* Toast Notification */
         .toast {
             position: fixed;
@@ -791,7 +796,7 @@
     <div class="research-grid" id="researchGrid">
         <a href="reports/macro/2025-12/the-agentic-pivot.html" class="research-card" data-category="macro">
             <div class="card-image">
-                <span class="card-image-icon">📄</span>
+                <img src="assets/images/agentic_pivot.png" alt="The Agentic Pivot" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="card-content">
                 <div class="card-meta">
@@ -817,7 +822,7 @@
 
         <a href="reports/macro/2025-12/is-this-peak-fud.html" class="research-card" data-category="macro">
             <div class="card-image">
-                <span class="card-image-icon">📄</span>
+                <img src="assets/images/peak_fud_mstr.png" alt="Is This " peak="" fud"?"="" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="card-content">
                 <div class="card-meta">
@@ -1163,11 +1168,20 @@
                 });
 
                 // Toggle dropdown for this button
-                let dropdown = btn.nextElementSibling;
+                // IMPORTANT: Don't use nextElementSibling - the arrow span is in the way!
+                // Instead, search for existing dropdown in the parent container
+                const parentContainer = btn.closest('.card-footer');
+                let dropdown = parentContainer ? parentContainer.querySelector('.share-dropdown') : null;
+
                 if (!dropdown || !dropdown.classList.contains('share-dropdown')) {
                     // Create dropdown if it doesn't exist
                     dropdown = createShareDropdown(btn);
-                    btn.parentElement.appendChild(dropdown);
+                    // Append to card-footer (not btn.parentElement which is the flex div)
+                    if (parentContainer) {
+                        parentContainer.appendChild(dropdown);
+                    } else {
+                        btn.parentElement.appendChild(dropdown);  // Fallback
+                    }
                 }
 
                 dropdown.classList.toggle('show');
