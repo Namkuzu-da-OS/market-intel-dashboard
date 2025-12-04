@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-04T12:58:23.859Z",
+  "timestamp": "2025-12-04T14:11:15.713Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 74,
+    "confidence_pct": 75,
     "sources": {
       "social": {
-        "bullish": 47,
-        "bearish": 15,
-        "neutral": 85,
-        "total": 147,
-        "pct": 32
+        "bullish": 55,
+        "bearish": 17,
+        "neutral": 90,
+        "total": 162,
+        "pct": 34
       },
       "news": {
         "bullish": 20,
         "bearish": 9,
-        "neutral": 11,
-        "total": 40,
-        "pct": 50
+        "neutral": 10,
+        "total": 39,
+        "pct": 51
       },
       "video": {
         "bullish": 7,
         "bearish": 2,
-        "neutral": 1,
-        "total": 10,
-        "pct": 70
+        "neutral": 0,
+        "total": 9,
+        "pct": 78
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is broadly bullish, with institutional catalysts and crypto momentum driving optimism, though regulatory and macro risks temper the outlook. Conviction: high\n\n⚡ **Catalysts:** ETF approvals, Fed QT shift, Ethereum “Fusaka” upgrade, TSLA call sweep, 12.5 B Treasury buy‑back, Bitcoin bottom at $75 k, Solana rollout\n\n🎯 **Action:** If TSLA breaks current resistance, target next resistance; If BTC holds $75 k bottom, target $700 k projection; If SPX shows bullish options activity, consider short‑term upside",
+    "narrative": "📊 **Consensus:** The market is set for a cautious rally driven by ETF launches, crypto upgrades, and macro releases, with high conviction of a short‑term bullish bias.\n\n⚡ **Catalysts:** ETF approvals, Ethereum gas‑limit upgrade, Fed policy, Treasury yields, rare‑earth supply tightening, aerospace contracts, BTC support at $75,000, XLE target $95.\n\n🎯 **Action:** If BTC breaks $75,000 support, target $700,000. If XLE breaks $95, target higher. Watch for SPY/QQQ to test resistance per source analysis.",
     "key_tickers": [
-      "TSLA",
+      "SPY",
+      "QQQ",
       "BTC",
       "ETH",
-      "GOOGL",
-      "SPX"
+      "XLE"
     ],
     "key_themes": [
-      "Institutional ETF approvals",
-      "Fed policy shift",
-      "Crypto infrastructure rollouts",
-      "Tech earnings momentum",
-      "Geopolitical tensions"
+      "ETF launches",
+      "Crypto upgrades",
+      "Macro releases",
+      "Rare‑earth supply",
+      "Aerospace contracts"
     ],
     "risk_factors": [
-      "Regulatory tightening",
-      "Quantum computing vulnerabilities",
-      "Leveraged treasury risk",
-      "Stable‑coin concentration",
-      "Geopolitical tensions near Taiwan"
+      "Quantum‑computing risk",
+      "Regulatory clampdowns",
+      "Leveraged debt",
+      "AI budget cuts",
+      "Crypto cycle downturn"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "Watch for breakout of current resistance",
+    "intraday_levels": "SPY testing resistance; QQQ testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout of key resistance",
+    "swing_levels": "SPY testing resistance; QQQ testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 87800
+    "generation_time_ms": 99737
   },
   "trending": {
     "macro": [
@@ -112,24 +112,24 @@
     ],
     "crypto": [
       {
+        "ticker": "MSTR",
+        "mentions": 4,
+        "sentiment_score": 0.375,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 38,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 4
+        }
+      },
+      {
         "ticker": "BTC",
         "mentions": 3,
         "sentiment_score": 0.267,
         "sentiment_label": "Bullish",
         "sentiment_pct": 27,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "MSTR",
-        "mentions": 3,
-        "sentiment_score": 0.25,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 25,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -180,28 +180,28 @@
     "other": [
       {
         "ticker": "SPX",
-        "mentions": 9,
-        "sentiment_score": 0.328,
+        "mentions": 10,
+        "sentiment_score": 0.295,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 30,
         "counts": {
           "bullish": 4,
           "bearish": 0,
-          "neutral": 5,
-          "total": 9
+          "neutral": 6,
+          "total": 10
         }
       },
       {
         "ticker": "TSLA",
-        "mentions": 8,
-        "sentiment_score": 0.381,
+        "mentions": 9,
+        "sentiment_score": 0.422,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 42,
         "counts": {
-          "bullish": 4,
+          "bullish": 5,
           "bearish": 0,
           "neutral": 4,
-          "total": 8
+          "total": 9
         }
       },
       {
@@ -231,16 +231,16 @@
         }
       },
       {
-        "ticker": "SERV",
-        "mentions": 4,
-        "sentiment_score": 0.55,
+        "ticker": "GOOGL",
+        "mentions": 5,
+        "sentiment_score": 0.44,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "sentiment_pct": 44,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 1,
-          "total": 4
+          "neutral": 2,
+          "total": 5
         }
       }
     ]
@@ -248,9 +248,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.26,
+    "vix": 16.1,
     "pc_ratio": 1.1,
-    "sentiment_bullish_pct": 32,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
