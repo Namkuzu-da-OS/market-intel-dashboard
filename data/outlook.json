@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-04T06:28:17.551Z",
+  "timestamp": "2025-12-04T07:24:27.000Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -15,9 +15,9 @@
       "news": {
         "bullish": 18,
         "bearish": 10,
-        "neutral": 11,
-        "total": 39,
-        "pct": 46
+        "neutral": 10,
+        "total": 38,
+        "pct": 47
       },
       "video": {
         "bullish": 7,
@@ -36,28 +36,29 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is poised for a modest bullish rally driven by crypto‑related catalysts and tech momentum, with a high conviction level.\n\n⚡ **Catalysts:** Bitcoin dominance crossing 60 %, the Fusaka upgrade and L1 fee cuts, spot ETF inflows, Fed QT milestones, TSLA 2026 call‑option sweep, and the broader AI/quantum‑tech expansion.\n\n🎯 **Action:** If BTC dominance >60 % and ETF inflows continue, target BTC +10 % upside; if the TSLA 2026 call sweep persists, target TSLA +10 % upside; monitor the 10EMA 0.615 threshold for potential intraday moves.",
+    "narrative": "📊 **Consensus:** Markets are poised for a moderate bullish rally driven by ETF approvals, Bitcoin and Ethereum momentum, and AI/semiconductor catalysts, with conviction high.\n\n⚡ **Catalysts:** ETF approvals, Bitcoin dominance, Ethereum Fusaka upgrade, quantum‑computing breakthroughs, leveraged treasury exposure, regulatory crackdowns, AI/semiconductor earnings, rare‑earth supply, Fed policy, China–Taiwan tensions.\n\n🎯 **Action:** If BTC breaks above recent resistance, target next resistance; if TSLA shows a breakout above 200‑day MA, target 1‑month high; if SPX rallies past 4‑week high, consider short‑term long with stop below recent swing low.",
     "key_tickers": [
-      "TSLA",
       "BTC",
       "ETH",
+      "TSLA",
       "SPX",
-      "QQQ"
+      "ES"
     ],
     "key_themes": [
-      "Bitcoin dominance",
-      "Crypto ETF inflows",
-      "AI/Quantum tech expansion",
-      "Fed QT milestones",
-      "Earnings season"
+      "ETF approvals",
+      "Bitcoin & Ethereum dominance",
+      "Quantum computing risk",
+      "AI & semiconductor catalysts",
+      "Fed policy"
     ],
     "risk_factors": [
-      "Earnings season volatility",
-      "Regulatory shocks",
-      "Quantum risk",
-      "Macro risk from bond investors"
+      "Regulatory crackdowns",
+      "Quantum attacks",
+      "Leveraged treasury exposure",
+      "Fed tightening",
+      "Geopolitical tensions (China–Taiwan)"
     ],
-    "intraday_bias": "NEUTRAL",
+    "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
@@ -65,7 +66,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 87552
+    "generation_time_ms": 107137
   },
   "trending": {
     "macro": [
