@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-04T03:46:25.143Z",
+  "timestamp": "2025-12-04T05:14:15.831Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 74,
+    "confidence_pct": 72,
     "sources": {
       "social": {
-        "bullish": 53,
-        "bearish": 16,
-        "neutral": 110,
-        "total": 179,
-        "pct": 30
+        "bullish": 52,
+        "bearish": 18,
+        "neutral": 108,
+        "total": 178,
+        "pct": 29
       },
       "news": {
-        "bullish": 19,
+        "bullish": 17,
         "bearish": 10,
-        "neutral": 9,
+        "neutral": 11,
         "total": 38,
-        "pct": 50
+        "pct": 45
       },
       "video": {
         "bullish": 7,
@@ -36,24 +36,21 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is leaning strongly bullish with high conviction, driven by imminent crypto and macro catalysts.\n\n⚡ **Catalysts:** Bitcoin ETF launch, Fed balance‑sheet expansion, Fusaka upgrade (ETH gas fee cuts), Revolut Solana rollout, TSLA option sweep, NYSE 10‑EMA trend.\n\n🎯 **Action:** If BTC breaks above current level, target next resistance per source analysis; If TSLA options sweep triggers a rally, target next resistance per source analysis.",
+    "narrative": "📊 **Consensus:** A cautiously bullish outlook prevails, with institutional crypto inflows and accommodative Fed policy driving risk appetite, but regulatory tightening and leverage risks temper enthusiasm. \n⚡ **Catalysts:** Bitcoin ETF launch, TSLA call sweep, Fed policy easing, AI infrastructure expansion, tariff easing for Korean vehicles, and Bitcoin’s $700,000 target.\n🎯 **Action:** If BTC breaks $700,000, target per source analysis.",
     "key_tickers": [
+      "TSLA",
       "BTC",
-      "ETH",
-      "TSLA"
+      "AAPL"
     ],
     "key_themes": [
-      "Bitcoin ETF launch",
-      "Fed balance‑sheet expansion",
-      "Layer‑2 scaling upgrades",
-      "Regulatory clarity on crypto",
-      "Macro risk events"
+      "Institutional crypto inflows",
+      "Fed accommodative policy",
+      "Regulatory risk"
     ],
     "risk_factors": [
-      "Quantum‑computing threats to cryptographic security",
-      "Regulatory tightening on stablecoins and derivatives",
-      "Leverage‑heavy crypto holdings",
-      "Macro risk from Fed chair announcement and China–Taiwan tensions"
+      "Leverage collapse",
+      "Fed tightening",
+      "Geopolitical tensions"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
@@ -63,21 +60,21 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 110284
+    "generation_time_ms": 98582
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
-        "sentiment_score": 0.28,
+        "mentions": 6,
+        "sentiment_score": 0.233,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 28,
+        "sentiment_pct": 23,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 3,
-          "total": 5
+          "neutral": 4,
+          "total": 6
         }
       },
       {
@@ -92,22 +89,22 @@
           "neutral": 0,
           "total": 2
         }
+      },
+      {
+        "ticker": "IWM",
+        "mentions": 1,
+        "sentiment_score": 0.65,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 65,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
       }
     ],
     "crypto": [
-      {
-        "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.19,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
-        "counts": {
-          "bullish": 2,
-          "bearish": 1,
-          "neutral": 2,
-          "total": 5
-        }
-      },
       {
         "ticker": "MSTR",
         "mentions": 4,
@@ -117,6 +114,19 @@
         "counts": {
           "bullish": 2,
           "bearish": 0,
+          "neutral": 2,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "BTC",
+        "mentions": 4,
+        "sentiment_score": 0.05,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 5,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
           "neutral": 2,
           "total": 4
         }
@@ -202,29 +212,29 @@
         }
       },
       {
-        "ticker": "GOOGL",
+        "ticker": "NVDA",
         "mentions": 5,
-        "sentiment_score": 0.42,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 42,
+        "sentiment_score": 0.01,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 1,
         "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 2,
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 3,
           "total": 5
         }
       },
       {
-        "ticker": "HOOD",
-        "mentions": 5,
-        "sentiment_score": 0.14,
+        "ticker": "GOOGL",
+        "mentions": 4,
+        "sentiment_score": 0.362,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 14,
+        "sentiment_pct": 36,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
-          "neutral": 4,
-          "total": 5
+          "neutral": 2,
+          "total": 4
         }
       }
     ]
@@ -234,7 +244,7 @@
     "color": "text-muted",
     "vix": 16.08,
     "pc_ratio": 1.1,
-    "sentiment_bullish_pct": 30,
+    "sentiment_bullish_pct": 29,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
