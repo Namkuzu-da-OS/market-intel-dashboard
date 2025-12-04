@@ -1,0 +1,672 @@
+import React, { useState } from 'react';
+import { 
+  TrendingUp, 
+  AlertTriangle, 
+  DollarSign, 
+  BarChart3, 
+  ShieldCheck, 
+  Cpu, 
+  Activity,
+  Briefcase,
+  Scale,
+  Target,
+  Menu,
+  X,
+  ArrowRight,
+  PieChart,
+  CloudLightning,
+  Car
+} from 'lucide-react';
+
+// --- Types ---
+type SectionId = 'thesis' | 'business' | 'macro' | 'financials' | 'moat' | 'bets' | 'regulatory' | 'valuation' | 'strategy';
+
+interface NavigationItem {
+  id: SectionId;
+  label: string;
+  icon: React.ReactNode;
+}
+
+// --- Data Constants ---
+const REPORT_DATE = "December 4, 2025";
+const CURRENT_PRICE = 319.63;
+const TARGET_PRICE = 375.00;
+const IMPLIED_UPSIDE = 17.3; // Calculated roughly from 319.63 to 375
+const RATING = "OVERWEIGHT / BUY";
+const RISK_PROFILE = "Moderate–High";
+
+// --- Components ---
+
+const ProgressBar = ({ current, max, label, colorClass }: { current: number, max: number, label: string, colorClass: string }) => {
+  const percentage = Math.min((current / max) * 100, 100);
+  return (
+    <div className="mb-4">
+      <div className="flex justify-between mb-1">
+        <span className="text-sm font-medium text-slate-700">{label}</span>
+        <span className="text-sm font-medium text-slate-700">${current.toFixed(2)}</span>
+      </div>
+      <div className="w-full bg-slate-200 rounded-full h-2.5">
+        <div className={`h-2.5 rounded-full ${colorClass}`} style={{ width: `${percentage}%` }}></div>
+      </div>
+    </div>
+  );
+};
+
+const StatCard = ({ title, value, subtitle, icon, trend }: { title: string, value: string, subtitle?: string, icon: React.ReactNode, trend?: 'up' | 'down' | 'neutral' }) => (
+  <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-4">
+    <div className={`p-3 rounded-lg ${trend === 'up' ? 'bg-emerald-100 text-emerald-600' : trend === 'down' ? 'bg-red-100 text-red-600' : 'bg-blue-100 text-blue-600'}`}>
+      {icon}
+    </div>
+    <div>
+      <h3 className="text-sm font-medium text-slate-500">{title}</h3>
+      <div className="text-2xl font-bold text-slate-900 mt-1">{value}</div>
+      {subtitle && <p className="text-xs text-slate-400 mt-1">{subtitle}</p>}
+    </div>
+  </div>
+);
+
+const SectionHeader = ({ title, subtitle }: { title: string, subtitle?: string }) => (
+  <div className="mb-8 border-b border-slate-200 pb-4">
+    <h2 className="text-3xl font-bold text-slate-900">{title}</h2>
+    {subtitle && <p className="text-lg text-slate-500 mt-2">{subtitle}</p>}
+  </div>
+);
+
+const BulletPoint = ({ children }: { children: React.ReactNode }) => (
+  <li className="flex items-start space-x-3 mb-3 text-slate-700 leading-relaxed">
+    <span className="mt-1.5 min-w-[6px] h-[6px] rounded-full bg-blue-500" />
+    <span>{children}</span>
+  </li>
+);
+
+// --- Main Application Component ---
+
+export default function AlphabetReport() {
+  const [activeSection, setActiveSection] = useState<SectionId>('thesis');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navigation: NavigationItem[] = [
+    { id: 'thesis', label: 'Investment Thesis', icon: <Target size={18} /> },
+    { id: 'business', label: 'Business Model', icon: <PieChart size={18} /> },
+    { id: 'macro', label: 'Macro & Industry', icon: <Activity size={18} /> },
+    { id: 'financials', label: 'Financials & Capex', icon: <DollarSign size={18} /> },
+    { id: 'moat', label: 'AI & Cloud Moat', icon: <Cpu size={18} /> },
+    { id: 'bets', label: 'Waymo & Bets', icon: <Car size={18} /> },
+    { id: 'regulatory', label: 'Regulatory & Risks', icon: <Scale size={18} /> },
+    { id: 'valuation', label: 'Valuation', icon: <BarChart3 size={18} /> },
+    { id: 'strategy', label: 'Strategy Profile', icon: <Briefcase size={18} /> },
+  ];
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case 'thesis':
+        return (
+          <div className="animate-in fade-in duration-500">
+            <SectionHeader 
+              title="Core Investment Thesis" 
+              subtitle="Structural Alpha in the Age of AI"
+            />
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-100 shadow-sm">
+                <h3 className="font-semibold text-blue-900 mb-4 flex items-center">
+                  <TrendingUp className="mr-2" size={20} /> The Opportunity
+                </h3>
+                <p className="text-slate-700 mb-4">
+                  Alphabet is transitioning from a dominant search-and-ads business into a full-stack AI and cloud infrastructure platform. It screens as a high-quality mega-cap compounder trading at a reasonable multiple relative to its growth profile.
+                </p>
+                <div className="font-medium text-slate-900">
+                  Market View: Over-discounting regulatory risk and AI disruption fears.
+                </div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="font-semibold text-slate-900 mb-4">Key Drivers</h3>
+                <ul className="space-y-3">
+                  <BulletPoint><strong>Search & YouTube:</strong> Durable core cash engine.</BulletPoint>
+                  <BulletPoint><strong>Google Cloud:</strong> Acceleration & margin inflection driven by AI workloads & TPUs.</BulletPoint>
+                  <BulletPoint><strong>Waymo:</strong> Emerging commercial option value.</BulletPoint>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-slate-900 text-white p-6 rounded-xl">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <div className="mb-4 md:mb-0">
+                  <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-1">Recommendation</h4>
+                  <div className="text-3xl font-bold text-emerald-400">{RATING}</div>
+                </div>
+                <div className="h-12 w-px bg-slate-700 hidden md:block mx-6"></div>
+                <div className="mb-4 md:mb-0 text-center md:text-left">
+                  <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-1">Implied Upside</h4>
+                  <div className="text-2xl font-bold">~{IMPLIED_UPSIDE}%</div>
+                </div>
+                <div className="h-12 w-px bg-slate-700 hidden md:block mx-6"></div>
+                 <div className="text-right">
+                  <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-1">Risk Profile</h4>
+                  <div className="text-xl font-bold text-orange-400">{RISK_PROFILE}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'business':
+        return (
+          <div className="animate-in fade-in duration-500">
+             <SectionHeader title="Business Model & Segments" />
+             
+             <div className="space-y-6">
+                <div className="flex flex-col md:flex-row gap-6">
+                  {/* Google Services */}
+                  <div className="flex-1 bg-white p-6 rounded-xl border-l-4 border-blue-500 shadow-sm">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-xl font-bold text-slate-900">Google Services</h3>
+                      <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Core Engine</span>
+                    </div>
+                    <p className="text-slate-600 mb-4 text-sm">Search, YouTube, Android, Maps, Chrome, Play, Ad Networks.</p>
+                    <ul className="text-sm text-slate-700 space-y-2">
+                      <BulletPoint>Primary revenue & profit driver.</BulletPoint>
+                      <BulletPoint>Heavy reliance on Search & YouTube ads.</BulletPoint>
+                    </ul>
+                  </div>
+
+                  {/* Google Cloud */}
+                  <div className="flex-1 bg-white p-6 rounded-xl border-l-4 border-purple-500 shadow-sm">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-xl font-bold text-slate-900">Google Cloud</h3>
+                      <span className="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">High Growth</span>
+                    </div>
+                    <p className="text-slate-600 mb-4 text-sm">GCP Infrastructure, Data Analytics, Vertex AI, Gemini.</p>
+                    <ul className="text-sm text-slate-700 space-y-2">
+                      <BulletPoint>Second key leg of the thesis.</BulletPoint>
+                      <BulletPoint>High-growth, high-margin inflection.</BulletPoint>
+                    </ul>
+                  </div>
+
+                  {/* Other Bets */}
+                  <div className="flex-1 bg-white p-6 rounded-xl border-l-4 border-orange-500 shadow-sm">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-xl font-bold text-slate-900">Other Bets</h3>
+                      <span className="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">Moonshots</span>
+                    </div>
+                    <p className="text-slate-600 mb-4 text-sm">Waymo, Verily, and other long-shot ventures.</p>
+                    <ul className="text-sm text-slate-700 space-y-2">
+                      <BulletPoint>Historically a drag on profit.</BulletPoint>
+                      <BulletPoint>Waymo moving to commercial scale.</BulletPoint>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                  <h4 className="font-semibold text-slate-900 mb-2">Revenue Diversification Note</h4>
+                  <p className="text-slate-700 text-sm">
+                    While the revenue base is diversifying, <strong>ads remain the largest driver</strong> and are tied to macro cycles. Cloud provides a counter-cyclical growth engine with higher strategic value in the AI era.
+                  </p>
+                </div>
+             </div>
+          </div>
+        );
+
+      case 'macro':
+        return (
+          <div className="animate-in fade-in duration-500">
+            <SectionHeader title="Macro & Industry Context" />
+
+            <div className="grid grid-cols-1 gap-8">
+              {/* Digital Advertising */}
+              <section>
+                <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                  <Activity className="mr-2 text-blue-500" /> Digital Advertising Landscape
+                </h3>
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="font-semibold text-slate-900 mb-2">Current State</h4>
+                      <p className="text-slate-700 mb-4 text-sm">
+                        2022-2023 slowdown has shifted to a <strong>"soft-landing"</strong> with resilient consumer spend. Industry moving to privacy-first, first-party data (benefiting Google/Meta).
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 mb-2">Segment Performance</h4>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex justify-between border-b border-slate-100 pb-1">
+                          <span className="text-slate-600">Brand Spend</span>
+                          <span className="font-medium text-amber-600">Cyclical & Sensitive</span>
+                        </li>
+                        <li className="flex justify-between border-b border-slate-100 pb-1">
+                          <span className="text-slate-600">Direct Response</span>
+                          <span className="font-medium text-emerald-600">Remarkably Resilient</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="mt-4 bg-blue-50 p-4 rounded-lg">
+                    <p className="text-sm text-blue-800">
+                      <strong>Search & Other Revenue (Q3 2025):</strong> ~15% YoY growth. 
+                      High-intent commercial queries remain entrenched in Google, resisting AI chatbot "nibbling".
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Cloud & AI */}
+              <section>
+                <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                  <CloudLightning className="mr-2 text-purple-500" /> Cloud & AI Infrastructure
+                </h3>
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                  <p className="text-slate-700 mb-4">
+                    Cloud is in an <strong>AI-driven re-acceleration phase</strong>. Enterprises are adopting multi-cloud for best-of-breed AI stacks.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                     <div className="bg-slate-50 p-4 rounded-lg text-center">
+                        <div className="text-2xl font-bold text-slate-900">~34%</div>
+                        <div className="text-xs text-slate-500 uppercase mt-1">YoY Revenue Growth</div>
+                     </div>
+                     <div className="bg-slate-50 p-4 rounded-lg text-center">
+                        <div className="text-2xl font-bold text-slate-900">Low-Teens</div>
+                        <div className="text-xs text-slate-500 uppercase mt-1">Market Share (Rising)</div>
+                     </div>
+                     <div className="bg-slate-50 p-4 rounded-lg text-center">
+                        <div className="text-2xl font-bold text-slate-900">TPU</div>
+                        <div className="text-xs text-slate-500 uppercase mt-1">Cost Advantage</div>
+                     </div>
+                  </div>
+                  <p className="text-sm text-slate-600 italic">
+                    "Alphabet’s decade-long investment in TPUs gives it a structural cost advantage vs. clouds heavily reliant on Nvidia."
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+        );
+
+      case 'financials':
+        return (
+          <div className="animate-in fade-in duration-500">
+            <SectionHeader title="Financial Strength & Profitability" />
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+              <StatCard title="Market Cap" value="$2.4T" icon={<DollarSign size={20} />} trend="neutral" />
+              <StatCard title="Net Cash" value="$77B+" subtitle="vs modest debt" icon={<ShieldCheck size={20} />} trend="up" />
+              <StatCard title="Q3 Revenue" value="$102.3B" subtitle="+16% YoY" icon={<TrendingUp size={20} />} trend="up" />
+              <StatCard title="Op Margin" value="~30-35%" subtitle="Strong discipline" icon={<BarChart3 size={20} />} trend="up" />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-lg font-bold text-slate-900 mb-4">Q3 2025 Milestones</h3>
+                <ul className="space-y-4">
+                  <li className="flex justify-between items-center">
+                    <span className="text-slate-600">Total Revenue</span>
+                    <span className="font-semibold text-slate-900">$102.3B (+16%)</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span className="text-slate-600">Search & Other</span>
+                    <span className="font-semibold text-slate-900">$56.6B (+15%)</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span className="text-slate-600">Google Cloud</span>
+                    <span className="font-semibold text-slate-900">$15.2B (+34%)</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span className="text-slate-600">YouTube Ads</span>
+                    <span className="font-semibold text-slate-900">+15% Growth</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-lg font-bold text-slate-900 mb-4">The Capex Supercycle</h3>
+                <div className="mb-4">
+                  <div className="flex justify-between text-sm mb-1">
+                    <span className="text-slate-600">2025 Est. Capex</span>
+                    <span className="font-bold text-slate-900">$91–93B</span>
+                  </div>
+                  <div className="w-full bg-slate-100 h-4 rounded-full overflow-hidden flex">
+                    <div className="bg-blue-500 h-full" style={{ width: '60%' }} title="Servers (TPUs/GPUs)"></div>
+                    <div className="bg-emerald-500 h-full" style={{ width: '40%' }} title="Data Centers"></div>
+                  </div>
+                  <div className="flex justify-between text-xs text-slate-400 mt-1">
+                    <span className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-1"></div> Servers (60%)</span>
+                    <span className="flex items-center"><div className="w-2 h-2 bg-emerald-500 rounded-full mr-1"></div> Data Centers (40%)</span>
+                  </div>
+                </div>
+                <div className="text-sm text-slate-700 bg-slate-50 p-4 rounded">
+                  <p className="mb-2"><strong>Short-term:</strong> Higher depreciation weighs on 2026-27 margins.</p>
+                  <p><strong>Long-term Moat:</strong> Only ~4 firms globally can spend at this scale. Emerging AI players effectively "rent" from GOOG.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'moat':
+        return (
+          <div className="animate-in fade-in duration-500">
+             <SectionHeader title="AI, Cloud & Product Moat" />
+
+             <div className="space-y-6">
+                <div className="bg-white p-6 rounded-xl border-l-4 border-blue-600 shadow-sm">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Search & AI Overviews</h3>
+                  <p className="text-slate-600 mb-4">The "Search is Dead" narrative is failing.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div className="bg-slate-50 p-3 rounded">
+                      <div className="font-semibold text-slate-900">~90% Share</div>
+                      <div className="text-slate-500">Global search share remains stable.</div>
+                    </div>
+                    <div className="bg-slate-50 p-3 rounded">
+                      <div className="font-semibold text-slate-900">Conversion Quality</div>
+                      <div className="text-slate-500">AI Overviews pre-qualify users for transactional queries.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl border-l-4 border-red-600 shadow-sm">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">YouTube: The New OS</h3>
+                  <ul className="text-sm text-slate-700 space-y-2">
+                    <BulletPoint>Shorts monetization closing RPM gap.</BulletPoint>
+                    <BulletPoint>Recurring revenue via Premium, Music, and YouTube TV.</BulletPoint>
+                    <BulletPoint><strong>Living Room Default:</strong> Dominance in CTV and live sports (NFL Sunday Ticket).</BulletPoint>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl border-l-4 border-purple-600 shadow-sm">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">GCP: Core Growth Engine</h3>
+                  <div className="flex flex-col md:flex-row gap-6">
+                    <div className="flex-1">
+                      <p className="text-slate-600 mb-3">No longer just a "catch-up" story.</p>
+                      <ul className="text-sm text-slate-700 space-y-2">
+                         <BulletPoint><strong>Differentiation:</strong> Vertex AI, Gemini, TPUs.</BulletPoint>
+                         <BulletPoint><strong>Backlog:</strong> $150B+ anchored by multi-year AI commitments.</BulletPoint>
+                      </ul>
+                    </div>
+                    <div className="flex-1 bg-purple-50 p-4 rounded-lg flex items-center justify-center text-center">
+                       <div>
+                         <div className="text-2xl font-bold text-purple-900">Mid-20s</div>
+                         <div className="text-sm text-purple-700">Operating Margin (Inflection Point)</div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+        );
+
+      case 'bets':
+        return (
+           <div className="animate-in fade-in duration-500">
+             <SectionHeader title="Waymo & Other Bets" subtitle="From Science Project to Real Option Value" />
+             
+             <div className="bg-white p-8 rounded-xl shadow-lg border border-slate-200 mb-6 relative overflow-hidden">
+               <div className="absolute top-0 right-0 p-4 opacity-10">
+                 <Car size={100} />
+               </div>
+               <h3 className="text-2xl font-bold text-slate-900 mb-4">Waymo</h3>
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div>
+                    <h4 className="font-semibold text-slate-700 mb-2">Commercial Scaling</h4>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                      Shifting from "Other Bet" to emerging asset. Expanding into complex geos (Northeast US, weather metros).
+                    </p>
+                    <div className="bg-orange-50 text-orange-800 p-3 rounded-lg font-medium inline-block">
+                      Est. $1B Revenue Run-rate by 2026
+                    </div>
+                 </div>
+                 <div>
+                    <h4 className="font-semibold text-slate-700 mb-2">Valuation Implication</h4>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      At scale, could justify standalone valuation in the <strong>tens of billions</strong>. Currently, the market assigns it near-zero value, offering investors free optionality.
+                    </p>
+                 </div>
+               </div>
+             </div>
+
+             <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+               <h4 className="font-semibold text-slate-900 mb-2">Other Bets (Verily, etc.)</h4>
+               <p className="text-sm text-slate-600">
+                 Remain R&D heavy. Historically a drag, but losses are manageable relative to total cash generation ($100B+ annual revenue run-rates in core segments).
+               </p>
+             </div>
+           </div>
+        );
+
+      case 'regulatory':
+        return (
+          <div className="animate-in fade-in duration-500">
+            <SectionHeader title="Regulatory & Risk Landscape" />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-xl border-t-4 border-amber-500 shadow-sm">
+                <h3 className="font-bold text-slate-900 mb-3">U.S. Search Monopoly Case</h3>
+                <div className="space-y-3 text-sm text-slate-700">
+                  <p>Court found illegal monopoly, but <strong>rejected structural break-up</strong> (no forced Chrome/Android sale).</p>
+                  <div className="bg-amber-50 p-3 rounded text-amber-900">
+                    <strong>Likely Outcome:</strong> Operational constraints. Ban on exclusive default contracts (saving billions in TAC to Apple), choice screens, data access.
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl border-t-4 border-amber-500 shadow-sm">
+                <h3 className="font-bold text-slate-900 mb-3">Ad Tech Litigation</h3>
+                <div className="space-y-3 text-sm text-slate-700">
+                  <p>Likely ends with <strong>behavioral remedies</strong> (transparency, no self-preferencing) rather than forced divestiture.</p>
+                  <p>Potential "Issue Preclusion" increases civil damage risk, but these are one-time cash outflows manageable with $90B+ cash pile.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center">
+              <AlertTriangle className="mr-2 text-red-500" /> Key Risks
+            </h3>
+            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+               <ul className="space-y-4">
+                 <li className="flex gap-3">
+                   <div className="min-w-[4px] bg-red-400 rounded-full"></div>
+                   <div>
+                     <strong className="text-slate-900">Execution Strategy:</strong> Moving too slowly on AI integrations out of fear of cannibalization risks mindshare loss.
+                   </div>
+                 </li>
+                 <li className="flex gap-3">
+                   <div className="min-w-[4px] bg-red-400 rounded-full"></div>
+                   <div>
+                     <strong className="text-slate-900">Capex ROI:</strong> If $90B/year spend doesn't translate to proportionate Cloud/AI revenue, ROIC suffers.
+                   </div>
+                 </li>
+                 <li className="flex gap-3">
+                   <div className="min-w-[4px] bg-red-400 rounded-full"></div>
+                   <div>
+                     <strong className="text-slate-900">Macro Cyclicality:</strong> Sharp global downturn would immediately hit ad spending.
+                   </div>
+                 </li>
+               </ul>
+            </div>
+          </div>
+        );
+
+      case 'valuation':
+        return (
+          <div className="animate-in fade-in duration-500">
+            <SectionHeader title="Valuation & Returns" />
+            
+            <div className="flex flex-col lg:flex-row gap-8 mb-8">
+              <div className="flex-1 bg-white p-8 rounded-xl shadow-lg border border-slate-100">
+                <h3 className="text-slate-500 text-sm font-semibold uppercase tracking-wider mb-2">12-Month Target</h3>
+                <div className="text-5xl font-bold text-slate-900 mb-4">${TARGET_PRICE}</div>
+                
+                <div className="mb-6">
+                  <ProgressBar 
+                    current={CURRENT_PRICE} 
+                    max={TARGET_PRICE} 
+                    label="Current Price vs Target" 
+                    colorClass="bg-emerald-500"
+                  />
+                  <p className="text-right text-emerald-600 font-bold">+{IMPLIED_UPSIDE}% Upside</p>
+                </div>
+
+                <div className="space-y-3 border-t border-slate-100 pt-4">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-slate-600">Forward P/E (2025-26)</span>
+                    <span className="font-medium text-slate-900">~22x</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-slate-600">PEG Ratio</span>
+                    <span className="font-medium text-slate-900">1.3 - 1.5</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-1 space-y-4">
+                <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                  <h3 className="font-bold text-slate-900 mb-2">Sum-of-the-Parts View</h3>
+                  <ul className="text-sm text-slate-700 space-y-2">
+                    <BulletPoint><strong>Services:</strong> Market-like multiple on steady earnings.</BulletPoint>
+                    <BulletPoint><strong>Cloud:</strong> Growth-SaaS multiple on high-margin revenue.</BulletPoint>
+                    <BulletPoint><strong>Bets + Cash:</strong> Incremental upside (currently free).</BulletPoint>
+                  </ul>
+                </div>
+                
+                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                   <h3 className="font-bold text-blue-900 mb-2">The "Discount" Thesis</h3>
+                   <p className="text-sm text-blue-800">
+                     Alphabet trades at a discount to MSFT/AMZN due to "regulatory discount" and "AI fear". This should narrow as Cloud profitability becomes clear and legal environment settles.
+                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'strategy':
+        return (
+          <div className="animate-in fade-in duration-500">
+            <SectionHeader title="Trader vs. Investor Angle" />
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Trader */}
+              <div className="bg-white p-6 rounded-xl border-t-4 border-slate-400 shadow-sm">
+                <div className="flex items-center mb-4">
+                   <Activity className="text-slate-400 mr-2" />
+                   <h3 className="text-xl font-bold text-slate-900">For Traders</h3>
+                </div>
+                <div className="space-y-4 text-sm text-slate-700">
+                  <p><strong>Beta ~1:</strong> Volatility is muted relative to smaller AI names.</p>
+                  <p><strong>Catalysts:</strong> Earnings (Cloud trends), AI product launches, Regulatory headlines.</p>
+                  <div className="bg-slate-100 p-3 rounded">
+                    <strong>Strategy:</strong> Liquid anchor for directional trades or options structures (selling premium) rather than high-octane swings.
+                  </div>
+                </div>
+              </div>
+
+              {/* Investor */}
+              <div className="bg-white p-6 rounded-xl border-t-4 border-emerald-500 shadow-sm">
+                <div className="flex items-center mb-4">
+                   <Briefcase className="text-emerald-500 mr-2" />
+                   <h3 className="text-xl font-bold text-slate-900">For Investors</h3>
+                </div>
+                <div className="space-y-4 text-sm text-slate-700">
+                  <p><strong>Core Position:</strong> Fits tech-heavy portfolios and quality compounder strategies.</p>
+                  <p><strong>Key Attributes:</strong> Dominant sticky platforms, high ROIC, self-funded capex cycle.</p>
+                  <div className="bg-emerald-50 p-3 rounded text-emerald-900">
+                    <strong>Strategy:</strong> Position sizing should reflect comfort with regulatory overhang. A structural winner in the AI era.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      default:
+        return <div>Select a section</div>;
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 flex flex-col md:flex-row">
+      
+      {/* Mobile Header */}
+      <div className="md:hidden bg-slate-900 text-white p-4 flex justify-between items-center sticky top-0 z-20">
+        <div className="font-bold text-xl tracking-tight">GOOGL <span className="text-slate-400 text-sm font-normal">Report</span></div>
+        <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          {isMobileMenuOpen ? <X /> : <Menu />}
+        </button>
+      </div>
+
+      {/* Sidebar Navigation */}
+      <nav className={`
+        fixed md:sticky top-0 h-screen w-64 bg-slate-900 text-slate-300 flex flex-col transition-transform duration-300 z-10
+        ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
+      `}>
+        <div className="p-6 border-b border-slate-800 hidden md:block">
+          <h1 className="text-2xl font-bold text-white tracking-tight">GOOGL</h1>
+          <p className="text-xs text-slate-500 mt-1">Equity Research • {REPORT_DATE}</p>
+        </div>
+
+        <div className="flex-1 overflow-y-auto py-4">
+          <ul className="space-y-1 px-3">
+            {navigation.map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => {
+                    setActiveSection(item.id);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`
+                    w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors
+                    ${activeSection === item.id 
+                      ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/50' 
+                      : 'hover:bg-slate-800 hover:text-white'}
+                  `}
+                >
+                  {item.icon}
+                  <span>{item.label}</span>
+                  {activeSection === item.id && <ArrowRight className="ml-auto w-4 h-4 opacity-75" />}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="p-4 border-t border-slate-800">
+           <div className="bg-slate-800 rounded-lg p-3">
+              <div className="text-xs text-slate-400 mb-1">Current Price</div>
+              <div className="text-xl font-bold text-white">${CURRENT_PRICE}</div>
+              <div className="text-xs text-emerald-400 mt-1">Target: ${TARGET_PRICE}</div>
+           </div>
+        </div>
+      </nav>
+
+      {/* Main Content Area */}
+      <main className="flex-1 p-6 md:p-10 overflow-y-auto h-auto md:h-screen w-full pt-20 md:pt-10">
+        <div className="max-w-4xl mx-auto">
+          {/* Top Info Bar (Desktop only, for context) */}
+          <div className="hidden md:flex justify-between items-end mb-8 border-b border-slate-200 pb-2">
+            <div>
+              <span className="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Equity Research</span>
+              <span className="ml-3 text-slate-400 text-sm">{REPORT_DATE}</span>
+            </div>
+            <div className="text-slate-500 text-sm">
+              Alphabet Inc. (GOOGL/GOOG)
+            </div>
+          </div>
+
+          {renderContent()}
+          
+          <footer className="mt-12 pt-6 border-t border-slate-200 text-center text-slate-400 text-xs">
+            <p>© 2025 Institutional Research. All rights reserved.</p>
+            <p className="mt-2">Disclaimer: This report is for informational purposes only and does not constitute financial advice.</p>
+          </footer>
+        </div>
+      </main>
+      
+      {/* Overlay for mobile menu */}
+      {isMobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-0 md:hidden"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+    </div>
+  );
+}
