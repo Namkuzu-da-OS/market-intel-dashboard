@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-04T05:14:15.831Z",
+  "timestamp": "2025-12-04T06:28:17.551Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 72,
+    "confidence_pct": 71,
     "sources": {
       "social": {
-        "bullish": 52,
+        "bullish": 49,
         "bearish": 18,
-        "neutral": 108,
-        "total": 178,
-        "pct": 29
+        "neutral": 109,
+        "total": 176,
+        "pct": 28
       },
       "news": {
-        "bullish": 17,
+        "bullish": 18,
         "bearish": 10,
         "neutral": 11,
-        "total": 38,
-        "pct": 45
+        "total": 39,
+        "pct": 46
       },
       "video": {
         "bullish": 7,
@@ -36,23 +36,28 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** A cautiously bullish outlook prevails, with institutional crypto inflows and accommodative Fed policy driving risk appetite, but regulatory tightening and leverage risks temper enthusiasm. \n⚡ **Catalysts:** Bitcoin ETF launch, TSLA call sweep, Fed policy easing, AI infrastructure expansion, tariff easing for Korean vehicles, and Bitcoin’s $700,000 target.\n🎯 **Action:** If BTC breaks $700,000, target per source analysis.",
+    "narrative": "📊 **Consensus:** The market is poised for a modest bullish rally driven by crypto‑related catalysts and tech momentum, with a high conviction level.\n\n⚡ **Catalysts:** Bitcoin dominance crossing 60 %, the Fusaka upgrade and L1 fee cuts, spot ETF inflows, Fed QT milestones, TSLA 2026 call‑option sweep, and the broader AI/quantum‑tech expansion.\n\n🎯 **Action:** If BTC dominance >60 % and ETF inflows continue, target BTC +10 % upside; if the TSLA 2026 call sweep persists, target TSLA +10 % upside; monitor the 10EMA 0.615 threshold for potential intraday moves.",
     "key_tickers": [
       "TSLA",
       "BTC",
-      "AAPL"
+      "ETH",
+      "SPX",
+      "QQQ"
     ],
     "key_themes": [
-      "Institutional crypto inflows",
-      "Fed accommodative policy",
-      "Regulatory risk"
+      "Bitcoin dominance",
+      "Crypto ETF inflows",
+      "AI/Quantum tech expansion",
+      "Fed QT milestones",
+      "Earnings season"
     ],
     "risk_factors": [
-      "Leverage collapse",
-      "Fed tightening",
-      "Geopolitical tensions"
+      "Earnings season volatility",
+      "Regulatory shocks",
+      "Quantum risk",
+      "Macro risk from bond investors"
     ],
-    "intraday_bias": "BULLISH",
+    "intraday_bias": "NEUTRAL",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
@@ -60,7 +65,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 98582
+    "generation_time_ms": 87552
   },
   "trending": {
     "macro": [
@@ -79,23 +84,10 @@
       },
       {
         "ticker": "QQQ",
-        "mentions": 2,
-        "sentiment_score": 0.725,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 73,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "IWM",
         "mentions": 1,
-        "sentiment_score": 0.65,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -244,7 +236,7 @@
     "color": "text-muted",
     "vix": 16.08,
     "pc_ratio": 1.1,
-    "sentiment_bullish_pct": 29,
+    "sentiment_bullish_pct": 28,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
