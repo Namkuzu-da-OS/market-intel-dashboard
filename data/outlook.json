@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-04T20:51:06.754Z",
+  "timestamp": "2025-12-04T23:00:22.546Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 69,
-        "bearish": 20,
-        "neutral": 90,
-        "total": 179,
-        "pct": 39
+        "bullish": 71,
+        "bearish": 21,
+        "neutral": 95,
+        "total": 187,
+        "pct": 38
       },
       "news": {
-        "bullish": 21,
-        "bearish": 6,
-        "neutral": 10,
-        "total": 37,
-        "pct": 57
+        "bullish": 22,
+        "bearish": 7,
+        "neutral": 13,
+        "total": 42,
+        "pct": 52
       },
       "video": {
-        "bullish": 8,
+        "bullish": 11,
         "bearish": 1,
         "neutral": 3,
-        "total": 12,
-        "pct": 67
+        "total": 15,
+        "pct": 73
       },
       "chat": {
         "bullish": 1,
@@ -36,31 +36,31 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High – Market sentiment is broadly bullish across key sectors, with strong near‑term catalysts driving optimism.\n\n⚡ **Catalysts:** SPY 685/700 call‑buying wave, H100 GPU rollout, Ethereum Fusaka fork, Fed balance‑sheet expansion, AI‑enabled SaaS, EV/green‑aviation momentum, BTC $96,000 resistance, CRWV 90–100 range.\n\n🎯 **Action:** If SPY breaks the 685 call wall, target 700; if BTC exceeds $96,000, target $100,000; if CRWV moves above 100, target 110 (per source analysis).",
+    "narrative": "📊 **Consensus:** The market shows a high‑conviction bullish stance driven by AI/crypto momentum and a key SPY call‑wall breakout.⚡ **Catalysts:** SPY 685 call‑wall (target 700), OKLO equity program lift, CRDO all‑time high, upcoming AI/crypto catalysts (Trump speech, Gemini rollout, H100 launch).🎯 **Action:** If SPY breaks 685, target 700; exit 720. If CRDO breaks all‑time high, consider taking profit at the next resistance.",
     "key_tickers": [
       "SPY",
-      "BTC",
-      "CRWV"
+      "OKLO",
+      "CRDO"
     ],
     "key_themes": [
-      "AI/Tech Rally",
-      "Crypto Catalysts",
-      "Fed Balance Sheet Expansion"
+      "AI & crypto rally",
+      "SPY call‑wall breakout",
+      "Earnings cycle momentum"
     ],
     "risk_factors": [
-      "Tech sector pain",
-      "Regulatory probes",
-      "Fed liquidity tightening"
+      "Regulatory risk (EU fines, Fed repo collapse)",
+      "Liquidity risk",
+      "Potential reversal if SPY fails 685 call‑wall"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 685 support, 700 resistance",
+    "intraday_levels": "SPY 685 call‑wall resistance, target 700",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 700 resistance, BTC $96,000 resistance",
+    "swing_levels": "SPY 700 target; watch 685 call‑wall breakout",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 102927
+    "generation_time_ms": 94592
   },
   "trending": {
     "macro": [
@@ -173,20 +173,20 @@
         }
       },
       {
-        "ticker": "IONQ",
-        "mentions": 7,
-        "sentiment_score": 0.329,
+        "ticker": "OKLO",
+        "mentions": 8,
+        "sentiment_score": 0.388,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 39,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 4,
-          "total": 7
+          "total": 8
         }
       },
       {
-        "ticker": "OKLO",
+        "ticker": "IONQ",
         "mentions": 7,
         "sentiment_score": 0.329,
         "sentiment_label": "Bullish",
@@ -216,17 +216,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.94,
-    "pc_ratio": 0.86,
-    "sentiment_bullish_pct": 39,
+    "vix": 15.78,
+    "pc_ratio": 0.89,
+    "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 10.41,
-    "hv": 13.26,
-    "spread": -0.04,
+    "iv_rank": 9.73,
+    "hv": 13.22,
+    "spread": -0.23,
     "position": 20
   },
   "action": {
