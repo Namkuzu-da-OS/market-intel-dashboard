@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-04T18:48:29.825Z",
+  "timestamp": "2025-12-04T19:53:42.907Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 60,
+        "bullish": 67,
         "bearish": 19,
-        "neutral": 84,
-        "total": 163,
-        "pct": 37
+        "neutral": 88,
+        "total": 174,
+        "pct": 39
       },
       "news": {
-        "bullish": 20,
-        "bearish": 6,
+        "bullish": 23,
+        "bearish": 7,
         "neutral": 9,
-        "total": 35,
-        "pct": 57
+        "total": 39,
+        "pct": 59
       },
       "video": {
-        "bullish": 8,
+        "bullish": 9,
         "bearish": 2,
-        "neutral": 2,
-        "total": 12,
-        "pct": 67
+        "neutral": 3,
+        "total": 14,
+        "pct": 64
       },
       "chat": {
         "bullish": 1,
@@ -36,51 +36,49 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is expected to trend mildly bullish with volatility spikes around key catalysts, but with caution due to potential macro and regulatory risks (medium conviction).\n\n⚡ **Catalysts:** Bitcoin ETF launch, Fusaka upgrade on Ethereum, $685 call wall on $SPY, $450 call wall on $TSLA, CFTC spot‑crypto approval, Fed QT data, ISM PMI releases, AI revenue reports, China‑France trade talks, European rare‑earth plant.\n\n🎯 **Action:** If $SPY breaks 690, target 700; if $TSLA breaks the 450 call wall, target 470.",
+    "narrative": "📊 **Consensus:** High conviction that U.S. growth, AI, and space sectors will rally, with crypto remaining highly volatile.\n\n⚡ **Catalysts:** H100 GPU launch, Ethereum Fusaka upgrade, Bitcoin ETF approval, SPY 685 call wall breakout to 690–700, CRWV 20‑day EMA resistance at 90–100, Bitcoin diagonal at 96k.\n\n🎯 **Action:** If SPY breaks 685, target 690–700; if CRWV breaks 90, target 100; if BTC breaches 96k diagonal, target 100k.",
     "key_tickers": [
       "SPY",
-      "TSLA",
       "CRWV",
       "BTC",
+      "NVDA",
       "ETH"
     ],
     "key_themes": [
-      "Regulatory Clarity",
-      "Crypto ETF Launch",
-      "Tech & AI Expansion",
-      "Market Volatility Triggers",
-      "Institutional Participation"
+      "Growth Tech",
+      "AI",
+      "Space",
+      "Crypto Volatility",
+      "Regulatory Risk"
     ],
     "risk_factors": [
-      "Leveraged Treasury Risk",
-      "Quantum Threats",
-      "Regulatory Tightening",
-      "Infrastructure Fragility",
-      "Fed Liquidity Tightening"
+      "Liquidity tightening",
+      "Reverse repo collapse",
+      "Regulatory crackdown"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 690 support, 700 resistance; TSLA 450 resistance",
+    "intraday_levels": "SPY 685 support, 690–700 resistance; CRWV 90–100 resistance; BTC 96k diagonal resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 690–700 corridor; CRWV 84.40 support, 90–100 upside; TSLA 450 call wall",
+    "swing_levels": "SPY 685 support, 690–700 resistance; CRWV 90–100 resistance; BTC 96k diagonal resistance",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 114135
+    "generation_time_ms": 126699
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 7,
-        "sentiment_score": 0.429,
+        "mentions": 8,
+        "sentiment_score": 0.375,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
+        "sentiment_pct": 38,
         "counts": {
           "bullish": 4,
           "bearish": 0,
-          "neutral": 3,
-          "total": 7
+          "neutral": 4,
+          "total": 8
         }
       },
       {
@@ -98,15 +96,15 @@
       },
       {
         "ticker": "QQQ",
-        "mentions": 2,
-        "sentiment_score": 0.375,
+        "mentions": 3,
+        "sentiment_score": 0.25,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 25,
         "counts": {
           "bullish": 1,
           "bearish": 0,
-          "neutral": 1,
-          "total": 2
+          "neutral": 2,
+          "total": 3
         }
       }
     ],
@@ -125,24 +123,24 @@
         }
       },
       {
+        "ticker": "BTC",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
+      },
+      {
         "ticker": "SOL",
         "mentions": 1,
         "sentiment_score": 0.75,
         "sentiment_label": "Bullish",
         "sentiment_pct": 75,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "RIOT",
-        "mentions": 1,
-        "sentiment_score": 0.65,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -167,32 +165,45 @@
       },
       {
         "ticker": "ASTS",
-        "mentions": 7,
-        "sentiment_score": 0.55,
+        "mentions": 8,
+        "sentiment_score": 0.481,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "sentiment_pct": 48,
         "counts": {
           "bullish": 5,
           "bearish": 0,
-          "neutral": 2,
-          "total": 7
+          "neutral": 3,
+          "total": 8
         }
       },
       {
         "ticker": "IONQ",
-        "mentions": 5,
-        "sentiment_score": 0.46,
+        "mentions": 7,
+        "sentiment_score": 0.329,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 46,
+        "sentiment_pct": 33,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 2,
-          "total": 5
+          "neutral": 4,
+          "total": 7
         }
       },
       {
         "ticker": "OKLO",
+        "mentions": 7,
+        "sentiment_score": 0.329,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 7
+        }
+      },
+      {
+        "ticker": "RKLB",
         "mentions": 4,
         "sentiment_score": 0.363,
         "sentiment_label": "Bullish",
@@ -203,36 +214,23 @@
           "neutral": 2,
           "total": 4
         }
-      },
-      {
-        "ticker": "AMZN",
-        "mentions": 4,
-        "sentiment_score": 0.212,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 21,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 4
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.11,
-    "pc_ratio": 0.86,
-    "sentiment_bullish_pct": 37,
+    "vix": 15.97,
+    "pc_ratio": 0.87,
+    "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 10.55,
+    "iv_rank": 10.32,
     "hv": 13.22,
-    "spread": 0.04,
+    "spread": -0.03,
     "position": 20
   },
   "action": {
