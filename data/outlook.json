@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T13:07:35.328Z",
+  "timestamp": "2025-12-05T14:07:05.918Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 80,
     "sources": {
       "social": {
-        "bullish": 122,
-        "bearish": 26,
-        "neutral": 134,
-        "total": 282,
-        "pct": 43
+        "bullish": 130,
+        "bearish": 25,
+        "neutral": 143,
+        "total": 298,
+        "pct": 44
       },
       "news": {
-        "bullish": 19,
-        "bearish": 12,
+        "bullish": 16,
+        "bearish": 11,
         "neutral": 12,
-        "total": 43,
-        "pct": 44
+        "total": 39,
+        "pct": 41
       },
       "video": {
         "bullish": 8,
-        "bearish": 2,
+        "bearish": 3,
         "neutral": 4,
-        "total": 14,
-        "pct": 57
+        "total": 15,
+        "pct": 53
       },
       "chat": {
         "bullish": 1,
@@ -36,51 +36,51 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is bullish on AI and earnings cycles, but short‑term volatility is expected around earnings windows and regulatory updates. **Conviction level:** high\n\n⚡ **Catalysts:** AI product launches (Alphabet, Amazon, Nvidia), earnings releases (GOOG, AMZN, NVDA), semiconductor supply metrics, crypto‑regulatory announcements (Bitcoin target $50k, Ethereum target $62k), space‑based GPU launch, S&P 500 rebalance, $83 B Warner Bros. acquisition timeline\n\n🎯 **Action:** If NVDA beats earnings expectations, consider a long position; if it misses, consider a short. If Bitcoin reaches $50k, consider buying; if Ethereum hits $62k, consider buying. For S&P 500, if the rebalance triggers a breakout above $667, target the next resistance level; if it breaks below $667, consider a short.",
+    "narrative": "📊 **Consensus:** A high‑conviction bullish outlook driven by AI‑tech momentum, earnings optimism, and regulatory clarity, though risks remain from macro data and crypto volatility. The consensus is that technology and consumer stocks will rally, but traders should stay alert to earnings surprises and crypto floor breaches.\n\n⚡ **Catalysts:** Amazon AI‑chip launch (AMZN), Netflix‑Warner acquisition (NFLX), Oracle fair‑value gap (ORCL), Google AI tools rollout (GOOGL), Bitcoin $50k floor (BTC), S&P 500 support at 6,799, resistance at 6,910+.\n\n🎯 **Action:** If S&P 500 holds above 6,799, consider a long entry at 6,810 with target 6,920; if it breaks below 6,799, exit longs. If BTC stays above $50k, maintain positions; if it falls below, consider shorting BTC and tightening equity positions.",
     "key_tickers": [
-      "NVDA",
-      "GOOG",
       "AMZN",
-      "SPY",
+      "NFLX",
+      "ORCL",
+      "GOOGL",
       "BTC"
     ],
     "key_themes": [
-      "AI‑driven growth",
-      "Earnings cycle",
-      "Consolidation & mergers",
-      "Crypto regulation",
-      "Supply‑chain constraints"
+      "AI innovation",
+      "Regulatory clarity",
+      "Earnings volatility",
+      "Crypto fragility",
+      "Tech‑consumer consolidation"
     ],
     "risk_factors": [
-      "Earnings volatility",
-      "Supply‑chain constraints",
-      "Regulatory headwinds",
-      "Macro policy shifts",
-      "Crypto market volatility"
+      "Regulatory headwinds (EU fines, X compliance)",
+      "Macro data (inflation, interest rates)",
+      "Crypto floor breach",
+      "Earnings surprises",
+      "Geopolitical tensions"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "S&P 500 6,799 support, 6,910+ resistance; Bitcoin $50k floor",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "CONFLICTING"
+    "swing_levels": "S&P 500 6,866‑6,920 target range, 6,910+ ceiling",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 112332
+    "generation_time_ms": 91099
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 9,
-        "sentiment_score": 0.439,
+        "mentions": 10,
+        "sentiment_score": 0.395,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 44,
+        "sentiment_pct": 40,
         "counts": {
           "bullish": 5,
           "bearish": 0,
-          "neutral": 4,
-          "total": 9
+          "neutral": 5,
+          "total": 10
         }
       },
       {
@@ -127,13 +127,13 @@
       {
         "ticker": "MSTR",
         "mentions": 5,
-        "sentiment_score": 0.43,
+        "sentiment_score": 0.28,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
+        "sentiment_pct": 28,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
-          "neutral": 2,
+          "neutral": 3,
           "total": 5
         }
       },
@@ -162,24 +162,24 @@
           "neutral": 2,
           "total": 3
         }
-      },
-      {
-        "ticker": "LINK",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "other": [
       {
         "ticker": "OKLO",
+        "mentions": 13,
+        "sentiment_score": 0.419,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 42,
+        "counts": {
+          "bullish": 7,
+          "bearish": 0,
+          "neutral": 6,
+          "total": 13
+        }
+      },
+      {
+        "ticker": "ASTS",
         "mentions": 11,
         "sentiment_score": 0.495,
         "sentiment_label": "Bullish",
@@ -192,55 +192,42 @@
         }
       },
       {
-        "ticker": "ASTS",
-        "mentions": 10,
-        "sentiment_score": 0.545,
+        "ticker": "NFLX",
+        "mentions": 11,
+        "sentiment_score": 0.418,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "sentiment_pct": 42,
         "counts": {
-          "bullish": 7,
+          "bullish": 6,
           "bearish": 0,
-          "neutral": 3,
-          "total": 10
+          "neutral": 5,
+          "total": 11
         }
       },
       {
         "ticker": "IONQ",
-        "mentions": 9,
-        "sentiment_score": 0.433,
+        "mentions": 10,
+        "sentiment_score": 0.39,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
+        "sentiment_pct": 39,
         "counts": {
           "bullish": 5,
           "bearish": 0,
-          "neutral": 4,
-          "total": 9
+          "neutral": 5,
+          "total": 10
         }
       },
       {
-        "ticker": "NFLX",
+        "ticker": "TSLA",
         "mentions": 7,
-        "sentiment_score": 0.421,
+        "sentiment_score": 0.436,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 42,
+        "sentiment_pct": 44,
         "counts": {
           "bullish": 4,
           "bearish": 0,
           "neutral": 3,
           "total": 7
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "mentions": 6,
-        "sentiment_score": 0.633,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 63,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 6
         }
       }
     ]
@@ -248,9 +235,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.82,
+    "vix": 15.73,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 43,
+    "sentiment_bullish_pct": 44,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
