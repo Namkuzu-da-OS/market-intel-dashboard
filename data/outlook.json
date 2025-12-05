@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T19:17:14.802Z",
+  "timestamp": "2025-12-05T20:00:59.300Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 116,
-        "bearish": 23,
-        "neutral": 142,
-        "total": 281,
-        "pct": 41
+        "bullish": 113,
+        "bearish": 26,
+        "neutral": 143,
+        "total": 282,
+        "pct": 40
       },
       "news": {
-        "bullish": 17,
-        "bearish": 12,
-        "neutral": 17,
-        "total": 46,
-        "pct": 37
+        "bullish": 15,
+        "bearish": 11,
+        "neutral": 18,
+        "total": 44,
+        "pct": 34
       },
       "video": {
-        "bullish": 8,
+        "bullish": 7,
         "bearish": 3,
         "neutral": 3,
-        "total": 14,
-        "pct": 57
+        "total": 13,
+        "pct": 54
       },
       "chat": {
         "bullish": 0,
@@ -36,47 +36,49 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, hard‑theme infrastructure, crypto infrastructure\n\n📊 **Levels:** SPY 685 support, ES_F 6871 support, 6903 target, GOOGL/ADBE 350, ZEC 370, Bitcoin 88,000 floor",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, Crypto uncertainty, Earnings volatility\n\n📊 **Levels:** S&P 500 futures support at 6868‑6877; targets 6889, 6903, 6910, 6918; Meta 3018‑3022 resistance for ETH; Bitcoin $50,000 hedge point; S&P 500 risk level around $5,000",
     "key_tickers": [
       "SPY",
-      "ES_F",
-      "GOOGL",
-      "ADBE",
-      "ZEC"
+      "META",
+      "BTC",
+      "ETH",
+      "TSLA"
     ],
     "key_themes": [
       "AI momentum",
-      "hard‑theme infrastructure",
-      "crypto infrastructure"
+      "Crypto uncertainty",
+      "Earnings volatility"
     ],
     "risk_factors": [
-      "regulatory tightening",
-      "earnings softness",
-      "crypto volatility"
+      "Crypto regulatory risk",
+      "Earnings volatility",
+      "Tech overvaluation",
+      "Geopolitical/regulatory risks",
+      "Market risk"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 685 support, 6903 resistance",
+    "intraday_levels": "Support 6868‑6877, Resistance 6889‑6918",
     "swing_bias": "BULLISH",
-    "swing_levels": "ES_F 6871 support, 6903 target",
+    "swing_levels": "Support 6868‑6877, Resistance 6889‑6918; Bitcoin $50,000 hedge point",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 83361
+    "generation_time_ms": 103023
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 8,
-        "sentiment_score": 0.3,
+        "mentions": 7,
+        "sentiment_score": 0.343,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 30,
+        "sentiment_pct": 34,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 5,
-          "total": 8
+          "neutral": 4,
+          "total": 7
         }
       },
       {
@@ -162,19 +164,6 @@
         }
       },
       {
-        "ticker": "OKLO",
-        "mentions": 10,
-        "sentiment_score": 0.48,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
-        "counts": {
-          "bullish": 6,
-          "bearish": 0,
-          "neutral": 4,
-          "total": 10
-        }
-      },
-      {
         "ticker": "WBD",
         "mentions": 8,
         "sentiment_score": 0.575,
@@ -185,6 +174,19 @@
           "bearish": 0,
           "neutral": 2,
           "total": 8
+        }
+      },
+      {
+        "ticker": "OKLO",
+        "mentions": 7,
+        "sentiment_score": 0.564,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 56,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 7
         }
       },
       {
@@ -201,16 +203,16 @@
         }
       },
       {
-        "ticker": "IONQ",
-        "mentions": 5,
-        "sentiment_score": 0.32,
+        "ticker": "META",
+        "mentions": 6,
+        "sentiment_score": 0.233,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 23,
         "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 5
+          "bullish": 3,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 6
         }
       }
     ]
@@ -218,17 +220,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.49,
-    "pc_ratio": 1.08,
-    "sentiment_bullish_pct": 41,
+    "vix": 15.51,
+    "pc_ratio": 1.05,
+    "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 9.52,
-    "hv": 13.16,
-    "spread": -0.24,
+    "iv_rank": 9,
+    "hv": 13.15,
+    "spread": -0.4,
     "position": 20
   },
   "action": {
