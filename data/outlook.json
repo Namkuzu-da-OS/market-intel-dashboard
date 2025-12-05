@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-05T17:09:24.823Z",
+  "timestamp": "2025-12-05T17:48:37.495Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 114,
-        "bearish": 24,
-        "neutral": 148,
-        "total": 286,
+        "bullish": 119,
+        "bearish": 25,
+        "neutral": 152,
+        "total": 296,
         "pct": 40
       },
       "news": {
-        "bullish": 17,
+        "bullish": 18,
         "bearish": 13,
-        "neutral": 12,
-        "total": 42,
-        "pct": 40
+        "neutral": 15,
+        "total": 46,
+        "pct": 39
       },
       "video": {
         "bullish": 9,
@@ -27,40 +27,40 @@
         "pct": 56
       },
       "chat": {
-        "bullish": 1,
+        "bullish": 0,
         "bearish": 0,
         "neutral": 0,
-        "total": 1,
-        "pct": 100
+        "total": 0,
+        "pct": 0
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment leans bullish with medium conviction, driven by broad AI and regulated crypto momentum.\n\n📈 **Themes:** AI momentum, regulated crypto, earnings volatility\n\n📊 **Levels:** SPX 6,799 support, 6,866‑6,920 resistance; Bitcoin floor $88,000",
+    "narrative": "📊 **Consensus:** Overall market sentiment is bullish with medium conviction.\n\n📈 **Themes:** AI and semiconductor innovation, rate cut expectations, crypto regulatory uncertainty.\n\n🎯 **Levels:** 6,871 and 6,902 ES_F supports; $100 level for NFLX; $OKLO trend‑line break; 6,860–6,903 band.",
     "key_tickers": [
-      "NVDA",
       "GOOG",
-      "ADBE"
+      "AMZN",
+      "TSLA"
     ],
     "key_themes": [
       "AI momentum",
-      "regulated crypto",
-      "earnings volatility"
+      "rate cut expectations",
+      "crypto regulatory uncertainty"
     ],
     "risk_factors": [
-      "Regulatory uncertainty",
-      "Crypto market stress",
-      "Earnings volatility in high‑growth tech"
+      "earnings volatility",
+      "regulatory risk",
+      "macro tightening"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPX 6,799 support, 6,866‑6,920 resistance; Bitcoin floor $88,000",
+    "intraday_levels": "ES_F 6,871 support, 6,902 support; 6,860–6,903 band",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPX 6,799 support, 6,866‑6,920 resistance; Bitcoin floor $88,000",
+    "swing_levels": "ES_F 6,871 and 6,902 supports; 6,903 resistance; NFLX $100 level; $OKLO trend‑line break",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 116219
+    "generation_time_ms": 85326
   },
   "trending": {
     "macro": [
@@ -216,17 +216,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.82,
-    "pc_ratio": 1.23,
+    "vix": 15.84,
+    "pc_ratio": 1.18,
     "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 9.57,
-    "hv": 13.16,
-    "spread": -0.22,
+    "iv_rank": 9.92,
+    "hv": 13.14,
+    "spread": -0.08,
     "position": 20
   },
   "action": {
