@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-05T06:40:28.555Z",
+  "timestamp": "2025-12-05T07:10:24.465Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,32 +36,33 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is leaning bullish with high conviction, driven by upcoming earnings, Fed policy, and AI‑chip momentum. ⚡ **Catalysts:** Upcoming earnings from Ulta (ULT), Salesforce (CRM), Microsoft (MSFT), and Meta (META) will test the rally; Fed’s December rate cut and the AI‑chip IPO are key drivers. 🎯 **Action:** If SPY breaks 667 resistance, target N/A",
+    "narrative": "📊 **Consensus:** High‑conviction bullish stance driven by hard‑theme momentum and potential Fed rate cuts, tempered by earnings volatility and regulatory risks.\n\n⚡ **Catalysts:** Oracle (ORCL) bounce off 50‑week low, quantum names (e.g., QNTM) rally, Fed December rate‑cut announcement, SpaceX GPU launch, Rocket Lab (RKLB) launch, earnings of hard‑theme names (OKLO, NQ).\n\n🎯 **Action:** If ORCL breaks above its 50‑week low, target 10–15% upside; if RKLB moves above its 30‑day moving average, target 10% upside; monitor Fed announcement for potential shift.",
     "key_tickers": [
+      "ORCL",
+      "RKLB",
+      "OKLO",
       "META",
-      "ULT",
-      "CRM",
-      "MSFT"
+      "QNTM"
     ],
     "key_themes": [
-      "High‑growth tech rotation",
-      "AI and crypto integration",
-      "Regulatory scrutiny and policy shifts"
+      "Hard‑theme momentum",
+      "AI & quantum computing",
+      "Rate‑cut expectations"
     ],
     "risk_factors": [
       "Earnings volatility",
-      "Regulatory fines and probes",
-      "Liquidity tightening (Fed reverse repo)"
+      "Regulatory scrutiny",
+      "Liquidity tightening"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "ALIGNED"
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 127867
+    "generation_time_ms": 111248
   },
   "trending": {
     "macro": [
