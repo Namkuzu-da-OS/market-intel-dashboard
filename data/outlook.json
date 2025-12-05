@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-05T03:35:47.259Z",
+  "timestamp": "2025-12-05T04:26:55.600Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 80,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 97,
+        "bullish": 99,
         "bearish": 22,
-        "neutral": 112,
-        "total": 231,
-        "pct": 42
+        "neutral": 122,
+        "total": 243,
+        "pct": 41
       },
       "news": {
-        "bullish": 21,
+        "bullish": 22,
         "bearish": 8,
         "neutral": 14,
-        "total": 43,
-        "pct": 49
+        "total": 44,
+        "pct": 50
       },
       "video": {
         "bullish": 7,
@@ -36,51 +36,45 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Neutral stance with potential upside as earnings and regulatory catalysts loom, conviction level: medium\n\n⚡ **Catalysts:** Mid‑cap earnings (e.g., $MSFT, $AMZN, $META), Clarity Act implementation, Fed rate cuts, SpaceX in‑orbit GPU launch, crypto‑related events (BBVA Bitcoin launch, ZEC hackathon). No explicit price levels mentioned.\n\n🎯 **Action:** If earnings beat expectations, consider long positions on $MSFT, $AMZN, $META with a 12‑18 month upside target; if regulatory clarity passes, take a broader market stance; if crypto catalysts materialise, a short‑term rally may follow.",
+    "narrative": "📊 **Consensus:** The market is broadly bullish with high conviction, driven by near‑term tech and crypto catalysts, but tempered by earnings‑driven volatility and regulatory uncertainty.\n\n⚡ **Catalysts:** Base‑Solana bridge launch, BBVA Bitcoin trading rollout, NXT 2026 call sweep, upcoming earnings for hard‑theme names, regulatory clarity on crypto and AI.\n\n🎯 **Action:** If Base‑Solana bridge goes live, target a 10% upside on SOL; if BBVA launches Bitcoin trading, target a 5% upside on BTC; if the NXT 2026 call sweep triggers a rally, target a 20% upside on NXT.",
     "key_tickers": [
-      "MSFT",
-      "AMZN",
-      "META",
-      "RBRK",
-      "ULTA"
+      "SOL",
+      "BTC",
+      "NXT"
     ],
     "key_themes": [
-      "Earnings",
-      "Regulatory Clarity",
-      "Macro Rate Cuts",
-      "SpaceX Product Launch",
-      "Crypto Catalysts"
+      "hard‑theme tech (AI, quantum, space, batteries)",
+      "earnings volatility",
+      "regulatory clarity on crypto & AI"
     ],
     "risk_factors": [
-      "Earnings Volatility",
-      "Regulatory Uncertainty",
-      "Liquidity Tightening",
-      "Factory Order Slowdown",
-      "Crypto Security Issues"
+      "earnings‑driven volatility",
+      "regulatory probes",
+      "liquidity stress"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "Testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
-    "source_alignment": "CONFLICTING"
+    "swing_levels": "Watch for breakout/breakdown",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 100896
+    "generation_time_ms": 87693
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 10,
-        "sentiment_score": 0.38,
+        "mentions": 11,
+        "sentiment_score": 0.345,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 35,
         "counts": {
           "bullish": 5,
           "bearish": 0,
-          "neutral": 5,
-          "total": 10
+          "neutral": 6,
+          "total": 11
         }
       },
       {
@@ -113,15 +107,41 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 3,
-        "sentiment_score": 0.467,
+        "mentions": 4,
+        "sentiment_score": 0.35,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 47,
+        "sentiment_pct": 35,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 1,
-          "total": 3
+          "neutral": 2,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "BTC",
+        "mentions": 2,
+        "sentiment_score": 0.075,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 8,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "ETH",
+        "mentions": 2,
+        "sentiment_score": 0.075,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 8,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
         }
       }
     ],
@@ -198,7 +218,7 @@
     "color": "text-muted",
     "vix": 15.78,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 42,
+    "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
