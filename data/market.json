@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-05T07:10:24.619Z",
+  "timestamp": "2025-12-05T12:00:26.175Z",
   "symbols": {
     "QQQ": {
       "price": 622.94,
@@ -18,15 +18,15 @@
       "max_pain": null
     },
     "VIX": {
-      "price": 15.78,
-      "change": null,
-      "change_pct": null,
+      "price": 15.81,
+      "change": 0.03,
+      "change_pct": 0.19,
       "volume": null,
       "implied_volatility": null,
-      "day_high": 0,
-      "day_low": 0,
+      "day_high": 15.81,
+      "day_low": 15.55,
       "year_high": 60.13,
-      "year_low": 0
+      "year_low": 12.7
     }
   }
 }
