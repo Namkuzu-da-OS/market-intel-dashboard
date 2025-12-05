@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T01:48:58.732Z",
+  "timestamp": "2025-12-05T02:39:46.836Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 80,
     "sources": {
       "social": {
-        "bullish": 82,
-        "bearish": 21,
-        "neutral": 107,
-        "total": 210,
-        "pct": 39
+        "bullish": 94,
+        "bearish": 23,
+        "neutral": 113,
+        "total": 230,
+        "pct": 41
       },
       "news": {
         "bullish": 22,
-        "bearish": 7,
+        "bearish": 8,
         "neutral": 14,
-        "total": 43,
-        "pct": 51
+        "total": 44,
+        "pct": 50
       },
       "video": {
-        "bullish": 11,
-        "bearish": 1,
+        "bullish": 13,
+        "bearish": 2,
         "neutral": 4,
-        "total": 16,
-        "pct": 69
+        "total": 19,
+        "pct": 68
       },
       "chat": {
         "bullish": 1,
@@ -36,62 +36,60 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction bullish stance driven by near‑term catalysts in AI, EV automation, and crypto sectors.\n\n⚡ **Catalysts:** TSLA $500 dip‑buy level, DG $125 exit target, OKLO 15% intraday jump post‑equity issue, CRDO all‑time high; AI/EV/crypto drivers: Tesla robotics rollout, Google Gemini integration, Nvidia H100 in‑orbit test, Ethereum Fusaka upgrade.\n\n🎯 **Action:** If TSLA breaks $500, consider a short‑term buy; if DG reaches $125, consider exiting; if OKLO jumps 15%, consider taking profit; if CRDO hits a new ATH, consider adding; monitor Tesla, Google, Nvidia, and Ethereum announcements for broader sector momentum.",
+    "narrative": "📊 **Consensus:** Medium conviction: bullish on hard‑theme mid‑caps and crypto catalysts, tempered by earnings volatility and regulatory risks.\n⚡ **Catalysts:** Upcoming earnings (OKLO, IONQ, ASTS, HIMS), Ethereum Fusaka upgrade, potential rate cuts, regulatory developments (EU antitrust, Waymo).\n🎯 **Action:** If SPY breaks key support, target next resistance; If OKLO breaks support, target next resistance; If ETH breaks support, target next resistance",
     "key_tickers": [
-      "TSLA",
-      "DG",
-      "NVDA",
-      "GOOGL",
-      "OKLO"
+      "OKLO",
+      "IONQ",
+      "ASTS",
+      "HIMS",
+      "ETH"
     ],
     "key_themes": [
-      "AI",
-      "EV automation",
-      "crypto",
-      "quantum risk",
-      "leveraged debt"
+      "hard‑theme mid‑caps",
+      "crypto catalysts",
+      "earnings volatility"
     ],
     "risk_factors": [
-      "quantum computing risk to crypto",
-      "leveraged debt scalp risk",
-      "stablecoin liquidity concerns"
+      "earnings volatility",
+      "crypto regulatory risk",
+      "Fed tightening"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "TSLA 500 dip‑buy level, DG 125 exit target",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "Watch for breakout/breakdown",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 92264
+    "generation_time_ms": 99379
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 9,
-        "sentiment_score": 0.422,
+        "mentions": 10,
+        "sentiment_score": 0.38,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 42,
+        "sentiment_pct": 38,
         "counts": {
           "bullish": 5,
           "bearish": 0,
-          "neutral": 4,
-          "total": 9
+          "neutral": 5,
+          "total": 10
         }
       },
       {
         "ticker": "IWM",
-        "mentions": 3,
-        "sentiment_score": 0.5,
+        "mentions": 4,
+        "sentiment_score": 0.575,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
+        "sentiment_pct": 57,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 1,
-          "total": 3
+          "total": 4
         }
       },
       {
@@ -111,15 +109,15 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 2,
-        "sentiment_score": 0.75,
+        "mentions": 3,
+        "sentiment_score": 0.5,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 50,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 0,
-          "total": 2
+          "neutral": 1,
+          "total": 3
         }
       },
       {
@@ -152,19 +150,32 @@
       },
       {
         "ticker": "ASTS",
-        "mentions": 9,
-        "sentiment_score": 0.517,
+        "mentions": 10,
+        "sentiment_score": 0.545,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 52,
+        "sentiment_pct": 55,
         "counts": {
-          "bullish": 6,
+          "bullish": 7,
           "bearish": 0,
           "neutral": 3,
-          "total": 9
+          "total": 10
         }
       },
       {
         "ticker": "OKLO",
+        "mentions": 9,
+        "sentiment_score": 0.433,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 43,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 9
+        }
+      },
+      {
+        "ticker": "IONQ",
         "mentions": 8,
         "sentiment_score": 0.388,
         "sentiment_label": "Bullish",
@@ -174,19 +185,6 @@
           "bearish": 0,
           "neutral": 4,
           "total": 8
-        }
-      },
-      {
-        "ticker": "IONQ",
-        "mentions": 7,
-        "sentiment_score": 0.329,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 4,
-          "total": 7
         }
       },
       {
@@ -209,7 +207,7 @@
     "color": "text-muted",
     "vix": 15.78,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 39,
+    "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
