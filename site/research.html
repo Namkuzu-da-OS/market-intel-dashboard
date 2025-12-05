@@ -1220,9 +1220,9 @@
             const shareTitle = shareBtn.getAttribute('data-share-title');
             const shareExcerpt = shareBtn.getAttribute('data-share-excerpt');
 
-            // Build full URL
-            const baseUrl = window.location.origin + window.location.pathname;
-            const fullUrl = baseUrl + '?report=' + encodeURIComponent(shareUrl);
+            // Build full URL - direct link to report for X preview cards
+            const baseUrl = window.location.origin + window.location.pathname.replace('research.html', '');
+            const fullUrl = baseUrl + shareUrl;
 
             // Build tweet text: excerpt + URL
             const tweetText = shareExcerpt || shareTitle;
