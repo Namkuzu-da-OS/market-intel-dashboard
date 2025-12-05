@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T02:39:46.836Z",
+  "timestamp": "2025-12-05T03:35:47.259Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 80,
     "sources": {
       "social": {
-        "bullish": 94,
-        "bearish": 23,
-        "neutral": 113,
-        "total": 230,
-        "pct": 41
+        "bullish": 97,
+        "bearish": 22,
+        "neutral": 112,
+        "total": 231,
+        "pct": 42
       },
       "news": {
-        "bullish": 22,
+        "bullish": 21,
         "bearish": 8,
         "neutral": 14,
-        "total": 44,
-        "pct": 50
+        "total": 43,
+        "pct": 49
       },
       "video": {
-        "bullish": 13,
-        "bearish": 2,
+        "bullish": 7,
+        "bearish": 1,
         "neutral": 4,
-        "total": 19,
-        "pct": 68
+        "total": 12,
+        "pct": 58
       },
       "chat": {
         "bullish": 1,
@@ -36,33 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Medium conviction: bullish on hard‑theme mid‑caps and crypto catalysts, tempered by earnings volatility and regulatory risks.\n⚡ **Catalysts:** Upcoming earnings (OKLO, IONQ, ASTS, HIMS), Ethereum Fusaka upgrade, potential rate cuts, regulatory developments (EU antitrust, Waymo).\n🎯 **Action:** If SPY breaks key support, target next resistance; If OKLO breaks support, target next resistance; If ETH breaks support, target next resistance",
+    "narrative": "📊 **Consensus:** Neutral stance with potential upside as earnings and regulatory catalysts loom, conviction level: medium\n\n⚡ **Catalysts:** Mid‑cap earnings (e.g., $MSFT, $AMZN, $META), Clarity Act implementation, Fed rate cuts, SpaceX in‑orbit GPU launch, crypto‑related events (BBVA Bitcoin launch, ZEC hackathon). No explicit price levels mentioned.\n\n🎯 **Action:** If earnings beat expectations, consider long positions on $MSFT, $AMZN, $META with a 12‑18 month upside target; if regulatory clarity passes, take a broader market stance; if crypto catalysts materialise, a short‑term rally may follow.",
     "key_tickers": [
-      "OKLO",
-      "IONQ",
-      "ASTS",
-      "HIMS",
-      "ETH"
+      "MSFT",
+      "AMZN",
+      "META",
+      "RBRK",
+      "ULTA"
     ],
     "key_themes": [
-      "hard‑theme mid‑caps",
-      "crypto catalysts",
-      "earnings volatility"
+      "Earnings",
+      "Regulatory Clarity",
+      "Macro Rate Cuts",
+      "SpaceX Product Launch",
+      "Crypto Catalysts"
     ],
     "risk_factors": [
-      "earnings volatility",
-      "crypto regulatory risk",
-      "Fed tightening"
+      "Earnings Volatility",
+      "Regulatory Uncertainty",
+      "Liquidity Tightening",
+      "Factory Order Slowdown",
+      "Crypto Security Issues"
     ],
-    "intraday_bias": "BEARISH",
+    "intraday_bias": "NEUTRAL",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "MIXED"
+    "swing_levels": "Testing resistance",
+    "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 99379
+    "generation_time_ms": 100896
   },
   "trending": {
     "macro": [
@@ -110,44 +114,18 @@
       {
         "ticker": "MSTR",
         "mentions": 3,
-        "sentiment_score": 0.5,
+        "sentiment_score": 0.467,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
+        "sentiment_pct": 47,
         "counts": {
           "bullish": 2,
           "bearish": 0,
           "neutral": 1,
           "total": 3
         }
-      },
-      {
-        "ticker": "BTC",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 2
-        }
       }
     ],
     "other": [
-      {
-        "ticker": "TSLA",
-        "mentions": 10,
-        "sentiment_score": 0.61,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 61,
-        "counts": {
-          "bullish": 8,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 10
-        }
-      },
       {
         "ticker": "ASTS",
         "mentions": 10,
@@ -188,6 +166,19 @@
         }
       },
       {
+        "ticker": "TSLA",
+        "mentions": 7,
+        "sentiment_score": 0.636,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 64,
+        "counts": {
+          "bullish": 6,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 7
+        }
+      },
+      {
         "ticker": "NVDA",
         "mentions": 6,
         "sentiment_score": 0.233,
@@ -207,7 +198,7 @@
     "color": "text-muted",
     "vix": 15.78,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 41,
+    "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
