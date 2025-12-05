@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-05T01:01:31.600Z",
+  "timestamp": "2025-12-05T01:48:58.732Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 80,
     "sources": {
       "social": {
-        "bullish": 78,
+        "bullish": 82,
         "bearish": 21,
-        "neutral": 103,
-        "total": 202,
+        "neutral": 107,
+        "total": 210,
         "pct": 39
       },
       "news": {
@@ -36,37 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High - The market is expected to trend upward driven by tech and AI catalysts, with a moderate risk of short‑term volatility around key structural levels.\n\n⚡ **Catalysts:** TSLA $500 target $1,000, BTC $96,000 diagonal resistance, SPY call wall at 685/700, Nvidia H100 launch, Ethereum lower‑fee upgrade.\n\n🎯 **Action:** If SPY breaks 685 call wall, target 700; If TSLA breaks $500, target $1,000; If BTC falls below $96,000, watch for further decline.",
+    "narrative": "📊 **Consensus:** High conviction bullish stance driven by near‑term catalysts in AI, EV automation, and crypto sectors.\n\n⚡ **Catalysts:** TSLA $500 dip‑buy level, DG $125 exit target, OKLO 15% intraday jump post‑equity issue, CRDO all‑time high; AI/EV/crypto drivers: Tesla robotics rollout, Google Gemini integration, Nvidia H100 in‑orbit test, Ethereum Fusaka upgrade.\n\n🎯 **Action:** If TSLA breaks $500, consider a short‑term buy; if DG reaches $125, consider exiting; if OKLO jumps 15%, consider taking profit; if CRDO hits a new ATH, consider adding; monitor Tesla, Google, Nvidia, and Ethereum announcements for broader sector momentum.",
     "key_tickers": [
       "TSLA",
+      "DG",
       "NVDA",
-      "BTC",
-      "SPY",
+      "GOOGL",
       "OKLO"
     ],
     "key_themes": [
-      "AI & tech integration",
-      "Crypto infrastructure upgrades",
-      "Fed policy milestones",
-      "Structural call wall dynamics",
-      "Volatility around key catalysts"
+      "AI",
+      "EV automation",
+      "crypto",
+      "quantum risk",
+      "leveraged debt"
     ],
     "risk_factors": [
-      "Quantum computing threats to crypto",
-      "Leveraged crypto debt defaults",
-      "Stablecoin liquidity crisis",
-      "SPY call wall breach",
-      "TSLA price decline"
+      "quantum computing risk to crypto",
+      "leveraged debt scalp risk",
+      "stablecoin liquidity concerns"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 685 support, 700 resistance; TSLA 500 support",
+    "intraday_levels": "TSLA 500 dip‑buy level, DG 125 exit target",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 685 support, 700 resistance; TSLA 500 support; BTC 96k resistance",
+    "swing_levels": "Testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 103475
+    "generation_time_ms": 92264
   },
   "trending": {
     "macro": [
