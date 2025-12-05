@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-05T04:26:55.600Z",
+  "timestamp": "2025-12-05T05:11:59.172Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 81,
+    "confidence_pct": 82,
     "sources": {
       "social": {
-        "bullish": 99,
-        "bearish": 22,
-        "neutral": 122,
-        "total": 243,
-        "pct": 41
+        "bullish": 102,
+        "bearish": 20,
+        "neutral": 119,
+        "total": 241,
+        "pct": 42
       },
       "news": {
         "bullish": 22,
         "bearish": 8,
-        "neutral": 14,
-        "total": 44,
-        "pct": 50
+        "neutral": 12,
+        "total": 42,
+        "pct": 52
       },
       "video": {
         "bullish": 7,
@@ -36,45 +36,41 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is broadly bullish with high conviction, driven by near‑term tech and crypto catalysts, but tempered by earnings‑driven volatility and regulatory uncertainty.\n\n⚡ **Catalysts:** Base‑Solana bridge launch, BBVA Bitcoin trading rollout, NXT 2026 call sweep, upcoming earnings for hard‑theme names, regulatory clarity on crypto and AI.\n\n🎯 **Action:** If Base‑Solana bridge goes live, target a 10% upside on SOL; if BBVA launches Bitcoin trading, target a 5% upside on BTC; if the NXT 2026 call sweep triggers a rally, target a 20% upside on NXT.",
-    "key_tickers": [
-      "SOL",
-      "BTC",
-      "NXT"
-    ],
+    "narrative": "📊 **Consensus:** The market is expected to be earnings‑driven with selective upside in hard‑theme mid‑caps and AI/space sectors, but overall sentiment remains cautious due to regulatory and macro‑economic uncertainties (medium conviction).\n\n⚡ **Catalysts:** Upcoming earnings releases for hard‑theme mid‑caps, regulatory clarity on the Clarity Act and CFTC licensing, potential Fed rate cuts, and breakthroughs in AI/space technology.\n\n🎯 **Action:** If hard‑theme mid‑caps beat earnings expectations, consider a long position with a target of 10‑15% upside; if earnings miss, consider a short position with a target of 5‑10% downside. Watch for volatility spikes around regulatory announcements and rate‑cut signals.",
+    "key_tickers": [],
     "key_themes": [
-      "hard‑theme tech (AI, quantum, space, batteries)",
-      "earnings volatility",
-      "regulatory clarity on crypto & AI"
+      "Earnings‑driven volatility",
+      "Hard‑theme mid‑caps",
+      "AI/Space"
     ],
     "risk_factors": [
-      "earnings‑driven volatility",
-      "regulatory probes",
-      "liquidity stress"
+      "Earnings disappointment",
+      "Regulatory delays",
+      "Liquidity constraints"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "Testing resistance",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "ALIGNED"
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 87693
+    "generation_time_ms": 93719
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 11,
-        "sentiment_score": 0.345,
+        "mentions": 10,
+        "sentiment_score": 0.38,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 35,
+        "sentiment_pct": 38,
         "counts": {
           "bullish": 5,
           "bearish": 0,
-          "neutral": 6,
-          "total": 11
+          "neutral": 5,
+          "total": 10
         }
       },
       {
@@ -161,6 +157,19 @@
       },
       {
         "ticker": "OKLO",
+        "mentions": 10,
+        "sentiment_score": 0.47,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 47,
+        "counts": {
+          "bullish": 6,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 10
+        }
+      },
+      {
+        "ticker": "IONQ",
         "mentions": 9,
         "sentiment_score": 0.433,
         "sentiment_label": "Bullish",
@@ -170,19 +179,6 @@
           "bearish": 0,
           "neutral": 4,
           "total": 9
-        }
-      },
-      {
-        "ticker": "IONQ",
-        "mentions": 8,
-        "sentiment_score": 0.388,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 4,
-          "total": 8
         }
       },
       {
@@ -199,16 +195,16 @@
         }
       },
       {
-        "ticker": "NVDA",
-        "mentions": 6,
-        "sentiment_score": 0.233,
+        "ticker": "META",
+        "mentions": 5,
+        "sentiment_score": 0.29,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 23,
+        "sentiment_pct": 29,
         "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 4,
-          "total": 6
+          "bullish": 3,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 5
         }
       }
     ]
@@ -218,7 +214,7 @@
     "color": "text-muted",
     "vix": 15.78,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 41,
+    "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
