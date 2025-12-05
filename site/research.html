@@ -1281,6 +1281,13 @@
                 });
             });
 
+            // Attach Share to X handler - stop propagation to prevent card navigation
+            const xShareOption = dropdown.querySelector('a[target="_blank"]');
+            xShareOption.addEventListener('click', (e) => {
+                e.stopPropagation();  // Prevent click from bubbling to parent card
+                dropdown.classList.remove('show');
+            });
+
             // Close dropdown when clicking away
             setTimeout(() => {
                 document.addEventListener('click', function closeDropdown(e) {
