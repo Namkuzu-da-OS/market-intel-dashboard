@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-05T18:33:24.228Z",
+  "timestamp": "2025-12-05T19:17:14.802Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 114,
-        "bearish": 21,
-        "neutral": 134,
-        "total": 269,
-        "pct": 42
+        "bullish": 116,
+        "bearish": 23,
+        "neutral": 142,
+        "total": 281,
+        "pct": 41
       },
       "news": {
-        "bullish": 14,
+        "bullish": 17,
         "bearish": 12,
-        "neutral": 15,
-        "total": 41,
-        "pct": 34
+        "neutral": 17,
+        "total": 46,
+        "pct": 37
       },
       "video": {
         "bullish": 8,
@@ -36,35 +36,33 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, rate-sensitive sectors, regulatory/crypto uncertainty\n\n📊 **Levels:** SPY 685, ES_F 6,871 and 6,903, ZEC 370, GOOGL 350, ADBE 350, NFLX 100, Bitcoin 88,000",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, hard‑theme infrastructure, crypto infrastructure\n\n📊 **Levels:** SPY 685 support, ES_F 6871 support, 6903 target, GOOGL/ADBE 350, ZEC 370, Bitcoin 88,000 floor",
     "key_tickers": [
-      "PSTG",
-      "MRVL",
-      "CRWD",
+      "SPY",
+      "ES_F",
       "GOOGL",
-      "ADBE"
+      "ADBE",
+      "ZEC"
     ],
     "key_themes": [
       "AI momentum",
-      "rate-sensitive sectors",
-      "regulatory/crypto uncertainty"
+      "hard‑theme infrastructure",
+      "crypto infrastructure"
     ],
     "risk_factors": [
-      "regulatory developments",
-      "earnings volatility",
-      "crypto regulatory risk",
-      "macro wage growth concerns",
-      "geopolitical risk-off"
+      "regulatory tightening",
+      "earnings softness",
+      "crypto volatility"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 685 support, ES_F 6,871/6,903 range",
+    "intraday_levels": "SPY 685 support, 6903 resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 685 support, ES_F 6,871/6,903 range",
+    "swing_levels": "ES_F 6871 support, 6903 target",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 113872
+    "generation_time_ms": 83361
   },
   "trending": {
     "macro": [
@@ -220,17 +218,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.83,
-    "pc_ratio": 1.13,
-    "sentiment_bullish_pct": 42,
+    "vix": 15.49,
+    "pc_ratio": 1.08,
+    "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 10.09,
-    "hv": 13.14,
-    "spread": -0.03,
+    "iv_rank": 9.52,
+    "hv": 13.16,
+    "spread": -0.24,
     "position": 20
   },
   "action": {
