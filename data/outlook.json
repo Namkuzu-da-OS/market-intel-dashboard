@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-05T05:11:59.172Z",
+  "timestamp": "2025-12-05T05:58:23.470Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 82,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 102,
-        "bearish": 20,
-        "neutral": 119,
-        "total": 241,
+        "bullish": 103,
+        "bearish": 22,
+        "neutral": 122,
+        "total": 247,
         "pct": 42
       },
       "news": {
-        "bullish": 22,
+        "bullish": 23,
         "bearish": 8,
         "neutral": 12,
-        "total": 42,
-        "pct": 52
+        "total": 43,
+        "pct": 53
       },
       "video": {
         "bullish": 7,
@@ -36,27 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market is expected to be earnings‑driven with selective upside in hard‑theme mid‑caps and AI/space sectors, but overall sentiment remains cautious due to regulatory and macro‑economic uncertainties (medium conviction).\n\n⚡ **Catalysts:** Upcoming earnings releases for hard‑theme mid‑caps, regulatory clarity on the Clarity Act and CFTC licensing, potential Fed rate cuts, and breakthroughs in AI/space technology.\n\n🎯 **Action:** If hard‑theme mid‑caps beat earnings expectations, consider a long position with a target of 10‑15% upside; if earnings miss, consider a short position with a target of 5‑10% downside. Watch for volatility spikes around regulatory announcements and rate‑cut signals.",
-    "key_tickers": [],
+    "narrative": "📊 **Consensus:** High conviction bullish outlook as hard‑theme names, earnings momentum, and crypto developments drive upside.\n\n⚡ **Catalysts:** Hard‑theme earnings (OKLO, NQ, RKLB, AAPL, AMZN, TSLA), first commercial in‑orbit H100 launch, crypto regulatory announcements (BTC, ETH), Oracle 50‑week trendline, potential Fed rate cuts.\n\n🎯 **Action:** If OKLO rallies 5% from current, target 10% upside; if Oracle holds above its 50‑week line, target next resistance; if BTC gains 10% from current, target 15% upside.",
+    "key_tickers": [
+      "OKLO",
+      "NQ",
+      "RKLB",
+      "ORCL",
+      "AAPL"
+    ],
     "key_themes": [
-      "Earnings‑driven volatility",
-      "Hard‑theme mid‑caps",
-      "AI/Space"
+      "hard‑theme rotation",
+      "earnings‑driven volatility",
+      "crypto regulatory developments"
     ],
     "risk_factors": [
-      "Earnings disappointment",
-      "Regulatory delays",
-      "Liquidity constraints"
+      "regulatory uncertainty",
+      "earnings volatility",
+      "potential rate cuts",
+      "crypto volatility",
+      "short‑squeeze risk"
     ],
-    "intraday_bias": "NEUTRAL",
+    "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "MIXED"
+    "swing_levels": "Testing resistance",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 93719
+    "generation_time_ms": 88212
   },
   "trending": {
     "macro": [
