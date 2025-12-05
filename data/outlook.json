@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T17:48:37.495Z",
+  "timestamp": "2025-12-05T18:33:24.228Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 78,
+    "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 119,
-        "bearish": 25,
-        "neutral": 152,
-        "total": 296,
-        "pct": 40
+        "bullish": 114,
+        "bearish": 21,
+        "neutral": 134,
+        "total": 269,
+        "pct": 42
       },
       "news": {
-        "bullish": 18,
-        "bearish": 13,
+        "bullish": 14,
+        "bearish": 12,
         "neutral": 15,
-        "total": 46,
-        "pct": 39
+        "total": 41,
+        "pct": 34
       },
       "video": {
-        "bullish": 9,
+        "bullish": 8,
         "bearish": 3,
-        "neutral": 4,
-        "total": 16,
-        "pct": 56
+        "neutral": 3,
+        "total": 14,
+        "pct": 57
       },
       "chat": {
         "bullish": 0,
@@ -36,31 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Overall market sentiment is bullish with medium conviction.\n\n📈 **Themes:** AI and semiconductor innovation, rate cut expectations, crypto regulatory uncertainty.\n\n🎯 **Levels:** 6,871 and 6,902 ES_F supports; $100 level for NFLX; $OKLO trend‑line break; 6,860–6,903 band.",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, rate-sensitive sectors, regulatory/crypto uncertainty\n\n📊 **Levels:** SPY 685, ES_F 6,871 and 6,903, ZEC 370, GOOGL 350, ADBE 350, NFLX 100, Bitcoin 88,000",
     "key_tickers": [
-      "GOOG",
-      "AMZN",
-      "TSLA"
+      "PSTG",
+      "MRVL",
+      "CRWD",
+      "GOOGL",
+      "ADBE"
     ],
     "key_themes": [
       "AI momentum",
-      "rate cut expectations",
-      "crypto regulatory uncertainty"
+      "rate-sensitive sectors",
+      "regulatory/crypto uncertainty"
     ],
     "risk_factors": [
+      "regulatory developments",
       "earnings volatility",
-      "regulatory risk",
-      "macro tightening"
+      "crypto regulatory risk",
+      "macro wage growth concerns",
+      "geopolitical risk-off"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "ES_F 6,871 support, 6,902 support; 6,860–6,903 band",
+    "intraday_levels": "SPY 685 support, ES_F 6,871/6,903 range",
     "swing_bias": "BULLISH",
-    "swing_levels": "ES_F 6,871 and 6,902 supports; 6,903 resistance; NFLX $100 level; $OKLO trend‑line break",
+    "swing_levels": "SPY 685 support, ES_F 6,871/6,903 range",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 85326
+    "generation_time_ms": 113872
   },
   "trending": {
     "macro": [
@@ -79,28 +83,15 @@
       },
       {
         "ticker": "IWM",
-        "mentions": 2,
-        "sentiment_score": 0.4,
+        "mentions": 1,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "QQQ",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 2
+          "neutral": 0,
+          "total": 1
         }
       }
     ],
@@ -133,56 +124,69 @@
       },
       {
         "ticker": "ETH",
-        "mentions": 3,
-        "sentiment_score": 0.317,
+        "mentions": 2,
+        "sentiment_score": 0.475,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 48,
         "counts": {
           "bullish": 1,
           "bearish": 0,
-          "neutral": 2,
-          "total": 3
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "LINK",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
         }
       }
     ],
     "other": [
       {
         "ticker": "NFLX",
-        "mentions": 12,
-        "sentiment_score": 0.442,
+        "mentions": 13,
+        "sentiment_score": 0.408,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 44,
+        "sentiment_pct": 41,
         "counts": {
           "bullish": 7,
           "bearish": 0,
-          "neutral": 5,
-          "total": 12
+          "neutral": 6,
+          "total": 13
         }
       },
       {
         "ticker": "OKLO",
-        "mentions": 11,
-        "sentiment_score": 0.436,
+        "mentions": 10,
+        "sentiment_score": 0.48,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 44,
+        "sentiment_pct": 48,
         "counts": {
           "bullish": 6,
           "bearish": 0,
-          "neutral": 5,
-          "total": 11
+          "neutral": 4,
+          "total": 10
         }
       },
       {
         "ticker": "WBD",
-        "mentions": 7,
-        "sentiment_score": 0.657,
+        "mentions": 8,
+        "sentiment_score": 0.575,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 66,
+        "sentiment_pct": 57,
         "counts": {
           "bullish": 6,
           "bearish": 0,
-          "neutral": 1,
-          "total": 7
+          "neutral": 2,
+          "total": 8
         }
       },
       {
@@ -199,16 +203,16 @@
         }
       },
       {
-        "ticker": "ASTS",
-        "mentions": 6,
-        "sentiment_score": 0.4,
+        "ticker": "IONQ",
+        "mentions": 5,
+        "sentiment_score": 0.32,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "sentiment_pct": 32,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 3,
-          "total": 6
+          "total": 5
         }
       }
     ]
@@ -216,17 +220,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.84,
-    "pc_ratio": 1.18,
-    "sentiment_bullish_pct": 40,
+    "vix": 15.83,
+    "pc_ratio": 1.13,
+    "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 9.92,
+    "iv_rank": 10.09,
     "hv": 13.14,
-    "spread": -0.08,
+    "spread": -0.03,
     "position": 20
   },
   "action": {
