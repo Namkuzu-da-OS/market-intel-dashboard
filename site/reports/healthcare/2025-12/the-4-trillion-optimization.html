@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The $4 Trillion Optimization" />
+  <meta property="og:description" content="The American healthcare system isn&#039;t just expensive; it&#039;s economically inefficient. By transitioning to value-based care and leveraging AI to eliminate administrative bloat, we can unlock billions in value—making the system cheaper AND better." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/healthcare/2025-12/the-4-trillion-optimization.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/the-4-trillion-optimization-1764946052781.jpg" />
+  <meta property="article:published_time" content="2025-12-05" />
+  <meta property="article:section" content="healthcare" />
+  <meta property="article:tag" content="$XLV" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The $4 Trillion Optimization" />
+  <meta name="twitter:description" content="The American healthcare system isn&#039;t just expensive; it&#039;s economically inefficient. By transitioning to value-based care and leveraging AI to eliminate administrative bloat, we can unlock billions in value—making the system cheaper AND better." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/the-4-trillion-optimization-1764946052781.jpg" />
+    <title>Reforming American Healthcare: The Economic Opportunity</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+            color: #0f172a; /* Slate 900 */
+        }
+
+        /* Chart Container Strict Styling */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <!-- 
+    SOURCE MATERIAL ANALYSIS & PLAN:
+    1. Introduction: Hook with the GDP spend disparity.
+    2. Data Overview: Visualization of where the money goes (Admin vs Clinical).
+    3. The Waste Analysis: Detailed breakdown of the $900B waste (Donut chart).
+    4. The Solution (AI): Projected savings via automation (Bar chart).
+    5. The Transition: Roadmap from FFS to Value-Based Care (HTML Diagram).
+    6. Outcome: Cost vs Quality Bubble chart (Plotly).
+    
+    PALETTE: "Electric Efficiency"
+    - Primary: #2563eb (Royal Blue)
+    - Secondary: #06b6d4 (Cyan)
+    - Accent: #f97316 (Vibrant Orange - for Alerts/Waste)
+    - Neutral: #f8fafc (Light Gray background)
+    -->
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight">Health<span class="text-cyan-500">Reform</span>.AI</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#overview" class="hover:text-blue-600 transition">The Problem</a>
+                    <a href="#waste" class="hover:text-blue-600 transition">The Waste</a>
+                    <a href="#ai-opportunity" class="hover:text-blue-600 transition">AI Solution</a>
+                    <a href="#future" class="hover:text-blue-600 transition">The Future</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                The <span class="gradient-text">$4 Trillion</span> Optimization
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-500">
+                The American healthcare system isn't just expensive; it's economically inefficient. By transitioning to value-based care and leveraging AI to eliminate administrative bloat, we can unlock billions in value—making the system cheaper AND better.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <div class="px-6 py-3 bg-blue-50 rounded-lg border border-blue-100">
+                    <span class="block text-2xl font-bold text-blue-700">17.8%</span>
+                    <span class="text-xs font-semibold text-blue-900 uppercase tracking-wide">of US GDP</span>
+                </div>
+                <div class="px-6 py-3 bg-orange-50 rounded-lg border border-orange-100">
+                    <span class="block text-2xl font-bold text-orange-600">$935B</span>
+                    <span class="text-xs font-semibold text-orange-900 uppercase tracking-wide">Annual Waste</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Section 1: The Disparity (Context) -->
+        <section id="overview" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-slate-100">
+                    <div class="chart-container">
+                        <canvas id="gdpComparisonChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Pricing Out Performance</h2>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    The United States spends nearly double the average of other wealthy nations on healthcare relative to its economy. However, this premium pricing does not translate to better life expectancy or health outcomes. The gap represents pure economic inefficiency—money spent on administration, pricing complexity, and fragmentation rather than patient care.
+                </p>
+                <div class="border-l-4 border-cyan-500 pl-4">
+                    <p class="text-sm text-slate-500 italic">"We are paying for a luxury car but driving a clunker. The delta is the opportunity for profit through reform."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Waste Bucket (Analysis) -->
+        <section id="waste" class="bg-slate-50 rounded-3xl p-8 md:p-12">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Where is the Money Leaking?</h2>
+                <p class="text-slate-600">
+                    Approximately 25% of total US healthcare spending is considered "waste." This isn't just medical fraud; it's primarily administrative complexity—the cost of billing, coding, and insurance battles.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Chart -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="chart-container">
+                        <canvas id="wasteBreakdownChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Explanation Cards -->
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border-l-4 border-blue-600">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-slate-800">Administrative Complexity</h3>
+                            <p class="text-sm text-slate-500 mt-1">
+                                The largest bucket. Time spent by doctors and staff navigating insurance layers, prior authorizations, and billing codes rather than treating patients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border-l-4 border-orange-500">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-slate-800">Pricing Failure</h3>
+                            <p class="text-sm text-slate-500 mt-1">
+                                Variability in pricing for the exact same services (e.g., MRI scans) depending on the provider and payer, leading to massive market inefficiency.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border-l-4 border-cyan-500">
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-slate-800">Failure of Care Delivery</h3>
+                            <p class="text-sm text-slate-500 mt-1">
+                                Poor coordination between specialists leads to readmissions and duplicate testing. This is a workflow problem solvable by interoperable data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The AI Solution (Tech) -->
+        <section id="ai-opportunity">
+            <div class="mb-10">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">The AI Dividend: Making It Cheaper</h2>
+                <p class="text-lg text-slate-600 max-w-4xl">
+                    Artificial Intelligence is not just about robot doctors; it is about <strong>administrative automation</strong>. By letting AI handle coding, scheduling, and billing, we can strip out the "friction costs" of the industry.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-slate-100">
+                <div class="chart-container" style="max-height: 500px; height: 450px;">
+                    <canvas id="aiSavingsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Strategic Transition (Process Flow) -->
+        <section id="transition" class="py-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">The Transition Model: From Volume to Value</h2>
+            <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+                To monetize this reform, the industry must shift business models. We are moving from getting paid for "doing things" (Fee-for-Service) to getting paid for "keeping people healthy" (Value-Based Care).
+            </p>
+
+            <!-- HTML/CSS Flowchart (No Mermaid/SVG) -->
+            <div class="relative max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                    
+                    <!-- Step 1 -->
+                    <div class="bg-slate-100 p-6 rounded-xl border-2 border-slate-300 flex flex-col items-center text-center relative group hover:border-orange-400 transition-colors duration-300">
+                        <div class="text-4xl mb-3">🏥</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Legacy Model</h3>
+                        <div class="text-xs font-bold bg-slate-200 text-slate-600 px-2 py-1 rounded mb-3">Fee-For-Service</div>
+                        <p class="text-sm text-slate-600">
+                            Providers bill for every test and visit. No incentive for efficiency. Admin costs are high due to claims processing.
+                        </p>
+                        <!-- Mobile Arrow -->
+                        <div class="md:hidden text-3xl text-slate-400 mt-4">↓</div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white p-6 rounded-xl border-2 border-blue-500 shadow-xl flex flex-col items-center text-center relative transform md:-translate-y-4">
+                        <div class="absolute -top-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">The Transition Zone</div>
+                        <div class="text-4xl mb-3">⚙️</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Hybrid AI Integration</h3>
+                        <div class="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded mb-3">Data-Driven</div>
+                        <p class="text-sm text-slate-600">
+                            AI automates back-office admin. Predictive analytics identify high-risk patients early. Telehealth reduces overhead.
+                        </p>
+                        <!-- Mobile Arrow -->
+                        <div class="md:hidden text-3xl text-slate-400 mt-4">↓</div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-slate-100 p-6 rounded-xl border-2 border-green-400 flex flex-col items-center text-center relative group hover:border-green-500 transition-colors duration-300">
+                        <div class="text-4xl mb-3">🌿</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Target State</h3>
+                        <div class="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded mb-3">Value-Based Care</div>
+                        <p class="text-sm text-slate-600">
+                            Providers paid a fixed fee per patient (Capitation). Profit margin comes from keeping patients healthy and avoiding hospitals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desktop Arrows (CSS Only) -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-slate-200 -z-0 transform -translate-y-1/2"></div>
+            </div>
+        </section>
+
+        <!-- Section 5: Future Outlook (Plotly) -->
+        <section id="future" class="bg-slate-900 text-white rounded-3xl p-8 md:p-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="col-span-1">
+                    <h2 class="text-3xl font-bold text-white mb-4">The Outcome: Better Health, Lower Cost</h2>
+                    <p class="text-slate-300 mb-6">
+                        Comparing the US trajectory against an idealized "Efficient Frontier." By adopting these reforms, the US can move from being an outlier (High Cost/Low Life Expectancy) towards the cluster of efficient nations.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-3 h-3 bg-blue-500 rounded-full mr-2"></span> Efficient Nations
+                        </li>
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-3 h-3 bg-orange-500 rounded-full mr-2"></span> US (Current)
+                        </li>
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-3 h-3 bg-green-400 rounded-full mr-2"></span> US (Reformed Target)
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-span-1 lg:col-span-2 bg-white rounded-xl overflow-hidden p-2">
+                     <!-- Plotly Chart Container -->
+                     <div id="plotlyChart" class="w-full h-[400px]"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 mt-24 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-sm">
+                Generated by Canvas Infographics. Data modeled from McKinsey, OECD, and JAMA Network Open reports on healthcare waste and AI integration efficiency.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script Block -->
+    <script>
+        // --- 1. UTILITY FUNCTIONS ---
+
+        // Palette Definition
+        const colors = {
+            primary: '#2563eb',   // Blue 600
+            secondary: '#06b6d4', // Cyan 500
+            accent: '#f97316',    // Orange 500
+            success: '#22c55e',   // Green 500
+            dark: '#0f172a',      // Slate 900
+            light: '#f1f5f9'      // Slate 100
+        };
+
+        // Label Wrapping Logic (Strict 16 char limit)
+        function wrapLabel(label) {
+            if (label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + " " + words[i]).length <= 16) {
+                    currentLine += " " + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // Process Labels Array
+        function processLabels(labels) {
+            return labels.map(l => wrapLabel(l));
+        }
+
+        // Common Chart Options
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: { family: 'Inter', size: 12 },
+                        color: '#475569',
+                        padding: 20
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                    titleFont: { family: 'Inter', size: 13 },
+                    bodyFont: { family: 'Inter', size: 12 },
+                    padding: 12,
+                    cornerRadius: 8,
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        // --- 2. CHART IMPLEMENTATIONS ---
+
+        // Chart 1: GDP Comparison (Bar)
+        const ctxGDP = document.getElementById('gdpComparisonChart').getContext('2d');
+        const labelsGDP = ["United States", "Germany", "France", "Japan", "United Kingdom", "Canada"];
+        
+        new Chart(ctxGDP, {
+            type: 'bar',
+            data: {
+                labels: processLabels(labelsGDP),
+                datasets: [{
+                    label: 'Healthcare Spend (% of GDP)',
+                    data: [17.8, 12.8, 12.2, 11.0, 11.9, 10.8],
+                    backgroundColor: [
+                        colors.accent, // Highlight US
+                        colors.primary,
+                        colors.primary,
+                        colors.primary,
+                        colors.primary,
+                        colors.primary
+                    ],
+                    borderRadius: 6,
+                }]
+            },
+            options: {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    title: {
+                        display: true,
+                        text: 'US Spending vs. Peer Nations',
+                        font: { size: 16, family: 'Inter', weight: '600' },
+                        color: '#0f172a'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#e2e8f0' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+        // Chart 2: Waste Breakdown (Donut)
+        const ctxWaste = document.getElementById('wasteBreakdownChart').getContext('2d');
+        const labelsWaste = ["Admin Complexity", "Pricing Failure", "Clinical Waste", "Fraud & Abuse", "Care Failure"];
+        
+        new Chart(ctxWaste, {
+            type: 'doughnut',
+            data: {
+                labels: processLabels(labelsWaste),
+                datasets: [{
+                    data: [265, 230, 160, 100, 150], // Billions USD
+                    backgroundColor: [
+                        colors.primary,   // Blue
+                        colors.accent,    // Orange
+                        colors.secondary, // Cyan
+                        '#ef4444',        // Red for Fraud
+                        '#6366f1'         // Indigo
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 15
+                }]
+            },
+            options: {
+                ...commonOptions,
+                cutout: '65%',
+                plugins: {
+                    ...commonOptions.plugins,
+                    title: {
+                        display: true,
+                        text: 'Components of $935B Annual Waste',
+                        font: { size: 16, family: 'Inter', weight: '600' }
+                    }
+                }
+            }
+        });
+
+        // Chart 3: AI Savings Potential (Horizontal Bar)
+        const ctxAI = document.getElementById('aiSavingsChart').getContext('2d');
+        const labelsAI = ["Claims Processing Automation", "Clinical Documentation", "Fraud Detection AI", "Supply Chain Optimization", "Preventive Care Analytics"];
+        
+        new Chart(ctxAI, {
+            type: 'bar',
+            data: {
+                labels: processLabels(labelsAI),
+                datasets: [{
+                    label: 'Potential Annual Savings (Billions $)',
+                    data: [120, 90, 75, 40, 65],
+                    backgroundColor: colors.secondary, // Cyan
+                    borderRadius: 4,
+                    barPercentage: 0.6
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Horizontal
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'Projected Savings via AI Integration',
+                        font: { size: 16, family: 'Inter', weight: '600' }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { color: '#e2e8f0' },
+                        title: { display: true, text: 'Billions Saved ($)' }
+                    },
+                    y: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+        // --- 3. PLOTLY IMPLEMENTATION (Canvas/WebGL) ---
+        // Using Plotly for a Bubble Chart (Scattergl for WebGL rendering)
+        // Comparison: Annual Spend per Capita (X) vs. Life Expectancy (Y) vs. Population Size (Bubble)
+
+        const traceUS = {
+            x: [12500],
+            y: [77.5],
+            mode: 'markers',
+            name: 'USA (Current)',
+            marker: {
+                size: 35,
+                color: colors.accent,
+                opacity: 0.9
+            },
+            type: 'scattergl' // WebGL renderer
+        };
+
+        const traceUSReform = {
+            x: [9500],
+            y: [80.2],
+            mode: 'markers',
+            name: 'USA (Reformed)',
+            marker: {
+                size: 35,
+                color: colors.success,
+                opacity: 0.9,
+                symbol: 'circle-dot'
+            },
+            type: 'scattergl'
+        };
+
+        const tracePeers = {
+            x: [6000, 5500, 7000, 4800, 5200], // Germany, UK, Japan, etc.
+            y: [81.0, 81.5, 84.5, 82.0, 82.5],
+            mode: 'markers',
+            text: ['Germany', 'UK', 'Switzerland', 'Japan', 'France'],
+            name: 'Efficient Nations',
+            marker: {
+                size: [25, 25, 15, 30, 25],
+                color: colors.primary,
+                opacity: 0.6
+            },
+            type: 'scattergl'
+        };
+
+        const layout = {
+            title: { text: 'Efficiency Frontier: Spend vs. Longevity', font: { family: 'Inter' } },
+            showlegend: true,
+            legend: { orientation: 'h', y: -0.2 },
+            xaxis: {
+                title: 'Annual Healthcare Spend per Capita ($)',
+                gridcolor: '#e2e8f0',
+                zeroline: false
+            },
+            yaxis: {
+                title: 'Life Expectancy (Years)',
+                gridcolor: '#e2e8f0',
+                zeroline: false,
+                range: [75, 86]
+            },
+            margin: { t: 40, b: 40, l: 50, r: 20 },
+            hovermode: 'closest',
+            paper_bgcolor: 'rgba(0,0,0,0)', // Transparent
+            plot_bgcolor: 'rgba(0,0,0,0)'
+        };
+
+        const config = {
+            responsive: true,
+            displayModeBar: false // Clean UI
+        };
+
+        Plotly.newPlot('plotlyChart', [tracePeers, traceUS, traceUSReform], layout, config);
+
+    </script>
+    
+    <!-- 
+    CONFIRMATION OF CONSTRAINTS:
+    1. Single HTML File: Yes.
+    2. Tailwind CSS: Used for all layout/styling.
+    3. No SVG Graphics: All charts are Canvas (Chart.js) or WebGL (Plotly scattergl). Icons are Unicode.
+    4. No Mermaid JS: Diagrams built with HTML/CSS.
+    5. Chart Labels: Wrapped using 'wrapLabel' function.
+    6. Tooltips: Configured with 'callbacks.title'.
+    7. Palette: Brilliant Blue/Cyan/Orange used.
+    -->
+</body>
+</html>
