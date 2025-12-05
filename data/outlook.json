@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T07:10:24.465Z",
+  "timestamp": "2025-12-05T12:00:26.022Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 81,
+    "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 104,
-        "bearish": 22,
-        "neutral": 122,
-        "total": 248,
+        "bullish": 110,
+        "bearish": 25,
+        "neutral": 130,
+        "total": 265,
         "pct": 42
       },
       "news": {
         "bullish": 22,
-        "bearish": 8,
-        "neutral": 12,
-        "total": 42,
-        "pct": 52
+        "bearish": 11,
+        "neutral": 13,
+        "total": 46,
+        "pct": 48
       },
       "video": {
         "bullish": 7,
-        "bearish": 1,
+        "bearish": 2,
         "neutral": 4,
-        "total": 12,
-        "pct": 58
+        "total": 13,
+        "pct": 54
       },
       "chat": {
         "bullish": 1,
@@ -36,33 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High‑conviction bullish stance driven by hard‑theme momentum and potential Fed rate cuts, tempered by earnings volatility and regulatory risks.\n\n⚡ **Catalysts:** Oracle (ORCL) bounce off 50‑week low, quantum names (e.g., QNTM) rally, Fed December rate‑cut announcement, SpaceX GPU launch, Rocket Lab (RKLB) launch, earnings of hard‑theme names (OKLO, NQ).\n\n🎯 **Action:** If ORCL breaks above its 50‑week low, target 10–15% upside; if RKLB moves above its 30‑day moving average, target 10% upside; monitor Fed announcement for potential shift.",
+    "narrative": "📊 **Consensus:** The market is poised for a bullish stance driven by a low‑rate backdrop, earnings optimism in tech and consumer sectors, and anticipated crypto regulatory clarity, with a high conviction level.\n\n⚡ **Catalysts:** Fed rate cuts (December), earnings from NVDA, TSLA, AAPL, AMZN, CRM, AI‑hardware launches, crypto‑regulatory approvals, and S&P 500 inclusion announcements.\n\n🎯 **Action:** If SPY breaks above 685.37, consider a bullish position with a 10% profit target; if NVDA closes above 350, target 360; if TSLA closes above 800, target 850.",
     "key_tickers": [
-      "ORCL",
-      "RKLB",
-      "OKLO",
-      "META",
-      "QNTM"
+      "NVDA",
+      "TSLA",
+      "AAPL",
+      "AMZN",
+      "CRM"
     ],
     "key_themes": [
-      "Hard‑theme momentum",
-      "AI & quantum computing",
-      "Rate‑cut expectations"
+      "hard‑theme rotation",
+      "low‑rate environment",
+      "crypto regulatory clarity",
+      "earnings volatility",
+      "AI hardware launches"
     ],
     "risk_factors": [
-      "Earnings volatility",
-      "Regulatory scrutiny",
-      "Liquidity tightening"
+      "earnings volatility",
+      "crypto regulatory uncertainty",
+      "liquidity tightening",
+      "Fed policy risk",
+      "geopolitical tensions"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_levels": "SPY 667 support, 685.37 resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
-    "source_alignment": "MIXED"
+    "swing_levels": "SPY 667, 685.37; QQQ 625, 685.37",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 111248
+    "generation_time_ms": 112235
   },
   "trending": {
     "macro": [
@@ -109,15 +113,28 @@
     "crypto": [
       {
         "ticker": "MSTR",
-        "mentions": 4,
-        "sentiment_score": 0.35,
+        "mentions": 5,
+        "sentiment_score": 0.43,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 35,
+        "sentiment_pct": 43,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 2,
-          "total": 4
+          "total": 5
+        }
+      },
+      {
+        "ticker": "ETH",
+        "mentions": 3,
+        "sentiment_score": 0.317,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 32,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 3
         }
       },
       {
@@ -132,22 +149,22 @@
           "neutral": 2,
           "total": 2
         }
-      },
-      {
-        "ticker": "ETH",
-        "mentions": 2,
-        "sentiment_score": 0.075,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 8,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 2
-        }
       }
     ],
     "other": [
+      {
+        "ticker": "OKLO",
+        "mentions": 11,
+        "sentiment_score": 0.495,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 50,
+        "counts": {
+          "bullish": 7,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 11
+        }
+      },
       {
         "ticker": "ASTS",
         "mentions": 10,
@@ -158,19 +175,6 @@
           "bullish": 7,
           "bearish": 0,
           "neutral": 3,
-          "total": 10
-        }
-      },
-      {
-        "ticker": "OKLO",
-        "mentions": 10,
-        "sentiment_score": 0.47,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 47,
-        "counts": {
-          "bullish": 6,
-          "bearish": 0,
-          "neutral": 4,
           "total": 10
         }
       },
@@ -189,28 +193,28 @@
       },
       {
         "ticker": "TSLA",
-        "mentions": 7,
-        "sentiment_score": 0.636,
+        "mentions": 8,
+        "sentiment_score": 0.556,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 64,
+        "sentiment_pct": 56,
         "counts": {
           "bullish": 6,
           "bearish": 0,
-          "neutral": 1,
-          "total": 7
+          "neutral": 2,
+          "total": 8
         }
       },
       {
-        "ticker": "META",
-        "mentions": 5,
-        "sentiment_score": 0.29,
+        "ticker": "NVDA",
+        "mentions": 6,
+        "sentiment_score": 0.233,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 29,
+        "sentiment_pct": 23,
         "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 5
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 6
         }
       }
     ]
@@ -218,7 +222,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.78,
+    "vix": 15.81,
     "pc_ratio": 0.89,
     "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
