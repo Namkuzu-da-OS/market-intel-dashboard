@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-04T23:00:22.546Z",
+  "timestamp": "2025-12-05T01:01:31.600Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 78,
+    "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 71,
+        "bullish": 78,
         "bearish": 21,
-        "neutral": 95,
-        "total": 187,
-        "pct": 38
+        "neutral": 103,
+        "total": 202,
+        "pct": 39
       },
       "news": {
         "bullish": 22,
         "bearish": 7,
-        "neutral": 13,
-        "total": 42,
-        "pct": 52
+        "neutral": 14,
+        "total": 43,
+        "pct": 51
       },
       "video": {
         "bullish": 11,
         "bearish": 1,
-        "neutral": 3,
-        "total": 15,
-        "pct": 73
+        "neutral": 4,
+        "total": 16,
+        "pct": 69
       },
       "chat": {
         "bullish": 1,
@@ -36,31 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market shows a high‑conviction bullish stance driven by AI/crypto momentum and a key SPY call‑wall breakout.⚡ **Catalysts:** SPY 685 call‑wall (target 700), OKLO equity program lift, CRDO all‑time high, upcoming AI/crypto catalysts (Trump speech, Gemini rollout, H100 launch).🎯 **Action:** If SPY breaks 685, target 700; exit 720. If CRDO breaks all‑time high, consider taking profit at the next resistance.",
+    "narrative": "📊 **Consensus:** High - The market is expected to trend upward driven by tech and AI catalysts, with a moderate risk of short‑term volatility around key structural levels.\n\n⚡ **Catalysts:** TSLA $500 target $1,000, BTC $96,000 diagonal resistance, SPY call wall at 685/700, Nvidia H100 launch, Ethereum lower‑fee upgrade.\n\n🎯 **Action:** If SPY breaks 685 call wall, target 700; If TSLA breaks $500, target $1,000; If BTC falls below $96,000, watch for further decline.",
     "key_tickers": [
+      "TSLA",
+      "NVDA",
+      "BTC",
       "SPY",
-      "OKLO",
-      "CRDO"
+      "OKLO"
     ],
     "key_themes": [
-      "AI & crypto rally",
-      "SPY call‑wall breakout",
-      "Earnings cycle momentum"
+      "AI & tech integration",
+      "Crypto infrastructure upgrades",
+      "Fed policy milestones",
+      "Structural call wall dynamics",
+      "Volatility around key catalysts"
     ],
     "risk_factors": [
-      "Regulatory risk (EU fines, Fed repo collapse)",
-      "Liquidity risk",
-      "Potential reversal if SPY fails 685 call‑wall"
+      "Quantum computing threats to crypto",
+      "Leveraged crypto debt defaults",
+      "Stablecoin liquidity crisis",
+      "SPY call wall breach",
+      "TSLA price decline"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 685 call‑wall resistance, target 700",
+    "intraday_levels": "SPY 685 support, 700 resistance; TSLA 500 support",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 700 target; watch 685 call‑wall breakout",
+    "swing_levels": "SPY 685 support, 700 resistance; TSLA 500 support; BTC 96k resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 94592
+    "generation_time_ms": 103475
   },
   "trending": {
     "macro": [
@@ -130,33 +136,20 @@
           "neutral": 2,
           "total": 2
         }
-      },
-      {
-        "ticker": "SOL",
-        "mentions": 1,
-        "sentiment_score": 0.75,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 9,
-        "sentiment_score": 0.589,
+        "mentions": 10,
+        "sentiment_score": 0.61,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 59,
+        "sentiment_pct": 61,
         "counts": {
-          "bullish": 7,
+          "bullish": 8,
           "bearish": 0,
           "neutral": 2,
-          "total": 9
+          "total": 10
         }
       },
       {
@@ -199,16 +192,16 @@
         }
       },
       {
-        "ticker": "RKLB",
-        "mentions": 4,
-        "sentiment_score": 0.363,
+        "ticker": "NVDA",
+        "mentions": 6,
+        "sentiment_score": 0.233,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 23,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 2,
-          "total": 4
+          "neutral": 4,
+          "total": 6
         }
       }
     ]
@@ -218,7 +211,7 @@
     "color": "text-muted",
     "vix": 15.78,
     "pc_ratio": 0.89,
-    "sentiment_bullish_pct": 38,
+    "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
