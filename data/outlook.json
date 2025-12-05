@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-05T05:58:23.470Z",
+  "timestamp": "2025-12-05T06:40:28.555Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 103,
+        "bullish": 104,
         "bearish": 22,
         "neutral": 122,
-        "total": 247,
+        "total": 248,
         "pct": 42
       },
       "news": {
-        "bullish": 23,
+        "bullish": 22,
         "bearish": 8,
         "neutral": 12,
-        "total": 43,
-        "pct": 53
+        "total": 42,
+        "pct": 52
       },
       "video": {
         "bullish": 7,
@@ -36,35 +36,32 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** High conviction bullish outlook as hard‑theme names, earnings momentum, and crypto developments drive upside.\n\n⚡ **Catalysts:** Hard‑theme earnings (OKLO, NQ, RKLB, AAPL, AMZN, TSLA), first commercial in‑orbit H100 launch, crypto regulatory announcements (BTC, ETH), Oracle 50‑week trendline, potential Fed rate cuts.\n\n🎯 **Action:** If OKLO rallies 5% from current, target 10% upside; if Oracle holds above its 50‑week line, target next resistance; if BTC gains 10% from current, target 15% upside.",
+    "narrative": "📊 **Consensus:** The market is leaning bullish with high conviction, driven by upcoming earnings, Fed policy, and AI‑chip momentum. ⚡ **Catalysts:** Upcoming earnings from Ulta (ULT), Salesforce (CRM), Microsoft (MSFT), and Meta (META) will test the rally; Fed’s December rate cut and the AI‑chip IPO are key drivers. 🎯 **Action:** If SPY breaks 667 resistance, target N/A",
     "key_tickers": [
-      "OKLO",
-      "NQ",
-      "RKLB",
-      "ORCL",
-      "AAPL"
+      "META",
+      "ULT",
+      "CRM",
+      "MSFT"
     ],
     "key_themes": [
-      "hard‑theme rotation",
-      "earnings‑driven volatility",
-      "crypto regulatory developments"
+      "High‑growth tech rotation",
+      "AI and crypto integration",
+      "Regulatory scrutiny and policy shifts"
     ],
     "risk_factors": [
-      "regulatory uncertainty",
-      "earnings volatility",
-      "potential rate cuts",
-      "crypto volatility",
-      "short‑squeeze risk"
+      "Earnings volatility",
+      "Regulatory fines and probes",
+      "Liquidity tightening (Fed reverse repo)"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 88212
+    "generation_time_ms": 127867
   },
   "trending": {
     "macro": [
