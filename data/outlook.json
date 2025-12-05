@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T20:00:59.300Z",
+  "timestamp": "2025-12-05T20:57:35.473Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 113,
-        "bearish": 26,
+        "bullish": 116,
+        "bearish": 27,
         "neutral": 143,
-        "total": 282,
-        "pct": 40
+        "total": 286,
+        "pct": 41
       },
       "news": {
-        "bullish": 15,
+        "bullish": 14,
         "bearish": 11,
-        "neutral": 18,
-        "total": 44,
-        "pct": 34
+        "neutral": 17,
+        "total": 42,
+        "pct": 33
       },
       "video": {
-        "bullish": 7,
+        "bullish": 8,
         "bearish": 3,
         "neutral": 3,
-        "total": 13,
-        "pct": 54
+        "total": 14,
+        "pct": 57
       },
       "chat": {
         "bullish": 0,
@@ -36,49 +36,47 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, Crypto uncertainty, Earnings volatility\n\n📊 **Levels:** S&P 500 futures support at 6868‑6877; targets 6889, 6903, 6910, 6918; Meta 3018‑3022 resistance for ETH; Bitcoin $50,000 hedge point; S&P 500 risk level around $5,000",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, hard‑theme sector rally, rate‑cut environment\n\n📉 **Levels:** S&P 500 futures support at 6877, target 6903, pivots at 6868, 6889, 6918, 6931",
     "key_tickers": [
-      "SPY",
       "META",
-      "BTC",
-      "ETH",
+      "DBRG",
+      "JPM",
+      "RDDT",
       "TSLA"
     ],
     "key_themes": [
       "AI momentum",
-      "Crypto uncertainty",
-      "Earnings volatility"
+      "hard‑theme sector rally",
+      "rate‑cut environment"
     ],
     "risk_factors": [
-      "Crypto regulatory risk",
-      "Earnings volatility",
-      "Tech overvaluation",
-      "Geopolitical/regulatory risks",
-      "Market risk"
+      "Regulatory uncertainty in crypto",
+      "Earnings miss risk for high‑growth tech",
+      "Potential earnings volatility in hard‑theme sectors"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "Support 6868‑6877, Resistance 6889‑6918",
+    "intraday_levels": "S&P 500 futures support 6877, resistance 6903",
     "swing_bias": "BULLISH",
-    "swing_levels": "Support 6868‑6877, Resistance 6889‑6918; Bitcoin $50,000 hedge point",
+    "swing_levels": "S&P 500 support 6877, resistance 6903, pivots 6868, 6889, 6918, 6931",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 103023
+    "generation_time_ms": 104054
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 7,
-        "sentiment_score": 0.343,
+        "mentions": 6,
+        "sentiment_score": 0.267,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 34,
+        "sentiment_pct": 27,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 4,
-          "total": 7
+          "total": 6
         }
       },
       {
@@ -97,6 +95,19 @@
     ],
     "crypto": [
       {
+        "ticker": "BTC",
+        "mentions": 5,
+        "sentiment_score": 0.35,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 35,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 5
+        }
+      },
+      {
         "ticker": "MSTR",
         "mentions": 5,
         "sentiment_score": 0.28,
@@ -107,19 +118,6 @@
           "bearish": 0,
           "neutral": 3,
           "total": 5
-        }
-      },
-      {
-        "ticker": "BTC",
-        "mentions": 4,
-        "sentiment_score": 0.238,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 24,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 4
         }
       },
       {
@@ -152,15 +150,15 @@
     "other": [
       {
         "ticker": "NFLX",
-        "mentions": 13,
-        "sentiment_score": 0.408,
+        "mentions": 14,
+        "sentiment_score": 0.432,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 41,
+        "sentiment_pct": 43,
         "counts": {
-          "bullish": 7,
+          "bullish": 8,
           "bearish": 0,
           "neutral": 6,
-          "total": 13
+          "total": 14
         }
       },
       {
@@ -204,15 +202,15 @@
       },
       {
         "ticker": "META",
-        "mentions": 6,
-        "sentiment_score": 0.233,
+        "mentions": 7,
+        "sentiment_score": 0.307,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 23,
+        "sentiment_pct": 31,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 1,
           "neutral": 2,
-          "total": 6
+          "total": 7
         }
       }
     ]
@@ -220,17 +218,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.51,
+    "vix": 15.42,
     "pc_ratio": 1.05,
-    "sentiment_bullish_pct": 40,
+    "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 9,
-    "hv": 13.15,
-    "spread": -0.4,
+    "iv_rank": 9.07,
+    "hv": 13.14,
+    "spread": -0.37,
     "position": 20
   },
   "action": {
