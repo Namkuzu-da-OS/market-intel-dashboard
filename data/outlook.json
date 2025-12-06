@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-06T17:07:51.257Z",
+  "timestamp": "2025-12-06T17:45:32.192Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 71,
     "sources": {
       "social": {
-        "bullish": 53,
-        "bearish": 24,
-        "neutral": 84,
-        "total": 161,
-        "pct": 33
+        "bullish": 51,
+        "bearish": 23,
+        "neutral": 88,
+        "total": 162,
+        "pct": 31
       },
       "news": {
-        "bullish": 8,
+        "bullish": 7,
         "bearish": 3,
-        "neutral": 11,
-        "total": 22,
-        "pct": 36
+        "neutral": 8,
+        "total": 18,
+        "pct": 39
       },
       "video": {
         "bullish": 9,
@@ -36,34 +36,32 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction, driven by AI momentum, rate cut expectations, and growth in renewable and small‑mid‑cap sectors.  \n📈 **Themes:** AI productivity gains, easing rate environment, and regulatory uncertainty around crypto/DeFi.  \n🎯 **Levels:** BTC $80,000 breakout; ES_F 6847 support, 6855‑6859 resistance, 6903/6931/6963/7000 potential; TSLA weekly candle above volume shelf.",
+    "narrative": "📊 **Consensus:** Bullish sentiment with high conviction.\n\n📈 **Themes:** AI momentum, rate policy uncertainty, DeFi regulatory risk.\n\n🎯 **Levels:** BTC $80k support; No explicit levels for equities from sources.",
     "key_tickers": [
-      "BTC",
-      "TSLA",
-      "QQQ",
-      "ES_F"
+      "NVDA",
+      "MSFT",
+      "AAPL",
+      "BTC"
     ],
     "key_themes": [
       "AI momentum",
-      "Rate cut expectations",
-      "Crypto/DeFi regulatory uncertainty",
-      "Renewable energy growth",
-      "Small‑mid‑cap cycle"
+      "rate policy uncertainty",
+      "DeFi regulatory risk"
     ],
     "risk_factors": [
-      "Regulatory pressure on DeFi",
-      "Potential BTC dump causing volatility",
-      "Market volatility due to crypto regulatory changes"
+      "DeFi regulatory headwinds",
+      "valuation concerns in high‑growth sectors",
+      "macro headwinds such as job data and cost of living"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "ES_F 6847 support, 6855‑6859 resistance; BTC $80,000 breakout; TSLA weekly candle above volume shelf.",
+    "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "ES_F 6903/6931/6963/7000 potential levels; TSLA weekly candle above volume shelf; BTC $80,000 breakout.",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 90314
+    "generation_time_ms": 94353
   },
   "trending": {
     "macro": [
@@ -195,7 +193,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 33,
+    "sentiment_bullish_pct": 31,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
