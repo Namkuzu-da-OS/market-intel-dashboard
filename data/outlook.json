@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-06T15:38:14.600Z",
+  "timestamp": "2025-12-06T16:20:48.373Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 70,
+    "confidence_pct": 71,
     "sources": {
       "social": {
-        "bullish": 55,
+        "bullish": 58,
         "bearish": 26,
-        "neutral": 92,
-        "total": 173,
+        "neutral": 99,
+        "total": 183,
         "pct": 32
       },
       "news": {
-        "bullish": 10,
+        "bullish": 11,
         "bearish": 6,
-        "neutral": 12,
-        "total": 28,
-        "pct": 36
+        "neutral": 14,
+        "total": 31,
+        "pct": 35
       },
       "video": {
         "bullish": 10,
@@ -36,31 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish, high conviction\n\n📈 **Themes:** AI momentum, low‑carbon transition, fintech/crypto resilience\n\n🎯 **Levels:** ES_F breakout at 6855‑59, 7000 upside target, stop below 6847; TSLA near volume shelf levels",
+    "narrative": "📊 **Consensus:** Bullish, high conviction\n\n📈 **Themes:** AI momentum, renewable energy, crypto/DeFi\n\n📉 **Levels:** ES_F 6855‑59 target, 6903/6931 range, 6847 support; BTC $80k breakout",
     "key_tickers": [
-      "ES_F",
       "TSLA",
-      "BTC"
+      "QQQ",
+      "BTC",
+      "RDDT"
     ],
     "key_themes": [
       "AI momentum",
-      "low‑carbon transition",
-      "fintech/crypto resilience"
+      "renewable energy",
+      "crypto/DeFi",
+      "biotech",
+      "aerospace launch services"
     ],
     "risk_factors": [
-      "regulatory tightening",
-      "geopolitical tensions",
-      "macro volatility"
+      "regulatory uncertainty for crypto exchanges",
+      "tightening banking capital rules",
+      "geopolitical risk‑off sentiment",
+      "supply‑chain fragility",
+      "macro policy uncertainty"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "ES_F 6855 breakout, 7000 upside, stop 6847; TSLA near shelf levels",
+    "intraday_levels": "ES_F 6847 support, 6855‑59 target; BTC $80k breakout",
     "swing_bias": "BULLISH",
-    "swing_levels": "ES_F 6855 breakout, 7000 upside; TSLA near shelf levels",
+    "swing_levels": "ES_F 6855‑59 target, 6903/6931 range; BTC $80k breakout",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 108195
+    "generation_time_ms": 102480
   },
   "trending": {
     "macro": [
@@ -160,6 +165,19 @@
         }
       },
       {
+        "ticker": "RDDT",
+        "mentions": 3,
+        "sentiment_score": 0.533,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 53,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
         "ticker": "ZEC",
         "mentions": 2,
         "sentiment_score": 0.75,
@@ -169,19 +187,6 @@
           "bullish": 2,
           "bearish": 0,
           "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "CVNA",
-        "mentions": 2,
-        "sentiment_score": 0.4,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
           "total": 2
         }
       }
