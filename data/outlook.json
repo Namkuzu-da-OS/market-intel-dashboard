@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-06T17:45:32.192Z",
+  "timestamp": "2025-12-06T18:34:45.789Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 71,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 51,
-        "bearish": 23,
-        "neutral": 88,
-        "total": 162,
-        "pct": 31
+        "bullish": 55,
+        "bearish": 22,
+        "neutral": 91,
+        "total": 168,
+        "pct": 33
       },
       "news": {
         "bullish": 7,
@@ -36,24 +36,25 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment with high conviction.\n\n📈 **Themes:** AI momentum, rate policy uncertainty, DeFi regulatory risk.\n\n🎯 **Levels:** BTC $80k support; No explicit levels for equities from sources.",
+    "narrative": "📊 **Consensus:** Cautiously bullish with high conviction.\n\n📈 **Themes:** AI momentum, renewable energy demand, hard‑theme sectors, crypto regulatory clarity, rate policy uncertainty.\n\n🎯 **Levels:** No explicit levels from sources",
     "key_tickers": [
       "NVDA",
-      "MSFT",
-      "AAPL",
-      "BTC"
+      "TSLA",
+      "AAPL"
     ],
     "key_themes": [
       "AI momentum",
-      "rate policy uncertainty",
-      "DeFi regulatory risk"
+      "renewable energy demand",
+      "hard‑theme sectors",
+      "crypto regulatory clarity",
+      "rate policy uncertainty"
     ],
     "risk_factors": [
-      "DeFi regulatory headwinds",
-      "valuation concerns in high‑growth sectors",
-      "macro headwinds such as job data and cost of living"
+      "regulatory tightening",
+      "geopolitical risk",
+      "labor market deterioration"
     ],
-    "intraday_bias": "BULLISH",
+    "intraday_bias": "NEUTRAL",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
@@ -61,21 +62,21 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 94353
+    "generation_time_ms": 87981
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
-        "sentiment_score": 0.46,
+        "mentions": 3,
+        "sentiment_score": 0.5,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 46,
+        "sentiment_pct": 50,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
-          "neutral": 2,
-          "total": 5
+          "neutral": 1,
+          "total": 3
         }
       },
       {
@@ -123,15 +124,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 5,
-        "sentiment_score": 0.46,
+        "mentions": 6,
+        "sentiment_score": 0.517,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 46,
+        "sentiment_pct": 52,
         "counts": {
-          "bullish": 4,
+          "bullish": 5,
           "bearish": 1,
           "neutral": 0,
-          "total": 5
+          "total": 6
         }
       },
       {
@@ -148,16 +149,29 @@
         }
       },
       {
-        "ticker": "NFLX",
-        "mentions": 4,
-        "sentiment_score": 0.388,
+        "ticker": "RIVN",
+        "mentions": 3,
+        "sentiment_score": 0.767,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
+        "sentiment_pct": 77,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "NFLX",
+        "mentions": 3,
+        "sentiment_score": 0.517,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 52,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 2,
-          "total": 4
+          "neutral": 1,
+          "total": 3
         }
       },
       {
@@ -172,19 +186,6 @@
           "neutral": 0,
           "total": 2
         }
-      },
-      {
-        "ticker": "ASTS",
-        "mentions": 2,
-        "sentiment_score": 0.75,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
       }
     ]
   },
@@ -193,7 +194,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 31,
+    "sentiment_bullish_pct": 33,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
