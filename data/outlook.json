@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-06T14:16:10.939Z",
+  "timestamp": "2025-12-06T14:55:29.447Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 48,
-        "bearish": 24,
-        "neutral": 83,
-        "total": 155,
+        "bullish": 49,
+        "bearish": 25,
+        "neutral": 86,
+        "total": 160,
         "pct": 31
       },
       "news": {
@@ -36,34 +36,33 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates across high‑weight sources with high conviction.\n\n📈 **Themes:** AI momentum, renewable energy growth, crypto infrastructure expansion, rate‑cut expectations, and a broad‑based technology rally.\n\n📊 **Levels:** No explicit levels from sources",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, crypto adoption, tech growth infrastructure\n\n🎯 **Levels:** ETH 3018-3022 zone",
     "key_tickers": [
-      "SPY",
-      "QQQ",
-      "ETH"
+      "ETH",
+      "AI",
+      "Tech"
     ],
     "key_themes": [
       "AI momentum",
-      "Renewable energy",
-      "Crypto infrastructure",
-      "Rate cut expectations",
-      "Growth sector rally"
+      "crypto adoption",
+      "tech growth infrastructure"
     ],
     "risk_factors": [
-      "DeFi fragility",
-      "Political backlash",
-      "High‑income wage stagnation",
-      "Policy uncertainty"
+      "regulatory risk",
+      "AI cash burn concerns",
+      "crypto sell-offs",
+      "rate cut pause",
+      "labor market softness"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "Watch for breakout/breakdown",
+    "intraday_levels": "ETH 3018 support, 3022 resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
+    "swing_levels": "ETH 3018-3022 zone",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 95921
+    "generation_time_ms": 109736
   },
   "trending": {
     "macro": [
