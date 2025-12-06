@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-06T04:19:11.464Z",
+  "timestamp": "2025-12-06T05:07:41.481Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 70,
+    "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 85,
-        "bearish": 35,
-        "neutral": 117,
-        "total": 237,
-        "pct": 36
+        "bullish": 79,
+        "bearish": 34,
+        "neutral": 111,
+        "total": 224,
+        "pct": 35
       },
       "news": {
         "bullish": 13,
@@ -36,36 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with medium-high conviction.\n\n📈 **Themes:** AI momentum, rate cut expectations, regulatory clarity, clean‑tech growth, market volatility\n\n🎯 **Levels:** SPY 685 support, ES_F 6847 level, SPY 6903 resistance, 6918 target, 6931+ target",
+    "narrative": "📊 **Consensus:** Bullish with high conviction. \n\n📈 **Themes:** AI momentum, renewable energy cost curves, launch economics, crypto institutional participation, regulatory clarity.\n\n🎯 **Levels:** No explicit levels from sources",
     "key_tickers": [
       "SPY",
-      "ES_F",
-      "META",
-      "UBER"
+      "QQQ",
+      "ETH",
+      "BTC",
+      "META"
     ],
     "key_themes": [
       "AI momentum",
-      "rate cut expectations",
-      "regulatory clarity",
-      "clean‑tech growth",
-      "market volatility"
+      "Renewable energy cost curves",
+      "Launch economics",
+      "Crypto institutional participation",
+      "Regulatory clarity"
     ],
     "risk_factors": [
-      "legal risk for crypto",
-      "liquidity risk",
-      "regulatory tightening",
-      "geopolitical tensions",
-      "market volatility"
+      "Legal risk from class-action lawsuits",
+      "Macro uncertainty",
+      "Market volatility",
+      "Crypto regulatory tightening"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 685 support, SPY 6903 resistance",
+    "intraday_levels": "Testing resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 6903, 6918, 6931+",
+    "swing_levels": "Testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 99739
+    "generation_time_ms": 88476
   },
   "trending": {
     "macro": [
@@ -86,41 +86,41 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 6,
-        "sentiment_score": 0.192,
+        "mentions": 5,
+        "sentiment_score": 0.2,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
+        "sentiment_pct": 20,
         "counts": {
           "bullish": 2,
           "bearish": 1,
-          "neutral": 3,
-          "total": 6
+          "neutral": 2,
+          "total": 5
         }
       },
       {
         "ticker": "ETH",
-        "mentions": 3,
-        "sentiment_score": 0.567,
+        "mentions": 2,
+        "sentiment_score": 0.775,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
+        "sentiment_pct": 78,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 1,
-          "total": 3
+          "neutral": 0,
+          "total": 2
         }
       },
       {
         "ticker": "MSTR",
-        "mentions": 3,
-        "sentiment_score": 0.25,
+        "mentions": 2,
+        "sentiment_score": 0.375,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 25,
+        "sentiment_pct": 38,
         "counts": {
           "bullish": 1,
           "bearish": 0,
-          "neutral": 2,
-          "total": 3
+          "neutral": 1,
+          "total": 2
         }
       },
       {
@@ -191,15 +191,15 @@
         }
       },
       {
-        "ticker": "OKLO",
+        "ticker": "TSLA",
         "mentions": 5,
-        "sentiment_score": 0.47,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 47,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 2,
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 3,
           "total": 5
         }
       }
@@ -210,7 +210,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 35,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
