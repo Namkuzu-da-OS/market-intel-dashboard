@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-06T05:07:41.481Z",
+  "timestamp": "2025-12-06T07:46:23.643Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 69,
+    "confidence_pct": 70,
     "sources": {
       "social": {
-        "bullish": 79,
-        "bearish": 34,
-        "neutral": 111,
-        "total": 224,
-        "pct": 35
+        "bullish": 81,
+        "bearish": 32,
+        "neutral": 108,
+        "total": 221,
+        "pct": 37
       },
       "news": {
-        "bullish": 13,
+        "bullish": 12,
         "bearish": 10,
         "neutral": 13,
-        "total": 36,
-        "pct": 36
+        "total": 35,
+        "pct": 34
       },
       "video": {
         "bullish": 11,
@@ -36,36 +36,30 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction. \n\n📈 **Themes:** AI momentum, renewable energy cost curves, launch economics, crypto institutional participation, regulatory clarity.\n\n🎯 **Levels:** No explicit levels from sources",
+    "narrative": "📊 **Consensus:** Bullish sentiment with high conviction\n\n📈 **Themes:** AI momentum, crypto adoption, semiconductor expansion\n\n🎯 **Levels:** ES_F 6903 target, ETH 3018‑3022 support zone",
     "key_tickers": [
-      "SPY",
-      "QQQ",
-      "ETH",
-      "BTC",
-      "META"
+      "ES_F",
+      "ETH"
     ],
     "key_themes": [
       "AI momentum",
-      "Renewable energy cost curves",
-      "Launch economics",
-      "Crypto institutional participation",
-      "Regulatory clarity"
+      "Crypto adoption",
+      "Semiconductor expansion"
     ],
     "risk_factors": [
-      "Legal risk from class-action lawsuits",
-      "Macro uncertainty",
-      "Market volatility",
-      "Crypto regulatory tightening"
+      "Crypto regulatory risk",
+      "Valuation concerns in tech",
+      "Macro softness"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "Testing resistance",
+    "intraday_levels": "ES_F 6903, ETH 3018‑3022",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
+    "swing_levels": "ES_F 6903, ETH 3018‑3022",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 88476
+    "generation_time_ms": 105515
   },
   "trending": {
     "macro": [
@@ -210,7 +204,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
