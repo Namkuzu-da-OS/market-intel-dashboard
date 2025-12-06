@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-06T03:36:34.788Z",
+  "timestamp": "2025-12-06T04:19:11.464Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 72,
+    "confidence_pct": 70,
     "sources": {
       "social": {
-        "bullish": 87,
-        "bearish": 32,
-        "neutral": 119,
-        "total": 238,
-        "pct": 37
+        "bullish": 85,
+        "bearish": 35,
+        "neutral": 117,
+        "total": 237,
+        "pct": 36
       },
       "news": {
-        "bullish": 14,
+        "bullish": 13,
         "bearish": 10,
         "neutral": 13,
-        "total": 37,
-        "pct": 38
+        "total": 36,
+        "pct": 36
       },
       "video": {
         "bullish": 11,
@@ -36,45 +36,50 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment with high conviction.\n\n📈 **Themes:** AI productivity momentum, expectations of monetary easing, regulatory clarity for digital assets.\n\n🎯 **Levels:** S&P 500 support at 6,847; near‑term target 6,903–6,918; SPY support at 685.",
+    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with medium-high conviction.\n\n📈 **Themes:** AI momentum, rate cut expectations, regulatory clarity, clean‑tech growth, market volatility\n\n🎯 **Levels:** SPY 685 support, ES_F 6847 level, SPY 6903 resistance, 6918 target, 6931+ target",
     "key_tickers": [
       "SPY",
-      "QQQ",
-      "BTC"
+      "ES_F",
+      "META",
+      "UBER"
     ],
     "key_themes": [
       "AI momentum",
-      "monetary easing expectations",
-      "regulatory clarity"
+      "rate cut expectations",
+      "regulatory clarity",
+      "clean‑tech growth",
+      "market volatility"
     ],
     "risk_factors": [
-      "crypto liquidity risk",
-      "regulatory/legal uncertainty",
-      "potential monetary tightening"
+      "legal risk for crypto",
+      "liquidity risk",
+      "regulatory tightening",
+      "geopolitical tensions",
+      "market volatility"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY 685 support",
+    "intraday_levels": "SPY 685 support, SPY 6903 resistance",
     "swing_bias": "BULLISH",
-    "swing_levels": "S&P 500 6,847 support; near‑term target 6,903–6,918",
+    "swing_levels": "SPY 6903, 6918, 6931+",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 89029
+    "generation_time_ms": 99739
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
-        "sentiment_score": 0.32,
+        "mentions": 4,
+        "sentiment_score": 0.4,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 40,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 3,
-          "total": 5
+          "neutral": 2,
+          "total": 4
         }
       }
     ],
@@ -135,28 +140,28 @@
     "other": [
       {
         "ticker": "NFLX",
-        "mentions": 14,
-        "sentiment_score": 0.432,
+        "mentions": 15,
+        "sentiment_score": 0.457,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
+        "sentiment_pct": 46,
         "counts": {
-          "bullish": 8,
+          "bullish": 9,
           "bearish": 0,
           "neutral": 6,
-          "total": 14
+          "total": 15
         }
       },
       {
         "ticker": "WBD",
-        "mentions": 8,
-        "sentiment_score": 0.575,
+        "mentions": 7,
+        "sentiment_score": 0.657,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
+        "sentiment_pct": 66,
         "counts": {
           "bullish": 6,
           "bearish": 0,
-          "neutral": 2,
-          "total": 8
+          "neutral": 1,
+          "total": 7
         }
       },
       {
@@ -173,6 +178,19 @@
         }
       },
       {
+        "ticker": "META",
+        "mentions": 6,
+        "sentiment_score": 0.25,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 25,
+        "counts": {
+          "bullish": 3,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 6
+        }
+      },
+      {
         "ticker": "OKLO",
         "mentions": 5,
         "sentiment_score": 0.47,
@@ -184,19 +202,6 @@
           "neutral": 2,
           "total": 5
         }
-      },
-      {
-        "ticker": "META",
-        "mentions": 5,
-        "sentiment_score": 0.3,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 30,
-        "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 5
-        }
       }
     ]
   },
@@ -205,7 +210,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 37,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
