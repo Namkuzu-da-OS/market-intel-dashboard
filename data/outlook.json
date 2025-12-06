@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-06T13:35:18.888Z",
+  "timestamp": "2025-12-06T14:16:10.939Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 61,
+        "bullish": 48,
         "bearish": 24,
-        "neutral": 95,
-        "total": 180,
-        "pct": 34
+        "neutral": 83,
+        "total": 155,
+        "pct": 31
       },
       "news": {
-        "bullish": 9,
-        "bearish": 4,
-        "neutral": 11,
-        "total": 24,
-        "pct": 38
+        "bullish": 10,
+        "bearish": 6,
+        "neutral": 12,
+        "total": 28,
+        "pct": 36
       },
       "video": {
         "bullish": 10,
-        "bearish": 1,
+        "bearish": 0,
         "neutral": 3,
-        "total": 14,
-        "pct": 71
+        "total": 13,
+        "pct": 77
       },
       "chat": {
         "bullish": 0,
@@ -36,50 +36,48 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, crypto adoption, productivity‑driven inflation easing, renewable energy, infrastructure expansion\n\n🎯 **Levels:** ETH $3,018 support",
+    "narrative": "📊 **Consensus:** Bullish sentiment dominates across high‑weight sources with high conviction.\n\n📈 **Themes:** AI momentum, renewable energy growth, crypto infrastructure expansion, rate‑cut expectations, and a broad‑based technology rally.\n\n📊 **Levels:** No explicit levels from sources",
     "key_tickers": [
-      "RIVN",
-      "TSLA",
       "SPY",
+      "QQQ",
       "ETH"
     ],
     "key_themes": [
       "AI momentum",
-      "Crypto adoption",
-      "Productivity‑driven inflation easing",
       "Renewable energy",
-      "Infrastructure expansion"
+      "Crypto infrastructure",
+      "Rate cut expectations",
+      "Growth sector rally"
     ],
     "risk_factors": [
-      "Overvaluation concerns",
-      "Crypto market fragility",
-      "Regulatory uncertainty",
-      "Market volatility",
-      "Potential pullback if ETH breaches $3,018"
+      "DeFi fragility",
+      "Political backlash",
+      "High‑income wage stagnation",
+      "Policy uncertainty"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "ETH $3,018 support; SPY Watch for breakout/breakdown",
+    "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "ETH $3,018 support; SPY Watch for breakout/breakdown",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 92063
+    "generation_time_ms": 95921
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
-        "sentiment_score": 0.32,
+        "mentions": 4,
+        "sentiment_score": 0.4,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 40,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 3,
-          "total": 5
+          "neutral": 2,
+          "total": 4
         }
       }
     ],
@@ -114,67 +112,67 @@
     "other": [
       {
         "ticker": "NFLX",
-        "mentions": 10,
-        "sentiment_score": 0.465,
+        "mentions": 5,
+        "sentiment_score": 0.45,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 47,
+        "sentiment_pct": 45,
         "counts": {
-          "bullish": 6,
+          "bullish": 3,
           "bearish": 0,
-          "neutral": 4,
-          "total": 10
+          "neutral": 2,
+          "total": 5
         }
       },
       {
         "ticker": "META",
-        "mentions": 6,
-        "sentiment_score": 0.25,
+        "mentions": 5,
+        "sentiment_score": 0.3,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 25,
+        "sentiment_pct": 30,
         "counts": {
           "bullish": 3,
           "bearish": 1,
-          "neutral": 2,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "WBD",
-        "mentions": 5,
-        "sentiment_score": 0.62,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 62,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
           "neutral": 1,
           "total": 5
         }
       },
       {
         "ticker": "TSLA",
-        "mentions": 5,
-        "sentiment_score": 0.16,
+        "mentions": 3,
+        "sentiment_score": 0.267,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 16,
+        "sentiment_pct": 27,
         "counts": {
           "bullish": 2,
           "bearish": 1,
-          "neutral": 2,
-          "total": 5
+          "neutral": 0,
+          "total": 3
         }
       },
       {
-        "ticker": "SPX",
-        "mentions": 3,
-        "sentiment_score": 0.5,
+        "ticker": "ZEC",
+        "mentions": 2,
+        "sentiment_score": 0.75,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
+        "sentiment_pct": 75,
         "counts": {
           "bullish": 2,
           "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "CVNA",
+        "mentions": 2,
+        "sentiment_score": 0.4,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
           "neutral": 1,
-          "total": 3
+          "total": 2
         }
       }
     ]
@@ -184,7 +182,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 34,
+    "sentiment_bullish_pct": 31,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
