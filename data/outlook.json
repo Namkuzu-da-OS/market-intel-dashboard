@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-05T20:57:35.473Z",
+  "timestamp": "2025-12-06T02:46:36.867Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 116,
-        "bearish": 27,
-        "neutral": 143,
-        "total": 286,
-        "pct": 41
+        "bullish": 97,
+        "bearish": 26,
+        "neutral": 128,
+        "total": 251,
+        "pct": 39
       },
       "news": {
         "bullish": 14,
-        "bearish": 11,
-        "neutral": 17,
-        "total": 42,
-        "pct": 33
+        "bearish": 10,
+        "neutral": 13,
+        "total": 37,
+        "pct": 38
       },
       "video": {
-        "bullish": 8,
-        "bearish": 3,
+        "bullish": 10,
+        "bearish": 2,
         "neutral": 3,
-        "total": 14,
-        "pct": 57
+        "total": 15,
+        "pct": 67
       },
       "chat": {
         "bullish": 0,
@@ -36,101 +36,86 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI momentum, hard‑theme sector rally, rate‑cut environment\n\n📉 **Levels:** S&P 500 futures support at 6877, target 6903, pivots at 6868, 6889, 6918, 6931",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** AI-driven growth, rate-sensitive sectors, crypto volatility\n\n📊 **Levels:** SPX support at 685, resistance at 6903, SPX 6868‑6877 range, 6903 target, 6918 pivot, BTC $88k ceiling",
     "key_tickers": [
-      "META",
-      "DBRG",
-      "JPM",
-      "RDDT",
-      "TSLA"
+      "SPY",
+      "QQQ",
+      "BTC"
     ],
     "key_themes": [
       "AI momentum",
-      "hard‑theme sector rally",
-      "rate‑cut environment"
+      "rate-sensitive growth",
+      "crypto volatility"
     ],
     "risk_factors": [
-      "Regulatory uncertainty in crypto",
-      "Earnings miss risk for high‑growth tech",
-      "Potential earnings volatility in hard‑theme sectors"
+      "crypto regulatory risk",
+      "earnings surprise risk",
+      "market volatility"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "S&P 500 futures support 6877, resistance 6903",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPX support 685, resistance 6903",
     "swing_bias": "BULLISH",
-    "swing_levels": "S&P 500 support 6877, resistance 6903, pivots 6868, 6889, 6918, 6931",
+    "swing_levels": "SPX 6868-6877 support, 6903 resistance, 6918 pivot",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 104054
+    "generation_time_ms": 95789
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 6,
-        "sentiment_score": 0.267,
+        "mentions": 5,
+        "sentiment_score": 0.32,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
+        "sentiment_pct": 32,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 4,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "IWM",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
+          "neutral": 3,
+          "total": 5
         }
       }
     ],
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
+        "mentions": 6,
+        "sentiment_score": 0.192,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 19,
+        "counts": {
+          "bullish": 2,
+          "bearish": 1,
+          "neutral": 3,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 4,
         "sentiment_score": 0.35,
         "sentiment_label": "Bullish",
         "sentiment_pct": 35,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 3,
-          "total": 5
-        }
-      },
-      {
-        "ticker": "MSTR",
-        "mentions": 5,
-        "sentiment_score": 0.28,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 28,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 5
+          "neutral": 2,
+          "total": 4
         }
       },
       {
         "ticker": "ETH",
-        "mentions": 2,
-        "sentiment_score": 0.475,
+        "mentions": 3,
+        "sentiment_score": 0.567,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
+        "sentiment_pct": 57,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 1,
-          "total": 2
+          "total": 3
         }
       },
       {
@@ -175,42 +160,42 @@
         }
       },
       {
-        "ticker": "OKLO",
-        "mentions": 7,
-        "sentiment_score": 0.564,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 7
-        }
-      },
-      {
         "ticker": "SOFI",
-        "mentions": 7,
-        "sentiment_score": 0.421,
+        "mentions": 6,
+        "sentiment_score": 0.492,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 42,
+        "sentiment_pct": 49,
         "counts": {
           "bullish": 4,
           "bearish": 0,
-          "neutral": 3,
-          "total": 7
+          "neutral": 2,
+          "total": 6
         }
       },
       {
         "ticker": "META",
-        "mentions": 7,
-        "sentiment_score": 0.307,
+        "mentions": 6,
+        "sentiment_score": 0.358,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 31,
+        "sentiment_pct": 36,
         "counts": {
           "bullish": 4,
           "bearish": 1,
-          "neutral": 2,
-          "total": 7
+          "neutral": 1,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 6,
+        "sentiment_score": 0.108,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 11,
+        "counts": {
+          "bullish": 2,
+          "bearish": 1,
+          "neutral": 3,
+          "total": 6
         }
       }
     ]
@@ -218,17 +203,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.42,
-    "pc_ratio": 1.05,
-    "sentiment_bullish_pct": 41,
+    "vix": 15.41,
+    "pc_ratio": 1.03,
+    "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "BUY PROTECTION",
     "color": "text-cyan",
-    "iv_rank": 9.07,
+    "iv_rank": 9.72,
     "hv": 13.14,
-    "spread": -0.37,
+    "spread": -0.15,
     "position": 20
   },
   "action": {
