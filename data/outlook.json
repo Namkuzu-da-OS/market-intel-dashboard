@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-07T03:12:36.378Z",
+  "timestamp": "2025-12-07T03:49:03.906Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 72,
+    "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 46,
-        "bearish": 16,
-        "neutral": 78,
-        "total": 140,
-        "pct": 33
+        "bullish": 47,
+        "bearish": 10,
+        "neutral": 74,
+        "total": 131,
+        "pct": 36
       },
       "news": {
         "bullish": 2,
@@ -20,11 +20,11 @@
         "pct": 25
       },
       "video": {
-        "bullish": 4,
+        "bullish": 3,
         "bearish": 2,
         "neutral": 0,
-        "total": 6,
-        "pct": 67
+        "total": 5,
+        "pct": 60
       },
       "chat": {
         "bullish": 0,
@@ -36,27 +36,26 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish, high confidence\n\n📈 **Themes:** Crypto & DeFi regulatory clarity, High‑growth technology expansion, AI‑driven growth\n\n🎯 **Levels:** S&P 500 $4,800 (2026 target), Bitcoin $80 k retest",
+    "narrative": "📊 **Consensus:** Overall bullish sentiment with high conviction.\n\n📈 **Themes:** Regulatory clarity driving institutional flows, AI momentum, liquidity dynamics.\n\n🎯 **Levels:** SPY Max Pain $669.00, QQQ Max Pain $625.00",
     "key_tickers": [
-      "SPY",
-      "QQQ",
-      "BTC",
-      "V",
-      "COIN"
+      "OKLO",
+      "IQ",
+      "RL",
+      "BTC"
     ],
     "key_themes": [
-      "Crypto & DeFi regulatory clarity",
-      "High‑growth technology expansion",
-      "AI‑driven growth",
-      "Rate‑cut expectations",
-      "Defensive rotation into safer assets"
+      "Regulatory Clarity",
+      "AI Momentum",
+      "Institutional Adoption",
+      "Liquidity Dynamics",
+      "Sectoral Momentum"
     ],
     "risk_factors": [
-      "Regulatory uncertainty on crypto and DeFi",
-      "Bitcoin fundamental erosion",
-      "High‑yield preference share risk",
-      "Macro data releases volatility",
-      "DeFi liquidity pressure"
+      "Regulatory Uncertainty",
+      "Liquidity Compression",
+      "DeFi Regulatory Backlash",
+      "Overvaluation",
+      "Crypto Correction"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
@@ -66,7 +65,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 89115
+    "generation_time_ms": 70522
   },
   "trending": {
     "macro": [
@@ -185,7 +184,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 33,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
