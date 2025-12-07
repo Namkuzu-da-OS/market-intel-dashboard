@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-07T15:18:14.403Z",
+  "timestamp": "2025-12-07T16:06:37.732Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 83,
+    "confidence_pct": 84,
     "sources": {
       "social": {
         "bullish": 43,
-        "bearish": 8,
-        "neutral": 74,
-        "total": 125,
-        "pct": 34
+        "bearish": 7,
+        "neutral": 71,
+        "total": 121,
+        "pct": 36
       },
       "news": {
         "bullish": 1,
@@ -36,51 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction.\n\n📈 **Themes:** Crypto cycle momentum, Institutional lending & regulatory clarity, Sector rotation into advanced technology, AI‑driven productivity, Rate policy uncertainty\n\n🎯 **Levels:** No explicit levels from sources",
+    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with medium‑high conviction.\n\n📈 **Themes:** Crypto institutional adoption & regulatory clarity, Tech & AI momentum, Consumer technology strength.\n\n🎯 **Levels:** No explicit levels from sources",
     "key_tickers": [
       "BTC",
-      "QQQ",
-      "SPY"
+      "ETH",
+      "BNB"
     ],
     "key_themes": [
-      "Crypto cycle momentum",
-      "Institutional lending & regulatory clarity",
-      "Sector rotation into advanced technology",
-      "AI‑driven productivity",
-      "Rate policy uncertainty"
+      "Crypto institutional adoption & regulatory clarity",
+      "Tech & AI momentum",
+      "Consumer technology strength"
     ],
     "risk_factors": [
-      "Liquidity erosion / preference‑share yields",
-      "Regulatory uncertainty",
-      "Macro risks such as inflation & Fed monetization",
-      "Infrastructure vulnerabilities (e.g., CloudFlare outage)",
-      "Banking sector risk‑off"
+      "MNAV compression",
+      "Preference‑share yield risk",
+      "DeFi regulatory scrutiny",
+      "Infrastructure outage risk",
+      "Geopolitical tension"
     ],
-    "intraday_bias": "BULLISH",
+    "intraday_bias": "NEUTRAL",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 96089
+    "generation_time_ms": 101466
   },
   "trending": {
     "macro": [
-      {
-        "ticker": "QQQ",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
       {
         "ticker": "SPY",
         "mentions": 1,
@@ -98,30 +83,30 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 6,
-        "sentiment_score": 0.367,
+        "mentions": 5,
+        "sentiment_score": 0.6,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 37,
+        "sentiment_pct": 60,
         "counts": {
           "bullish": 4,
-          "bearish": 1,
+          "bearish": 0,
           "neutral": 1,
-          "total": 6
+          "total": 5
         }
       }
     ],
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 4,
-        "sentiment_score": 0.738,
+        "mentions": 3,
+        "sentiment_score": 0.717,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 74,
+        "sentiment_pct": 72,
         "counts": {
-          "bullish": 4,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 0,
-          "total": 4
+          "total": 3
         }
       },
       {
@@ -164,7 +149,7 @@
         }
       },
       {
-        "ticker": "CLPT",
+        "ticker": "LC",
         "mentions": 1,
         "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
@@ -183,7 +168,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 34,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
