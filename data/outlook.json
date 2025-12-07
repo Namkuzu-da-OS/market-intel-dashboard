@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-06T18:34:45.789Z",
+  "timestamp": "2025-12-07T03:12:36.378Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 72,
     "sources": {
       "social": {
-        "bullish": 55,
-        "bearish": 22,
-        "neutral": 91,
-        "total": 168,
+        "bullish": 46,
+        "bearish": 16,
+        "neutral": 78,
+        "total": 140,
         "pct": 33
       },
       "news": {
-        "bullish": 7,
-        "bearish": 3,
-        "neutral": 8,
-        "total": 18,
-        "pct": 39
+        "bullish": 2,
+        "bearish": 2,
+        "neutral": 4,
+        "total": 8,
+        "pct": 25
       },
       "video": {
-        "bullish": 9,
-        "bearish": 1,
-        "neutral": 2,
-        "total": 12,
-        "pct": 75
+        "bullish": 4,
+        "bearish": 2,
+        "neutral": 0,
+        "total": 6,
+        "pct": 67
       },
       "chat": {
         "bullish": 0,
@@ -36,33 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bullish with high conviction.\n\n📈 **Themes:** AI momentum, renewable energy demand, hard‑theme sectors, crypto regulatory clarity, rate policy uncertainty.\n\n🎯 **Levels:** No explicit levels from sources",
+    "narrative": "📊 **Consensus:** Bullish, high confidence\n\n📈 **Themes:** Crypto & DeFi regulatory clarity, High‑growth technology expansion, AI‑driven growth\n\n🎯 **Levels:** S&P 500 $4,800 (2026 target), Bitcoin $80 k retest",
     "key_tickers": [
-      "NVDA",
-      "TSLA",
-      "AAPL"
+      "SPY",
+      "QQQ",
+      "BTC",
+      "V",
+      "COIN"
     ],
     "key_themes": [
-      "AI momentum",
-      "renewable energy demand",
-      "hard‑theme sectors",
-      "crypto regulatory clarity",
-      "rate policy uncertainty"
+      "Crypto & DeFi regulatory clarity",
+      "High‑growth technology expansion",
+      "AI‑driven growth",
+      "Rate‑cut expectations",
+      "Defensive rotation into safer assets"
     ],
     "risk_factors": [
-      "regulatory tightening",
-      "geopolitical risk",
-      "labor market deterioration"
+      "Regulatory uncertainty on crypto and DeFi",
+      "Bitcoin fundamental erosion",
+      "High‑yield preference share risk",
+      "Macro data releases volatility",
+      "DeFi liquidity pressure"
     ],
-    "intraday_bias": "NEUTRAL",
+    "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
+    "swing_levels": "Testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 87981
+    "generation_time_ms": 89115
   },
   "trending": {
     "macro": [
@@ -96,55 +100,29 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 6,
-        "sentiment_score": 0.025,
+        "mentions": 3,
+        "sentiment_score": -0.017,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 3,
-        "counts": {
-          "bullish": 2,
-          "bearish": 2,
-          "neutral": 2,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "ETH",
-        "mentions": 1,
-        "sentiment_score": 0.75,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 2,
         "counts": {
           "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
+          "bearish": 1,
+          "neutral": 1,
+          "total": 3
         }
       }
     ],
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 6,
-        "sentiment_score": 0.517,
+        "mentions": 5,
+        "sentiment_score": 0.75,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 52,
+        "sentiment_pct": 75,
         "counts": {
           "bullish": 5,
-          "bearish": 1,
+          "bearish": 0,
           "neutral": 0,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "META",
-        "mentions": 5,
-        "sentiment_score": 0.3,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 30,
-        "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 1,
           "total": 5
         }
       },
@@ -162,24 +140,37 @@
         }
       },
       {
-        "ticker": "NFLX",
-        "mentions": 3,
-        "sentiment_score": 0.517,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 52,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
         "ticker": "RDDT",
         "mentions": 2,
         "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
         "sentiment_pct": 80,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "ASTS",
+        "mentions": 2,
+        "sentiment_score": 0.75,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 75,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "HAL",
+        "mentions": 2,
+        "sentiment_score": 0.75,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 75,
         "counts": {
           "bullish": 2,
           "bearish": 0,
