@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-07T03:49:03.906Z",
+  "timestamp": "2025-12-07T04:34:01.164Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 83,
     "sources": {
       "social": {
-        "bullish": 47,
-        "bearish": 10,
-        "neutral": 74,
+        "bullish": 49,
+        "bearish": 7,
+        "neutral": 75,
         "total": 131,
-        "pct": 36
+        "pct": 37
       },
       "news": {
         "bullish": 2,
         "bearish": 2,
-        "neutral": 4,
-        "total": 8,
-        "pct": 25
+        "neutral": 5,
+        "total": 9,
+        "pct": 22
       },
       "video": {
         "bullish": 3,
@@ -36,36 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Overall bullish sentiment with high conviction.\n\n📈 **Themes:** Regulatory clarity driving institutional flows, AI momentum, liquidity dynamics.\n\n🎯 **Levels:** SPY Max Pain $669.00, QQQ Max Pain $625.00",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Regulatory clarity, sector‑specific hype, institutional momentum\n\n📊 **Levels:** No explicit levels from sources",
     "key_tickers": [
-      "OKLO",
-      "IQ",
-      "RL",
-      "BTC"
+      "BTC",
+      "Hyperliquid",
+      "Oklo",
+      "IonQ",
+      "Rocket Lab"
     ],
     "key_themes": [
-      "Regulatory Clarity",
-      "AI Momentum",
-      "Institutional Adoption",
-      "Liquidity Dynamics",
-      "Sectoral Momentum"
+      "Regulatory clarity",
+      "Sector‑specific hype",
+      "Institutional momentum",
+      "DeFi volatility",
+      "Risk‑averse hedging"
     ],
     "risk_factors": [
-      "Regulatory Uncertainty",
-      "Liquidity Compression",
-      "DeFi Regulatory Backlash",
-      "Overvaluation",
-      "Crypto Correction"
+      "Regulatory backlash on preference‑shares",
+      "Kamino blacklist actions",
+      "Valuation compression in Bitcoin",
+      "Market reaction to DeFi volatility",
+      "Sector‑specific risk"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Testing resistance",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 70522
+    "generation_time_ms": 67644
   },
   "trending": {
     "macro": [
@@ -99,15 +100,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 3,
-        "sentiment_score": -0.017,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 2,
+        "mentions": 4,
+        "sentiment_score": 0.175,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 18,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 1,
           "neutral": 1,
-          "total": 3
+          "total": 4
         }
       }
     ],
@@ -184,7 +185,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
