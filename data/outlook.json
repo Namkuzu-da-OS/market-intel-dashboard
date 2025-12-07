@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-07T07:30:31.536Z",
+  "timestamp": "2025-12-07T15:18:14.403Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 82,
+    "confidence_pct": 83,
     "sources": {
       "social": {
-        "bullish": 54,
-        "bearish": 9,
-        "neutral": 86,
-        "total": 149,
-        "pct": 36
+        "bullish": 43,
+        "bearish": 8,
+        "neutral": 74,
+        "total": 125,
+        "pct": 34
       },
       "news": {
-        "bullish": 2,
-        "bearish": 2,
-        "neutral": 5,
-        "total": 9,
-        "pct": 22
+        "bullish": 1,
+        "bearish": 0,
+        "neutral": 3,
+        "total": 4,
+        "pct": 25
       },
       "video": {
-        "bullish": 3,
+        "bullish": 5,
         "bearish": 2,
         "neutral": 0,
-        "total": 5,
-        "pct": 60
+        "total": 7,
+        "pct": 71
       },
       "chat": {
         "bullish": 0,
@@ -36,55 +36,57 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction.\n\n📈 **Themes:** Regulatory clarity, product roll‑outs in DeFi, AI and tech momentum, crypto institutional support, high‑yield liquidity risk.\n\n🎯 **Levels:** $80,000 (BTC) retest",
+    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction.\n\n📈 **Themes:** Crypto cycle momentum, Institutional lending & regulatory clarity, Sector rotation into advanced technology, AI‑driven productivity, Rate policy uncertainty\n\n🎯 **Levels:** No explicit levels from sources",
     "key_tickers": [
       "BTC",
-      "SPY",
-      "QQQ"
+      "QQQ",
+      "SPY"
     ],
     "key_themes": [
-      "Regulatory clarity",
-      "Product roll‑outs in DeFi",
-      "AI and tech momentum",
-      "Crypto institutional support",
-      "High‑yield liquidity risk"
+      "Crypto cycle momentum",
+      "Institutional lending & regulatory clarity",
+      "Sector rotation into advanced technology",
+      "AI‑driven productivity",
+      "Rate policy uncertainty"
     ],
     "risk_factors": [
-      "Regulatory backlash",
-      "Liquidity drain from high‑yield instruments",
-      "Macro‑policy shocks"
+      "Liquidity erosion / preference‑share yields",
+      "Regulatory uncertainty",
+      "Macro risks such as inflation & Fed monetization",
+      "Infrastructure vulnerabilities (e.g., CloudFlare outage)",
+      "Banking sector risk‑off"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
+    "swing_levels": "Testing resistance",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 82842
+    "generation_time_ms": 96089
   },
   "trending": {
     "macro": [
-      {
-        "ticker": "SPY",
-        "mentions": 3,
-        "sentiment_score": 0.5,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
       {
         "ticker": "QQQ",
         "mentions": 1,
         "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
         "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "SPY",
+        "mentions": 1,
+        "sentiment_score": 0.7,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 70,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -111,28 +113,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 5,
-        "sentiment_score": 0.75,
+        "mentions": 4,
+        "sentiment_score": 0.738,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 74,
         "counts": {
-          "bullish": 5,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 0,
-          "total": 5
-        }
-      },
-      {
-        "ticker": "RIVN",
-        "mentions": 3,
-        "sentiment_score": 0.767,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 77,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 3
+          "total": 4
         }
       },
       {
@@ -149,7 +138,7 @@
         }
       },
       {
-        "ticker": "ASTS",
+        "ticker": "RIVN",
         "mentions": 2,
         "sentiment_score": 0.75,
         "sentiment_label": "Bullish",
@@ -162,16 +151,29 @@
         }
       },
       {
-        "ticker": "HAL",
+        "ticker": "ADBE",
         "mentions": 2,
-        "sentiment_score": 0.75,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 2,
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "CLPT",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
           "bearish": 0,
           "neutral": 0,
-          "total": 2
+          "total": 1
         }
       }
     ]
@@ -181,7 +183,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
