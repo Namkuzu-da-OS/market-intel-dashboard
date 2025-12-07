@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-07T05:20:06.075Z",
+  "timestamp": "2025-12-07T06:04:46.408Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 82,
     "sources": {
       "social": {
-        "bullish": 50,
+        "bullish": 51,
         "bearish": 8,
-        "neutral": 77,
-        "total": 135,
-        "pct": 37
+        "neutral": 81,
+        "total": 140,
+        "pct": 36
       },
       "news": {
         "bullish": 2,
@@ -36,34 +36,34 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Crypto regulatory environment, high‑growth technology sectors, macro‑risk and labor market uncertainty\n\n🎯 **Levels:** BTC $80k milestone, gold $4,800 target, TSLA weekly resistance test",
+    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction.\n\n📈 **Themes:** AI and tech sector momentum, regulatory clarity and high‑growth thematic sectors, Bitcoin and crypto value narrative, rate easing expectations.\n\n🎯 **Levels:** $80k retest for Bitcoin.",
     "key_tickers": [
       "BTC",
       "TSLA",
-      "XAU",
-      "HNT"
+      "AAPL"
     ],
     "key_themes": [
-      "Crypto regulatory environment",
-      "High‑growth technology sectors",
-      "Macro‑risk and labor market uncertainty",
-      "AI‑driven demand",
-      "Preference shares and DeFi volatility"
+      "AI and tech momentum",
+      "Regulatory clarity and high‑growth sectors",
+      "Bitcoin value narrative",
+      "Rate easing expectations"
     ],
     "risk_factors": [
-      "Regulatory uncertainty",
-      "DeFi and preference share volatility",
-      "Labor market weakness"
+      "Regulatory pressure on DeFi platforms",
+      "Liquidity drain from high‑yield preference shares",
+      "Weakening Bitcoin engine",
+      "Overvaluation concerns",
+      "Social unrest / political tensions"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "BTC $80k milestone, gold $4,800 target, TSLA weekly resistance test",
+    "swing_levels": "Watch for breakout/breakdown",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 97313
+    "generation_time_ms": 79883
   },
   "trending": {
     "macro": [
@@ -182,7 +182,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 37,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
