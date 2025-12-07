@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-07T06:04:46.408Z",
+  "timestamp": "2025-12-07T06:45:33.886Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 82,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 51,
-        "bearish": 8,
-        "neutral": 81,
-        "total": 140,
+        "bullish": 52,
+        "bearish": 9,
+        "neutral": 84,
+        "total": 145,
         "pct": 36
       },
       "news": {
@@ -36,24 +36,23 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction.\n\n📈 **Themes:** AI and tech sector momentum, regulatory clarity and high‑growth thematic sectors, Bitcoin and crypto value narrative, rate easing expectations.\n\n🎯 **Levels:** $80k retest for Bitcoin.",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Regulatory clarity, DeFi ecosystem growth, AI‑driven demand\n\n🎯 **Levels:** BTC $80k retest",
     "key_tickers": [
       "BTC",
-      "TSLA",
-      "AAPL"
+      "ETH",
+      "$OND"
     ],
     "key_themes": [
-      "AI and tech momentum",
-      "Regulatory clarity and high‑growth sectors",
-      "Bitcoin value narrative",
-      "Rate easing expectations"
+      "Regulatory clarity",
+      "DeFi ecosystem growth",
+      "AI‑driven demand",
+      "Crypto policy signals",
+      "Macro risk"
     ],
     "risk_factors": [
-      "Regulatory pressure on DeFi platforms",
-      "Liquidity drain from high‑yield preference shares",
-      "Weakening Bitcoin engine",
-      "Overvaluation concerns",
-      "Social unrest / political tensions"
+      "Liquidity pressure",
+      "Regulatory scrutiny",
+      "Macro risk"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
@@ -63,7 +62,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 79883
+    "generation_time_ms": 84528
   },
   "trending": {
     "macro": [
@@ -97,15 +96,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.28,
+        "mentions": 6,
+        "sentiment_score": 0.367,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 28,
+        "sentiment_pct": 37,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 1,
           "neutral": 1,
-          "total": 5
+          "total": 6
         }
       }
     ],
