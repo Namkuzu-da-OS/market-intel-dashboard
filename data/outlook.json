@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-07T16:06:37.732Z",
+  "timestamp": "2025-12-07T16:53:10.885Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 84,
+    "confidence_pct": 81,
     "sources": {
       "social": {
         "bullish": 43,
-        "bearish": 7,
-        "neutral": 71,
-        "total": 121,
-        "pct": 36
+        "bearish": 10,
+        "neutral": 73,
+        "total": 126,
+        "pct": 34
       },
       "news": {
-        "bullish": 1,
+        "bullish": 0,
         "bearish": 0,
-        "neutral": 3,
-        "total": 4,
-        "pct": 25
+        "neutral": 1,
+        "total": 1,
+        "pct": 0
       },
       "video": {
         "bullish": 5,
-        "bearish": 2,
+        "bearish": 1,
         "neutral": 0,
-        "total": 7,
-        "pct": 71
+        "total": 6,
+        "pct": 83
       },
       "chat": {
         "bullish": 0,
@@ -36,25 +36,27 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with medium‑high conviction.\n\n📈 **Themes:** Crypto institutional adoption & regulatory clarity, Tech & AI momentum, Consumer technology strength.\n\n🎯 **Levels:** No explicit levels from sources",
+    "narrative": "📊 **Consensus:** Bullish sentiment with moderate conviction.\n\n📈 **Themes:** AI momentum, crypto regulatory & liquidity backdrop, infrastructure & renewable energy demand.\n\n🎯 **Levels:** No explicit levels from sources",
     "key_tickers": [
       "BTC",
-      "ETH",
-      "BNB"
+      "BNB",
+      "VST",
+      "CCJ",
+      "VRT"
     ],
     "key_themes": [
-      "Crypto institutional adoption & regulatory clarity",
-      "Tech & AI momentum",
-      "Consumer technology strength"
+      "AI momentum",
+      "crypto regulatory & liquidity",
+      "infrastructure & renewable energy"
     ],
     "risk_factors": [
-      "MNAV compression",
-      "Preference‑share yield risk",
-      "DeFi regulatory scrutiny",
-      "Infrastructure outage risk",
-      "Geopolitical tension"
+      "regulatory tightening",
+      "liquidity squeeze",
+      "crypto bubble risk",
+      "Fed policy uncertainty",
+      "geopolitical tension"
     ],
-    "intraday_bias": "NEUTRAL",
+    "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
     "swing_levels": "Watch for breakout/breakdown",
@@ -62,16 +64,16 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 101466
+    "generation_time_ms": 84024
   },
   "trending": {
     "macro": [
       {
-        "ticker": "SPY",
+        "ticker": "IWM",
         "mentions": 1,
-        "sentiment_score": 0.7,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 70,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -83,51 +85,25 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.6,
+        "mentions": 4,
+        "sentiment_score": 0.75,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 60,
+        "sentiment_pct": 75,
         "counts": {
           "bullish": 4,
           "bearish": 0,
-          "neutral": 1,
-          "total": 5
+          "neutral": 0,
+          "total": 4
         }
       }
     ],
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 3,
-        "sentiment_score": 0.717,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "RDDT",
         "mentions": 2,
-        "sentiment_score": 0.8,
+        "sentiment_score": 0.725,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "RIVN",
-        "mentions": 2,
-        "sentiment_score": 0.75,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 73,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -160,6 +136,32 @@
           "neutral": 0,
           "total": 1
         }
+      },
+      {
+        "ticker": "ONDS",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "RDDT",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
       }
     ]
   },
@@ -168,7 +170,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
