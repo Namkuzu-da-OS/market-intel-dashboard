@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-07T04:34:01.164Z",
+  "timestamp": "2025-12-07T05:20:06.075Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 83,
+    "confidence_pct": 82,
     "sources": {
       "social": {
-        "bullish": 49,
-        "bearish": 7,
-        "neutral": 75,
-        "total": 131,
+        "bullish": 50,
+        "bearish": 8,
+        "neutral": 77,
+        "total": 135,
         "pct": 37
       },
       "news": {
@@ -36,37 +36,34 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Regulatory clarity, sector‑specific hype, institutional momentum\n\n📊 **Levels:** No explicit levels from sources",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Crypto regulatory environment, high‑growth technology sectors, macro‑risk and labor market uncertainty\n\n🎯 **Levels:** BTC $80k milestone, gold $4,800 target, TSLA weekly resistance test",
     "key_tickers": [
       "BTC",
-      "Hyperliquid",
-      "Oklo",
-      "IonQ",
-      "Rocket Lab"
+      "TSLA",
+      "XAU",
+      "HNT"
     ],
     "key_themes": [
-      "Regulatory clarity",
-      "Sector‑specific hype",
-      "Institutional momentum",
-      "DeFi volatility",
-      "Risk‑averse hedging"
+      "Crypto regulatory environment",
+      "High‑growth technology sectors",
+      "Macro‑risk and labor market uncertainty",
+      "AI‑driven demand",
+      "Preference shares and DeFi volatility"
     ],
     "risk_factors": [
-      "Regulatory backlash on preference‑shares",
-      "Kamino blacklist actions",
-      "Valuation compression in Bitcoin",
-      "Market reaction to DeFi volatility",
-      "Sector‑specific risk"
+      "Regulatory uncertainty",
+      "DeFi and preference share volatility",
+      "Labor market weakness"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
     "swing_bias": "BULLISH",
-    "swing_levels": "Watch for breakout/breakdown",
+    "swing_levels": "BTC $80k milestone, gold $4,800 target, TSLA weekly resistance test",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 67644
+    "generation_time_ms": 97313
   },
   "trending": {
     "macro": [
@@ -100,15 +97,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 4,
-        "sentiment_score": 0.175,
+        "mentions": 5,
+        "sentiment_score": 0.28,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 18,
+        "sentiment_pct": 28,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 1,
           "neutral": 1,
-          "total": 4
+          "total": 5
         }
       }
     ],
