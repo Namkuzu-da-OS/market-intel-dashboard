@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-07T16:53:10.885Z",
+  "timestamp": "2025-12-07T17:40:55.156Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 81,
+    "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 43,
-        "bearish": 10,
+        "bullish": 45,
+        "bearish": 12,
         "neutral": 73,
-        "total": 126,
-        "pct": 34
+        "total": 130,
+        "pct": 35
       },
       "news": {
         "bullish": 0,
@@ -36,25 +36,25 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment with moderate conviction.\n\n📈 **Themes:** AI momentum, crypto regulatory & liquidity backdrop, infrastructure & renewable energy demand.\n\n🎯 **Levels:** No explicit levels from sources",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Crypto institutional expansion, AI & renewable energy momentum, rate‑sensitive sector upside\n\n🎯 **Levels:** SPY Max Pain at $669.00, QQQ Max Pain at $625.00",
     "key_tickers": [
+      "SPY",
+      "QQQ",
       "BTC",
-      "BNB",
-      "VST",
-      "CCJ",
-      "VRT"
+      "INTC"
     ],
     "key_themes": [
-      "AI momentum",
-      "crypto regulatory & liquidity",
-      "infrastructure & renewable energy"
+      "Crypto institutional expansion",
+      "Bitcoin cycle momentum",
+      "AI & renewable energy growth",
+      "Rate-sensitive sector upside"
     ],
     "risk_factors": [
-      "regulatory tightening",
-      "liquidity squeeze",
-      "crypto bubble risk",
-      "Fed policy uncertainty",
-      "geopolitical tension"
+      "Bitcoin volatility",
+      "Liquidity tightening in preference shares",
+      "Regulatory uncertainty",
+      "Macro inflation risk",
+      "Infrastructure outages"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
@@ -64,7 +64,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 84024
+    "generation_time_ms": 93049
   },
   "trending": {
     "macro": [
@@ -80,24 +80,63 @@
           "neutral": 0,
           "total": 1
         }
+      },
+      {
+        "ticker": "SPY",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 1,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 1
+        }
       }
     ],
     "crypto": [
       {
         "ticker": "BTC",
         "mentions": 4,
-        "sentiment_score": 0.75,
+        "sentiment_score": 0.362,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 36,
         "counts": {
-          "bullish": 4,
-          "bearish": 0,
+          "bullish": 3,
+          "bearish": 1,
           "neutral": 0,
           "total": 4
         }
       }
     ],
     "other": [
+      {
+        "ticker": "SPX",
+        "mentions": 3,
+        "sentiment_score": 0.483,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 48,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 3
+        }
+      },
       {
         "ticker": "TSLA",
         "mentions": 2,
@@ -125,42 +164,29 @@
         }
       },
       {
-        "ticker": "LC",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
+        "ticker": "AVGO",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 0,
-          "total": 1
+          "neutral": 2,
+          "total": 2
         }
       },
       {
-        "ticker": "ONDS",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
+        "ticker": "COST",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "RDDT",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
+          "neutral": 2,
+          "total": 2
         }
       }
     ]
@@ -170,7 +196,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 34,
+    "sentiment_bullish_pct": 35,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
