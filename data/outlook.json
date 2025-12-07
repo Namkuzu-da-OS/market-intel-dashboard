@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-07T06:45:33.886Z",
+  "timestamp": "2025-12-07T07:30:31.536Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 81,
+    "confidence_pct": 82,
     "sources": {
       "social": {
-        "bullish": 52,
+        "bullish": 54,
         "bearish": 9,
-        "neutral": 84,
-        "total": 145,
+        "neutral": 86,
+        "total": 149,
         "pct": 36
       },
       "news": {
@@ -36,23 +36,23 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Regulatory clarity, DeFi ecosystem growth, AI‑driven demand\n\n🎯 **Levels:** BTC $80k retest",
+    "narrative": "📊 **Consensus:** The market sentiment is broadly bullish with high conviction.\n\n📈 **Themes:** Regulatory clarity, product roll‑outs in DeFi, AI and tech momentum, crypto institutional support, high‑yield liquidity risk.\n\n🎯 **Levels:** $80,000 (BTC) retest",
     "key_tickers": [
       "BTC",
-      "ETH",
-      "$OND"
+      "SPY",
+      "QQQ"
     ],
     "key_themes": [
       "Regulatory clarity",
-      "DeFi ecosystem growth",
-      "AI‑driven demand",
-      "Crypto policy signals",
-      "Macro risk"
+      "Product roll‑outs in DeFi",
+      "AI and tech momentum",
+      "Crypto institutional support",
+      "High‑yield liquidity risk"
     ],
     "risk_factors": [
-      "Liquidity pressure",
-      "Regulatory scrutiny",
-      "Macro risk"
+      "Regulatory backlash",
+      "Liquidity drain from high‑yield instruments",
+      "Macro‑policy shocks"
     ],
     "intraday_bias": "BULLISH",
     "intraday_levels": "Watch for breakout/breakdown",
@@ -62,7 +62,7 @@
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 84528
+    "generation_time_ms": 82842
   },
   "trending": {
     "macro": [
