@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-07T19:30:16.607Z",
+  "timestamp": "2025-12-07T20:26:09.836Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 57,
-        "bearish": 17,
-        "neutral": 82,
-        "total": 156,
+        "bullish": 64,
+        "bearish": 18,
+        "neutral": 92,
+        "total": 174,
         "pct": 37
       },
       "news": {
@@ -36,45 +36,48 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Institutional crypto adoption, AI data‑center growth, macro‑driven sentiment\n\n🎯 **Levels:** BTC 91k breakout, 100.5k short‑term target, 145k goal; PLTR 186.50 target; BE 126; TEM 75–77; WULF 14; VWAP/pivot support zones",
+    "narrative": "📊 **Consensus:** Bullish sentiment with high conviction.\n\n📈 **Themes:** Institutional crypto adoption, regulatory clarity, AI & cloud momentum.\n\n🎯 **Levels:** PLTR $186.50, BE $126, TEM $75/$77, WULF $14",
     "key_tickers": [
       "PLTR",
       "BE",
-      "TEM"
+      "TEM",
+      "WULF"
     ],
     "key_themes": [
       "Institutional crypto adoption",
-      "AI data‑center growth",
-      "Macro‑driven sentiment"
+      "Regulatory clarity",
+      "AI & cloud momentum"
     ],
     "risk_factors": [
-      "Macro caution",
-      "Crypto margin pressure",
-      "Regulatory uncertainty"
+      "High leverage risk",
+      "Shorting opportunities",
+      "Cloudflare outage risk",
+      "Geopolitical tension",
+      "Regulatory tightening"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "BTC 91k breakout, 100.5k target; PLTR 186.50 target; BE 126; TEM 75–77; WULF 14; VWAP/pivot support zones",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "PLTR $186.50, BE $126, TEM $75/$77, WULF $14",
     "swing_bias": "BULLISH",
-    "swing_levels": "BTC 91k breakout, 100.5k target; PLTR 186.50 target; BE 126; TEM 75–77; WULF 14; VWAP/pivot support zones",
+    "swing_levels": "PLTR $186.50, BE $126, TEM $75/$77, WULF $14",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 92924
+    "generation_time_ms": 100087
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 2,
-        "sentiment_score": 0.4,
+        "mentions": 3,
+        "sentiment_score": 0.533,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "sentiment_pct": 53,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 1,
-          "total": 2
+          "total": 3
         }
       },
       {
@@ -119,6 +122,19 @@
         }
       },
       {
+        "ticker": "SOL",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
         "ticker": "BCH",
         "mentions": 1,
         "sentiment_score": 0.75,
@@ -160,6 +176,19 @@
     ],
     "other": [
       {
+        "ticker": "TSLA",
+        "mentions": 3,
+        "sentiment_score": 0.75,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 75,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 3
+        }
+      },
+      {
         "ticker": "SPX",
         "mentions": 3,
         "sentiment_score": 0.483,
@@ -186,19 +215,6 @@
         }
       },
       {
-        "ticker": "TSLA",
-        "mentions": 2,
-        "sentiment_score": 0.725,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 73,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
         "ticker": "PYPL",
         "mentions": 2,
         "sentiment_score": 0.375,
@@ -212,15 +228,15 @@
         }
       },
       {
-        "ticker": "ADBE",
+        "ticker": "AAPL",
         "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "sentiment_score": 0.325,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
         "counts": {
-          "bullish": 0,
+          "bullish": 1,
           "bearish": 0,
-          "neutral": 2,
+          "neutral": 1,
           "total": 2
         }
       }
