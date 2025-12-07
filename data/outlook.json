@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-07T18:35:51.307Z",
+  "timestamp": "2025-12-07T19:30:16.607Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 46,
-        "bearish": 14,
-        "neutral": 68,
-        "total": 128,
-        "pct": 36
+        "bullish": 57,
+        "bearish": 17,
+        "neutral": 82,
+        "total": 156,
+        "pct": 37
       },
       "news": {
         "bullish": 0,
@@ -22,9 +22,9 @@
       "video": {
         "bullish": 5,
         "bearish": 1,
-        "neutral": 0,
-        "total": 6,
-        "pct": 83
+        "neutral": 1,
+        "total": 7,
+        "pct": 71
       },
       "chat": {
         "bullish": 0,
@@ -36,33 +36,31 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment with medium‑high conviction.\n\n📈 **Themes:** AI momentum, crypto market dynamics, institutional capital flow.\n\n🎯 **Levels:** BTC $100.5 k target, BTC $145 k target; testing BTC daily trendline; testing BCH monthly resistance.",
+    "narrative": "📊 **Consensus:** Bullish with high conviction\n\n📈 **Themes:** Institutional crypto adoption, AI data‑center growth, macro‑driven sentiment\n\n🎯 **Levels:** BTC 91k breakout, 100.5k short‑term target, 145k goal; PLTR 186.50 target; BE 126; TEM 75–77; WULF 14; VWAP/pivot support zones",
     "key_tickers": [
-      "BTC",
-      "BCH",
-      "INTC"
+      "PLTR",
+      "BE",
+      "TEM"
     ],
     "key_themes": [
-      "AI momentum",
-      "crypto market dynamics",
-      "institutional capital flow"
+      "Institutional crypto adoption",
+      "AI data‑center growth",
+      "Macro‑driven sentiment"
     ],
     "risk_factors": [
-      "buyer exhaustion (MNAV compression)",
-      "preference‑share yield pressure",
-      "liquidity drying up",
-      "regulatory uncertainty",
-      "BTC daily trendline breach"
+      "Macro caution",
+      "Crypto margin pressure",
+      "Regulatory uncertainty"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "Testing BTC daily trendline; testing BCH monthly resistance",
+    "intraday_levels": "BTC 91k breakout, 100.5k target; PLTR 186.50 target; BE 126; TEM 75–77; WULF 14; VWAP/pivot support zones",
     "swing_bias": "BULLISH",
-    "swing_levels": "BTC $100.5 k target; BTC $145 k target; testing BTC daily trendline",
+    "swing_levels": "BTC 91k breakout, 100.5k target; PLTR 186.50 target; BE 126; TEM 75–77; WULF 14; VWAP/pivot support zones",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 92333
+    "generation_time_ms": 92924
   },
   "trending": {
     "macro": [
@@ -132,6 +130,32 @@
           "neutral": 0,
           "total": 1
         }
+      },
+      {
+        "ticker": "IREN",
+        "mentions": 1,
+        "sentiment_score": 0.7,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 70,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "COIN",
+        "mentions": 1,
+        "sentiment_score": 0.65,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 65,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
       }
     ],
     "other": [
@@ -149,6 +173,19 @@
         }
       },
       {
+        "ticker": "ORCL",
+        "mentions": 3,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 3
+        }
+      },
+      {
         "ticker": "TSLA",
         "mentions": 2,
         "sentiment_score": 0.725,
@@ -162,33 +199,20 @@
         }
       },
       {
+        "ticker": "PYPL",
+        "mentions": 2,
+        "sentiment_score": 0.375,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 38,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
         "ticker": "ADBE",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "AVGO",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "COST",
         "mentions": 2,
         "sentiment_score": 0,
         "sentiment_label": "Neutral",
@@ -207,7 +231,7 @@
     "color": "text-muted",
     "vix": 15.41,
     "pc_ratio": 1.03,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
