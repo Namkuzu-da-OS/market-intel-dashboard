@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-07T20:26:09.836Z",
+  "timestamp": "2025-12-08T23:43:11.437Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 78,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 64,
-        "bearish": 18,
-        "neutral": 92,
-        "total": 174,
+        "bullish": 42,
+        "bearish": 14,
+        "neutral": 57,
+        "total": 113,
         "pct": 37
       },
       "news": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 1,
-        "total": 1,
-        "pct": 0
+        "bullish": 17,
+        "bearish": 7,
+        "neutral": 12,
+        "total": 36,
+        "pct": 47
       },
       "video": {
-        "bullish": 5,
-        "bearish": 1,
-        "neutral": 1,
-        "total": 7,
-        "pct": 71
+        "bullish": 2,
+        "bearish": 2,
+        "neutral": 2,
+        "total": 6,
+        "pct": 33
       },
       "chat": {
         "bullish": 0,
@@ -36,93 +36,55 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment with high conviction.\n\n📈 **Themes:** Institutional crypto adoption, regulatory clarity, AI & cloud momentum.\n\n🎯 **Levels:** PLTR $186.50, BE $126, TEM $75/$77, WULF $14",
+    "narrative": "📊 **Consensus:** Mixed-to-bearish with medium conviction. Near-term mechanical headwinds (buyback blackout windows, earnings quality concerns) create tactical vulnerability, but structural themes (AI infrastructure, crypto regulation clarity) suggest selective strength persists in pockets.\n\n📈 **Themes:** (1) Buyback blackout period creating artificial support withdrawal in large-cap equities through mid-December, (2) AI semiconductor momentum and China regulatory developments driving sector rotation, (3) Crypto regulatory framework uncertainty and tariff policy implementation creating binary risk events.\n\n🎯 **Levels:** S&P 500 daily close below 6715 (bearish technical trigger), SPY Max Pain at $670, QQQ Max Pain at $625, NVDA momentum following recent strength (no explicit price level quoted).",
     "key_tickers": [
-      "PLTR",
-      "BE",
-      "TEM",
-      "WULF"
+      "NVDA",
+      "SPY",
+      "QQQ",
+      "BTC"
     ],
     "key_themes": [
-      "Institutional crypto adoption",
-      "Regulatory clarity",
-      "AI & cloud momentum"
+      "buyback blackout mechanical headwinds",
+      "AI semiconductor China regulatory developments",
+      "crypto regulatory framework uncertainty",
+      "tariff policy implementation risk",
+      "earnings quality deterioration in enterprise software"
     ],
     "risk_factors": [
-      "High leverage risk",
-      "Shorting opportunities",
-      "Cloudflare outage risk",
-      "Geopolitical tension",
-      "Regulatory tightening"
+      "Buyback blackout window mid-December removing artificial bid support",
+      "Tariff implementation creating margin compression in semiconductor sector",
+      "Narrow market breadth with S&P vs Dow divergence signaling weak participation",
+      "Crypto regulation binary event risk on stalled market structure bill",
+      "Geopolitical tensions (Taiwan-China) creating safe-haven rotation pressure"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "PLTR $186.50, BE $126, TEM $75/$77, WULF $14",
-    "swing_bias": "BULLISH",
-    "swing_levels": "PLTR $186.50, BE $126, TEM $75/$77, WULF $14",
-    "source_alignment": "ALIGNED"
+    "intraday_levels": "SPY watching $670 max pain level, S&P 500 monitoring 6715 breakdown level per technical analysis",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "S&P 500 breakdown confirmation below 6715, SPY max pain gravitation toward $670, QQQ max pain at $625 as potential support",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 100087
+    "generation_time_ms": 161207
   },
   "trending": {
-    "macro": [
+    "macro": [],
+    "crypto": [
       {
-        "ticker": "SPY",
-        "mentions": 3,
-        "sentiment_score": 0.533,
+        "ticker": "ETH",
+        "mentions": 2,
+        "sentiment_score": 0.76,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
+        "sentiment_pct": 76,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "QQQ",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 2,
+          "neutral": 0,
           "total": 2
         }
       },
       {
-        "ticker": "IWM",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      }
-    ],
-    "crypto": [
-      {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.45,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 45,
-        "counts": {
-          "bullish": 4,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 5
-        }
-      },
-      {
-        "ticker": "SOL",
         "mentions": 1,
         "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
@@ -135,11 +97,11 @@
         }
       },
       {
-        "ticker": "BCH",
+        "ticker": "CLSK",
         "mentions": 1,
-        "sentiment_score": 0.75,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -148,11 +110,11 @@
         }
       },
       {
-        "ticker": "IREN",
+        "ticker": "MARA",
         "mentions": 1,
-        "sentiment_score": 0.7,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 70,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -161,11 +123,11 @@
         }
       },
       {
-        "ticker": "COIN",
+        "ticker": "RIOT",
         "mentions": 1,
-        "sentiment_score": 0.65,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -176,11 +138,50 @@
     ],
     "other": [
       {
-        "ticker": "TSLA",
-        "mentions": 3,
-        "sentiment_score": 0.75,
+        "ticker": "NVDA",
+        "mentions": 11,
+        "sentiment_score": 0.586,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 59,
+        "counts": {
+          "bullish": 9,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 11
+        }
+      },
+      {
+        "ticker": "NFLX",
+        "mentions": 5,
+        "sentiment_score": 0.144,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 14,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 5
+        }
+      },
+      {
+        "ticker": "WBD",
+        "mentions": 5,
+        "sentiment_score": 0.144,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 14,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 5
+        }
+      },
+      {
+        "ticker": "GOOG",
+        "mentions": 3,
+        "sentiment_score": 0.673,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 67,
         "counts": {
           "bullish": 3,
           "bearish": 0,
@@ -189,50 +190,11 @@
         }
       },
       {
-        "ticker": "SPX",
-        "mentions": 3,
-        "sentiment_score": 0.483,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "ORCL",
-        "mentions": 3,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "PYPL",
+        "ticker": "GOOGL",
         "mentions": 2,
-        "sentiment_score": 0.375,
+        "sentiment_score": 0.465,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "AAPL",
-        "mentions": 2,
-        "sentiment_score": 0.325,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 47,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -245,18 +207,18 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.41,
-    "pc_ratio": 1.03,
+    "vix": 16.66,
+    "pc_ratio": 0.71,
     "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
-    "label": "BUY PROTECTION",
-    "color": "text-cyan",
-    "iv_rank": 9.72,
-    "hv": 13.14,
-    "spread": -0.15,
-    "position": 20
+    "label": "FAIR VALUE",
+    "color": "text-orange",
+    "iv_rank": 30,
+    "hv": 13.2,
+    "spread": 15.46,
+    "position": 50
   },
   "action": {
     "summary": "NEUTRAL: No clear edge. Cash is a position."
