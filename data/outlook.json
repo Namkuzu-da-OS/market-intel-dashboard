@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-09T02:47:53.440Z",
+  "timestamp": "2025-12-09T03:26:09.811Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 72,
+    "confidence_pct": 70,
     "sources": {
       "social": {
-        "bullish": 53,
-        "bearish": 18,
-        "neutral": 62,
-        "total": 133,
-        "pct": 40
+        "bullish": 55,
+        "bearish": 22,
+        "neutral": 75,
+        "total": 152,
+        "pct": 36
       },
       "news": {
         "bullish": 18,
@@ -36,40 +36,67 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish bias with medium conviction - market shows technical strength and structural support through options positioning, but faces emerging headwinds from reduced buyback activity and technical divergence warnings.\n\n📈 **Themes:** (1) AI infrastructure momentum driving sector-specific strength amid post-earnings breakouts, (2) Year-end structural dynamics with buyback blackout windows creating potential volatility headwinds, (3) Technical inflection point with index divergences testing support levels amid rate policy uncertainty.\n\n🎯 **Levels:** SPY: 6,715 critical support level (daily close below confirms downside), 6,800 PWL support, resistance at $690-$704 zone. QQQ: support at $617-$624 zone, resistance at $628-$634 zone. S&P 500 testing technical divergence against Dow.",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - Near-term structural headwinds outweigh bullish momentum narratives, with concrete policy/technical risks overshadowing forward-looking thematic tailwinds.\n\n📈 **Themes:** (1) AI infrastructure dominance and semiconductor positioning amid policy uncertainty, (2) Crypto institutional adoption vs. regulatory/market structure vulnerabilities, (3) Corporate buyback support withdrawal creating tactical volatility window.\n\n🎯 **Levels:** SPX 6,715 close as critical technical trigger (bearish breakdown), SPX 6,800 PWL target. SPY $680 support zone, $690-$704 resistance cluster. QQQ $617 support, $628-$634 resistance zone.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
       "MARA",
-      "SE"
+      "RIOT"
     ],
     "key_themes": [
-      "AI infrastructure and data center demand momentum",
-      "Year-end structural dynamics and buyback activity withdrawal",
-      "Rate policy uncertainty and Fed decision impact",
-      "Technical divergence patterns between major indices",
-      "Crypto sentiment-fundamentals gap and infrastructure recovery"
+      "AI infrastructure and semiconductor policy risks",
+      "Crypto institutional adoption and market structure concerns",
+      "Corporate buyback blackout period volatility",
+      "Technical divergence and momentum exhaustion signals",
+      "Fed policy uncertainty and rate path"
     ],
     "risk_factors": [
-      "Buyback blackout windows reducing systematic bid support in late December",
-      "S&P/Dow technical divergence signaling potential reversal if 6,715 SPX breaks",
-      "Corporate earnings guidance cuts from software sector indicating margin compression",
-      "Geopolitical escalation risks (Ukraine, Taiwan, trade policy) as risk-off catalysts",
-      "Persistent commodity inflation and agricultural sector stress indicators"
+      "December 15 buyback blackout creating tactical support withdrawal",
+      "SPX technical divergence with Dow non-confirmation of new highs",
+      "Tariff policy uncertainty impacting NVIDIA China sales (H200)",
+      "Crypto market structure vulnerabilities and potential volume misreporting",
+      "Earnings disappointments spreading across enterprise software and consumer sectors"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 support (12,880 OI), $690 resistance (7,392 OI). QQQ: $622-$624 support zone, $628 resistance (5,452 OI). Critical watch: SPY daily close above $683.63 confirms bullish structure, below triggers test of $680.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Strong support at $670-$680 zone (23,973 combined OI), upside targets $704 (13,935 OI) then $709. QQQ: Support floor at $617 (8,356 OI), resistance targets $634 (6,493 OI) then $640. S&P 500: 6,715 critical inflection - hold sustains rally, break accelerates to 6,800.",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY $680 strong support, $690 resistance. QQQ $617 support, $628 resistance. Watch SPX 6,715 close as critical trigger level per Twitter analysis.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY $680 support (breakdown targets $670), $704 upside resistance. QQQ $617 key support level, $634-$640 resistance cluster. SPX 6,715 breakdown targets 6,800 PWL per sources.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 154183
+    "generation_time_ms": 165898
   },
   "trending": {
-    "macro": [],
+    "macro": [
+      {
+        "ticker": "QQQ",
+        "mentions": 1,
+        "sentiment_score": 0.15,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 15,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "SPY",
+        "mentions": 1,
+        "sentiment_score": 0.15,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 15,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 1
+        }
+      }
+    ],
     "crypto": [
       {
         "ticker": "ETH",
@@ -140,15 +167,28 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 12,
-        "sentiment_score": 0.606,
+        "mentions": 13,
+        "sentiment_score": 0.559,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 61,
+        "sentiment_pct": 56,
         "counts": {
           "bullish": 10,
           "bearish": 1,
-          "neutral": 1,
-          "total": 12
+          "neutral": 2,
+          "total": 13
+        }
+      },
+      {
+        "ticker": "NFLX",
+        "mentions": 4,
+        "sentiment_score": 0.055,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 6,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 4
         }
       },
       {
@@ -165,7 +205,7 @@
         }
       },
       {
-        "ticker": "MSFT",
+        "ticker": "CVNA",
         "mentions": 3,
         "sentiment_score": 0.573,
         "sentiment_label": "Bullish",
@@ -178,29 +218,16 @@
         }
       },
       {
-        "ticker": "CVNA",
-        "mentions": 2,
-        "sentiment_score": 0.785,
+        "ticker": "MSFT",
+        "mentions": 3,
+        "sentiment_score": 0.573,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 79,
+        "sentiment_pct": 57,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "ALAB",
-        "mentions": 2,
-        "sentiment_score": 0.5,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
           "neutral": 1,
-          "total": 2
+          "total": 3
         }
       }
     ]
@@ -210,7 +237,7 @@
     "color": "text-muted",
     "vix": 16.66,
     "pc_ratio": 0.81,
-    "sentiment_bullish_pct": 40,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
