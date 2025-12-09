@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-09T03:26:09.811Z",
+  "timestamp": "2025-12-09T14:10:18.398Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 70,
+    "confidence_pct": 72,
     "sources": {
       "social": {
-        "bullish": 55,
-        "bearish": 22,
-        "neutral": 75,
-        "total": 152,
-        "pct": 36
+        "bullish": 125,
+        "bearish": 45,
+        "neutral": 161,
+        "total": 331,
+        "pct": 38
       },
       "news": {
-        "bullish": 18,
-        "bearish": 8,
-        "neutral": 12,
-        "total": 38,
+        "bullish": 22,
+        "bearish": 10,
+        "neutral": 15,
+        "total": 47,
         "pct": 47
       },
       "video": {
         "bullish": 2,
         "bearish": 2,
-        "neutral": 2,
-        "total": 6,
-        "pct": 33
+        "neutral": 4,
+        "total": 8,
+        "pct": 25
       },
       "chat": {
         "bullish": 0,
@@ -36,92 +36,92 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - Near-term structural headwinds outweigh bullish momentum narratives, with concrete policy/technical risks overshadowing forward-looking thematic tailwinds.\n\n📈 **Themes:** (1) AI infrastructure dominance and semiconductor positioning amid policy uncertainty, (2) Crypto institutional adoption vs. regulatory/market structure vulnerabilities, (3) Corporate buyback support withdrawal creating tactical volatility window.\n\n🎯 **Levels:** SPX 6,715 close as critical technical trigger (bearish breakdown), SPX 6,800 PWL target. SPY $680 support zone, $690-$704 resistance cluster. QQQ $617 support, $628-$634 resistance zone.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with selective bullish opportunities amid structural headwinds - conviction: MEDIUM. Market shows bifurcation between growth momentum in specific sectors (AI, earnings-driven breakouts) and broad defensive rotation due to valuation extremes and tactical support withdrawal.\n\n📈 **Themes:** (1) AI infrastructure momentum with institutional adoption but rising skepticism on valuations, (2) Buyback blackout periods creating near-term support withdrawal risk for broad indices, (3) Crypto institutional adoption vs. regulatory/technical threats, (4) Defensive rotation into utilities and dividend plays amid earnings pressure in enterprise software/retail.\n\n🎯 **Levels:** SPX support at 6827 (upper) and 6747 (major support level per Twitter analysis). SPY options show resistance at $685, $688, $687 with support at $680. QQQ resistance at $625, $634, $630 with support at $617, $618, $623.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "MARA",
-      "RIOT"
+      "BTC",
+      "META"
     ],
     "key_themes": [
-      "AI infrastructure and semiconductor policy risks",
-      "Crypto institutional adoption and market structure concerns",
-      "Corporate buyback blackout period volatility",
-      "Technical divergence and momentum exhaustion signals",
-      "Fed policy uncertainty and rate path"
+      "AI infrastructure momentum and valuation concerns",
+      "Buyback blackout period vulnerability",
+      "Institutional crypto adoption vs regulatory pressure",
+      "Defensive rotation amid earnings downgrades",
+      "Leveraged positioning at historic extremes"
     ],
     "risk_factors": [
-      "December 15 buyback blackout creating tactical support withdrawal",
-      "SPX technical divergence with Dow non-confirmation of new highs",
-      "Tariff policy uncertainty impacting NVIDIA China sales (H200)",
-      "Crypto market structure vulnerabilities and potential volume misreporting",
-      "Earnings disappointments spreading across enterprise software and consumer sectors"
+      "Buyback support withdrawal during blackout periods (imminent)",
+      "Negative equity risk premium with $239B leveraged ETF allocation at extremes",
+      "China chip restrictions threatening AI growth assumptions",
+      "SPX break below 6747 triggering technical selling",
+      "Enterprise software earnings pressure spreading to broader sectors"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY $680 strong support, $690 resistance. QQQ $617 support, $628 resistance. Watch SPX 6,715 close as critical trigger level per Twitter analysis.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY $680 support (breakdown targets $670), $704 upside resistance. QQQ $617 key support level, $634-$640 resistance cluster. SPX 6,715 breakdown targets 6,800 PWL per sources.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: $680 support (strong OI), $685 resistance (18,747 OI). QQQ: $623-$625 zone critical (at max pain $625 resistance with 11,545 OI)",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: $680 must hold, else retest $655-$644 zone. Upside capped at $687-$688. SPX: 6747 major support - break signals conviction selling. QQQ: $617 support, $630-$634 resistance cluster",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 165898
+    "generation_time_ms": 162735
   },
   "trending": {
     "macro": [
       {
-        "ticker": "QQQ",
-        "mentions": 1,
-        "sentiment_score": 0.15,
+        "ticker": "SPY",
+        "mentions": 5,
+        "sentiment_score": 0.06,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 15,
+        "sentiment_pct": 6,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 1,
-          "total": 1
+          "neutral": 5,
+          "total": 5
         }
       },
       {
-        "ticker": "SPY",
-        "mentions": 1,
-        "sentiment_score": 0.15,
+        "ticker": "QQQ",
+        "mentions": 3,
+        "sentiment_score": 0.1,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 15,
+        "sentiment_pct": 10,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 1,
-          "total": 1
+          "neutral": 3,
+          "total": 3
         }
       }
     ],
     "crypto": [
       {
         "ticker": "ETH",
-        "mentions": 2,
-        "sentiment_score": 0.76,
+        "mentions": 4,
+        "sentiment_score": 0.723,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 76,
+        "sentiment_pct": 72,
+        "counts": {
+          "bullish": 4,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "BTC",
+        "mentions": 2,
+        "sentiment_score": 0.81,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 81,
         "counts": {
           "bullish": 2,
           "bearish": 0,
           "neutral": 0,
           "total": 2
-        }
-      },
-      {
-        "ticker": "BTC",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
         }
       },
       {
@@ -167,15 +167,54 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 13,
-        "sentiment_score": 0.559,
+        "mentions": 23,
+        "sentiment_score": 0.346,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
+        "sentiment_pct": 35,
         "counts": {
-          "bullish": 10,
+          "bullish": 14,
+          "bearish": 4,
+          "neutral": 5,
+          "total": 23
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 6,
+        "sentiment_score": -0.083,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 8,
+        "counts": {
+          "bullish": 0,
           "bearish": 1,
-          "neutral": 2,
-          "total": 13
+          "neutral": 5,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "META",
+        "mentions": 5,
+        "sentiment_score": 0.478,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 48,
+        "counts": {
+          "bullish": 4,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 5
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 5,
+        "sentiment_score": -0.246,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 25,
+        "counts": {
+          "bullish": 1,
+          "bearish": 3,
+          "neutral": 1,
+          "total": 5
         }
       },
       {
@@ -190,54 +229,15 @@
           "neutral": 2,
           "total": 4
         }
-      },
-      {
-        "ticker": "GOOG",
-        "mentions": 3,
-        "sentiment_score": 0.673,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 67,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "CVNA",
-        "mentions": 3,
-        "sentiment_score": 0.573,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "MSFT",
-        "mentions": 3,
-        "sentiment_score": 0.573,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.66,
+    "vix": 16.9,
     "pc_ratio": 0.81,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -245,7 +245,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 13.01,
-    "spread": 15.51,
+    "spread": -7.19,
     "position": 50
   },
   "action": {
