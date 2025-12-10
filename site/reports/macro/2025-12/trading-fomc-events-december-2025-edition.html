@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Trading FOMC Events: December 2025 Edition" />
+  <meta property="og:description" content="Research around FOMC trading." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/macro/2025-12/trading-fomc-events-december-2025-edition.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/trading-fomc-events-december-2025-edition-1765376887339.jpg" />
+  <meta property="article:published_time" content="2025-12-10" />
+  <meta property="article:section" content="macro" />
+  <meta property="article:tag" content="$SPY" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trading FOMC Events: December 2025 Edition" />
+  <meta name="twitter:description" content="Research around FOMC trading." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/trading-fomc-events-december-2025-edition-1765376887339.jpg" />
+    <title>FOMC Trading Dashboard | December 2025</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+        }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Layout */
+        .container { max-width: 1400px; margin: 0 auto; padding: 1.5rem; }
+        .grid { display: grid; gap: 1.5rem; }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-3 { gap: 0.75rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        
+        @media (max-width: 1024px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .container { padding: 1rem; }
+        }
+        
+        /* Cards */
+        .card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(71, 85, 105, 0.5);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover { border-color: rgba(71, 85, 105, 0.8); }
+        .card-sm { padding: 1rem; }
+        
+        /* Typography */
+        h1 { font-size: 1.875rem; font-weight: 700; }
+        h2 { font-size: 1.5rem; font-weight: 600; }
+        h3 { font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem; }
+        h4 { font-size: 1rem; font-weight: 600; }
+        .text-xs { font-size: 0.75rem; }
+        .text-sm { font-size: 0.875rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-3xl { font-size: 1.875rem; }
+        
+        /* Colors */
+        .text-slate-300 { color: #cbd5e1; }
+        .text-slate-400 { color: #94a3b8; }
+        .text-slate-500 { color: #64748b; }
+        .text-emerald { color: #10b981; }
+        .text-cyan { color: #06b6d4; }
+        .text-amber { color: #f59e0b; }
+        .text-rose { color: #f43f5e; }
+        .text-blue { color: #3b82f6; }
+        
+        .bg-emerald { background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); }
+        .bg-rose { background: rgba(244, 63, 94, 0.15); border-color: rgba(244, 63, 94, 0.3); }
+        .bg-cyan { background: rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.3); }
+        .bg-amber { background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.3); }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #10b981, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Buttons & Tabs */
+        .tab-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(30, 41, 59, 0.5);
+            color: #94a3b8;
+            white-space: nowrap;
+        }
+        .tab-btn:hover { background: rgba(51, 65, 85, 0.5); border-color: rgba(71, 85, 105, 0.5); }
+        .tab-btn.active {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+            border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
+        }
+        
+        /* Countdown */
+        .countdown-box {
+            background: #0f172a;
+            border-radius: 0.5rem;
+            padding: 0.5rem 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #10b981;
+            min-width: 3rem;
+            text-align: center;
+        }
+        
+        /* Stats */
+        .stat-value { font-size: 1.5rem; font-weight: 700; }
+        .stat-label { font-size: 0.75rem; color: #94a3b8; }
+        
+        /* Progress bar */
+        .progress-bar {
+            height: 0.5rem;
+            background: #334155;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .progress-fill { height: 100%; border-radius: 9999px; transition: width 0.5s ease; }
+        
+        /* Table */
+        .table { width: 100%; border-collapse: collapse; }
+        .table th, .table td { padding: 1rem; text-align: center; }
+        .table th { font-size: 0.75rem; font-weight: 600; color: #94a3b8; background: rgba(15, 23, 42, 0.5); }
+        .table td { border-top: 1px solid rgba(51, 65, 85, 0.5); font-family: 'JetBrains Mono', monospace; }
+        .table tr:hover td { background: rgba(51, 65, 85, 0.2); }
+        .table td:first-child { text-align: left; font-family: 'Inter', sans-serif; font-weight: 500; }
+        
+        /* Expandable */
+        .expandable-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: inherit;
+            text-align: left;
+        }
+        .expandable-header:hover { background: rgba(51, 65, 85, 0.3); }
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .expandable-content.open { max-height: 500px; }
+        
+        /* Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border: 1px solid;
+        }
+        
+        /* Timeline */
+        .timeline { position: relative; padding-left: 2rem; }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #10b981, #06b6d4, #334155);
+        }
+        .timeline-item { position: relative; margin-bottom: 1rem; }
+        .timeline-dot {
+            position: absolute;
+            left: -1.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #10b981;
+        }
+        .timeline-dot.secondary { background: #64748b; }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+        
+        /* Animations */
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+        
+        /* Chart container */
+        .chart-container { position: relative; height: 250px; }
+        
+        /* Tab panels */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        /* Overflow */
+        .overflow-x-auto { overflow-x: auto; }
+        .tabs-scroll { display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.5rem; }
+        
+        /* List styles */
+        .list-item { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; }
+        .list-bullet { flex-shrink: 0; margin-top: 0.25rem; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+
+        // ============ DATA ============
+        const probabilityData = [
+            { name: '25bp Cut', value: 87, color: '#10b981' },
+            { name: 'Hold', value: 11, color: '#f43f5e' },
+            { name: 'Dovish', value: 2, color: '#3b82f6' }
+        ];
+
+        const driftData = {
+            labels: ['1994-2000', '2001-2007', '2008-2015', '2016-2020', '2021-2024'],
+            values: [0.42, 0.51, 0.55, 0.48, 0.52]
+        };
+
+        const volatilityData = {
+            labels: ['-24h', '-12h', '-6h', '-1h', 'Announce', '+30m', '+1h', '+2h', '+24h'],
+            values: [15, 18, 22, 28, 45, 38, 30, 22, 16]
+        };
+
+        const strategies = [
+            {
+                id: 'drift',
+                name: 'Pre-FOMC Drift',
+                risk: 'Medium',
+                riskColor: 'amber',
+                timeframe: '24h before',
+                description: 'Buy SPY at close the day before FOMC, sell at 2:00 PM announcement. This pattern has persisted since 1994 and accounts for ~80% of annual excess equity returns.',
+                stats: { sharpe: '0.84-1.1', winRate: '65%', avgReturn: '+0.49%' }
+            },
+            {
+                id: 'reversal',
+                name: 'Post-Announcement Reversal',
+                risk: 'Medium-High',
+                riskColor: 'rose',
+                timeframe: '15-30m after',
+                description: 'Fade the initial spike direction after volatility settles. Research shows pre-FOMC and post-FOMC returns are negatively correlated.',
+                stats: { sharpe: '2.5x drift', winRate: '58%', avgReturn: '+0.35%' }
+            },
+            {
+                id: 'condor',
+                name: 'Iron Condor',
+                risk: 'Low-Medium',
+                riskColor: 'emerald',
+                timeframe: '15m before',
+                description: 'Sell OTM calls and puts to capture IV crush. Implied volatility collapses post-announcement regardless of outcome.',
+                stats: { sharpe: '0.9', winRate: '72%', avgReturn: '+1.2%' }
+            },
+            {
+                id: 'nextday',
+                name: 'Next-Day Short',
+                risk: 'Medium',
+                riskColor: 'amber',
+                timeframe: 'Day after',
+                description: 'Markets close down 66.7% of the time the day following FOMC meetings. Sell call credit spreads slightly OTM.',
+                stats: { sharpe: '0.7', winRate: '67%', avgReturn: '+0.28%' }
+            }
+        ];
+
+        const scenarios = [
+            { 
+                name: 'Base Case', prob: 85, color: 'emerald',
+                action: '25bp cut + hawkish tone',
+                spx: '±0.5%', yields: 'Flat', dxy: 'Stable',
+                desc: 'Powell signals "data-dependent pause" with no commitment to further cuts.'
+            },
+            { 
+                name: 'Hawkish Surprise', prob: 12, color: 'rose',
+                action: 'Hold or extremely hawkish',
+                spx: '-1.5 to -3%', yields: '+10-15bps', dxy: '+1-2%',
+                desc: 'HIGHEST IMPACT—markets are NOT positioned for a hold.'
+            },
+            { 
+                name: 'Dovish Surprise', prob: 3, color: 'cyan',
+                action: 'Cut + more cuts signaled',
+                spx: '+1-2%', yields: '-10-15bps', dxy: '-1%',
+                desc: 'New ATH possible above 6,931. Dot plot shows 2+ cuts in 2026.'
+            }
+        ];
+
+        const keyLevels = [
+            { asset: 'S&P 500', current: '6,850', s1: '6,800', s2: '6,720', r1: '6,906', r2: '6,931' },
+            { asset: '2Y Yield', current: '3.57%', s1: '3.45%', s2: '3.35%', r1: '3.70%', r2: '3.85%' },
+            { asset: '10Y Yield', current: '4.15%', s1: '4.05%', s2: '3.95%', r1: '4.25%', r2: '4.35%' },
+            { asset: 'DXY', current: '99.5', s1: '98.5', s2: '97.5', r1: '100.2', r2: '101.0' }
+        ];
+
+        const keyStats = [
+            { stat: '8x', desc: 'Higher volatility on FOMC days', icon: '⚡' },
+            { stat: '80%', desc: 'Of excess returns from pre-FOMC drift', icon: '📈' },
+            { stat: '90min', desc: 'Elevated volatility window', icon: '⏱️' },
+            { stat: '3x', desc: 'More volatile Powell pressers', icon: '🎤' },
+            { stat: '65%', desc: 'Of gains reverse in 24h', icon: '🔄' },
+            { stat: '67%', desc: 'Down day after FOMC', icon: '📉' }
+        ];
+
+        // ============ COMPONENTS ============
+        
+        const CountdownTimer = () => {
+            const [time, setTime] = useState({ h: 0, m: 0, s: 0 });
+            const [isPast, setIsPast] = useState(false);
+
+            useEffect(() => {
+                const tick = () => {
+                    const now = new Date();
+                    const target = new Date();
+                    target.setHours(14, 0, 0, 0);
+                    const diff = target - now;
+                    
+                    if (diff <= 0) {
+                        setIsPast(true);
+                        setTime({ h: 0, m: 0, s: 0 });
+                    } else {
+                        setIsPast(false);
+                        setTime({
+                            h: Math.floor(diff / 3600000),
+                            m: Math.floor((diff % 3600000) / 60000),
+                            s: Math.floor((diff % 60000) / 1000)
+                        });
+                    }
+                };
+                tick();
+                const id = setInterval(tick, 1000);
+                return () => clearInterval(id);
+            }, []);
+
+            return (
+                <div className="card card-sm" style={{boxShadow: '0 0 20px rgba(16,185,129,0.15)'}}>
+                    <div className="text-xs text-slate-400" style={{marginBottom:'0.5rem', textAlign:'center'}}>
+                        {isPast ? '⏰ Decision Released' : '⏰ Time to Announcement'}
+                    </div>
+                    <div className="flex gap-2" style={{justifyContent:'center'}}>
+                        {[{v: time.h, l: 'HRS'}, {v: time.m, l: 'MIN'}, {v: time.s, l: 'SEC'}].map((x, i) => (
+                            <div key={i} style={{textAlign:'center'}}>
+                                <div className="countdown-box" style={{color: isPast ? '#64748b' : '#10b981'}}>
+                                    {String(x.v).padStart(2, '0')}
+                                </div>
+                                <div className="text-xs text-slate-500" style={{marginTop:'0.25rem'}}>{x.l}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        };
+
+        const DonutChart = ({ data }) => {
+            const canvasRef = useRef(null);
+            const chartRef = useRef(null);
+
+            useEffect(() => {
+                if (chartRef.current) chartRef.current.destroy();
+                
+                const ctx = canvasRef.current.getContext('2d');
+                chartRef.current = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: data.map(d => d.name),
+                        datasets: [{
+                            data: data.map(d => d.value),
+                            backgroundColor: data.map(d => d.color),
+                            borderWidth: 0,
+                            cutout: '65%'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                backgroundColor: '#1e293b',
+                                titleColor: '#fff',
+                                bodyColor: '#cbd5e1',
+                                borderColor: '#334155',
+                                borderWidth: 1,
+                                callbacks: {
+                                    label: (ctx) => `${ctx.label}: ${ctx.raw}%`
+                                }
+                            }
+                        }
+                    }
+                });
+
+                return () => { if (chartRef.current) chartRef.current.destroy(); };
+            }, [data]);
+
+            return <canvas ref={canvasRef}></canvas>;
+        };
+
+        const BarChartComponent = ({ labels, values, color = '#10b981' }) => {
+            const canvasRef = useRef(null);
+            const chartRef = useRef(null);
+
+            useEffect(() => {
+                if (chartRef.current) chartRef.current.destroy();
+                
+                const ctx = canvasRef.current.getContext('2d');
+                chartRef.current = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: values,
+                            backgroundColor: color,
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            x: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 11 } } },
+                            y: { 
+                                grid: { color: 'rgba(51,65,85,0.3)' }, 
+                                ticks: { color: '#94a3b8', callback: v => v + '%' }
+                            }
+                        }
+                    }
+                });
+
+                return () => { if (chartRef.current) chartRef.current.destroy(); };
+            }, [labels, values, color]);
+
+            return <canvas ref={canvasRef}></canvas>;
+        };
+
+        const AreaChartComponent = ({ labels, values }) => {
+            const canvasRef = useRef(null);
+            const chartRef = useRef(null);
+
+            useEffect(() => {
+                if (chartRef.current) chartRef.current.destroy();
+                
+                const ctx = canvasRef.current.getContext('2d');
+                const gradient = ctx.createLinearGradient(0, 0, 0, 250);
+                gradient.addColorStop(0, 'rgba(245, 158, 11, 0.4)');
+                gradient.addColorStop(1, 'rgba(245, 158, 11, 0)');
+
+                chartRef.current = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: values,
+                            borderColor: '#f59e0b',
+                            backgroundColor: gradient,
+                            fill: true,
+                            tension: 0.4,
+                            pointBackgroundColor: '#f59e0b',
+                            pointRadius: 4,
+                            pointHoverRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            x: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 11 } } },
+                            y: { grid: { color: 'rgba(51,65,85,0.3)' }, ticks: { color: '#94a3b8' } }
+                        }
+                    }
+                });
+
+                return () => { if (chartRef.current) chartRef.current.destroy(); };
+            }, [labels, values]);
+
+            return <canvas ref={canvasRef}></canvas>;
+        };
+
+        const StrategyCard = ({ strategy, isOpen, onToggle }) => {
+            const riskColors = {
+                emerald: { bg: 'rgba(16,185,129,0.15)', border: 'rgba(16,185,129,0.3)', text: '#10b981' },
+                amber: { bg: 'rgba(245,158,11,0.15)', border: 'rgba(245,158,11,0.3)', text: '#f59e0b' },
+                rose: { bg: 'rgba(244,63,94,0.15)', border: 'rgba(244,63,94,0.3)', text: '#f43f5e' }
+            };
+            const rc = riskColors[strategy.riskColor];
+
+            return (
+                <div className="card" style={{padding: 0, overflow: 'hidden'}}>
+                    <button className="expandable-header" onClick={onToggle}>
+                        <div>
+                            <h4 style={{marginBottom: '0.5rem'}}>{strategy.name}</h4>
+                            <div className="flex gap-2">
+                                <span className="badge" style={{background: rc.bg, borderColor: rc.border, color: rc.text}}>
+                                    {strategy.risk} Risk
+                                </span>
+                                <span className="badge" style={{background: 'rgba(51,65,85,0.5)', borderColor: 'transparent', color: '#cbd5e1'}}>
+                                    ⏱️ {strategy.timeframe}
+                                </span>
+                            </div>
+                        </div>
+                        <span style={{fontSize: '1.5rem', color: '#64748b', transition: 'transform 0.3s', transform: isOpen ? 'rotate(45deg)' : 'none'}}>+</span>
+                    </button>
+                    <div className={`expandable-content ${isOpen ? 'open' : ''}`}>
+                        <div style={{padding: '0 1.25rem 1.25rem', borderTop: '1px solid rgba(51,65,85,0.5)'}}>
+                            <p className="text-sm text-slate-300" style={{margin: '1rem 0'}}>{strategy.description}</p>
+                            <div className="grid grid-3" style={{gap: '0.75rem'}}>
+                                {[
+                                    {label: 'Sharpe', value: strategy.stats.sharpe, color: '#06b6d4'},
+                                    {label: 'Win Rate', value: strategy.stats.winRate, color: '#10b981'},
+                                    {label: 'Avg Return', value: strategy.stats.avgReturn, color: '#f59e0b'}
+                                ].map((s, i) => (
+                                    <div key={i} style={{background: 'rgba(15,23,42,0.5)', borderRadius: '0.5rem', padding: '0.75rem', textAlign: 'center'}}>
+                                        <div className="text-xs text-slate-400">{s.label}</div>
+                                        <div className="font-mono" style={{fontSize: '1.125rem', fontWeight: 700, color: s.color}}>{s.value}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const ScenarioCard = ({ scenario }) => {
+            const colors = {
+                emerald: { bg: 'rgba(16,185,129,0.1)', border: 'rgba(16,185,129,0.3)', text: '#10b981', fill: '#10b981' },
+                rose: { bg: 'rgba(244,63,94,0.1)', border: 'rgba(244,63,94,0.3)', text: '#f43f5e', fill: '#f43f5e' },
+                cyan: { bg: 'rgba(6,182,212,0.1)', border: 'rgba(6,182,212,0.3)', text: '#06b6d4', fill: '#06b6d4' }
+            };
+            const c = colors[scenario.color];
+
+            return (
+                <div className="card" style={{background: c.bg, borderColor: c.border}}>
+                    <div className="flex justify-between items-center" style={{marginBottom: '0.75rem'}}>
+                        <h4 style={{color: c.text, fontSize: '1.125rem'}}>{scenario.name}</h4>
+                        <div className="flex items-center gap-2">
+                            <div className="progress-bar" style={{width: '4rem'}}>
+                                <div className="progress-fill" style={{width: `${scenario.prob}%`, background: c.fill}}></div>
+                            </div>
+                            <span className="font-mono" style={{fontWeight: 700, color: c.text}}>{scenario.prob}%</span>
+                        </div>
+                    </div>
+                    <p className="text-sm" style={{fontWeight: 500, marginBottom: '1rem'}}>{scenario.action}</p>
+                    <div className="grid grid-3" style={{gap: '0.5rem', marginBottom: '1rem'}}>
+                        {[{l:'S&P 500', v: scenario.spx}, {l:'2Y Yield', v: scenario.yields}, {l:'DXY', v: scenario.dxy}].map((x, i) => (
+                            <div key={i} style={{background: 'rgba(15,23,42,0.5)', borderRadius: '0.5rem', padding: '0.5rem', textAlign: 'center'}}>
+                                <div className="text-xs text-slate-400">{x.l}</div>
+                                <div className="font-mono text-sm" style={{fontWeight: 600}}>{x.v}</div>
+                            </div>
+                        ))}
+                    </div>
+                    <p className="text-xs text-slate-400" style={{fontStyle: 'italic', borderTop: '1px solid rgba(51,65,85,0.3)', paddingTop: '0.75rem'}}>{scenario.desc}</p>
+                </div>
+            );
+        };
+
+        // ============ MAIN APP ============
+        const App = () => {
+            const [activeTab, setActiveTab] = useState('overview');
+            const [openStrategy, setOpenStrategy] = useState(null);
+
+            const tabs = [
+                { id: 'overview', label: 'Overview', icon: '📊' },
+                { id: 'impact', label: 'Market Impact', icon: '📈' },
+                { id: 'strategies', label: 'Strategies', icon: '🎯' },
+                { id: 'december', label: 'Dec 2025', icon: '📅' },
+                { id: 'levels', label: 'Key Levels', icon: '🎚️' }
+            ];
+
+            return (
+                <div className="container">
+                    {/* Header */}
+                    <div className="flex justify-between items-center" style={{marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem'}}>
+                        <div>
+                            <div className="flex items-center gap-3" style={{marginBottom: '0.5rem'}}>
+                                <div style={{width: '2.5rem', height: '2.5rem', borderRadius: '0.75rem', background: 'linear-gradient(135deg, #10b981, #06b6d4)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem'}}>📊</div>
+                                <h1 className="gradient-text">FOMC Trading Dashboard</h1>
+                            </div>
+                            <p className="text-sm text-slate-400">December 10, 2025 • Federal Reserve Rate Decision</p>
+                        </div>
+                        <CountdownTimer />
+                    </div>
+
+                    {/* Quick Stats */}
+                    <div className="grid grid-4" style={{marginBottom: '2rem'}}>
+                        {[
+                            { label: 'Current Rate', value: '3.75-4.00%', sub: 'Since Nov', color: '#06b6d4' },
+                            { label: 'Cut Probability', value: '87%', sub: '+52% vs Oct', color: '#10b981' },
+                            { label: 'Expected Move', value: '±0.8%', sub: 'SPX implied', color: '#f59e0b' },
+                            { label: 'VIX Level', value: '14.2', sub: '+18% pre-FOMC', color: '#f43f5e' }
+                        ].map((stat, i) => (
+                            <div key={i} className="card card-sm">
+                                <div className="text-xs text-slate-400">{stat.label}</div>
+                                <div className="stat-value" style={{color: stat.color}}>{stat.value}</div>
+                                <div className="text-xs text-slate-500">{stat.sub}</div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Tabs */}
+                    <div className="tabs-scroll" style={{marginBottom: '2rem'}}>
+                        {tabs.map(tab => (
+                            <button
+                                key={tab.id}
+                                className={`tab-btn ${activeTab === tab.id ? 'active' : ''}`}
+                                onClick={() => setActiveTab(tab.id)}
+                            >
+                                <span>{tab.icon}</span>
+                                <span>{tab.label}</span>
+                            </button>
+                        ))}
+                    </div>
+
+                    {/* Tab Content */}
+                    <div className={`tab-content ${activeTab === 'overview' ? 'active' : ''}`}>
+                        <div className="grid grid-2" style={{marginBottom: '1.5rem'}}>
+                            <div className="card">
+                                <h3>🎯 Rate Decision Probabilities</h3>
+                                <div className="chart-container">
+                                    <DonutChart data={probabilityData} />
+                                </div>
+                                <div className="flex gap-4" style={{justifyContent: 'center', marginTop: '1rem', flexWrap: 'wrap'}}>
+                                    {probabilityData.map((d, i) => (
+                                        <div key={i} className="flex items-center gap-2">
+                                            <div style={{width: '0.75rem', height: '0.75rem', borderRadius: '50%', background: d.color}}></div>
+                                            <span className="text-sm text-slate-300">{d.name}</span>
+                                            <span className="text-sm font-mono" style={{fontWeight: 700, color: d.color}}>{d.value}%</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="card">
+                                <h3>📈 Pre-FOMC Drift by Era</h3>
+                                <p className="text-xs text-slate-400" style={{marginBottom: '1rem', marginTop: '-0.5rem'}}>Avg S&P 500 return 24h before announcement</p>
+                                <div className="chart-container">
+                                    <BarChartComponent labels={driftData.labels} values={driftData.values} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <h3>📚 FOMC By The Numbers</h3>
+                            <div className="grid grid-3">
+                                {keyStats.map((item, i) => (
+                                    <div key={i} style={{background: 'rgba(15,23,42,0.5)', borderRadius: '0.75rem', padding: '1rem', display: 'flex', alignItems: 'flex-start', gap: '1rem'}}>
+                                        <span style={{fontSize: '2rem'}}>{item.icon}</span>
+                                        <div>
+                                            <div className="font-mono" style={{fontSize: '1.5rem', fontWeight: 700, color: '#10b981'}}>{item.stat}</div>
+                                            <div className="text-sm text-slate-400">{item.desc}</div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`tab-content ${activeTab === 'impact' ? 'active' : ''}`}>
+                        <div className="card" style={{marginBottom: '1.5rem'}}>
+                            <h3>📉 Volatility Pattern Around FOMC</h3>
+                            <p className="text-xs text-slate-400" style={{marginBottom: '1rem', marginTop: '-0.5rem'}}>Typical VIX behavior: pre-announcement build and post-announcement crush</p>
+                            <div className="chart-container" style={{height: '280px'}}>
+                                <AreaChartComponent labels={volatilityData.labels} values={volatilityData.values} />
+                            </div>
+                        </div>
+                        <div className="grid grid-2">
+                            {[
+                                { asset: 'Equities', icon: '📊', color: 'emerald', effects: ['Pre-FOMC drift: +0.49% avg in 24h', 'Post-announcement reversal common', 'Press conference often reverses statement', 'Next day closes down 67% of time'] },
+                                { asset: 'Treasuries', icon: '📜', color: 'cyan', effects: ['2Y most sensitive to rate expectations', '10Y: 1.7bps same-day, 14bps over 50 days', 'Curve can steepen or flatten on surprise', 'Post-FOMC drift documented in bonds'] },
+                                { asset: 'Currencies', icon: '💱', color: 'amber', effects: ['EUR/USD 8x more volatile on FOMC', '65% of pre-FOMC gains reverse in 24h', 'Dollar strengthens on hawkish surprises', 'EM currencies most sensitive'] },
+                                { asset: 'Volatility', icon: '📉', color: 'rose', effects: ['VIX rises into announcement', 'IV crush occurs regardless of outcome', 'Options premium collapses 30-50%', 'Best for premium sellers'] }
+                            ].map((item, i) => {
+                                const colorMap = { emerald: '#10b981', cyan: '#06b6d4', amber: '#f59e0b', rose: '#f43f5e' };
+                                return (
+                                    <div key={i} className="card">
+                                        <div className="flex items-center gap-2" style={{marginBottom: '1rem'}}>
+                                            <span style={{fontSize: '1.5rem'}}>{item.icon}</span>
+                                            <h4>{item.asset}</h4>
+                                        </div>
+                                        {item.effects.map((e, j) => (
+                                            <div key={j} className="list-item text-sm text-slate-300">
+                                                <span className="list-bullet" style={{color: colorMap[item.color]}}>▸</span>
+                                                <span>{e}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    <div className={`tab-content ${activeTab === 'strategies' ? 'active' : ''}`}>
+                        <div className="flex flex-col gap-4">
+                            {strategies.map(s => (
+                                <StrategyCard 
+                                    key={s.id} 
+                                    strategy={s} 
+                                    isOpen={openStrategy === s.id}
+                                    onToggle={() => setOpenStrategy(openStrategy === s.id ? null : s.id)}
+                                />
+                            ))}
+                            <div className="card" style={{background: 'linear-gradient(135deg, rgba(244,63,94,0.1), rgba(249,115,22,0.1))', borderColor: 'rgba(244,63,94,0.3)'}}>
+                                <h4 style={{color: '#f43f5e', marginBottom: '1rem'}}>⚠️ Critical Risk Management Rules</h4>
+                                <div className="grid grid-2">
+                                    {[
+                                        'Position size: Max 1-2% of capital per trade',
+                                        'Use wider stops—tight stops get whipsawed',
+                                        'Wait 15-30 min post-announcement before entering',
+                                        'Watch press conference—often reverses statement',
+                                        'Check IV rank before buying options (>70% = headwind)',
+                                        'Defined-risk spreads > naked positions'
+                                    ].map((rule, i) => (
+                                        <div key={i} className="list-item text-sm text-slate-300">
+                                            <span className="list-bullet" style={{color: '#f43f5e'}}>•</span>
+                                            <span>{rule}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`tab-content ${activeTab === 'december' ? 'active' : ''}`}>
+                        <div className="card" style={{marginBottom: '1.5rem'}}>
+                            <h3>📅 Today's Timeline (Eastern Time)</h3>
+                            <div className="timeline" style={{marginTop: '1.5rem'}}>
+                                {[
+                                    { time: '2:00 PM', event: 'Rate Decision & Statement', desc: 'FOMC announces rate decision', key: true },
+                                    { time: '2:00 PM', event: 'SEP & Dot Plot Released', desc: 'Summary of Economic Projections', key: true },
+                                    { time: '2:30 PM', event: 'Powell Press Conference', desc: 'Watch closely for reversals', key: true },
+                                    { time: '~3:30 PM', event: 'Volatility Normalizes', desc: 'Market settles ~90 min after', key: false }
+                                ].map((item, i) => (
+                                    <div key={i} className="timeline-item">
+                                        <div className={`timeline-dot ${item.key ? 'animate-pulse' : 'secondary'}`}></div>
+                                        <div className="card card-sm" style={{marginLeft: '0.5rem'}}>
+                                            <div className="flex justify-between items-center" style={{marginBottom: '0.25rem'}}>
+                                                <h4 style={{margin: 0}}>{item.event}</h4>
+                                                <span className="badge font-mono" style={{background: 'rgba(16,185,129,0.2)', borderColor: 'rgba(16,185,129,0.3)', color: '#10b981', fontSize: '0.7rem'}}>{item.time}</span>
+                                            </div>
+                                            <p className="text-sm text-slate-400">{item.desc}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="card" style={{marginBottom: '1.5rem'}}>
+                            <h3>🎯 Scenario Analysis</h3>
+                            <div className="flex flex-col gap-4">
+                                {scenarios.map((s, i) => <ScenarioCard key={i} scenario={s} />)}
+                            </div>
+                        </div>
+                        <div className="grid grid-2">
+                            <div className="card bg-emerald" style={{borderWidth: '1px', borderStyle: 'solid'}}>
+                                <h4 style={{color: '#10b981', marginBottom: '1rem'}}>🕊️ Dovish Signals</h4>
+                                {[
+                                    ['Waller (Nov 17):', 'Supports cut for "risk management"'],
+                                    ['Williams (Nov 21):', 'Shifted odds from 35% to 80%+'],
+                                    ['Labor data:', '~1M job cuts in 2025 (+65% YoY)']
+                                ].map((x, i) => (
+                                    <div key={i} className="list-item text-sm text-slate-300">
+                                        <span className="list-bullet" style={{color: '#10b981'}}>▸</span>
+                                        <span><strong style={{color: '#fff'}}>{x[0]}</strong> {x[1]}</span>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="card bg-rose" style={{borderWidth: '1px', borderStyle: 'solid'}}>
+                                <h4 style={{color: '#f43f5e', marginBottom: '1rem'}}>🦅 Hawkish Pushback</h4>
+                                {[
+                                    ['Powell (Oct 29):', '"Not a foregone conclusion—far from it"'],
+                                    ['Collins:', 'Concern about easing too quickly'],
+                                    ['Bostic:', '"Price stability remains more pressing risk"']
+                                ].map((x, i) => (
+                                    <div key={i} className="list-item text-sm text-slate-300">
+                                        <span className="list-bullet" style={{color: '#f43f5e'}}>▸</span>
+                                        <span><strong style={{color: '#fff'}}>{x[0]}</strong> {x[1]}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`tab-content ${activeTab === 'levels' ? 'active' : ''}`}>
+                        <div className="card" style={{padding: 0, overflow: 'hidden', marginBottom: '1.5rem'}}>
+                            <div style={{padding: '1.5rem', borderBottom: '1px solid rgba(51,65,85,0.5)'}}>
+                                <h3 style={{margin: 0}}>🎚️ Key Technical Levels</h3>
+                                <p className="text-xs text-slate-400" style={{marginTop: '0.25rem'}}>Critical support and resistance for today</p>
+                            </div>
+                            <div className="overflow-x-auto">
+                                <table className="table">
+                                    <thead>
+                                        <tr>
+                                            <th style={{textAlign: 'left'}}>Asset</th>
+                                            <th style={{color: '#06b6d4'}}>Current</th>
+                                            <th style={{color: '#10b981'}}>Support 1</th>
+                                            <th style={{color: 'rgba(16,185,129,0.7)'}}>Support 2</th>
+                                            <th style={{color: '#f43f5e'}}>Resistance 1</th>
+                                            <th style={{color: 'rgba(244,63,94,0.7)'}}>Resistance 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {keyLevels.map((l, i) => (
+                                            <tr key={i}>
+                                                <td>{l.asset}</td>
+                                                <td style={{color: '#06b6d4', fontWeight: 600}}>{l.current}</td>
+                                                <td style={{color: '#10b981'}}>{l.s1}</td>
+                                                <td style={{color: 'rgba(16,185,129,0.7)'}}>{l.s2}</td>
+                                                <td style={{color: '#f43f5e'}}>{l.r1}</td>
+                                                <td style={{color: 'rgba(244,63,94,0.7)'}}>{l.r2}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div className="grid grid-2" style={{marginBottom: '1.5rem'}}>
+                            <div className="card" style={{background: 'rgba(16,185,129,0.05)', borderColor: 'rgba(16,185,129,0.3)'}}>
+                                <h4 style={{color: '#10b981', marginBottom: '1rem'}}>📈 Bullish Triggers</h4>
+                                {['SPX breaks above 6,906 with volume', '2Y yield falls below 3.50%', 'DXY breaks below 99.00', 'Dot plot shows 2+ cuts in 2026', 'Powell emphasizes labor market risks'].map((t, i) => (
+                                    <div key={i} className="list-item text-sm text-slate-300">
+                                        <span style={{color: '#10b981', fontSize: '1rem'}}>▲</span>
+                                        <span>{t}</span>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="card" style={{background: 'rgba(244,63,94,0.05)', borderColor: 'rgba(244,63,94,0.3)'}}>
+                                <h4 style={{color: '#f43f5e', marginBottom: '1rem'}}>📉 Bearish Triggers</h4>
+                                {['FOMC holds rates (no cut)', 'SPX breaks below 6,800 with volume', 'Powell emphasizes inflation concerns', 'Multiple hawkish dissents', '2Y yield spikes above 3.75%'].map((t, i) => (
+                                    <div key={i} className="list-item text-sm text-slate-300">
+                                        <span style={{color: '#f43f5e', fontSize: '1rem'}}>▼</span>
+                                        <span>{t}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="card" style={{background: 'linear-gradient(135deg, rgba(245,158,11,0.1), rgba(249,115,22,0.1))', borderColor: 'rgba(245,158,11,0.3)'}}>
+                            <h4 style={{color: '#f59e0b', marginBottom: '0.75rem'}}>💡 Key Trading Insight</h4>
+                            <p className="text-slate-300" style={{lineHeight: 1.7}}>
+                                With <strong style={{color: '#fff'}}>87% probability of a cut already priced in</strong>, the asymmetric risk lies to the hawkish side. 
+                                A hold decision would catch markets significantly offside—only 11-12% is priced for that outcome. 
+                                Consider protective positioning or defined-risk bearish structures to hedge against the tail risk.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Footer */}
+                    <div style={{marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(51,65,85,0.5)', textAlign: 'center'}}>
+                        <p className="text-xs text-slate-500">Data from Federal Reserve, CME FedWatch, academic research. Not financial advice.</p>
+                        <p className="text-xs text-slate-500" style={{marginTop: '0.5rem'}}>Last updated: December 9, 2025</p>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
