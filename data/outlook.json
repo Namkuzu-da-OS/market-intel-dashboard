@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-10T16:11:58.687Z",
+  "timestamp": "2025-12-10T16:54:47.422Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -7,16 +7,16 @@
     "sources": {
       "social": {
         "bullish": 222,
-        "bearish": 60,
-        "neutral": 221,
-        "total": 503,
+        "bearish": 59,
+        "neutral": 227,
+        "total": 508,
         "pct": 44
       },
       "news": {
-        "bullish": 17,
-        "bearish": 16,
-        "neutral": 17,
-        "total": 50,
+        "bullish": 16,
+        "bearish": 15,
+        "neutral": 16,
+        "total": 47,
         "pct": 34
       },
       "video": {
@@ -27,46 +27,46 @@
         "pct": 46
       },
       "chat": {
-        "bullish": 7,
+        "bullish": 8,
         "bearish": 2,
-        "neutral": 3,
+        "neutral": 2,
         "total": 12,
-        "pct": 58
+        "pct": 67
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed bullish sentiment with medium conviction - sources lean constructive on institutional capital flows and rate policy support, but acknowledge structural vulnerabilities in consumer spending and year-end liquidity constraints.\n\n📈 **Themes:** (1) AI infrastructure and institutional crypto adoption as secular growth drivers, (2) Fed rate policy and liquidity conditions as primary near-term volatility catalysts, (3) Bifurcated market with consumer discretionary weakness contrasting against tech/crypto strength.\n\n🎯 **Levels:** SPY resistance at $690, $685, $684; SPY support at $677, $680, $675. QQQ resistance at $630, $631, $634; QQQ support at $610, $620, $613. Wells Fargo S&P target range 7,400-7,600 mentioned in Twitter sources.",
+    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - structural support from rate policy accommodation and AI infrastructure demand offset by near-term volatility around policy communications and liquidity dynamics.\n\n📈 **Themes:** (1) Fed policy uncertainty driving choppy price action through year-end liquidity events, (2) AI sector strength and institutional crypto adoption as capital rotation drivers, (3) Sector bifurcation with mega-cap tech/utilities outperforming while consumer discretionary and traditional financials face headwinds.\n\n🎯 **Levels:** SPY resistance at $690 (strong OI wall), $685, $684 with support at $677 (strong OI wall), $680, $683. QQQ resistance at $630 (strong OI wall), $631, $634 with support at $610 (strong OI wall), $620, $613. S&P 500 forward target range 7,400-7,600 per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "NVDA",
       "BTC",
-      "CBRL",
-      "CPB"
+      "ETH"
     ],
     "key_themes": [
-      "AI infrastructure demand and institutional crypto adoption",
-      "Fed rate policy and year-end liquidity management",
-      "Consumer discretionary weakness and earnings guidance pressure",
-      "Institutional capital flows versus retail positioning",
-      "Regulatory clarity for tokenized securities and stablecoins"
+      "Fed policy uncertainty and rate cut trajectory",
+      "AI infrastructure secular growth and institutional adoption",
+      "Year-end liquidity dynamics and repo market stress",
+      "Sector rotation from consumer/financials into tech/utilities",
+      "Crypto institutional capital flows"
     ],
     "risk_factors": [
-      "Year-end repo market stress and liquidity constraints creating forced deleveraging",
-      "Consumer spending deterioration evidenced by multi-year lows in discretionary names",
-      "Tariff policy uncertainty and potential 500+ point volatility swings",
-      "Crowded institutional positioning vulnerable to liquidity shocks",
-      "Geopolitical escalation (Ukraine/Taiwan) re-pricing risk premiums"
+      "Year-end liquidity stress and repo market adequacy through quarter-end",
+      "Geopolitical escalation (chip sanctions, tariff policy) creating binary risk-off triggers",
+      "Earnings guidance deterioration in software, fintech, and consumer discretionary sectors",
+      "Fed balance sheet management and reserve adequacy post-policy decision",
+      "Margin compression in traditional financials amid regulatory pressure"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $677 support (strong), $680 support, $684-685 resistance cluster. QQQ: $620 support, $630 resistance (strong). Options structure shows neutral net bias with price trapped between strong walls.",
+    "intraday_levels": "SPY: $683 current level with $685-690 resistance cluster, $680-677 support cluster. QQQ: $623 current with $630-631 resistance, $620-610 support. High volatility expected around policy communications creating choppy bidirectional movement.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $675-677 support zone must hold, $690 key resistance target. QQQ: $610 critical support level, $630-634 resistance cluster. Break above SPY $690 opens path toward 7,400-7,600 S&P targets per Wells Fargo.",
+    "swing_levels": "SPY: Break above $690 opens path toward 7,400+ S&P equivalent, failure at $677 risks retest of $670 max pain. QQQ: $630-634 resistance zone critical for continuation, $610 support defines bullish structure. Expect higher lows pattern through Q1 2026.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 182881
+    "generation_time_ms": 177441
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "IWM",
-        "mentions": 6,
-        "sentiment_score": 0.228,
+        "mentions": 5,
+        "sentiment_score": 0.13,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 23,
+        "sentiment_pct": 13,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 1,
           "neutral": 2,
-          "total": 6
+          "total": 5
         }
       },
       {
@@ -111,43 +111,30 @@
       },
       {
         "ticker": "QQQ",
-        "mentions": 2,
-        "sentiment_score": -0.325,
+        "mentions": 3,
+        "sentiment_score": -0.433,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 43,
         "counts": {
           "bullish": 0,
-          "bearish": 1,
+          "bearish": 2,
           "neutral": 1,
-          "total": 2
+          "total": 3
         }
       }
     ],
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 12,
-        "sentiment_score": 0.238,
+        "mentions": 11,
+        "sentiment_score": 0.155,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 24,
+        "sentiment_pct": 16,
         "counts": {
-          "bullish": 6,
-          "bearish": 2,
-          "neutral": 4,
-          "total": 12
-        }
-      },
-      {
-        "ticker": "ETH",
-        "mentions": 8,
-        "sentiment_score": 0.591,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 59,
-        "counts": {
-          "bullish": 7,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 8
+          "bullish": 5,
+          "bearish": 3,
+          "neutral": 3,
+          "total": 11
         }
       },
       {
@@ -161,6 +148,19 @@
           "bearish": 0,
           "neutral": 0,
           "total": 6
+        }
+      },
+      {
+        "ticker": "ETH",
+        "mentions": 5,
+        "sentiment_score": 0.428,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 43,
+        "counts": {
+          "bullish": 4,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 5
         }
       },
       {
@@ -192,29 +192,42 @@
     ],
     "other": [
       {
-        "ticker": "SPX",
-        "mentions": 9,
-        "sentiment_score": -0.017,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 2,
+        "ticker": "NVDA",
+        "mentions": 10,
+        "sentiment_score": 0.242,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 24,
         "counts": {
-          "bullish": 2,
-          "bearish": 2,
+          "bullish": 4,
+          "bearish": 1,
           "neutral": 5,
-          "total": 9
+          "total": 10
         }
       },
       {
-        "ticker": "TSLA",
-        "mentions": 8,
-        "sentiment_score": 0.561,
+        "ticker": "SPX",
+        "mentions": 10,
+        "sentiment_score": 0.057,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
+        "sentiment_pct": 6,
         "counts": {
-          "bullish": 6,
-          "bearish": 0,
+          "bullish": 3,
+          "bearish": 2,
+          "neutral": 5,
+          "total": 10
+        }
+      },
+      {
+        "ticker": "JPM",
+        "mentions": 9,
+        "sentiment_score": -0.198,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 20,
+        "counts": {
+          "bullish": 2,
+          "bearish": 5,
           "neutral": 2,
-          "total": 8
+          "total": 9
         }
       },
       {
@@ -231,29 +244,16 @@
         }
       },
       {
-        "ticker": "NVDA",
-        "mentions": 8,
-        "sentiment_score": 0.294,
+        "ticker": "PLTR",
+        "mentions": 7,
+        "sentiment_score": 0.289,
         "sentiment_label": "Bullish",
         "sentiment_pct": 29,
         "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 5,
-          "total": 8
-        }
-      },
-      {
-        "ticker": "JPM",
-        "mentions": 8,
-        "sentiment_score": -0.313,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 31,
-        "counts": {
-          "bullish": 1,
-          "bearish": 5,
+          "bullish": 4,
+          "bearish": 1,
           "neutral": 2,
-          "total": 8
+          "total": 7
         }
       }
     ]
@@ -261,8 +261,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 17.1,
-    "pc_ratio": 1.12,
+    "vix": 17.27,
+    "pc_ratio": 1.14,
     "sentiment_bullish_pct": 44,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -270,8 +270,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 12.74,
-    "spread": 11.88,
+    "hv": 12.73,
+    "spread": 6.41,
     "position": 50
   },
   "action": {
