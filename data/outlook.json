@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-12T18:26:59.214Z",
+  "timestamp": "2025-12-12T19:02:02.251Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 88,
-        "bearish": 41,
-        "neutral": 105,
-        "total": 234,
+        "bullish": 96,
+        "bearish": 45,
+        "neutral": 111,
+        "total": 252,
         "pct": 38
       },
       "news": {
-        "bullish": 13,
+        "bullish": 14,
         "bearish": 13,
-        "neutral": 11,
-        "total": 37,
-        "pct": 35
+        "neutral": 12,
+        "total": 39,
+        "pct": 36
       },
       "video": {
         "bullish": 12,
@@ -28,59 +28,59 @@
       },
       "chat": {
         "bullish": 1,
-        "bearish": 2,
+        "bearish": 3,
         "neutral": 3,
-        "total": 6,
-        "pct": 17
+        "total": 7,
+        "pct": 14
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish with medium conviction. Near-term selling pressure from infrastructure/capex concerns overwhelms longer-term structural policy tailwinds, creating choppy downside momentum.\n\n📈 **Themes:** (1) AI infrastructure capex uncertainty weighing on growth assets, (2) Crypto regulatory clarity developments (OCC approvals, institutional adoption) fighting against liquidation pressure, (3) Policy accommodation expectations (Fed rate cuts, fiscal support) versus execution/timing uncertainty\n\n🎯 **Levels:** Ethereum $3,000 technical breakdown level (X sources), SPY resistance at $700/$693/$690 (options structure), SPY support at $595/$555 (options structure), QQQ resistance at $640/$630 (options structure), QQQ support at $605/$585 (options structure)",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish macro liquidity backdrop (Fed easing, regulatory tailwinds) confronting bearish near-term technical breakdown and policy risks.\n\n📈 **Themes:** (1) Central bank policy divergence creating volatility (Fed easing vs BoJ tightening), (2) AI infrastructure momentum contested by execution delays and margin compression, (3) Crypto regulatory clarity driving institutional adoption amid DeFi protocol fragility.\n\n🎯 **Levels:** ES futures support at 6817, then 6845-6847 range; resistance at 6884-89. Ethereum testing $3,000 support. SPY options: $700 resistance cluster, $690-693 resistance zone. QQQ options: $640 resistance, $605 support.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "ETH",
+      "ES",
       "BTC",
-      "ORCL"
+      "ETH"
     ],
     "key_themes": [
-      "AI infrastructure capex uncertainty",
-      "Crypto regulatory clarity and institutional adoption",
-      "Fed rate cut timing and policy accommodation",
-      "Sector rotation between growth and defensive positioning",
-      "Liquidity cycle dynamics"
+      "Central bank policy divergence",
+      "AI infrastructure execution risk",
+      "Crypto regulatory framework progress",
+      "DeFi protocol fragility",
+      "Liquidity-driven positioning"
     ],
     "risk_factors": [
-      "Data center buildout delays undermining AI growth narrative",
-      "Crypto liquidation cascades ($182M mentioned) creating technical breakdown",
-      "Fed policy communication vacuum prolonging uncertainty",
-      "Earnings disappointments in software/fintech sectors",
-      "Geopolitical tensions (Taiwan/Russia mentioned) as risk-off catalyst"
+      "Bank of Japan rate hike creating carry trade unwind",
+      "ES futures technical breakdown accelerating selling",
+      "DeFi lending protocol contagion (20 bps margins)",
+      "AI capex delays undermining growth narrative",
+      "Earnings guidance cuts in software and retail"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Watch $690 resistance zone (options wall), defend $682 current level; QQQ: $615 current level under pressure, $605 support critical (options wall)",
+    "intraday_levels": "ES futures 6845-6847 support critical, break targets 6817. Resistance at 6884-89. SPY watching $690-693 options resistance cluster.",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: $700 upside magnet (strong options OI), $595-$555 downside support cluster; QQQ: $640 resistance target, $585 key support if $605 fails; ETH: $3,000 make-or-break level per source analysis",
-    "source_alignment": "MIXED"
+    "swing_levels": "SPY $700 major resistance (30K+ OI), $690-693 secondary resistance. Support cluster $680-683 range. QQQ $640 resistance, $605-585 support zone. Watch for policy-driven volatility.",
+    "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 187729
+    "generation_time_ms": 181863
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 6,
-        "sentiment_score": 0.273,
+        "mentions": 7,
+        "sentiment_score": 0.234,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
+        "sentiment_pct": 23,
         "counts": {
           "bullish": 3,
           "bearish": 1,
-          "neutral": 2,
-          "total": 6
+          "neutral": 3,
+          "total": 7
         }
       },
       {
@@ -206,15 +206,28 @@
     "other": [
       {
         "ticker": "ORCL",
-        "mentions": 12,
+        "mentions": 14,
         "sentiment_score": 0.034,
         "sentiment_label": "Neutral",
         "sentiment_pct": 3,
         "counts": {
-          "bullish": 6,
-          "bearish": 6,
+          "bullish": 7,
+          "bearish": 7,
           "neutral": 0,
-          "total": 12
+          "total": 14
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 11,
+        "sentiment_score": 0.527,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 53,
+        "counts": {
+          "bullish": 9,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 11
         }
       },
       {
@@ -227,19 +240,6 @@
           "bullish": 6,
           "bearish": 0,
           "neutral": 2,
-          "total": 8
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "mentions": 8,
-        "sentiment_score": 0.443,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 44,
-        "counts": {
-          "bullish": 6,
-          "bearish": 1,
-          "neutral": 1,
           "total": 8
         }
       },
@@ -274,8 +274,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.41,
-    "pc_ratio": 0.83,
+    "vix": 15.66,
+    "pc_ratio": 0.81,
     "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -283,8 +283,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 12.97,
-    "spread": 8.21,
+    "hv": 12.89,
+    "spread": 5.35,
     "position": 50
   },
   "action": {
