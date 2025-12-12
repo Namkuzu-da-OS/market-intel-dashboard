@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-12T15:51:34.074Z",
+  "timestamp": "2025-12-12T16:26:40.770Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 75,
+    "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 64,
-        "bearish": 19,
-        "neutral": 78,
-        "total": 161,
-        "pct": 40
+        "bullish": 71,
+        "bearish": 30,
+        "neutral": 82,
+        "total": 183,
+        "pct": 39
       },
       "news": {
         "bullish": 13,
-        "bearish": 9,
-        "neutral": 7,
-        "total": 29,
-        "pct": 45
+        "bearish": 12,
+        "neutral": 8,
+        "total": 33,
+        "pct": 39
       },
       "video": {
         "bullish": 9,
@@ -29,72 +29,95 @@
       "chat": {
         "bullish": 1,
         "bearish": 0,
-        "neutral": 2,
-        "total": 3,
-        "pct": 33
+        "neutral": 3,
+        "total": 4,
+        "pct": 25
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - multiple sources identify structural tailwinds (monetary easing, AI productivity, fiscal expectations) supporting risk assets, though weak breadth and crowded positioning create execution risk.\n\n📈 **Themes:** (1) Liquidity regime shift and Fed balance sheet expansion supporting equities/crypto, (2) AI infrastructure and semiconductor momentum driving sector rotation, (3) Crowded positioning and breadth divergence creating vulnerability to mean-reversion on negative catalysts.\n\n🎯 **Levels:** SPY resistance at $700, $693, $690; support at $555, $595. QQQ resistance at $640, $630; support at $605, $585. DELL awaiting price increase catalyst. IRDM testing $20 resistance. Additional levels: RIVN and TSLA in flag consolidation patterns.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish structural themes clash with near-term technical and execution risks. Professional trader shows bullish positioning but lacks detailed commentary, while retail/analyst sentiment is predominantly bullish (70-90%) against more cautious institutional RSS narrative.\n\n📈 **Themes:** (1) AI infrastructure momentum competing against execution delays and demand questions, (2) Fed monetary policy pivot and liquidity expansion expectations supporting risk assets, (3) Institutional positioning dynamics showing both dark pool accumulation and crowded long exposure creating fragility.\n\n🎯 **Levels:** SPX support at 6843 (10-session pivot), SPY resistance at 690-693-700 (options strikes), support at 688.96 (dark pool level), QQQ resistance at 630-640 (options strikes), support at 605, TSLA critical level at 454.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "DELL",
-      "NVDA",
-      "IRDM",
-      "CEG",
+      "SPX",
       "TSLA",
-      "RIVN"
+      "BTC"
     ],
     "key_themes": [
-      "Fed liquidity expansion and monetary regime shift",
-      "AI infrastructure and semiconductor sector momentum",
-      "Crowded positioning with weak breadth confirmation",
-      "Fiscal stimulus expectations for 2026",
-      "Crypto institutional adoption acceleration"
+      "AI infrastructure execution risk vs structural adoption momentum",
+      "Fed liquidity expansion and monetary easing expectations",
+      "Institutional positioning crowding and fragility",
+      "Technical deterioration signals competing with dark pool accumulation",
+      "Consumer discretionary and enterprise software demand weakness"
     ],
     "risk_factors": [
-      "QQQ weakness and breadth divergence contradicting bullish narratives",
-      "Crowded positioning vulnerable to rapid unwind on negative surprises",
-      "Fed policy uncertainty and Treasury funding market stress",
-      "Earnings downgrades in enterprise software and fintech sectors",
-      "Geopolitical escalation triggering risk-off rotation"
+      "SPX break below 6843 triggers cascade to 30-DMA and confirms distribution over consolidation",
+      "Oracle AI data center delay signals broader capex execution risk undermining infrastructure thesis",
+      "Crowded positioning and bubble valuations create limited pullback tolerance",
+      "Earnings misses in enterprise software and consumer discretionary contradicting structural growth narrative",
+      "Technical failures at resistance (SPY 690-700, QQQ 640) with volume weakness suggesting institutional distribution"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY watching $690-$693 resistance zone, support at $685 current level. QQQ testing $619 with $630 overhead resistance, $605 downside support. Monitor for 10 AM reversal patterns flagged in Twitter analysis.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY targeting $700 resistance if momentum sustains, key support at $670 max pain level. QQQ eyeing $640 breakout level, defending $605 support zone. Watch DELL post-price-increase move and IRDM $20 breakout confirmation.",
+    "intraday_levels": "SPY 688.96 pivot, 690 resistance; SPX 6843 support critical; QQQ 605 support",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY 693-700 resistance cluster, 688.96 breakdown trigger; SPX 6843 key pivot to 30-DMA on break; QQQ 630-640 resistance, 605 support; TSLA 454 must hold",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 177310
+    "generation_time_ms": 175207
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 4,
-        "sentiment_score": 0.23,
+        "mentions": 6,
+        "sentiment_score": 0.273,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 23,
+        "sentiment_pct": 27,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 1,
-          "neutral": 1,
-          "total": 4
+          "neutral": 2,
+          "total": 6
         }
       },
       {
         "ticker": "IWM",
-        "mentions": 2,
-        "sentiment_score": 0.77,
+        "mentions": 3,
+        "sentiment_score": 0.513,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 77,
+        "sentiment_pct": 51,
         "counts": {
           "bullish": 2,
           "bearish": 0,
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 3,
+        "sentiment_score": -0.25,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 25,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "GLD",
+        "mentions": 2,
+        "sentiment_score": 0.035,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 4,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
           "neutral": 0,
           "total": 2
         }
@@ -111,41 +134,28 @@
           "neutral": 0,
           "total": 2
         }
-      },
-      {
-        "ticker": "QQQ",
-        "mentions": 2,
-        "sentiment_score": -0.375,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 38,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "GLD",
-        "mentions": 1,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "crypto": [
       {
         "ticker": "BTC",
+        "mentions": 4,
+        "sentiment_score": -0.108,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 11,
+        "counts": {
+          "bullish": 1,
+          "bearish": 2,
+          "neutral": 1,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "MSTR",
         "mentions": 3,
-        "sentiment_score": 0.073,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 7,
+        "sentiment_score": 0.007,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 1,
         "counts": {
           "bullish": 1,
           "bearish": 1,
@@ -154,15 +164,15 @@
         }
       },
       {
-        "ticker": "MSTR",
+        "ticker": "ETH",
         "mentions": 2,
-        "sentiment_score": 0.36,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_score": -0.65,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 65,
         "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
+          "bullish": 0,
+          "bearish": 2,
+          "neutral": 0,
           "total": 2
         }
       },
@@ -195,6 +205,32 @@
     ],
     "other": [
       {
+        "ticker": "TSLA",
+        "mentions": 8,
+        "sentiment_score": 0.443,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 44,
+        "counts": {
+          "bullish": 6,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 8
+        }
+      },
+      {
+        "ticker": "ORCL",
+        "mentions": 8,
+        "sentiment_score": 0.039,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 4,
+        "counts": {
+          "bullish": 4,
+          "bearish": 4,
+          "neutral": 0,
+          "total": 8
+        }
+      },
+      {
         "ticker": "AVGO",
         "mentions": 7,
         "sentiment_score": 0.553,
@@ -221,42 +257,16 @@
         }
       },
       {
-        "ticker": "TSLA",
-        "mentions": 6,
-        "sentiment_score": 0.557,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "ORCL",
-        "mentions": 5,
-        "sentiment_score": 0.452,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 45,
-        "counts": {
-          "bullish": 4,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 5
-        }
-      },
-      {
         "ticker": "SPX",
-        "mentions": 5,
-        "sentiment_score": 0.364,
+        "mentions": 6,
+        "sentiment_score": 0.195,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 20,
         "counts": {
           "bullish": 2,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 3,
-          "total": 5
+          "total": 6
         }
       }
     ]
@@ -264,17 +274,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.13,
-    "pc_ratio": 1.09,
-    "sentiment_bullish_pct": 40,
+    "vix": 15.79,
+    "pc_ratio": 1.11,
+    "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 12.75,
-    "spread": 13.06,
+    "hv": 12.9,
+    "spread": 10.83,
     "position": 50
   },
   "action": {
