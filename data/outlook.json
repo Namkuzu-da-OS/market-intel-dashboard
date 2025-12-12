@@ -1,75 +1,91 @@
 {
-  "timestamp": "2025-12-12T15:11:40.839Z",
+  "timestamp": "2025-12-12T15:51:34.074Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 75,
     "sources": {
       "social": {
-        "bullish": 52,
-        "bearish": 12,
-        "neutral": 67,
-        "total": 131,
+        "bullish": 64,
+        "bearish": 19,
+        "neutral": 78,
+        "total": 161,
         "pct": 40
       },
       "news": {
-        "bullish": 12,
+        "bullish": 13,
         "bearish": 9,
-        "neutral": 6,
-        "total": 27,
-        "pct": 44
+        "neutral": 7,
+        "total": 29,
+        "pct": 45
       },
       "video": {
-        "bullish": 8,
+        "bullish": 9,
         "bearish": 1,
         "neutral": 3,
-        "total": 12,
-        "pct": 67
+        "total": 13,
+        "pct": 69
       },
       "chat": {
-        "bullish": 0,
+        "bullish": 1,
         "bearish": 0,
         "neutral": 2,
-        "total": 2,
-        "pct": 0
+        "total": 3,
+        "pct": 33
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - majority of sources emphasize monetary accommodation and risk-on positioning, though professional trader data is insufficient and bearish warnings on valuation/earnings quality create meaningful cross-currents.\n\n📈 **Themes:** (1) Fed policy accommodation and liquidity expansion driving risk assets, (2) AI sector momentum and infrastructure adoption as structural tailwind, (3) Valuation concerns and earnings deterioration in enterprise software/fintech creating sector-specific headwinds.\n\n🎯 **Levels:** AMZN 235 calls (12/19 expiry referenced in X sentiment), Oracle experiencing 11% decline (per X), SPY options structure shows resistance at 700/690/693 and support at 555/595/515, QQQ resistance at 640/690/630 and support at 605/585/545 (per options positioning data).",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - multiple sources identify structural tailwinds (monetary easing, AI productivity, fiscal expectations) supporting risk assets, though weak breadth and crowded positioning create execution risk.\n\n📈 **Themes:** (1) Liquidity regime shift and Fed balance sheet expansion supporting equities/crypto, (2) AI infrastructure and semiconductor momentum driving sector rotation, (3) Crowded positioning and breadth divergence creating vulnerability to mean-reversion on negative catalysts.\n\n🎯 **Levels:** SPY resistance at $700, $693, $690; support at $555, $595. QQQ resistance at $640, $630; support at $605, $585. DELL awaiting price increase catalyst. IRDM testing $20 resistance. Additional levels: RIVN and TSLA in flag consolidation patterns.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "AMZN",
-      "ORCL",
-      "NVDA"
+      "DELL",
+      "NVDA",
+      "IRDM",
+      "CEG",
+      "TSLA",
+      "RIVN"
     ],
     "key_themes": [
-      "Fed monetary accommodation and balance sheet expansion",
-      "AI infrastructure adoption and productivity narrative",
-      "Earnings quality deterioration in enterprise software/fintech",
-      "Institutional crypto and alternative energy positioning",
-      "Valuation extension risk amid low volatility regime"
+      "Fed liquidity expansion and monetary regime shift",
+      "AI infrastructure and semiconductor sector momentum",
+      "Crowded positioning with weak breadth confirmation",
+      "Fiscal stimulus expectations for 2026",
+      "Crypto institutional adoption acceleration"
     ],
     "risk_factors": [
-      "Earnings cascade spreading from isolated misses to systemic margin compression",
-      "Fed policy pivot or hawkish surprise invalidating accommodation thesis",
-      "Crowded positioning and suppressed volatility masking tail risk exposure",
-      "Geopolitical escalation creating binary risk-off catalyst",
-      "Tech mega-cap valuation sustainability if growth assumptions falter"
+      "QQQ weakness and breadth divergence contradicting bullish narratives",
+      "Crowded positioning vulnerable to rapid unwind on negative surprises",
+      "Fed policy uncertainty and Treasury funding market stress",
+      "Earnings downgrades in enterprise software and fintech sectors",
+      "Geopolitical escalation triggering risk-off rotation"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing 690 resistance with 688.18 current level, watch 685 intraday support. QQQ at 622.05 below 630 resistance, 620 support zone critical.",
+    "intraday_levels": "SPY watching $690-$693 resistance zone, support at $685 current level. QQQ testing $619 with $630 overhead resistance, $605 downside support. Monitor for 10 AM reversal patterns flagged in Twitter analysis.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY 700 major resistance target, 680 support on pullbacks. QQQ 640 resistance objective, 605 support floor. Breakdown below these invalidates bullish structure.",
+    "swing_levels": "SPY targeting $700 resistance if momentum sustains, key support at $670 max pain level. QQQ eyeing $640 breakout level, defending $605 support zone. Watch DELL post-price-increase move and IRDM $20 breakout confirmation.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 167490
+    "generation_time_ms": 177310
   },
   "trending": {
     "macro": [
+      {
+        "ticker": "SPY",
+        "mentions": 4,
+        "sentiment_score": 0.23,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 23,
+        "counts": {
+          "bullish": 2,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 4
+        }
+      },
       {
         "ticker": "IWM",
         "mentions": 2,
@@ -84,19 +100,6 @@
         }
       },
       {
-        "ticker": "SPY",
-        "mentions": 2,
-        "sentiment_score": 0.425,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
         "ticker": "SLV",
         "mentions": 2,
         "sentiment_score": 0.035,
@@ -106,6 +109,19 @@
           "bullish": 1,
           "bearish": 1,
           "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 2,
+        "sentiment_score": -0.375,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 38,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 1,
           "total": 2
         }
       },
@@ -179,6 +195,19 @@
     ],
     "other": [
       {
+        "ticker": "AVGO",
+        "mentions": 7,
+        "sentiment_score": 0.553,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 55,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 7
+        }
+      },
+      {
         "ticker": "NVDA",
         "mentions": 7,
         "sentiment_score": 0.42,
@@ -192,16 +221,29 @@
         }
       },
       {
-        "ticker": "AVGO",
+        "ticker": "TSLA",
         "mentions": 6,
-        "sentiment_score": 0.525,
+        "sentiment_score": 0.557,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
+        "sentiment_pct": 56,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "ORCL",
+        "mentions": 5,
+        "sentiment_score": 0.452,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 45,
         "counts": {
           "bullish": 4,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 6
+          "bearish": 1,
+          "neutral": 0,
+          "total": 5
         }
       },
       {
@@ -216,40 +258,14 @@
           "neutral": 3,
           "total": 5
         }
-      },
-      {
-        "ticker": "LULU",
-        "mentions": 4,
-        "sentiment_score": 0.537,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 54,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "ORCL",
-        "mentions": 4,
-        "sentiment_score": 0.385,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
-        "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 4
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.95,
-    "pc_ratio": 1.15,
+    "vix": 15.13,
+    "pc_ratio": 1.09,
     "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -257,8 +273,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 12.67,
-    "spread": -7.38,
+    "hv": 12.75,
+    "spread": 13.06,
     "position": 50
   },
   "action": {
