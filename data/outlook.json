@@ -1,72 +1,72 @@
 {
-  "timestamp": "2025-12-12T19:02:02.251Z",
+  "timestamp": "2025-12-12T19:36:07.315Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 96,
-        "bearish": 45,
-        "neutral": 111,
-        "total": 252,
-        "pct": 38
+        "bullish": 101,
+        "bearish": 48,
+        "neutral": 113,
+        "total": 262,
+        "pct": 39
       },
       "news": {
-        "bullish": 14,
+        "bullish": 15,
         "bearish": 13,
         "neutral": 12,
-        "total": 39,
-        "pct": 36
+        "total": 40,
+        "pct": 38
       },
       "video": {
-        "bullish": 12,
+        "bullish": 13,
         "bearish": 2,
-        "neutral": 3,
-        "total": 17,
-        "pct": 71
+        "neutral": 4,
+        "total": 19,
+        "pct": 68
       },
       "chat": {
         "bullish": 1,
-        "bearish": 3,
+        "bearish": 4,
         "neutral": 3,
-        "total": 7,
-        "pct": 14
+        "total": 8,
+        "pct": 13
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish macro liquidity backdrop (Fed easing, regulatory tailwinds) confronting bearish near-term technical breakdown and policy risks.\n\n📈 **Themes:** (1) Central bank policy divergence creating volatility (Fed easing vs BoJ tightening), (2) AI infrastructure momentum contested by execution delays and margin compression, (3) Crypto regulatory clarity driving institutional adoption amid DeFi protocol fragility.\n\n🎯 **Levels:** ES futures support at 6817, then 6845-6847 range; resistance at 6884-89. Ethereum testing $3,000 support. SPY options: $700 resistance cluster, $690-693 resistance zone. QQQ options: $640 resistance, $605 support.",
+    "narrative": "📊 **Consensus:** Mixed signals with slight bearish tilt - technical breakdowns in crypto and AI infrastructure delays clash with institutional positioning and macro easing tailwinds (conviction: medium)\n\n📈 **Themes:** (1) AI infrastructure momentum versus execution reality - institutional adoption narratives being tested by capex timeline slippage, (2) Crypto institutional adoption against DeFi systemic fragility - lending protocol risks and technical breakdowns challenging bullish positioning, (3) Fed easing cycle sustainability - macro liquidity tailwinds supporting equities while policy uncertainty creates volatility\n\n🎯 **Levels:** SPY resistance at $700, $690, $693 with support at $555, $595, $515 from options structure. QQQ resistance at $640, $690, $630 with support at $605, $585, $545. ES futures watching 6845-47 support zone and 6868 resistance, then 6884-89 per Twitter analysis. Bitcoin technical failure at 50/100/200-day moving averages per social sentiment.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "ES",
       "BTC",
-      "ETH"
+      "TSLA",
+      "ORCL"
     ],
     "key_themes": [
-      "Central bank policy divergence",
-      "AI infrastructure execution risk",
-      "Crypto regulatory framework progress",
-      "DeFi protocol fragility",
-      "Liquidity-driven positioning"
+      "AI infrastructure execution versus narrative",
+      "DeFi systemic risk and crypto institutional adoption",
+      "Fed easing cycle sustainability",
+      "Options positioning as price magnets",
+      "Margin compression in leveraged protocols"
     ],
     "risk_factors": [
-      "Bank of Japan rate hike creating carry trade unwind",
-      "ES futures technical breakdown accelerating selling",
-      "DeFi lending protocol contagion (20 bps margins)",
-      "AI capex delays undermining growth narrative",
-      "Earnings guidance cuts in software and retail"
+      "Bitcoin technical breakdown below key moving averages signaling crypto weakness",
+      "Oracle data center delay (2027→2028) exposing AI capex timeline risk",
+      "Bank of Japan rate hike creating deflationary pressure",
+      "DeFi lending protocol fragility and cross-pool contamination risks",
+      "Earnings guidance deterioration in software and fintech sectors"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "ES futures 6845-6847 support critical, break targets 6817. Resistance at 6884-89. SPY watching $690-693 options resistance cluster.",
+    "intraday_levels": "SPY watching $690 resistance (24,594 OI) and $682 current level against $670 max pain. ES futures 6845-47 support critical, resistance at 6868. QQQ testing $615 current against $605 support (34,646 OI).",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY $700 major resistance (30K+ OI), $690-693 secondary resistance. Support cluster $680-683 range. QQQ $640 resistance, $605-585 support zone. Watch for policy-driven volatility.",
+    "swing_levels": "SPY $700 resistance zone (30,262 OI) acts as upside target, $595-$555 support cluster provides downside cushion. QQQ $640 call wall (40,144 OI) caps upside, $605-$585 support zone defines risk. Bitcoin 50-day MA critical for crypto narrative validation.",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 181863
+    "generation_time_ms": 188776
   },
   "trending": {
     "macro": [
@@ -84,6 +84,19 @@
         }
       },
       {
+        "ticker": "IWM",
+        "mentions": 4,
+        "sentiment_score": 0.547,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 55,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 4
+        }
+      },
+      {
         "ticker": "QQQ",
         "mentions": 4,
         "sentiment_score": -0.388,
@@ -97,33 +110,20 @@
         }
       },
       {
-        "ticker": "IWM",
+        "ticker": "SLV",
         "mentions": 3,
-        "sentiment_score": 0.513,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 51,
+        "sentiment_score": -0.193,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 19,
         "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
+          "bullish": 1,
+          "bearish": 2,
+          "neutral": 0,
           "total": 3
         }
       },
       {
         "ticker": "GLD",
-        "mentions": 2,
-        "sentiment_score": 0.035,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 4,
-        "counts": {
-          "bullish": 1,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "SLV",
         "mentions": 2,
         "sentiment_score": 0.035,
         "sentiment_label": "Neutral",
@@ -274,17 +274,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.66,
-    "pc_ratio": 0.81,
-    "sentiment_bullish_pct": 38,
+    "vix": 15.85,
+    "pc_ratio": 0.8,
+    "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 12.89,
-    "spread": 5.35,
+    "hv": 13.03,
+    "spread": 10.38,
     "position": 50
   },
   "action": {
