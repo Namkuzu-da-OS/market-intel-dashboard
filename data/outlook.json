@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-12T04:57:31.025Z",
+  "timestamp": "2025-12-12T05:30:46.701Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 83,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 8,
-        "bearish": 2,
-        "neutral": 14,
-        "total": 24,
+        "bullish": 10,
+        "bearish": 3,
+        "neutral": 17,
+        "total": 30,
         "pct": 33
       },
       "news": {
@@ -36,55 +36,55 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - sources show 80%+ bullish sentiment across channels, but bifurcated market structure with macro tailwinds favoring rotation into commodities/infrastructure while mega-cap tech faces consolidation risk.\n\n📈 **Themes:** (1) Monetary policy pivot expectations driving risk-on positioning despite compressed volatility, (2) Sector rotation from mega-cap tech into commodities (silver breakouts), space/aerospace, and crypto infrastructure, (3) Valuation concerns in speculative subsectors (Web3, Layer 1 tokens) creating pockets of vulnerability despite broader macro strength.\n\n🎯 **Levels:** SPY resistance at $700, $695, $690; support at $555, $595, $515. QQQ resistance at $640, $690, $630; support at $605, $585, $545. Silver showing flag breakout structures in March futures per X sources.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - institutional adoption momentum and monetary easing create structural tailwinds, but late-cycle positioning and valuation concerns suggest vulnerability to near-term consolidation.\n\n📈 **Themes:** (1) Institutional crypto adoption and DeFi infrastructure migration providing multi-quarter catalysts, (2) Bifurcated market with tech/growth supported by rate-cut expectations while discretionary and financials face earnings pressure, (3) Options positioning showing bullish support structures but technically overextended momentum vulnerable to mean reversion.\n\n🎯 **Levels:** SPY resistance at $700, $695, $690 with support at $555, $595, $515; QQQ resistance at $640, $690, $630 with support at $605, $585, $545; VIX at 14.85 suggests complacency.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "RKLB",
-      "ASTS",
-      "SLV"
+      "NVDA",
+      "SLV",
+      "COST"
     ],
     "key_themes": [
-      "Monetary policy easing expectations",
-      "Sector rotation into commodities and space/aerospace",
-      "AI infrastructure versus mega-cap tech consolidation",
-      "Institutional crypto adoption narrative",
-      "Web3/Layer 1 token valuation compression"
+      "Institutional crypto/DeFi adoption momentum",
+      "Monetary and fiscal easing tailwinds",
+      "Sector bifurcation (tech strength vs discretionary weakness)",
+      "Late-cycle positioning and valuation concerns",
+      "Options dealer hedging creating price magnets"
     ],
     "risk_factors": [
-      "Volatility regime shift - VIX at 14.85 with compressed levels creating complacency risk",
-      "Mega-cap tech breakdown confirmation could trigger index-level cascading weakness",
-      "Web3 ecosystem degradation spreading to broader crypto sentiment",
-      "Regulatory tightening in banking and healthcare creating sector-specific headwinds",
-      "Geopolitical flashpoints (Taiwan/Ukraine tensions) as risk-sentiment barometer"
+      "Technical overextension in momentum names despite bullish structure",
+      "Enterprise software demand destruction and guidance cuts signaling broader weakness",
+      "Commodity technical breakdowns (SLV) suggesting defensive rotation",
+      "Elevated valuations in semiconductors and mega-cap tech vulnerable to sentiment shift",
+      "Geopolitical tail risks (Taiwan, Ukraine) could trigger abrupt defensive flows"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $690 resistance with $695 and $700 as upside targets; support cluster at $555-$595. QQQ facing $630-$640 resistance zone with $605 support",
+    "intraday_levels": "SPY testing $690 resistance with $695-$700 cluster above; support zone $555-$595. QQQ facing $630 resistance with $640 major overhead; support at $605-$585",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY $700 as primary resistance target for multi-day move; $555-$595 support zone provides downside cushion. QQQ $640-$690 resistance band with $605 as key swing support level",
+    "swing_levels": "SPY targets $695-$700 resistance zone on bullish continuation; breakdown below $690 opens $555-$595 support retest. QQQ watching $640 breakout level; support shelf $605-$585",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 172060
+    "generation_time_ms": 175631
   },
   "trending": {
     "macro": [
       {
-        "ticker": "IWM",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
+        "ticker": "SLV",
+        "mentions": 2,
+        "sentiment_score": 0.035,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 4,
         "counts": {
           "bullish": 1,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 0,
-          "total": 1
+          "total": 2
         }
       },
       {
-        "ticker": "SLV",
+        "ticker": "IWM",
         "mentions": 1,
         "sentiment_score": 0.82,
         "sentiment_label": "Bullish",
