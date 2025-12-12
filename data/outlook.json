@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-12T13:15:48.075Z",
+  "timestamp": "2025-12-12T13:46:24.722Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 27,
-        "bearish": 6,
-        "neutral": 33,
-        "total": 66,
-        "pct": 41
+        "bullish": 33,
+        "bearish": 7,
+        "neutral": 38,
+        "total": 78,
+        "pct": 42
       },
       "news": {
-        "bullish": 11,
-        "bearish": 7,
+        "bullish": 12,
+        "bearish": 8,
         "neutral": 3,
-        "total": 21,
+        "total": 23,
         "pct": 52
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with selective bullish bias in AI/semiconductors and crypto infrastructure, but elevated caution on valuation extremes and macro policy uncertainty - conviction: medium\n\n📈 **Themes:** (1) AI demand tailwinds driving semiconductor strength with institutional conviction, (2) Crypto bifurcation - financial applications and Layer 1 infrastructure gaining while non-financial Web3 faces product-market fit scrutiny, (3) Fed policy uncertainty creating volatility backdrop amid earnings guidance deterioration in enterprise software/retail\n\n🎯 **Levels:** Silver March futures technical projection at $66, Broadcom institutional price target at $485, SPY options structure shows strong resistance at $700 and support consolidation near $690, QQQ resistance wall at $640",
+    "narrative": "📊 **Consensus:** Mixed sentiment with bifurcated market structure - bullish bias for large-cap tech/AI and crypto infrastructure, bearish caution on enterprise software and consumer discretionary. Conviction: MEDIUM given conflicting earnings data versus accommodative policy backdrop.\n\n📈 **Themes:** (1) AI infrastructure momentum and semiconductor strength driving mega-cap outperformance, (2) Monetary policy accommodation offsetting earnings deterioration in cyclicals, (3) Crypto ecosystem buildout (Solana infrastructure, institutional positioning) versus Web3 consumer app weakness.\n\n🎯 **Levels:** SPY resistance at $700, $693, $690; support at $595, $555. QQQ resistance at $640, $630; support at $605, $585. S&P 500 futures resistance at 6910/6931. Broadcom target $485. SPY max pain $670, QQQ max pain $625.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
       "AVGO",
+      "NVDA",
       "SOL"
     ],
     "key_themes": [
-      "AI semiconductor demand and infrastructure buildout",
-      "Crypto ecosystem bifurcation - financial vs non-financial applications",
-      "Fed policy uncertainty and rate path debate",
-      "Valuation compression risk in high-multiple growth",
-      "Options-driven price magnetism toward strike concentrations"
+      "AI infrastructure and semiconductor momentum",
+      "Fed balance sheet expansion and monetary accommodation",
+      "Crypto ecosystem infrastructure versus consumer app divergence",
+      "Enterprise software earnings deterioration",
+      "Barbell market structure favoring mega-caps"
     ],
     "risk_factors": [
-      "Earnings guidance deterioration spreading from enterprise software to broader sectors",
-      "Fed policy pivot if inflation data shifts hawkish could trigger risk-asset deleveraging",
-      "Crypto non-financial sector valuation bubble (380x P/E multiples cited) risking contagion to quality assets",
-      "Geopolitical tail risks (Taiwan, Russia-Ukraine) overwhelming monetary tailwinds",
-      "Regulatory tightening across banking and technology creating margin compression"
+      "Cascading earnings misses in software and discretionary sectors signaling broader demand weakness",
+      "Fed policy implementation uncertainty around QE timing and supervisory framework capital requirements",
+      "Elevated valuations and positioning ahead of fundamental earnings growth creating asymmetric downside",
+      "Geopolitical escalation risks around Taiwan/Russia-Ukraine as binary risk-off triggers",
+      "Crypto user metrics (DAU stagnation) diverging from price action indicating fundamental disconnect"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing resistance at $690-$693 zone with $700 as strong rejection level, QQQ facing $630 resistance with support at $625",
+    "intraday_levels": "SPY testing $690-$693 resistance zone with max pain at $670 acting as magnet. QQQ faces $630 resistance with support at $625. Watch S&P futures 6910/6931 resistance for directional conviction.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY $700 resistance (strong options wall), support structure $685-$690 range. QQQ $640 key resistance target, $605 downside support. Silver $66 technical projection per flag pattern",
+    "swing_levels": "SPY $700 as key upside target with $595 downside protection. QQQ $640 resistance on strength, $605 support on pullbacks. Broadcom $485 target represents semiconductor sector momentum gauge.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 173899
+    "generation_time_ms": 173439
   },
   "trending": {
     "macro": [
@@ -149,33 +149,59 @@
           "neutral": 1,
           "total": 2
         }
-      }
-    ],
-    "other": [
-      {
-        "ticker": "NVDA",
-        "mentions": 2,
-        "sentiment_score": 0.075,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 8,
-        "counts": {
-          "bullish": 1,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 2
-        }
       },
       {
-        "ticker": "AVGO",
+        "ticker": "BCH",
         "mentions": 1,
-        "sentiment_score": 0.85,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 85,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
           "neutral": 0,
           "total": 1
+        }
+      }
+    ],
+    "other": [
+      {
+        "ticker": "NVDA",
+        "mentions": 3,
+        "sentiment_score": 0.29,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 29,
+        "counts": {
+          "bullish": 2,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "AVGO",
+        "mentions": 2,
+        "sentiment_score": 0.815,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 82,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "ORCL",
+        "mentions": 2,
+        "sentiment_score": 0.085,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 9,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 2
         }
       },
       {
@@ -203,28 +229,15 @@
           "neutral": 0,
           "total": 1
         }
-      },
-      {
-        "ticker": "LLY",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.17,
+    "vix": 15.11,
     "pc_ratio": 1.15,
-    "sentiment_bullish_pct": 41,
+    "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
