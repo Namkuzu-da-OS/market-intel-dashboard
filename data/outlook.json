@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-12T19:36:07.315Z",
+  "timestamp": "2025-12-12T20:13:09.912Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 67,
     "sources": {
       "social": {
-        "bullish": 101,
+        "bullish": 108,
         "bearish": 48,
-        "neutral": 113,
-        "total": 262,
-        "pct": 39
+        "neutral": 117,
+        "total": 273,
+        "pct": 40
       },
       "news": {
         "bullish": 15,
-        "bearish": 13,
+        "bearish": 14,
         "neutral": 12,
-        "total": 40,
-        "pct": 38
+        "total": 41,
+        "pct": 37
       },
       "video": {
         "bullish": 13,
@@ -28,59 +28,59 @@
       },
       "chat": {
         "bullish": 1,
-        "bearish": 4,
+        "bearish": 5,
         "neutral": 3,
-        "total": 8,
-        "pct": 13
+        "total": 9,
+        "pct": 11
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed signals with slight bearish tilt - technical breakdowns in crypto and AI infrastructure delays clash with institutional positioning and macro easing tailwinds (conviction: medium)\n\n📈 **Themes:** (1) AI infrastructure momentum versus execution reality - institutional adoption narratives being tested by capex timeline slippage, (2) Crypto institutional adoption against DeFi systemic fragility - lending protocol risks and technical breakdowns challenging bullish positioning, (3) Fed easing cycle sustainability - macro liquidity tailwinds supporting equities while policy uncertainty creates volatility\n\n🎯 **Levels:** SPY resistance at $700, $690, $693 with support at $555, $595, $515 from options structure. QQQ resistance at $640, $690, $630 with support at $605, $585, $545. ES futures watching 6845-47 support zone and 6868 resistance, then 6884-89 per Twitter analysis. Bitcoin technical failure at 50/100/200-day moving averages per social sentiment.",
+    "narrative": "📊 **Consensus:** MIXED with MEDIUM conviction - Macro bullish tailwinds (monetary easing, fiscal expansion) conflict with near-term technical weakness and earnings deterioration signals. Professional trader data insufficient for strong directional bias.\n\n📈 **Themes:** (1) AI infrastructure momentum questioned by delayed capacity rollouts, (2) Crypto sector structural risks amid retail positioning extremes, (3) Policy uncertainty creating defensive sector rotation as rate cut cycle faces hawkish central bank pushback.\n\n🎯 **Levels:** SPY resistance at $700, $690, $693 (options structure); support at $555, $595. QQQ resistance at $640, $690, $630; support at $605, $585. Bitcoin mentioned testing psychological support levels, Ethereum approaching $3,000 per source analysis. S&P E-mini resistance noted at 6884-89 zone.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
       "TSLA",
-      "ORCL"
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "AI infrastructure execution versus narrative",
-      "DeFi systemic risk and crypto institutional adoption",
-      "Fed easing cycle sustainability",
-      "Options positioning as price magnets",
-      "Margin compression in leveraged protocols"
+      "AI infrastructure capacity and productivity inflection",
+      "Monetary policy regime shift and QE mechanics",
+      "Crypto protocol structural risks and regulatory clarity",
+      "Corporate earnings guidance deterioration",
+      "Defensive sector rotation amid volatility"
     ],
     "risk_factors": [
-      "Bitcoin technical breakdown below key moving averages signaling crypto weakness",
-      "Oracle data center delay (2027→2028) exposing AI capex timeline risk",
-      "Bank of Japan rate hike creating deflationary pressure",
-      "DeFi lending protocol fragility and cross-pool contamination risks",
-      "Earnings guidance deterioration in software and fintech sectors"
+      "Professional trader positioning data unavailable limiting conviction",
+      "Oracle AI data center delay undermining infrastructure thesis",
+      "Hawkish central bank pivot (BOJ rate hike, Fed accommodation removal)",
+      "Crypto lending protocol contagion if volatility tests leverage assumptions",
+      "Bifurcated market creating sector-specific casualties despite macro tailwinds"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY watching $690 resistance (24,594 OI) and $682 current level against $670 max pain. ES futures 6845-47 support critical, resistance at 6868. QQQ testing $615 current against $605 support (34,646 OI).",
+    "intraday_levels": "SPY: Watch $690 resistance (strong options wall), support at current levels near $682. QQQ: Testing $614 area, resistance at $630, support at $605. S&P E-mini facing 6884-89 resistance zone per source analysis.",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY $700 resistance zone (30,262 OI) acts as upside target, $595-$555 support cluster provides downside cushion. QQQ $640 call wall (40,144 OI) caps upside, $605-$585 support zone defines risk. Bitcoin 50-day MA critical for crypto narrative validation.",
+    "swing_levels": "SPY: $700 major resistance target (highest call OI), downside risk toward $670 Max Pain level. QQQ: $640 upside target if bullish, $605 support critical for swing structure. Bitcoin psychological support levels and Ethereum $3,000 zone key for risk sentiment per sources.",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 188776
+    "generation_time_ms": 196541
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 7,
-        "sentiment_score": 0.234,
+        "mentions": 9,
+        "sentiment_score": 0.327,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 23,
+        "sentiment_pct": 33,
         "counts": {
-          "bullish": 3,
+          "bullish": 5,
           "bearish": 1,
           "neutral": 3,
-          "total": 7
+          "total": 9
         }
       },
       {
@@ -165,15 +165,15 @@
       },
       {
         "ticker": "ETH",
-        "mentions": 2,
-        "sentiment_score": -0.65,
+        "mentions": 3,
+        "sentiment_score": -0.2,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 20,
         "counts": {
-          "bullish": 0,
+          "bullish": 1,
           "bearish": 2,
           "neutral": 0,
-          "total": 2
+          "total": 3
         }
       },
       {
@@ -182,19 +182,6 @@
         "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
         "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "XRP",
-        "mentions": 1,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -219,15 +206,15 @@
       },
       {
         "ticker": "TSLA",
-        "mentions": 11,
-        "sentiment_score": 0.527,
+        "mentions": 13,
+        "sentiment_score": 0.502,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
+        "sentiment_pct": 50,
         "counts": {
-          "bullish": 9,
+          "bullish": 10,
           "bearish": 1,
-          "neutral": 1,
-          "total": 11
+          "neutral": 2,
+          "total": 13
         }
       },
       {
@@ -274,17 +261,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.85,
-    "pc_ratio": 0.8,
-    "sentiment_bullish_pct": 39,
+    "vix": 16.52,
+    "pc_ratio": 0.81,
+    "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 13.03,
-    "spread": 10.38,
+    "hv": 13.04,
+    "spread": 8.42,
     "position": 50
   },
   "action": {
