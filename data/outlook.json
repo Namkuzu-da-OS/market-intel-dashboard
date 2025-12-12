@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-12T12:48:36.034Z",
+  "timestamp": "2025-12-12T13:15:48.075Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 78,
+    "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 22,
-        "bearish": 4,
-        "neutral": 31,
-        "total": 57,
-        "pct": 39
+        "bullish": 27,
+        "bearish": 6,
+        "neutral": 33,
+        "total": 66,
+        "pct": 41
       },
       "news": {
-        "bullish": 10,
-        "bearish": 6,
+        "bullish": 11,
+        "bearish": 7,
         "neutral": 3,
-        "total": 19,
-        "pct": 53
+        "total": 21,
+        "pct": 52
       },
       "video": {
         "bullish": 7,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium-high conviction. Cross-asset momentum favors risk-on positioning through Q1 2026, supported by monetary easing tailwinds and institutional crypto adoption, though valuation concerns and regulatory headwinds create selective sector risks.\n\n📈 **Themes:** (1) Crypto infrastructure strength - Solana ecosystem expansion and institutional DeFi/stablecoin adoption gaining traction; (2) AI productivity narrative vs. enterprise software margin compression - long-term structural story clashing with near-term earnings execution risks; (3) Monetary policy divergence - Fed balance sheet expansion supporting asset prices while policy communication remains inconsistent.\n\n🎯 **Levels:** Silver futures $66 target (March contract flag projection). SPY resistance at $700, $693, $690 with support at $595, $555. QQQ resistance at $640, $630 with support at $605, $585. Max pain: SPY $670, QQQ $625.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with selective bullish bias in AI/semiconductors and crypto infrastructure, but elevated caution on valuation extremes and macro policy uncertainty - conviction: medium\n\n📈 **Themes:** (1) AI demand tailwinds driving semiconductor strength with institutional conviction, (2) Crypto bifurcation - financial applications and Layer 1 infrastructure gaining while non-financial Web3 faces product-market fit scrutiny, (3) Fed policy uncertainty creating volatility backdrop amid earnings guidance deterioration in enterprise software/retail\n\n🎯 **Levels:** Silver March futures technical projection at $66, Broadcom institutional price target at $485, SPY options structure shows strong resistance at $700 and support consolidation near $690, QQQ resistance wall at $640",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
-      "SOL",
-      "SLV"
+      "NVDA",
+      "AVGO",
+      "SOL"
     ],
     "key_themes": [
-      "Crypto infrastructure adoption",
-      "Fed balance sheet expansion",
-      "AI productivity vs earnings execution",
-      "Options dealer positioning",
-      "Enterprise software margin pressure"
+      "AI semiconductor demand and infrastructure buildout",
+      "Crypto ecosystem bifurcation - financial vs non-financial applications",
+      "Fed policy uncertainty and rate path debate",
+      "Valuation compression risk in high-multiple growth",
+      "Options-driven price magnetism toward strike concentrations"
     ],
     "risk_factors": [
-      "Regulatory enforcement impacting fintech/crypto profitability",
-      "Valuation exhaustion in momentum names (tech multiples stretched)",
-      "FOMC policy communication inconsistency creating uncertainty",
-      "Corporate guidance cuts extending beyond current sectors",
-      "Geopolitical escalation (Taiwan tensions mentioned in RSS)"
+      "Earnings guidance deterioration spreading from enterprise software to broader sectors",
+      "Fed policy pivot if inflation data shifts hawkish could trigger risk-asset deleveraging",
+      "Crypto non-financial sector valuation bubble (380x P/E multiples cited) risking contagion to quality assets",
+      "Geopolitical tail risks (Taiwan, Russia-Ukraine) overwhelming monetary tailwinds",
+      "Regulatory tightening across banking and technology creating margin compression"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY testing $690 resistance with $693 and $700 as upside targets; QQQ consolidating near $625.58 with $630 resistance overhead",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY testing resistance at $690-$693 zone with $700 as strong rejection level, QQQ facing $630 resistance with support at $625",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY bullish above $690 targeting $700, key support at $670 max pain and $595 institutional wall. QQQ upside to $640 resistance cluster, major support at $605",
+    "swing_levels": "SPY $700 resistance (strong options wall), support structure $685-$690 range. QQQ $640 key resistance target, $605 downside support. Silver $66 technical projection per flag pattern",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 178816
+    "generation_time_ms": 173899
   },
   "trending": {
     "macro": [
@@ -153,6 +153,19 @@
     ],
     "other": [
       {
+        "ticker": "NVDA",
+        "mentions": 2,
+        "sentiment_score": 0.075,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 8,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
         "ticker": "AVGO",
         "mentions": 1,
         "sentiment_score": 0.85,
@@ -203,28 +216,15 @@
           "neutral": 0,
           "total": 1
         }
-      },
-      {
-        "ticker": "ORCL",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.23,
+    "vix": 15.17,
     "pc_ratio": 1.15,
-    "sentiment_bullish_pct": 39,
+    "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
