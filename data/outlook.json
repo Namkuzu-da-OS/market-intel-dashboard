@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-12T20:52:04.894Z",
+  "timestamp": "2025-12-12T21:23:07.435Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 67,
+    "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 119,
-        "bearish": 51,
-        "neutral": 125,
-        "total": 295,
+        "bullish": 123,
+        "bearish": 56,
+        "neutral": 130,
+        "total": 309,
         "pct": 40
       },
       "news": {
         "bullish": 15,
-        "bearish": 14,
+        "bearish": 15,
         "neutral": 13,
-        "total": 42,
-        "pct": 36
+        "total": 43,
+        "pct": 35
       },
       "video": {
         "bullish": 13,
@@ -36,77 +36,77 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with bearish lean - high conviction on macro headwinds outweighing technical support (conviction: medium-high)\n\n📈 **Themes:** Macro tightening pressure from global central banks, AI infrastructure investment timeline concerns, sector rotation away from growth/tech leadership toward defensive positioning\n\n🎯 **Levels:** ES futures 6815-17 support, 6838-6857 and 6868-6889 upside targets; SPY watching $680-682 zone per options structure; QQQ $612-615 range per options flow",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - Sources show 69% overall bullish sentiment but high-weight analysis reveals structural weakness masked by macro optimism. Professional trader data unavailable, forcing reliance on secondary sources showing bifurcated markets.\n\n📈 **Themes:** (1) Liquidity regime shift concerns - Fed policy uncertainty amid tightening since mid-October, (2) Sector bifurcation - AI/tech momentum versus traditional financial/enterprise software weakness from guidance cuts, (3) Crypto structural risks - DeFi protocol vulnerabilities despite macro tailwinds\n\n🎯 **Levels:** SPY resistance at $700 [STRONG], $690 [STRONG], $693 [STRONG]; SPY support at $670 [STRONG], $660 [STRONG], $680 [STRONG]. QQQ resistance at $640 [STRONG], $630 [STRONG]; QQQ support at $605 [STRONG], $585 [STRONG]. Bitcoin trading below 50/100/200-day moving averages per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
       "BTC",
-      "ES"
+      "PATH",
+      "NVDA"
     ],
     "key_themes": [
-      "Global central bank tightening pressure",
-      "AI infrastructure capex timeline uncertainty",
-      "Sector rotation from growth to defensive",
-      "Institutional crypto adoption vs DeFi structural risks",
-      "Fed policy pivot timing debate"
+      "Fed liquidity policy uncertainty",
+      "Sector rotation from financials/enterprise software to AI/defensive",
+      "Crypto institutional adoption vs DeFi protocol fragility",
+      "Options positioning gravitating toward max pain levels",
+      "Guidance cut cycle in traditional sectors"
     ],
     "risk_factors": [
-      "Bank of Japan rate hike creating carry trade unwinding pressure",
-      "AI infrastructure delays (Oracle/OpenAI timeline pushouts) eroding capex confidence",
-      "Housing market deterioration signaling consumer weakness",
-      "DeFi lending protocol contagion risk despite macro tailwinds",
-      "Earnings revision velocity in software and retail sectors"
+      "BOJ rate decision creating liquidity shock to carry trades",
+      "DeFi lending protocol stress events and margin compression",
+      "Banking sector regulatory capital requirements constraining deployment",
+      "Bitcoin technical breakdown below moving average support",
+      "Consumer demand deterioration in retail/auto data"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $680 strong support (27,808 OI), $682-683 resistance zone; QQQ: $614 support, $615 resistance; ES futures 6815-17 critical support per Twitter analysis",
+    "intraday_levels": "SPY: $680 support [STRONG] tested, failure targets $670. Resistance at $690-$693 zone. QQQ: $605 support critical, resistance at $625-$630",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: $680 key support floor, $684 upside target per options structure; QQQ: $612 lower support, $618-619 resistance band; ES 6838-6857 initial rebound zone, 6868-6889 extended target per source analysis",
+    "swing_levels": "SPY: Major support $660-$670 zone, upside capped at $700 [STRONG resistance]. QQQ: Support cluster $585-$605, resistance $630-$640. Expect range-bound consolidation",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 191626
+    "generation_time_ms": 182354
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 9,
-        "sentiment_score": 0.327,
+        "mentions": 10,
+        "sentiment_score": 0.239,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 24,
         "counts": {
           "bullish": 5,
-          "bearish": 1,
+          "bearish": 2,
           "neutral": 3,
-          "total": 9
+          "total": 10
         }
       },
       {
         "ticker": "IWM",
-        "mentions": 4,
-        "sentiment_score": 0.547,
+        "mentions": 5,
+        "sentiment_score": 0.328,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "sentiment_pct": 33,
         "counts": {
           "bullish": 3,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 1,
-          "total": 4
+          "total": 5
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 4,
-        "sentiment_score": -0.388,
+        "mentions": 5,
+        "sentiment_score": -0.42,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 39,
+        "sentiment_pct": 42,
         "counts": {
           "bullish": 0,
-          "bearish": 2,
+          "bearish": 3,
           "neutral": 2,
-          "total": 4
+          "total": 5
         }
       },
       {
@@ -139,15 +139,28 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": -0.056,
-        "sentiment_label": "Bearish",
+        "mentions": 6,
+        "sentiment_score": 0.062,
+        "sentiment_label": "Bullish",
         "sentiment_pct": 6,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 2,
           "neutral": 2,
-          "total": 5
+          "total": 6
+        }
+      },
+      {
+        "ticker": "ETH",
+        "mentions": 4,
+        "sentiment_score": 0.012,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 1,
+        "counts": {
+          "bullish": 2,
+          "bearish": 2,
+          "neutral": 0,
+          "total": 4
         }
       },
       {
@@ -160,19 +173,6 @@
           "bullish": 1,
           "bearish": 1,
           "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "ETH",
-        "mentions": 3,
-        "sentiment_score": -0.2,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 20,
-        "counts": {
-          "bullish": 1,
-          "bearish": 2,
-          "neutral": 0,
           "total": 3
         }
       },
@@ -261,8 +261,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.05,
-    "pc_ratio": 0.81,
+    "vix": 16.08,
+    "pc_ratio": 0.8,
     "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -270,8 +270,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 13.07,
-    "spread": 8.4,
+    "hv": 13.1,
+    "spread": 8.79,
     "position": 50
   },
   "action": {
