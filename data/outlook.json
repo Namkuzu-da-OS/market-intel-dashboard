@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-12T05:30:46.701Z",
+  "timestamp": "2025-12-12T12:48:36.034Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 81,
+    "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 10,
-        "bearish": 3,
-        "neutral": 17,
-        "total": 30,
-        "pct": 33
+        "bullish": 22,
+        "bearish": 4,
+        "neutral": 31,
+        "total": 57,
+        "pct": 39
       },
       "news": {
-        "bullish": 6,
-        "bearish": 1,
-        "neutral": 2,
-        "total": 9,
-        "pct": 67
+        "bullish": 10,
+        "bearish": 6,
+        "neutral": 3,
+        "total": 19,
+        "pct": 53
       },
       "video": {
-        "bullish": 6,
+        "bullish": 7,
         "bearish": 1,
         "neutral": 2,
-        "total": 9,
-        "pct": 67
+        "total": 10,
+        "pct": 70
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - institutional adoption momentum and monetary easing create structural tailwinds, but late-cycle positioning and valuation concerns suggest vulnerability to near-term consolidation.\n\n📈 **Themes:** (1) Institutional crypto adoption and DeFi infrastructure migration providing multi-quarter catalysts, (2) Bifurcated market with tech/growth supported by rate-cut expectations while discretionary and financials face earnings pressure, (3) Options positioning showing bullish support structures but technically overextended momentum vulnerable to mean reversion.\n\n🎯 **Levels:** SPY resistance at $700, $695, $690 with support at $555, $595, $515; QQQ resistance at $640, $690, $630 with support at $605, $585, $545; VIX at 14.85 suggests complacency.",
+    "narrative": "📊 **Consensus:** Bullish with medium-high conviction. Cross-asset momentum favors risk-on positioning through Q1 2026, supported by monetary easing tailwinds and institutional crypto adoption, though valuation concerns and regulatory headwinds create selective sector risks.\n\n📈 **Themes:** (1) Crypto infrastructure strength - Solana ecosystem expansion and institutional DeFi/stablecoin adoption gaining traction; (2) AI productivity narrative vs. enterprise software margin compression - long-term structural story clashing with near-term earnings execution risks; (3) Monetary policy divergence - Fed balance sheet expansion supporting asset prices while policy communication remains inconsistent.\n\n🎯 **Levels:** Silver futures $66 target (March contract flag projection). SPY resistance at $700, $693, $690 with support at $595, $555. QQQ resistance at $640, $630 with support at $605, $585. Max pain: SPY $670, QQQ $625.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
-      "SLV",
-      "COST"
+      "BTC",
+      "SOL",
+      "SLV"
     ],
     "key_themes": [
-      "Institutional crypto/DeFi adoption momentum",
-      "Monetary and fiscal easing tailwinds",
-      "Sector bifurcation (tech strength vs discretionary weakness)",
-      "Late-cycle positioning and valuation concerns",
-      "Options dealer hedging creating price magnets"
+      "Crypto infrastructure adoption",
+      "Fed balance sheet expansion",
+      "AI productivity vs earnings execution",
+      "Options dealer positioning",
+      "Enterprise software margin pressure"
     ],
     "risk_factors": [
-      "Technical overextension in momentum names despite bullish structure",
-      "Enterprise software demand destruction and guidance cuts signaling broader weakness",
-      "Commodity technical breakdowns (SLV) suggesting defensive rotation",
-      "Elevated valuations in semiconductors and mega-cap tech vulnerable to sentiment shift",
-      "Geopolitical tail risks (Taiwan, Ukraine) could trigger abrupt defensive flows"
+      "Regulatory enforcement impacting fintech/crypto profitability",
+      "Valuation exhaustion in momentum names (tech multiples stretched)",
+      "FOMC policy communication inconsistency creating uncertainty",
+      "Corporate guidance cuts extending beyond current sectors",
+      "Geopolitical escalation (Taiwan tensions mentioned in RSS)"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $690 resistance with $695-$700 cluster above; support zone $555-$595. QQQ facing $630 resistance with $640 major overhead; support at $605-$585",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY testing $690 resistance with $693 and $700 as upside targets; QQQ consolidating near $625.58 with $630 resistance overhead",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY targets $695-$700 resistance zone on bullish continuation; breakdown below $690 opens $555-$595 support retest. QQQ watching $640 breakout level; support shelf $605-$585",
+    "swing_levels": "SPY bullish above $690 targeting $700, key support at $670 max pain and $595 institutional wall. QQQ upside to $640 resistance cluster, major support at $605",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 175631
+    "generation_time_ms": 178816
   },
   "trending": {
     "macro": [
@@ -153,7 +153,33 @@
     ],
     "other": [
       {
+        "ticker": "AVGO",
+        "mentions": 1,
+        "sentiment_score": 0.85,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 85,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
         "ticker": "ASTS",
+        "mentions": 1,
+        "sentiment_score": 0.82,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 82,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "CLS",
         "mentions": 1,
         "sentiment_score": 0.82,
         "sentiment_label": "Bullish",
@@ -190,41 +216,15 @@
           "neutral": 0,
           "total": 1
         }
-      },
-      {
-        "ticker": "RKLB",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "SPX",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.85,
+    "vix": 15.23,
     "pc_ratio": 1.15,
-    "sentiment_bullish_pct": 33,
+    "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -232,7 +232,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 12.89,
-    "spread": 17.94,
+    "spread": -7.62,
     "position": 50
   },
   "action": {
