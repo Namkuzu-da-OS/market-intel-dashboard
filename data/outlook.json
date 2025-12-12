@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-12T23:15:45.552Z",
+  "timestamp": "2025-12-12T23:47:30.532Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 127,
-        "bearish": 58,
-        "neutral": 139,
-        "total": 324,
+        "bullish": 129,
+        "bearish": 60,
+        "neutral": 143,
+        "total": 332,
         "pct": 39
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bearish near-term with low conviction. Markets face technical breakdown pressure and confirmed liquidity headwinds, but structural support levels remain intact, creating a contested environment rather than directional conviction.\n\n📈 **Themes:** (1) Fed policy uncertainty and rate cut expectations driving volatility, (2) AI sector momentum competing with broader tech profit-taking, (3) Options structure gravitational pull toward max pain levels ahead of expiration.\n\n🎯 **Levels:** SPY ($682): Call Wall $700 (30k OI, active resistance), Put Wall $555 (504k OI, dormant support). Max Pain $670. Near resistance: $690 (25k OI), $693 (19k OI). Near support: $670 (37k OI), $660 (32k OI). QQQ ($614): Call Wall $640 (40k OI, active resistance), Put Wall $605 (35k OI, active support). Max Pain $625. Near resistance: $630 (20k OI), $625 (17k OI). Near support: $585 (32k OI). /ES: 6815-17 support, 6838 resistance per Twitter.",
+    "narrative": "📊 **Consensus:** Bearish with medium conviction - broad technical deterioration and sector-specific earnings weakness dominate near-term action, though structural support levels remain intact.\n\n📈 **Themes:** (1) Defensive positioning into liquidity uncertainty and central bank policy shifts, (2) Growth equity repricing amid software/fintech earnings disappointments and margin compression fears, (3) Technical breakdown risk as breadth deteriorates and momentum indicators weaken across indices.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $700 (30k OI, active resistance), Put Wall $555 (504k OI, dormant support). Max Pain $670. Near resistance: $690 (25k OI), $693 (19k OI). Near support: $670 (37k OI), $660 (32k OI). QQQ ($613.62): Call Wall $640 (40k OI, active resistance), Put Wall $605 (35k OI, active support). Max Pain $625. Near resistance: $630 (20k OI), $625 (17k OI). Near support: $585 (32k OI). /ES: 6838 and 6845-47 support zone critical per Twitter; break below 6815 accelerates downside.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
       "NVDA",
-      "TSLA"
+      "WORK"
     ],
     "key_themes": [
-      "Fed rate policy uncertainty",
-      "AI sector momentum vs tech profit-taking",
-      "DeFi structural fragility",
-      "Options max pain gravitational pull",
-      "Liquidity conditions tightening"
+      "Central bank policy uncertainty impacting liquidity conditions",
+      "Software and fintech earnings disappointment contagion",
+      "Technical breakdown risk with deteriorating breadth and momentum",
+      "AI infrastructure structural strength vs near-term repricing",
+      "Defensive rotation into utilities and safe havens"
     ],
     "risk_factors": [
-      "Bank of Japan policy tightening creating near-term volatility catalyst",
-      "Technical breakdown below key moving averages in crypto signaling risk-off",
-      "DeFi lending protocol contagion risk if volatility spikes",
-      "Corporate earnings guidance cuts in software and consumer sectors",
-      "Policy uncertainty around Fed Chair selection dampening conviction"
+      "Break below SPY 670/QQQ 605 support triggers accelerated selling into Call Wall resistance zones",
+      "Central bank policy shifts (liquidity tightening) suppressing risk-asset rallies",
+      "Earnings guidance cuts cascading through software/fintech sectors confirming demand weakness",
+      "Geopolitical escalation maintaining risk-off pressure and safe-haven flows",
+      "DeFi protocol stress and crypto liquidation cascades if Bitcoin loses key moving average support"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $690 resistance (25k OI), $670 support (37k OI). Watch for gravitational pull toward max pain $670 into close.",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: $700 call wall (30k OI) major resistance, $660 support (32k OI). QQQ: $640 resistance (40k OI), $605 support (35k OI). /ES: 6815-17 support critical per Twitter analysis.",
-    "source_alignment": "CONFLICTING"
+    "intraday_levels": "SPY: 670 support (Max Pain, 37k OI), 690-693 resistance zone. /ES: 6838 critical support per Twitter sources",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: 660-670 support zone (32k-37k OI), 700 major resistance (Call Wall, 30k OI). QQQ: 605 active Put Wall support (35k OI), 640 Call Wall resistance (40k OI)",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 180596
+    "generation_time_ms": 181793
   },
   "trending": {
     "macro": [
@@ -192,6 +192,19 @@
     ],
     "other": [
       {
+        "ticker": "TSLA",
+        "mentions": 15,
+        "sentiment_score": 0.488,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 49,
+        "counts": {
+          "bullish": 11,
+          "bearish": 1,
+          "neutral": 3,
+          "total": 15
+        }
+      },
+      {
         "ticker": "ORCL",
         "mentions": 15,
         "sentiment_score": 0.075,
@@ -202,19 +215,6 @@
           "bearish": 7,
           "neutral": 0,
           "total": 15
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "mentions": 14,
-        "sentiment_score": 0.466,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 47,
-        "counts": {
-          "bullish": 10,
-          "bearish": 1,
-          "neutral": 3,
-          "total": 14
         }
       },
       {
