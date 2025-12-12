@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-12T20:13:09.912Z",
+  "timestamp": "2025-12-12T20:52:04.894Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 67,
     "sources": {
       "social": {
-        "bullish": 108,
-        "bearish": 48,
-        "neutral": 117,
-        "total": 273,
+        "bullish": 119,
+        "bearish": 51,
+        "neutral": 125,
+        "total": 295,
         "pct": 40
       },
       "news": {
         "bullish": 15,
         "bearish": 14,
-        "neutral": 12,
-        "total": 41,
-        "pct": 37
+        "neutral": 13,
+        "total": 42,
+        "pct": 36
       },
       "video": {
         "bullish": 13,
@@ -28,45 +28,45 @@
       },
       "chat": {
         "bullish": 1,
-        "bearish": 5,
+        "bearish": 6,
         "neutral": 3,
-        "total": 9,
-        "pct": 11
+        "total": 10,
+        "pct": 10
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** MIXED with MEDIUM conviction - Macro bullish tailwinds (monetary easing, fiscal expansion) conflict with near-term technical weakness and earnings deterioration signals. Professional trader data insufficient for strong directional bias.\n\n📈 **Themes:** (1) AI infrastructure momentum questioned by delayed capacity rollouts, (2) Crypto sector structural risks amid retail positioning extremes, (3) Policy uncertainty creating defensive sector rotation as rate cut cycle faces hawkish central bank pushback.\n\n🎯 **Levels:** SPY resistance at $700, $690, $693 (options structure); support at $555, $595. QQQ resistance at $640, $690, $630; support at $605, $585. Bitcoin mentioned testing psychological support levels, Ethereum approaching $3,000 per source analysis. S&P E-mini resistance noted at 6884-89 zone.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with bearish lean - high conviction on macro headwinds outweighing technical support (conviction: medium-high)\n\n📈 **Themes:** Macro tightening pressure from global central banks, AI infrastructure investment timeline concerns, sector rotation away from growth/tech leadership toward defensive positioning\n\n🎯 **Levels:** ES futures 6815-17 support, 6838-6857 and 6868-6889 upside targets; SPY watching $680-682 zone per options structure; QQQ $612-615 range per options flow",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "TSLA",
+      "NVDA",
       "BTC",
-      "ETH"
+      "ES"
     ],
     "key_themes": [
-      "AI infrastructure capacity and productivity inflection",
-      "Monetary policy regime shift and QE mechanics",
-      "Crypto protocol structural risks and regulatory clarity",
-      "Corporate earnings guidance deterioration",
-      "Defensive sector rotation amid volatility"
+      "Global central bank tightening pressure",
+      "AI infrastructure capex timeline uncertainty",
+      "Sector rotation from growth to defensive",
+      "Institutional crypto adoption vs DeFi structural risks",
+      "Fed policy pivot timing debate"
     ],
     "risk_factors": [
-      "Professional trader positioning data unavailable limiting conviction",
-      "Oracle AI data center delay undermining infrastructure thesis",
-      "Hawkish central bank pivot (BOJ rate hike, Fed accommodation removal)",
-      "Crypto lending protocol contagion if volatility tests leverage assumptions",
-      "Bifurcated market creating sector-specific casualties despite macro tailwinds"
+      "Bank of Japan rate hike creating carry trade unwinding pressure",
+      "AI infrastructure delays (Oracle/OpenAI timeline pushouts) eroding capex confidence",
+      "Housing market deterioration signaling consumer weakness",
+      "DeFi lending protocol contagion risk despite macro tailwinds",
+      "Earnings revision velocity in software and retail sectors"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Watch $690 resistance (strong options wall), support at current levels near $682. QQQ: Testing $614 area, resistance at $630, support at $605. S&P E-mini facing 6884-89 resistance zone per source analysis.",
+    "intraday_levels": "SPY: $680 strong support (27,808 OI), $682-683 resistance zone; QQQ: $614 support, $615 resistance; ES futures 6815-17 critical support per Twitter analysis",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: $700 major resistance target (highest call OI), downside risk toward $670 Max Pain level. QQQ: $640 upside target if bullish, $605 support critical for swing structure. Bitcoin psychological support levels and Ethereum $3,000 zone key for risk sentiment per sources.",
+    "swing_levels": "SPY: $680 key support floor, $684 upside target per options structure; QQQ: $612 lower support, $618-619 resistance band; ES 6838-6857 initial rebound zone, 6868-6889 extended target per source analysis",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 196541
+    "generation_time_ms": 191626
   },
   "trending": {
     "macro": [
@@ -192,6 +192,19 @@
     ],
     "other": [
       {
+        "ticker": "TSLA",
+        "mentions": 14,
+        "sentiment_score": 0.466,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 47,
+        "counts": {
+          "bullish": 10,
+          "bearish": 1,
+          "neutral": 3,
+          "total": 14
+        }
+      },
+      {
         "ticker": "ORCL",
         "mentions": 14,
         "sentiment_score": 0.034,
@@ -202,19 +215,6 @@
           "bearish": 7,
           "neutral": 0,
           "total": 14
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "mentions": 13,
-        "sentiment_score": 0.502,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 10,
-          "bearish": 1,
-          "neutral": 2,
-          "total": 13
         }
       },
       {
@@ -261,7 +261,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.52,
+    "vix": 16.05,
     "pc_ratio": 0.81,
     "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
@@ -270,8 +270,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 13.04,
-    "spread": 8.42,
+    "hv": 13.07,
+    "spread": 8.4,
     "position": 50
   },
   "action": {
