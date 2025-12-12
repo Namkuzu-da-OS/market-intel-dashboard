@@ -1,72 +1,72 @@
 {
-  "timestamp": "2025-12-12T17:15:26.476Z",
+  "timestamp": "2025-12-12T18:26:59.214Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 67,
+    "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 83,
-        "bearish": 40,
-        "neutral": 95,
-        "total": 218,
+        "bullish": 88,
+        "bearish": 41,
+        "neutral": 105,
+        "total": 234,
         "pct": 38
       },
       "news": {
         "bullish": 13,
-        "bearish": 12,
-        "neutral": 9,
-        "total": 34,
-        "pct": 38
+        "bearish": 13,
+        "neutral": 11,
+        "total": 37,
+        "pct": 35
       },
       "video": {
-        "bullish": 11,
-        "bearish": 1,
+        "bullish": 12,
+        "bearish": 2,
         "neutral": 3,
-        "total": 15,
-        "pct": 73
+        "total": 17,
+        "pct": 71
       },
       "chat": {
         "bullish": 1,
-        "bearish": 1,
+        "bearish": 2,
         "neutral": 3,
-        "total": 5,
-        "pct": 20
+        "total": 6,
+        "pct": 17
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with cautious bullish bias (conviction: medium) - sources show 67% overall bullish reading but professional trader data unavailable creates uncertainty in weighting\n\n📈 **Themes:** (1) AI infrastructure momentum and productivity validation competing against capex delay concerns, (2) Regulatory clarity tailwinds in crypto and alternative sectors, (3) Bifurcated market with tech/utilities outperforming while enterprise software and financials face guidance pressure\n\n🎯 **Levels:** SPY resistance at $700 (strong OI), $690-693 cluster; support at $555, $595. QQQ resistance at $640, $690, $630; support at $605, $585. Twitter sources mention SPY 8-day MA and 682-688.96 range as contested, BTC 200MA as key support per social sentiment.",
+    "narrative": "📊 **Consensus:** Bearish with medium conviction. Near-term selling pressure from infrastructure/capex concerns overwhelms longer-term structural policy tailwinds, creating choppy downside momentum.\n\n📈 **Themes:** (1) AI infrastructure capex uncertainty weighing on growth assets, (2) Crypto regulatory clarity developments (OCC approvals, institutional adoption) fighting against liquidation pressure, (3) Policy accommodation expectations (Fed rate cuts, fiscal support) versus execution/timing uncertainty\n\n🎯 **Levels:** Ethereum $3,000 technical breakdown level (X sources), SPY resistance at $700/$693/$690 (options structure), SPY support at $595/$555 (options structure), QQQ resistance at $640/$630 (options structure), QQQ support at $605/$585 (options structure)",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "ETH",
       "BTC",
-      "ORCL",
-      "Circle/BitGo"
+      "ORCL"
     ],
     "key_themes": [
-      "AI infrastructure momentum vs capex delays",
-      "Regulatory clarity in crypto and alternative sectors",
-      "Corporate guidance deterioration",
-      "Bifurcated market breadth",
-      "Monetary/fiscal easing convergence"
+      "AI infrastructure capex uncertainty",
+      "Crypto regulatory clarity and institutional adoption",
+      "Fed rate cut timing and policy accommodation",
+      "Sector rotation between growth and defensive positioning",
+      "Liquidity cycle dynamics"
     ],
     "risk_factors": [
-      "Corporate guidance cuts spreading from enterprise software to broader sectors",
-      "Crowded bullish positioning creating tail risk for synchronized deleveraging",
-      "Geopolitical escalation (Taiwan, Ukraine) dampening risk appetite",
-      "Fed policy reversal or hawkish surprise undermining liquidity assumptions",
-      "Crypto liquidation cascades indicating fragile technical structure"
+      "Data center buildout delays undermining AI growth narrative",
+      "Crypto liquidation cascades ($182M mentioned) creating technical breakdown",
+      "Fed policy communication vacuum prolonging uncertainty",
+      "Earnings disappointments in software/fintech sectors",
+      "Geopolitical tensions (Taiwan/Russia mentioned) as risk-off catalyst"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing 682-688.96 range with 8-day MA as pivot. Options structure shows $690 resistance (24,594 OI) as near-term magnet. Watch for breakdown below 682 or breakout above 689 for directional confirmation.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY $700 major resistance (30,262 OI), downside protected by $595 support cluster (253,172 OI). QQQ $640 upside target (40,144 OI), $605 support holds. Regulatory catalysts could drive continuation toward resistance zones.",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: Watch $690 resistance zone (options wall), defend $682 current level; QQQ: $615 current level under pressure, $605 support critical (options wall)",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: $700 upside magnet (strong options OI), $595-$555 downside support cluster; QQQ: $640 resistance target, $585 key support if $605 fails; ETH: $3,000 make-or-break level per source analysis",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 175895
+    "generation_time_ms": 187729
   },
   "trending": {
     "macro": [
@@ -206,15 +206,15 @@
     "other": [
       {
         "ticker": "ORCL",
-        "mentions": 11,
-        "sentiment_score": -0.026,
+        "mentions": 12,
+        "sentiment_score": 0.034,
         "sentiment_label": "Neutral",
         "sentiment_pct": 3,
         "counts": {
-          "bullish": 5,
+          "bullish": 6,
           "bearish": 6,
           "neutral": 0,
-          "total": 11
+          "total": 12
         }
       },
       {
@@ -274,8 +274,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.82,
-    "pc_ratio": 0.93,
+    "vix": 16.41,
+    "pc_ratio": 0.83,
     "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -283,8 +283,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 13.21,
-    "spread": 11.78,
+    "hv": 12.97,
+    "spread": 8.21,
     "position": 50
   },
   "action": {
