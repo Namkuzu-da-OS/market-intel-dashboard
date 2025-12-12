@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-12T03:55:02.091Z",
+  "timestamp": "2025-12-12T04:26:56.005Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 89,
+    "confidence_pct": 87,
     "sources": {
       "social": {
-        "bullish": 5,
-        "bearish": 0,
-        "neutral": 9,
-        "total": 14,
-        "pct": 36
+        "bullish": 8,
+        "bearish": 1,
+        "neutral": 10,
+        "total": 19,
+        "pct": 42
       },
       "news": {
         "bullish": 6,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium-high conviction - sources show 86-100% bullish sentiment across most categories, driven by policy accommodation tailwinds and AI infrastructure momentum, though structural concerns in non-financial crypto and enterprise spending caution warrant selective positioning.\n\n📈 **Themes:** (1) Policy accommodation and synchronized easing creating risk-on environment despite uncertainty around implementation pace, (2) AI infrastructure and productivity gains driving sector leadership with decoupling from broader market weakness, (3) Bifurcated market with financial crypto infrastructure and tech outperforming while enterprise software, consumer discretionary, and non-financial Web3 face headwinds.\n\n🎯 **Levels:** SPY resistance at $700 [STRONG], $695 [STRONG], $690 [STRONG]; support at $555 [STRONG]. QQQ resistance at $640 [STRONG], $690 [STRONG], $630 [STRONG]; support at $605 [STRONG], $585 [STRONG]. Max pain: SPY $670, QQQ $625.",
+    "narrative": "📊 **Consensus:** Bullish with medium-high conviction. Multiple high-credibility sources (86-89% bullish across YouTube, RSS, X) converge on favorable macro positioning despite structural concerns in select sectors.\n\n📈 **Themes:** (1) Institutional crypto adoption accelerating through wallet infrastructure and staking mechanisms, (2) Space sector momentum driven by privatization narratives and technology maturation, (3) Monetary easing tailwinds supporting risk assets amid competing fundamental deterioration signals, (4) AI/tech productivity narratives offsetting semiconductor supply-side vulnerabilities.\n\n🎯 **Levels:** SPY resistance at $700 (STRONG), $695 (STRONG), $690 (STRONG) with support cluster at $555-$595 range. QQQ resistance at $640 (STRONG), $690 (STRONG), $630 (STRONG) with support at $605-$585. Silver March futures flagged as institutional positioning opportunity (no explicit price given). SPY Max Pain $670, QQQ Max Pain $625.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "RKLB",
-      "ASTS",
-      "MSTR"
+      "NVDA",
+      "BTC",
+      "RKLB"
     ],
     "key_themes": [
-      "AI infrastructure momentum and productivity tailwinds",
-      "Policy accommodation and easing cycle support for risk assets",
-      "Crypto sector rotation from non-financial Web3 into DeFi/stablecoin infrastructure",
-      "Sectoral divergence with tech/utilities outperforming enterprise software/consumer",
-      "SpaceX IPO speculation driving space sector interest"
+      "Institutional crypto adoption and staking infrastructure",
+      "Space sector privatization momentum",
+      "Fed rate policy easing expectations",
+      "AI productivity narratives vs semiconductor supply concerns",
+      "Options structure showing bullish dealer positioning"
     ],
     "risk_factors": [
-      "Enterprise software guidance deterioration signaling corporate IT spending deceleration",
-      "Structural dilution in L1 crypto tokens and non-financial Web3 product-market fit failures",
-      "Banking sector regulatory headwinds and enforcement uncertainty affecting liquidity appetite",
-      "Geopolitical escalation risks and consumer weakness beneath promotional retail activity",
-      "One-sided positioning risk given absence of documented bearish arguments in trader sentiment"
+      "NVDA supply-side breakdown triggering mega-cap tech rotation",
+      "Earnings guidance deterioration broadening beyond current sectors",
+      "Fed policy uncertainty if inflation data disappoints dovish expectations",
+      "Geopolitical event risk (Taiwan, Russia-Ukraine) triggering safe-haven flows",
+      "Web3/L1 competitive saturation undermining sector-specific crypto plays"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY testing $690 resistance with $695 and $700 as next targets; support at current levels. QQQ gravitating toward $630 resistance with $640 as extension; $625 max pain acts as magnet",
+    "intraday_levels": "SPY $690 resistance (current price $689.17), watch $695 and $700 as next barriers. QQQ testing $630 with $625.58 current, Max Pain at $625 acting as magnet. VIX at 14.85 supports low-volatility grind higher.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY $700 key resistance zone with strong dealer positioning; $670 max pain provides gravitational pull on weakness. QQQ $640 primary upside target with $630 intermediate; $605-$585 support corridor on pullbacks",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "SPY $700 primary upside target with $695 intermediate resistance, downside support cluster $670 (Max Pain) then $555-$595 range. QQQ $640 key resistance zone, support at $605-$585 if pullback materializes. Watch for institutional rotation if semiconductor weakness accelerates.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 156043
+    "generation_time_ms": 172567
   },
   "trending": {
     "macro": [
@@ -224,7 +224,7 @@
     "color": "text-muted",
     "vix": 14.85,
     "pc_ratio": 1.15,
-    "sentiment_bullish_pct": 36,
+    "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
