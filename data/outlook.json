@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-12T23:47:30.532Z",
+  "timestamp": "2025-12-13T00:22:33.972Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 129,
-        "bearish": 60,
-        "neutral": 143,
-        "total": 332,
-        "pct": 39
+        "bullish": 133,
+        "bearish": 62,
+        "neutral": 151,
+        "total": 346,
+        "pct": 38
       },
       "news": {
         "bullish": 16,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish with medium conviction - broad technical deterioration and sector-specific earnings weakness dominate near-term action, though structural support levels remain intact.\n\n📈 **Themes:** (1) Defensive positioning into liquidity uncertainty and central bank policy shifts, (2) Growth equity repricing amid software/fintech earnings disappointments and margin compression fears, (3) Technical breakdown risk as breadth deteriorates and momentum indicators weaken across indices.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $700 (30k OI, active resistance), Put Wall $555 (504k OI, dormant support). Max Pain $670. Near resistance: $690 (25k OI), $693 (19k OI). Near support: $670 (37k OI), $660 (32k OI). QQQ ($613.62): Call Wall $640 (40k OI, active resistance), Put Wall $605 (35k OI, active support). Max Pain $625. Near resistance: $630 (20k OI), $625 (17k OI). Near support: $585 (32k OI). /ES: 6838 and 6845-47 support zone critical per Twitter; break below 6815 accelerates downside.",
+    "narrative": "📊 **Consensus:** MIXED BEARISH - Medium conviction. Professional trader data unavailable, but YouTube/RSS show bullish macro positioning (Fed accommodation, AI momentum) conflicting with Twitter's technical breakdown warnings and liquidity tightening signals.\n\n📈 **Themes:** (1) Fed accommodation expectations driving structural positioning despite near-term volatility, (2) AI infrastructure and productivity narratives supporting tech sector resilience, (3) Liquidity conditions deteriorating since mid-October creating technical pressure on growth assets, (4) Quality bifurcation - mega-caps/financials at ATHs while broad market internals weaken.\n\n🎯 **Levels:** SPY ($682): Call Wall $790 (10k OI, dormant), Put Wall $555 (504k OI, dormant). Max Pain $670. Near resistance: $695 (7k OI), $690 (7k OI). Near support: $670 (13k OI). QQQ ($614): Call Wall $645 (26k OI, dormant), Put Wall $585 (32k OI, active hedging). Max Pain $625. Near resistance: $629 (8k OI), $639 (8k OI). /ES: Bitcoin technical breakdown below key moving averages per Twitter; watch housing data momentum.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
       "NVDA",
-      "WORK"
+      "DIA"
     ],
     "key_themes": [
-      "Central bank policy uncertainty impacting liquidity conditions",
-      "Software and fintech earnings disappointment contagion",
-      "Technical breakdown risk with deteriorating breadth and momentum",
-      "AI infrastructure structural strength vs near-term repricing",
-      "Defensive rotation into utilities and safe havens"
+      "Fed accommodation and rate cut expectations",
+      "AI infrastructure and productivity momentum",
+      "Liquidity tightening and technical deterioration",
+      "DeFi lending protocol structural risks",
+      "Mega-cap strength vs broad market weakness divergence"
     ],
     "risk_factors": [
-      "Break below SPY 670/QQQ 605 support triggers accelerated selling into Call Wall resistance zones",
-      "Central bank policy shifts (liquidity tightening) suppressing risk-asset rallies",
-      "Earnings guidance cuts cascading through software/fintech sectors confirming demand weakness",
-      "Geopolitical escalation maintaining risk-off pressure and safe-haven flows",
-      "DeFi protocol stress and crypto liquidation cascades if Bitcoin loses key moving average support"
+      "Professional trader data unavailable - missing highest-weight perspective",
+      "Liquidity conditions tightening since mid-October per Twitter technicals",
+      "DeFi lending protocol contagion risk (Jupiter Lend margin economics, cross-pool contamination)",
+      "Housing data turning negative for first time in 2+ years",
+      "Geopolitical escalation (Ukraine, Taiwan, Venezuela/Iran) as secondary tail risk"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: 670 support (Max Pain, 37k OI), 690-693 resistance zone. /ES: 6838 critical support per Twitter sources",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: 660-670 support zone (32k-37k OI), 700 major resistance (Call Wall, 30k OI). QQQ: 605 active Put Wall support (35k OI), 640 Call Wall resistance (40k OI)",
-    "source_alignment": "MIXED"
+    "intraday_levels": "SPY: $690-$695 resistance zone (7k OI each, active hedging), $670 support (13k OI, Max Pain gravitational pull). QQQ: $629 resistance (8k OI), $585 put wall support (32k OI active hedging)",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: Call Wall $790 (dormant until approached), Put Wall $555 (504k OI major support), watch $644 level (16k OI). QQQ: Call Wall $645 (26k OI caps upside), Put Wall $585 (32k OI floor), Max Pain $625 gravitational target",
+    "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 181793
+    "generation_time_ms": 186686
   },
   "trending": {
     "macro": [
@@ -245,15 +245,15 @@
       },
       {
         "ticker": "SPX",
-        "mentions": 7,
-        "sentiment_score": 0.167,
+        "mentions": 8,
+        "sentiment_score": 0.227,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 17,
+        "sentiment_pct": 23,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 1,
           "neutral": 4,
-          "total": 7
+          "total": 8
         }
       }
     ]
@@ -263,7 +263,7 @@
     "color": "text-muted",
     "vix": 15.74,
     "pc_ratio": 0.81,
-    "sentiment_bullish_pct": 39,
+    "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
