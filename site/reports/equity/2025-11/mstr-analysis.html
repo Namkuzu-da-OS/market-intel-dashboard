@@ -3,6 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
   <!-- OpenGraph Meta Tags -->
   <meta property="og:type" content="article" />
   <meta property="og:title" content="$MSTR ANALYSIS" />

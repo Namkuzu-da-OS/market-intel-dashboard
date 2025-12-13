@@ -1270,6 +1270,22 @@
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
         }
 
+        // Auto-open modal if ?article= parameter present (for X link redirects)
+        const urlParams = new URLSearchParams(window.location.search);
+        const articlePath = urlParams.get('article');
+        if (articlePath) {
+            // Find matching card to get title
+            const matchingCard = document.querySelector(`a[href="${articlePath}"]`);
+            const title = matchingCard ?
+                matchingCard.querySelector('.card-title').textContent :
+                'Report Viewer';
+
+            openModalWith(articlePath, title);
+
+            // Clean up URL (remove ?article= param)
+            window.history.replaceState({}, '', window.location.pathname);
+        }
+
         // Open Modal
         cards.forEach(card => {
             card.addEventListener('click', (e) => {
