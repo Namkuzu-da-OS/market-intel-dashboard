@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-15T16:46:42.991Z",
+  "timestamp": "2025-12-15T17:19:42.849Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 68,
+    "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 119,
-        "bearish": 51,
-        "neutral": 134,
-        "total": 304,
+        "bullish": 125,
+        "bearish": 53,
+        "neutral": 143,
+        "total": 321,
         "pct": 39
       },
       "news": {
-        "bullish": 4,
+        "bullish": 6,
         "bearish": 7,
         "neutral": 8,
-        "total": 19,
-        "pct": 21
+        "total": 21,
+        "pct": 29
       },
       "video": {
         "bullish": 2,
@@ -27,46 +27,46 @@
         "pct": 33
       },
       "chat": {
-        "bullish": 3,
+        "bullish": 4,
         "bearish": 0,
         "neutral": 1,
-        "total": 4,
-        "pct": 75
+        "total": 5,
+        "pct": 80
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Neutral with medium conviction - market showing bifurcated positioning between near-term technical weakness and longer-term structural bullish catalysts, awaiting resolution at key support levels.\n\n📈 **Themes:** Year-end positioning and tax-loss harvesting pressure creating technical volatility; AI infrastructure and institutional crypto accumulation as structural tailwinds; monetary policy uncertainty and rate-cut timing driving defensive rotation into utilities and financials.\n\n🎯 **Levels:** SPY ($682): Call Wall $688 (25k OI, 0.8% away - active hedging), Put Wall $670 (20k OI, 1.8% away - active hedging). Max Pain $670. Near resistance: $690 (25k OI), $685 (19k OI). Near support: $675 (11k OI), $661 (11k OI). QQQ ($614): Call Wall $621 (64k OI, 1.1% away - active hedging), Put Wall $610 (12k OI, 0.7% away - active hedging). Max Pain $625. Near resistance: $624 (12k OI), $645 (27k OI). Near support: $613 (10k OI), $600 (10k OI). /ES per Twitter: 6813-6825 critical support zone, 6800/6793 next level on breakdown.",
+    "narrative": "📊 **Consensus:** Bearish near-term with medium conviction. Structural bull narratives (AI infrastructure, accommodative Fed policy) are being overwhelmed by immediate technical deterioration, liquidation cascades ($121M+ in crypto), and year-end positioning pressures.\n\n📈 **Themes:** (1) Technical breakdown testing critical support zones amid elevated volatility, (2) AI sector momentum and productivity gains as longer-term structural tailwind, (3) Rate policy positioning and Fed accommodation expectations supporting dip-buying sentiment despite near-term weakness.\n\n🎯 **Levels:** SPY ($680.94): Call Wall $688 (25k OI), Put Wall $670 (20k OI). Max Pain $670. Near resistance: $690 (25k OI), $685 (19k OI). Near support: $675 (11k OI), $661 (11k OI). QQQ ($612.46): Call Wall $621 (64k OI), Put Wall $610 (12k OI). Max Pain $625. Near resistance: $624 (12k OI), $645 (27k OI). Near support: $605 (9k OI), $600 (10k OI). /ES futures: 6825, 6813-6815, 6800, 6793 support levels per Twitter; 6838-6842 resistance per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
-      "NVDA",
-      "XRP"
+      "ES_F",
+      "VIX"
     ],
     "key_themes": [
-      "Year-end tax-loss harvesting and position squaring",
-      "AI infrastructure competitive differentiation and adoption",
-      "Institutional crypto accumulation vs retail liquidations",
-      "Monetary policy uncertainty and defensive rotation",
-      "Exchange/DEX platform execution quality differentiation"
+      "Technical deterioration and support breakdown",
+      "AI infrastructure and productivity tailwinds",
+      "Year-end positioning and tax-loss harvesting pressure",
+      "Fed policy accommodation expectations",
+      "Crypto liquidation cascade and risk-off sentiment"
     ],
     "risk_factors": [
-      "Year-end selling pressure testing critical support levels",
-      "VIX above 16 triggering mechanical de-risking flows",
-      "Enterprise software margin compression and guidance cuts spreading",
-      "Crypto liquidation cascades if Bitcoin fails $87k support",
-      "Fed policy division creating tactical positioning uncertainty"
+      "Bitcoin breaking below $87k triggering broader risk-asset contagion",
+      "ES_F failure to hold 6813-6825 support accelerating capitulation",
+      "Earnings guidance deterioration spreading from enterprise software to broader sectors",
+      "Elevated VIX above 16 signaling sustained volatility and hedging demand",
+      "Year-end liquidity drain amplifying technical weakness"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Support $675/$670 (active put wall), resistance $685/$688 (active call wall). QQQ: Critical support $610 (put wall), resistance $621 (call wall). /ES per Twitter: 6813-6825 must hold",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Max Pain gravitational pull toward $670, key support $661, resistance $690. QQQ: Max Pain target $625, support zone $600-$610, resistance $645. /ES per Twitter: 6800/6793 on support failure",
+    "intraday_levels": "SPY: $675 support (11k OI), $670 put wall major support. Resistance at $685 (19k OI), $688 call wall. QQQ: $610 put wall critical support (0.4% away), resistance at $621 call wall (1.4% away). /ES: 6825 and 6813-6815 support per Twitter",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Test of $670 max pain/put wall likely (20k OI), break below targets $661. Reclaim of $690 (25k OI) needed to invalidate bearish setup. QQQ: $600-605 zone critical support, $625 max pain gravitational pull. /ES: 6800-6793 downside targets per Twitter, reclaim of 6838-6842 needed for bull case",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 187895
+    "generation_time_ms": 188421
   },
   "trending": {
     "macro": [
@@ -154,41 +154,41 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 18,
-        "sentiment_score": 0.561,
+        "mentions": 20,
+        "sentiment_score": 0.547,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
+        "sentiment_pct": 55,
         "counts": {
-          "bullish": 13,
+          "bullish": 14,
           "bearish": 0,
-          "neutral": 5,
-          "total": 18
+          "neutral": 6,
+          "total": 20
         }
       },
       {
         "ticker": "SPX",
-        "mentions": 9,
-        "sentiment_score": 0.2,
+        "mentions": 10,
+        "sentiment_score": 0.18,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 20,
+        "sentiment_pct": 18,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 7,
-          "total": 9
+          "neutral": 8,
+          "total": 10
         }
       },
       {
         "ticker": "NVDA",
-        "mentions": 8,
-        "sentiment_score": 0.451,
+        "mentions": 9,
+        "sentiment_score": 0.481,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 45,
+        "sentiment_pct": 48,
         "counts": {
-          "bullish": 5,
+          "bullish": 6,
           "bearish": 0,
           "neutral": 3,
-          "total": 8
+          "total": 9
         }
       },
       {
@@ -222,8 +222,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.67,
-    "pc_ratio": 1.11,
+    "vix": 16.78,
+    "pc_ratio": 1.04,
     "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -232,7 +232,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 12.76,
-    "spread": 6.05,
+    "spread": 8.8,
     "position": 50
   },
   "action": {
