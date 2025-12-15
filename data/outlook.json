@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-15T10:14:35.368Z",
+  "timestamp": "2025-12-15T10:43:43.962Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 37,
-        "bearish": 14,
-        "neutral": 55,
-        "total": 106,
-        "pct": 35
+        "bullish": 40,
+        "bearish": 17,
+        "neutral": 62,
+        "total": 119,
+        "pct": 34
       },
       "news": {
         "bullish": 4,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - market in consolidation mode as structural support from options positioning ($670 SPY put wall, $610 QQQ put wall) conflicts with weakening demand signals and elevated technical resistance.\n\n📈 **Themes:** (1) Options dealer hedging creating defined trading ranges - active put walls providing downside support while call walls capping rallies. (2) Bifurcated market structure - crypto institutional adoption narratives versus technical deterioration, quality large-cap tech resilience versus cyclical/discretionary weakness. (3) Central bank policy uncertainty and liquidity withdrawal creating macro headwinds against forward-looking AI infrastructure and rate-cut structural tailwinds.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Near support: $585 (4k OI). Bitcoin: $93.5k-$94.5k rejection zone, $89k critical support per Twitter. Solana: $125 support per Twitter.",
+    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - Sources show mixed sentiment with bearish technical pressure offset by accumulation signals and institutional inflows, while professional trader data is insufficient for clear directional bias.\n\n📈 **Themes:** (1) Rate policy uncertainty and monetary easing expectations driving sector rotation into AI and rate-sensitive plays, (2) Crypto infrastructure maturation amid cyclical correction pressures with leverage unwinding risks, (3) Technical deterioration in tech indices testing key support levels while extreme fear readings suggest potential accumulation phase.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). /ES: 6847 support per Twitter; Bitcoin: $93.5K-$94.5K resistance, $89K support per Twitter; Solana: $80K support per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
-      "XRP",
-      "SOL"
+      "SOL",
+      "XRP"
     ],
     "key_themes": [
-      "Options dealer hedging dynamics creating defined ranges",
-      "Crypto institutional adoption versus technical deterioration",
-      "Corporate earnings guidance deterioration in cyclicals",
-      "Central bank liquidity withdrawal ($500B+ BOJ ETF selling)",
-      "AI infrastructure buildout as long-term structural tailwind"
+      "Rate policy uncertainty and Fed easing expectations",
+      "Crypto cyclical correction amid infrastructure maturation",
+      "AI sector momentum and productivity gains",
+      "Technical support breaks in tech indices",
+      "Leverage unwinding and margin compression risks"
     ],
     "risk_factors": [
-      "Professional trader sentiment unavailable - missing highest-weight directional input",
-      "Corporate debt accumulation in AI sector ($270B issuance) creating leverage vulnerability",
-      "Bitcoin breakdown below $89k support would trigger crypto capitulation",
-      "QQQ bearish resistance structure (call wall $645) capping tech rally potential",
-      "Geopolitical tensions and regulatory tightening creating risk-off flows"
+      "BoJ ETF liquidation creating forced selling pressure",
+      "Technical deterioration with Nasdaq breaking key support levels",
+      "Crypto leverage unwinding and repeated resistance rejections",
+      "Margin compression in consumer-facing sectors amid policy uncertainty",
+      "Extreme fear sentiment (Fear & Greed 16) signaling capitulation risk or accumulation opportunity"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 immediate support (5k OI, 0.3% away), $670 put wall major support (13k OI). Resistance at $690 (7k OI), $695 call wall. QQQ: $610 put wall critical support (0.6% away), resistance at $635-$640 range",
+    "intraday_levels": "SPY: $680 immediate support (5k OI, 0.3% away), $690 resistance (7k OI, 1.2% away). QQQ: $610 Put Wall support (6k OI, 0.6% away), watch for breakdown or hold",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Gravitational pull toward $670 max pain, break below $661 (9k OI support) would signal weakness. Upside capped by $695-$700 call wall cluster. QQQ: Testing $610 put wall, break below targets $585. Resistance remains at $635-$645 range. Bitcoin: $89k breakdown level critical per Twitter, rejection at $93.5k-$94.5k",
+    "swing_levels": "SPY: $670 Put Wall major support (13k OI), $695 Call Wall resistance (7k OI). QQQ: $610 support must hold, $625 Max Pain gravitational pull, $635-$645 resistance zone. Bitcoin: $89K support critical, $93.5K-$94.5K resistance per sources",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 190529
+    "generation_time_ms": 191596
   },
   "trending": {
     "macro": [
@@ -205,20 +205,20 @@
         }
       },
       {
-        "ticker": "GS",
-        "mentions": 1,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
+        "ticker": "NAVN",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 0,
-          "total": 1
+          "neutral": 2,
+          "total": 2
         }
       },
       {
-        "ticker": "NVO",
+        "ticker": "GS",
         "mentions": 1,
         "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
@@ -235,9 +235,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.4,
+    "vix": 16.37,
     "pc_ratio": 0.83,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
