@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-15T18:20:26.609Z",
+  "timestamp": "2025-12-15T18:58:58.439Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 138,
-        "bearish": 58,
-        "neutral": 159,
-        "total": 355,
+        "bullish": 147,
+        "bearish": 61,
+        "neutral": 171,
+        "total": 379,
         "pct": 39
       },
       "news": {
         "bullish": 6,
-        "bearish": 7,
+        "bearish": 9,
         "neutral": 9,
-        "total": 22,
-        "pct": 27
+        "total": 24,
+        "pct": 25
       },
       "video": {
         "bullish": 2,
@@ -27,46 +27,46 @@
         "pct": 33
       },
       "chat": {
-        "bullish": 6,
+        "bullish": 7,
         "bearish": 0,
         "neutral": 1,
-        "total": 7,
-        "pct": 86
+        "total": 8,
+        "pct": 88
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - Market shows technical breakdown with liquidation pressure, but institutional accumulation signals suggest this may be a shakeout before rotation into AI/rate-sensitive sectors.\n\n📈 **Themes:** (1) Technical breakdown in BTC and ES with elevated liquidation risk, (2) Institutional accumulation in AI infrastructure and crypto despite near-term weakness, (3) Sector bifurcation with growth/tech showing relative strength versus cyclical/defensive weakness.\n\n🎯 **Levels:** SPY ($679.91): Call Wall $688 (25k OI) - active resistance 1.2% away, Put Wall $670 (20k OI) - active support 1.5% away. Max Pain $670. Near support: $675 (11k OI), $661 (11k OI). Near resistance: $685 (19k OI), $690 (25k OI). QQQ ($610.99): Call Wall $621 (64k OI) - active resistance 1.6% away, Put Wall $610 (12k OI) - active support 0.2% away. Max Pain $625. /ES: 6838-6842 resistance zone, 6800-6793 support breakdown level per Twitter.",
+    "narrative": "📊 **Consensus:** Mixed bullish - liquidity injection and tech sector strength support upside, but fragile positioning and crypto weakness create execution risk into year-end. Conviction: Medium.\n\n📈 **Themes:** (1) Treasury General Account drawdown injecting $78B liquidity into markets, (2) Tech sector accumulation with focus on AI infrastructure, (3) Year-end tax-loss harvesting creating crypto sector pressure with potential equity contagion risk.\n\n🎯 **Levels:** SPY ($679.85): Call Wall $688 (25k OI) active resistance 1.2% away, Put Wall $670 (20k OI) active support 1.4% away. Max Pain $670. Near resistance: $690 (25k OI), $685 (19k OI). Near support: $675 (11k OI), $661 (11k OI). QQQ ($610.97): Call Wall $621 (64k OI) active resistance 1.6% away, Put Wall $610 (12k OI) active support 0.2% away. Max Pain $625. /ES: 6813-6815 support level per Twitter showing repeated test failures.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
       "NVDA",
-      "ES"
+      "TSLA",
+      "BAC"
     ],
     "key_themes": [
-      "Technical breakdown with liquidation pressure",
-      "Institutional accumulation in AI and crypto infrastructure",
-      "Sector rotation from cyclicals to growth/rate-sensitive names",
-      "Options dealer hedging creating resistance at Call Walls",
-      "Year-end positioning and tax-loss harvesting dynamics"
+      "Treasury liquidity injection",
+      "AI infrastructure momentum",
+      "Year-end tax-loss harvesting",
+      "Institutional crypto adoption",
+      "Rate policy uncertainty"
     ],
     "risk_factors": [
-      "Active dealer hedging at SPY $688 Call Wall and QQQ $621 Call Wall creating immediate resistance",
-      "BTC failure to reclaim resistance with $200M+ liquidations signaling overleveraged positioning",
-      "QQQ at 0.2% from Put Wall ($610) - breakdown risk imminent",
-      "/ES support failure below 6800-6793 could trigger cascade selling",
-      "Sector-specific earnings pressure in cyclicals despite AI strength creating bifurcated risk environment"
+      "Crypto sector contagion from tax-loss selling spreading to equities",
+      "ES futures support failure at 6813-6815 triggering cascading liquidations",
+      "NFP jobs report volatility pivot",
+      "Earnings revision cycle accelerating downward across financials and enterprise software",
+      "Fragile dealer positioning near Call Walls creating reversal risk"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $675 support (11k OI), $685 resistance (19k OI). QQQ: $610 Put Wall support (12k OI - critical at 0.2% away), $621 Call Wall resistance (64k OI). /ES: Watch 6800-6793 support breakdown per Twitter",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $670 Put Wall major support (20k OI), $688 Call Wall major resistance (25k OI), $661 deeper support (11k OI). QQQ: $605-600 support zone (9-10k OI), $624 resistance (12k OI). Max Pain gravitational pull: SPY $670, QQQ $625",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY testing $688 Call Wall resistance (25k OI) with $675-$670 Put Wall support zone. QQQ at critical $610 Put Wall (12k OI) with $621 Call Wall overhead. ES futures per Twitter at 6813-6815 support - failure triggers liquidation risk",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: $690 resistance (25k OI) breakout target, $670 Max Pain gravitational pull, $661 deeper support. QQQ: $625 Max Pain upside target, $621 Call Wall (64k OI) must clear, $600-$605 downside support zone",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 181352
+    "generation_time_ms": 182586
   },
   "trending": {
     "macro": [
@@ -94,6 +94,19 @@
           "bearish": 1,
           "neutral": 1,
           "total": 4
+        }
+      },
+      {
+        "ticker": "GLD",
+        "mentions": 2,
+        "sentiment_score": 0.685,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 69,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
         }
       }
     ],
@@ -222,8 +235,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.56,
-    "pc_ratio": 0.99,
+    "vix": 16.58,
+    "pc_ratio": 0.97,
     "sentiment_bullish_pct": 39,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -232,7 +245,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 12.76,
-    "spread": 10.44,
+    "spread": 10.54,
     "position": 50
   },
   "action": {
