@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-15T11:55:44.838Z",
+  "timestamp": "2025-12-15T12:38:46.783Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 67,
+    "confidence_pct": 68,
     "sources": {
       "social": {
-        "bullish": 49,
-        "bearish": 20,
-        "neutral": 74,
-        "total": 143,
-        "pct": 34
+        "bullish": 59,
+        "bearish": 23,
+        "neutral": 80,
+        "total": 162,
+        "pct": 36
       },
       "news": {
         "bullish": 5,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction. Market faces near-term downside pressure from technical deterioration, regulatory headwinds, and disappointing earnings execution, though medium-term structural support exists from institutional adoption and liquidity themes.\n\n📈 **Themes:** (1) Technical breakdown risk across major indices and crypto - Bitcoin, Ethereum, QQQ showing structural weakness; (2) Defensive rotation amid earnings disappointments in enterprise software and regulatory tightening in banking supervision; (3) Institutional adoption themes (crypto platforms, AI infrastructure) creating sector-specific divergence despite macro headwinds.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Near support: $585 (4k OI). /ES: 6847 support flagged per Twitter sentiment, with Bitcoin support at $125 noted as critical.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bearish lean on broad indices amid hedging pressure and liquidity concerns, while selective bullish opportunities exist in AI infrastructure and institutional crypto adoption.\n\n📈 **Themes:** (1) Options hedging dynamics creating resistance zones as dealers sell into strength; (2) Liquidity withdrawal concerns from central bank balance sheet reduction and deleveraging pressures; (3) Bifurcated market favoring AI/innovation platforms over legacy sectors facing demand weakness.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $688 (25k OI), Put Wall $670 (20k OI). Max Pain $670. Near resistance: $690 (25k OI), $685 (19k OI). Near support: $675 (11k OI), $661 (11k OI). QQQ ($613.62): Call Wall $621 (64k OI), Put Wall $610 (12k OI). Max Pain $625. Near resistance: $624 (12k OI), $645 (27k OI dormant). Near support: $613 (10k OI), $600 (10k OI). /ES: Support at 6847 per Twitter sources. Bitcoin: $89.8k support level per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "TSLA",
       "BTC",
-      "ETH",
-      "VIX"
+      "SOL"
     ],
     "key_themes": [
-      "Technical breakdown risk and deleveraging pressure",
-      "Defensive rotation amid earnings disappointments",
-      "Institutional crypto adoption vs retail sentiment divergence",
-      "Regulatory tightening in banking and fintech",
-      "Options dealer hedging creating resistance at call walls"
+      "Options dealer hedging creating resistance zones",
+      "Central bank liquidity withdrawal pressures",
+      "AI infrastructure differentiation amid sector weakness",
+      "Institutional crypto adoption vs retail disengagement",
+      "Earnings guidance deterioration in consumer/enterprise software"
     ],
     "risk_factors": [
-      "BoJ $500B+ ETF liquidation execution could trigger forced selling",
-      "Bitcoin breakdown below $125 support triggering crypto deleveraging cascade",
-      "QQQ and Ethereum technical support breaks confirmed by multiple sources",
-      "Corporate earnings guidance cuts spreading beyond software sector",
-      "Retail-institutional sentiment divergence (71% Twitter bullish vs structural bearish evidence) suggesting potential capitulation ahead"
+      "Bank of Japan ETF liquidation representing major liquidity event",
+      "Active call walls at SPY $688 and QQQ $621 capping upside momentum",
+      "Corporate debt issuance at record levels creating refinancing risk",
+      "Crypto deleveraging with Solana testing critical support breakdown",
+      "Geopolitical tensions and regulatory friction creating risk-off sentiment"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $680 immediate support (5k OI), $690 resistance (7k OI). QQQ: $610 put wall support (6k OI), testing breakdown risk. Watch for breakdown acceleration if SPY loses $680",
+    "intraday_levels": "SPY: $685-$688 resistance (active call walls), $675-$670 support. QQQ: $621 resistance (64k OI call wall), $610-$613 support zone",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $670 major put wall support (13k OI), $695 call wall resistance (7k OI). QQQ: $610 support critical, $625 max pain gravitational pull, $635-640 resistance zone (6k OI each). Bitcoin $125 support per Twitter - breakdown triggers deleveraging",
+    "swing_levels": "SPY: Watch $670 Max Pain gravitational pull, break below $661 opens downside. QQQ: $625 Max Pain target, resistance cluster $621-$624 caps rallies",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 189039
+    "generation_time_ms": 182150
   },
   "trending": {
     "macro": [
@@ -126,28 +126,28 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 6,
-        "sentiment_score": -0.058,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 6,
+        "mentions": 7,
+        "sentiment_score": 0.053,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 5,
         "counts": {
-          "bullish": 0,
+          "bullish": 1,
           "bearish": 1,
           "neutral": 5,
-          "total": 6
+          "total": 7
         }
       },
       {
         "ticker": "ETH",
-        "mentions": 2,
+        "mentions": 3,
         "sentiment_score": 0.65,
         "sentiment_label": "Bullish",
         "sentiment_pct": 65,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 0,
-          "total": 2
+          "total": 3
         }
       },
       {
@@ -167,15 +167,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 4,
-        "sentiment_score": 0.38,
+        "mentions": 7,
+        "sentiment_score": 0.551,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 55,
         "counts": {
-          "bullish": 2,
+          "bullish": 5,
           "bearish": 0,
           "neutral": 2,
-          "total": 4
+          "total": 7
         }
       },
       {
@@ -235,9 +235,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.43,
+    "vix": 16.46,
     "pc_ratio": 0.83,
-    "sentiment_bullish_pct": 34,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
