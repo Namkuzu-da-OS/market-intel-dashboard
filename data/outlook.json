@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-15T19:44:05.501Z",
+  "timestamp": "2025-12-15T20:16:25.024Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 69,
+    "confidence_pct": 70,
     "sources": {
       "social": {
-        "bullish": 159,
-        "bearish": 66,
-        "neutral": 185,
-        "total": 410,
-        "pct": 39
+        "bullish": 165,
+        "bearish": 69,
+        "neutral": 196,
+        "total": 430,
+        "pct": 38
       },
       "news": {
-        "bullish": 7,
+        "bullish": 9,
         "bearish": 9,
-        "neutral": 9,
-        "total": 25,
-        "pct": 28
+        "neutral": 10,
+        "total": 28,
+        "pct": 32
       },
       "video": {
         "bullish": 2,
@@ -29,44 +29,44 @@
       "chat": {
         "bullish": 7,
         "bearish": 0,
-        "neutral": 2,
-        "total": 9,
-        "pct": 78
+        "neutral": 3,
+        "total": 10,
+        "pct": 70
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed bullish-neutral with medium conviction. Liquidity injection and gamma dynamics support near-term strength in mega-caps, but weak earnings guidance and consolidation patterns suggest fragility heading into year-end.\n\n📈 **Themes:** (1) Treasury liquidity injection ($78B) and rate policy expectations driving rotation into rate-sensitive sectors, (2) AI infrastructure momentum and autonomous vehicle validation creating tech sector bifurcation, (3) Year-end tax-loss harvesting pressure versus gamma-driven squeeze dynamics in mega-cap options.\n\n🎯 **Levels:** SPY ($681.35): Call Wall $688 (25k OI, 1.0% away - active resistance), Put Wall $670 (20k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (25k OI), $685 (19k OI). Near support: $675 (11k OI), $661 (11k OI). QQQ ($612.65): Call Wall $621 (64k OI, 1.4% away - active resistance), Put Wall $610 (12k OI, 0.4% away - active support). Max Pain $625. Near resistance: $624 (12k OI), $645 (27k OI dormant). Near support: $605 (9k OI), $600 (10k OI). /ES: 6847 support mentioned per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - market showing consolidation with institutional support, but technical resistance and narrowing breadth create execution risk.\n\n📈 **Themes:** (1) Institutional on-chain adoption and crypto infrastructure quality differentiation, (2) Fed policy easing expectations versus supervisory tightening creating sector divergence, (3) AI/tech leadership concentration masking broader demand weakness in enterprise and retail sectors.\n\n🎯 **Levels:** SPY ($680.63): Call Wall $688 (25k OI, 1.1% away - active resistance), Put Wall $670 (20k OI, 1.6% away - active support). Max Pain $670. Near resistance: $690 (25k OI), $685 (19k OI). Near support: $675 (11k OI), $661 (11k OI). QQQ ($611.34): Call Wall $621 (64k OI, 1.6% away - active resistance), Put Wall $610 (12k OI, 0.2% away - active support). Max Pain $625. Near resistance: $624 (12k OI), $645 (27k OI dormant). Near support: $605 (9k OI), $600 (10k OI). /ES: Per Twitter sources, monitoring technical resistance and consolidation range.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
-      "META",
+      "BTC",
       "MSTR"
     ],
     "key_themes": [
-      "Treasury liquidity injection and rate policy expectations",
-      "AI infrastructure momentum versus earnings reality divergence",
-      "Options gamma dynamics and dealer hedging flows",
-      "Year-end tax-loss harvesting pressure",
-      "Mega-cap tech bifurcation from broader market weakness"
+      "Institutional crypto adoption and tokenization",
+      "Rate policy easing versus regulatory tightening divergence",
+      "AI infrastructure concentration and tech leadership",
+      "Enterprise demand softness and guidance cuts",
+      "Options gamma positioning and dealer hedging dynamics"
     ],
     "risk_factors": [
-      "Earnings guidance misses contradicting bullish growth assumptions across enterprise software and fintech",
-      "Year-end tax-loss harvesting could trigger liquidations despite current momentum",
-      "Geopolitical binary risks (Russia-Ukraine, Taiwan-China) creating safe-haven rotation potential",
-      "Bearish options structure with both SPY/QQQ showing active Call Walls as resistance and gravitational pull toward lower Max Pain levels",
-      "Professional trader sentiment unavailable creating significant blind spot in highest-weighted source"
+      "Professional trader data gap reduces conviction in directional calls",
+      "Consolidation breakout failure triggering dealer-driven selloff below put walls",
+      "Broadening guidance cuts validating demand weakness beyond isolated sectors",
+      "Geopolitical escalation or hawkish Fed messaging reversing liquidity assumptions",
+      "Crypto governance failures creating contagion across infrastructure plays"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Call Wall resistance $688 (25k OI active hedging), Put Wall support $670 (20k OI). QQQ: Call Wall resistance $621 (64k OI), Put Wall support $610 (12k OI very close at 0.4%). Watch dealer hedging flow at these strikes.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Resistance cluster $685-$690 (44k combined OI), gravitational pull toward Max Pain $670. Support breakdown risk at $670 Put Wall, then $661. QQQ: Resistance at $621-$624, Max Pain pull toward $625 suggests upside capped. Support zone $605-$610.",
+    "intraday_levels": "SPY: Testing Call Wall $688 resistance with dealer selling pressure active. Support at Put Wall $670 and near-term $675. QQQ: Immediate Put Wall $610 support (0.2% away), resistance at Call Wall $621 with heavy dealer hedging.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Breakout above $688-$690 call wall cluster targets $700+ zone. Breakdown below $670 Max Pain activates $661 support. QQQ: Break above $621 opens $624-$625 Max Pain zone, then dormant $645 level. Support cascade at $610/$605/$600.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 188427
+    "generation_time_ms": 184562
   },
   "trending": {
     "macro": [
@@ -167,15 +167,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 24,
-        "sentiment_score": 0.547,
+        "mentions": 25,
+        "sentiment_score": 0.526,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "sentiment_pct": 53,
         "counts": {
           "bullish": 17,
           "bearish": 0,
-          "neutral": 7,
-          "total": 24
+          "neutral": 8,
+          "total": 25
         }
       },
       {
@@ -193,15 +193,15 @@
       },
       {
         "ticker": "SPX",
-        "mentions": 11,
-        "sentiment_score": 0.177,
+        "mentions": 12,
+        "sentiment_score": 0.163,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 18,
+        "sentiment_pct": 16,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 9,
-          "total": 11
+          "neutral": 10,
+          "total": 12
         }
       },
       {
@@ -235,9 +235,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.69,
-    "pc_ratio": 0.96,
-    "sentiment_bullish_pct": 39,
+    "vix": 16.56,
+    "pc_ratio": 0.95,
+    "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -245,7 +245,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 12.76,
-    "spread": 6.63,
+    "spread": 9.07,
     "position": 50
   },
   "action": {
