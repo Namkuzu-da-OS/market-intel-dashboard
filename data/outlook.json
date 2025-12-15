@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-15T07:17:51.087Z",
+  "timestamp": "2025-12-15T07:42:24.501Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -8,9 +8,9 @@
       "social": {
         "bullish": 31,
         "bearish": 13,
-        "neutral": 45,
-        "total": 89,
-        "pct": 35
+        "neutral": 47,
+        "total": 91,
+        "pct": 34
       },
       "news": {
         "bullish": 3,
@@ -36,36 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - Market trapped between bullish institutional adoption and bearish technical breakdowns, with extreme fear sentiment (16) suggesting potential capitulation bottom but no professional trader confirmation to validate entry.\n\n📈 **Themes:** (1) Institutional crypto adoption acceleration vs. technical resistance breakdowns, (2) AI infrastructure buildout creating debt concerns amid productivity optimism, (3) Extreme fear sentiment creating contrarian setup opportunities but lacking professional confirmation.\n\n🎯 **Levels:** SPY ($682): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI - immediate), $661 (9k OI). QQQ ($614): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Bitcoin: resistance rejections flagged per Twitter. Solana: $80 support per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium-low conviction - crypto/tech showing technical weakness at resistance despite institutional inflows, while equity options structure suggests near-term consolidation around key support zones.\n\n📈 **Themes:** (1) Institutional crypto adoption vs technical rejection patterns - capital inflows conflicting with chart structure breakdowns, (2) Derivatives infrastructure professionalization amid retail participation decline, (3) Rate policy uncertainty and earnings guidance deterioration pressuring growth assets.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, active resistance), Put Wall $670 (13k OI, active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, dormant), Put Wall $610 (6k OI, active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). QQQ support breach noted per Twitter. Bitcoin: $93.5k-$94.5k resistance rejection zone per Twitter; Solana: $125-$80 range per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
+      "XRP",
       "SOL"
     ],
     "key_themes": [
-      "Institutional crypto adoption vs. technical resistance failures",
-      "Extreme fear sentiment (Fear/Greed 16) creating contrarian setup",
-      "AI infrastructure debt accumulation concerns",
-      "Defensive rotation amid earnings guidance weakness",
-      "Retail participation absence limiting rally potential"
+      "Institutional crypto adoption vs technical deterioration",
+      "Options dealer hedging dynamics at call/put walls",
+      "Rate policy uncertainty and earnings guidance weakness",
+      "Derivatives infrastructure professionalization",
+      "Retail participation decline amid extreme fear readings"
     ],
     "risk_factors": [
-      "No professional trader guidance creates validation vacuum - highest-weight source unavailable",
-      "QQQ support breakdown per Twitter without specific reclaim level identified",
-      "Tech debt issuance ($270B) funding unsustainable AI buildout per Twitter",
-      "Regulatory tightening on financials creating sector-specific earnings pressure per RSS",
-      "Retail capitulation at extreme fear (16) could trigger cascading liquidations before reversal"
+      "Technical rejection at key resistance levels despite institutional inflows signals distribution",
+      "QQQ support breach indicates growth equity weakness extending beyond crypto",
+      "Earnings guidance deterioration across tech/software sectors per RSS creating fundamental headwind",
+      "Retail apathy and depressed participation metrics contradicting extreme fear 'opportunity' narrative",
+      "Lack of professional trader data removes highest-conviction directional input"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 immediate support (5k OI), $690 resistance (7k OI). QQQ: $610 Put Wall support (6k OI), $635 resistance. Watch for breakdown through active support levels triggering dealer selling or bounce off Put Walls.",
+    "intraday_levels": "SPY: $680 immediate support (5k OI), $690 resistance (7k OI). QQQ: $610 put wall support (6k OI). Watch for consolidation between key options strikes given Sunday evening positioning.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $670 Put Wall major support (13k OI), $695 Call Wall resistance (7k OI). QQQ: broken support per Twitter (specific level not stated), $610 Put Wall critical. Solana: $80 support per Twitter. Downside bias until SPY reclaims $690 or QQQ stabilizes above broken support.",
+    "swing_levels": "SPY: $670 major put wall support (13k OI) vs $695 call wall resistance (7k OI). QQQ: $610 support vs $635-$640 resistance zone. Bitcoin resistance $93.5k-$94.5k per Twitter; break below would confirm bearish structure.",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 184024
+    "generation_time_ms": 183070
   },
   "trending": {
     "macro": [
@@ -223,7 +224,7 @@
     "color": "text-muted",
     "vix": 15.74,
     "pc_ratio": 0.83,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
