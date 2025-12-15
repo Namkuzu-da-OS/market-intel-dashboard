@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Triple Witching Quarterly - Trading Reference Guide" />
+  <meta property="og:description" content="The quarterly derivatives expiration event that moves trillions. Statistical edges, timing windows, and actionable strategies." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/strategy/2025-12/triple-witching-quarterly-trading-reference-guide.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/triple-witching-quarterly-trading-reference-guide-1765810016438.jpg" />
+  <meta property="article:published_time" content="2025-12-15" />
+  <meta property="article:section" content="strategy" />
+  <meta property="article:tag" content="$SPY, $QQQ" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Triple Witching Quarterly - Trading Reference Guide" />
+  <meta name="twitter:description" content="The quarterly derivatives expiration event that moves trillions. Statistical edges, timing windows, and actionable strategies." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/triple-witching-quarterly-trading-reference-guide-1765810016438.jpg" />
+    <title>Triple Witching: Complete Trading Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #111827;
+            --bg-tertiary: #1a2234;
+            --bg-card: #151d2e;
+            --border-color: #2a3548;
+            --border-highlight: #3b82f6;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-yellow: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-orange: #f97316;
+            --gradient-blue: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            --gradient-green: linear-gradient(135deg, #10b981, #059669);
+            --gradient-red: linear-gradient(135deg, #ef4444, #dc2626);
+            --glow-blue: 0 0 20px rgba(59, 130, 246, 0.3);
+            --glow-green: 0 0 20px rgba(16, 185, 129, 0.3);
+            --glow-red: 0 0 20px rgba(239, 68, 68, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-blue);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan), var(--accent-purple));
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--glow-blue);
+        }
+
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .logo-text span {
+            color: var(--accent-cyan);
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header-stat {
+            text-align: right;
+        }
+
+        .header-stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .header-stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+        }
+
+        .header-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 700px;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .nav-item {
+            padding: 1rem 1.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+            background: var(--bg-tertiary);
+        }
+
+        .nav-item.active {
+            color: var(--accent-cyan);
+            border-bottom-color: var(--accent-cyan);
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .section-badge {
+            margin-left: auto;
+            padding: 0.25rem 0.75rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent-blue);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-icon {
+            font-size: 1.25rem;
+        }
+
+        .card-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .card-content {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Grid layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 1200px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+        }
+
+        /* Countdown Module */
+        .countdown-module {
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-card) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .countdown-module::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+        }
+
+        .countdown-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .countdown-date {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-bottom: 1.5rem;
+        }
+
+        .countdown-grid {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .countdown-item {
+            flex: 1;
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .countdown-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1;
+        }
+
+        .countdown-unit {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+
+        .countdown-phase {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        .phase-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .phase-dot.green { background: var(--accent-green); }
+        .phase-dot.yellow { background: var(--accent-yellow); }
+        .phase-dot.red { background: var(--accent-red); }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        /* Stats Cards */
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+        }
+
+        .stat-card.bullish::before { background: var(--accent-green); }
+        .stat-card.bearish::before { background: var(--accent-red); }
+        .stat-card.neutral::before { background: var(--accent-yellow); }
+        .stat-card.info::before { background: var(--accent-blue); }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-value.green { color: var(--accent-green); }
+        .stat-value.red { color: var(--accent-red); }
+        .stat-value.yellow { color: var(--accent-yellow); }
+        .stat-value.blue { color: var(--accent-blue); }
+
+        .stat-detail {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        thead {
+            background: var(--bg-tertiary);
+        }
+
+        th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .table-highlight {
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        /* Badge styles */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .badge-green {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green);
+        }
+
+        .badge-red {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+        }
+
+        .badge-yellow {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent-yellow);
+        }
+
+        .badge-blue {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -2rem;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 3px solid var(--accent-blue);
+        }
+
+        .timeline-dot.active {
+            background: var(--accent-blue);
+            box-shadow: var(--glow-blue);
+        }
+
+        .timeline-dot.bullish {
+            border-color: var(--accent-green);
+        }
+
+        .timeline-dot.bearish {
+            border-color: var(--accent-red);
+        }
+
+        .timeline-time {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            color: var(--accent-cyan);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-desc {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Expandable Sections */
+        .expandable {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .expandable-header {
+            padding: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .expandable-header:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .expandable-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .expandable-title {
+            flex: 1;
+            font-weight: 600;
+        }
+
+        .expandable-meta {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .expandable-arrow {
+            transition: transform 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .expandable.open .expandable-arrow {
+            transform: rotate(180deg);
+        }
+
+        .expandable-content {
+            display: none;
+            padding: 0 1.25rem 1.25rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .expandable.open .expandable-content {
+            display: block;
+        }
+
+        /* Definition List */
+        .def-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .def-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+        }
+
+        .def-term {
+            font-weight: 600;
+            color: var(--accent-cyan);
+        }
+
+        .def-desc {
+            color: var(--text-secondary);
+        }
+
+        /* Alert Boxes */
+        .alert {
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+            margin-bottom: 1rem;
+        }
+
+        .alert-warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: var(--accent-yellow);
+        }
+
+        .alert-danger {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: var(--accent-red);
+        }
+
+        .alert-success {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: var(--accent-green);
+        }
+
+        .alert-info {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: var(--accent-blue);
+        }
+
+        .alert-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .alert-content {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+        }
+
+        /* Progress bars */
+        .progress-bar {
+            height: 8px;
+            background: var(--bg-secondary);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-fill.green { background: var(--gradient-green); }
+        .progress-fill.red { background: var(--gradient-red); }
+        .progress-fill.blue { background: var(--gradient-blue); }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .checklist-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .checklist-icon.do {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green);
+        }
+
+        .checklist-icon.dont {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+        }
+
+        .checklist-text {
+            flex: 1;
+        }
+
+        .checklist-text strong {
+            color: var(--text-primary);
+        }
+
+        /* Calculator Module */
+        .calculator {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .calc-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .calc-group {
+            flex: 1;
+        }
+
+        .calc-label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .calc-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .calc-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .calc-result {
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .calc-result-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+        }
+
+        .calc-result-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Diagram/Visual */
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 2rem;
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            flex-wrap: wrap;
+        }
+
+        .flow-item {
+            padding: 1rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .flow-item-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .flow-item-desc {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .flow-arrow {
+            color: var(--accent-cyan);
+            font-size: 1.5rem;
+        }
+
+        /* Two Column Layout */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 900px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Quick Reference Box */
+        .quick-ref {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            border: 1px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .quick-ref-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .tab {
+            padding: 0.75rem 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tab:hover {
+            color: var(--text-primary);
+        }
+
+        .tab.active {
+            color: var(--accent-cyan);
+            border-bottom-color: var(--accent-cyan);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Utility classes */
+        .text-green { color: var(--accent-green); }
+        .text-red { color: var(--accent-red); }
+        .text-yellow { color: var(--accent-yellow); }
+        .text-blue { color: var(--accent-blue); }
+        .text-cyan { color: var(--accent-cyan); }
+        .text-muted { color: var(--text-muted); }
+        .text-center { text-align: center; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .mt-1 { margin-top: 1rem; }
+        .mt-2 { margin-top: 2rem; }
+        .mb-1 { margin-bottom: 1rem; }
+        .mb-2 { margin-bottom: 2rem; }
+
+        /* Print styles */
+        @media print {
+            .nav, .countdown-module { display: none; }
+            body { background: white; color: black; }
+            .card, .stat-card, .expandable { border: 1px solid #ccc; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <div class="logo-icon">🧙</div>
+                    <div class="logo-text">Triple <span>Witching</span></div>
+                </div>
+                <div class="header-stats">
+                    <div class="header-stat">
+                        <div class="header-stat-label">Quarterly Notional</div>
+                        <div class="header-stat-value">$5-6.5T</div>
+                    </div>
+                    <div class="header-stat">
+                        <div class="header-stat-label">Volume Increase</div>
+                        <div class="header-stat-value">+44-100%</div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="header-title">Complete Trading Reference Guide</h1>
+            <p class="header-subtitle">Master the quarterly derivatives expiration event that moves trillions. Statistical edges, timing windows, and actionable strategies.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#countdown" class="nav-item active">Countdown</a>
+            <a href="#mechanics" class="nav-item">Mechanics</a>
+            <a href="#statistics" class="nav-item">Statistics</a>
+            <a href="#timing" class="nav-item">Timing Windows</a>
+            <a href="#strategies" class="nav-item">Strategies</a>
+            <a href="#cross-market" class="nav-item">Cross-Market</a>
+            <a href="#checklist" class="nav-item">Checklist</a>
+            <a href="#calendar" class="nav-item">Calendar</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        
+        <!-- Countdown Section -->
+        <section id="countdown" class="section">
+            <div class="section-header">
+                <div class="section-icon">⏱️</div>
+                <h2 class="section-title">Next Triple Witching</h2>
+                <span class="section-badge">LIVE</span>
+            </div>
+            
+            <div class="countdown-module">
+                <div class="countdown-label">Next Expiration Date</div>
+                <div class="countdown-date" id="next-witch-date">Loading...</div>
+                
+                <div class="countdown-grid">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="countdown-days">--</div>
+                        <div class="countdown-unit">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="countdown-hours">--</div>
+                        <div class="countdown-unit">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="countdown-mins">--</div>
+                        <div class="countdown-unit">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="countdown-secs">--</div>
+                        <div class="countdown-unit">Seconds</div>
+                    </div>
+                </div>
+                
+                <div class="countdown-phase" id="market-phase">
+                    <span class="phase-dot green"></span>
+                    <span id="phase-text">Calculating phase...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Statistics -->
+        <section id="statistics" class="section">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <h2 class="section-title">Key Statistics</h2>
+                <span class="section-badge">EDGE DATA</span>
+            </div>
+
+            <div class="grid-4 mb-2">
+                <div class="stat-card bearish">
+                    <div class="stat-label">Witching Day Return</div>
+                    <div class="stat-value red">-0.52%</div>
+                    <div class="stat-detail">Average since 2021</div>
+                </div>
+                <div class="stat-card bearish">
+                    <div class="stat-label">Witching Day Win Rate</div>
+                    <div class="stat-value red">14%</div>
+                    <div class="stat-detail">Only 2 of 14 positive</div>
+                </div>
+                <div class="stat-card bullish">
+                    <div class="stat-label">Pre-Rally (T-3 to T-1)</div>
+                    <div class="stat-value green">+0.47%</div>
+                    <div class="stat-detail">134.59% annualized</div>
+                </div>
+                <div class="stat-card bearish">
+                    <div class="stat-label">Witching Hour Win Rate</div>
+                    <div class="stat-value red">31%</div>
+                    <div class="stat-detail">3-4 PM ET worst hour</div>
+                </div>
+            </div>
+
+            <div class="grid-4">
+                <div class="stat-card info">
+                    <div class="stat-label">Volume Increase</div>
+                    <div class="stat-value blue">+44-100%</div>
+                    <div class="stat-detail">vs normal days</div>
+                </div>
+                <div class="stat-card info">
+                    <div class="stat-label">Opening Auction</div>
+                    <div class="stat-value blue">10x</div>
+                    <div class="stat-detail">Larger than normal</div>
+                </div>
+                <div class="stat-card info">
+                    <div class="stat-label">Closing Auction</div>
+                    <div class="stat-value blue">5x</div>
+                    <div class="stat-detail">~$80B additional</div>
+                </div>
+                <div class="stat-card neutral">
+                    <div class="stat-label">VIX Expansion</div>
+                    <div class="stat-value yellow">+20.5%</div>
+                    <div class="stat-detail">18.5 → 22.3 average</div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Period</th>
+                                <th>Average Return</th>
+                                <th>Win Rate</th>
+                                <th>Bias</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>T-9 to T-3</strong> (Mon-Tue week before)</td>
+                                <td class="font-mono text-green">+0.35%</td>
+                                <td><span class="badge badge-green">~60%</span></td>
+                                <td><span class="badge badge-green">BULLISH</span></td>
+                                <td>Establish long exposure</td>
+                            </tr>
+                            <tr class="table-highlight">
+                                <td><strong>T-3 to T-1</strong> (Wed-Thu witching week)</td>
+                                <td class="font-mono text-green">+0.47%</td>
+                                <td><span class="badge badge-green">~65%</span></td>
+                                <td><span class="badge badge-green">STRONG BULL</span></td>
+                                <td>Maintain/add position</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Witching Week Overall</strong></td>
+                                <td class="font-mono text-red">-0.53%</td>
+                                <td><span class="badge badge-yellow">53%</span></td>
+                                <td><span class="badge badge-red">BEARISH</span></td>
+                                <td>Exit before Friday</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thursday Before</strong></td>
+                                <td class="font-mono text-red">-0.33%</td>
+                                <td><span class="badge badge-red">36%</span></td>
+                                <td><span class="badge badge-red">BEARISH</span></td>
+                                <td>Close longs by EOD</td>
+                            </tr>
+                            <tr class="table-highlight">
+                                <td><strong>Triple Witching Friday</strong></td>
+                                <td class="font-mono text-red">-0.52%</td>
+                                <td><span class="badge badge-red">14%</span></td>
+                                <td><span class="badge badge-red">STRONG BEAR</span></td>
+                                <td>Avoid or fade rallies</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Witching Hour (3-4 PM)</strong></td>
+                                <td class="font-mono text-red">-0.08%</td>
+                                <td><span class="badge badge-red">31%</span></td>
+                                <td><span class="badge badge-red">WORST HOUR</span></td>
+                                <td>DO NOT TRADE</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Week After Witching</strong></td>
+                                <td class="font-mono text-red">Negative</td>
+                                <td><span class="badge badge-red">34%</span></td>
+                                <td><span class="badge badge-red">BEARISH</span></td>
+                                <td>Watch for reversal setups</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mechanics Section -->
+        <section id="mechanics" class="section">
+            <div class="section-header">
+                <div class="section-icon">⚙️</div>
+                <h2 class="section-title">How Triple Witching Works</h2>
+            </div>
+
+            <div class="alert alert-info mb-2">
+                <div class="alert-title">🧙 The Three "Witches"</div>
+                <div class="alert-content">
+                    Triple witching occurs when <strong>stock index futures</strong>, <strong>stock index options</strong>, and <strong>single stock options</strong> all expire on the same day — the third Friday of March, June, September, and December.
+                </div>
+            </div>
+
+            <div class="grid-3 mb-2">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📈</span>
+                        <span class="card-title">Stock Index Futures</span>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Products:</strong> E-mini S&P 500 (ES), E-mini Nasdaq-100 (NQ), E-mini Russell 2000</p>
+                        <p class="mt-1"><strong>Settlement:</strong> Cash settled at SOQ (Special Opening Quotation)</p>
+                        <p class="mt-1"><strong>Timing:</strong> AM settlement based on opening prices</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📊</span>
+                        <span class="card-title">Stock Index Options</span>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Products:</strong> SPX, NDX, RUT options</p>
+                        <p class="mt-1"><strong>Settlement:</strong> Cash settled at SOQ</p>
+                        <p class="mt-1"><strong>Timing:</strong> AM settlement (9:40-10:00 AM ET typically)</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🎯</span>
+                        <span class="card-title">Single Stock Options</span>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Products:</strong> Options on individual equities</p>
+                        <p class="mt-1"><strong>Settlement:</strong> Physical delivery (100 shares per contract)</p>
+                        <p class="mt-1"><strong>Timing:</strong> PM settlement at market close</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expandable: Market Maker Mechanics -->
+            <div class="expandable" onclick="toggleExpand(this)">
+                <div class="expandable-header">
+                    <div class="expandable-icon">🏦</div>
+                    <div class="expandable-title">Market Maker Mechanics & Delta Hedging</div>
+                    <div class="expandable-meta">
+                        <span class="badge badge-blue">IMPORTANT</span>
+                        <span class="expandable-arrow">▼</span>
+                    </div>
+                </div>
+                <div class="expandable-content">
+                    <p class="mb-1">Market makers who sell options aim to remain <strong>delta-neutral</strong>, earning profits from bid-ask spreads rather than directional bets.</p>
+                    
+                    <div class="def-list mt-1">
+                        <div class="def-item">
+                            <div class="def-term">Delta Hedging</div>
+                            <div class="def-desc">When customers buy calls, dealers buy the underlying stock. When customers buy puts, dealers short the underlying. This creates constant rebalancing pressure.</div>
+                        </div>
+                        <div class="def-item">
+                            <div class="def-term">Gamma Effect</div>
+                            <div class="def-desc">Near expiration, at-the-money options have extremely high gamma, forcing market makers to rebalance with increasing frequency. SPX options alone carry ~$80 billion of gross gamma.</div>
+                        </div>
+                        <div class="def-item">
+                            <div class="def-term">Pinning Effect</div>
+                            <div class="def-desc">Prices gravitate toward strike prices with high open interest because of gamma hedging dynamics. Academic research shows "max pain" strategies generate 0.4% weekly returns during expiration weeks.</div>
+                        </div>
+                        <div class="def-item">
+                            <div class="def-term">Open Interest Impact</div>
+                            <div class="def-desc">SPX options represent ~20% of total S&P 500 market cap (~$5.2 trillion), making hedging flows among "the most important non-fundamental flows in equity markets."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expandable: Settlement Process -->
+            <div class="expandable" onclick="toggleExpand(this)">
+                <div class="expandable-header">
+                    <div class="expandable-icon">⚖️</div>
+                    <div class="expandable-title">Settlement Process: AM vs PM</div>
+                    <div class="expandable-meta">
+                        <span class="badge badge-yellow">TIMING</span>
+                        <span class="expandable-arrow">▼</span>
+                    </div>
+                </div>
+                <div class="expandable-content">
+                    <div class="two-col">
+                        <div>
+                            <h4 class="text-cyan mb-1">AM Settlement (Index Products)</h4>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>Special Opening Quotation (SOQ)</strong> — calculated from each index component's first reported opening sale</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>Timing:</strong> Typically finalized by 9:40-10:00 AM ET</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>Gap Risk:</strong> SOQ can deviate -1.0% to +1.0% from actual index open</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>Note:</strong> 11 of 33 quarterly settlements (2009-2017) saw SOQ exceed day's actual trading high</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-cyan mb-1">PM Settlement (Stock Options)</h4>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>Physical Delivery</strong> — 100 shares per contract</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>Timing:</strong> Market close at 4:00 PM ET</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>MOC Orders:</strong> Massive market-on-close order flow</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text"><strong>Volume:</strong> Closing auction ~$80B additional notional</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flow-diagram mt-2">
+                        <div class="flow-item">
+                            <div class="flow-item-title">Thursday Close</div>
+                            <div class="flow-item-desc">Index futures stop trading</div>
+                        </div>
+                        <span class="flow-arrow">→</span>
+                        <div class="flow-item">
+                            <div class="flow-item-title">Friday Open</div>
+                            <div class="flow-item-desc">SOQ calculated 9:30-10:00</div>
+                        </div>
+                        <span class="flow-arrow">→</span>
+                        <div class="flow-item">
+                            <div class="flow-item-title">Midday</div>
+                            <div class="flow-item-desc">Pinning effects peak</div>
+                        </div>
+                        <span class="flow-arrow">→</span>
+                        <div class="flow-item">
+                            <div class="flow-item-title">3:00-4:00 PM</div>
+                            <div class="flow-item-desc">"Witching Hour" chaos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expandable: Triple vs Quad -->
+            <div class="expandable" onclick="toggleExpand(this)">
+                <div class="expandable-header">
+                    <div class="expandable-icon">🔢</div>
+                    <div class="expandable-title">Triple vs Quadruple Witching</div>
+                    <div class="expandable-meta">
+                        <span class="expandable-arrow">▼</span>
+                    </div>
+                </div>
+                <div class="expandable-content">
+                    <p><strong>"Quadruple witching"</strong> was the term used from 2002-2020 when single stock futures traded on OneChicago. That exchange closed in September 2020, so technically we're back to "triple" witching.</p>
+                    <p class="mt-1">However, practitioners sometimes still reference "quad witch" to include <strong>index rebalances</strong> (S&P, FTSE, Russell, Nasdaq) that coincide with these dates and add approximately 40% of market-on-close order flow.</p>
+                    <div class="alert alert-warning mt-1">
+                        <div class="alert-content">The rebalancing effect from major indices (especially Russell reconstitution in June) can actually exceed the derivatives expiration impact in terms of price movement.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timing Windows Section -->
+        <section id="timing" class="section">
+            <div class="section-header">
+                <div class="section-icon">🕐</div>
+                <h2 class="section-title">Critical Timing Windows</h2>
+            </div>
+
+            <div class="two-col">
+                <div>
+                    <h3 class="text-cyan mb-1">Week-Level Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot bullish"></div>
+                            <div class="timeline-time">T-9 to T-7 (Monday-Wednesday prior week)</div>
+                            <div class="timeline-title">Early Positioning Phase</div>
+                            <div class="timeline-desc">Large institutions begin shifting exposure. Volume starts increasing. Pre-expiration rally begins.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot bullish"></div>
+                            <div class="timeline-time">T-6 to T-4 (Thu-Mon)</div>
+                            <div class="timeline-title">Rally Continuation</div>
+                            <div class="timeline-desc">S&P averages +0.82% from T-9 to T-1. Momentum traders pile in.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot active bullish"></div>
+                            <div class="timeline-time">T-3 to T-1 (Wed-Thu witching week)</div>
+                            <div class="timeline-title">Peak Rally Window ⭐</div>
+                            <div class="timeline-desc">Strongest edge: +0.47% average (134.59% annualized). Exit longs by Thursday close.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot bearish"></div>
+                            <div class="timeline-time">T-0 (Triple Witching Friday)</div>
+                            <div class="timeline-title">Expiration Day — AVOID</div>
+                            <div class="timeline-desc">14% win rate since 2021. -0.52% average return. Stay flat or fade rallies.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot bearish"></div>
+                            <div class="timeline-time">T+1 to T+5 (Following week)</div>
+                            <div class="timeline-title">Post-Witching Weakness</div>
+                            <div class="timeline-desc">66% of weeks negative historically. Hedging support dissolves. Watch for reversal setups.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-cyan mb-1">Intraday Timeline (Witching Friday)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-time">Pre-Market (4:00-9:30 AM)</div>
+                            <div class="timeline-title">Gap Assessment</div>
+                            <div class="timeline-desc">Monitor futures for overnight positioning. Large gaps common.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-time">9:30-10:00 AM ET</div>
+                            <div class="timeline-title">SOQ Settlement Window</div>
+                            <div class="timeline-desc">Index options and futures settle. Opening auction 10x larger than normal (~$28B additional). High volatility.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-time">10:00 AM - 2:00 PM</div>
+                            <div class="timeline-title">Midday Pinning</div>
+                            <div class="timeline-desc">Prices gravitate toward high open interest strikes. Lower volatility window. Best time for defined-risk trades.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-time">2:00-3:00 PM</div>
+                            <div class="timeline-title">Pre-Witching Hour</div>
+                            <div class="timeline-desc">MOC order imbalances published. Volatility starts increasing. Close any open positions.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot active bearish"></div>
+                            <div class="timeline-time">3:00-4:00 PM ET</div>
+                            <div class="timeline-title">"Witching Hour" — DO NOT TRADE ⚠️</div>
+                            <div class="timeline-desc">31% win rate (worst ever recorded). 365% closing auction increase. Price swings of 1%+ in minutes. Spreads widen unpredictably.</div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-danger mt-2">
+                        <div class="alert-title">⚠️ Critical Warning</div>
+                        <div class="alert-content">
+                            September 2024 example: SPY traded 162M shares (2x average), with 58M in the final hour alone. Stock futures jumped/fell 0.5-1%+ within seconds.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategies Section -->
+        <section id="strategies" class="section">
+            <div class="section-header">
+                <div class="section-icon">🎯</div>
+                <h2 class="section-title">Trading Strategies</h2>
+            </div>
+
+            <!-- Strategy Tabs -->
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab(event, 'strategy-pre')">Pre-Event</button>
+                <button class="tab" onclick="switchTab(event, 'strategy-day')">Day-Of</button>
+                <button class="tab" onclick="switchTab(event, 'strategy-post')">Post-Event</button>
+                <button class="tab" onclick="switchTab(event, 'strategy-options')">Options</button>
+            </div>
+
+            <!-- Pre-Event Strategy -->
+            <div id="strategy-pre" class="tab-content active">
+                <div class="quick-ref mb-2">
+                    <div class="quick-ref-title">⭐ Highest Edge Strategy: Pre-Expiration Rally</div>
+                    <p>Go long Monday open of witching week, exit Thursday close. <strong>Average gain: +0.55% per trade, 65% win rate</strong> across 128 backtested trades.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">📈</span>
+                            <span class="card-title">Entry Rules</span>
+                        </div>
+                        <div class="card-content">
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Enter long S&P 500 exposure (SPY, ES futures, or equivalent) at <strong>Monday open</strong> of witching week</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Alternative: Enter T-9 (Monday prior week) for full rally capture (+0.82% average)</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Size position at 70-80% of normal to account for elevated volatility</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Set stops at 2.5 ATR (wider than normal 2 ATR)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">📉</span>
+                            <span class="card-title">Exit Rules</span>
+                        </div>
+                        <div class="card-content">
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Exit all positions by <strong>Thursday 3:30 PM ET</strong> — BEFORE Friday</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">If Wednesday shows strong gains (+0.5%+), consider taking partial profits</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Use limit orders only — never market orders approaching expiration</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon dont">✗</span>
+                                    <span class="checklist-text">NEVER hold into Friday — negative expected value</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day-Of Strategy -->
+            <div id="strategy-day" class="tab-content">
+                <div class="alert alert-danger mb-2">
+                    <div class="alert-title">⚠️ High Risk Environment</div>
+                    <div class="alert-content">
+                        Triple witching Friday has only a 14% win rate since 2021. The recommended strategy is <strong>do not trade</strong>, or trade with extreme caution and reduced size.
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-title">If You Must Trade</span>
+                        </div>
+                        <div class="card-content">
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Trade only <strong>10:30 AM - 2:00 PM</strong> window (midday lull)</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Reduce position size to <strong>30-50%</strong> of normal</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Use <strong>defined-risk strategies only</strong> (spreads, not naked positions)</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Monitor max pain levels — prices gravitate toward them</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Close ALL positions by <strong>2:30 PM</strong> at the latest</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">🚫</span>
+                            <span class="card-title">What to Avoid</span>
+                        </div>
+                        <div class="card-content">
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon dont">✗</span>
+                                    <span class="checklist-text">NEVER trade the opening 30 minutes (SOQ settlement chaos)</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon dont">✗</span>
+                                    <span class="checklist-text">NEVER trade the final hour (3-4 PM "witching hour")</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon dont">✗</span>
+                                    <span class="checklist-text">NEVER use market orders — slippage is severe</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon dont">✗</span>
+                                    <span class="checklist-text">NEVER hold expiring options through close</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon dont">✗</span>
+                                    <span class="checklist-text">NEVER chase moves — reversals are violent</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <h4 class="mb-1">Max Pain Reference</h4>
+                    <p class="text-muted mb-1">Max pain is the strike price where the most options expire worthless. Prices tend to gravitate toward this level during the day.</p>
+                    <div class="code-block">
+                        // Max Pain Calculation
+                        // For each strike price, calculate:
+                        Total Pain = Σ (Open Interest × |Strike - Current Price|)
+                        
+                        // Max Pain = Strike with MINIMUM total pain
+                        // Check sources like: maximum-pain.com, opricot.com, or your broker's tools
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post-Event Strategy -->
+            <div id="strategy-post" class="tab-content">
+                <div class="alert alert-warning mb-2">
+                    <div class="alert-title">📉 Post-Witching Weakness Pattern</div>
+                    <div class="alert-content">
+                        The week following triple witching has been negative in 14 of 21 years (66%). September's following week is historically the worst — "rarely positive over 30 years and averages greater than 1% declines."
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-title">Reversal Setup Criteria</span>
+                        </div>
+                        <div class="card-content">
+                            <p class="mb-1">Watch for these conditions Monday-Tuesday after witching:</p>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">VIX spike of 15%+ from pre-witching levels</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">S&P declines 1%+ from Thursday close</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Volume returns to normal levels (hedging complete)</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Put/call ratio normalizes from elevated levels</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">📊</span>
+                            <span class="card-title">Seasonal Variations</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="def-list">
+                                <div class="def-item">
+                                    <div class="def-term">March</div>
+                                    <div class="def-desc">End of Q1 rebalancing. Watch for window dressing flows.</div>
+                                </div>
+                                <div class="def-item">
+                                    <div class="def-term">June</div>
+                                    <div class="def-desc">Russell reconstitution week. Small caps most affected.</div>
+                                </div>
+                                <div class="def-item">
+                                    <div class="def-term">September</div>
+                                    <div class="def-desc">Worst seasonal period. Post-witching week historically terrible.</div>
+                                </div>
+                                <div class="def-item">
+                                    <div class="def-term">December</div>
+                                    <div class="def-desc">Tax loss harvesting + holiday liquidity. Can be choppy.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Options Strategy -->
+            <div id="strategy-options" class="tab-content">
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">💰</span>
+                            <span class="card-title">Premium Selling Strategy</span>
+                        </div>
+                        <div class="card-content">
+                            <p class="mb-1"><strong>Timing:</strong> Establish positions 1-2 weeks BEFORE witching when IV is elevated.</p>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Sell premium 7-14 days out from expiration</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Close positions by Wednesday of witching week</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Use defined-risk spreads (iron condors, verticals)</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon dont">✗</span>
+                                    <span class="checklist-text">DO NOT sell premium directly into expiration day</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">📅</span>
+                            <span class="card-title">Calendar Spread Strategy</span>
+                        </div>
+                        <div class="card-content">
+                            <p class="mb-1"><strong>Setup:</strong> Buy longer-dated options, sell expiring options.</p>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Benefits from accelerated time decay on short leg</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Enter 5-7 days before expiration</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Target strikes near max pain level</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">✓</span>
+                                    <span class="checklist-text">Close when short leg reaches 80% profit or Thursday EOD</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <h4 class="mb-1">0DTE Considerations</h4>
+                    <p class="text-muted mb-1">Analysis of 230,000 trades shows specific patterns for zero-day options on witching days:</p>
+                    <div class="grid-3">
+                        <div class="stat-card neutral">
+                            <div class="stat-label">Strategy Distribution</div>
+                            <div class="stat-value yellow">2x</div>
+                            <div class="stat-detail">Neutral strategies more common than directional</div>
+                        </div>
+                        <div class="stat-card neutral">
+                            <div class="stat-label">Success Rate</div>
+                            <div class="stat-value yellow">50%</div>
+                            <div class="stat-detail">Overall 0DTE success on witching</div>
+                        </div>
+                        <div class="stat-card info">
+                            <div class="stat-label">Defined Risk</div>
+                            <div class="stat-value blue">95%</div>
+                            <div class="stat-detail">Of 0DTE volume uses spreads</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cross-Market Effects -->
+        <section id="cross-market" class="section">
+            <div class="section-header">
+                <div class="section-icon">🌐</div>
+                <h2 class="section-title">Cross-Market Effects</h2>
+            </div>
+
+            <div class="grid-2 mb-2">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">₿</span>
+                        <span class="card-title">Cryptocurrency Impact</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="mb-1">The "Wall Streetization" of Bitcoin has created tight linkages:</p>
+                        <div class="def-list">
+                            <div class="def-item">
+                                <div class="def-term">BTC-VIX Correlation</div>
+                                <div class="def-desc">Record 0.88 correlation between Bitcoin implied volatility (BVIV) and VIX in recent periods.</div>
+                            </div>
+                            <div class="def-item">
+                                <div class="def-term">Recent Example</div>
+                                <div class="def-desc">Dec 2024 triple witching: BTC dropped from $97,777 to $92,200 in hours before recovering.</div>
+                            </div>
+                            <div class="def-item">
+                                <div class="def-term">Crypto Expirations</div>
+                                <div class="def-desc">CME BTC/ETH: Last Friday of month. Deribit quarterly: Last Friday of Mar/Jun/Sep/Dec at 08:00 UTC (doesn't align exactly with equity triple witch).</div>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning mt-1">
+                            <div class="alert-content">Watch for amplified crypto moves when leveraged traders face liquidations during equity volatility spikes.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📊</span>
+                        <span class="card-title">Commodities & Bonds</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="def-list">
+                            <div class="def-item">
+                                <div class="def-term">Gold</div>
+                                <div class="def-desc"><span class="text-green">Positive relationship with VIX</span> — acts as safe haven during triple witching volatility.</div>
+                            </div>
+                            <div class="def-item">
+                                <div class="def-term">Oil</div>
+                                <div class="def-desc"><span class="text-red">Negative relationship with implied volatility</span> — categorized as riskier asset during uncertainty.</div>
+                            </div>
+                            <div class="def-item">
+                                <div class="def-term">Dollar (DXY)</div>
+                                <div class="def-desc">Tends to strengthen during risk-off moves, creating headwinds for commodities and crypto.</div>
+                            </div>
+                            <div class="def-item">
+                                <div class="def-term">Treasuries</div>
+                                <div class="def-desc">Flight to safety effect. Dec 2023: 10Y yield dropped 11bps to 3.92% around witching.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">🌍</span>
+                    <span class="card-title">Global Market Spillovers</span>
+                </div>
+                <div class="card-content">
+                    <div class="grid-3">
+                        <div>
+                            <h4 class="text-cyan mb-1">European Markets</h4>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text">Closing auctions: 15-20% of daily notional</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text">Concentration growing: 25.9% (2023) → 37.3% (2024)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-cyan mb-1">Asian Markets</h4>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text">Typically -0.2% to -0.4% in overnight futures after US witching</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text">Watch for yen carry trade disruption if JGBs move</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-cyan mb-1">Currency Markets</h4>
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text">USD strength on risk-off flows</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="checklist-icon do">📍</span>
+                                    <span class="checklist-text">JPY strengthens if carry trades unwind</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checklist Section -->
+        <section id="checklist" class="section">
+            <div class="section-header">
+                <div class="section-icon">✅</div>
+                <h2 class="section-title">Pre-Flight Checklist</h2>
+            </div>
+
+            <div class="two-col">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📋</span>
+                        <span class="card-title">Week Before Witching</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Confirm triple witching date on calendar</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Check if any index rebalances coincide (especially Russell in June)</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Review current gamma exposure (SpotGamma, Menthor Q, etc.)</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Identify max pain levels for SPY/QQQ/IWM</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Plan entry for pre-expiration rally (Monday open)</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Reduce overall portfolio leverage</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📋</span>
+                        <span class="card-title">Thursday Before Witching</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Close ALL directional positions by 3:30 PM ET</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Roll or close any expiring options</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Review VIX level vs. historical average (18.5 → 22.3 typical)</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Set alerts for max pain strikes</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Document current portfolio state for reference</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Confirm no Friday trading unless specific plan exists</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📋</span>
+                        <span class="card-title">Witching Friday (If Trading)</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Position size reduced to 30-50% max</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Only defined-risk trades (spreads)</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Trade only 10:30 AM - 2:00 PM window</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Limit orders only — NO market orders</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Close everything by 2:30 PM ET</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon dont">☐</span>
+                                <span class="checklist-text">DO NOT trade 3:00-4:00 PM "witching hour"</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📋</span>
+                        <span class="card-title">Week After Witching</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Watch for post-witching weakness (66% of weeks negative)</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Monitor VIX normalization</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Check for reversal setup criteria (see Strategy section)</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Review crypto for delayed correlation effects</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Note lessons learned for next quarter</span>
+                            </li>
+                            <li class="checklist-item">
+                                <span class="checklist-icon do">☐</span>
+                                <span class="checklist-text">Update trading journal with observations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar" class="section">
+            <div class="section-header">
+                <div class="section-icon">📅</div>
+                <h2 class="section-title">Triple Witching Calendar</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📆</span>
+                        <span class="card-title">2024 Dates (Completed)</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Quarter</th>
+                                        <th>Date</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Q1</td>
+                                        <td class="font-mono">March 15, 2024</td>
+                                        <td class="text-muted">End of Q1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q2</td>
+                                        <td class="font-mono">June 21, 2024</td>
+                                        <td class="text-muted">Russell rebalance</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q3</td>
+                                        <td class="font-mono">September 20, 2024</td>
+                                        <td class="text-muted">Worst seasonal period</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q4</td>
+                                        <td class="font-mono">December 20, 2024</td>
+                                        <td class="text-muted">$6.5T notional</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📆</span>
+                        <span class="card-title">2025 Dates</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Quarter</th>
+                                        <th>Date</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Q1</td>
+                                        <td class="font-mono">March 21, 2025</td>
+                                        <td class="text-muted">End of Q1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q2</td>
+                                        <td class="font-mono">June 20, 2025</td>
+                                        <td class="text-muted">Russell rebalance week</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q3</td>
+                                        <td class="font-mono">September 19, 2025</td>
+                                        <td class="text-muted">Historically worst</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q4</td>
+                                        <td class="font-mono">December 19, 2025</td>
+                                        <td class="text-muted">Year-end + holidays</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📆</span>
+                        <span class="card-title">2026 Dates</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="grid-4">
+                            <div class="stat-card info">
+                                <div class="stat-label">Q1 2026</div>
+                                <div class="stat-value blue" style="font-size: 1.25rem;">March 20</div>
+                            </div>
+                            <div class="stat-card info">
+                                <div class="stat-label">Q2 2026</div>
+                                <div class="stat-value blue" style="font-size: 1.25rem;">June 19</div>
+                            </div>
+                            <div class="stat-card info">
+                                <div class="stat-label">Q3 2026</div>
+                                <div class="stat-value blue" style="font-size: 1.25rem;">September 18</div>
+                            </div>
+                            <div class="stat-card info">
+                                <div class="stat-label">Q4 2026</div>
+                                <div class="stat-value blue" style="font-size: 1.25rem;">December 18</div>
+                            </div>
+                        </div>
+                        <p class="text-muted mt-1 text-center"><em>Third Friday of March, June, September, and December each year</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">⚡</div>
+                <h2 class="section-title">Quick Reference Card</h2>
+            </div>
+
+            <div class="quick-ref">
+                <div class="grid-3">
+                    <div>
+                        <h4 class="text-green mb-1">✅ DO</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.25rem 0;">• Go long Mon-Thu of witching week</li>
+                            <li style="padding: 0.25rem 0;">• Exit all positions by Thursday EOD</li>
+                            <li style="padding: 0.25rem 0;">• Use limit orders only</li>
+                            <li style="padding: 0.25rem 0;">• Reduce position sizes 30-50%</li>
+                            <li style="padding: 0.25rem 0;">• Monitor max pain levels</li>
+                            <li style="padding: 0.25rem 0;">• Watch VIX for expansion</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-red mb-1">❌ DON'T</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.25rem 0;">• Trade the witching hour (3-4 PM)</li>
+                            <li style="padding: 0.25rem 0;">• Hold positions into Friday</li>
+                            <li style="padding: 0.25rem 0;">• Use market orders</li>
+                            <li style="padding: 0.25rem 0;">• Sell naked premium into expiration</li>
+                            <li style="padding: 0.25rem 0;">• Chase moves — reversals are violent</li>
+                            <li style="padding: 0.25rem 0;">• Ignore cross-market correlations</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-cyan mb-1">📊 KEY NUMBERS</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.25rem 0;"><strong>14%</strong> — Friday win rate since 2021</li>
+                            <li style="padding: 0.25rem 0;"><strong>31%</strong> — Witching hour win rate</li>
+                            <li style="padding: 0.25rem 0;"><strong>65%</strong> — Pre-rally week win rate</li>
+                            <li style="padding: 0.25rem 0;"><strong>+0.47%</strong> — T-3 to T-1 avg return</li>
+                            <li style="padding: 0.25rem 0;"><strong>-0.52%</strong> — Witching day avg return</li>
+                            <li style="padding: 0.25rem 0;"><strong>$5-6.5T</strong> — Quarterly notional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Triple Witching Trading Reference Guide | Data compiled from multiple sources including Bloomberg, Schaeffer's Research, Seasonax, and academic studies</p>
+        <p class="mt-1" style="font-size: 0.75rem;">Last updated: December 2024 | For educational purposes only — not financial advice</p>
+    </footer>
+
+    <script>
+        // Triple Witching Dates (third Friday of Mar, Jun, Sep, Dec)
+        function getTripleWitchingDates(year) {
+            const months = [2, 5, 8, 11]; // March, June, September, December (0-indexed)
+            return months.map(month => {
+                const firstDay = new Date(year, month, 1);
+                const firstFriday = (5 - firstDay.getDay() + 7) % 7 + 1;
+                const thirdFriday = firstFriday + 14;
+                return new Date(year, month, thirdFriday, 16, 0, 0); // 4 PM ET close
+            });
+        }
+
+        function getNextTripleWitching() {
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            const dates = [
+                ...getTripleWitchingDates(currentYear),
+                ...getTripleWitchingDates(currentYear + 1)
+            ];
+            
+            for (const date of dates) {
+                if (date > now) {
+                    return date;
+                }
+            }
+            return dates[0];
+        }
+
+        function updateCountdown() {
+            const nextWitch = getNextTripleWitching();
+            const now = new Date();
+            const diff = nextWitch - now;
+
+            // Format date
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('next-witch-date').textContent = nextWitch.toLocaleDateString('en-US', options);
+
+            // Calculate time components
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown-days').textContent = days;
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-mins').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-secs').textContent = seconds.toString().padStart(2, '0');
+
+            // Determine phase
+            const phaseText = document.getElementById('phase-text');
+            const phaseDot = document.querySelector('.phase-dot');
+            
+            if (days > 7) {
+                phaseText.textContent = 'Normal trading period';
+                phaseDot.className = 'phase-dot green';
+            } else if (days > 3) {
+                phaseText.textContent = 'Pre-expiration rally window — BULLISH BIAS';
+                phaseDot.className = 'phase-dot green';
+            } else if (days > 1) {
+                phaseText.textContent = 'Peak rally window (T-3 to T-1) — STRONGEST EDGE';
+                phaseDot.className = 'phase-dot green';
+            } else if (days === 1) {
+                phaseText.textContent = 'EXIT DAY — Close all positions by EOD';
+                phaseDot.className = 'phase-dot yellow';
+            } else if (days === 0) {
+                phaseText.textContent = 'TRIPLE WITCHING DAY — Avoid trading';
+                phaseDot.className = 'phase-dot red';
+            } else {
+                phaseText.textContent = 'Post-witching weakness period';
+                phaseDot.className = 'phase-dot yellow';
+            }
+        }
+
+        // Toggle expandable sections
+        function toggleExpand(element) {
+            element.classList.toggle('open');
+        }
+
+        // Tab switching
+        function switchTab(event, tabId) {
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding content
+            event.target.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Smooth scroll navigation
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Update active nav item
+                    document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Update active nav on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Initialize
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Open first expandable by default
+        document.querySelector('.expandable')?.classList.add('open');
+    </script>
+</body>
+</html>
