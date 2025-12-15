@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-15T08:59:52.177Z",
+  "timestamp": "2025-12-15T09:22:56.269Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 67,
+    "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 34,
-        "bearish": 13,
+        "bullish": 35,
+        "bearish": 14,
         "neutral": 48,
-        "total": 95,
+        "total": 97,
         "pct": 36
       },
       "news": {
         "bullish": 3,
-        "bearish": 4,
+        "bearish": 6,
         "neutral": 2,
-        "total": 9,
-        "pct": 33
+        "total": 11,
+        "pct": 27
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction. Technical deterioration across multiple asset classes (equities, crypto) outweighs bullish institutional narratives, with near-term downside pressure likely despite forward-looking structural tailwinds.\n\n📈 **Themes:** (1) Technical breakdown risk across growth assets creating cascade vulnerability, (2) Institutional adoption tailwinds (crypto ETFs, corporate treasury allocation) providing long-term structural support but insufficient to overcome near-term headwinds, (3) Macro transition environment—rate policy uncertainty and regulatory tightening creating volatility despite dovish expectations.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Near support: $585 (4k OI). /ES: 6847 support per Twitter analysis. Bitcoin: $89k support critical per Twitter; SOL: $125 support per Twitter.",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - Technical breakdown conditions across equities and crypto outweigh institutional adoption narratives, while professional trader positioning remains neutral amid elevated uncertainty.\n\n📈 **Themes:** (1) Technical resistance rejection across growth assets creating downside setup, (2) Institutional adoption momentum (crypto ETF flows, JPMorgan integration) clashing with near-term technical weakness, (3) Regulatory and liquidity headwinds (bank capital constraints, BoJ ETF liquidation risk) pressuring risk assets.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI) resistance, Put Wall $670 (13k OI) support. Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI) dormant resistance, Put Wall $610 (6k OI) active support. Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Near support: $585 (4k OI). /ES: 6847 support per Twitter analysis. Bitcoin: $93.5k-$94.5k resistance rejection zone, Solana: $80 breakdown risk per Twitter sources.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
       "SOL",
-      "XRP"
+      "XLF"
     ],
     "key_themes": [
-      "Technical breakdown cascade risk across growth assets",
-      "Institutional crypto adoption vs near-term macro headwinds",
-      "Rate policy uncertainty and regulatory tightening pressure",
-      "Sector rotation from growth to defensive positioning",
-      "Options dealer positioning creating defined support/resistance zones"
+      "Technical resistance rejection across growth equities and crypto",
+      "Institutional crypto adoption vs near-term breakdown risk",
+      "Regulatory capital constraints pressuring financials",
+      "Bank of Japan ETF liquidation overhang",
+      "Enterprise software guidance resets signaling demand weakness"
     ],
     "risk_factors": [
-      "Systemic technical breaks across multiple timeframes suggesting forced liquidation risk rather than healthy consolidation",
-      "Extreme leverage in growth sectors ($270B+ tech-linked corporate debt) amplifying downside vulnerability",
-      "Earnings disappointments and guidance cuts in software/fintech creating sector-specific pressure",
-      "Geopolitical escalation risks (regulatory enforcement, external shocks) overriding dovish policy expectations",
-      "Gap between bullish institutional narratives and actual technical price action creating timing risk for early positioning"
+      "Bitcoin failing $93.5k-$94.5k resistance with breakdown catalyzing broader crypto selloff",
+      "Bank of Japan $500B+ ETF liquidation creating sustained selling pressure across global equities",
+      "SPY breaking below $670 put wall triggering accelerated dealer hedging and downside cascade",
+      "Enterprise software guidance cuts spreading to broader tech sector earnings revisions",
+      "Geopolitical tensions (Russia-Ukraine, Taiwan-China) triggering risk-off flows amid technical weakness"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $680 immediate support (5k OI), $690 resistance (7k OI). QQQ: $610 critical support (6k OI Put Wall), $635 resistance. Watch for breakdown below active support zones triggering dealer hedging flow.",
+    "intraday_levels": "SPY: $680 immediate support (5k OI), $690 resistance (7k OI). QQQ: $610 put wall support (6k OI), $613-615 resistance zone. Watch for breakdown below active support levels triggering dealer hedging flows.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $670 Put Wall (13k OI) major support zone, $695 Call Wall (7k OI) upside resistance. QQQ: $610 Put Wall downside target, $625 Max Pain gravitational pull. Bitcoin $89k and SOL $125 per Twitter analysis critical crypto support levels.",
+    "swing_levels": "SPY: $670 major put wall support (13k OI), $695 call wall resistance (7k OI). QQQ: $610 support floor, $625 max pain gravitational pull, $635-645 resistance cluster. Bitcoin: $93.5k-$94.5k rejection zone critical, breakdown targets lower. Solana: $125 support, $80 breakdown risk.",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 181507
+    "generation_time_ms": 185158
   },
   "trending": {
     "macro": [
@@ -235,7 +235,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.44,
+    "vix": 16.38,
     "pc_ratio": 0.83,
     "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
