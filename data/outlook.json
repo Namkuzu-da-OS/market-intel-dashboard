@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-15T06:23:10.338Z",
+  "timestamp": "2025-12-15T06:49:25.436Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 26,
-        "bearish": 11,
+        "bullish": 29,
+        "bearish": 12,
         "neutral": 45,
-        "total": 82,
-        "pct": 32
+        "total": 86,
+        "pct": 34
       },
       "news": {
         "bullish": 3,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish retail Twitter contrasts with cautious institutional/YouTube perspectives highlighting technical exhaustion and structural headwinds. Professional trader data unavailable, limiting high-conviction directional bias.\n\n📈 **Themes:** (1) Technical exhaustion at resistance - Bitcoin rejection patterns and QQQ moving average breakdowns signal momentum loss; (2) AI sector leverage concerns - bond issuance growth and debt accumulation creating systemic risk; (3) Fed policy uncertainty and rate-sensitive positioning - accommodative expectations driving tactical strength but with elevated volatility risk.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Per Twitter: Bitcoin support $89k, resistance $93.5k-$94.5k; Solana support $125.",
+    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - market is range-bound with defensive positioning into year-end as institutional flows support equities while technical fragility and guidance cuts create headwinds.\n\n📈 **Themes:** (1) AI infrastructure adoption vs enterprise software demand weakness creating sector bifurcation, (2) Rate policy uncertainty with accommodative expectations offsetting guidance disappointments, (3) Crypto institutional adoption (JPMorgan collateral acceptance, XRP ETF inflows) competing with technical resistance levels.\n\n🎯 **Levels:** SPY ($682): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near support: $680 (5k OI), $661 (9k OI). Near resistance: $690 (7k OI), $700 (6k OI). QQQ ($614): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near support: $585 (4k OI). Near resistance: $635 (6k OI), $640 (6k OI). /ES: 6847 support mentioned per Twitter. Bitcoin resistance $93.5k-$94.5k per Twitter; Solana support deterioration toward $80 per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
       "SOL",
-      "NVDA"
+      "XRP"
     ],
     "key_themes": [
-      "Technical exhaustion at resistance levels",
-      "AI sector debt/leverage accumulation",
-      "Fed policy accommodation expectations",
-      "Institutional crypto adoption narratives",
-      "Rate-sensitive sector rotation"
+      "AI infrastructure vs enterprise software bifurcation",
+      "Institutional crypto adoption flows",
+      "Rate policy accommodation expectations",
+      "Technical consolidation near resistance",
+      "Crypto 4-year cycle dynamics"
     ],
     "risk_factors": [
-      "Bitcoin failure to hold $89k support triggering crypto sector cascade",
-      "AI-linked bond refinancing pressures exposing profitability gaps ($220B issued in 2025)",
-      "Geopolitical escalation (Taiwan tensions) triggering risk-off rotation",
-      "QQQ moving average breakdown confirming momentum deterioration",
-      "Regulatory tightening in pharma/software creating margin compression"
+      "Enterprise software guidance cuts spreading to broader tech",
+      "Bitcoin breakdown below $93.5k resistance triggering cascading liquidations",
+      "Hawkish Fed surprise reversing rate-cut expectations",
+      "Geopolitical escalation (Taiwan-related developments)",
+      "Retail participation absence limiting upside momentum in crypto"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 immediate support (5k OI), $690 resistance (7k OI). QQQ: $610 Put Wall support (6k OI), watch $615-620 zone. Options structure suggests range-bound action within active hedging bands.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Critical test of $670 Put Wall (13k OI) likely if current range breaks. Upside capped at $695 Call Wall (7k OI). QQQ: Risk of testing $610 support, breakdown targets $585 (4k OI). Per Twitter: Bitcoin must hold $89k or validate bearish reversal; Solana $125 support breach targets $80.",
+    "intraday_levels": "SPY: $680 support (5k OI), $690 resistance (7k OI). QQQ: $610 support (6k OI - active Put Wall), $635 resistance (6k OI). Watch for range-bound action within active gamma hedging zones.",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: $670 Put Wall (13k OI) major support, $695 Call Wall (7k OI) major resistance. QQQ: $610 Put Wall support, $625 Max Pain gravitational pull, $635-$640 resistance cluster. Bitcoin: testing $93.5k-$94.5k resistance per Twitter.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 180888
+    "generation_time_ms": 183665
   },
   "trending": {
     "macro": [
@@ -122,6 +122,19 @@
           "bearish": 1,
           "neutral": 2,
           "total": 3
+        }
+      },
+      {
+        "ticker": "XRP",
+        "mentions": 1,
+        "sentiment_score": 0.82,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 82,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
         }
       },
       {
@@ -211,7 +224,7 @@
     "color": "text-muted",
     "vix": 15.74,
     "pc_ratio": 0.83,
-    "sentiment_bullish_pct": 32,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
