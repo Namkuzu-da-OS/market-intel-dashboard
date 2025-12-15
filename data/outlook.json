@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-15T05:04:05.700Z",
+  "timestamp": "2025-12-15T05:29:32.685Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 64,
     "sources": {
       "social": {
-        "bullish": 23,
+        "bullish": 24,
         "bearish": 10,
-        "neutral": 35,
-        "total": 68,
-        "pct": 34
+        "neutral": 39,
+        "total": 73,
+        "pct": 33
       },
       "news": {
         "bullish": 3,
@@ -36,7 +36,7 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - Market faces structural tension between institutional adoption narratives and technical resistance, creating a range-bound environment favoring tactical trading over directional conviction.\n\n📈 **Themes:** (1) Institutional crypto adoption momentum vs technical resistance - BTC rejection at key levels while narratives of sovereign/banking integration persist, (2) Defensive consolidation phase - retail apathy and margin compression creating \"show me\" market requiring earnings/policy confirmation, (3) Platform differentiation over speculation - DeFi/perpetuals competition rewarding operational excellence amid macro headwinds.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Near support: $605 (4k OI). /ES: Per Twitter, watch $93.5k-$94.5k resistance zone (note: this appears to reference BTC not /ES futures).",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - markets face technical overhead resistance and systemic leverage concerns, though institutional flows and support levels provide tactical stabilization.\n\n📈 **Themes:** (1) Tech sector overhead pressure with debt bubble concerns in AI-linked financing, (2) Crypto resistance zones testing bullish narratives against structural headwinds, (3) Defensive rotation amid geopolitical risk premia and earnings guidance compression.\n\n🎯 **Levels:** SPY ($682): Call Wall $695 (7k OI), Put Wall $670 (13k OI). Max Pain $670. Near support: $680 (5k OI), $670 (13k OI). Near resistance: $690 (7k OI), $695 (7k OI). QQQ ($614): Call Wall $645 (26k OI), Put Wall $610 (6k OI). Max Pain $625. Near support: $610 (6k OI), $585 (4k OI). Near resistance: $635 (6k OI), $640 (6k OI). BTC resistance zone $93.5K-$94.5K per Twitter. /ES levels not specifically detailed in sources.",
     "key_tickers": [
       "SPY",
       "QQQ",
@@ -45,28 +45,28 @@
       "NVDA"
     ],
     "key_themes": [
-      "Institutional crypto adoption narratives",
-      "Technical resistance vs bullish sentiment divergence",
-      "Earnings quality and margin compression concerns",
-      "DeFi platform competitive differentiation",
-      "Regulatory policy uncertainty"
+      "AI sector debt leverage concerns",
+      "Crypto institutional adoption vs technical resistance",
+      "Defensive rotation amid guidance compression",
+      "Rate policy uncertainty impact on valuations",
+      "Geopolitical risk premium persistence"
     ],
     "risk_factors": [
-      "Technical resistance rejection at key levels despite bullish narratives",
-      "Retail apathy stage and reduced participation metrics",
-      "Earnings misses across software/retail creating downside pressure",
-      "Geopolitical escalation risk creating volatility spikes",
-      "QQQ support breakdown signaling tech sector weakness"
+      "$220B AI-linked debt issuance creating systemic leverage vulnerability",
+      "Technical breakdown risk at QQQ support and BTC resistance zones",
+      "Corporate earnings guidance misses spreading beyond isolated sectors",
+      "Geopolitical escalation in multiple theaters maintaining defensive posture",
+      "Holiday liquidity constraints amplifying volatility into year-end"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Support $680 (5k OI, 0.3% away), resistance $690 (7k OI). QQQ: Support $610 (6k OI put wall), resistance $635. BTC: Per Twitter, rejection zone $93.5k-$94.5k",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Put Wall support $670 (13k OI), Call Wall resistance $695 (7k OI), max pain magnet $670. QQQ: Put Wall $610, resistance zone $635-$645. BTC: Per Twitter, must reclaim above $94.5k for continuation, support at $89k. SOL: Per Twitter, support gaps to $80 level",
+    "intraday_levels": "SPY: $680 immediate support (5k OI active), $690 resistance (7k OI active). QQQ: $610 put wall support (6k OI active), $614 current price testing gravity",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: $670 major put wall support (13k OI), $695 call wall resistance (7k OI). QQQ: $610 support, $625 max pain gravitational pull, $635-$645 resistance band. BTC: $93.5K-$94.5K rejection zone per Twitter, Solana $125-$130 support structure",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 181893
+    "generation_time_ms": 180721
   },
   "trending": {
     "macro": [
@@ -211,7 +211,7 @@
     "color": "text-muted",
     "vix": 15.74,
     "pc_ratio": 0.83,
-    "sentiment_bullish_pct": 34,
+    "sentiment_bullish_pct": 33,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
