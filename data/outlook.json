@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-15T08:06:21.668Z",
+  "timestamp": "2025-12-15T08:30:57.196Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 65,
+    "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 31,
+        "bullish": 32,
         "bearish": 13,
-        "neutral": 47,
-        "total": 91,
+        "neutral": 48,
+        "total": 93,
         "pct": 34
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - Sources show tactical bearish pressure on technicals (crypto rejections, QQQ trendline breaks) offset by extreme fear readings (F&G=16) and institutional flows creating contrarian setup potential.\n\n📈 **Themes:** (1) Technical deterioration across risk assets meeting extreme sentiment washout conditions, (2) Institutional crypto adoption momentum (JPMorgan policy shifts, XRP ETF flows) conflicting with price action weakness, (3) Dealer gamma positioning creating defined range boundaries with gravitational pull toward max pain levels.\n\n🎯 **Levels:** SPY ($682): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($614): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). BTC: $89k support critical per Twitter analysis; $93.5k-$94.5k rejection zone. /ES futures: levels mentioned in social sentiment (point values ~6800s, distinct from SPY dollar values).",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bearish technical setup near-term, but extreme fear readings (VIX 15.74, retail Fear/Greed at 16 per Twitter) suggest potential contrarian reversal zones. Market awaiting critical support tests.\n\n📈 **Themes:** (1) Technical breakdown risks across indices and crypto with key support levels being tested, (2) Rate policy uncertainty creating divergence between growth/tech strength and traditional sector weakness, (3) Extreme sentiment readings creating potential contrarian setups amid institutional positioning shifts.\n\n🎯 **Levels:** SPY ($682): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($614): Call Wall $645 (26k OI, dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Bitcoin per Twitter: testing $89k-$93.5k decision zone. /ES futures per Twitter: 8/21 fast line support critical.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
-      "ETH",
-      "XRP"
+      "SOL",
+      "NVDA"
     ],
     "key_themes": [
-      "Technical breakdown meets extreme fear contrarian setup",
-      "Institutional crypto adoption vs price action divergence",
-      "Earnings guidance deterioration across consumer and enterprise sectors",
-      "Dealer gamma positioning creating range-bound conditions",
-      "Monetary policy uncertainty with regulatory tightening headwinds"
+      "Technical support tests at critical levels",
+      "Rate policy uncertainty driving sector rotation",
+      "Extreme fear sentiment creating contrarian setups",
+      "AI and automation sector selectivity",
+      "Crypto 4-year cycle positioning debate"
     ],
     "risk_factors": [
-      "BTC breakdown below $89k would trigger cascading liquidations and confirm bearish technical thesis",
-      "Continued earnings guidance cuts from bellwether sectors validating demand weakness",
-      "QQQ failure to reclaim 8/21 trendline extends risk-asset pressure",
-      "Regulatory enforcement intensification against financials and tech creating credit tightening",
-      "Geopolitical escalation triggers (defense policy shifts) elevating volatility premium"
+      "Breakdown below SPY $670 Put Wall triggers dealer selling pressure",
+      "QQQ loss of $610 support activates dormant put hedging",
+      "Bitcoin failure at $89k invalidates bullish structure per Twitter",
+      "Geopolitical escalation (Taiwan-China, Russia-Ukraine) triggering risk-off flows",
+      "Earnings guidance cuts in consumer discretionary and enterprise software spreading contagion"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $670 put wall support (13k OI), $680 immediate support (5k OI), $690 resistance (7k OI). QQQ: $610 put wall critical (6k OI), $614-615 current pivot zone",
+    "intraday_levels": "SPY: $680 immediate support (5k OI), $670 Put Wall major support (13k OI). Resistance at $690 (7k OI). QQQ: $610 Put Wall critical (6k OI), breakdown risk if lost. Watch for dealer hedging activity at active levels.",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: $670 max pain gravitational target, $695 call wall major resistance (7k OI). QQQ: $625 max pain bias, $645 call wall caps upside (26k OI). BTC: $89k make-or-break support per Twitter, $93.5k resistance zone",
+    "swing_levels": "SPY: $670 Max Pain gravitational pull, $661 deeper support (9k OI). Upside capped at $695 Call Wall (7k OI), $700 psychological. QQQ: $610-$625 range likely, Max Pain $625 target. Resistance at $635-$640 cluster. Bitcoin: $89k support hold critical per Twitter for bullish structure.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 182616
+    "generation_time_ms": 184278
   },
   "trending": {
     "macro": [
