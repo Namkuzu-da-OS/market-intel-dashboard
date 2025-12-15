@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-15T04:11:45.940Z",
+  "timestamp": "2025-12-15T04:38:37.522Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 63,
+    "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 20,
+        "bullish": 23,
         "bearish": 9,
-        "neutral": 27,
-        "total": 56,
+        "neutral": 32,
+        "total": 64,
         "pct": 36
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - Technical deterioration in crypto and tech conflicts with structural bullish narratives, creating a bifurcated market awaiting catalyst confirmation.\n\n📈 **Themes:** (1) Exchange infrastructure quality differentiation amid crypto cyclical headwinds, (2) Monetary policy tailwinds (rate cut expectations) masking corporate earnings weakness across software/fintech/retail, (3) Technical breakdown signals in Bitcoin and QQQ testing critical support zones during thin December liquidity.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away), Put Wall $670 (13k OI, 1.7% away). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, dormant), Put Wall $610 (6k OI, 0.6% away). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Near support: $610 (6k OI), $605 (4k OI). /ES: Testing support zones per Twitter. Bitcoin: $89k-$94.5k critical support zone per Twitter with repeated rejections.",
+    "narrative": "📊 **Consensus:** Mixed/neutral sentiment with medium conviction. Twitter shows 72% bullish retail optimism while professional sources show 50% bullish readings, suggesting retail enthusiasm not matched by experienced traders. Underlying tension between technical deterioration and fundamental optimism.\n\n📈 **Themes:** (1) Crypto infrastructure evolution vs. macro headwinds - exchange innovation narratives conflicting with rate policy constraints and retail capitulation signals. (2) Tech/AI sector valuation concerns - extreme multiples and guidance cuts creating reassessment pressure despite long-term structural tailwinds. (3) Holiday liquidity conditions approaching - thin trading environments amplifying technical breakdown risks.\n\n🎯 **Levels:** SPY ($681.76): Call Wall $695 (7k OI, 1.9% away - active resistance), Put Wall $670 (13k OI, 1.7% away - active support). Max Pain $670. Near resistance: $690 (7k OI), $700 (6k OI). Near support: $680 (5k OI), $661 (9k OI). QQQ ($613.62): Call Wall $645 (26k OI, 5.1% away - dormant), Put Wall $610 (6k OI, 0.6% away - active support). Max Pain $625. Near resistance: $635 (6k OI), $640 (6k OI). Near support: $605 (4k OI). /ES: 6847 support referenced per Twitter. Crypto: BTC rejection at $93.5k-$94.5k resistance, $89k support; SOL testing $125 support with $80 downside target per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
       "SOL",
-      "VIX"
+      "NVDA"
     ],
     "key_themes": [
-      "crypto_infrastructure_quality",
-      "fed_rate_policy_vs_earnings_weakness",
-      "technical_support_breakdown_risk",
-      "crypto_4year_cycle_headwinds",
-      "holiday_liquidity_thin_conditions"
+      "Crypto infrastructure innovation vs macro headwinds",
+      "Tech sector valuation reassessment amid guidance cuts",
+      "Holiday liquidity conditions and year-end positioning",
+      "Institutional crypto adoption narratives",
+      "Rate policy uncertainty and Fed communication gaps"
     ],
     "risk_factors": [
-      "Bitcoin support failure ($89k-$94.5k) triggering crypto cascading liquidations in thin December liquidity",
-      "QQQ fast MA breakdown signaling tech sector weakness despite rate cut optimism",
-      "Corporate earnings guidance deterioration (software/fintech/retail) contradicting bullish monetary policy narrative",
-      "Geopolitical escalation (Taiwan/Ukraine) as underpriced tail risk",
-      "Retail participation absence in crypto delaying recovery timeline beyond structural catalysts"
+      "Technical breakdowns across crypto and QQQ during thin holiday trading",
+      "Extreme valuation multiples in mega-cap tech creating reversion risk",
+      "Retail capitulation signals conflicting with bullish sentiment creating whipsaw potential",
+      "Geopolitical escalation risks and regulatory tightening on banking/crypto",
+      "Fed policy uncertainty with internal dissent over rate cut timing"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 immediate support (5k OI, 0.3% away), $690 resistance (7k OI). QQQ: $610 Put Wall support (6k OI, active hedging), $635 resistance. Watch for breakdown below active support levels in thin Sunday/holiday positioning.",
+    "intraday_levels": "SPY: Watch $680 immediate support (5k OI, 0.3% away), $690 resistance (7k OI, 1.2% away). QQQ: Critical $610 Put Wall test (6k OI, 0.6% away), $605 next support level",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $670 Put Wall major support (13k OI), $695 Call Wall resistance (7k OI). QQQ: $605-$610 support zone, $635-$640 resistance band. Bitcoin: $89k-$94.5k critical support per Twitter; break triggers cascading risk. SOL: $125 major support, $80 floor per Twitter.",
+    "swing_levels": "SPY: $670 Put Wall major support (13k OI), $695 Call Wall resistance (7k OI). QQQ: Break below $610 targets $605, resistance at $635-$640 range. Max Pain gravity suggests drift toward SPY $670/QQQ $625",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 185810
+    "generation_time_ms": 182266
   },
   "trending": {
     "macro": [
@@ -153,7 +153,33 @@
         }
       },
       {
+        "ticker": "SPX",
+        "mentions": 2,
+        "sentiment_score": 0.075,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 8,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
+      },
+      {
         "ticker": "GS",
+        "mentions": 1,
+        "sentiment_score": 0.72,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 72,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "NVO",
         "mentions": 1,
         "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
@@ -171,32 +197,6 @@
         "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
         "sentiment_pct": 72,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "UBER",
-        "mentions": 1,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "SPYM",
-        "mentions": 1,
-        "sentiment_score": 0.65,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
         "counts": {
           "bullish": 1,
           "bearish": 0,
