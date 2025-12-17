@@ -1,178 +1,139 @@
 {
-  "timestamp": "2025-12-15T20:53:38.411Z",
+  "timestamp": "2025-12-17T04:59:46.312Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 69,
+    "confidence_pct": 68,
     "sources": {
       "social": {
-        "bullish": 171,
-        "bearish": 72,
-        "neutral": 204,
-        "total": 447,
-        "pct": 38
+        "bullish": 224,
+        "bearish": 92,
+        "neutral": 287,
+        "total": 603,
+        "pct": 37
       },
       "news": {
-        "bullish": 9,
-        "bearish": 11,
-        "neutral": 10,
-        "total": 30,
-        "pct": 30
+        "bullish": 60,
+        "bearish": 33,
+        "neutral": 30,
+        "total": 123,
+        "pct": 49
       },
       "video": {
-        "bullish": 2,
-        "bearish": 2,
+        "bullish": 5,
+        "bearish": 0,
         "neutral": 2,
-        "total": 6,
-        "pct": 33
+        "total": 7,
+        "pct": 71
       },
       "chat": {
-        "bullish": 8,
-        "bearish": 0,
-        "neutral": 3,
-        "total": 11,
-        "pct": 73
+        "bullish": 0,
+        "bearish": 9,
+        "neutral": 1,
+        "total": 10,
+        "pct": 0
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Neutral to bearish with medium conviction. Market caught between bullish narratives (regulatory tailwinds, AI momentum) and bearish technicals (declining crypto, 20-day consolidation, resistance holding).\n\n📈 **Themes:** (1) Technical consolidation amid declining volume and crypto weakness signaling distribution, (2) Regulatory developments and institutional tokenization creating narrative support without price confirmation, (3) Options positioning suggesting dealer hedging pressure capping upside into year-end.\n\n🎯 **Levels:** SPY ($680.75): Call Wall $688 (25k OI, active resistance), Put Wall $670 (20k OI, active support). Max Pain $670. Near resistance: $690 (25k OI), $685 (19k OI). Near support: $675 (11k OI), $661 (11k OI). QQQ ($611.13): Call Wall $621 (64k OI, active resistance), Put Wall $610 (12k OI, active support). Max Pain $625. Near resistance: $624 (12k OI). Near support: $605 (9k OI), $600 (10k OI). /ES: 6825 support per Twitter analysis.",
+    "narrative": "📊 **Consensus:** MIXED with medium conviction - bullish momentum in tech/AI sectors clashes with macro deterioration signals (unemployment at 4.6%, structural valuation concerns) creating fragmented outlook across timeframes.\n\n📈 **Themes:** (1) Fed easing cycle expectations driven by weakening labor data, (2) AI/tech productivity momentum supporting growth sectors, (3) Crypto infrastructure adoption and regulatory tailwinds, (4) Structural valuation concerns at Dot-Com bubble levels with consumer weakness beneath surface metrics.\n\n🎯 **Levels:** SPY ($678.87): Call Wall $679 (7k OI - ACTIVE resistance), Put Wall $661 (7k OI - ACTIVE support). Max Pain $670. Near resistance: $685 (7k OI), $690 (7k OI). Near support: $662 (5k OI). QQQ ($611.75): Call Wall $645 (7k OI - dormant), Put Wall $593 (5k OI - ACTIVE support). Max Pain $625. Near resistance: $613 (7k OI), $614 (6k OI). Near support: $599 (5k OI), $597 (4k OI). /ES: 6400-6350 downside targets per Twitter if 50-DMA breaks.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "TSLA",
       "BTC",
-      "ETH"
+      "NVDA",
+      "ES"
     ],
     "key_themes": [
-      "options-driven consolidation near max pain",
-      "crypto technical weakness versus regulatory optimism",
-      "AI and institutional tokenization narratives",
-      "dealer gamma hedging resistance",
-      "declining volume suggesting distribution"
+      "Fed easing cycle expectations",
+      "AI sector productivity momentum",
+      "Crypto infrastructure adoption",
+      "Labor market deterioration",
+      "Structural valuation concerns"
     ],
     "risk_factors": [
-      "professional trader bullish positioning conflicts with bearish technicals (potential trap)",
-      "breakdown below /ES 6825 or SPY $670 triggers accelerated selling",
-      "crypto weakness (BTC below resistance, ETH/SOL down 2-4%) signaling broader risk-off",
-      "earnings guidance deterioration per RSS contradicting soft landing narrative",
-      "20-day consolidation breaking lower would confirm distribution pattern"
+      "Unemployment at 4-year highs (4.6%) signaling macro deterioration",
+      "Earnings yields at Dot-Com bubble levels creating valuation vulnerability",
+      "Fed communication fragmentation fueling policy uncertainty",
+      "Geopolitical escalation (Russia-Ukraine, Taiwan tensions)",
+      "Consumer spending weakness beneath promotional distortions"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY resistance $685-$688 (call walls with active dealer hedging), support $675-$670 (put wall gravitational pull). QQQ resistance $621 (heavy call wall), immediate support $610 (put wall)",
+    "intraday_levels": "SPY immediate resistance at Call Wall $679 (7k OI active hedging), support at Put Wall $661 (7k OI). Price currently compressed between these levels favoring downside test.",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Breakdown below $670 activates $661 support zone; breakout above $688 targets $690. QQQ: Hold above $610 maintains range; break of $621 call wall needed for upside continuation toward $624-$625 max pain",
+    "swing_levels": "SPY: Upside resistance $685-$690 (14k combined OI), downside support $661-$662 zone. Max Pain gravitational pull toward $670. Watch for breakdown below $661 activating deeper support at $625.",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 188979
+    "generation_time_ms": 168175
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 13,
-        "sentiment_score": 0.018,
+        "mentions": 15,
+        "sentiment_score": -0.034,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 2,
+        "sentiment_pct": 3,
         "counts": {
-          "bullish": 3,
-          "bearish": 4,
-          "neutral": 6,
-          "total": 13
+          "bullish": 4,
+          "bearish": 6,
+          "neutral": 5,
+          "total": 15
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 4,
-        "sentiment_score": 0.192,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
+        "mentions": 6,
+        "sentiment_score": -0.15,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 15,
         "counts": {
-          "bullish": 2,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "GLD",
-        "mentions": 2,
-        "sentiment_score": 0.685,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 69,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
+          "bullish": 1,
+          "bearish": 3,
+          "neutral": 2,
+          "total": 6
         }
       }
     ],
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 13,
-        "sentiment_score": 0.14,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 14,
-        "counts": {
-          "bullish": 4,
-          "bearish": 2,
-          "neutral": 7,
-          "total": 13
-        }
-      },
-      {
-        "ticker": "ETH",
-        "mentions": 7,
-        "sentiment_score": 0.499,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 6,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 7
-        }
-      },
-      {
-        "ticker": "MSTR",
         "mentions": 5,
-        "sentiment_score": 0.19,
+        "sentiment_score": 0.43,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
+        "sentiment_pct": 43,
         "counts": {
-          "bullish": 2,
-          "bearish": 1,
+          "bullish": 3,
+          "bearish": 0,
           "neutral": 2,
           "total": 5
         }
       },
       {
-        "ticker": "SOL",
+        "ticker": "MSTR",
         "mentions": 3,
-        "sentiment_score": -0.293,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 29,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
-          "bullish": 1,
-          "bearish": 2,
-          "neutral": 0,
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 3,
           "total": 3
         }
       },
       {
-        "ticker": "XRP",
+        "ticker": "ETH",
         "mentions": 2,
-        "sentiment_score": 0.77,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 77,
+        "sentiment_score": 0.05,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 5,
         "counts": {
-          "bullish": 2,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 0,
+          "neutral": 2,
           "total": 2
         }
       }
@@ -180,67 +141,67 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 26,
-        "sentiment_score": 0.537,
+        "mentions": 52,
+        "sentiment_score": 0.554,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 54,
+        "sentiment_pct": 55,
         "counts": {
-          "bullish": 18,
-          "bearish": 0,
-          "neutral": 8,
-          "total": 26
-        }
-      },
-      {
-        "ticker": "NVDA",
-        "mentions": 12,
-        "sentiment_score": 0.542,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 54,
-        "counts": {
-          "bullish": 9,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 12
+          "bullish": 39,
+          "bearish": 1,
+          "neutral": 12,
+          "total": 52
         }
       },
       {
         "ticker": "SPX",
-        "mentions": 12,
-        "sentiment_score": 0.163,
+        "mentions": 13,
+        "sentiment_score": 0.055,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 16,
+        "sentiment_pct": 6,
         "counts": {
-          "bullish": 2,
+          "bullish": 4,
+          "bearish": 3,
+          "neutral": 6,
+          "total": 13
+        }
+      },
+      {
+        "ticker": "NVDA",
+        "mentions": 11,
+        "sentiment_score": 0.305,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 31,
+        "counts": {
+          "bullish": 6,
+          "bearish": 2,
+          "neutral": 3,
+          "total": 11
+        }
+      },
+      {
+        "ticker": "ORCL",
+        "mentions": 8,
+        "sentiment_score": 0.355,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 36,
+        "counts": {
+          "bullish": 4,
           "bearish": 0,
-          "neutral": 10,
-          "total": 12
-        }
-      },
-      {
-        "ticker": "NOW",
-        "mentions": 7,
-        "sentiment_score": 0.134,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 13,
-        "counts": {
-          "bullish": 2,
-          "bearish": 1,
           "neutral": 4,
-          "total": 7
+          "total": 8
         }
       },
       {
-        "ticker": "AVGO",
-        "mentions": 4,
-        "sentiment_score": 0.568,
+        "ticker": "HOOD",
+        "mentions": 7,
+        "sentiment_score": 0.289,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
+        "sentiment_pct": 29,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 1,
-          "total": 4
+          "neutral": 4,
+          "total": 7
         }
       }
     ]
@@ -248,17 +209,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.37,
-    "pc_ratio": 0.95,
-    "sentiment_bullish_pct": 38,
+    "vix": 16.48,
+    "pc_ratio": 0.99,
+    "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 12.76,
-    "spread": 8.15,
+    "hv": 12.58,
+    "spread": 15.37,
     "position": 50
   },
   "action": {
