@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Tesla 3-year investment plan" />
+  <meta property="og:description" content="Covers optimal entry timing aligned with presidential cycle analysis, current market positioning" />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/strategy/2025-12/tesla-3-year-investment-plan.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/tesla-3-year-investment-plan-1765949010582.jpg" />
+  <meta property="article:published_time" content="2025-12-17" />
+  <meta property="article:section" content="strategy" />
+  <meta property="article:tag" content="$TSLA" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tesla 3-year investment plan" />
+  <meta name="twitter:description" content="Covers optimal entry timing aligned with presidential cycle analysis, current market positioning" />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/tesla-3-year-investment-plan-1765949010582.jpg" />
+    <title>Tesla 3-Year Investment Plan | 2025-2028 Strategic Framework</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0f14;
+            --bg-secondary: #111921;
+            --bg-tertiary: #1a2332;
+            --bg-card: #151d28;
+            --accent-green: #00ff88;
+            --accent-cyan: #00d4ff;
+            --accent-red: #ff4757;
+            --accent-yellow: #ffd93d;
+            --accent-purple: #a855f7;
+            --text-primary: #e8edf3;
+            --text-secondary: #8b98a8;
+            --text-muted: #5c6a7a;
+            --border-color: #2a3744;
+            --border-glow: rgba(0, 255, 136, 0.3);
+            --gradient-green: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            --gradient-red: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-green);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            color: var(--bg-primary);
+            font-size: 1.2rem;
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .logo-text span {
+            color: var(--accent-green);
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        .live-price {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .live-price .ticker {
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .live-price .price {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .live-price .change {
+            color: var(--accent-green);
+        }
+
+        .live-price .change.negative {
+            color: var(--accent-red);
+        }
+
+        .pulse {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 2rem;
+            position: sticky;
+            top: 73px;
+            z-index: 99;
+            overflow-x: auto;
+        }
+
+        .nav-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 14px 20px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+            background: var(--bg-tertiary);
+        }
+
+        .nav-item.active {
+            color: var(--accent-green);
+            border-bottom-color: var(--accent-green);
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: radial-gradient(ellipse at top right, rgba(0, 255, 136, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            color: var(--accent-green);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            background: var(--gradient-green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .hero-stat {
+            background: var(--bg-tertiary);
+            padding: 1.25rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .hero-stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero-stat-value.green { color: var(--accent-green); }
+        .hero-stat-value.cyan { color: var(--accent-cyan); }
+        .hero-stat-value.yellow { color: var(--accent-yellow); }
+        .hero-stat-value.red { color: var(--accent-red); }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 2rem;
+            scroll-margin-top: 140px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            padding: 4px 10px;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 4px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-title-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-tertiary);
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 1200px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .hero { padding: 1.5rem; }
+            .hero h1 { font-size: 1.75rem; }
+            .main { padding: 1rem; }
+        }
+
+        /* Data Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: 12px;
+            background: var(--bg-tertiary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table tr:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .data-table .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .data-table .positive {
+            color: var(--accent-green);
+        }
+
+        .data-table .negative {
+            color: var(--accent-red);
+        }
+
+        .data-table .highlight {
+            background: rgba(0, 255, 136, 0.1);
+        }
+
+        /* Charts */
+        .chart-container {
+            position: relative;
+            height: 350px;
+            margin: 1rem 0;
+        }
+
+        /* Metric Cards */
+        .metric-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.25rem;
+            transition: all 0.2s;
+        }
+
+        .metric-card:hover {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .metric-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .metric-change {
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Progress Bars */
+        .progress-bar {
+            height: 8px;
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-fill.green { background: var(--gradient-green); }
+        .progress-fill.red { background: var(--gradient-red); }
+        .progress-fill.yellow { background: var(--accent-yellow); }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -26px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--bg-primary);
+            border: 3px solid var(--accent-green);
+        }
+
+        .timeline-dot.active {
+            background: var(--accent-green);
+            box-shadow: 0 0 10px var(--accent-green);
+        }
+
+        .timeline-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            margin-bottom: 4px;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .timeline-content {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Calculator */
+        .calculator {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .calc-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .calc-field {
+            flex: 1;
+        }
+
+        .calc-label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .calc-input {
+            width: 100%;
+            padding: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+        }
+
+        .calc-input:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1);
+        }
+
+        .calc-result {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .calc-result-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .calc-result-row:last-child {
+            border-bottom: none;
+        }
+
+        .calc-result-label {
+            color: var(--text-secondary);
+        }
+
+        .calc-result-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+
+        /* Scenario Cards */
+        .scenario-card {
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .scenario-card.bull {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, transparent 100%);
+            border-color: rgba(0, 255, 136, 0.3);
+        }
+
+        .scenario-card.base {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, transparent 100%);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+
+        .scenario-card.bear {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.1) 0%, transparent 100%);
+            border-color: rgba(255, 71, 87, 0.3);
+        }
+
+        .scenario-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .scenario-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .scenario-prob {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: var(--bg-card);
+        }
+
+        .scenario-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .scenario-card.bull .scenario-price { color: var(--accent-green); }
+        .scenario-card.base .scenario-price { color: var(--accent-cyan); }
+        .scenario-card.bear .scenario-price { color: var(--accent-red); }
+
+        .scenario-list {
+            list-style: none;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .scenario-list li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .scenario-list li::before {
+            content: 'Ã¢ÂÂ';
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .badge.green {
+            background: rgba(0, 255, 136, 0.15);
+            color: var(--accent-green);
+        }
+
+        .badge.red {
+            background: rgba(255, 71, 87, 0.15);
+            color: var(--accent-red);
+        }
+
+        .badge.yellow {
+            background: rgba(255, 217, 61, 0.15);
+            color: var(--accent-yellow);
+        }
+
+        .badge.cyan {
+            background: rgba(0, 212, 255, 0.15);
+            color: var(--accent-cyan);
+        }
+
+        /* Collapsible Sections */
+        .collapsible {
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .collapsible-header {
+            padding: 1rem 1.25rem;
+            background: var(--bg-tertiary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .collapsible-header:hover {
+            background: var(--bg-card);
+        }
+
+        .collapsible-title {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .collapsible-icon {
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+
+        .collapsible.open .collapsible-icon {
+            transform: rotate(180deg);
+        }
+
+        .collapsible-content {
+            padding: 1.25rem;
+            display: none;
+            background: var(--bg-card);
+        }
+
+        .collapsible.open .collapsible-content {
+            display: block;
+        }
+
+        /* Sources */
+        .sources {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .sources-title {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .source-item {
+            display: flex;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .source-item:last-child {
+            border-bottom: none;
+        }
+
+        .source-num {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            min-width: 24px;
+        }
+
+        .source-link {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .source-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .tab:hover {
+            color: var(--text-primary);
+        }
+
+        .tab.active {
+            color: var(--accent-green);
+            border-bottom-color: var(--accent-green);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Entry Zone Visualization */
+        .entry-zones {
+            position: relative;
+            height: 300px;
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .zone {
+            position: absolute;
+            left: 1.5rem;
+            right: 1.5rem;
+            border-radius: 6px;
+            padding: 10px 16px;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .zone:hover {
+            transform: translateX(5px);
+        }
+
+        .zone-current {
+            top: 20px;
+            height: 50px;
+            background: rgba(255, 71, 87, 0.2);
+            border: 1px solid rgba(255, 71, 87, 0.4);
+        }
+
+        .zone-1 {
+            top: 85px;
+            height: 50px;
+            background: rgba(255, 217, 61, 0.2);
+            border: 1px solid rgba(255, 217, 61, 0.4);
+        }
+
+        .zone-2 {
+            top: 150px;
+            height: 50px;
+            background: rgba(0, 212, 255, 0.2);
+            border: 1px solid rgba(0, 212, 255, 0.4);
+        }
+
+        .zone-3 {
+            top: 215px;
+            height: 50px;
+            background: rgba(0, 255, 136, 0.2);
+            border: 1px solid rgba(0, 255, 136, 0.4);
+        }
+
+        .zone-label {
+            font-weight: 600;
+        }
+
+        .zone-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+
+        .zone-current .zone-label, .zone-current .zone-price { color: var(--accent-red); }
+        .zone-1 .zone-label, .zone-1 .zone-price { color: var(--accent-yellow); }
+        .zone-2 .zone-label, .zone-2 .zone-price { color: var(--accent-cyan); }
+        .zone-3 .zone-label, .zone-3 .zone-price { color: var(--accent-green); }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .checklist-box {
+            width: 22px;
+            height: 22px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .checklist-box:hover {
+            border-color: var(--accent-green);
+        }
+
+        .checklist-box.checked {
+            background: var(--accent-green);
+            border-color: var(--accent-green);
+        }
+
+        .checklist-box.checked::after {
+            content: 'Ã¢ÂÂ';
+            color: var(--bg-primary);
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .checklist-text {
+            font-size: 0.95rem;
+        }
+
+        .checklist-text.checked {
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .disclaimer {
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            padding: 1rem;
+            background: rgba(255, 71, 87, 0.1);
+            border: 1px solid rgba(255, 71, 87, 0.3);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-align: left;
+        }
+
+        .disclaimer strong {
+            color: var(--accent-red);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip::after {
+            content: attr(data-tip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+            z-index: 100;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">T</div>
+                <div class="logo-text">Tesla <span>Investment Plan</span></div>
+            </div>
+            <div class="header-meta">
+                <div class="live-price">
+                    <div class="pulse"></div>
+                    <span class="ticker">TSLA</span>
+                    <span class="price" id="currentPrice">$475.05</span>
+                    <span class="change" id="priceChange">+1.24%</span>
+                </div>
+                <span style="color: var(--text-muted);">Updated: Dec 16, 2025</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#overview" class="nav-item active">Overview</a>
+            <a href="#cycles" class="nav-item">Cycle Analysis</a>
+            <a href="#catalysts" class="nav-item">Catalysts</a>
+            <a href="#entry-strategy" class="nav-item">Entry Strategy</a>
+            <a href="#scenarios" class="nav-item">Scenarios</a>
+            <a href="#calculator" class="nav-item">Calculator</a>
+            <a href="#leaps" class="nav-item">LEAP Options</a>
+            <a href="#timeline" class="nav-item">Timeline</a>
+            <a href="#checklist" class="nav-item">Checklist</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero animate-in">
+            <div class="hero-badge">
+                <span>Ã°ÂÂÂ</span>
+                <span>3-Year Strategic Framework</span>
+            </div>
+            <h1>Tesla Investment Plan <span>2025-2028</span></h1>
+            <p class="hero-subtitle">
+                A comprehensive, cycle-aligned investment framework targeting optimal entry points through presidential cycles, 
+                Fed policy shifts, and Tesla-specific catalysts. Built for limited capital requiring maximum upside with managed risk.
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-label">Current Price</div>
+                    <div class="hero-stat-value cyan">$475</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-label">Target Entry Zone</div>
+                    <div class="hero-stat-value green">$340-430</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-label">IV Rank</div>
+                    <div class="hero-stat-value green">4%</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-label">Expected Value</div>
+                    <div class="hero-stat-value yellow">$606</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-label">Optimal Entry</div>
+                    <div class="hero-stat-value">Q2-Q3 2026</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Market Position -->
+        <section id="overview" class="section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Current Market Position</h2>
+            </div>
+
+            <div class="grid-4">
+                <div class="metric-card">
+                    <div class="metric-label">Price to ATH</div>
+                    <div class="metric-value" style="color: var(--accent-yellow);">-2.8%</div>
+                    <div class="metric-change">ATH: $488.54</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Trailing P/E</div>
+                    <div class="metric-value" style="color: var(--accent-red);">316x</div>
+                    <div class="metric-change negative">Ã¢ÂÂ Ã¯Â¸Â Premium valuation</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Beta</div>
+                    <div class="metric-value" style="color: var(--accent-purple);">2.47</div>
+                    <div class="metric-change">2.47x market moves</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">52-Week Range</div>
+                    <div class="metric-value" style="color: var(--accent-cyan);">$138-488</div>
+                    <div class="metric-change">253% range</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-title-icon">Ã°ÂÂÂ</span>
+                        Key Technical Levels
+                    </div>
+                </div>
+                <div class="entry-zones">
+                    <div class="zone zone-current">
+                        <span class="zone-label">Ã¢ÂÂ Ã¯Â¸Â Current Zone - Near ATH</span>
+                        <span class="zone-price">$450-488</span>
+                    </div>
+                    <div class="zone zone-1">
+                        <span class="zone-label">Support 1 (50-Day MA)</span>
+                        <span class="zone-price">$430-450</span>
+                    </div>
+                    <div class="zone zone-2">
+                        <span class="zone-label">Support 2 (100-Day MA)</span>
+                        <span class="zone-price">$395-430</span>
+                    </div>
+                    <div class="zone zone-3">
+                        <span class="zone-label">Ã¢ÂÂ Prime Entry (200-Day MA)</span>
+                        <span class="zone-price">$344-380</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <span class="card-title-icon">Ã°ÂÂÂ¢</span>
+                            Analyst Targets
+                        </div>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Firm</th>
+                                <th>Target</th>
+                                <th>Thesis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wedbush (Bull)</td>
+                                <td class="mono positive">$650</td>
+                                <td><span class="badge green">$2T mkt cap if robotaxi succeeds</span></td>
+                            </tr>
+                            <tr>
+                                <td>Consensus High</td>
+                                <td class="mono positive">$528</td>
+                                <td>AI + Autonomous premium</td>
+                            </tr>
+                            <tr>
+                                <td>Consensus Mean</td>
+                                <td class="mono">$379-399</td>
+                                <td>Current business + optionality</td>
+                            </tr>
+                            <tr>
+                                <td>Consensus Low</td>
+                                <td class="mono negative">$120</td>
+                                <td>Auto-only valuation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <span class="card-title-icon">Ã°ÂÂÂ°</span>
+                            Current Valuation Breakdown
+                        </div>
+                    </div>
+                    <div class="chart-container" style="height: 250px;">
+                        <canvas id="valuationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cycle Analysis -->
+        <section id="cycles" class="section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Cycle Analysis</h2>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-title-icon">Ã°ÂÂÂ³Ã¯Â¸Â</span>
+                        Presidential Cycle Historical Returns
+                    </div>
+                    <span class="badge cyan">1950-2024 Data</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="presidentialCycleChart"></canvas>
+                </div>
+                <div class="grid-4" style="margin-top: 1rem;">
+                    <div class="metric-card">
+                        <div class="metric-label">Year 1 (2025)</div>
+                        <div class="metric-value" style="color: var(--accent-yellow); font-size: 1.3rem;">+7.4%</div>
+                        <div class="metric-change">61% win rate</div>
+                    </div>
+                    <div class="metric-card" style="border-color: var(--accent-green);">
+                        <div class="metric-label">Year 2 (2026) Ã¢Â­Â</div>
+                        <div class="metric-value" style="color: var(--accent-red); font-size: 1.3rem;">+2.5%</div>
+                        <div class="metric-change">53% win rate Ã¢ÂÂ¢ ACCUMULATE</div>
+                    </div>
+                    <div class="metric-card" style="border-color: var(--accent-green);">
+                        <div class="metric-label">Year 3 (2027) Ã¢Â­Â</div>
+                        <div class="metric-value" style="color: var(--accent-green); font-size: 1.3rem;">+16.8%</div>
+                        <div class="metric-change">90% win rate Ã¢ÂÂ¢ HOLD</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Year 4 (2028)</div>
+                        <div class="metric-value" style="color: var(--accent-cyan); font-size: 1.3rem;">+7.7%</div>
+                        <div class="metric-change">83% win rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <span class="card-title-icon">Ã°ÂÂÂ</span>
+                            Midterm Year Drawdowns
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Midterm years (Year 2) historically produce the deepest intra-year corrections, 
+                        creating prime accumulation opportunities.
+                    </p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Average</th>
+                                <th>Implication</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight">
+                                <td>Avg Drawdown</td>
+                                <td class="mono negative">-18%</td>
+                                <td>Expect Tesla -25% to -40%</td>
+                            </tr>
+                            <tr>
+                                <td>Post-Midterm 12mo Return</td>
+                                <td class="mono positive">+16.3%</td>
+                                <td>Strong recovery follows</td>
+                            </tr>
+                            <tr>
+                                <td>Last Negative Post-Midterm</td>
+                                <td class="mono">1939</td>
+                                <td>86 years ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <span class="card-title-icon">Ã°ÂÂÂÃ¯Â¸Â</span>
+                            Fed Policy Cycle
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="color: var(--text-secondary);">Rate Cut Progress</span>
+                            <span class="mono" style="color: var(--accent-green);">175bps cut</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill green" style="width: 70%;"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted);">
+                            <span>Sep 2024: 5.50%</span>
+                            <span>Current: 3.75%</span>
+                            <span>Target: ~3.00%</span>
+                        </div>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>QT Ended</td>
+                                <td class="mono">Dec 1, 2025</td>
+                                <td><span class="badge green">Bullish</span></td>
+                            </tr>
+                            <tr>
+                                <td>Global Liquidity</td>
+                                <td class="mono">$108.4T ATH</td>
+                                <td><span class="badge green">Bullish</span></td>
+                            </tr>
+                            <tr>
+                                <td>M2 Growth</td>
+                                <td class="mono">+3-4%/yr</td>
+                                <td><span class="badge cyan">Supportive</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-title-icon">Ã°ÂÂÂºÃ°ÂÂÂ¸</span>
+                        Trump 2.0 Tesla-Specific Implications
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="metric-card">
+                        <div class="metric-label">EV Tax Credit Elimination</div>
+                        <div class="metric-value" style="color: var(--accent-green); font-size: 1rem;">NET POSITIVE</div>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
+                            Hurts competitors more than Tesla. Tesla achieves 75-80% domestic content; 
+                            GM has 48% import rate.
+                        </p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">25% Auto Import Tariff</div>
+                        <div class="metric-value" style="color: var(--accent-green); font-size: 1rem;">POSITIVE</div>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
+                            Advantages Tesla's domestic production. Foreign EV competitors face significant cost increases.
+                        </p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Regulatory Environment</div>
+                        <div class="metric-value" style="color: var(--accent-green); font-size: 1rem;">ACCELERATED</div>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
+                            DOGE reducing NHTSA automation safety staff. FSD/robotaxi approval timeline likely compressed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalysts -->
+        <section id="catalysts" class="section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Major Catalysts 2025-2028</h2>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('robotaxi')">Ã°ÂÂÂ Robotaxi</button>
+                <button class="tab" onclick="showTab('optimus')">Ã°ÂÂ¤Â Optimus</button>
+                <button class="tab" onclick="showTab('energy')">Ã¢ÂÂ¡ Energy</button>
+                <button class="tab" onclick="showTab('vehicles')">Ã°ÂÂÂ Vehicles</button>
+            </div>
+
+            <div id="robotaxi" class="tab-content active">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Robotaxi/FSD Timeline</div>
+                        <span class="badge green">LIVE IN AUSTIN</span>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot active"></div>
+                            <div class="timeline-date">June 2025 Ã¢ÂÂ</div>
+                            <div class="timeline-title">Austin Pilot Launch</div>
+                            <div class="timeline-content">Robotaxi service launched with safety drivers. Using existing Model 3/Y fleet.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot active"></div>
+                            <div class="timeline-date">Q4 2025</div>
+                            <div class="timeline-title">Safety Driver Removal Testing</div>
+                            <div class="timeline-content">Driverless testing underway in Austin. Musk confirmed Dec 15, 2025.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Q1 2026</div>
+                            <div class="timeline-title">FSD v14 Validation</div>
+                            <div class="timeline-content">Fully unsupervised FSD expected to complete validation.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">April 2026</div>
+                            <div class="timeline-title">Cybercab Production Begins</div>
+                            <div class="timeline-content">Purpose-built robotaxi with no steering wheel or pedals. Target: $30,000 starting price.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">End 2026</div>
+                            <div class="timeline-title">Scale Target</div>
+                            <div class="timeline-content">Musk targeting hundreds of thousands of Cybercabs in fleet.</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 1rem; background: rgba(255, 217, 61, 0.1); border-radius: 8px; border-left: 3px solid var(--accent-yellow);">
+                        <strong style="color: var(--accent-yellow);">Ã¢ÂÂ Ã¯Â¸Â Execution Risk:</strong>
+                        <span style="color: var(--text-secondary);"> Musk timelines historically slip 12-24 months. Robotaxi was originally promised for 2020.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="optimus" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Optimus Humanoid Robot</div>
+                        <span class="badge yellow">HIGH RISK / HIGH REWARD</span>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot active"></div>
+                            <div class="timeline-date">2025</div>
+                            <div class="timeline-title">Pilot Production</div>
+                            <div class="timeline-content">Several thousand units for internal factory use. Testing in Tesla facilities.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Q1 2026</div>
+                            <div class="timeline-title">Gen 3 Production-Intent Prototype</div>
+                            <div class="timeline-content">Refined design optimized for mass manufacturing.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Late 2026-2027</div>
+                            <div class="timeline-title">Customer Sales Begin</div>
+                            <div class="timeline-content">External sales to other businesses. Target price: $20,000-25,000.</div>
+                        </div>
+                    </div>
+                    <div class="grid-2" style="margin-top: 1rem;">
+                        <div class="metric-card">
+                            <div class="metric-label">Musk's Valuation Claim</div>
+                            <div class="metric-value" style="color: var(--accent-purple); font-size: 1.5rem;">80%</div>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                                "Could represent 80% of Tesla's future value"
+                            </p>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Market Opportunity</div>
+                            <div class="metric-value" style="color: var(--accent-cyan); font-size: 1.5rem;">$1T+</div>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                                Labor automation market if Optimus achieves capability parity
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="energy" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Energy Business</div>
+                        <span class="badge green">FASTEST GROWING SEGMENT</span>
+                    </div>
+                    <div class="chart-container" style="height: 280px;">
+                        <canvas id="energyChart"></canvas>
+                    </div>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div class="metric-card">
+                            <div class="metric-label">2024 Revenue</div>
+                            <div class="metric-value" style="color: var(--accent-green);">$10.1B</div>
+                            <div class="metric-change positive">Ã¢ÂÂ 67% YoY</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">2024 Storage Deployed</div>
+                            <div class="metric-value" style="color: var(--accent-cyan);">31.4 GWh</div>
+                            <div class="metric-change positive">Ã¢ÂÂ 114% YoY</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Gross Margin</div>
+                            <div class="metric-value" style="color: var(--accent-yellow);">26.2%</div>
+                            <div class="metric-change">Higher than Auto</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            <strong>Houston Megafactory:</strong> $200M investment adding 50 GWh/year capacity by H2 2026. 
+                            Energy now represents ~25% of revenue with potential to become primary profit driver.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="vehicles" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Vehicle Lineup Updates</div>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Vehicle</th>
+                                <th>Timeline</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Model Y "Juniper"</td>
+                                <td class="mono">2025 Ã¢ÂÂ</td>
+                                <td>Refreshed design launched</td>
+                            </tr>
+                            <tr>
+                                <td>Affordable Models</td>
+                                <td class="mono">H1 2025</td>
+                                <td>Announcement expected</td>
+                            </tr>
+                            <tr>
+                                <td>Cybercab</td>
+                                <td class="mono">April 2026</td>
+                                <td>$30,000, no steering wheel</td>
+                            </tr>
+                            <tr>
+                                <td>Next-Gen Platform</td>
+                                <td class="mono">2026-2027</td>
+                                <td>50% cost reduction target</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entry Strategy -->
+        <section id="entry-strategy" class="section">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Staged Entry Strategy</h2>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-title-icon">Ã°ÂÂÂ¯</span>
+                        Three-Phase Accumulation Plan
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="entryStrategyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <div class="card" style="border-top: 3px solid var(--accent-yellow);">
+                    <h3 style="color: var(--accent-yellow); margin-bottom: 0.5rem;">Phase 1</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Dec 2025 - Feb 2026</p>
+                    <div style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">30%</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Deploy initial position at current levels ($450-475). Capitalize on IV Rank 4% for LEAP purchases.
+                    </p>
+                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 8px;">
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Example Allocation</div>
+                        <div style="font-family: 'JetBrains Mono', monospace;">$6,000 stock + $4,000 LEAP</div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--accent-cyan);">
+                    <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Phase 2</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Q2-Q3 2026 (Midterm)</p>
+                    <div style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">40%</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Target $380-430 zone during midterm weakness. Historical corrections average 18%.
+                    </p>
+                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 8px;">
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Example Allocation</div>
+                        <div style="font-family: 'JetBrains Mono', monospace;">$8,000 stock + $4,000 LEAP</div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--accent-green);">
+                    <h3 style="color: var(--accent-green); margin-bottom: 0.5rem;">Phase 3</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">October 2026</p>
+                    <div style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">30%</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        "Bottom Picker's Paradise" - Deploy final capital at cycle low. Target $340-380.
+                    </p>
+                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 8px;">
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Example Allocation</div>
+                        <div style="font-family: 'JetBrains Mono', monospace;">$6,000 stock + $2,000 LEAP</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-title-icon">Ã°ÂÂÂ</span>
+                        Recommended Portfolio Allocation
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="chart-container" style="height: 280px;">
+                        <canvas id="allocationChart"></canvas>
+                    </div>
+                    <div>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Component</th>
+                                    <th>Allocation</th>
+                                    <th>Amount ($80K)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Diversified Core (SPY/QQQ)</td>
+                                    <td class="mono">50%</td>
+                                    <td class="mono">$40,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Tesla Stock</td>
+                                    <td class="mono">15-20%</td>
+                                    <td class="mono">$12,000-16,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Tesla LEAPs</td>
+                                    <td class="mono">5-10%</td>
+                                    <td class="mono">$4,000-8,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Bonds/Cash Reserve</td>
+                                    <td class="mono">20-25%</td>
+                                    <td class="mono">$16,000-20,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="margin-top: 1rem; padding: 1rem; background: rgba(255, 71, 87, 0.1); border-radius: 8px;">
+                            <strong style="color: var(--accent-red);">Max Tesla Exposure:</strong>
+                            <span style="color: var(--text-secondary);"> 25-30% combined ($20,000-24,000)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scenarios -->
+        <section id="scenarios" class="section">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Scenario Analysis</h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="scenario-card bull">
+                    <div class="scenario-header">
+                        <span class="scenario-title">Ã°ÂÂÂ Bull Case</span>
+                        <span class="scenario-prob">25%</span>
+                    </div>
+                    <div class="scenario-price">$800-1,000+</div>
+                    <ul class="scenario-list">
+                        <li>Robotaxi scales nationally with 80% gross margins</li>
+                        <li>FSD licensed to major OEM</li>
+                        <li>Optimus reaches 100K+ unit production</li>
+                        <li>Energy hits $25B+ revenue</li>
+                        <li>Market cap reaches $2T+</li>
+                    </ul>
+                </div>
+
+                <div class="scenario-card base">
+                    <div class="scenario-header">
+                        <span class="scenario-title">Ã°ÂÂÂ Base Case</span>
+                        <span class="scenario-prob">50%</span>
+                    </div>
+                    <div class="scenario-price">$500-700</div>
+                    <ul class="scenario-list">
+                        <li>Robotaxi expands to 10+ cities</li>
+                        <li>FSD improves but needs supervision</li>
+                        <li>Optimus in pilot/early commercial</li>
+                        <li>Auto business stabilizes</li>
+                        <li>Energy continues 30%+ growth</li>
+                    </ul>
+                </div>
+
+                <div class="scenario-card bear">
+                    <div class="scenario-header">
+                        <span class="scenario-title">Ã¢ÂÂ Ã¯Â¸Â Bear Case</span>
+                        <span class="scenario-prob">25%</span>
+                    </div>
+                    <div class="scenario-price">$250-400</div>
+                    <ul class="scenario-list">
+                        <li>Robotaxi faces regulatory delays</li>
+                        <li>Competition erodes EV share (BYD)</li>
+                        <li>Recession hits discretionary spending</li>
+                        <li>Musk distraction intensifies</li>
+                        <li>Multiple compression</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-title-icon">Ã°ÂÂÂ²</span>
+                        Expected Value Calculation
+                    </div>
+                </div>
+                <div class="grid-4">
+                    <div class="metric-card">
+                        <div class="metric-label">Bull Contribution</div>
+                        <div class="metric-value" style="color: var(--accent-green);">$225</div>
+                        <div class="metric-change">0.25 ÃÂ $900</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Base Contribution</div>
+                        <div class="metric-value" style="color: var(--accent-cyan);">$300</div>
+                        <div class="metric-change">0.50 ÃÂ $600</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Bear Contribution</div>
+                        <div class="metric-value" style="color: var(--accent-red);">$81</div>
+                        <div class="metric-change">0.25 ÃÂ $325</div>
+                    </div>
+                    <div class="metric-card" style="border: 2px solid var(--accent-green);">
+                        <div class="metric-label">Expected Value</div>
+                        <div class="metric-value" style="color: var(--accent-green);">$606</div>
+                        <div class="metric-change positive">+27% from current</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator -->
+        <section id="calculator" class="section">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Position Size Calculator</h2>
+            </div>
+
+            <div class="card">
+                <div class="calculator">
+                    <div class="calc-row">
+                        <div class="calc-field">
+                            <label class="calc-label">Total Capital ($)</label>
+                            <input type="number" class="calc-input" id="totalCapital" value="80000" onchange="calculatePosition()">
+                        </div>
+                        <div class="calc-field">
+                            <label class="calc-label">Max Tesla Allocation (%)</label>
+                            <input type="number" class="calc-input" id="maxAllocation" value="25" onchange="calculatePosition()">
+                        </div>
+                        <div class="calc-field">
+                            <label class="calc-label">Current TSLA Price ($)</label>
+                            <input type="number" class="calc-input" id="entryPrice" value="475" onchange="calculatePosition()">
+                        </div>
+                    </div>
+                    <div class="calc-row">
+                        <div class="calc-field">
+                            <label class="calc-label">Stop Loss % Below Entry</label>
+                            <input type="number" class="calc-input" id="stopLoss" value="15" onchange="calculatePosition()">
+                        </div>
+                        <div class="calc-field">
+                            <label class="calc-label">Max Risk Per Trade (%)</label>
+                            <input type="number" class="calc-input" id="maxRisk" value="2" onchange="calculatePosition()">
+                        </div>
+                        <div class="calc-field">
+                            <label class="calc-label">Stock vs LEAP Split (%)</label>
+                            <input type="number" class="calc-input" id="stockSplit" value="60" onchange="calculatePosition()">
+                        </div>
+                    </div>
+
+                    <div class="calc-result" id="calcResults">
+                        <div class="calc-result-row">
+                            <span class="calc-result-label">Max Tesla Position Size</span>
+                            <span class="calc-result-value" id="maxPosition" style="color: var(--accent-green);">$20,000</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span class="calc-result-label">Stock Allocation</span>
+                            <span class="calc-result-value" id="stockAlloc">$12,000</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span class="calc-result-label">LEAP Allocation</span>
+                            <span class="calc-result-value" id="leapAlloc">$8,000</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span class="calc-result-label">Shares Purchasable</span>
+                            <span class="calc-result-value" id="shareCount">25 shares</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span class="calc-result-label">Stop Loss Price</span>
+                            <span class="calc-result-value" id="stopPrice" style="color: var(--accent-red);">$403.75</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span class="calc-result-label">Max Dollar Risk</span>
+                            <span class="calc-result-value" id="maxDollarRisk" style="color: var(--accent-yellow);">$1,600</span>
+                        </div>
+                        <div class="calc-result-row">
+                            <span class="calc-result-label">Risk-Adjusted Position</span>
+                            <span class="calc-result-value" id="riskAdjusted">$10,667</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEAP Options -->
+        <section id="leaps" class="section">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">LEAP Options Strategy</h2>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-title-icon">Ã°ÂÂÂ</span>
+                        IV Rank Analysis
+                    </div>
+                    <span class="badge green">OPTIMAL ENTRY</span>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Tesla's current IV Rank of <strong style="color: var(--accent-green);">4%</strong> means options are cheaper than 96% of the past year. 
+                        This is the ideal environment for LEAP purchases.
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <span style="color: var(--text-muted);">IV Rank:</span>
+                        <div style="flex: 1; height: 24px; background: var(--bg-tertiary); border-radius: 12px; overflow: hidden; position: relative;">
+                            <div style="position: absolute; left: 4%; top: 50%; transform: translate(-50%, -50%); width: 16px; height: 16px; background: var(--accent-green); border-radius: 50%; box-shadow: 0 0 10px var(--accent-green);"></div>
+                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 4%; background: var(--gradient-green); border-radius: 12px;"></div>
+                        </div>
+                        <span class="mono" style="color: var(--accent-green);">4%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Recommended LEAP Structure</div>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Expiration</th>
+                            <th>Strike</th>
+                            <th>Delta</th>
+                            <th>Purpose</th>
+                            <th>Est. Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <td class="mono">Jan 2027</td>
+                            <td class="mono">$420</td>
+                            <td class="mono">~0.70</td>
+                            <td>Core stock replacement</td>
+                            <td class="mono">$100-110/share</td>
+                        </tr>
+                        <tr>
+                            <td class="mono">Jan 2028</td>
+                            <td class="mono">$450</td>
+                            <td class="mono">~0.65</td>
+                            <td>Long-term core position</td>
+                            <td class="mono">$120-130/share</td>
+                        </tr>
+                        <tr>
+                            <td class="mono">Jan 2028</td>
+                            <td class="mono">$550</td>
+                            <td class="mono">~0.45</td>
+                            <td>Upside capture (smaller position)</td>
+                            <td class="mono">$70-80/share</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid-2">
+                <div class="collapsible open">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        <span class="collapsible-title">
+                            <span>Ã¢ÂÂ</span>
+                            Strike Selection Principles
+                        </span>
+                        <span class="collapsible-icon">Ã¢ÂÂ¼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <ul style="color: var(--text-secondary); padding-left: 1.5rem;">
+                            <li style="margin-bottom: 8px;">Target <strong>0.60-0.80 delta</strong> (ITM or near-ATM) for best risk/reward</li>
+                            <li style="margin-bottom: 8px;">Higher delta = more stock-like behavior, better probability of profit</li>
+                            <li style="margin-bottom: 8px;"><strong style="color: var(--accent-red);">Avoid deep OTM strikes</strong> despite higher leverageÃ¢ÂÂtotal loss probability too high</li>
+                            <li>For capital preservation, ITM LEAPs act like leveraged stock with defined risk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        <span class="collapsible-title">
+                            <span>Ã°ÂÂÂ</span>
+                            Rolling Strategy
+                        </span>
+                        <span class="collapsible-icon">Ã¢ÂÂ¼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <ul style="color: var(--text-secondary); padding-left: 1.5rem;">
+                            <li style="margin-bottom: 8px;">Roll positions when <strong>6-12 months</strong> remain to avoid theta acceleration</li>
+                            <li style="margin-bottom: 8px;">Roll "up and out" (higher strike, later expiration) to capture gains</li>
+                            <li style="margin-bottom: 8px;">Hold at least <strong>366 days</strong> before rolling for LTCG treatment</li>
+                            <li>Avoid initiating positions within 2 weeks of earnings (IV crush risk)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section id="timeline" class="section">
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2 class="section-title">3-Year Tactical Calendar</h2>
+            </div>
+
+            <div class="card">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot active"></div>
+                        <div class="timeline-date">2025 - Year 1 (Current)</div>
+                        <div class="timeline-title">Establish Initial Position</div>
+                        <div class="timeline-content">
+                            Deploy 25-30% of planned Tesla allocation. Exploit IV Rank 4% for LEAP purchases. 
+                            Watch: Robotaxi testing, FSD v14 rollout, delivery numbers, 10-year yield.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2026 - Year 2 (Midterm)</div>
+                        <div class="timeline-title">Primary Accumulation Window Ã¢Â­Â</div>
+                        <div class="timeline-content">
+                            <strong>Q2-Q3:</strong> Deploy 40-50% during expected 15-20% correction.<br>
+                            <strong>October:</strong> Target cycle bottom for final accumulation.<br>
+                            <strong>Key dates:</strong> Cybercab production (April), Houston Megafactory (H2).
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2027 - Year 3 (Pre-Election)</div>
+                        <div class="timeline-title">Hold Through Rally Ã¢Â­Â</div>
+                        <div class="timeline-content">
+                            <strong>Strongest year historically</strong> (90% win rate, 16-17% avg returns).<br>
+                            Hold full position. Take partial profits (25-30%) on 50%+ gains.<br>
+                            <strong>Key dates:</strong> AI5 chip deployment (mid-year), Optimus scaling.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2028 - Year 4 (Election)</div>
+                        <div class="timeline-title">Harvest Gains</div>
+                        <div class="timeline-content">
+                            Q1-Q2: Evaluate exit strategy.<br>
+                            Q3-Q4: Election volatility creates opportunity.<br>
+                            Reduce to core position (50% of peak allocation), lock in Year 3 gains.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checklist -->
+        <section id="checklist" class="section">
+            <div class="section-header">
+                <span class="section-number">09</span>
+                <h2 class="section-title">Implementation Checklist</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">This Week</div>
+                    </div>
+                    <ul class="checklist">
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Establish emergency reserve (3-6 months expenses) OUTSIDE investment capital</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Open options-approved brokerage account if not available</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Calculate exact dollar amounts for each allocation bucket</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Dec 2025 - Jan 2026</div>
+                    </div>
+                    <ul class="checklist">
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Purchase initial stock position ($5,000-8,000)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Purchase 1 Jan 2028 LEAP (0.65-0.70 delta)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Set price alerts for support levels ($450, $430, $400, $380)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Ongoing Monthly</div>
+                    </div>
+                    <ul class="checklist">
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Review position vs. allocation limits</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Monitor VIX, 10-year yield, consumer confidence</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Check LEAP thetaÃ¢ÂÂroll when 6 months remain</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="checklist-box" onclick="toggleCheck(this)"></div>
+                            <span class="checklist-text">Reassess thesis after each earnings report</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Key Indicators to Monitor</div>
+                    </div>
+                    <table class="data-table">
+                        <tbody>
+                            <tr>
+                                <td>Consumer Expectations Index</td>
+                                <td><span class="badge red">Below 80 = recession signal</span></td>
+                            </tr>
+                            <tr>
+                                <td>10-Year Treasury Yield</td>
+                                <td><span class="badge yellow">Above 4.5% = TSLA pressure</span></td>
+                            </tr>
+                            <tr>
+                                <td>ISM Services PMI</td>
+                                <td><span class="badge red">Below 50 = recession signal</span></td>
+                            </tr>
+                            <tr>
+                                <td>VIX</td>
+                                <td><span class="badge green">Above 30 = entry opportunity</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">10</span>
+                <h2 class="section-title">Sources & Citations</h2>
+            </div>
+
+            <div class="card">
+                <div class="sources">
+                    <div class="sources-title">Data sourced from the following (December 2025):</div>
+                    <div class="source-item">
+                        <span class="source-num">[1]</span>
+                        <span>U.S. Bank - Presidential Cycle Stock Market Analysis</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[2]</span>
+                        <span>MacroTrends - Tesla 15-Year Stock Price History & P/E Ratio</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[3]</span>
+                        <span>Yahoo Finance - Wall Street 2026 Outlook, Tesla Price Predictions</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[4]</span>
+                        <span>CNBC - Tesla Robotaxi Launch, Cybercab Production, 2026 Challenges</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[5]</span>
+                        <span>TechCrunch - Tesla Cybercab Production Timeline</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[6]</span>
+                        <span>Seeking Alpha - Fed Ends QT Analysis</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[7]</span>
+                        <span>Utility Dive - Tesla Energy Storage Deployments</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[8]</span>
+                        <span>Interactive Brokers - TSLA Implied Volatility Seasonality</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[9]</span>
+                        <span>GuruFocus - Tesla Beta Calculation</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[10]</span>
+                        <span>Kiplinger - EV Tax Credit Analysis</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[11]</span>
+                        <span>Fidelity / Option Alpha - LEAP Options Strategies</span>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-num">[12]</span>
+                        <span>WT Wealth Management - Presidential Election Cycle Theory</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <strong>Ã¢ÂÂ Ã¯Â¸Â IMPORTANT DISCLAIMER:</strong> This document is for educational and informational purposes only and does not constitute financial advice, 
+            investment advice, trading advice, or any other sort of advice. Tesla stock is highly volatile and speculative. 
+            Past performance does not guarantee future results. The projections, cycle patterns, and price targets discussed 
+            are based on historical data and may not predict future performance. You should consult with a qualified financial 
+            advisor before making any investment decisions. Investing involves risk, including the possible loss of principal. 
+            Options trading involves significant risk and is not appropriate for all investors.
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Tesla 3-Year Investment Plan | Generated December 2025</p>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">
+            Built for strategic capital deployment with cycle-aligned entry timing
+        </p>
+    </footer>
+
+    <script>
+        // Initialize Charts
+        document.addEventListener('DOMContentLoaded', function() {
+            initCharts();
+            calculatePosition();
+        });
+
+        function initCharts() {
+            // Presidential Cycle Chart
+            const presCtx = document.getElementById('presidentialCycleChart').getContext('2d');
+            new Chart(presCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Year 1 (Post-Election)', 'Year 2 (Midterm)', 'Year 3 (Pre-Election)', 'Year 4 (Election)'],
+                    datasets: [{
+                        label: 'Average S&P 500 Return',
+                        data: [7.4, 2.5, 16.8, 7.7],
+                        backgroundColor: [
+                            'rgba(255, 217, 61, 0.7)',
+                            'rgba(255, 71, 87, 0.7)',
+                            'rgba(0, 255, 136, 0.7)',
+                            'rgba(0, 212, 255, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 217, 61, 1)',
+                            'rgba(255, 71, 87, 1)',
+                            'rgba(0, 255, 136, 1)',
+                            'rgba(0, 212, 255, 1)'
+                        ],
+                        borderWidth: 2,
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: '#1a2332',
+                            titleColor: '#e8edf3',
+                            bodyColor: '#8b98a8',
+                            borderColor: '#2a3744',
+                            borderWidth: 1,
+                            callbacks: {
+                                label: function(context) {
+                                    return `Return: ${context.raw}%`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(42, 55, 68, 0.5)' },
+                            ticks: { 
+                                color: '#8b98a8',
+                                callback: function(value) { return value + '%'; }
+                            }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#8b98a8' }
+                        }
+                    }
+                }
+            });
+
+            // Valuation Chart (Donut)
+            const valCtx = document.getElementById('valuationChart').getContext('2d');
+            new Chart(valCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Auto Business', 'Energy', 'FSD/Robotaxi Premium', 'Optimus Optionality'],
+                    datasets: [{
+                        data: [35, 15, 35, 15],
+                        backgroundColor: [
+                            'rgba(0, 212, 255, 0.8)',
+                            'rgba(0, 255, 136, 0.8)',
+                            'rgba(168, 85, 247, 0.8)',
+                            'rgba(255, 217, 61, 0.8)'
+                        ],
+                        borderColor: '#151d28',
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { 
+                                color: '#8b98a8',
+                                padding: 15,
+                                usePointStyle: true
+                            }
+                        }
+                    },
+                    cutout: '65%'
+                }
+            });
+
+            // Energy Growth Chart
+            const energyCtx = document.getElementById('energyChart').getContext('2d');
+            new Chart(energyCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2021', '2022', '2023', '2024', '2025E', '2026E'],
+                    datasets: [{
+                        label: 'Storage Deployed (GWh)',
+                        data: [4.0, 6.5, 14.7, 31.4, 50, 75],
+                        borderColor: '#00ff88',
+                        backgroundColor: 'rgba(0, 255, 136, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointBackgroundColor: '#00ff88',
+                        pointBorderColor: '#00ff88',
+                        pointRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#8b98a8' }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(42, 55, 68, 0.5)' },
+                            ticks: { 
+                                color: '#8b98a8',
+                                callback: function(value) { return value + ' GWh'; }
+                            }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#8b98a8' }
+                        }
+                    }
+                }
+            });
+
+            // Entry Strategy Chart
+            const entryCtx = document.getElementById('entryStrategyChart').getContext('2d');
+            new Chart(entryCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Dec 25', 'Feb 26', 'Apr 26', 'Jun 26', 'Aug 26', 'Oct 26', 'Dec 26', 'Feb 27', 'Jun 27', 'Oct 27', 'Feb 28'],
+                    datasets: [{
+                        label: 'Projected TSLA Price Range',
+                        data: [475, 460, 420, 380, 360, 350, 400, 480, 550, 620, 600],
+                        borderColor: '#00d4ff',
+                        backgroundColor: 'rgba(0, 212, 255, 0.1)',
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 6,
+                        pointBackgroundColor: function(context) {
+                            const index = context.dataIndex;
+                            if (index === 0) return '#ffd93d'; // Phase 1
+                            if (index >= 2 && index <= 5) return '#00d4ff'; // Phase 2
+                            if (index === 5) return '#00ff88'; // Phase 3 target
+                            return '#00d4ff';
+                        }
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        annotation: {
+                            annotations: {
+                                phase1: {
+                                    type: 'box',
+                                    xMin: 0,
+                                    xMax: 1,
+                                    backgroundColor: 'rgba(255, 217, 61, 0.1)',
+                                    borderColor: 'transparent'
+                                },
+                                phase2: {
+                                    type: 'box',
+                                    xMin: 2,
+                                    xMax: 5,
+                                    backgroundColor: 'rgba(0, 212, 255, 0.1)',
+                                    borderColor: 'transparent'
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            min: 300,
+                            max: 700,
+                            grid: { color: 'rgba(42, 55, 68, 0.5)' },
+                            ticks: { 
+                                color: '#8b98a8',
+                                callback: function(value) { return '$' + value; }
+                            }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#8b98a8' }
+                        }
+                    }
+                }
+            });
+
+            // Allocation Chart
+            const allocCtx = document.getElementById('allocationChart').getContext('2d');
+            new Chart(allocCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Diversified Core', 'Tesla Stock', 'Tesla LEAPs', 'Bonds/Cash'],
+                    datasets: [{
+                        data: [50, 17.5, 7.5, 25],
+                        backgroundColor: [
+                            'rgba(0, 212, 255, 0.8)',
+                            'rgba(0, 255, 136, 0.8)',
+                            'rgba(168, 85, 247, 0.8)',
+                            'rgba(139, 152, 168, 0.8)'
+                        ],
+                        borderColor: '#151d28',
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { 
+                                color: '#8b98a8',
+                                padding: 15,
+                                usePointStyle: true
+                            }
+                        }
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+
+        // Tab functionality
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Collapsible functionality
+        function toggleCollapsible(header) {
+            const collapsible = header.parentElement;
+            collapsible.classList.toggle('open');
+        }
+
+        // Checklist functionality
+        function toggleCheck(box) {
+            box.classList.toggle('checked');
+            const text = box.nextElementSibling;
+            text.classList.toggle('checked');
+        }
+
+        // Calculator
+        function calculatePosition() {
+            const totalCapital = parseFloat(document.getElementById('totalCapital').value) || 80000;
+            const maxAllocation = parseFloat(document.getElementById('maxAllocation').value) || 25;
+            const entryPrice = parseFloat(document.getElementById('entryPrice').value) || 475;
+            const stopLossPercent = parseFloat(document.getElementById('stopLoss').value) || 15;
+            const maxRiskPercent = parseFloat(document.getElementById('maxRisk').value) || 2;
+            const stockSplit = parseFloat(document.getElementById('stockSplit').value) || 60;
+
+            const maxPosition = totalCapital * (maxAllocation / 100);
+            const stockAllocation = maxPosition * (stockSplit / 100);
+            const leapAllocation = maxPosition * ((100 - stockSplit) / 100);
+            const shares = Math.floor(stockAllocation / entryPrice);
+            const stopPrice = entryPrice * (1 - stopLossPercent / 100);
+            const maxDollarRisk = totalCapital * (maxRiskPercent / 100);
+            const riskPerShare = entryPrice - stopPrice;
+            const riskAdjustedShares = Math.floor(maxDollarRisk / riskPerShare);
+            const riskAdjustedPosition = riskAdjustedShares * entryPrice;
+
+            document.getElementById('maxPosition').textContent = '$' + maxPosition.toLocaleString();
+            document.getElementById('stockAlloc').textContent = '$' + stockAllocation.toLocaleString();
+            document.getElementById('leapAlloc').textContent = '$' + leapAllocation.toLocaleString();
+            document.getElementById('shareCount').textContent = shares + ' shares';
+            document.getElementById('stopPrice').textContent = '$' + stopPrice.toFixed(2);
+            document.getElementById('maxDollarRisk').textContent = '$' + maxDollarRisk.toLocaleString();
+            document.getElementById('riskAdjusted').textContent = '$' + riskAdjustedPosition.toLocaleString();
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+                
+                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Update active nav on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
