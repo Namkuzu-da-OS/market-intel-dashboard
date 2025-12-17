@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-17T22:22:46.245Z",
+  "timestamp": "2025-12-17T23:02:06.062Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 65,
+    "confidence_pct": 64,
     "sources": {
       "social": {
-        "bullish": 203,
-        "bearish": 104,
-        "neutral": 239,
-        "total": 546,
-        "pct": 37
+        "bullish": 202,
+        "bearish": 108,
+        "neutral": 249,
+        "total": 559,
+        "pct": 36
       },
       "news": {
-        "bullish": 51,
-        "bearish": 29,
-        "neutral": 27,
+        "bullish": 53,
+        "bearish": 28,
+        "neutral": 26,
         "total": 107,
-        "pct": 48
+        "pct": 50
       },
       "video": {
         "bullish": 7,
@@ -36,51 +36,51 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish with medium conviction - technical breakdown confirmed by volume, offset by selective fundamental strength in semiconductors and crypto regulatory tailwinds.\n\n📈 **Themes:** 1) Technical deterioration across major indices with SPY breaking 50-day MA on high volume; 2) AI/semiconductor demand strength (Micron fundamentals) failing to lift broader market; 3) Rate policy uncertainty as global central banks tighten (BOJ 30-year high) creating cross-currents with Fed dovish expectations.\n\n🎯 **Levels:** SPY ($671.40): Call Wall $681 (17k OI), Put Wall $670 (9k OI). Max Pain $670. Near resistance: $680 (16k OI), $685 (16k OI). Near support: $669 (7k OI), $665 (7k OI). QQQ ($600.41): Call Wall $615 (13k OI), Put Wall $595 (7k OI). Max Pain $625. Near resistance: $610 (10k OI), $613 (11k OI). Near support: $600 (6k OI), $597 (5k OI). /ES: 6796 support, 6781/6767 extensions per Twitter.",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - Near-term technical damage (SPY broke 50-day MA, high-volume selling) outweighs bullish fundamentals, though structural themes (AI adoption, regulatory tailwinds for crypto) remain intact.\n\n📈 **Themes:** (1) Technical breakdown vs. fundamental resilience - momentum loss clashing with strong earnings beats in semiconductors and regulatory clarity improvements; (2) Growth stall amid policy uncertainty - rate policy timing questions creating bifurcated outcomes between quality innovation plays and cyclical risk assets; (3) Labor market regime shift - unemployment trajectory since mid-year representing potential cycle inflection that could override tech optimism.\n\n🎯 **Levels:** SPY ($671.40): Call Wall $681 (17k OI, 1.4% away - active resistance), Put Wall $670 (9k OI, 0.2% away - active support). Max Pain $670. Near resistance: $680 (16k OI), $685 (16k OI). Near support: $669 (7k OI), $665 (7k OI). QQQ ($600.41): Call Wall $615 (13k OI, 2.4% away), Put Wall $595 (7k OI, 0.9% away). Max Pain $625. Near resistance: $613 (11k OI), $610 (10k OI). Near support: $600 (6k OI), $597 (5k OI). Both showing BEARISH_RESISTANCE bias from dealer hedging.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "TSLA",
       "MU",
-      "ORCL"
+      "TSLA",
+      "BTC"
     ],
     "key_themes": [
-      "Technical breakdown with 50-DMA violation",
-      "AI/semiconductor fundamental strength vs market weakness",
-      "Global rate policy divergence",
-      "Enterprise software guidance deterioration",
-      "Crypto regulatory clarity developments"
+      "Technical breakdown vs fundamental resilience",
+      "AI/semiconductor momentum amid demand uncertainty",
+      "Labor market regime shift and cycle inflection risk",
+      "Regulatory policy tailwinds for crypto assets",
+      "Quality factor outperformance in bifurcated market"
     ],
     "risk_factors": [
-      "Fresh technical breakdown on high volume signals continuation risk",
-      "Enterprise software guidance cuts (Workday, Salesforce, ServiceNow) suggest demand softening",
-      "Global central bank tightening (BOJ) conflicts with Fed dovish expectations",
-      "Geopolitical uncertainty (Venezuela oil capacity, Taiwan tensions)",
-      "Labor market deterioration risk if unemployment accelerates above 5%"
+      "SPY 50-day MA breakdown signaling momentum loss",
+      "Earnings guidance cuts cascading across software/fintech sectors",
+      "Unemployment trajectory acceleration undermining risk-on sentiment",
+      "Rate policy timing uncertainty delaying Fed easing",
+      "Geopolitical tensions (general risk-off pressures)"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $670 Put Wall support (9k OI active), $681 Call Wall resistance (17k OI active). Intermediate levels: $669 support, $680 resistance. /ES: 6796 support per Twitter",
+    "intraday_levels": "SPY: $670 put wall support (9k OI, Max Pain), $669 immediate support (7k OI). Resistance at $681 call wall (17k OI). QQQ: $600 immediate support (6k OI), $595 put wall (7k OI). Resistance at $610 (10k OI), $615 call wall (13k OI).",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Break below $670 Max Pain targets $665 support zone. Reclaim of $681 Call Wall needed to reverse. QQQ: $595 Put Wall critical support, $615 Call Wall major resistance. Max Pain gravitational pull toward $625",
-    "source_alignment": "CONFLICTING"
+    "swing_levels": "SPY: Test of $665 support (7k OI) likely if $670 fails; upside capped at $681 call wall then $685 (16k OI). QQQ: Downside targets $595 put wall, then $597 support cluster. Upside resistance layers at $610, $613, $615 call wall. Max Pain gravity suggests SPY drift toward $670, QQQ potential climb toward $625 if stabilization occurs.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 185556
+    "generation_time_ms": 189782
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 15,
-        "sentiment_score": -0.169,
+        "mentions": 16,
+        "sentiment_score": -0.205,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 17,
+        "sentiment_pct": 21,
         "counts": {
           "bullish": 3,
-          "bearish": 7,
+          "bearish": 8,
           "neutral": 5,
-          "total": 15
+          "total": 16
         }
       },
       {
@@ -139,15 +139,28 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 14,
-        "sentiment_score": -0.124,
+        "mentions": 13,
+        "sentiment_score": -0.183,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 12,
+        "sentiment_pct": 18,
         "counts": {
-          "bullish": 4,
+          "bullish": 3,
           "bearish": 7,
           "neutral": 3,
-          "total": 14
+          "total": 13
+        }
+      },
+      {
+        "ticker": "COIN",
+        "mentions": 4,
+        "sentiment_score": 0.385,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 39,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 4
         }
       },
       {
@@ -180,28 +193,28 @@
     "other": [
       {
         "ticker": "MU",
-        "mentions": 25,
-        "sentiment_score": 0.489,
+        "mentions": 28,
+        "sentiment_score": 0.414,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 49,
+        "sentiment_pct": 41,
         "counts": {
           "bullish": 16,
-          "bearish": 1,
-          "neutral": 8,
-          "total": 25
+          "bearish": 2,
+          "neutral": 10,
+          "total": 28
         }
       },
       {
         "ticker": "TSLA",
-        "mentions": 25,
-        "sentiment_score": 0.314,
+        "mentions": 24,
+        "sentiment_score": 0.297,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 31,
+        "sentiment_pct": 30,
         "counts": {
-          "bullish": 15,
+          "bullish": 14,
           "bearish": 5,
           "neutral": 5,
-          "total": 25
+          "total": 24
         }
       },
       {
@@ -248,9 +261,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 17.81,
-    "pc_ratio": 0.77,
-    "sentiment_bullish_pct": 37,
+    "vix": 17.62,
+    "pc_ratio": 0.78,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -258,7 +271,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 12.82,
-    "spread": 4.93,
+    "spread": 3.88,
     "position": 50
   },
   "action": {
