@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-17T04:59:46.312Z",
+  "timestamp": "2025-12-17T13:54:22.704Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 68,
+    "confidence_pct": 67,
     "sources": {
       "social": {
-        "bullish": 224,
-        "bearish": 92,
-        "neutral": 287,
-        "total": 603,
+        "bullish": 200,
+        "bearish": 85,
+        "neutral": 259,
+        "total": 544,
         "pct": 37
       },
       "news": {
-        "bullish": 60,
-        "bearish": 33,
-        "neutral": 30,
-        "total": 123,
-        "pct": 49
+        "bullish": 56,
+        "bearish": 35,
+        "neutral": 26,
+        "total": 117,
+        "pct": 48
       },
       "video": {
-        "bullish": 5,
-        "bearish": 0,
-        "neutral": 2,
-        "total": 7,
-        "pct": 71
+        "bullish": 6,
+        "bearish": 1,
+        "neutral": 1,
+        "total": 8,
+        "pct": 75
       },
       "chat": {
         "bullish": 0,
@@ -36,79 +36,79 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** MIXED with medium conviction - bullish momentum in tech/AI sectors clashes with macro deterioration signals (unemployment at 4.6%, structural valuation concerns) creating fragmented outlook across timeframes.\n\n📈 **Themes:** (1) Fed easing cycle expectations driven by weakening labor data, (2) AI/tech productivity momentum supporting growth sectors, (3) Crypto infrastructure adoption and regulatory tailwinds, (4) Structural valuation concerns at Dot-Com bubble levels with consumer weakness beneath surface metrics.\n\n🎯 **Levels:** SPY ($678.87): Call Wall $679 (7k OI - ACTIVE resistance), Put Wall $661 (7k OI - ACTIVE support). Max Pain $670. Near resistance: $685 (7k OI), $690 (7k OI). Near support: $662 (5k OI). QQQ ($611.75): Call Wall $645 (7k OI - dormant), Put Wall $593 (5k OI - ACTIVE support). Max Pain $625. Near resistance: $613 (7k OI), $614 (6k OI). Near support: $599 (5k OI), $597 (4k OI). /ES: 6400-6350 downside targets per Twitter if 50-DMA breaks.",
+    "narrative": "📊 **Consensus:** Bullish momentum dominant across most sources (70% X, 62% RSS, 86% YouTube) but fragile—professional trader heavily bearish (0% bullish). Conviction: MEDIUM (conflicting professional sentiment creates doubt).\n\n📈 **Themes:** (1) AI/tech sector resilience driving tech leadership narratives despite valuation extremes at Dot Com Bubble levels, (2) Rate cut expectations sustaining risk-on sentiment while labor market deterioration (4.6% unemployment since June) creates structural tension, (3) Commodity/crypto rotation with regulatory clarity tailwinds versus software/retail earnings quality concerns and guidance cuts.\n\n🎯 **Levels:** SPY ($678.87): Call Wall $681 (17k OI, active resistance 0.3% away), Put Wall $677 (11k OI, active support 0.3% away). Max Pain $670. Near resistance: $680 (16k OI), $685 (16k OI). Near support: $678 (10k OI), $675 (10k OI). Net Bias: BEARISH_RESISTANCE. QQQ ($611.75): Call Wall $615 (13k OI, active resistance 0.5% away), Put Wall $610 (9k OI, active support 0.3% away). Max Pain $625. Near resistance: $613 (11k OI), $614 (8k OI). Near support: $609 (8k OI), $595 (7k OI). Net Bias: NEUTRAL. /ES: 50-DMA breakdown target toward 6400-6350 range per Twitter if support fails.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
       "NVDA",
-      "ES"
+      "BTC",
+      "GLD"
     ],
     "key_themes": [
-      "Fed easing cycle expectations",
-      "AI sector productivity momentum",
-      "Crypto infrastructure adoption",
-      "Labor market deterioration",
-      "Structural valuation concerns"
+      "AI sector momentum and tech leadership",
+      "Fed rate policy uncertainty and dovish expectations",
+      "Labor market deterioration versus equity resilience",
+      "Commodity/crypto rotation with regulatory tailwinds",
+      "Valuation extremes and earnings quality concerns"
     ],
     "risk_factors": [
-      "Unemployment at 4-year highs (4.6%) signaling macro deterioration",
-      "Earnings yields at Dot-Com bubble levels creating valuation vulnerability",
-      "Fed communication fragmentation fueling policy uncertainty",
-      "Geopolitical escalation (Russia-Ukraine, Taiwan tensions)",
-      "Consumer spending weakness beneath promotional distortions"
+      "Unemployment acceleration above 4.6% validates bearish labor thesis",
+      "Software/retail earnings cascade triggering defensive rotation",
+      "Valuation mean reversion from Dot Com Bubble extremes",
+      "Fed hawkish surprise or dual-mandate communication shift",
+      "Professional trader positioning (0% bullish) signals institutional skepticism"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY immediate resistance at Call Wall $679 (7k OI active hedging), support at Put Wall $661 (7k OI). Price currently compressed between these levels favoring downside test.",
+    "intraday_levels": "SPY immediate resistance $681 Call Wall (17k OI), support $677 Put Wall (11k OI). Active hedging zone $678-$680. Watch for whipsaw risk in tight 0.6% range. QQQ resistance $613-$615 band, support $610 Put Wall (9k OI). VIX 16.20 suggests contained volatility but professional trader bearishness creates downside skew.",
     "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Upside resistance $685-$690 (14k combined OI), downside support $661-$662 zone. Max Pain gravitational pull toward $670. Watch for breakdown below $661 activating deeper support at $625.",
+    "swing_levels": "SPY: Max Pain $670 gravitational pull versus current $678.87 suggests drift lower. Critical breakdown watch at 50-DMA with Twitter-cited /ES target 6400-6350 if breached. QQQ: Max Pain $625 significantly above current $611.75—bullish magnet into expiration but $595 support (7k OI) key downside level if labor data disappoints. Consolidation with downside bias expected until Fed clarity resolves policy uncertainty.",
     "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 168175
+    "generation_time_ms": 208938
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 15,
-        "sentiment_score": -0.034,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 3,
+        "mentions": 10,
+        "sentiment_score": -0.066,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 7,
         "counts": {
-          "bullish": 4,
-          "bearish": 6,
-          "neutral": 5,
-          "total": 15
+          "bullish": 3,
+          "bearish": 5,
+          "neutral": 2,
+          "total": 10
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 6,
-        "sentiment_score": -0.15,
+        "mentions": 3,
+        "sentiment_score": -0.133,
         "sentiment_label": "Bearish",
-        "sentiment_pct": 15,
+        "sentiment_pct": 13,
         "counts": {
           "bullish": 1,
-          "bearish": 3,
-          "neutral": 2,
-          "total": 6
+          "bearish": 2,
+          "neutral": 0,
+          "total": 3
         }
       }
     ],
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.43,
+        "mentions": 6,
+        "sentiment_score": 0.358,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
+        "sentiment_pct": 36,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 2,
-          "total": 5
+          "neutral": 3,
+          "total": 6
         }
       },
       {
@@ -136,57 +136,70 @@
           "neutral": 2,
           "total": 2
         }
+      },
+      {
+        "ticker": "COIN",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
       }
     ],
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 52,
-        "sentiment_score": 0.554,
+        "mentions": 50,
+        "sentiment_score": 0.575,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
+        "sentiment_pct": 57,
         "counts": {
           "bullish": 39,
           "bearish": 1,
-          "neutral": 12,
-          "total": 52
+          "neutral": 10,
+          "total": 50
         }
       },
       {
         "ticker": "SPX",
-        "mentions": 13,
-        "sentiment_score": 0.055,
+        "mentions": 11,
+        "sentiment_score": 0.065,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 6,
+        "sentiment_pct": 7,
         "counts": {
           "bullish": 4,
           "bearish": 3,
-          "neutral": 6,
-          "total": 13
+          "neutral": 4,
+          "total": 11
         }
       },
       {
         "ticker": "NVDA",
-        "mentions": 11,
-        "sentiment_score": 0.305,
+        "mentions": 8,
+        "sentiment_score": 0.321,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 31,
+        "sentiment_pct": 32,
         "counts": {
-          "bullish": 6,
+          "bullish": 5,
           "bearish": 2,
-          "neutral": 3,
-          "total": 11
+          "neutral": 1,
+          "total": 8
         }
       },
       {
         "ticker": "ORCL",
         "mentions": 8,
-        "sentiment_score": 0.355,
+        "sentiment_score": 0.196,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 20,
         "counts": {
-          "bullish": 4,
-          "bearish": 0,
+          "bullish": 3,
+          "bearish": 1,
           "neutral": 4,
           "total": 8
         }
@@ -209,7 +222,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.48,
+    "vix": 16.2,
     "pc_ratio": 0.99,
     "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
@@ -219,7 +232,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 12.58,
-    "spread": 15.37,
+    "spread": -7.48,
     "position": 50
   },
   "action": {
