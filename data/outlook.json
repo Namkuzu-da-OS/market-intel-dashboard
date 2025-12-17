@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-17T16:02:43.947Z",
+  "timestamp": "2025-12-17T17:04:15.925Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 69,
+    "confidence_pct": 67,
     "sources": {
       "social": {
-        "bullish": 214,
-        "bearish": 85,
-        "neutral": 258,
-        "total": 557,
+        "bullish": 219,
+        "bearish": 95,
+        "neutral": 265,
+        "total": 579,
         "pct": 38
       },
       "news": {
-        "bullish": 58,
-        "bearish": 32,
+        "bullish": 56,
+        "bearish": 35,
         "neutral": 23,
-        "total": 113,
-        "pct": 51
+        "total": 114,
+        "pct": 49
       },
       "video": {
         "bullish": 6,
@@ -36,51 +36,64 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** NEUTRAL with MEDIUM conviction - bullish momentum from Fed accommodation and AI commercialization faces near-term technical fragility from support breaks and guidance deterioration across software/retail sectors.\n\n📈 **Themes:** (1) Fed policy accommodation driving duration/growth asset support, (2) AI commercialization validation (Tesla autonomous, institutional crypto infrastructure) versus infrastructure financing headwinds (data center funding withdrawal), (3) Sector rotation from mega-cap tech into SaaS/software meeting earnings deterioration resistance.\n\n🎯 **Levels:** SPY ($679.46): Call Wall $681 (17k OI, 0.2% away - active resistance), Put Wall $677 (11k OI, 0.4% away - active support). Max Pain $670. Near resistance: $680 (16k OI), $685 (16k OI). Near support: $678 (10k OI), $675 (10k OI). QQQ ($610.54): Call Wall $615 (13k OI), Put Wall $610 (9k OI, already tested). Max Pain $625. Near resistance: $613 (11k OI), $614 (8k OI). Near support: $609 (8k OI), $595 (7k OI). /ES: 6847 support per Twitter. Bitcoin: 86000-86600 support range per Twitter. SNOW: 222.60 technical level with 225 resistance per Twitter.",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM-HIGH conviction. Sources converge on technical deterioration and capital outflows overriding bullish narratives, though Fed policy and AI themes provide structural support for swing timeframes.\n\n📈 **Themes:** (1) Technical breakdown momentum - Bitcoin below 50-week MA, QQQ losing gap support, sustained crypto ETF outflows. (2) Earnings guidance pressure vs. AI productivity narratives - Enterprise software and fintech cuts colliding with long-term efficiency tailwinds. (3) Labor market inflection point - Employment data driving Fed dovish pivot, but disagreement on whether slowdown remains manageable or accelerates into deleveraging.\n\n🎯 **Levels:** SPY ($674.45): Call Wall $681 (17k OI, active resistance), Put Wall $670 (9k OI, active support). Max Pain $670. Near resistance: $680 (16k OI), $685 (16k OI). Near support: $674 (8k OI), $665 (7k OI). QQQ ($604.32): Call Wall $615 (13k OI, active resistance), Put Wall $595 (7k OI, active support). Max Pain $625. Near resistance: $613 (11k OI), $610 (10k OI). Near support: $600 (6k OI), $603 (5k OI). Twitter mentions: QQQ 610 gap-up support failure, NVDA weakness below $174, Oracle below $181.50. Bitcoin at $10K target level per McGlone warning.",
     "key_tickers": [
-      "QQQ",
       "SPY",
+      "QQQ",
       "NVDA",
-      "SNOW",
-      "BTC"
+      "BTC",
+      "TSLA"
     ],
     "key_themes": [
-      "Fed policy accommodation and rate cut expectations",
-      "AI commercialization validation versus infrastructure financing constraints",
-      "Sector rotation from mega-cap to SaaS amid earnings guidance deterioration",
-      "Labor market deterioration as cycle inflection risk",
-      "Institutional crypto infrastructure legitimacy"
+      "Technical breakdown momentum and crypto ETF outflows",
+      "Enterprise earnings guidance cuts vs AI productivity narratives",
+      "Labor market deterioration driving Fed dovish pivot",
+      "Dealer gamma resistance creating bearish positioning",
+      "Regulatory tightening pressures on tech and fintech"
     ],
     "risk_factors": [
-      "QQQ technical breakdown below 610 support signaling tech weakness",
-      "Data center infrastructure financing withdrawal (Blue Owl $10B exit) cascading into AI capex constraints",
-      "Unemployment acceleration beyond 4.6% triggering abrupt repricing similar to 2021 cycle turn",
-      "Broadening earnings guidance cuts across software/retail/fintech validating demand weakness",
-      "BlackRock crypto deposits potentially signaling liquidation rather than accumulation"
+      "Accelerating unemployment above 5% triggering deleveraging before Fed cuts provide support",
+      "Sustained crypto ETF outflows signaling broader risk-off capital rotation",
+      "Enterprise software earnings validating sector-wide demand weakness beyond company-specific issues",
+      "Geopolitical escalation (Taiwan, Russia-Ukraine) amplifying dollar strength and risk-off sentiment",
+      "Dealer gamma resistance at SPY $681 and QQQ $615 capping upside momentum"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $677 Put Wall support (11k OI active), $681 Call Wall resistance (17k OI active). Watch $678-$680 chop zone. QQQ: $610 Put Wall critical (already tested), $613-$615 resistance cluster",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: Support $674 (8k OI active), $670 put wall. Resistance $680 (16k OI), $681 call wall. QQQ: Support $603 (5k OI active), $600 (6k OI). Resistance $610 (10k OI), $613 (11k OI). Downside bias into max pain zones.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $675 support (10k OI), $670 Max Pain gravitational pull. Resistance at $685 (16k OI). QQQ: $595 dormant Put Wall (7k OI), $625 Max Pain upside target. Bitcoin: 86000-86600 range defines directional break",
+    "swing_levels": "SPY: Key support $670 max pain (9k OI put wall), breakdown target $665 (7k OI). Resistance $681 call wall (17k OI), $685 (16k OI). QQQ: Critical support $600 (6k OI), breakdown opens $595 put wall (7k OI). Resistance $610 gap level, $613 (11k OI), $615 call wall (13k OI). NVDA: $155 Jan put strike with unusual activity per Twitter. Watch for stabilization in crypto ETF flows as reversal signal.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 207694
+    "generation_time_ms": 211961
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 10,
+        "mentions": 12,
         "sentiment_score": -0.076,
         "sentiment_label": "Bearish",
         "sentiment_pct": 8,
         "counts": {
           "bullish": 3,
           "bearish": 5,
+          "neutral": 4,
+          "total": 12
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 4,
+        "sentiment_score": 0.033,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 3,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
           "neutral": 2,
-          "total": 10
+          "total": 4
         }
       },
       {
@@ -95,33 +108,33 @@
           "neutral": 0,
           "total": 3
         }
-      },
-      {
-        "ticker": "QQQ",
-        "mentions": 3,
-        "sentiment_score": 0.043,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 4,
-        "counts": {
-          "bullish": 1,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 3
-        }
       }
     ],
     "crypto": [
       {
         "ticker": "BTC",
         "mentions": 8,
-        "sentiment_score": 0.2,
+        "sentiment_score": 0.119,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 20,
+        "sentiment_pct": 12,
         "counts": {
           "bullish": 3,
-          "bearish": 1,
-          "neutral": 4,
+          "bearish": 2,
+          "neutral": 3,
           "total": 8
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 3,
+        "sentiment_score": -0.217,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 22,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 3
         }
       },
       {
@@ -154,28 +167,28 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 48,
-        "sentiment_score": 0.582,
+        "mentions": 47,
+        "sentiment_score": 0.58,
         "sentiment_label": "Bullish",
         "sentiment_pct": 58,
         "counts": {
-          "bullish": 39,
+          "bullish": 38,
           "bearish": 2,
           "neutral": 7,
-          "total": 48
+          "total": 47
         }
       },
       {
         "ticker": "NVDA",
-        "mentions": 10,
-        "sentiment_score": 0.268,
+        "mentions": 12,
+        "sentiment_score": 0.182,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
+        "sentiment_pct": 18,
         "counts": {
           "bullish": 6,
-          "bearish": 3,
-          "neutral": 1,
-          "total": 10
+          "bearish": 4,
+          "neutral": 2,
+          "total": 12
         }
       },
       {
@@ -192,20 +205,20 @@
         }
       },
       {
-        "ticker": "HOOD",
-        "mentions": 8,
-        "sentiment_score": 0.359,
+        "ticker": "GOOGL",
+        "mentions": 9,
+        "sentiment_score": 0.642,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 64,
         "counts": {
-          "bullish": 4,
+          "bullish": 8,
           "bearish": 0,
-          "neutral": 4,
-          "total": 8
+          "neutral": 1,
+          "total": 9
         }
       },
       {
-        "ticker": "NFLX",
+        "ticker": "HOOD",
         "mentions": 8,
         "sentiment_score": 0.359,
         "sentiment_label": "Bullish",
@@ -222,8 +235,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.46,
-    "pc_ratio": 1.14,
+    "vix": 17.38,
+    "pc_ratio": 1.13,
     "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -231,8 +244,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 12.34,
-    "spread": 7.46,
+    "hv": 12.52,
+    "spread": 7.65,
     "position": 50
   },
   "action": {
