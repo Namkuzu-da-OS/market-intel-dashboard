@@ -1,85 +1,85 @@
 {
-  "timestamp": "2025-12-23T16:14:13.847Z",
+  "timestamp": "2025-12-23T17:32:27.944Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 72,
     "sources": {
       "social": {
-        "bullish": 96,
-        "bearish": 37,
-        "neutral": 83,
-        "total": 216,
-        "pct": 44
+        "bullish": 85,
+        "bearish": 32,
+        "neutral": 88,
+        "total": 205,
+        "pct": 41
       },
       "news": {
-        "bullish": 39,
+        "bullish": 37,
         "bearish": 19,
-        "neutral": 15,
-        "total": 73,
-        "pct": 53
+        "neutral": 16,
+        "total": 72,
+        "pct": 51
       },
       "video": {
-        "bullish": 13,
+        "bullish": 10,
         "bearish": 1,
         "neutral": 2,
-        "total": 16,
-        "pct": 81
+        "total": 13,
+        "pct": 77
       },
       "chat": {
-        "bullish": 3,
-        "bearish": 2,
+        "bullish": 4,
+        "bearish": 0,
         "neutral": 1,
-        "total": 6,
-        "pct": 50
+        "total": 5,
+        "pct": 80
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with bullish technical structure but bearish fundamental undercurrents - conviction: MEDIUM. Markets hover near resistance with options positioning favoring near-term support, but consumer weakness and guidance cuts create fragile foundation.\n\n📈 **Themes:** (1) Structural AI productivity tailwinds and institutional DeFi capital rotation supporting tech/growth sectors, (2) Consumer confidence deterioration and enterprise software guidance cuts signaling demand weakness, (3) Fed policy normalization expectations versus regulatory tightening creating cross-currents.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI, active). Near support: $585 (137k OI). /ES: Twitter sources cite continuation targets with support levels holding per trader commentary.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - All sources show net bullish positioning (73-100% bullish across channels), supported by strong technicals near all-time highs, but tempered by fundamental cracks in consumer confidence and earnings guidance deterioration.\n\n📈 **Themes:** (1) Technical momentum vs fundamental divergence - markets holding all-time highs despite consumer confidence collapse and guidance cuts across software/retail sectors; (2) Institutional rotation underway - equity liquidations ($298M/24hrs) and crypto outflows ($952M/week) suggesting positioning shifts; (3) Policy uncertainty creating volatility - regulatory tightening in financials and geopolitical tensions adding tail risks.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - active). /ES: 6,900 resistance zone per Twitter (all-time high), testing breakdown patterns.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "ES",
       "LMNR",
-      "NVDA",
-      "BTC"
+      "VIX"
     ],
     "key_themes": [
-      "AI productivity and semiconductor tailwinds",
-      "Consumer confidence deterioration and retail weakness",
-      "Fed policy normalization and rate cut expectations",
-      "Institutional crypto/DeFi capital rotation",
-      "Year-end positioning and options expiration gravity"
+      "Technical momentum near all-time highs",
+      "Consumer confidence deterioration vs market strength divergence",
+      "Institutional capital rotation and liquidation flows",
+      "Earnings guidance deterioration in software/retail/financials",
+      "Policy uncertainty and regulatory tightening"
     ],
     "risk_factors": [
-      "Consumer sentiment collapse (116.8 present situation index, first negative since September 2024)",
-      "Enterprise software guidance cuts (Fiserv, Workday) signaling demand weakness",
-      "Crypto systematic outflows ($298M liquidations, $952M ETF redemptions)",
-      "Fed regulatory tightening conflicting with rate cut expectations",
-      "Fragile technical foundation vulnerable to earnings disappointments or policy uncertainty"
+      "Consumer confidence collapsed to 89.1 signaling fundamental weakness",
+      "Regulatory enforcement intensifying across financials and large banks",
+      "Geopolitical escalation risks (Taiwan tensions, Ukraine developments)",
+      "Private services payroll stalling indicating labor market deterioration",
+      "Equity and crypto institutional outflows suggesting capitulation or repositioning"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $700 call wall resistance (146k OI active hedging), support at max pain $684. QQQ at max pain $619 with $620 immediate resistance (33k OI active), $640 call wall above",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Resistance $700-$730 zone with heavy call walls. Support cascade at $650 (38k OI), $645 (125k OI), then critical $640 put wall (153k OI). QQQ: $640 call wall caps upside, $590 put wall major support (164k OI)",
+    "intraday_levels": "SPY: $700 active call wall resistance (dealers selling into strength), $684 max pain gravitational pull. QQQ: $620 immediate resistance (33k OI active), $619 max pain pivot. Watch /ES 6,900 area for continuation vs breakdown pattern per Twitter commentary.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: $700 call wall major resistance target (146k OI), $640 put wall support if selling accelerates (153k OI). QQQ: $640 upside target (35k OI call wall), $590 downside protection (164k OI put wall). /ES: 6,900 breakout level per Twitter for continuation move.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 191686
+    "generation_time_ms": 188472
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
         "mentions": 5,
-        "sentiment_score": 0.274,
+        "sentiment_score": 0.13,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
+        "sentiment_pct": 13,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 1,
-          "neutral": 1,
+          "neutral": 2,
           "total": 5
         }
       },
@@ -97,19 +97,6 @@
         }
       },
       {
-        "ticker": "IWM",
-        "mentions": 2,
-        "sentiment_score": 0.435,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 44,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
         "ticker": "QQQ",
         "mentions": 2,
         "sentiment_score": -0.25,
@@ -123,15 +110,28 @@
         }
       },
       {
-        "ticker": "VOO",
+        "ticker": "GLD",
         "mentions": 1,
-        "sentiment_score": 0.82,
+        "sentiment_score": 0.15,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
+        "sentiment_pct": 15,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 0,
+          "neutral": 1,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "IWM",
+        "mentions": 1,
+        "sentiment_score": 0.15,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 15,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 1,
           "total": 1
         }
       }
@@ -139,45 +139,32 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 3,
-        "sentiment_score": 0.263,
+        "mentions": 2,
+        "sentiment_score": 0.435,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 26,
-        "counts": {
-          "bullish": 2,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "CIFR",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
+        "sentiment_pct": 44,
         "counts": {
           "bullish": 1,
           "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "IREN",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
+          "neutral": 1,
+          "total": 2
         }
       }
     ],
     "other": [
+      {
+        "ticker": "TSLA",
+        "mentions": 7,
+        "sentiment_score": 0.26,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 26,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 5,
+          "total": 7
+        }
+      },
       {
         "ticker": "NVO",
         "mentions": 6,
@@ -192,55 +179,42 @@
         }
       },
       {
-        "ticker": "TSLA",
+        "ticker": "NVDA",
         "mentions": 6,
         "sentiment_score": 0.387,
         "sentiment_label": "Bullish",
         "sentiment_pct": 39,
         "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 3,
+          "bullish": 4,
+          "bearish": 1,
+          "neutral": 1,
           "total": 6
         }
       },
       {
-        "ticker": "GOOGL",
-        "mentions": 5,
-        "sentiment_score": 0.578,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 58,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 5
-        }
-      },
-      {
-        "ticker": "FJET",
+        "ticker": "AMZN",
         "mentions": 4,
-        "sentiment_score": 0.547,
+        "sentiment_score": 0.222,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "RKLB",
-        "mentions": 4,
-        "sentiment_score": 0.385,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
+        "sentiment_pct": 22,
         "counts": {
           "bullish": 2,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "ONDS",
+        "mentions": 3,
+        "sentiment_score": 0.323,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 32,
+        "counts": {
+          "bullish": 1,
           "bearish": 0,
           "neutral": 2,
-          "total": 4
+          "total": 3
         }
       }
     ]
@@ -250,7 +224,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 44,
+    "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
