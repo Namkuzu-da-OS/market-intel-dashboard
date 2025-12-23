@@ -1,86 +1,86 @@
 {
-  "timestamp": "2025-12-23T17:32:27.944Z",
+  "timestamp": "2025-12-23T18:38:46.554Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 72,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 85,
-        "bearish": 32,
-        "neutral": 88,
-        "total": 205,
+        "bullish": 102,
+        "bearish": 39,
+        "neutral": 107,
+        "total": 248,
         "pct": 41
       },
       "news": {
-        "bullish": 37,
+        "bullish": 39,
         "bearish": 19,
-        "neutral": 16,
-        "total": 72,
-        "pct": 51
+        "neutral": 17,
+        "total": 75,
+        "pct": 52
       },
       "video": {
         "bullish": 10,
         "bearish": 1,
-        "neutral": 2,
-        "total": 13,
-        "pct": 77
+        "neutral": 3,
+        "total": 14,
+        "pct": 71
       },
       "chat": {
-        "bullish": 4,
+        "bullish": 5,
         "bearish": 0,
         "neutral": 1,
-        "total": 5,
-        "pct": 80
+        "total": 6,
+        "pct": 83
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - All sources show net bullish positioning (73-100% bullish across channels), supported by strong technicals near all-time highs, but tempered by fundamental cracks in consumer confidence and earnings guidance deterioration.\n\n📈 **Themes:** (1) Technical momentum vs fundamental divergence - markets holding all-time highs despite consumer confidence collapse and guidance cuts across software/retail sectors; (2) Institutional rotation underway - equity liquidations ($298M/24hrs) and crypto outflows ($952M/week) suggesting positioning shifts; (3) Policy uncertainty creating volatility - regulatory tightening in financials and geopolitical tensions adding tail risks.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - active). /ES: 6,900 resistance zone per Twitter (all-time high), testing breakdown patterns.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish technical structure challenged by fundamental deterioration and policy uncertainty.\n\n📈 **Themes:** 1) Technical momentum vs. deteriorating consumer confidence - ES futures holding key support despite economic weakness, 2) AI and tech sector dominance driving gains while enterprise software shows guidance weakness, 3) Policy uncertainty around rate policy independence and tariff implementation creating volatility.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI). /ES futures: 6926 support, 6948 resistance per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "ES",
-      "LMNR",
-      "VIX"
+      "ES_F",
+      "MSTR",
+      "LMNR"
     ],
     "key_themes": [
-      "Technical momentum near all-time highs",
-      "Consumer confidence deterioration vs market strength divergence",
-      "Institutional capital rotation and liquidation flows",
-      "Earnings guidance deterioration in software/retail/financials",
-      "Policy uncertainty and regulatory tightening"
+      "Technical momentum vs fundamental deterioration",
+      "AI/tech sector dominance amid software weakness",
+      "Policy uncertainty - rate policy and tariffs",
+      "Consumer confidence decline",
+      "Options dealer positioning creating range"
     ],
     "risk_factors": [
-      "Consumer confidence collapsed to 89.1 signaling fundamental weakness",
-      "Regulatory enforcement intensifying across financials and large banks",
-      "Geopolitical escalation risks (Taiwan tensions, Ukraine developments)",
-      "Private services payroll stalling indicating labor market deterioration",
-      "Equity and crypto institutional outflows suggesting capitulation or repositioning"
+      "Consumer confidence sharp deterioration (89.1 vs 91.0 expected)",
+      "Enterprise software guidance cuts signaling spending weakness",
+      "Crypto outflows $952M ending 3-week streak",
+      "Fed policy independence concerns",
+      "Private payroll growth -0.1% annualized over 6 months"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $700 active call wall resistance (dealers selling into strength), $684 max pain gravitational pull. QQQ: $620 immediate resistance (33k OI active), $619 max pain pivot. Watch /ES 6,900 area for continuation vs breakdown pattern per Twitter commentary.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $700 call wall major resistance target (146k OI), $640 put wall support if selling accelerates (153k OI). QQQ: $640 upside target (35k OI call wall), $590 downside protection (164k OI put wall). /ES: 6,900 breakout level per Twitter for continuation move.",
+    "intraday_levels": "SPY: $684 max pain gravity, $700 call wall resistance. QQQ: $619-620 resistance cluster, $590 put wall support. /ES: 6926 support, 6948 resistance per Twitter",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: $700 major call wall resistance, $650-640 support zone if breakdown. QQQ: $640 call wall caps upside, $590 put wall critical support. Watch /ES 6926 hold",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 188472
+    "generation_time_ms": 188894
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 5,
-        "sentiment_score": 0.13,
+        "mentions": 7,
+        "sentiment_score": 0.21,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 13,
+        "sentiment_pct": 21,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 1,
-          "neutral": 2,
-          "total": 5
+          "neutral": 3,
+          "total": 7
         }
       },
       {
@@ -108,32 +108,6 @@
           "neutral": 1,
           "total": 2
         }
-      },
-      {
-        "ticker": "GLD",
-        "mentions": 1,
-        "sentiment_score": 0.15,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 15,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "IWM",
-        "mentions": 1,
-        "sentiment_score": 0.15,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 15,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
       }
     ],
     "crypto": [
@@ -152,6 +126,19 @@
       }
     ],
     "other": [
+      {
+        "ticker": "NVDA",
+        "mentions": 8,
+        "sentiment_score": 0.47,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 47,
+        "counts": {
+          "bullish": 6,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 8
+        }
+      },
       {
         "ticker": "TSLA",
         "mentions": 7,
@@ -179,42 +166,29 @@
         }
       },
       {
-        "ticker": "NVDA",
+        "ticker": "AMZN",
         "mentions": 6,
-        "sentiment_score": 0.387,
+        "sentiment_score": 0.268,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
+        "sentiment_pct": 27,
         "counts": {
-          "bullish": 4,
+          "bullish": 3,
           "bearish": 1,
-          "neutral": 1,
+          "neutral": 2,
           "total": 6
         }
       },
       {
-        "ticker": "AMZN",
+        "ticker": "SPX",
         "mentions": 4,
-        "sentiment_score": 0.222,
+        "sentiment_score": 0.075,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 22,
+        "sentiment_pct": 8,
         "counts": {
-          "bullish": 2,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "ONDS",
-        "mentions": 3,
-        "sentiment_score": 0.323,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
-        "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 2,
-          "total": 3
+          "neutral": 4,
+          "total": 4
         }
       }
     ]
