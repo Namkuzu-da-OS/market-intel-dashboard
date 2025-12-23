@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-23T14:56:04.941Z",
+  "timestamp": "2025-12-23T15:34:03.070Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 71,
     "sources": {
       "social": {
-        "bullish": 82,
-        "bearish": 30,
-        "neutral": 68,
-        "total": 180,
-        "pct": 46
+        "bullish": 86,
+        "bearish": 35,
+        "neutral": 78,
+        "total": 199,
+        "pct": 43
       },
       "news": {
-        "bullish": 36,
-        "bearish": 16,
-        "neutral": 13,
-        "total": 65,
+        "bullish": 40,
+        "bearish": 19,
+        "neutral": 14,
+        "total": 73,
         "pct": 55
       },
       "video": {
@@ -29,57 +29,70 @@
       "chat": {
         "bullish": 2,
         "bearish": 3,
-        "neutral": 0,
-        "total": 5,
-        "pct": 40
+        "neutral": 1,
+        "total": 6,
+        "pct": 33
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish sector rotation into AI/infrastructure offset by crypto cycle deterioration and regulatory headwinds across consumer discretionary and fintech.\n\n📈 **Themes:** (1) AI infrastructure and semiconductor momentum supported by tariff relief narratives through 2027, (2) defensive rotation accelerating as corporate guidance cuts spread across software and consumer sectors, (3) crypto cycle breakdown independent of broader equity strength, creating bifurcated risk environment.\n\n🎯 **Levels:** SPY ($684.83): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Active support: $660 (56k OI). QQQ ($619.21): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI). /ES levels per Twitter: traders monitoring 6847 support zone.",
+    "narrative": "📊 **Consensus:** BULLISH with MEDIUM conviction - majority of sources (71% X, 68% RSS, 92% YouTube) support upside momentum, though professional trader skepticism and consumer confidence deterioration create cautionary undertones.\n\n📈 **Themes:** (1) AI infrastructure momentum and semiconductor strength driving tech leadership following tariff clarity through mid-2027, (2) Fed accommodation and rate policy tailwinds supporting equity valuations in defensive sectors, (3) Policy uncertainty and regulatory shifts creating sector rotation between growth and defensive positioning, with enterprise software weakness offsetting AI strength.\n\n🎯 **Levels:** SPY ($684.52): Call Wall $700 (146k OI, 2.3% away - active resistance), Put Wall $640 (153k OI, 6.5% away - dormant support). Max Pain $684. Near active support: $660 (56k OI). QQQ ($618.19): Call Wall $640 (35k OI, 3.5% away - active resistance), Put Wall $590 (164k OI, 4.6% away - active support). Max Pain $619. Near active resistance: $620 (33k OI). /ES futures: 6847 support mentioned per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
-      "PLTR",
-      "NVDA"
+      "SMH",
+      "ASTS",
+      "BTC"
     ],
     "key_themes": [
-      "AI and semiconductor momentum",
-      "Defensive sector rotation amid guidance cuts",
-      "Crypto cycle deterioration",
-      "Tariff policy uncertainty",
-      "Regulatory pressure on buybacks and capital requirements"
+      "AI infrastructure and semiconductor momentum",
+      "Fed easing and rate policy accommodation",
+      "Policy uncertainty and regulatory shifts",
+      "Consumer confidence deterioration versus GDP strength divergence",
+      "Sector rotation from cyclicals to defensives"
     ],
     "risk_factors": [
-      "Corporate earnings guidance deterioration spreading beyond initial sectors",
-      "Bitcoin 10-month moving average breakdown signaling crypto distribution phase",
-      "June 2027 tariff cliff creating binary policy reversal risk",
-      "Buyback restrictions threatening mega-cap tech valuations",
-      "Consumer spending weakness in discretionary sectors"
+      "Consumer confidence collapse contradicting economic strength narrative",
+      "Enterprise software earnings disappointments signaling demand weakness",
+      "Geopolitical tensions (Taiwan-Beijing, Ukraine) triggering risk-off",
+      "Bitcoin momentum divergence suggesting false strength or rotation risk",
+      "Policy uncertainty (buyback threats, banking regulatory tightening) creating volatility"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $660 active support (56k OI) and $700 call wall resistance (146k OI). QQQ: $620 immediate resistance (33k OI), $590 put wall support if weakness accelerates. Max Pain gravity near current price suggests range-bound action.",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: $684 Max Pain gravitational pull, $700 call wall resistance (active hedging), $660 support. QQQ: $619-620 resistance cluster, $590 put wall support (active)",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside target $700 call wall (146k OI major resistance), downside protection $640 put wall (153k OI). QQQ: $640 call wall upside target (35k OI), $590 put wall key support (164k OI). Favor bullish structures above Max Pain levels with selective sector rotation.",
+    "swing_levels": "SPY: $700 major resistance (146k OI call wall), $640 major support (153k OI put wall), watch $730 dormant resistance if breakout occurs. QQQ: $640 major resistance (35k OI), $590 major support (164k OI)",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 193445
+    "generation_time_ms": 193457
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 3,
-        "sentiment_score": 0.457,
+        "mentions": 4,
+        "sentiment_score": 0.18,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 46,
+        "sentiment_pct": 18,
         "counts": {
           "bullish": 2,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 1,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "SLV",
+        "mentions": 3,
+        "sentiment_score": 0.05,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 5,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 3,
           "total": 3
         }
       },
@@ -92,6 +105,19 @@
         "counts": {
           "bullish": 1,
           "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 2,
+        "sentiment_score": -0.25,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 25,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
           "neutral": 1,
           "total": 2
         }
@@ -235,9 +261,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.41,
+    "vix": 14.19,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 46,
+    "sentiment_bullish_pct": 43,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -245,7 +271,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 9.03,
-    "spread": 0.41,
+    "spread": 4.71,
     "position": 50
   },
   "action": {
