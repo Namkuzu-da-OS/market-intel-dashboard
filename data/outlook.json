@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-23T23:10:11.752Z",
+  "timestamp": "2025-12-23T23:49:36.380Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 126,
-        "bearish": 38,
-        "neutral": 129,
-        "total": 293,
-        "pct": 43
+        "bullish": 129,
+        "bearish": 41,
+        "neutral": 124,
+        "total": 294,
+        "pct": 44
       },
       "news": {
         "bullish": 36,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates across sources (77% overall) with medium-high conviction, though structural vulnerabilities create elevated downside risk if catalysts break current complacency.\n\n📈 **Themes:** (1) Policy sequencing uncertainty - fiscal austerity timing vs. stimulus creating near-term volatility, (2) Labor market deterioration vs. institutional capital flow resilience - conflicting growth signals, (3) Valuation extremes with VIX at 52-week lows (13.77) - minimal margin for error amid record highs.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - major support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - active). /ES: 6847 support per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction (79% aggregate bullish sentiment). Market exhibits strong near-term momentum supported by seasonal flows and technical strength, but structural fiscal concerns and elevated complacency (VIX at 52-week lows) create asymmetric downside risk beyond the immediate window.\n\n📈 **Themes:** (1) Santa Rally continuation momentum vs. fiscal sustainability concerns ($2.2T projected interest costs, $2T annual borrowing expectations creating medium-term headwinds), (2) AI productivity/institutional adoption tailwinds offsetting near-term sector-specific earnings headwinds in software and retail, (3) Fed rate policy expectations as primary catalyst uncertainty with FOMC divergence on timing creating bifurcated positioning between rate-sensitive growth and defensive rotation.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). VIX at 13.77 (52-week lows per Twitter - key complacency watch point).",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
-      "TSLA",
-      "BTC"
+      "VIX",
+      "AI sector proxies",
+      "DeFi/blockchain infrastructure"
     ],
     "key_themes": [
-      "Fed policy accommodation and rate cut expectations",
-      "AI sector momentum and productivity tailwinds",
-      "Labor market structural shifts and employment deterioration",
-      "Valuation extremes with record complacency",
-      "Institutional capital migration and blockchain infrastructure"
+      "Santa Rally seasonal momentum",
+      "Fed rate cut timing uncertainty",
+      "AI productivity adoption vs. earnings headwinds",
+      "Fiscal sustainability concerns",
+      "Consumer affordability squeeze vs. institutional capital rotation"
     ],
     "risk_factors": [
-      "VIX at 52-week lows (13.77) indicating extreme complacency with minimal downside protection",
-      "Private sector payroll deterioration and consumer credit delinquency trends",
-      "Policy sequencing risk - fiscal austerity before stimulus creating contractionary cycle",
-      "Earnings disappointments in fintech and enterprise software validating demand deceleration",
-      "Regulatory headwinds in banking sector and geopolitical escalation (Taiwan, Russia-Ukraine)"
+      "VIX at 52-week lows signals extreme complacency - asymmetric downside risk",
+      "Unsustainable fiscal trajectory ($2.2T interest costs, $2T annual borrowing)",
+      "Private services employment deterioration (-0.1% annualized over 6 months)",
+      "Sector-specific earnings guidance cuts (software, retail, fintech)",
+      "Fed policy timing divergence creating whipsaw potential"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $686 near Max Pain $684, resistance at $700 Call Wall. Watch for breakdown below $684 or breakout above $690 for directional clarity",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: Testing $700 Call Wall resistance (146k OI, 2.0% away - active dealer hedging). Max Pain gravitational pull at $684. QQQ: Immediate resistance at $620 (33k OI - ACTIVE), with Call Wall at $640 (35k OI). VIX 13.77 complacency level as reversal watch point.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Primary support $650-$645 zone (163k combined OI), resistance $700 Call Wall. QQQ: Support $590 Put Wall (164k OI), resistance $640 Call Wall. Upside targets $730-$750 SPY if $700 breaks",
-    "source_alignment": "MIXED"
+    "swing_levels": "SPY: Upside capped by $700 Call Wall (146k OI) near-term, with dormant resistance at $730 (47k OI) and $750 (55k OI) if momentum extends. Downside support sequence: $650 (38k OI), $645 (125k OI), then major Put Wall at $640 (153k OI). QQQ: $640 Call Wall (35k OI) primary resistance, $590 Put Wall (164k OI) major support.",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 182829
+    "generation_time_ms": 191501
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "QQQ",
-        "mentions": 5,
-        "sentiment_score": 0.314,
+        "mentions": 6,
+        "sentiment_score": 0.37,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 31,
+        "sentiment_pct": 37,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 1,
           "neutral": 1,
-          "total": 5
+          "total": 6
         }
       },
       {
@@ -218,16 +218,16 @@
         }
       },
       {
-        "ticker": "NVO",
-        "mentions": 5,
-        "sentiment_score": 0.33,
+        "ticker": "SPX",
+        "mentions": 4,
+        "sentiment_score": 0.075,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 8,
         "counts": {
-          "bullish": 2,
+          "bullish": 0,
           "bearish": 0,
-          "neutral": 3,
-          "total": 5
+          "neutral": 4,
+          "total": 4
         }
       }
     ]
@@ -237,7 +237,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 43,
+    "sentiment_bullish_pct": 44,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
