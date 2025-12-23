@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-23T18:38:46.554Z",
+  "timestamp": "2025-12-23T19:22:59.526Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 102,
-        "bearish": 39,
-        "neutral": 107,
-        "total": 248,
+        "bullish": 111,
+        "bearish": 41,
+        "neutral": 121,
+        "total": 273,
         "pct": 41
       },
       "news": {
-        "bullish": 39,
-        "bearish": 19,
-        "neutral": 17,
-        "total": 75,
-        "pct": 52
+        "bullish": 41,
+        "bearish": 20,
+        "neutral": 21,
+        "total": 82,
+        "pct": 50
       },
       "video": {
         "bullish": 10,
@@ -27,46 +27,46 @@
         "pct": 71
       },
       "chat": {
-        "bullish": 5,
+        "bullish": 6,
         "bearish": 0,
         "neutral": 1,
-        "total": 6,
-        "pct": 83
+        "total": 7,
+        "pct": 86
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish technical structure challenged by fundamental deterioration and policy uncertainty.\n\n📈 **Themes:** 1) Technical momentum vs. deteriorating consumer confidence - ES futures holding key support despite economic weakness, 2) AI and tech sector dominance driving gains while enterprise software shows guidance weakness, 3) Policy uncertainty around rate policy independence and tariff implementation creating volatility.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI). /ES futures: 6926 support, 6948 resistance per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with bullish technical structure overshadowed by fundamental deterioration - conviction MEDIUM. Twitter, YouTube, and RSS show 73-91% bullish positioning, but underlying narratives reveal significant consumer weakness and policy uncertainty creating fragile rally conditions.\n\n📈 **Themes:** (1) Consumer confidence deterioration (89.1 vs 91.0 est, Present Situation 126.9→116.8) challenging equity valuations despite technical strength; (2) Fed policy credibility concerns creating bond market uncertainty; (3) Precious metals breakouts to ATHs signaling potential defensive rotation rather than inflation-driven strength; (4) Software/retail guidance cuts indicating demand deterioration across cyclical sectors.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - active). /ES: 6847 support per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "ES_F",
       "MSTR",
-      "LMNR"
+      "GLD",
+      "XLF"
     ],
     "key_themes": [
-      "Technical momentum vs fundamental deterioration",
-      "AI/tech sector dominance amid software weakness",
-      "Policy uncertainty - rate policy and tariffs",
-      "Consumer confidence decline",
-      "Options dealer positioning creating range"
+      "Consumer confidence deterioration",
+      "Fed policy credibility risk",
+      "Precious metals defensive rotation",
+      "Software/retail guidance cuts",
+      "Options gamma resistance at round numbers"
     ],
     "risk_factors": [
-      "Consumer confidence sharp deterioration (89.1 vs 91.0 expected)",
-      "Enterprise software guidance cuts signaling spending weakness",
-      "Crypto outflows $952M ending 3-week streak",
-      "Fed policy independence concerns",
-      "Private payroll growth -0.1% annualized over 6 months"
+      "Consumer spending collapse (Present Situation 126.9→116.8)",
+      "Fed independence erosion creating bond market instability",
+      "Geopolitical tensions (Taiwan, Russia-Ukraine) as tail-risk catalysts",
+      "Crowded momentum positions vulnerable to rotation (QQQ showing momentum collapse signals)",
+      "Treasury yields elevated despite rate-cut expectations pressuring valuations"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $684 max pain gravity, $700 call wall resistance. QQQ: $619-620 resistance cluster, $590 put wall support. /ES: 6926 support, 6948 resistance per Twitter",
+    "intraday_levels": "SPY: $700 call wall resistance (active hedging), max pain gravitational pull at $684. QQQ: $620 resistance (active, 33k OI), $590 put wall support (active, 164k OI). Watch for consolidation within these ranges given VIX 13.77 suggesting low volatility environment.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $700 major call wall resistance, $650-640 support zone if breakdown. QQQ: $640 call wall caps upside, $590 put wall critical support. Watch /ES 6926 hold",
+    "swing_levels": "SPY: $700 major resistance (146k OI), breakdown below $685 targets $650-$645 support zone. QQQ: $640 upside cap (35k OI), downside risk to $590 put wall (164k OI). Precious metals strength and consumer data deterioration suggest defensive rotation favors 3-5 day pullback in momentum names.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 188894
+    "generation_time_ms": 192343
   },
   "trending": {
     "macro": [
@@ -140,6 +140,19 @@
         }
       },
       {
+        "ticker": "AMZN",
+        "mentions": 7,
+        "sentiment_score": 0.33,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 4,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 7
+        }
+      },
+      {
         "ticker": "TSLA",
         "mentions": 7,
         "sentiment_score": 0.26,
@@ -162,19 +175,6 @@
           "bullish": 3,
           "bearish": 0,
           "neutral": 3,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "AMZN",
-        "mentions": 6,
-        "sentiment_score": 0.268,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
-        "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 2,
           "total": 6
         }
       },
