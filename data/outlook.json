@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-24T03:59:26.828Z",
+  "timestamp": "2025-12-24T04:34:49.951Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 75,
     "sources": {
       "social": {
-        "bullish": 158,
+        "bullish": 160,
         "bearish": 54,
-        "neutral": 157,
-        "total": 369,
-        "pct": 43
+        "neutral": 164,
+        "total": 378,
+        "pct": 42
       },
       "news": {
         "bullish": 41,
-        "bearish": 16,
+        "bearish": 17,
         "neutral": 24,
-        "total": 81,
-        "pct": 51
+        "total": 82,
+        "pct": 50
       },
       "video": {
         "bullish": 8,
@@ -36,37 +36,39 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish surface momentum (75%+ sentiment across sources) masks bearish structural deterioration - conflicting signals suggest medium conviction chop with downside bias as insider selling and macro weakness contradict rate-cut optimism.\n\n📈 **Themes:** (1) AI infrastructure resilience vs enterprise software guidance cuts creating sector bifurcation, (2) Safe-haven flows into gold/commodities signaling hidden risk anxiety despite equity strength, (3) Regulatory tightening and policy uncertainty creating defensive rotation pressure.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI, active). /ES: Gold ATH above $4,500/oz per Twitter signals systemic risk appetite shifts.",
+    "narrative": "📊 **Consensus:** Bullish momentum narrative dominates (75-100% bullish across sources), but bearish structural arguments carry stronger macro evidence. Conviction: MEDIUM - holiday positioning may mask Q1 vulnerability.\n\n📈 **Themes:** (1) AI infrastructure and enterprise blockchain adoption driving tech sector rotation, (2) Precious metals breakout momentum vs. profit-taking resistance, (3) Macro deterioration signals (unemployment trends, consumer weakness, debt trajectory) creating policy uncertainty and potential Q1 repricing risk.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI, active). /ES: Critical support levels and 6847 mentioned per Twitter. USD testing 14-year support (level unspecified). Gold above $4,500/oz, Silver at $72 face resistance.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "GLD",
-      "BTC"
+      "PLTR",
+      "GLD"
     ],
     "key_themes": [
-      "AI infrastructure vs software bifurcation",
-      "Safe-haven rotation signaling hidden risk",
-      "Regulatory tightening and policy uncertainty",
-      "Insider selling contradicting retail optimism",
-      "Macro deterioration vs rate-cut expectations"
+      "AI infrastructure and enterprise adoption",
+      "Precious metals momentum vs profit-taking",
+      "Macro deterioration and policy uncertainty",
+      "Regulatory tightening on financials",
+      "Holiday positioning into year-end"
     ],
     "risk_factors": [
-      "Insider selling (NVDA $40M dump) signaling smart money exit",
-      "Macro leading indicators (truck sales 8-yr lows, Q4 GDP 0.5-2% growth)",
-      "Post-Christmas liquidity drain amplifying volatility",
-      "Enterprise software guidance contagion risk",
-      "Policy sequencing uncertainty (austerity vs stimulus timing)"
+      "Q1 2026 macro reality check (unemployment, consumer weakness)",
+      "USD breaking 14-year support triggering risk-off",
+      "Regulatory capital requirements pressuring financials",
+      "Geopolitical escalation (Ukraine/Taiwan)",
+      "Earnings guidance cuts from enterprise software",
+      "Insider selling pressure (Nvidia shareholder $40M dump)",
+      "Debt trajectory ($2.2T interest cost projection)"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Call Wall resistance $700 with active dealer hedging, Max Pain gravity at $684 suggests limited range. QQQ pinned near $620 resistance (33k OI) with Put Wall support at $590 providing cushion. Holiday thin liquidity increases whipsaw risk.",
+    "intraday_levels": "SPY: $684 max pain gravitational pull, $700 call wall resistance (active hedging). QQQ: $619 max pain, $620 immediate resistance (33k OI active), $640 call wall. Holiday positioning into December 24 1pm EST close creates compression.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY Call Wall $700 caps upside (146k OI resistance), downside acceleration risk if $650 support (38k OI) breaks toward dormant Put Wall $640 (153k OI). QQQ resistance $640 (35k OI) holds unless breakout, support zone $590-$585 (164k + 137k OI) critical for avoiding waterfall.",
-    "source_alignment": "CONFLICTING"
+    "swing_levels": "SPY: $700 major call wall resistance, breakdown below $684 max pain targets $650-$645 dormant support zone. QQQ: $640 call wall caps upside, $590 put wall major support on weakness. USD breakdown from 14-year support would trigger risk-off cascade.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 185400
+    "generation_time_ms": 194978
   },
   "trending": {
     "macro": [
@@ -237,7 +239,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 43,
+    "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
