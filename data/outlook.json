@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-23T23:49:36.380Z",
+  "timestamp": "2025-12-24T00:22:21.730Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 76,
+    "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 129,
+        "bullish": 135,
         "bearish": 41,
-        "neutral": 124,
-        "total": 294,
+        "neutral": 128,
+        "total": 304,
         "pct": 44
       },
       "news": {
@@ -20,11 +20,11 @@
         "pct": 50
       },
       "video": {
-        "bullish": 6,
+        "bullish": 8,
         "bearish": 1,
         "neutral": 2,
-        "total": 9,
-        "pct": 67
+        "total": 11,
+        "pct": 73
       },
       "chat": {
         "bullish": 7,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction (79% aggregate bullish sentiment). Market exhibits strong near-term momentum supported by seasonal flows and technical strength, but structural fiscal concerns and elevated complacency (VIX at 52-week lows) create asymmetric downside risk beyond the immediate window.\n\n📈 **Themes:** (1) Santa Rally continuation momentum vs. fiscal sustainability concerns ($2.2T projected interest costs, $2T annual borrowing expectations creating medium-term headwinds), (2) AI productivity/institutional adoption tailwinds offsetting near-term sector-specific earnings headwinds in software and retail, (3) Fed rate policy expectations as primary catalyst uncertainty with FOMC divergence on timing creating bifurcated positioning between rate-sensitive growth and defensive rotation.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). VIX at 13.77 (52-week lows per Twitter - key complacency watch point).",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - sentiment across sources ranges 72-89% bullish, supported by rate cut expectations and AI infrastructure momentum, but with acknowledged structural risks around valuations and debt servicing costs.\n\n📈 **Themes:** (1) Fed rate cut trajectory and monetary policy easing supporting risk assets, (2) AI/technology infrastructure momentum driving selective strength in quality tech, (3) Valuation concerns and late-cycle positioning creating vulnerability to earnings disappointments and policy surprises.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $645 (125k OI), $650 (38k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). Near support: $585 (137k OI). Twitter mentions /ES: Pentagon contract catalysts and defense sector strength per Twitter commentary.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "VIX",
-      "AI sector proxies",
-      "DeFi/blockchain infrastructure"
+      "LMT",
+      "BA",
+      "NVDA"
     ],
     "key_themes": [
-      "Santa Rally seasonal momentum",
-      "Fed rate cut timing uncertainty",
-      "AI productivity adoption vs. earnings headwinds",
-      "Fiscal sustainability concerns",
-      "Consumer affordability squeeze vs. institutional capital rotation"
+      "Fed rate cut expectations and monetary easing cycle",
+      "AI infrastructure and technology sector momentum",
+      "Defense/aerospace sector strength",
+      "Valuation concerns at record S&P levels",
+      "Consumer stress and credit delinquency risks"
     ],
     "risk_factors": [
-      "VIX at 52-week lows signals extreme complacency - asymmetric downside risk",
-      "Unsustainable fiscal trajectory ($2.2T interest costs, $2T annual borrowing)",
-      "Private services employment deterioration (-0.1% annualized over 6 months)",
-      "Sector-specific earnings guidance cuts (software, retail, fintech)",
-      "Fed policy timing divergence creating whipsaw potential"
+      "Record valuations creating vulnerability to earnings disappointments",
+      "Debt servicing costs projected to surge 127% to $2.2T over decade",
+      "Policy sequencing mismatch - potential austerity before stimulus",
+      "Inflation resurgence potential contradicting rate cut narrative",
+      "Late-cycle positioning with complacency reflected in low VIX"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: Testing $700 Call Wall resistance (146k OI, 2.0% away - active dealer hedging). Max Pain gravitational pull at $684. QQQ: Immediate resistance at $620 (33k OI - ACTIVE), with Call Wall at $640 (35k OI). VIX 13.77 complacency level as reversal watch point.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY testing $700 Call Wall resistance with active dealer hedging. QQQ at $620 near-term resistance (33k OI active). Watch for gravitational pull toward Max Pain levels ($684 SPY, $619 QQQ) as options expiration approaches. VIX 13.77 suggests low volatility environment favoring range-bound action.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside capped by $700 Call Wall (146k OI) near-term, with dormant resistance at $730 (47k OI) and $750 (55k OI) if momentum extends. Downside support sequence: $650 (38k OI), $645 (125k OI), then major Put Wall at $640 (153k OI). QQQ: $640 Call Wall (35k OI) primary resistance, $590 Put Wall (164k OI) major support.",
+    "swing_levels": "SPY: $700 Call Wall major resistance, $640 Put Wall major support if activated. Intermediate support at $650 (38k OI), $645 (125k OI). QQQ: $640 Call Wall upside target, $590 Put Wall downside floor with significant 164k OI. Watch $585 support level (137k OI) if weakness develops.",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 191501
+    "generation_time_ms": 187439
   },
   "trending": {
     "macro": [
@@ -180,15 +180,15 @@
       },
       {
         "ticker": "AMZN",
-        "mentions": 7,
-        "sentiment_score": 0.523,
+        "mentions": 8,
+        "sentiment_score": 0.547,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 52,
+        "sentiment_pct": 55,
         "counts": {
-          "bullish": 5,
+          "bullish": 6,
           "bearish": 0,
           "neutral": 2,
-          "total": 7
+          "total": 8
         }
       },
       {
@@ -219,15 +219,15 @@
       },
       {
         "ticker": "SPX",
-        "mentions": 4,
-        "sentiment_score": 0.075,
+        "mentions": 5,
+        "sentiment_score": 0.09,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 8,
+        "sentiment_pct": 9,
         "counts": {
           "bullish": 0,
           "bearish": 0,
-          "neutral": 4,
-          "total": 4
+          "neutral": 5,
+          "total": 5
         }
       }
     ]
