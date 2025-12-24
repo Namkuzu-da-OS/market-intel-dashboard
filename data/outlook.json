@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-24T02:42:28.871Z",
+  "timestamp": "2025-12-24T03:17:16.006Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 76,
+    "confidence_pct": 75,
     "sources": {
       "social": {
-        "bullish": 153,
-        "bearish": 50,
-        "neutral": 148,
-        "total": 351,
-        "pct": 44
+        "bullish": 157,
+        "bearish": 54,
+        "neutral": 150,
+        "total": 361,
+        "pct": 43
       },
       "news": {
-        "bullish": 39,
-        "bearish": 14,
+        "bullish": 40,
+        "bearish": 15,
         "neutral": 24,
-        "total": 77,
+        "total": 79,
         "pct": 51
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed conviction bullish near-term transitioning to heightened caution into 2026. Sentiment shows 75-80% bullish positioning across sources, but bearish arguments carry stronger fundamental weight (GDP deterioration, valuation extremes, consumer weakness). **Medium conviction** on directional bias given technical momentum vs. macro headwinds conflict.\n\n📈 **Themes:** (1) Institutional blockchain/tokenized asset adoption driving selective capital flows despite security risks, (2) Labor market deterioration and consumer spending weakness masked by discounting tactics creating 2026 recession risks, (3) Rate policy uncertainty with January cut odds collapsed while precious metals hit records signaling macro stress, (4) Valuation extremes at record S&P levels facing Q4 GDP validation test.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - at current price). /ES: Testing 14-year lows on USD per Twitter commentary.",
+    "narrative": "📊 **Consensus:** Bullish with medium-high conviction (74-80% bullish across sources), but with significant structural caveats - holiday momentum and rate postponement driving near-term strength while macro deterioration signals suggest fragility into early 2026.\n\n📈 **Themes:** (1) Holiday seasonality and compressed trading volumes supporting risk-on positioning through year-end; (2) Rate policy uncertainty creating bifurcated outlook between near-term momentum and longer-term caution; (3) Sector rotation showing AI/infrastructure strength versus enterprise software/financial services weakness; (4) Commodity supercycle narratives at historic peaks potentially signaling exhaustion.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - active). Near support: $585 (137k OI). /ES: per Twitter, watching continuation vs breakdown at current levels. USD at 14-year support levels per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "CPB",
-      "FSRV"
+      "META",
+      "AGIO"
     ],
     "key_themes": [
-      "Institutional blockchain adoption vs crypto security contagion risk",
-      "Labor market deterioration and private payroll contraction",
-      "Valuation extremes testing fundamental validation",
-      "Consumer spending weakness and retail sector stress",
-      "Precious metals strength signaling macro uncertainty"
+      "Holiday seasonality and year-end positioning",
+      "Rate policy uncertainty and timing",
+      "AI infrastructure momentum versus enterprise software weakness",
+      "Commodity supercycle at historic peaks",
+      "Insider distribution and liquidity concerns"
     ],
     "risk_factors": [
-      "Q4 GDP miss below 0.5-2% expectation range triggering recession pricing",
-      "Fintech/software earnings guidance cuts spreading contagion beyond FSRV",
-      "Crypto custody/security breach triggering institutional capital flight",
-      "USD breakdown and precious metals divergence signaling loss of confidence",
-      "Geopolitical escalation (Taiwan/Ukraine) forcing sharp risk-off rotation"
+      "Post-holiday liquidity normalization creating reversal risk",
+      "Private sector payroll stagnation (-0.1% annualized) signaling consumer weakness",
+      "Regulatory tightening in banking sector (Fed supervisory frameworks)",
+      "Macro deterioration (Q4 growth slowdown to 0.5-2% forecasts, truck sales at 8-year lows)",
+      "Insider selling pressure and elevated US debt servicing costs"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $700 call wall active resistance (2% away), max pain gravitational pull at $684. QQQ: $620 immediate resistance (33k OI at current price), $590 put wall support (4.8% away). Thin holiday liquidity favors range-bound action between options strikes.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Resistance cluster $700-$730 (combined 193k OI), critical support breakdown below $650 activates $640 put wall (153k OI). QQQ: $640 call wall caps upside, $590 put wall major support. Watch for GDP data reaction and earnings guidance trends to determine if current levels hold or activate dormant support zones.",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: $700 active call wall resistance (2% away), testing max pain $684. QQQ: $620 immediate resistance (active), $640 call wall above. Holiday trading favors range-bound action between current price and call walls.",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: Upside capped at $700 call wall, downside support emerges at $650-$645 zone before major $640 put wall. QQQ: $640 call wall resistance, $590 put wall support defines 3-5 day range. Post-holiday liquidity normalization (late December) key catalyst for directional break.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 195664
+    "generation_time_ms": 184050
   },
   "trending": {
     "macro": [
@@ -167,15 +167,15 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 13,
-        "sentiment_score": 0.678,
+        "mentions": 15,
+        "sentiment_score": 0.601,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 68,
+        "sentiment_pct": 60,
         "counts": {
-          "bullish": 12,
-          "bearish": 0,
+          "bullish": 13,
+          "bearish": 1,
           "neutral": 1,
-          "total": 13
+          "total": 15
         }
       },
       {
@@ -237,7 +237,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 44,
+    "sentiment_bullish_pct": 43,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
