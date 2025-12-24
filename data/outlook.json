@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-24T03:17:16.006Z",
+  "timestamp": "2025-12-24T03:59:26.828Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 75,
     "sources": {
       "social": {
-        "bullish": 157,
+        "bullish": 158,
         "bearish": 54,
-        "neutral": 150,
-        "total": 361,
+        "neutral": 157,
+        "total": 369,
         "pct": 43
       },
       "news": {
-        "bullish": 40,
-        "bearish": 15,
+        "bullish": 41,
+        "bearish": 16,
         "neutral": 24,
-        "total": 79,
+        "total": 81,
         "pct": 51
       },
       "video": {
         "bullish": 8,
         "bearish": 2,
-        "neutral": 3,
-        "total": 13,
-        "pct": 62
+        "neutral": 4,
+        "total": 14,
+        "pct": 57
       },
       "chat": {
         "bullish": 7,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium-high conviction (74-80% bullish across sources), but with significant structural caveats - holiday momentum and rate postponement driving near-term strength while macro deterioration signals suggest fragility into early 2026.\n\n📈 **Themes:** (1) Holiday seasonality and compressed trading volumes supporting risk-on positioning through year-end; (2) Rate policy uncertainty creating bifurcated outlook between near-term momentum and longer-term caution; (3) Sector rotation showing AI/infrastructure strength versus enterprise software/financial services weakness; (4) Commodity supercycle narratives at historic peaks potentially signaling exhaustion.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - active). Near support: $585 (137k OI). /ES: per Twitter, watching continuation vs breakdown at current levels. USD at 14-year support levels per Twitter.",
+    "narrative": "📊 **Consensus:** Bullish surface momentum (75%+ sentiment across sources) masks bearish structural deterioration - conflicting signals suggest medium conviction chop with downside bias as insider selling and macro weakness contradict rate-cut optimism.\n\n📈 **Themes:** (1) AI infrastructure resilience vs enterprise software guidance cuts creating sector bifurcation, (2) Safe-haven flows into gold/commodities signaling hidden risk anxiety despite equity strength, (3) Regulatory tightening and policy uncertainty creating defensive rotation pressure.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI, active). /ES: Gold ATH above $4,500/oz per Twitter signals systemic risk appetite shifts.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "META",
-      "AGIO"
+      "GLD",
+      "BTC"
     ],
     "key_themes": [
-      "Holiday seasonality and year-end positioning",
-      "Rate policy uncertainty and timing",
-      "AI infrastructure momentum versus enterprise software weakness",
-      "Commodity supercycle at historic peaks",
-      "Insider distribution and liquidity concerns"
+      "AI infrastructure vs software bifurcation",
+      "Safe-haven rotation signaling hidden risk",
+      "Regulatory tightening and policy uncertainty",
+      "Insider selling contradicting retail optimism",
+      "Macro deterioration vs rate-cut expectations"
     ],
     "risk_factors": [
-      "Post-holiday liquidity normalization creating reversal risk",
-      "Private sector payroll stagnation (-0.1% annualized) signaling consumer weakness",
-      "Regulatory tightening in banking sector (Fed supervisory frameworks)",
-      "Macro deterioration (Q4 growth slowdown to 0.5-2% forecasts, truck sales at 8-year lows)",
-      "Insider selling pressure and elevated US debt servicing costs"
+      "Insider selling (NVDA $40M dump) signaling smart money exit",
+      "Macro leading indicators (truck sales 8-yr lows, Q4 GDP 0.5-2% growth)",
+      "Post-Christmas liquidity drain amplifying volatility",
+      "Enterprise software guidance contagion risk",
+      "Policy sequencing uncertainty (austerity vs stimulus timing)"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: $700 active call wall resistance (2% away), testing max pain $684. QQQ: $620 immediate resistance (active), $640 call wall above. Holiday trading favors range-bound action between current price and call walls.",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Upside capped at $700 call wall, downside support emerges at $650-$645 zone before major $640 put wall. QQQ: $640 call wall resistance, $590 put wall support defines 3-5 day range. Post-holiday liquidity normalization (late December) key catalyst for directional break.",
-    "source_alignment": "MIXED"
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY testing Call Wall resistance $700 with active dealer hedging, Max Pain gravity at $684 suggests limited range. QQQ pinned near $620 resistance (33k OI) with Put Wall support at $590 providing cushion. Holiday thin liquidity increases whipsaw risk.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY Call Wall $700 caps upside (146k OI resistance), downside acceleration risk if $650 support (38k OI) breaks toward dormant Put Wall $640 (153k OI). QQQ resistance $640 (35k OI) holds unless breakout, support zone $590-$585 (164k + 137k OI) critical for avoiding waterfall.",
+    "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 184050
+    "generation_time_ms": 185400
   },
   "trending": {
     "macro": [
