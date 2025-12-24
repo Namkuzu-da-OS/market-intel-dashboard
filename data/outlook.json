@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-24T02:04:13.437Z",
+  "timestamp": "2025-12-24T02:42:28.871Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 148,
-        "bearish": 48,
-        "neutral": 142,
-        "total": 338,
+        "bullish": 153,
+        "bearish": 50,
+        "neutral": 148,
+        "total": 351,
         "pct": 44
       },
       "news": {
-        "bullish": 38,
+        "bullish": 39,
         "bearish": 14,
         "neutral": 24,
-        "total": 76,
-        "pct": 50
+        "total": 77,
+        "pct": 51
       },
       "video": {
         "bullish": 8,
-        "bearish": 1,
+        "bearish": 2,
         "neutral": 3,
-        "total": 12,
-        "pct": 67
+        "total": 13,
+        "pct": 62
       },
       "chat": {
         "bullish": 7,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed bullish sentiment (medium conviction) - sources show 76-89% bullish positioning but with significant structural concerns about economic deterioration beneath surface rallies.\n\n📈 **Themes:** (1) Risk-off hedging behavior - precious metals at historic highs (gold $4,500/oz, silver $72) while equities rally suggests defensive positioning, (2) Labor market deterioration and consumer spending weakness - private services payroll near -0.1% annualized growth threatening purchasing power, (3) Valuation concerns at extremes - S&P 500 P/E ratios at record levels amid Q4 growth forecasts of 0.5-2%.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). /ES: Per Twitter, futures +30 pts in recent sessions with 6847 mentioned as support level.",
+    "narrative": "📊 **Consensus:** Mixed conviction bullish near-term transitioning to heightened caution into 2026. Sentiment shows 75-80% bullish positioning across sources, but bearish arguments carry stronger fundamental weight (GDP deterioration, valuation extremes, consumer weakness). **Medium conviction** on directional bias given technical momentum vs. macro headwinds conflict.\n\n📈 **Themes:** (1) Institutional blockchain/tokenized asset adoption driving selective capital flows despite security risks, (2) Labor market deterioration and consumer spending weakness masked by discounting tactics creating 2026 recession risks, (3) Rate policy uncertainty with January cut odds collapsed while precious metals hit records signaling macro stress, (4) Valuation extremes at record S&P levels facing Q4 GDP validation test.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - at current price). /ES: Testing 14-year lows on USD per Twitter commentary.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "GLD",
-      "NKE"
+      "CPB",
+      "FSRV"
     ],
     "key_themes": [
-      "precious_metals_defensive_rotation",
-      "labor_market_deterioration",
-      "ai_sector_differentiation",
-      "rate_policy_uncertainty",
-      "valuation_extremes"
+      "Institutional blockchain adoption vs crypto security contagion risk",
+      "Labor market deterioration and private payroll contraction",
+      "Valuation extremes testing fundamental validation",
+      "Consumer spending weakness and retail sector stress",
+      "Precious metals strength signaling macro uncertainty"
     ],
     "risk_factors": [
-      "private_services_payroll_contraction",
-      "consumer_spending_collapse_before_stimulus",
-      "record_pe_ratios_vulnerable_to_earnings_disappointment",
-      "policy_sequencing_mismatch_austerity_before_relief",
-      "geopolitical_escalation_taiwan_ukraine"
+      "Q4 GDP miss below 0.5-2% expectation range triggering recession pricing",
+      "Fintech/software earnings guidance cuts spreading contagion beyond FSRV",
+      "Crypto custody/security breach triggering institutional capital flight",
+      "USD breakdown and precious metals divergence signaling loss of confidence",
+      "Geopolitical escalation (Taiwan/Ukraine) forcing sharp risk-off rotation"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY active resistance $700 (146k OI Call Wall), near-term support $684 (Max Pain). QQQ immediate resistance $620 (33k OI - ACTIVE), support $619 (Max Pain). Watch VIX 13.77 for volatility expansion signals.",
+    "intraday_levels": "SPY: $700 call wall active resistance (2% away), max pain gravitational pull at $684. QQQ: $620 immediate resistance (33k OI at current price), $590 put wall support (4.8% away). Thin holiday liquidity favors range-bound action between options strikes.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Call Wall $700 caps upside, downside acceleration below $650 toward Put Wall $640. QQQ: Resistance $640 (35k OI), support zone $590-$619 (164k OI Put Wall). Monitor breakdown below QQQ $590 for trend reversal.",
+    "swing_levels": "SPY: Resistance cluster $700-$730 (combined 193k OI), critical support breakdown below $650 activates $640 put wall (153k OI). QQQ: $640 call wall caps upside, $590 put wall major support. Watch for GDP data reaction and earnings guidance trends to determine if current levels hold or activate dormant support zones.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 185374
+    "generation_time_ms": 195664
   },
   "trending": {
     "macro": [
@@ -167,15 +167,15 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 12,
-        "sentiment_score": 0.675,
+        "mentions": 13,
+        "sentiment_score": 0.678,
         "sentiment_label": "Bullish",
         "sentiment_pct": 68,
         "counts": {
-          "bullish": 11,
+          "bullish": 12,
           "bearish": 0,
           "neutral": 1,
-          "total": 12
+          "total": 13
         }
       },
       {
@@ -205,6 +205,19 @@
         }
       },
       {
+        "ticker": "GOOGL",
+        "mentions": 6,
+        "sentiment_score": 0.632,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 63,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 6
+        }
+      },
+      {
         "ticker": "SPX",
         "mentions": 6,
         "sentiment_score": 0.195,
@@ -215,19 +228,6 @@
           "bearish": 0,
           "neutral": 5,
           "total": 6
-        }
-      },
-      {
-        "ticker": "GOOGL",
-        "mentions": 5,
-        "sentiment_score": 0.598,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 60,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 5
         }
       }
     ]
