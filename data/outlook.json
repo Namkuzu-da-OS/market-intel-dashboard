@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-24T00:22:21.730Z",
+  "timestamp": "2025-12-24T00:57:34.470Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 135,
-        "bearish": 41,
-        "neutral": 128,
-        "total": 304,
+        "bullish": 138,
+        "bearish": 42,
+        "neutral": 134,
+        "total": 314,
         "pct": 44
       },
       "news": {
-        "bullish": 36,
+        "bullish": 38,
         "bearish": 14,
-        "neutral": 22,
-        "total": 72,
-        "pct": 50
+        "neutral": 23,
+        "total": 75,
+        "pct": 51
       },
       "video": {
         "bullish": 8,
         "bearish": 1,
-        "neutral": 2,
-        "total": 11,
-        "pct": 73
+        "neutral": 3,
+        "total": 12,
+        "pct": 67
       },
       "chat": {
         "bullish": 7,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - sentiment across sources ranges 72-89% bullish, supported by rate cut expectations and AI infrastructure momentum, but with acknowledged structural risks around valuations and debt servicing costs.\n\n📈 **Themes:** (1) Fed rate cut trajectory and monetary policy easing supporting risk assets, (2) AI/technology infrastructure momentum driving selective strength in quality tech, (3) Valuation concerns and late-cycle positioning creating vulnerability to earnings disappointments and policy surprises.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $645 (125k OI), $650 (38k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). Near support: $585 (137k OI). Twitter mentions /ES: Pentagon contract catalysts and defense sector strength per Twitter commentary.",
+    "narrative": "📊 **Consensus:** Bullish sentiment dominates across all sources (77-100% bullish), but with conflicting structural narratives. Conviction: MEDIUM - strong tactical positioning offset by macro deterioration warnings.\n\n📈 **Themes:** (1) AI sector momentum and institutional adoption driving selective strength, (2) Late-cycle valuation concerns amid labor market softening and consumer credit stress, (3) Policy uncertainty around rate trajectory and fiscal headwinds creating defensive rotation.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $645 (125k OI), $650 (38k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). /ES: levels referenced in Twitter but not explicitly stated.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "LMT",
-      "BA",
-      "NVDA"
+      "NVDA",
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "Fed rate cut expectations and monetary easing cycle",
-      "AI infrastructure and technology sector momentum",
-      "Defense/aerospace sector strength",
-      "Valuation concerns at record S&P levels",
-      "Consumer stress and credit delinquency risks"
+      "AI adoption and institutional infrastructure buildout",
+      "Labor market deterioration and consumer credit stress",
+      "Valuation extremes at late-cycle highs",
+      "Policy uncertainty - rate trajectory and fiscal headwinds",
+      "Defensive rotation amid regulatory tightening"
     ],
     "risk_factors": [
-      "Record valuations creating vulnerability to earnings disappointments",
-      "Debt servicing costs projected to surge 127% to $2.2T over decade",
-      "Policy sequencing mismatch - potential austerity before stimulus",
-      "Inflation resurgence potential contradicting rate cut narrative",
-      "Late-cycle positioning with complacency reflected in low VIX"
+      "Q4 GDP deterioration confirming slowdown (0.5-2% forecasts)",
+      "Rising consumer credit card delinquencies and exhausted savings",
+      "VIX complacency at 52-week lows signaling crowded positioning",
+      "Regulatory tightening across banking/fintech/autonomous sectors",
+      "Fed policy dissent undermining rate-cut expectations"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $700 Call Wall resistance with active dealer hedging. QQQ at $620 near-term resistance (33k OI active). Watch for gravitational pull toward Max Pain levels ($684 SPY, $619 QQQ) as options expiration approaches. VIX 13.77 suggests low volatility environment favoring range-bound action.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $700 Call Wall major resistance, $640 Put Wall major support if activated. Intermediate support at $650 (38k OI), $645 (125k OI). QQQ: $640 Call Wall upside target, $590 Put Wall downside floor with significant 164k OI. Watch $585 support level (137k OI) if weakness develops.",
-    "source_alignment": "ALIGNED"
+    "intraday_levels": "SPY testing Max Pain $684 with resistance at Call Wall $700 (146k OI active hedging). QQQ at Max Pain $619 with immediate resistance at $620 (33k OI active). Watch for dealer hedging dynamics at these active levels.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Call Wall $700 represents major resistance zone (146k OI), Put Wall $640 dormant support activates on weakness. QQQ: Call Wall $640 caps upside, Put Wall $590 critical support (164k OI). Watch labor market data and consumer credit indicators for catalyst to activate downside structures.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 187439
+    "generation_time_ms": 183909
   },
   "trending": {
     "macro": [
