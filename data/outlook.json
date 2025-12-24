@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-24T01:28:18.075Z",
+  "timestamp": "2025-12-24T02:04:13.437Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 145,
-        "bearish": 45,
-        "neutral": 135,
-        "total": 325,
-        "pct": 45
+        "bullish": 148,
+        "bearish": 48,
+        "neutral": 142,
+        "total": 338,
+        "pct": 44
       },
       "news": {
         "bullish": 38,
         "bearish": 14,
-        "neutral": 23,
-        "total": 75,
-        "pct": 51
+        "neutral": 24,
+        "total": 76,
+        "pct": 50
       },
       "video": {
         "bullish": 8,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** MIXED with MEDIUM conviction - bullish sentiment (76-100% across sources) conflicts with structural deterioration warnings. Near-term seasonal momentum battling fundamental headwinds.\n\n📈 **Themes:** (1) Year-end seasonal patterns vs. fundamental deterioration - bullish positioning into year-end against valuation/macro concerns, (2) AI infrastructure and enterprise adoption - long-term structural tailwinds despite near-term execution uncertainty, (3) Labor market and consumer stress - payroll stagnation, credit delinquencies, and affordability pressures creating recession risk.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI). /ES: $4,500 gold and $12,000 copper levels cited per Twitter as macro anchors.",
+    "narrative": "📊 **Consensus:** Mixed bullish sentiment (medium conviction) - sources show 76-89% bullish positioning but with significant structural concerns about economic deterioration beneath surface rallies.\n\n📈 **Themes:** (1) Risk-off hedging behavior - precious metals at historic highs (gold $4,500/oz, silver $72) while equities rally suggests defensive positioning, (2) Labor market deterioration and consumer spending weakness - private services payroll near -0.1% annualized growth threatening purchasing power, (3) Valuation concerns at extremes - S&P 500 P/E ratios at record levels amid Q4 growth forecasts of 0.5-2%.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). /ES: Per Twitter, futures +30 pts in recent sessions with 6847 mentioned as support level.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "AMZN",
-      "BTC"
+      "GLD",
+      "NKE"
     ],
     "key_themes": [
-      "Year-end seasonal patterns",
-      "AI infrastructure adoption",
-      "Consumer affordability crisis",
-      "Precious metals safe-haven demand",
-      "Corporate earnings guidance deterioration"
+      "precious_metals_defensive_rotation",
+      "labor_market_deterioration",
+      "ai_sector_differentiation",
+      "rate_policy_uncertainty",
+      "valuation_extremes"
     ],
     "risk_factors": [
-      "Q4 GDP weakness validating recession concerns",
-      "Elevated S&P 500 valuations at record P/E ratios with limited margin for disappointment",
-      "Rising credit card delinquencies and depleted consumer savings",
-      "Government austerity preceding stimulus creating intermediate recessionary phase",
-      "Geopolitical tensions (Taiwan, Russia-Ukraine) creating risk-off pressure"
+      "private_services_payroll_contraction",
+      "consumer_spending_collapse_before_stimulus",
+      "record_pe_ratios_vulnerable_to_earnings_disappointment",
+      "policy_sequencing_mismatch_austerity_before_relief",
+      "geopolitical_escalation_taiwan_ukraine"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $684 with resistance at $700 Call Wall (146k OI). QQQ near Max Pain $619 with immediate resistance at $620 (33k OI). Active hedging likely keeps range-bound into close.",
+    "intraday_levels": "SPY active resistance $700 (146k OI Call Wall), near-term support $684 (Max Pain). QQQ immediate resistance $620 (33k OI - ACTIVE), support $619 (Max Pain). Watch VIX 13.77 for volatility expansion signals.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Downside risk to $650-$645 support zone if GDP data disappoints. Upside capped at $700 Call Wall. QQQ: Protected by $590 Put Wall (164k OI) but $640 Call Wall limits upside. Watch for breakdown below $590 if macro deteriorates.",
+    "swing_levels": "SPY: Call Wall $700 caps upside, downside acceleration below $650 toward Put Wall $640. QQQ: Resistance $640 (35k OI), support zone $590-$619 (164k OI Put Wall). Monitor breakdown below QQQ $590 for trend reversal.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 187312
+    "generation_time_ms": 185374
   },
   "trending": {
     "macro": [
@@ -205,6 +205,19 @@
         }
       },
       {
+        "ticker": "SPX",
+        "mentions": 6,
+        "sentiment_score": 0.195,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 20,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 5,
+          "total": 6
+        }
+      },
+      {
         "ticker": "GOOGL",
         "mentions": 5,
         "sentiment_score": 0.598,
@@ -216,19 +229,6 @@
           "neutral": 1,
           "total": 5
         }
-      },
-      {
-        "ticker": "SPX",
-        "mentions": 5,
-        "sentiment_score": 0.09,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 9,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 5,
-          "total": 5
-        }
       }
     ]
   },
@@ -237,7 +237,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 45,
+    "sentiment_bullish_pct": 44,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
