@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-24T00:57:34.470Z",
+  "timestamp": "2025-12-24T01:28:18.075Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 138,
-        "bearish": 42,
-        "neutral": 134,
-        "total": 314,
-        "pct": 44
+        "bullish": 145,
+        "bearish": 45,
+        "neutral": 135,
+        "total": 325,
+        "pct": 45
       },
       "news": {
         "bullish": 38,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates across all sources (77-100% bullish), but with conflicting structural narratives. Conviction: MEDIUM - strong tactical positioning offset by macro deterioration warnings.\n\n📈 **Themes:** (1) AI sector momentum and institutional adoption driving selective strength, (2) Late-cycle valuation concerns amid labor market softening and consumer credit stress, (3) Policy uncertainty around rate trajectory and fiscal headwinds creating defensive rotation.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $645 (125k OI), $650 (38k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI - ACTIVE). /ES: levels referenced in Twitter but not explicitly stated.",
+    "narrative": "📊 **Consensus:** MIXED with MEDIUM conviction - bullish sentiment (76-100% across sources) conflicts with structural deterioration warnings. Near-term seasonal momentum battling fundamental headwinds.\n\n📈 **Themes:** (1) Year-end seasonal patterns vs. fundamental deterioration - bullish positioning into year-end against valuation/macro concerns, (2) AI infrastructure and enterprise adoption - long-term structural tailwinds despite near-term execution uncertainty, (3) Labor market and consumer stress - payroll stagnation, credit delinquencies, and affordability pressures creating recession risk.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI). /ES: $4,500 gold and $12,000 copper levels cited per Twitter as macro anchors.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "BTC",
-      "ETH"
+      "AMZN",
+      "BTC"
     ],
     "key_themes": [
-      "AI adoption and institutional infrastructure buildout",
-      "Labor market deterioration and consumer credit stress",
-      "Valuation extremes at late-cycle highs",
-      "Policy uncertainty - rate trajectory and fiscal headwinds",
-      "Defensive rotation amid regulatory tightening"
+      "Year-end seasonal patterns",
+      "AI infrastructure adoption",
+      "Consumer affordability crisis",
+      "Precious metals safe-haven demand",
+      "Corporate earnings guidance deterioration"
     ],
     "risk_factors": [
-      "Q4 GDP deterioration confirming slowdown (0.5-2% forecasts)",
-      "Rising consumer credit card delinquencies and exhausted savings",
-      "VIX complacency at 52-week lows signaling crowded positioning",
-      "Regulatory tightening across banking/fintech/autonomous sectors",
-      "Fed policy dissent undermining rate-cut expectations"
+      "Q4 GDP weakness validating recession concerns",
+      "Elevated S&P 500 valuations at record P/E ratios with limited margin for disappointment",
+      "Rising credit card delinquencies and depleted consumer savings",
+      "Government austerity preceding stimulus creating intermediate recessionary phase",
+      "Geopolitical tensions (Taiwan, Russia-Ukraine) creating risk-off pressure"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $684 with resistance at Call Wall $700 (146k OI active hedging). QQQ at Max Pain $619 with immediate resistance at $620 (33k OI active). Watch for dealer hedging dynamics at these active levels.",
+    "intraday_levels": "SPY testing Max Pain $684 with resistance at $700 Call Wall (146k OI). QQQ near Max Pain $619 with immediate resistance at $620 (33k OI). Active hedging likely keeps range-bound into close.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Call Wall $700 represents major resistance zone (146k OI), Put Wall $640 dormant support activates on weakness. QQQ: Call Wall $640 caps upside, Put Wall $590 critical support (164k OI). Watch labor market data and consumer credit indicators for catalyst to activate downside structures.",
+    "swing_levels": "SPY: Downside risk to $650-$645 support zone if GDP data disappoints. Upside capped at $700 Call Wall. QQQ: Protected by $590 Put Wall (164k OI) but $640 Call Wall limits upside. Watch for breakdown below $590 if macro deteriorates.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 183909
+    "generation_time_ms": 187312
   },
   "trending": {
     "macro": [
@@ -237,7 +237,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 44,
+    "sentiment_bullish_pct": 45,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
