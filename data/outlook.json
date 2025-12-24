@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-24T22:41:05.256Z",
+  "timestamp": "2025-12-24T23:13:46.018Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 105,
-        "bearish": 35,
-        "neutral": 111,
-        "total": 251,
-        "pct": 42
+        "bullish": 98,
+        "bearish": 33,
+        "neutral": 112,
+        "total": 243,
+        "pct": 40
       },
       "news": {
-        "bullish": 29,
+        "bullish": 30,
         "bearish": 17,
         "neutral": 13,
-        "total": 59,
-        "pct": 49
+        "total": 60,
+        "pct": 50
       },
       "video": {
-        "bullish": 4,
+        "bullish": 5,
         "bearish": 1,
         "neutral": 3,
-        "total": 8,
-        "pct": 50
+        "total": 9,
+        "pct": 56
       },
       "chat": {
         "bullish": 3,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - sources show 63-80% bullish sentiment across platforms, driven by all-time highs, VIX compression (13.77), and peak holiday liquidity, though structural concerns around earnings guidance cuts and demographic headwinds temper conviction.\n\n📈 **Themes:** (1) AI sector consolidation momentum and enterprise productivity validation driving tech leadership, (2) Peak liquidity conditions supporting risk-on positioning into early January, (3) Fiscal/regulatory uncertainty creating bifurcated outlook between technical momentum and fundamental deterioration signals.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, active resistance), Put Wall $640 (153k OI, dormant support). Max Pain $684. Near resistance: $750 (55k OI), $730 (47k OI). Near support: $645 (125k OI), $650 (38k OI). QQQ ($619.79): Call Wall $640 (35k OI, active resistance), Put Wall $590 (164k OI, active support). Max Pain $619. Near resistance: $620 (33k OI, immediate). /ES: Futures levels referenced on Twitter but specific values not explicitly stated in summaries.",
+    "narrative": "📊 **Consensus:** Bullish sentiment dominates across all sources (75% weighted average) with medium-high conviction, driven by Fed rate-cut tailwinds and AI infrastructure momentum, though underlying distribution signals and earnings weakness suggest caution into 2026.\n\n📈 **Themes:** (1) AI sector structural adoption with semiconductor/infrastructure buildout as primary driver, (2) Fed monetary policy easing providing macro support despite corporate earnings concerns, (3) Platform security and institutional crypto adoption quality bifurcation creating selective opportunities.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI). VIX at yearly lows (13.77) supporting risk-on environment. /ES: 6847 support per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "BTC",
-      "ZEC"
+      "NFLX",
+      "INTC"
     ],
     "key_themes": [
-      "AI sector consolidation and enterprise adoption",
-      "Peak liquidity and year-end positioning flows",
-      "Earnings guidance deterioration vs rate cut tailwinds",
-      "Crypto adoption narratives and platform security risks",
-      "Fiscal dominance and regulatory policy uncertainty"
+      "AI infrastructure adoption cycle",
+      "Fed rate-cut monetary tailwinds",
+      "Mega-cap tech distribution signals",
+      "Crypto platform security differentiation",
+      "Enterprise software earnings weakness"
     ],
     "risk_factors": [
-      "Corporate earnings guidance cuts spreading beyond initial warnings (Fiserv, Workday contagion)",
-      "Insider selling activity (NVDA board member $40M dump) signaling weak conviction",
-      "Demographic collapse and structural employment weakness undermining long-term growth",
-      "Crypto platform security vulnerabilities and counterparty risks",
-      "Geopolitical escalation (Taiwan, Russia-Ukraine) triggering risk-off repricing"
+      "Insider selling and mega-cap distribution patterns emerging",
+      "Corporate earnings deterioration in financials and enterprise software contradicting market strength",
+      "Geopolitical uncertainty (Ukraine/Taiwan) as overnight risk-off catalyst",
+      "Platform security vulnerabilities threatening institutional crypto adoption timing",
+      "Q1 2026 catalyst reset risk as current optimism may exceed fundamental delivery"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $700 Call Wall resistance (146k OI active hedging), Max Pain gravitational pull at $684. QQQ at $620 immediate resistance (33k OI), with $619 Max Pain anchor. Holiday-thinned volume suggests range-bound consolidation.",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY testing $700 Call Wall resistance (146k OI active hedging barrier), support at Max Pain $684. QQQ facing $620 immediate resistance (33k OI), support at $619 Max Pain. VIX 13.77 favors continued upside into holiday close.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $700 Call Wall primary resistance, $640 Put Wall major support if weakness develops. Upside extension targets $730-$750 if breakout occurs. QQQ: $640 Call Wall key resistance, $590 Put Wall critical support zone. Watch for breadth confirmation into early January.",
-    "source_alignment": "MIXED"
+    "swing_levels": "SPY $700 major resistance (dealer selling pressure), $684 Max Pain gravitational pull, $650-$645 dormant support cluster (163k combined OI). QQQ $640 Call Wall caps upside (35k OI), $590 Put Wall strong support (164k OI). Watch for year-end consolidation between Max Pain and Call Walls.",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 187380
+    "generation_time_ms": 185460
   },
   "trending": {
     "macro": [
@@ -166,14 +166,14 @@
         }
       },
       {
-        "ticker": "PATH",
+        "ticker": "INTC",
         "mentions": 6,
-        "sentiment_score": 0.537,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 54,
+        "sentiment_score": -0.5,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 50,
         "counts": {
-          "bullish": 4,
-          "bearish": 0,
+          "bullish": 0,
+          "bearish": 4,
           "neutral": 2,
           "total": 6
         }
@@ -185,7 +185,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 42,
+    "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
