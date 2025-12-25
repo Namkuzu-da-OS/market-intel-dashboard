@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-25T11:05:17.813Z",
+  "timestamp": "2025-12-25T11:32:24.593Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 76,
+    "confidence_pct": 75,
     "sources": {
       "social": {
         "bullish": 71,
-        "bearish": 17,
+        "bearish": 18,
         "neutral": 82,
-        "total": 170,
+        "total": 171,
         "pct": 42
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates across all sources (81% Twitter, 63% News, 100% YouTube), but conviction is MEDIUM due to temporal divergence—structural AI/rate tailwinds conflict with near-term Fed policy headwinds and semiconductor sector weakness.\n\n📈 **Themes:** (1) AI infrastructure consolidation and productivity acceleration driving tech sector optimism despite semiconductor policy uncertainty, (2) Fed rate policy tension—market pricing out January cuts (12% odds) while anticipating longer-term monetary accommodation, (3) Regulatory clarity narratives supporting autonomous vehicles and crypto institutional adoption.\n\n🎯 **Levels:** SPY ($684): Max Pain $684.00. QQQ ($619): Max Pain $619.00. /ES futures per Twitter: Watch January TSLA options expiration impact. VIX at 13.77 (yearly lows) signals compressed volatility and institutional conviction despite headline risks.",
+    "narrative": "📊 **Consensus:** Bullish sentiment dominates with medium conviction - 75% bullish across sources but facing structural headwinds and low VIX complacency.\n\n📈 **Themes:** (1) AI/semiconductor sector momentum despite technical divergences, (2) Institutional crypto accumulation amid regulatory clarity expectations, (3) Holiday liquidity compression masking macro vulnerabilities (inflation persistence, earnings revision risks).\n\n🎯 **Levels:** SPY ($684 Max Pain): Call Wall $700 (30k OI), Put Wall $555 (504k OI). QQQ ($619 Max Pain): monitoring options positioning. /ES futures per Twitter: testing consolidation zones with VIX at 13.77 yearly lows signaling complacency. Netflix 18% below 200-day MA per Twitter signals mega-cap tech breakdown risk.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "TSLA",
       "NVDA",
+      "TSLA",
       "BTC"
     ],
     "key_themes": [
-      "AI infrastructure consolidation",
-      "Fed rate policy uncertainty",
-      "Regulatory environment normalization",
-      "Semiconductor sector volatility",
-      "Institutional crypto adoption"
+      "AI/semiconductor momentum",
+      "Crypto institutional accumulation",
+      "Fed monetary policy uncertainty",
+      "Holiday liquidity compression",
+      "Earnings revision risks"
     ],
     "risk_factors": [
-      "Fed rate-cut expectations collapsed to 12% for January creating repricing risk",
-      "Semiconductor sector weakness (Intel premarket decline, NVIDIA 18A testing halt)",
-      "Earnings guidance deterioration cascading from enterprise software sector",
-      "Geopolitical escalation triggering safe-haven rotation",
-      "January options expiration volatility (TSLA institutional positioning)"
+      "VIX at yearly lows signaling complacency before potential spike",
+      "Enterprise software guidance cuts spreading to broader tech",
+      "Regulatory headwinds in banking and pharma sectors",
+      "Structural inflation persistence limiting Fed flexibility",
+      "Thin holiday liquidity amplifying volatility on any catalyst"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $684 zone. /ES futures: Monitor for directional break per Twitter commentary. VIX 13.77 compression suggests low intraday volatility expected.",
+    "intraday_levels": "SPY testing Max Pain $684 zone. Watch VIX 13.77 for volatility expansion signal. Holiday liquidity suggests range-bound action.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Max Pain anchor at $684, watch for sustained move above to confirm bullish continuation. QQQ: Max Pain $619 as pivot. January TSLA options expiration noted as technical catalyst per Twitter.",
+    "swing_levels": "SPY Max Pain $684 support, $700 Call Wall resistance. QQQ Max Pain $619 pivot. Monitor Netflix 200-day MA breakdown continuation.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 163310
+    "generation_time_ms": 161319
   },
   "trending": {
     "macro": [
