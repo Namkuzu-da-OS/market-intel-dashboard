@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-25T14:50:52.262Z",
+  "timestamp": "2025-12-25T15:18:02.156Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 74,
     "sources": {
       "social": {
-        "bullish": 56,
+        "bullish": 46,
         "bearish": 12,
-        "neutral": 72,
-        "total": 140,
-        "pct": 40
+        "neutral": 69,
+        "total": 127,
+        "pct": 36
       },
       "news": {
-        "bullish": 20,
+        "bullish": 19,
         "bearish": 13,
-        "neutral": 8,
+        "neutral": 9,
         "total": 41,
-        "pct": 49
+        "pct": 46
       },
       "video": {
         "bullish": 3,
@@ -36,7 +36,7 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates (82% Twitter, 61% News, 100% YouTube/Trader), but with medium conviction due to structural tensions between risk asset positioning and Fed monetary tightness signals (January rate cut odds at 12%).\n\n📈 **Themes:** AI/tech sector revenue momentum driving institutional positioning, cryptocurrency whale accumulation amid regulatory clarity expectations, rate-sensitive sector rotation benefiting utilities/real estate/financials from lower borrowing costs.\n\n🎯 **Levels:** SPY Max Pain $684.00, QQQ Max Pain $619.00. /ES futures levels per Twitter sentiment analysis. Bitcoin momentum fragile with Polymarket showing 3% odds for $100K by year-end. Netflix trading 18% below 200-day MA signals potential mega-cap weakness beyond AI names.",
+    "narrative": "📊 **Consensus:** Market sentiment is predominantly bullish across sources (weighted average 79% bullish), but structural concerns around Fed policy rigidity and earnings pressure create medium conviction. Bullish momentum driven by AI infrastructure and institutional positioning faces headwinds from regulatory tightening and geopolitical risk.\n\n📈 **Themes:** AI infrastructure dominance and productivity tailwinds remain primary drivers; monetary policy uncertainty with collapsed rate-cut expectations creating regime shift concerns; crypto market structural strength with institutional adoption trends; earnings revision cycle pressuring software/fintech margins; geopolitical risk driving safe-haven rotation.\n\n🎯 **Levels:** SPY ($684 Max Pain): Call Wall activity lighter, Put Wall $555 (504k OI) shows significant downside hedging. Max Pain $684. QQQ Max Pain $619. /ES: 6847 support per Twitter analysis. Netflix 200-day MA cited as tech sector health indicator. Bitcoin $100K psychological threshold (3% probability per Polymarket).",
     "key_tickers": [
       "SPY",
       "QQQ",
@@ -45,28 +45,28 @@
       "BTC"
     ],
     "key_themes": [
-      "AI revenue acceleration and institutional positioning",
-      "cryptocurrency whale accumulation and regulatory clarity",
-      "rate-sensitive sector rotation",
-      "Fed monetary policy tightness vs growth narrative",
-      "enterprise software earnings deterioration"
+      "AI infrastructure momentum",
+      "Fed policy uncertainty and rate-cut expectations collapse",
+      "Crypto institutional adoption cycle",
+      "Earnings revision pressure in software/fintech",
+      "Regulatory tightening on banking capital"
     ],
     "risk_factors": [
-      "Fed sustained monetary tightness with January rate cut odds at 12%",
-      "cascading earnings misses in enterprise software/fintech/banking sectors",
-      "geopolitical tensions (Taiwan-China, Ukraine) triggering safe-haven flows",
-      "Treasury yield stability breakdown reversing rate-cut rally",
-      "valuation vulnerability in mega-cap tech if consumer spending decelerates"
+      "Fed hawkish surprise with 12% January rate-cut probability",
+      "Q1 earnings guidance cuts from enterprise software and fintech",
+      "Geopolitical escalation driving risk-off rotation",
+      "Overvaluation concerns in mega-cap tech despite whale accumulation",
+      "Fiscal dominance dynamics constraining monetary policy flexibility"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY Max Pain $684.00 acting as magnet. Watch for consolidation around options structure. VIX 13.77 suggests complacency with elevated reversal risk if support breaks.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "/ES 6847 support per Twitter; watch for consolidation around Max Pain levels given holiday liquidity",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY Max Pain $684.00 key pivot. QQQ Max Pain $619.00 support zone. Bitcoin testing momentum with whale accumulation ongoing. Netflix 200-day MA breakdown watch for sector contagion risk.",
+    "swing_levels": "SPY Max Pain $684 pivot; downside watch $555 (504k OI Put Wall); QQQ Max Pain $619; Bitcoin $100K psychological resistance",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 162364
+    "generation_time_ms": 165083
   },
   "trending": {
     "macro": [
@@ -141,49 +141,23 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 11,
-        "sentiment_score": 0.698,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 70,
-        "counts": {
-          "bullish": 10,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 11
-        }
-      },
-      {
-        "ticker": "MU",
-        "mentions": 4,
-        "sentiment_score": 0.585,
+        "mentions": 12,
+        "sentiment_score": 0.586,
         "sentiment_label": "Bullish",
         "sentiment_pct": 59,
         "counts": {
-          "bullish": 3,
-          "bearish": 0,
+          "bullish": 10,
+          "bearish": 1,
           "neutral": 1,
-          "total": 4
+          "total": 12
         }
       },
       {
-        "ticker": "PATH",
+        "ticker": "TSLA",
         "mentions": 3,
-        "sentiment_score": 0.557,
+        "sentiment_score": 0.31,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "GOOGL",
-        "mentions": 3,
-        "sentiment_score": 0.373,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 37,
+        "sentiment_pct": 31,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -192,15 +166,41 @@
         }
       },
       {
-        "ticker": "NKE",
+        "ticker": "RIVN",
         "mentions": 2,
-        "sentiment_score": 0.75,
+        "sentiment_score": 0.735,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 74,
         "counts": {
           "bullish": 2,
           "bearish": 0,
           "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "PATH",
+        "mentions": 2,
+        "sentiment_score": 0.425,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 43,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 2,
+        "sentiment_score": 0.15,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 15,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
           "total": 2
         }
       }
@@ -211,7 +211,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 40,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
