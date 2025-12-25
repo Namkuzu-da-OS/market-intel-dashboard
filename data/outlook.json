@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-25T12:04:01.447Z",
+  "timestamp": "2025-12-25T12:32:19.754Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 76,
+    "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 74,
-        "bearish": 19,
-        "neutral": 85,
-        "total": 178,
+        "bullish": 69,
+        "bearish": 16,
+        "neutral": 78,
+        "total": 163,
         "pct": 42
       },
       "news": {
-        "bullish": 23,
+        "bullish": 24,
         "bearish": 13,
-        "neutral": 10,
-        "total": 46,
+        "neutral": 11,
+        "total": 48,
         "pct": 50
       },
       "video": {
@@ -36,53 +36,40 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with moderate conviction - bullish themes (AI infrastructure, crypto legitimacy, Fed easing) coexist with structural bearish risks (stagflation concerns, tech valuation extremes, earnings disappointments). Quantitative data shows 80% bullish Twitter, 64% bullish news, 100% bullish YouTube/professional trader, but qualitative analysis reveals significant macro headwinds.\n\n📈 **Themes:** (1) AI infrastructure and productivity tailwinds driving selective tech strength, (2) Crypto institutional adoption and regulatory normalization supporting digital assets, (3) Sector bifurcation with rotation from growth to defensive positioning amid guidance disappointments and valuation concerns.\n\n🎯 **Levels:** SPY ($684 Max Pain): Call walls and put walls create option-driven support. QQQ ($619 Max Pain): Options structure suggests dealer positioning around this level. VIX at 13.77 indicates low volatility environment. Per Twitter: /ES futures support mentioned around 6847 (separate from SPY which trades ~$680s). Watch for tech rotation signals and defensive sector strength.",
+    "narrative": "📊 **Consensus:** Bullish sentiment dominates across all sources (81% X, 65% RSS, 100% YouTube, 100% Professional) with medium conviction - structural optimism around AI productivity and monetary easing offset by concrete earnings deterioration and Fed hawkishness concerns.\n\n📈 **Themes:** (1) AI infrastructure acceleration driving tech sector momentum with institutional accumulation, (2) Rate policy uncertainty as Fed cut odds collapse creating tension between policy optimism and monetary reality, (3) Structural economic headwinds including demographic pressures and wage suppression challenging reflation narratives.\n\n🎯 **Levels:** SPY ($684): Max Pain $684.00. QQQ ($619): Max Pain $619.00. Options structure data limited - watch these Max Pain levels as gravitational pulls. /ES levels per Twitter: consolidation with tactical upside bias testing recent highs. Netflix testing 200-day MA cited as tech sector health indicator.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
+      "TSLA",
       "NVDA",
-      "NFLX"
+      "BTC"
     ],
     "key_themes": [
-      "AI infrastructure and productivity gains",
-      "Crypto institutional adoption and regulatory clarity",
-      "Sector rotation from growth to defensive positioning",
-      "Fed policy trajectory and rate cut expectations",
-      "Stagflation risks and fiscal constraints"
+      "AI infrastructure and productivity acceleration",
+      "Monetary policy uncertainty and rate cut expectations",
+      "Crypto institutional legitimacy and regulatory clarity",
+      "Structural economic headwinds and demographic pressures",
+      "Tech sector bifurcation with growth outperforming cyclicals"
     ],
     "risk_factors": [
-      "Stagflation scenario from fiscal dominance and commodity dynamics",
-      "Tech valuation extremes and earnings guidance disappointments",
-      "Employment data weakness validating macro deterioration",
-      "Geopolitical escalation (Taiwan, Russia-Ukraine tensions)",
-      "Banking sector regulatory capital pressures and fintech earnings revisions"
+      "Fed rate cut odds collapsing to 12% creating hawkish surprise potential",
+      "Earnings deterioration in financials and enterprise software spreading to broader sectors",
+      "Demographic headwinds and wage suppression undermining reflation narratives",
+      "Geopolitical escalation risks in Taiwan and Ukraine triggering risk-off flows",
+      "Policy implementation disappointment as 2026 Trump administration measures face execution delays"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "Limited intraday-specific levels provided. /ES futures support per Twitter analysis. SPY gravitating toward $684 Max Pain level. Watch for early session volatility given Christmas Day thin liquidity.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY $684 Max Pain as pivot point. QQQ $619 Max Pain as key level. Monitor for rotation pressure on mega-cap tech and defensive sector strength as swing positioning develops over 1-5 day horizon.",
+    "intraday_levels": "SPY gravitating toward Max Pain $684. Watch for consolidation around current levels with low VIX (13.77) suggesting range-bound action into holiday-thinned trading.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY Max Pain $684 as key pivot, QQQ Max Pain $619 as support. Upside bias targeting recent consolidation breakouts, downside risk if January policy expectations disappoint per X analysis.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 161712
+    "generation_time_ms": 170073
   },
   "trending": {
     "macro": [
-      {
-        "ticker": "SPY",
-        "mentions": 2,
-        "sentiment_score": 0.4,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
       {
         "ticker": "QQQ",
         "mentions": 2,
@@ -94,6 +81,19 @@
           "bearish": 0,
           "neutral": 1,
           "total": 2
+        }
+      },
+      {
+        "ticker": "SPY",
+        "mentions": 1,
+        "sentiment_score": 0.65,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 65,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
         }
       }
     ],
@@ -141,15 +141,15 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 12,
-        "sentiment_score": 0.162,
+        "mentions": 7,
+        "sentiment_score": 0.564,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 16,
+        "sentiment_pct": 56,
         "counts": {
           "bullish": 5,
-          "bearish": 3,
-          "neutral": 4,
-          "total": 12
+          "bearish": 0,
+          "neutral": 2,
+          "total": 7
         }
       },
       {
@@ -179,29 +179,29 @@
         }
       },
       {
-        "ticker": "INTC",
-        "mentions": 6,
-        "sentiment_score": -0.5,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 0,
-          "bearish": 4,
-          "neutral": 2,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "PATH",
+        "ticker": "ASTS",
         "mentions": 5,
-        "sentiment_score": 0.474,
+        "sentiment_score": 0.452,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 47,
+        "sentiment_pct": 45,
         "counts": {
           "bullish": 3,
           "bearish": 0,
           "neutral": 2,
           "total": 5
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 4,
+        "sentiment_score": 0.447,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 45,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 4
         }
       }
     ]
