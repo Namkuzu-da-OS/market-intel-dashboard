@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-24T23:13:46.018Z",
+  "timestamp": "2025-12-25T10:35:54.369Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 98,
-        "bearish": 33,
-        "neutral": 112,
-        "total": 243,
-        "pct": 40
+        "bullish": 69,
+        "bearish": 15,
+        "neutral": 81,
+        "total": 165,
+        "pct": 42
       },
       "news": {
-        "bullish": 30,
-        "bearish": 17,
-        "neutral": 13,
+        "bullish": 31,
+        "bearish": 18,
+        "neutral": 11,
         "total": 60,
-        "pct": 50
+        "pct": 52
       },
       "video": {
-        "bullish": 5,
-        "bearish": 1,
-        "neutral": 3,
-        "total": 9,
-        "pct": 56
+        "bullish": 4,
+        "bearish": 0,
+        "neutral": 1,
+        "total": 5,
+        "pct": 80
       },
       "chat": {
         "bullish": 3,
@@ -36,53 +36,42 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates across all sources (75% weighted average) with medium-high conviction, driven by Fed rate-cut tailwinds and AI infrastructure momentum, though underlying distribution signals and earnings weakness suggest caution into 2026.\n\n📈 **Themes:** (1) AI sector structural adoption with semiconductor/infrastructure buildout as primary driver, (2) Fed monetary policy easing providing macro support despite corporate earnings concerns, (3) Platform security and institutional crypto adoption quality bifurcation creating selective opportunities.\n\n🎯 **Levels:** SPY ($685.99): Call Wall $700 (146k OI, 2.0% away - active resistance), Put Wall $640 (153k OI, 6.7% away - dormant support). Max Pain $684. Near support: $650 (38k OI), $645 (125k OI). QQQ ($619.79): Call Wall $640 (35k OI, 3.3% away - active resistance), Put Wall $590 (164k OI, 4.8% away - active support). Max Pain $619. Near resistance: $620 (33k OI). VIX at yearly lows (13.77) supporting risk-on environment. /ES: 6847 support per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Bullish with medium-high conviction across all sources (82% Twitter, 63% RSS, 100% YouTube/Trader), supported by AI momentum, low VIX hedging costs, and institutional positioning into early 2026.\n\n📈 **Themes:** (1) AI infrastructure expansion and semiconductor sector rotation, (2) Federal Reserve monetary easing cycle supporting risk assets, (3) Crypto institutional adoption and regulatory normalization, (4) Structural employment/demographic headwinds creating fragility beneath surface strength.\n\n🎯 **Levels:** SPY ($684 Max Pain): Call Wall $700 (30k OI), Put Wall $555 (504k OI). QQQ ($619 Max Pain): Options structure skewed defensive with massive put OI delta. /ES: 6847 support per Twitter analysis. VIX at 13.77 (year-lows) signals reduced hedging demand. Netflix 200-day MA cited as key bearish trigger if broken.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
+      "TSLA",
+      "BTC",
       "NFLX",
       "INTC"
     ],
     "key_themes": [
-      "AI infrastructure adoption cycle",
-      "Fed rate-cut monetary tailwinds",
-      "Mega-cap tech distribution signals",
-      "Crypto platform security differentiation",
-      "Enterprise software earnings weakness"
+      "AI infrastructure and semiconductor leadership",
+      "Federal Reserve easing cycle tailwinds",
+      "Crypto institutional legitimacy and regulatory clarity",
+      "Low volatility environment (VIX compression)",
+      "Sectoral rotation from software/fintech to utilities/infrastructure"
     ],
     "risk_factors": [
-      "Insider selling and mega-cap distribution patterns emerging",
-      "Corporate earnings deterioration in financials and enterprise software contradicting market strength",
-      "Geopolitical uncertainty (Ukraine/Taiwan) as overnight risk-off catalyst",
-      "Platform security vulnerabilities threatening institutional crypto adoption timing",
-      "Q1 2026 catalyst reset risk as current optimism may exceed fundamental delivery"
+      "Employment weakness and demographic headwinds undermining consumption",
+      "Enterprise software guidance cuts signaling demand normalization",
+      "Geopolitical escalation triggering risk-off repricing",
+      "Valuation sustainability concerns if Q1 2026 earnings disappoint",
+      "VIX breakout above compression levels indicating hedging return"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY testing $700 Call Wall resistance (146k OI active hedging barrier), support at Max Pain $684. QQQ facing $620 immediate resistance (33k OI), support at $619 Max Pain. VIX 13.77 favors continued upside into holiday close.",
+    "intraday_levels": "SPY testing max pain $684 with strong put support at $555 (504k OI). Watch VIX 13.77 level for hedging re-entry signal. /ES support at 6847 per Twitter",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY $700 major resistance (dealer selling pressure), $684 Max Pain gravitational pull, $650-$645 dormant support cluster (163k combined OI). QQQ $640 Call Wall caps upside (35k OI), $590 Put Wall strong support (164k OI). Watch for year-end consolidation between Max Pain and Call Walls.",
+    "swing_levels": "SPY call wall at $700 (30k OI) represents resistance zone. QQQ max pain $619 with defensive positioning. Netflix 200-day MA critical for tech sector confidence. Watch for tactical pullback into January as inflection point",
     "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 185460
+    "generation_time_ms": 158746
   },
   "trending": {
     "macro": [
-      {
-        "ticker": "QQQ",
-        "mentions": 3,
-        "sentiment_score": 0.433,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 3
-        }
-      },
       {
         "ticker": "SPY",
         "mentions": 2,
@@ -95,9 +84,35 @@
           "neutral": 1,
           "total": 2
         }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 2,
+        "sentiment_score": 0.325,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
       }
     ],
     "crypto": [
+      {
+        "ticker": "ETH",
+        "mentions": 2,
+        "sentiment_score": 0.325,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
       {
         "ticker": "BTC",
         "mentions": 1,
@@ -110,59 +125,59 @@
           "neutral": 0,
           "total": 1
         }
+      },
+      {
+        "ticker": "BCH",
+        "mentions": 1,
+        "sentiment_score": 0.65,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 65,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
       }
     ],
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 15,
-        "sentiment_score": 0.191,
+        "mentions": 12,
+        "sentiment_score": 0.162,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
+        "sentiment_pct": 16,
         "counts": {
-          "bullish": 7,
-          "bearish": 4,
+          "bullish": 5,
+          "bearish": 3,
           "neutral": 4,
-          "total": 15
+          "total": 12
         }
       },
       {
         "ticker": "NKE",
-        "mentions": 10,
-        "sentiment_score": 0.575,
+        "mentions": 6,
+        "sentiment_score": 0.49,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
+        "sentiment_pct": 49,
         "counts": {
-          "bullish": 8,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 2,
-          "total": 10
+          "total": 6
         }
       },
       {
         "ticker": "SPX",
-        "mentions": 8,
-        "sentiment_score": 0.289,
+        "mentions": 6,
+        "sentiment_score": 0.24,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 29,
+        "sentiment_pct": 24,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
-          "neutral": 5,
-          "total": 8
-        }
-      },
-      {
-        "ticker": "ASTS",
-        "mentions": 7,
-        "sentiment_score": 0.529,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 7
+          "neutral": 4,
+          "total": 6
         }
       },
       {
@@ -177,6 +192,19 @@
           "neutral": 2,
           "total": 6
         }
+      },
+      {
+        "ticker": "PATH",
+        "mentions": 5,
+        "sentiment_score": 0.474,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 47,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 5
+        }
       }
     ]
   },
@@ -185,7 +213,7 @@
     "color": "text-muted",
     "vix": 13.77,
     "pc_ratio": 0.88,
-    "sentiment_bullish_pct": 40,
+    "sentiment_bullish_pct": 42,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
