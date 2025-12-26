@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-26T23:37:32.580Z",
+  "timestamp": "2025-12-26T23:54:37.517Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Twitter shows strong bullish positioning (77% bullish) focused on AI/tech momentum, while RSS news and professional traders lean bearish (53% and 13% bullish respectively), citing guidance cuts, geopolitical tensions, and earnings quality concerns. The overall picture suggests a tactical consolidation phase with underlying structural uncertainty.\n\n📈 **Themes:** (1) AI infrastructure demand and mega-cap tech leadership continuing to dominate; (2) Year-end profit-taking and rotation risk in small/mid-caps alongside low holiday volume vulnerability; (3) Geopolitical uncertainty (U.S.-China tensions, Taiwan/Ukraine risks) and policy/regulatory headwinds creating near-term friction despite long-term structural tailwinds.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4% away), Put Wall $640 (153k OI - dormant at 7.3% away). Max Pain $687. Near support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0% away), Put Wall $590 (164k OI - dormant at 5.4% away). Max Pain $620. Near resistance: $640 (31k OI - active), $625 (29k OI - active). Per Twitter: SPX range 6,940–7,000 cited as critical inflection zone.",
+    "narrative": "📊 **Consensus:** Market shows MIXED conviction with bullish structural tailwinds (AI infrastructure, capex momentum, monetary easing expectations) offsetting near-term bearish pressures (earnings deterioration, geopolitical friction, concentrated breadth). Conviction: MEDIUM—rally is real but fragile and vulnerable to liquidity shocks.\n\n📈 **Themes:** (1) AI mega-cap dominance vs. deteriorating market breadth—strength concentrated in $NVDA/$MSFT/$AMZN while mid/small-caps face active selling; (2) Policy uncertainty across regulatory tightening, geopolitical escalation (China, Ukraine, Taiwan), and Fed rate expectations creating bifurcated sector rotation; (3) Year-end liquidity environment amplifying volatility risk—low volume conditions masking underlying demand weakness in growth and cyclicals.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—dormant until approached). Max Pain $687. Near support: $670 (45k OI, 2.9%—ACTIVE), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0%—ACTIVE), Put Wall $590 (164k OI, 5.4%—dormant). Max Pain $620. Near resistance: $640 (31k OI, 2.6%—ACTIVE), $625 (29k OI, 0.2%—ACTIVE). Per Twitter: /ES support floor 6,900 (SPX equivalent), resistance target 7,000 (SPX equivalent).",
     "key_tickers": [
-      "SPY",
-      "QQQ",
+      "NVDA",
+      "MSFT",
+      "AMZN",
       "IWM",
-      "BTC",
-      "AI sector leadership plays"
+      "SPY"
     ],
     "key_themes": [
-      "AI infrastructure momentum vs. rotation risk",
-      "Year-end positioning unwind and holiday volume risk",
-      "Geopolitical uncertainty (Taiwan, Ukraine, U.S.-China tensions)",
-      "Earnings quality deterioration and guidance revision risk",
-      "Breadth divergence (mega-cap strength masking small/mid-cap weakness)"
+      "AI mega-cap momentum and concentration risk",
+      "Market breadth deterioration (mega-cap vs. mid/small-cap divergence)",
+      "Geopolitical and China macro uncertainty",
+      "Regulatory tightening and policy risk",
+      "Year-end liquidity constraints and reversal risk"
     ],
     "risk_factors": [
-      "Geopolitical escalation (Taiwan military, Ukraine commitment tightening)",
-      "Year-end profit-taking in small/mid-caps on low volume creating cascading liquidation",
-      "Earnings guidance cuts from software/fintech/discretionary sectors signaling demand softness",
-      "Regulatory/policy uncertainty and compliance cost inflation undercutting cyclical optimism",
-      "Bitcoin/crypto sector weakness despite crowded bullish positioning suggesting retail/trader capitulation risk"
+      "Concentrated breadth in mega-cap AI—vulnerability to rotation if leadership fails",
+      "China economic uncertainty and geopolitical escalation creating macro risk-off headwinds",
+      "Earnings guidance misses cascading across software/fintech sectors—demand deterioration risk",
+      "Year-end low-volume trading masking underlying weakness; reversal risk post-holiday liquidity normalization",
+      "Policy uncertainty (Fed, regulatory tightening, geopolitical) creating sector bifurcation—bifurcated expansion may compress valuations unexpectedly"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Testing $700 call wall (active hedging resistance). Support at $670 (active) and $690 (max pain nearby). QQQ: Squeezed between $625–$630 call walls (both active)—breakout either direction likely. Watch for volume confirmation; low holiday liquidity may create false moves.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: 6,940–7,000 range (per Twitter) is critical inflection—failure below 6,940 could trigger broad liquidation. Put wall support at $640 (153k OI) is significant but dormant (7.3% away). QQQ: $590 put wall (164k OI) provides major support but is 5.4% away; near-term resistance capped at $630–$640. Breadth deterioration (Russell 2000 weakness) and crypto sector weakness suggest downside bias if SPX/SPY breaks support—expected direction: consolidation → downside into early 2026 unless geopolitical/regulatory risks ease.",
+    "intraday_levels": "SPY: Resistance $700 (active call wall, 1.4% away—dealer hedging active). Support $670 (active put support, 2.9% away). QQQ: Resistance $625-$630 (tightly bunched active walls, <1% away). Support $620 (max pain gravitational pull). Watch for breakout/breakdown at call wall resistance; any rejection suggests consolidation into support.",
+    "swing_bias": "BULLISH_SUPPORT",
+    "swing_levels": "SPY: Upside target 7,000 SPX (per Twitter technical consensus) requires clear break above $700 call wall; support floor 6,900 SPX (equivalent ~$690 SPY). QQQ: Resistance $640 (31k OI, 2.6% away), support $590 (164k OI, dormant until approached—5.4% away). Watch earnings stabilization and Fed policy clarity as catalysts for directional move beyond max pain levels.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 170870
+    "generation_time_ms": 174329
   },
   "trending": {
     "macro": [
