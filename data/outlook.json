@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-26T10:52:22.239Z",
+  "timestamp": "2025-12-26T11:22:45.524Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 72,
+    "confidence_pct": 74,
     "sources": {
       "social": {
-        "bullish": 38,
-        "bearish": 12,
-        "neutral": 82,
-        "total": 132,
+        "bullish": 40,
+        "bearish": 10,
+        "neutral": 86,
+        "total": 136,
         "pct": 29
       },
       "news": {
@@ -36,37 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is cautiously bullish with medium conviction. Multiple sources cite seasonal tailwinds and technical support holding, but professional hedging activity and narrative-price divergence warrant caution. Weighted sentiment skews bullish (X 76%, RSS 58%, Pro Trader 100%) but lower-accuracy sources dominate the sample.\n\n📈 **Themes:** AI sector momentum and mega-cap tech leadership remain dominant narratives. Precious metals rotation and Bitcoin institutional accumulation are gaining attention. Rate policy uncertainty and deflationary pressures from AI create cross-currents that could cap rallies.\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (150k OI) - ACTIVE resistance 1.4% away, Put Wall $640 (153k OI) - dormant support. Max Pain $684. Near support: $645 (125k OI), $650 (41k OI). QQQ ($623.93): Call Wall $640 (31k OI) - ACTIVE, immediate resistance $630 (30k OI). Put Wall $590 (164k OI) - dormant. Max Pain $617. SPY support at $688 per X/Twitter commentary.",
+    "narrative": "📊 **Consensus:** Modestly bullish with medium conviction. Sources show 58-100% bullish readings across platforms, with institutional accumulation and seasonal tailwinds supporting upside, though bearish technical warnings and earnings downgrades suggest caution on chasing rallies.\n\n📈 **Themes:** AI sector momentum and productivity acceleration driving mega-cap tech interest; rate policy uncertainty with markets pricing in Fed relief; year-end institutional positioning with notable whale accumulation reported; autonomous vehicle and geographic diversification narratives emerging.\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (150k OI - ACTIVE resistance 1.4% away), Put Wall $640 (153k OI - dormant support). Max Pain $684. Near support: $645 (125k OI), $650 (41k OI). QQQ ($623.93): Call Wall $640 (31k OI - ACTIVE), near resistance $630 (30k OI). Put Wall $590 (164k OI - dormant). Max Pain $617. NVDA: watching $190 level per Twitter for technical validation.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "BTC",
-      "GLD"
+      "BTC"
     ],
     "key_themes": [
-      "AI sector momentum and mega-cap tech leadership",
-      "Seasonal Santa Rally tailwinds",
-      "Precious metals rotation",
-      "Institutional hedging vs retail optimism divergence",
-      "Rate policy uncertainty"
+      "AI productivity acceleration",
+      "Fed rate policy expectations",
+      "Year-end institutional positioning",
+      "Mega-cap tech leadership"
     ],
     "risk_factors": [
-      "Narrative-price divergence signaling hidden institutional selling",
-      "Earnings revision risk in software and fintech sectors",
-      "Geopolitical escalation in Ukraine and Taiwan",
-      "Regulatory tightening headwinds",
-      "G7 sovereign debt concerns"
+      "Technical deterioration despite bullish headlines (distribution risk)",
+      "Enterprise software earnings downgrades spreading",
+      "Exchange volume credibility concerns",
+      "Regulatory tightening impact on select sectors",
+      "Holiday-thinned liquidity amplifying moves"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY $688 support per X/Twitter, $700 Call Wall resistance. QQQ $630 near resistance, $640 Call Wall cap.",
+    "intraday_levels": "SPY: $700 Call Wall resistance (active hedging), gravitational pull toward $684 Max Pain. QQQ: $630 near resistance (active), $640 Call Wall overhead",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY support zone $684 (max pain) to $688, resistance at $700 Call Wall. QQQ support $617 (max pain), resistance $630-$640. Downside risk accelerates below SPY $650.",
-    "source_alignment": "MIXED"
+    "swing_levels": "SPY: Support at $684 (Max Pain), $650, $645; Resistance at $700 Call Wall. QQQ: Support at $617 (Max Pain), $590 Put Wall; Resistance at $630, $640",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 131766
+    "generation_time_ms": 130980
   },
   "trending": {
     "macro": [
@@ -138,6 +136,19 @@
         }
       },
       {
+        "ticker": "MSTR",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
         "ticker": "BCH",
         "mentions": 1,
         "sentiment_score": 0.72,
@@ -154,15 +165,15 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 7,
-        "sentiment_score": 0.557,
+        "mentions": 10,
+        "sentiment_score": 0.41,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
+        "sentiment_pct": 41,
         "counts": {
           "bullish": 6,
           "bearish": 1,
-          "neutral": 0,
-          "total": 7
+          "neutral": 3,
+          "total": 10
         }
       },
       {
@@ -222,7 +233,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.13,
+    "vix": 14.14,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 29,
     "summary": "Market is lacking clear direction. Wait for confirmation."
