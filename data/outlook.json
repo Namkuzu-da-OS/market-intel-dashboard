@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-26T12:22:33.999Z",
+  "timestamp": "2025-12-26T12:56:51.325Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 71,
     "sources": {
       "social": {
         "bullish": 40,
-        "bearish": 10,
-        "neutral": 91,
-        "total": 141,
+        "bearish": 11,
+        "neutral": 92,
+        "total": 143,
         "pct": 28
       },
       "news": {
         "bullish": 14,
-        "bearish": 12,
+        "bearish": 13,
         "neutral": 9,
-        "total": 35,
-        "pct": 40
+        "total": 36,
+        "pct": 39
       },
       "video": {
         "bullish": 0,
@@ -36,36 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment leans cautiously bullish with low-to-medium conviction. X/Twitter shows 80% bullish reading but warns of price weakness contradicting optimism; RSS News tilts bullish on Fed relief and AI themes but flags structural headwinds. Expect choppy consolidation rather than sustained directional moves.\n\n📈 **Themes:** 1) AI/productivity momentum driving selective tech rotation, 2) Rate policy expectations and Fed communication sensitivity, 3) Year-end positioning dynamics with defensive barbell strategies favoring both safe-haven and high-conviction growth plays.\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (146k OI, 1.4% away - ACTIVE resistance), Put Wall $640 (153k OI, 7.3% away - dormant). Max Pain $687. Near support: $670 (45k OI - ACTIVE), $645 (126k OI). QQQ ($623.93): Call Wall $630 (33k OI, 1.0% away - ACTIVE), Put Wall $590 (164k OI). Max Pain $620. Near resistance: $625 (29k OI), $640 (31k OI). VIX at 14.21 suggests complacency.",
+    "narrative": "📊 **Consensus:** Market sentiment is cautiously bullish with LOW conviction. Sources show mixed signals - X sentiment leans bullish (78%) but acknowledges technical deterioration, while RSS highlights sector bifurcation rather than broad directional conviction. Holiday-thinned trading adds uncertainty.\n\n📈 **Themes:** 1) AI sector momentum and infrastructure capex driving selective tech strength, 2) Rate policy uncertainty creating oscillation between risk-on and risk-off positioning, 3) Crypto weakness despite institutional adoption narratives - Bitcoin underperformance contradicting bullish forecasts signals broader risk appetite caution.\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (146k OI - ACTIVE resistance 1.4% away), Put Wall $640 (153k OI - dormant). Max Pain $687. Near support: $670 (45k OI - ACTIVE). QQQ ($623.93): Call Wall $630 (33k OI - ACTIVE resistance 1.0% away), Put Wall $590 (164k OI - dormant). Max Pain $620. Near resistance: $625 (29k OI), $640 (31k OI). VIX at 14.18 suggests complacency.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "BTC",
       "NVDA",
-      "BTC"
+      "TSLA"
     ],
     "key_themes": [
-      "AI productivity momentum",
-      "Fed rate policy sensitivity",
-      "Year-end positioning and seasonality",
-      "Tech rotation selectivity",
-      "Defensive barbell strategies"
+      "AI infrastructure and productivity momentum",
+      "Rate policy uncertainty and Fed path clarity",
+      "Crypto underperformance despite institutional narratives",
+      "Sector rotation over broad market direction",
+      "Holiday liquidity thinning"
     ],
     "risk_factors": [
-      "Price action diverging from bullish sentiment (bearish signal per Druckenmiller principle)",
-      "Geopolitical uncertainty (Russia-Ukraine, Taiwan)",
-      "Earnings guidance cuts in software/financials",
-      "Regulatory friction across multiple sectors",
-      "Low VIX suggesting complacency ahead of potential volatility"
+      "Geopolitical flashpoints (Taiwan, Russia-Ukraine) triggering risk-off rotation",
+      "Financial sector stress from regulatory tightening",
+      "Technical deterioration despite bullish narratives",
+      "Low conviction consolidation vulnerable to sudden moves",
+      "Crypto weakness potentially signaling broader risk appetite decline"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY $687 max pain gravitational pull, $690 current area with $700 call wall resistance overhead. QQQ $620 max pain, $625-$630 immediate resistance zone. Watch for rejection at call walls given active dealer hedging.",
+    "intraday_levels": "SPY: $700 call wall resistance (active hedging), $687 max pain gravitational pull, $670 near support. QQQ: $630 call wall resistance (active), $625 immediate resistance, $620 max pain.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY support at $670 (active), $645-$640 put wall zone if weakness accelerates. Upside capped near $700 call wall. QQQ support at $590 put wall, resistance at $630-$640 call wall cluster.",
+    "swing_levels": "SPY: $700 breakout target if cleared, $670 must hold for bullish structure, $640 put wall major support. QQQ: $630-$640 resistance zone, $590 put wall support if weakness develops.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 144446
+    "generation_time_ms": 140728
   },
   "trending": {
     "macro": [
@@ -125,15 +126,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 3,
-        "sentiment_score": 0.707,
+        "mentions": 2,
+        "sentiment_score": 0.735,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 71,
+        "sentiment_pct": 74,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 0,
-          "total": 3
+          "total": 2
         }
       },
       {
@@ -166,15 +167,15 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 12,
-        "sentiment_score": 0.402,
+        "mentions": 11,
+        "sentiment_score": 0.379,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "sentiment_pct": 38,
         "counts": {
-          "bullish": 7,
+          "bullish": 6,
           "bearish": 1,
           "neutral": 4,
-          "total": 12
+          "total": 11
         }
       },
       {
@@ -234,7 +235,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.21,
+    "vix": 14.18,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 28,
     "summary": "Market is lacking clear direction. Wait for confirmation."
