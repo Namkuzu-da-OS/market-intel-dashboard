@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-12-26T17:05:37.698Z",
+  "timestamp": "2025-12-26T17:24:13.040Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 70,
+    "confidence_pct": 69,
     "sources": {
       "social": {
         "bullish": 63,
@@ -13,10 +13,10 @@
         "pct": 36
       },
       "news": {
-        "bullish": 15,
+        "bullish": 16,
         "bearish": 11,
-        "neutral": 10,
-        "total": 36,
+        "neutral": 11,
+        "total": 38,
         "pct": 42
       },
       "video": {
@@ -28,45 +28,27 @@
       },
       "chat": {
         "bullish": 2,
-        "bearish": 5,
+        "bearish": 6,
         "neutral": 0,
-        "total": 7,
-        "pct": 29
+        "total": 8,
+        "pct": 25
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is decidedly BULLISH with MEDIUM-HIGH conviction across the majority of sources. Large-cap tech and AI momentum are driving all-time highs, though breadth concerns (mid-cap weakness) and fundamental disconnects (earnings guidance cuts vs. bullish headlines) temper conviction. Near-term upside is more probable than downside, but rally quality is narrowing.\n\n📈 **Themes:** (1) AI sector dominance and large-cap tech strength as primary rally driver; (2) Fed rate-cut expectations and soft-landing narrative supporting risk-on positioning; (3) Breadth divergence (large-cap strength vs. mid-cap selling) signaling potential low-conviction rally; (4) Post-holiday liquidity normalization as a tactical wildcard; (5) Earnings guidance reliability as a near-term credibility test for sustained upside.\n\n🎯 **Levels:** SPY ($690.08): Call Wall $700 (146k OI - ACTIVE, 1.4% away), Put Wall $640 (153k OI - DORMANT, 7.3% away). Max Pain $687. Near support: $670 (45k OI - ACTIVE, 2.9% away), $645 (126k OI - DORMANT, 6.5% away). QQQ ($624.21): Call Wall $630 (33k OI - ACTIVE, 0.9% away), Put Wall $590 (164k OI - DORMANT, 5.5% away). Max Pain $620. Near support: $585 (137k OI - DORMANT, 6.3% away), $640 (31k OI - ACTIVE, 2.5% away). /ES: Progression targets 6940-6960-6970-7000 per Twitter analysis.",
-    "key_tickers": [
-      "SPY",
-      "QQQ",
-      "NVDA",
-      "META",
-      "IWM"
-    ],
-    "key_themes": [
-      "AI sector momentum and large-cap tech dominance",
-      "Fed rate-cut expectations and soft-landing narrative",
-      "Breadth divergence: large-cap strength vs. mid-cap weakness",
-      "Earnings guidance credibility test for fundamentals",
-      "Post-holiday liquidity normalization and low-volume volatility risk"
-    ],
-    "risk_factors": [
-      "Narrow breadth (mid-cap selloffs despite large-cap highs) signals low-conviction rally vulnerable to rotation",
-      "Earnings guidance cuts in fintech, software, and pharma contradict bullish sentiment—Q1 earnings season credibility test looms",
-      "Regulatory headwinds (financial institutions, autonomous vehicles oversight) could pressure guidance-sensitive sectors",
-      "Crypto fundamentals disconnected from narrative-driven pumping—tail-risk event if sentiment reversal occurs",
-      "Geopolitical escalation (Taiwan defense, China Five-Year Plan implications) adds tail risk to risk-on positioning"
-    ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: $700 call wall (active resistance, 1.4% away), $670 support (active hedging). QQQ: $630 call wall (active resistance, 0.9% away), $640 resistance also active (2.5% away). Watch for rotation or momentum exhaustion if SPY rejects $700 or QQQ fails to break $625-630 zone decisively.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Target progression toward $750-$760 (dormant call wall at $750, 8.7% away) if $700 breaks. Support backstops at $670 (active, 2.9% away) and $645 (dormant, 6.5% away). QQQ: Target $640-$645 if current resistance breaks; support at $590 (dormant, 5.5% away). Max Pain gravitational pull ($687 SPY, $620 QQQ) provides intermediate anchors through expiration.",
+    "narrative": "```json\n{\n  \"ai_narrative\": \"📊 **Consensus:** Markets are positioned for cautious consolidation with a structural bullish bias supported by monetary easing expectations and AI sector momentum, but elevated hedging activity and weak price action in growth stocks suggest institutional caution despite headline optimism. Conviction: MEDIUM.\n\n📈 **Themes:** (1) Fed rate-cut expectations and monetary policy tailwinds driving mega-cap tech leadership; (2) AI adoption acceleration and capital expenditure cycle potential offsetting earnings quality concerns; (3) Holiday liquidity constraints creating bifurcated market behavior—strength in mega-cap positioning paired with systematic liquidation in mid-cap growth and cryptocurrency volatility.\n\n🎯 **Levels:** SPY ($689.53): Call Wall $700 (146k OI - active hedging at 1.5% away), Put Wall $640 (153k OI - dormant at 7.2% away). Max Pain $687. Near resistance: $730 (48k OI, dormant), $750 (55k OI, dormant). Near support: $670 (45k OI, active), $645 (126k OI, dormant). | QQQ ($623.75): Call Wall $630 (33k OI - active hedging at 1.0% away), Put Wall $590 (164k OI - dormant at 5.4% away). Max Pain $620. Near resistance: $640 (31k OI, active), $625 (29k OI, active). Near support: $585 (137k OI, dormant).\",\n  \"source_alignment\": \"MIXED\",\n  \"conflicts\": \"Twitter sentiment (77% bullish) conflicts with professional trader positioning (25% bullish) and bearish structural arguments (weak price action, China uncertainty, crude oil weakness). RSS and YouTube maintain bullish bias but acknowledge embedded hedging and valuation concerns. The disconnect suggests consensus optimism masks institutional hedging and distribution in growth assets—a classic Druckenmiller divergence signal (positive sentiment + weak technicals). This bifurcation likely persists through year-end holiday liquidity.\",\n  \"intraday_bias\": \"NEUTRAL\",\n  \"intraday_levels\": \"SPY: Immediate resistance at $700 (active call wall with 146k OI), support at $670 (active put wall). QQQ: Immediate resistance $625-$630 (active hedging zone), support at $590 (dormant but high 164k OI). Watch for breakout/breakdown rather than directional commitment given holiday liquidity constraints.\",\n  \"swing_bias\": \"BULLISH\",\n  \"swing_levels\": \"SPY swing target: $710-$730 if breaks above $700 call wall (dormant resistance at $750 becomes next target, 55k OI). QQQ swing target: $630-$640 if breaks through active resistance zone. Retest support: SPY $670-$645 if pullback occurs (dormant put wall at $640 provides structural floor). Max pain gravity toward $687 (SPY) and $620 (QQQ) into near-term expiration.\",\n  \"key_tickers\": [\"SPY\", \"QQQ\", \"NVDA\", \"META\", \"TSLA\"],\n  \"key_themes\": [\"Mega-cap AI leadership\", \"Fed easing expectations and rate-cut cycle\", \"AI adoption and capex acceleration\", \"Holiday liquidity bifurcation (mega-cap strength vs. growth weakness)\", \"Geopolitical uncertainty and China medium-term headwinds\"],\n  \"risk_factors\": [\"Institutional distribution in growth stocks despite bullish sentiment (Druckenmiller divergence)\", \"Holiday low-volume systematic selling in mid-cap and growth names\", \"China policy uncertainty and geopolitical friction dampening risk appetite\", \"Crude oil weakness signaling weak demand fundamentals despite narrative strength\", \"Options hedging imbalance—elevated downside protection suggests tail-risk concern\"]\n}\n```",
+    "key_tickers": [],
+    "key_themes": [],
+    "risk_factors": [],
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "No levels available",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "No levels available",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 174740
+    "generation_time_ms": 169677
   },
   "trending": {
     "macro": [
@@ -248,8 +230,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 13.9,
-    "pc_ratio": 0.74,
+    "vix": 13.97,
+    "pc_ratio": 0.85,
     "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -258,7 +240,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.69,
-    "spread": 2.87,
+    "spread": 3.2,
     "position": 50
   },
   "action": {
