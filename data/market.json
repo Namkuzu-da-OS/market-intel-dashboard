@@ -1,32 +1,32 @@
 {
-  "timestamp": "2025-12-26T16:10:38.796Z",
+  "timestamp": "2025-12-26T16:29:18.543Z",
   "symbols": {
     "QQQ": {
-      "price": 624.84,
+      "price": 624.05,
       "change": null,
       "change_pct": null,
-      "volume": 9292053,
-      "implied_volatility": 12.75,
+      "volume": 11017334,
+      "implied_volatility": 12.94,
       "max_pain": 620
     },
     "SPY": {
-      "price": 690.89,
+      "price": 690.02,
       "change": null,
       "change_pct": null,
-      "volume": 12667646,
-      "implied_volatility": 11.16,
+      "volume": 14528723,
+      "implied_volatility": 11.45,
       "max_pain": 687
     },
     "VIX": {
-      "price": 13.86,
-      "change": 0.39,
+      "price": 13.99,
+      "change": 0.52,
       "change_pct": null,
       "volume": null,
       "implied_volatility": null,
       "day_high": 14.29,
-      "day_low": 13.86,
+      "day_low": 13.85,
       "year_high": 60.13,
-      "year_low": 13.86
+      "year_low": 13.85
     }
   }
 }
