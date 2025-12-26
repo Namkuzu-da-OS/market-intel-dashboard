@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-26T11:55:42.028Z",
+  "timestamp": "2025-12-26T12:22:33.999Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 74,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 41,
+        "bullish": 40,
         "bearish": 10,
         "neutral": 91,
-        "total": 142,
-        "pct": 29
+        "total": 141,
+        "pct": 28
       },
       "news": {
-        "bullish": 15,
-        "bearish": 11,
-        "neutral": 10,
-        "total": 36,
-        "pct": 42
+        "bullish": 14,
+        "bearish": 12,
+        "neutral": 9,
+        "total": 35,
+        "pct": 40
       },
       "video": {
         "bullish": 0,
@@ -36,37 +36,36 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - sentiment data shows broad bullish lean (X: 80%, RSS: 58%, Pro Trader: 100%) but technical execution concerns and year-end positioning dynamics create hesitation. The gap between narrative optimism and price action weakness suggests consolidation rather than breakout.\n\n📈 **Themes:** AI sector momentum and data center infrastructure demand driving tech leadership; rate policy uncertainty with Fed cut expectations creating backdrop for risk-on positioning; year-end options expiration dynamics and institutional hedging creating elevated chop risk.\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (146k OI, 1.4% away - ACTIVE resistance), Put Wall $640 (153k OI, 7.3% away - dormant). Max Pain $687. Near support: $670 (45k OI, 3.0% - ACTIVE), $645 (126k OI). QQQ ($623.93): Call Wall $630 (33k OI, 1.0% away - ACTIVE), Put Wall $590 (164k OI, 5.4% away - dormant). Max Pain $620. Near resistance: $625 (29k OI, 0.2% - ACTIVE), $640 (31k OI).",
+    "narrative": "📊 **Consensus:** Market sentiment leans cautiously bullish with low-to-medium conviction. X/Twitter shows 80% bullish reading but warns of price weakness contradicting optimism; RSS News tilts bullish on Fed relief and AI themes but flags structural headwinds. Expect choppy consolidation rather than sustained directional moves.\n\n📈 **Themes:** 1) AI/productivity momentum driving selective tech rotation, 2) Rate policy expectations and Fed communication sensitivity, 3) Year-end positioning dynamics with defensive barbell strategies favoring both safe-haven and high-conviction growth plays.\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (146k OI, 1.4% away - ACTIVE resistance), Put Wall $640 (153k OI, 7.3% away - dormant). Max Pain $687. Near support: $670 (45k OI - ACTIVE), $645 (126k OI). QQQ ($623.93): Call Wall $630 (33k OI, 1.0% away - ACTIVE), Put Wall $590 (164k OI). Max Pain $620. Near resistance: $625 (29k OI), $640 (31k OI). VIX at 14.21 suggests complacency.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
       "NVDA",
-      "MSTR"
+      "BTC"
     ],
     "key_themes": [
-      "AI infrastructure and data center demand",
-      "Rate cut expectations and Fed policy",
-      "Year-end options expiration positioning",
-      "Crypto accumulation narratives vs technical weakness",
-      "Sector rotation from cyclicals to defensives"
+      "AI productivity momentum",
+      "Fed rate policy sensitivity",
+      "Year-end positioning and seasonality",
+      "Tech rotation selectivity",
+      "Defensive barbell strategies"
     ],
     "risk_factors": [
-      "Elevated sentiment with deteriorating price action creates reversal risk",
-      "Geopolitical tensions (Taiwan, Russia) triggering safe-haven flows",
-      "Financial sector guidance cuts and regulatory tightening",
-      "Options expiration volatility into year-end",
-      "Concentrated positioning in popular trades vulnerable to unwind"
+      "Price action diverging from bullish sentiment (bearish signal per Druckenmiller principle)",
+      "Geopolitical uncertainty (Russia-Ukraine, Taiwan)",
+      "Earnings guidance cuts in software/financials",
+      "Regulatory friction across multiple sectors",
+      "Low VIX suggesting complacency ahead of potential volatility"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $687 max pain gravity, $690 current, $700 call wall resistance. QQQ: $620 max pain, $625-$630 resistance cluster. Watch for range-bound action between max pain and call walls.",
+    "intraday_levels": "SPY $687 max pain gravitational pull, $690 current area with $700 call wall resistance overhead. QQQ $620 max pain, $625-$630 immediate resistance zone. Watch for rejection at call walls given active dealer hedging.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $670 active support, $640 put wall major support, $700 resistance target. QQQ: $590 put wall support (dormant but significant at 164k OI), $630 resistance. Breakout above call walls would signal continuation.",
+    "swing_levels": "SPY support at $670 (active), $645-$640 put wall zone if weakness accelerates. Upside capped near $700 call wall. QQQ support at $590 put wall, resistance at $630-$640 call wall cluster.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 143209
+    "generation_time_ms": 144446
   },
   "trending": {
     "macro": [
@@ -235,9 +234,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.17,
+    "vix": 14.21,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 29,
+    "sentiment_bullish_pct": 28,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
