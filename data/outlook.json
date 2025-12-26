@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-26T09:51:16.421Z",
+  "timestamp": "2025-12-26T10:22:50.967Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 71,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 40,
-        "bearish": 12,
-        "neutral": 79,
-        "total": 131,
-        "pct": 31
+        "bullish": 42,
+        "bearish": 13,
+        "neutral": 83,
+        "total": 138,
+        "pct": 30
       },
       "news": {
-        "bullish": 19,
-        "bearish": 14,
+        "bullish": 14,
+        "bearish": 10,
         "neutral": 9,
-        "total": 42,
-        "pct": 45
+        "total": 33,
+        "pct": 42
       },
       "video": {
-        "bullish": 1,
+        "bullish": 0,
         "bearish": 0,
         "neutral": 1,
-        "total": 2,
-        "pct": 50
+        "total": 1,
+        "pct": 0
       },
       "chat": {
         "bullish": 5,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Moderately bullish bias with LOW conviction. All sources lean bullish (77% X, 58% RSS, 100% YouTube/Pro Trader) but concerns about narrative-vs-price-action divergence and near-term consolidation risk temper confidence. Holiday-thinned trading adds uncertainty.\n\n📈 **Themes:** 1) Seasonal tailwind expectations into early 2026 driving positioning optimism 2) Rate policy uncertainty with sharp drop in January cut odds creating macro headwinds 3) AI/tech sector momentum narratives meeting earnings validation skepticism 4) Precious metals and crypto whale accumulation supporting risk-on sentiment\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (150k OI) - ACTIVE resistance 1.4% away, Put Wall $640 (153k OI) - dormant support 7.3% away. Max Pain $684. Near support: $645 (125k OI), $650 (41k OI). QQQ ($623.93): Call Wall $640 (31k OI) - active resistance, near resistance $630 (30k OI) - ACTIVE 1.0% away. Put Wall $590 (164k OI) - dormant. Max Pain $617. Dealer positioning suggests bullish support structure with capped upside at call walls.",
+    "narrative": "📊 **Consensus:** Market sentiment leans cautiously bullish with medium conviction. X sentiment shows 76% bullish bias and RSS news 58% bullish, supported by seasonal tailwinds and technical positioning, though both sources warn of elevated tail risks and consolidation dynamics.\n\n📈 **Themes:** 1) Holiday seasonal strength and Santa Rally momentum continuation into early January, 2) AI sector leadership and mega-cap tech dominance driving index performance, 3) Rate policy uncertainty with diminished Fed cut expectations creating macro headwinds beneath bullish surface sentiment.\n\n🎯 **Levels:** SPY ($690.38): Call Wall $700 (150k OI, 1.4% away - ACTIVE resistance), Put Wall $640 (153k OI, 7.3% away - dormant support). Max Pain $684. Near support: $645 (125k OI), $650 (41k OI). QQQ ($623.93): Call Wall $640 (31k OI, 2.6% away - ACTIVE), near resistance $630 (30k OI - ACTIVE), Put Wall $590 (164k OI, 5.4% away). Max Pain $617. Net bias: BULLISH_SUPPORT on both indices with active call walls capping upside near-term.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
       "NVDA",
-      "XLU"
+      "BTC",
+      "SPX"
     ],
     "key_themes": [
-      "seasonal_tailwinds_Q1",
-      "rate_policy_uncertainty",
-      "AI_sector_momentum",
-      "narrative_vs_priceaction_divergence",
-      "defensive_rotation_risk"
+      "Santa Rally seasonal momentum",
+      "AI sector leadership and mega-cap dominance",
+      "Fed rate policy uncertainty",
+      "Crypto institutional accumulation",
+      "Risk-off rotation potential"
     ],
     "risk_factors": [
-      "Fed messaging shifts removing dovish expectations",
-      "earnings guidance disappointments broadening beyond fintech",
-      "narrative strength masking poor underlying price action",
-      "holiday liquidity creating exaggerated moves",
-      "geopolitical developments driving risk-off rotation"
+      "Sharp reversal risk post-New Year if seasonal support fades",
+      "Hawkish Fed surprise given diminished rate cut odds",
+      "Bearish divergence between positive headlines and weakening price action",
+      "Regulatory uncertainty in crypto and AI sectors",
+      "Narrow market breadth concentrated in mega-caps"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $700 call wall resistance (150k OI active), $684 max pain gravity. QQQ: $630 near resistance (30k OI active), $617 max pain. Holiday-thin liquidity increases volatility risk.",
+    "intraday_levels": "SPY: $700 call wall resistance (active), $684 max pain gravitational pull. QQQ: $630 near resistance (active), $640 call wall cap, $617 max pain",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $700 upside target (call wall), $650-$645 support zone if weakness. QQQ: $640 call wall resistance, $590 put wall support (164k OI). Seasonal tailwinds support bullish lean into early January.",
+    "swing_levels": "SPY: $700 resistance (call wall), $684 max pain pivot, $650-$645 support zone if weakness emerges. QQQ: $640 resistance target, $617 max pain, $590 put wall major support",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 136246
+    "generation_time_ms": 134358
   },
   "trending": {
     "macro": [
@@ -125,6 +125,19 @@
     ],
     "crypto": [
       {
+        "ticker": "BTC",
+        "mentions": 3,
+        "sentiment_score": 0.707,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 71,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 3
+        }
+      },
+      {
         "ticker": "BCH",
         "mentions": 2,
         "sentiment_score": 0.685,
@@ -138,29 +151,16 @@
         }
       },
       {
-        "ticker": "BTC",
-        "mentions": 2,
+        "ticker": "ETH",
+        "mentions": 1,
         "sentiment_score": 0.65,
         "sentiment_label": "Bullish",
         "sentiment_pct": 65,
         "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "ETH",
-        "mentions": 2,
-        "sentiment_score": 0.325,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
-        "counts": {
           "bullish": 1,
           "bearish": 0,
-          "neutral": 1,
-          "total": 2
+          "neutral": 0,
+          "total": 1
         }
       }
     ],
@@ -235,9 +235,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.15,
+    "vix": 14.13,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 31,
+    "sentiment_bullish_pct": 30,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
