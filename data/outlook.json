@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-12-26T20:09:28.366Z",
+  "timestamp": "2025-12-26T23:20:44.148Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 63,
+    "confidence_pct": 62,
     "sources": {
       "social": {
         "bullish": 63,
@@ -13,18 +13,18 @@
         "pct": 36
       },
       "news": {
-        "bullish": 18,
-        "bearish": 15,
-        "neutral": 13,
-        "total": 46,
-        "pct": 39
+        "bullish": 20,
+        "bearish": 18,
+        "neutral": 16,
+        "total": 54,
+        "pct": 37
       },
       "video": {
         "bullish": 1,
         "bearish": 1,
-        "neutral": 1,
-        "total": 3,
-        "pct": 33
+        "neutral": 3,
+        "total": 5,
+        "pct": 20
       },
       "chat": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Twitter sentiment is decidedly bullish (77%), but RSS News and YouTube analysts show more cautious positioning (55% and 50% bullish respectively), while the professional trader data reveals significant bearish skew (13% bullish). This divergence suggests retail/social media optimism is not matched by institutional conviction or professional trader positioning.\n\n📈 **Themes:** (1) Mega-cap tech and AI infrastructure momentum narrative persists, but technical exhaustion warnings in mid-caps and growth assets suggest momentum may be fragile; (2) Year-end liquidity concerns and options expiry dynamics creating near-term headwinds despite positive macro narratives; (3) Corporate earnings execution lagging forward-looking bull case—guidance cuts in large-cap software and financial services represent concrete downside pressure against optimistic sentiment.\n\n🎯 **Levels:** SPY ($690.17): Call Wall $700 (146k OI—active hedging at 1.4% away), Put Wall $640 (153k OI—dormant at 7.3% away). Max Pain $687. Near resistance: $730 (48k OI, dormant), $750 (55k OI, dormant). Near support: $670 (45k OI, active), $645 (126k OI, dormant). QQQ ($624.53): Call Wall $630 (33k OI—active at 0.9% away), Put Wall $590 (164k OI—dormant at 5.5% away). Max Pain $620. Near resistance: $640 (31k OI, active), $625 (29k OI, active). Near support: $585 (137k OI, dormant). Per Twitter: /ES levels around 6940–7000 breakout zone mentioned as bullish target if 6900 holds. NVDA sustained action above $190 cited as sector health indicator.",
+    "narrative": "📊 **Consensus:** Market is broadly bullish with medium-to-high conviction, supported by mega-cap technical strength and AI narrative momentum, but underlying breadth concerns and bifurcated leadership (large-cap outperformance vs. mid-cap weakness) create elevated reversal risk in low-volume conditions.\n\n📈 **Themes:** (1) AI infrastructure and capex-driven growth cycle sustaining mega-cap leadership; (2) Rate accommodation expectations supporting equities amid narrow participation; (3) Geopolitical and regulatory uncertainty creating sector rotation and demand deterioration risks; (4) Year-end liquidity dynamics and low-volume trading potentially amplifying volatility around technical levels.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—dormant). Max Pain $687. Near support: $670 (45k OI, 2.9%—ACTIVE), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE hedging), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $620. Near resistance: $640 (31k OI, 2.6%—ACTIVE), $625 (29k OI, 0.2%—ACTIVE). Per Twitter: /ES major support at 6900 with resistance targets progressing 6940→7000.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "IWM",
-      "ORCL"
+      "ORCL",
+      "IWM"
     ],
     "key_themes": [
-      "Mega-cap tech momentum vs. mid-cap deterioration",
-      "Year-end liquidity and options expiry pressure",
-      "Corporate earnings execution lag vs. bullish sentiment",
-      "Institutional hedging (puts) vs. retail bullishness (calls)",
-      "Geopolitical uncertainty and regulatory risk"
+      "AI infrastructure capex cycle and mega-cap dominance",
+      "Rate accommodation expectations supporting equity valuations",
+      "Bifurcated market leadership: large-cap strength masking mid-cap/breadth weakness",
+      "Earnings guidance risk and enterprise software demand deterioration",
+      "Geopolitical and regulatory tail risks (Taiwan, China tensions, enforcement actions)"
     ],
     "risk_factors": [
-      "Professional trader bearish skew (87% bearish) contradicts retail bullish consensus—potential reversal trigger if professionals are correct",
-      "Mid-cap weakness ($IWM) and Bitcoin deterioration (-7% YTD) signal divergence from mega-cap strength; breadth failure often precedes broader pullbacks",
-      "Options hedging flows and December expirations creating artificial support/resistance zones; liquidity dries up into year-end, amplifying moves",
-      "Earnings guidance cuts in software and financial services (Fiserv, Workday cited) represent concrete downside pressure—'show me' evidence on profitability becoming critical",
-      "Geopolitical escalation (Ukraine, Taiwan) and regulatory tightening on banks pose tail-risk catalysts for rapid risk-off rotation"
+      "Low-volume holiday trading amplifying sharp moves around technical levels; forced liquidations possible if support breaks",
+      "Earnings guidance misses in enterprise software and financial services; demand softness may materialize contrary to bullish narrative",
+      "Geopolitical escalation (China-Taiwan, U.S. sanctions) rapidly shifting risk sentiment and triggering rotation out of narrow AI leadership",
+      "Fed regulatory enforcement and capital requirement announcements cascading across banking sector",
+      "Divergence between mega-cap technicals and mid-cap/breadth deterioration signaling momentum reversal rather than broad-based strength"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Resistance at $700 (active call wall with 146k OI—dealer hedging likely to pressure upside). Support at $670 (active with 45k OI). QQQ: Resistance at $630 (active call wall, 33k OI) and $625 (active, 29k OI). Support at $590. Watch for consolidation between call/put walls; professional trader bearishness suggests selling into strength toward $700 SPY / $630 QQQ resistance.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Range-bound bias between $700 (call wall resistance) and $670 (active support). If $670 breaks, $645 (126k OI put wall) becomes the downside target. Downside scenario favored by RSS News and professional trader data. QQQ: Similar structure—$630 call wall capped upside; $590 put wall (164k OI) provides downside protection but only if price declines >5.5%. Swing traders should favor selling rallies into call walls and watching for breakdown below $670 SPY / $590 QQQ as confirmation of bearish thesis.",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: Support at $670 (active 45k OI), resistance at $700 (active call wall 146k OI). QQQ: Support near $625 (active 29k OI), resistance at $630 (active call wall 33k OI). Watch for dealer hedging activation if either index approaches call walls—may trigger modest pullbacks to active support before continuation.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Primary support $640 (put wall 153k OI, 7.3% away—activates on breakdown), intermediate resistance $700 (call wall), secondary resistance $730 (48k OI, 5.7% away—dormant). QQQ: Primary support $590 (put wall 164k OI, 5.4% away—dormant), resistance $630-640 band (active hedging). Max Pain gravitational pull: SPY $687, QQQ $620. Monitor IWM (mid-cap) weakness as leading divergence indicator—breakdown there may foreshadow broader equity rotation.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 198124
+    "generation_time_ms": 171139
   },
   "trending": {
     "macro": [
@@ -248,8 +248,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 13.72,
-    "pc_ratio": 0.76,
+    "vix": 13.6,
+    "pc_ratio": 0.75,
     "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -258,7 +258,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.69,
-    "spread": 7.9,
+    "spread": 13.42,
     "position": 50
   },
   "action": {
