@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-27T22:32:24.217Z",
+  "timestamp": "2025-12-27T22:57:02.387Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 76,
+    "confidence_pct": 74,
     "sources": {
       "social": {
-        "bullish": 36,
-        "bearish": 9,
-        "neutral": 58,
-        "total": 103,
-        "pct": 35
+        "bullish": 37,
+        "bearish": 11,
+        "neutral": 60,
+        "total": 108,
+        "pct": 34
       },
       "news": {
         "bullish": 10,
@@ -36,38 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Twitter shows strong bullish lean (80%), but RSS News reveals underlying weakness with 63% bullish and documented earnings misses offsetting macro optimism. The divergence suggests traders are bullish on forward narratives (stimulus, rate cuts, AI CapEx) while price action reflects present-tense headwinds (guidance cuts, regulatory friction, geopolitical risk).\n\n📈 **Themes:** (1) Rate-cut expectations and monetary easing as primary bull narrative vs. macro fragility with record global debt levels ($346T) as primary bear narrative; (2) AI and productivity gains narrative conflicting with documented earnings guidance misses in software/fintech sectors; (3) Year-end positioning and sentiment extremes creating binary outcomes—either validation of bull case or correction trigger.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active), Put Wall $640 (153k OI - dormant). Max Pain $686. Near support: $670 (45k OI - active). QQQ ($623.89): Call Wall $630 (33k OI - active), Put Wall $590 (164k OI - dormant). Max Pain $621. Near resistance: $625-$640 (active). Per Twitter: /ES bears cite 6550 as critical technical threshold with downside target toward 5500-5100 if breached.",
+    "narrative": "📊 **Consensus:** Markets are split between near-term bullish momentum supported by rate-cut expectations and structural bearish concerns around earnings guidance deterioration, regulatory tightening, and elevated leverage. Conviction: MEDIUM—bullish technicals conflict with bearish fundamental deterioration.\n\n📈 **Themes:** (1) Earnings guidance reset cycle masquerading as stabilization—fintech sector showing contagion risk to broader enterprise software; (2) Monetary easing tailwind vs. regulatory headwinds—Fed rate cuts supporting valuations but capital requirement tightening pressuring financials; (3) AI infrastructure demand structural support vs. leverage unwinding risk—genuine CapEx trends offset by crypto/options positioning vulnerabilities.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging), Put Wall $640 (153k OI - dormant). Max Pain $686. Near support: $670 (45k OI, active). QQQ ($623.89): Call Wall $630 (33k OI - active hedging), Put Wall $590 (164k OI - dormant). Max Pain $621. Near resistance: $625, $640 (both active). Per X sources, /ES 6550 cited as bear trigger level (attributed to Twitter analysis, not verified current price).",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "Fintech sector stocks",
-      "Software/AI stocks",
-      "Financial sector stocks"
+      "FISERV",
+      "BTC",
+      "Hyperliquid"
     ],
     "key_themes": [
-      "Rate cut expectations and monetary easing",
-      "AI productivity gains vs. earnings execution reality",
-      "Earnings guidance misses in growth sectors",
-      "Regulatory tightening and compliance headwinds",
-      "Geopolitical risk and safe-haven flows",
-      "Year-end sentiment extremes and positioning"
+      "Earnings guidance reset cycle",
+      "Monetary easing backdrop with regulatory headwinds",
+      "Fintech-to-software contagion risk",
+      "Leverage unwinding vulnerability",
+      "Year-end seasonality vs. structural weakness"
     ],
     "risk_factors": [
-      "Record $346T global debt creating macro fragility (bearish tail risk)",
-      "Documented earnings guidance cuts in software/fintech (demand destruction signal)",
-      "Regulatory announcements on banking capital requirements and financial sector constraints",
-      "Geopolitical tensions creating safe-haven flows and sector rotation",
-      "Sentiment complacency despite macro risks (historically crash-precursor signal)"
+      "Earnings guidance deterioration spreading beyond fintech to enterprise software",
+      "Regulatory capital requirement announcements impacting banking sector guidance",
+      "Crypto leverage cascade risk (noted $53M underwater in whale positions)",
+      "Rapid sentiment shift from complacency to risk-off amid options positioning",
+      "Geopolitical escalation as exogenous volatility trigger"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "Watch SPY $700 Call Wall for active resistance (146k OI actively hedged). Support at $670 (45k OI actively hedged, 2.9% away). QQQ facing resistance $625-$630 (active hedging). Per Twitter analysis: /ES behavior at 6550 is critical bearish/bullish dividing line.",
-    "swing_bias": "NEUTRAL_TO_BEARISH",
-    "swing_levels": "SPY: Put Wall at $640 becomes active support if price approaches (153k OI - dormant currently but significant). Resistance cluster $700-$750. QQQ: Put Wall at $590 (164k OI - dormant, 5.4% away). Resistance $630-$640. Per Twitter: S&P 500 6550 is key threshold—hold suggests bull control, break below triggers larger Wave-4 retracement. If breached: downside targets toward 5500-5100 per contrarian bearish framework.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Watch $700 call wall (active dealer resistance). Below that, $670 active support zone. QQQ: $625-$630 zone compressed—test above $630 breaks call wall resistance; below $625 tests support. Watch for breakout/breakdown behavior around these tight ranges.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: If call wall at $700 fails to break decisively, pullback toward $670 support and max pain $686 likely over 1-5 days. Breach below $670 would target dormant put wall at $640. QQQ: Tight range $625-$630 suggests consolidation; breakdown below $625 would test $590 put wall support over swing timeframe. Per RSS analysis, earnings guidance trends and regulatory announcements over next days will determine if downside bias materializes.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 130640
+    "generation_time_ms": 131827
   },
   "trending": {
     "macro": [
@@ -167,6 +166,19 @@
         }
       },
       {
+        "ticker": "NVDA",
+        "mentions": 2,
+        "sentiment_score": 0.435,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 44,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
         "ticker": "HOOD",
         "mentions": 2,
         "sentiment_score": 0,
@@ -204,19 +216,6 @@
           "neutral": 0,
           "total": 1
         }
-      },
-      {
-        "ticker": "SILJ",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ]
   },
@@ -225,7 +224,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
