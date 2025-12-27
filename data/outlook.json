@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-27T00:27:30.188Z",
+  "timestamp": "2025-12-27T00:43:58.413Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,19 +36,35 @@
     }
   },
   "analysis": {
-    "narrative": "```json\n{\n  \"ai_narrative\": \"📊 **Consensus:** Market shows mixed signals with near-term bullish momentum in mega-cap equities offset by deteriorating breadth and structural weakness in secondary indices. Conviction: MEDIUM. Traders are cautiously optimistic on year-end strength but positioning defensively given holiday liquidity constraints and underlying technical fragmentation.\n\n📈 **Themes:** (1) AI sector and mega-cap dominance continuing to drive index strength despite mid-cap weakness, (2) Federal Reserve rate-cut expectations supporting rate-sensitive assets and financial sector rotations, (3) Corporate guidance uncertainty and fintech/software sector headwinds raising questions about earnings quality and demand sustainability, (4) Geopolitical risk reassessment and safe-haven asset positioning (precious metals at records, crypto showing defensive structures), (5) Capital spending acceleration vs. regulatory compliance drag—a race between growth catalysts and execution headwinds.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active hedging, 1.4% away), Put Wall $640 (153k OI—dormant, 7.3% away). Max Pain $687. Near support: $670 (45k OI—active), $645 (126k OI—dormant). QQQ ($623.89): Call Wall $630 (33k OI—active, 1.0% away), Put Wall $590 (164k OI—dormant, 5.4% away). Max Pain $620. Near support: $585 (137k OI—dormant). Near resistance: $640 (31k OI—active), $625 (29k OI—active). Per X/Twitter: /ES technical support holding near 7000, resistance cluster forming toward 6960–6970 on SPX before any breakout attempt.\",\n  \"source_alignment\": \"MIXED\",\n  \"conflicts\": \"Twitter sentiment (77% bullish) and RSS news (54% bullish) support near-term strength, but underlying analysis reveals critical divergence: (1) X/Twitter notes technical support is real but warns Druckenmiller principle—positive fundamentals + deteriorating technicals in IWM and crypto signal potential distribution, not accumulation. (2) RSS news consensus is 'rally on good news, concern on execution'—corporate guidance cuts in software/fintech and regulatory tightening suggest earnings may not support valuations. (3) YouTube analysts (ARK vs. Friedberg) agree capex is the pivot but disagree on sustainability: ARK sees momentum as policy-driven success, Friedberg warns regulatory drag may erode returns. (4) Professional trader sentiment unavailable (insufficient data). **Signal: Market has near-term lift but lacks conviction on breadth and execution—vulnerable to rollover if any negative catalyst (earnings misses, regulatory announcement, geopolitical spike) triggers risk-off.**\",\n  \"intraday_bias\": \"BULLISH\",\n  \"intraday_levels\": \"SPY: Resistance at $700 (call wall, active hedging). Support at $670 (active support, 2.9% below). QQQ: Resistance at $625–$630 (dual active resistance). Support at $585 (dormant, 6.2% below). Watch for breakout confirmation above $700 SPY or failure to hold $670 as immediate directional signal.\",\n  \"swing_bias\": \"NEUTRAL\",\n  \"swing_levels\": \"SPY swing levels: Resistance $750 (8.6% away, dormant—activates if $700 breaks decisively). Critical support $640 (7.3% away, put wall—dormant until price approaches). Max pain $687 acts as gravitational pull near expiration. QQQ swing levels: Resistance $640 (active, 2.6% away). Support $590 (dormant, 5.4% away). Broader context: If support at SPY $670 / QQQ $625 fails, potential cascade toward put walls ($640 SPY, $590 QQQ) as hedging activates. If $700 SPY breaks on volume, potential acceleration toward $750.\",\n  \"key_tickers\": [\n    \"SPY\",\n    \"QQQ\",\n    \"IWM\",\n    \"NVDA\",\n    \"BTC\"\n  ],\n  \"key_themes\": [\n    \"Mega-cap AI momentum vs. mid-cap weakness divergence\",\n    \"Federal Reserve easing cycle supporting rate-sensitive sectors\",\n    \"Corporate earnings execution risk and guidance credibility\",\n    \"Capital spending acceleration offset by regulatory compliance drag\",\n    \"Safe-haven flows and geopolitical risk reassessment\"\n  ],\n  \"risk_factors\": [\n    \"Breadth deterioration in secondary indices (IWM weakness, crypto down YTD) masking index strength—potential distribution signal before reversal\",\n    \"Corporate guidance cuts spreading from fintech/software to broader sectors, undermining earnings support for current valuations\",\n    \"Holiday liquidity constraints amplifying intraday volatility and potentially breaking technical support on thin volume\",\n    \"Geopolitical escalation or regulatory announcements (banking capital tightening, sanctions) triggering rapid safe-haven rotation and risk-off\",\n    \"Rate-cut expectations reversing if inflation or employment data surprises hawkish, puncturing momentum in rate-sensitive mega-caps\"\n  ]\n}\n```",
-    "key_tickers": [],
-    "key_themes": [],
-    "risk_factors": [],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "No levels available",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "No levels available",
-    "source_alignment": "MIXED"
+    "narrative": "📊 **Consensus:** Market sentiment is BULLISH with MEDIUM conviction. Mega-cap tech shows sustained momentum and new all-time highs, supported by AI monetization and monetary policy easing narratives. However, this strength is heavily concentrated in large-cap indices, masking significant weakness in mid-cap growth and crypto assets—suggesting bifurcated conviction rather than broad-based bull market.\n\n📈 **Themes:** (1) AI infrastructure and mega-cap tech momentum sustaining despite year-end liquidity constraints; (2) Monetary policy easing and rate-sensitive sector rotation favoring rate beneficiaries; (3) Bifurcated market structure—mega-cap strength masking mid-cap and crypto deterioration, with low holiday volume amplifying volatility.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—active hedging), Put Wall $640 (153k OI, 7.3% away—dormant). Max Pain $687. Near support: $670 (45k OI, 2.9%—active), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—active hedging), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $620. Near resistance: $640 (31k OI, 2.6%—active), $625 (29k OI, 0.2%—active).",
+    "key_tickers": [
+      "NVDA",
+      "MSFT",
+      "AMZN",
+      "META",
+      "CRWD"
+    ],
+    "key_themes": [
+      "AI infrastructure monetization",
+      "Monetary policy easing and rate-sensitive rotation",
+      "Mega-cap tech momentum vs. mid-cap weakness bifurcation",
+      "Year-end liquidity constraints amplifying volatility",
+      "Geopolitical uncertainty (China-U.S. tensions)"
+    ],
+    "risk_factors": [
+      "Low holiday volume amplifying downside moves and liquidation cascades in growth/crypto assets",
+      "Geopolitical escalation (China-U.S. defense tensions) creating medium-term headwinds",
+      "Regulatory tightening and enterprise software earnings deterioration signaling cyclical weakness in tech"
+    ],
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: Watch $700 call wall (active resistance, 1.4% away). Support at $670 (active, 2.9% away). QQQ: Testing $630 call wall resistance (active, 1.0% away); $625 near-term resistance (active, 0.2% away). Both indices supported by max pain gravitational pull ($687 SPY, $620 QQQ).",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Hold above $670 support (active hedging zone) maintains bullish structure. $700 call wall remains primary resistance over 1-5 days; break above could target $730-$750 (dormant, 5.7%-8.6% away). QQQ: Consolidating near max pain $620; $630 call wall is near-term ceiling. Break above $630 targets $640 (2.6% away, active resistance). Downside floor: SPY $645 put wall (6.6%), QQQ $590 put wall (5.4%).",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 180514
+    "generation_time_ms": 177996
   },
   "trending": {
     "macro": [
