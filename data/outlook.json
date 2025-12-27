@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-27T02:41:44.480Z",
+  "timestamp": "2025-12-27T03:09:03.426Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 64,
     "sources": {
       "social": {
-        "bullish": 67,
+        "bullish": 70,
         "bearish": 19,
-        "neutral": 107,
-        "total": 193,
+        "neutral": 111,
+        "total": 200,
         "pct": 35
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Bullish momentum in tech ($NVDA, $META, $ORCL) and broad indices contrasts with acute bearish pressures from software/fintech guidance cuts, regulatory tightening, and geopolitical tensions. Near-term consolidation dominates with elevated tail risks.\n\n📈 **Themes:** (1) Tech infrastructure breakouts vs. mid-cap liquidation in low-volume conditions; (2) Regulatory headwinds (financial services margin compression, supervisory tightening) offsetting Fed rate-cut optimism; (3) Geopolitical risk-off (China policy uncertainty, U.S.-China tensions) creating safe-haven demand and positioning fragility; (4) Year-end liquidity squeeze amplifying volatility in illiquid segments (crypto, small caps).\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—active hedging), Put Wall $640 (153k OI, 7.3% away—dormant). Max Pain $687. Near support: $670 (45k OI, 2.9%—active). QQQ ($623.89): Call Wall $630 (33k OI, 1.0%—active hedging), Put Wall $590 (164k OI, 5.4%—dormant). Max Pain $620. Near resistance: $640 (31k OI, 2.6%—active), $625 (29k OI, 0.2%—active). Per Twitter: /ES targeting 7000 with 6900 support; /NVDA targeting $200 breakout from $191 resistance; /ORCL targeting $200 breakout.",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with bearish structural bias despite bullish headline narratives. Conviction: MEDIUM. Bullish headlines (AI momentum, mega-cap tech breakouts, dovish monetary policy) are contradicted by deteriorating breadth (mid-cap weakness), guidance cuts in enterprise software, and geopolitical uncertainty. The disconnect suggests profit-taking into thin holiday liquidity rather than sustainable continuation.\n\n📈 **Themes:** (1) AI sector momentum vs. broader market divergence - mega-cap tech strength masking deterioration in cyclicals and mid-caps; (2) Monetary policy expectations and financial system stress - rate cut narrative offset by banking supervisory tightening and margin compression; (3) Geopolitical risk-off positioning - Ukraine/Taiwan escalation concerns driving safe-haven demand; (4) Holiday liquidity constraints - thin trading volume amplifying price swings and making breakouts unreliable.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging, 1.4% away), Put Wall $640 (153k OI - dormant, 7.3% away). Max Pain $687. Near support: $670 (45k OI - active, 2.9% away), $645 (126k OI - dormant, 6.6% away). QQQ ($623.89): Call Wall $630 (33k OI - active, 1.0% away), Put Wall $590 (164k OI - dormant, 5.4% away). Max Pain $620. Near resistance: $640 (31k OI - active, 2.6% away), $625 (29k OI - active, 0.2% away). Near support: $585 (137k OI - dormant, 6.2% away). Per Twitter: /ES resistance cited at 6940, mid-cap weakness ($IWM) signaling broader deterioration.",
     "key_tickers": [
       "NVDA",
-      "META",
-      "ORCL",
       "IWM",
-      "BTC"
+      "AMZN",
+      "BTC",
+      "SPX"
     ],
     "key_themes": [
-      "Tech infrastructure breakouts and resistance testing",
-      "Profit-guidance deterioration vs. AI capex momentum",
-      "Regulatory margin compression in financials and software",
-      "Geopolitical risk-off (China, U.S.-China tensions, Taiwan)",
-      "Year-end liquidity squeeze and holiday-season positioning fragility"
+      "AI sector isolation vs. breadth collapse",
+      "Earnings guidance deterioration in software",
+      "Mid-cap and crypto weakness despite bullish narratives",
+      "Holiday liquidity constraints amplifying volatility",
+      "Geopolitical risk-off and safe-haven demand"
     ],
     "risk_factors": [
-      "Mid-cap liquidation (IWM weakness) signals broader positioning vulnerability; $SPX 6900 break would confirm bear trap risk",
-      "Regulatory tightening in banking/fintech cascading into broad equity weakness; guidance cuts accelerating",
-      "Geopolitical escalation (Taiwan, Ukraine, defense sanctions) triggering safe-haven flows and equity selloff",
-      "Holiday liquidity drying up amplifies volatility; crypto weakness (7% YTD decline despite bullish positioning) signals overleverage risk",
-      "Call wall clustering at SPY $700 and QQQ $630-$640 may cap rallies; failure to break through could reverse momentum into consolidation or pullback"
+      "Retail positioned bullish into thin liquidity; profit-taking could trigger cascading stops",
+      "Guidance cuts spreading from isolated (software) to systemic across sectors",
+      "Geopolitical escalation (Ukraine/Taiwan) would validate risk-off thesis and accelerate QQQ/IWM weakness",
+      "Banking supervisory tightening creating real earnings headwinds despite rate-cut narrative",
+      "Gap between retail sentiment (79% bullish) and professional trader positioning (13% bullish) suggests information asymmetry—uninformed capital chasing, smart money exiting"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $700 call wall providing active resistance; $670 support active. Watch for consolidation near $690 or breakdown attempt toward $670. QQQ: $630 call wall and $625 resistance tightly clustered (0.2-1.0% away); intraday volatility likely capped here. Breakdown target: $620 (max pain / support zone). Monitor holiday liquidity—thin volume amplifies moves.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $700 call wall breakout target (if overcome, $730 and $750 resistance dormant but in play). Support zone $670-$640 provides safety net over next 1-5 days; break below $640 would invalidate bullish bias and test lower put wall. QQQ: $630-$640 resistance zone critical; sustained close above $640 validates bullish momentum toward $650+. Support: $620 (max pain gravitational pull), $590 put wall (5.4% away—activates on sharp pullback). Swing traders: favor longs on $670/$620 bounces with stops below $640/$585.",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: Resistance $700 (call wall, active hedging). Support $670 (active, 2.9% away). QQQ: Resistance $630 (call wall, active). Support near $625 (active, 0.2% away). Watch for failure to hold $625 on QQQ or $670 on SPY as intraday trigger for further weakness. Break below active support levels into dormant walls ($640 SPY, $590 QQQ) would confirm distribution.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Initial support $670 (active), primary support $645 (dormant, 6.6% away). Only break above $700 call wall with volume would negate bearish bias. QQQ: Testing $625/$630 resistance zone (both active). Primary support $590 (dormant, 5.4% away). Swing target on breakdown: $640 SPY, $585 QQQ, with potential extension if geopolitical catalyst triggers risk-off move. Max Pain gravitational pull remains at $687 (SPY) and $620 (QQQ)—expiration dynamics may pin prices toward these levels through early January.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 171263
+    "generation_time_ms": 176284
   },
   "trending": {
     "macro": [
@@ -180,15 +180,15 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 17,
-        "sentiment_score": 0.514,
+        "mentions": 18,
+        "sentiment_score": 0.493,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 51,
+        "sentiment_pct": 49,
         "counts": {
           "bullish": 11,
           "bearish": 0,
-          "neutral": 6,
-          "total": 17
+          "neutral": 7,
+          "total": 18
         }
       },
       {
