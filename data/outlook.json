@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-27T21:44:11.455Z",
+  "timestamp": "2025-12-27T22:04:41.220Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 75,
+    "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 29,
+        "bullish": 32,
         "bearish": 7,
-        "neutral": 54,
-        "total": 90,
-        "pct": 32
+        "neutral": 55,
+        "total": 94,
+        "pct": 34
       },
       "news": {
         "bullish": 9,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets show MIXED conviction with bearish structural concerns (record global debt, regulatory tightening, earnings downgrades) offsetting bullish forward narratives (AI adoption, rate relief potential). Conviction: MEDIUM. Near-term downside bias dominates, but institutional accumulation on weakness suggests tactical nature of selloff.\n\n📈 **Themes:** (1) Regulatory headwinds in banking/enterprise software creating near-term earnings pressure; (2) AI and autonomous vehicle adoption narrative remains intact but faces 2026 timing dependency; (3) Rate policy uncertainty and Fed communication clarity as near-term pivot catalyst; (4) Cryptocurrency volatility and leveraged position liquidation risk; (5) Year-end options expiry volatility in equities and crypto indices.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging, 1.4% away), Put Wall $640 (153k OI - dormant support, 7.3% away). Max Pain $686. Near support: $670 (45k OI, active at 2.9% away), $645 (126k OI, dormant). QQQ ($623.89): Call Wall $630 (33k OI - active, 1.0% away), Put Wall $590 (164k OI - dormant, 5.4% away). Max Pain $621. Near resistance: $640 (31k OI), $625 (29k OI - both active). Per Twitter sources: /ES support cited at 6550 level (broader correction threshold).",
+    "narrative": "📊 **Consensus:** Markets exhibit MIXED sentiment with moderate conviction—bullish on crypto/commodities and longer-term structural themes (AI, rate easing), but bearish on near-term equity technicals and earnings visibility. Conviction: MEDIUM across all sources.\n\n📈 **Themes:** (1) Institutional crypto inflows vs. liquidation cascade risk in tech assets; (2) Enterprise earnings deterioration (software guidance cuts) conflicting with Fed easing narrative; (3) Macro debt sustainability concerns vs. regulatory tailwinds for financial institutions; (4) Commodity/precious metals accumulation vs. equity technical breakdown warnings.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—ACTIVE hedging, 1.4% resistance), Put Wall $640 (153k OI—dormant support, 7.3% away). Max Pain $686. Near support: $670 (45k OI, ACTIVE), $645 (126k OI, dormant). QQQ ($623.89): Call Wall $630 (33k OI—ACTIVE, 1.0% resistance), Put Wall $590 (164k OI—dormant, 5.4% away). Max Pain $621. Near resistance: $640 (31k OI, ACTIVE), $625 (29k OI, ACTIVE). Per Twitter analysis: /ES support at 6550 (bearish trigger threshold per trader commentary); commodities (Silver target $122 via 1.618 extension per technical analysis).",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
       "ETH",
-      "NVDA"
+      "SLV"
     ],
     "key_themes": [
-      "Regulatory capital requirement uncertainty",
-      "Enterprise software earnings headwinds",
-      "AI commercialization progress vs. timing dependency",
-      "Cryptocurrency leveraged liquidation risk",
-      "Rate policy pivot catalyst dependency"
+      "Institutional crypto inflows vs. tech liquidation risk",
+      "Enterprise software earnings deterioration cascading through valuations",
+      "Fed rate-cut tailwinds offset by near-term macro debt concerns",
+      "Precious metals accumulation and commodity bull narrative",
+      "Regulatory environment shift (SEC clarity, fintech cost impacts)"
     ],
     "risk_factors": [
-      "Record $346 trillion global debt creating deleveraging cascade risk if volatility accelerates",
-      "Cryptocurrency whale liquidation pressure ($53M underwater positions) could trigger forced selling",
-      "Regulatory tightening in banking supervisory framework creating near-term constraint on financial sector",
-      "Year-end options expiry volatility amplifying price swings in both directions",
-      "Geopolitical escalation (Ukraine, Taiwan) as hidden tail risk triggering risk-off acceleration"
+      "Earnings guidance cascades beyond software (if Fiserv/Workday weakness spreads, equity shorts accelerate)",
+      "Geopolitical escalation (Ukraine, Taiwan defense spending cited as unresolved risk premium)",
+      "Crypto liquidation cascades if tech support breaks (Ethereum, Solana, Bitcoin leverage positioning vulnerable)",
+      "Year-end options expiration volatility and hedging rebalancing (high OI concentration at call/put walls)",
+      "Debt sustainability shock ($346T global debt backdrop; if breakdown thesis triggers, margin spirals possible)"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Test $700 call wall as immediate resistance (active hedging zone). Hold above $670 (active support, 2.9% below current) to avoid accelerating toward $645. QQQ: Resistance at $625 and $630 call wall (both active). Support at $590 put wall if sharper decline triggers. Watch for breakdown through active support levels as signal of cascading weakness.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Resistance at $700 call wall (active hedging—dealers will defend). Support at $670 (active, 2.9% below current). Watch breakout/breakdown of $625–$630 range in QQQ (both levels ACTIVE with 33k–29k OI). VIX at 13.60 suggests low volatility—expect choppy consolidation rather than aggressive directional moves.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Primary downside target $640 put wall (dormant support, 7.3% away). If that breaks, secondary support at $645 (126k OI). Upside limited to $700 call wall (active resistance). QQQ: Primary support at $590 put wall (164k OI, significant). Resistance at $630 call wall. Consolidation likely between $625-$640 range before directional resolve. Max Pain gravitational pull: SPY $686, QQQ $621 - expect mean-reversion bias toward these strikes through expiration window.",
+    "swing_levels": "SPY: If $700 call wall breaks, test $730 (dormant, 5.7% away). If $670 support breaks decisively, watch $645 (126k OI support, 6.6% below). Per Twitter technical analysis, /ES breakdown below 6550 opens 5500–5100 target zone over 1–5 days. QQQ: Resistance $640 (2.6% above); if broken, $650 area. Support at $590 put wall (5.4% below current) only activated on material selloff. Commodity targets: Silver $122 (per 1.618 extension); watch for precious metals to lead or confirm equity breakdown.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 129613
+    "generation_time_ms": 131544
   },
   "trending": {
     "macro": [
@@ -224,7 +224,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 32,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
