@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-27T04:29:15.511Z",
+  "timestamp": "2025-12-27T04:54:45.964Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 62,
+    "confidence_pct": 63,
     "sources": {
       "social": {
-        "bullish": 70,
-        "bearish": 21,
-        "neutral": 116,
-        "total": 207,
+        "bullish": 69,
+        "bearish": 20,
+        "neutral": 114,
+        "total": 203,
         "pct": 34
       },
       "news": {
         "bullish": 14,
-        "bearish": 17,
+        "bearish": 15,
         "neutral": 12,
-        "total": 43,
-        "pct": 33
+        "total": 41,
+        "pct": 34
       },
       "video": {
         "bullish": 1,
         "bearish": 1,
-        "neutral": 3,
-        "total": 5,
-        "pct": 20
+        "neutral": 4,
+        "total": 6,
+        "pct": 17
       },
       "chat": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Bullish technical momentum in mega-cap tech and AI narratives compete against near-term headwinds from guidance deterioration, regulatory uncertainty, and shallow holiday liquidity. Risk-reward is balanced rather than directionally clear.\n\n📈 **Themes:** (1) AI and semiconductor sector momentum with elevated positioning, (2) Year-end/early-January liquidity vulnerability creating amplified volatility risk, (3) Guidance reset cycle and regulatory tightening creating tactical defensiveness despite structural bullish tailwinds, (4) Cryptocurrency leverage and forced liquidation risk offsetting recovery narratives.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging, 1.4% away), Put Wall $640 (153k OI - dormant, 7.3% away). Max Pain $687. Near active support: $670 (45k OI, 2.9% away). QQQ ($623.89): Call Wall $630 (33k OI - active hedging, 1.0% away), Put Wall $590 (164k OI - dormant, 5.4% away). Max Pain $620. Near active resistance: $625 (29k OI, 0.2% away), $640 (31k OI, 2.6% away). /ES: 6940 technical inflection per Twitter sources.",
+    "narrative": "📊 **Consensus:** Bullish momentum with significant year-end vulnerability. Structural tailwinds (AI infrastructure, commodity supply constraints, capex acceleration) support longer-term strength, but thin holiday volume and profit-taking pressure create tactical downside risk in the near term. Conviction: MEDIUM-HIGH on direction, but MEDIUM on timing stability.\n\n📈 **Themes:** (1) AI-driven infrastructure expansion and enterprise capex acceleration as primary growth driver; (2) Precious metals and cryptocurrency supply constraints supporting alternative asset positioning; (3) Year-end liquidity withdrawal and volatility as seasonal headwind, with potential relief rally in early 2026; (4) Bifurcated market performance—tech/utilities outperforming while financials and discretionary face headwinds; (5) Geopolitical uncertainty and policy risk as secondary but elevated concern.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—dormant until approached). Max Pain $687. Near support: $670 (45k OI, 2.9%—ACTIVE), $645 (126k OI, 6.6%—dormant). | QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $620. Near resistance: $640 (31k OI, 2.6%—ACTIVE), $625 (29k OI, 0.2%—ACTIVE). | Per Twitter: /ES noted as 6800s level zone per trader commentary.",
     "key_tickers": [
+      "SPY",
+      "QQQ",
       "NVDA",
       "MU",
-      "SOL",
-      "SPY",
-      "QQQ"
+      "BTC"
     ],
     "key_themes": [
-      "AI momentum and semiconductor strength",
-      "Year-end liquidity vulnerability and volatility amplification",
-      "Guidance reset cycle competing with capex narratives",
-      "Cryptocurrency leverage and forced liquidation risk",
-      "Regulatory tightening and macro policy uncertainty"
+      "AI infrastructure capex acceleration",
+      "Precious metals & commodity supply constraints",
+      "Year-end liquidity withdrawal & volatility",
+      "Bifurcated sector performance (tech/utilities vs. financials)",
+      "Geopolitical & policy uncertainty as secondary headwind"
     ],
     "risk_factors": [
-      "Shallow holiday trading liquidity amplifying moves in either direction",
-      "Crypto leverage and forced liquidation cascade triggering risk-off cascade",
-      "Guidance deterioration in enterprise software and fintech creating spillover weakness",
-      "Geopolitical escalation triggering safe-haven flight",
-      "Technical breakdown through active support levels ($670 SPY, $620 QQQ) invalidating bullish setup"
+      "Year-end holiday volume drying up, exposing overleveraged positions to sharp reversals",
+      "Cryptocurrency whale positioning ($53M unrealized losses per Twitter) and options expiration volatility",
+      "Policy uncertainty (regulatory tightening, geopolitical escalation) triggering risk-off rotation despite bullish fundamentals",
+      "Contrarian trader positioning (fetersynergy 13% bullish vs. 78% Twitter bullish) signals potential capitulation setup or institutional distribution",
+      "Bifurcated market weakness in financials and discretionary could broaden into broader correction if capex guidance disappoints"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Active resistance at $700 Call Wall (146k OI). Active support at $670 (45k OI, 2.9% away). QQQ: Extremely tight - active resistance at $625 and $630 (62k combined OI within 1% band). Testing these walls will determine intraday direction; breakout above requires conviction on heavy volume given shallow liquidity.",
+    "intraday_levels": "SPY: Watch $700 call wall for resistance; support at $670 (active OI). QQQ: Resistance at $630 (active call wall) and $625 (tight OI cluster); support at $620 (max pain). Low volume expected into year-end—breakouts may lack follow-through; consolidation more likely than directional conviction.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Primary resistance $700-$750 (Call Wall active, then dormant resistance at 8.6%). Key support $670 (active), then $640 Put Wall (dormant, 7.3% away). Max Pain $687 provides gravitational pull. QQQ: Primary resistance $630-$640 (Call Walls active and near). Key support $620 (Max Pain), then $590 Put Wall (dormant, 5.4% away). Bullish conviction requires sustained moves above $700 SPY and $630 QQQ without reversal into shallow year-end liquidity.",
+    "swing_levels": "SPY: Support holding at $670–$687 (max pain zone); break above $700 call wall targets $720–$750 (dormant resistance). QQQ: Support at $620 (max pain); resistance at $630–$640 (active and dormant call walls). Put wall support at $640 SPY and $590 QQQ provides 5–7% downside cushion before gamma acceleration lower. Structural bias suggests relief rally into early 2026 if consolidation holds.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 168424
+    "generation_time_ms": 175954
   },
   "trending": {
     "macro": [
