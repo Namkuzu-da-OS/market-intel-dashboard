@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-27T05:20:57.198Z",
+  "timestamp": "2025-12-27T05:46:20.344Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -8,16 +8,16 @@
       "social": {
         "bullish": 71,
         "bearish": 20,
-        "neutral": 114,
-        "total": 205,
-        "pct": 35
+        "neutral": 116,
+        "total": 207,
+        "pct": 34
       },
       "news": {
-        "bullish": 14,
+        "bullish": 15,
         "bearish": 15,
         "neutral": 12,
-        "total": 41,
-        "pct": 34
+        "total": 42,
+        "pct": 36
       },
       "video": {
         "bullish": 1,
@@ -36,76 +36,63 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets exhibit a bullish structural bias supported by regulatory tailwinds, AI infrastructure narratives, and dovish policy positioning, but near-term execution risk from year-end liquidity constraints and sector-specific earnings headwinds creates a cautious-optimism backdrop. Conviction: MEDIUM—bullish themes are clear, but tactical pullback risk is elevated through early January.\n\n📈 **Themes:** (1) AI infrastructure and capex momentum driving secular growth narratives; (2) Regulatory clarity and policy accommodation (crypto easing, dovish Fed stance, autonomous vehicle clarity) reducing policy uncertainty; (3) Year-end liquidity constraints and profit-taking pressuring mid-caps and leveraged positions, with forced liquidations creating tactical volatility.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—dormant until approached). Max Pain $687. Near support: $670 (45k OI, 2.9%—ACTIVE), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $620. Near resistance: $640 (31k OI, 2.6%—ACTIVE), $625 (29k OI, 0.2%—ACTIVE).",
+    "narrative": "📊 **Consensus:** Markets show MIXED conviction with a modest bullish bias in the near term, tempered by holiday illiquidity and year-end deleveraging risks. Conviction is MEDIUM—structural tailwinds (regulatory clarity, monetary easing, AI productivity) compete with tactical headwinds (low volume, forced liquidations, geopolitical friction).\n\n📈 **Themes:** (1) Policy-driven cyclical expansion anchored on capital spending and deregulation tailwinds; (2) Monetary easing and credit availability supporting rate-sensitive sectors; (3) Year-end positioning volatility and forced liquidations creating tactical weakness into early January before structural bull case reasserts.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active resistance), Put Wall $640 (153k OI - dormant support). Max Pain $687. Near-term support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active resistance), Put Wall $590 (164k OI - dormant support). Max Pain $620. Near-term resistance: $625 (29k OI - active), $640 (31k OI - active).",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "IWM",
-      "NVDA",
-      "BTC"
+      "BTC",
+      "AI-adjacent equities",
+      "Autonomous vehicle platforms"
     ],
     "key_themes": [
-      "AI infrastructure capital spending momentum",
-      "Regulatory clarity (crypto easing, autonomous vehicles, policy accommodation)",
-      "Year-end liquidity constraints and leveraged liquidation risk",
-      "Dovish Fed policy stance and rate-cut expectations",
-      "Sector rotation (rate-sensitive outperformance vs. earnings revision headwinds)"
+      "Policy-driven capital spending and deregulation tailwinds",
+      "Monetary easing and credit availability supporting rate-sensitive sectors",
+      "Year-end forced liquidations and holiday illiquidity creating tactical weakness",
+      "Rotation within strength: AI infrastructure beneficiaries vs. traditional software headwinds",
+      "Regulatory clarity removal creating multi-quarter upside optionality"
     ],
     "risk_factors": [
-      "Year-end profit-taking and forced liquidations in crypto/IWM creating tactical cascade risk through Dec 31",
-      "Enterprise software and fintech earnings revisions signaling cyclical weakness offsetting secular AI gains",
-      "Geopolitical escalation (Ukraine, Taiwan, China's Five-Year Plan uncertainty) triggering sharp risk-off flows",
-      "Regulatory tightening and compliance cost creep in healthcare, financial services, and leveraged sectors",
-      "Holiday liquidity drying up, reducing institutional bid and amplifying tactical price swings"
+      "Geopolitical escalation (Russia-Ukraine, Taiwan tensions) triggering risk-off rotation",
+      "Earnings quality deterioration in enterprise software and fintech sectors signaling demand weakness",
+      "Cascade liquidations if crypto or commodity liquidation pressure expands systemically",
+      "Fed policy disappointment or recession cycle catalyst negating capex stimulus assumptions",
+      "Cross-asset deleveraging extending into early January on thin post-holiday volumes"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $700 call wall for resistance (active hedging at 1.4% away). Support at $670 (active, 2.9% away) and $690.31 current—Max Pain gravitational pull at $687 suggests rangebound consolidation. QQQ: $630 call wall (active, 1.0% away) as immediate ceiling; $625-$640 zone contains active hedging. Expect choppy intraday action with thin holiday liquidity.",
+    "intraday_levels": "SPY: Watch $700 call wall for resistance (active hedging); support at $670 (active level). QQQ: Tight range between $625 and $630; both levels show active hedging. Low holiday volume suggests choppy, range-bound action with exaggerated moves on thin order flow.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY swing target: If $700 call wall is penetrated on elevated volume (breaking active hedging), next resistance $730 (5.7%, 48k OI—dormant, activates on approach). Support floor: $640 put wall (153k OI, 7.3% below price—dormant until breached, then becomes major bid). Likely 1-5 day scenario: Test $700, fail into $687 max pain, then consolidate $670-$690 range before potential early-January breakout above $700 on technicals + dovish policy narrative. QQQ: $630-$640 resistance band contains both call walls—watch for breakout; failure pulls back toward $620 max pain and $590 put wall (164k OI—structural support if reached).",
+    "swing_levels": "SPY: Target $700 call wall as near-term resistance; if broken, $730 (dormant resistance, 5.7% away) becomes active. Support anchor at $670 (active). Broader swing target: $750 (dormant call wall, 8.6% away) if structural themes dominate post-holidays. QQQ: $630 call wall is primary near-term resistance; $640 becomes active if broken. Put support floor at $590 (dormant, 5.4% away) acts as swing-trading target if selloff accelerates.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 174074
+    "generation_time_ms": 168766
   },
   "trending": {
     "macro": [
       {
         "ticker": "IWM",
-        "mentions": 4,
-        "sentiment_score": -0.045,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 5,
+        "mentions": 3,
+        "sentiment_score": -0.277,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 28,
         "counts": {
-          "bullish": 2,
+          "bullish": 1,
           "bearish": 2,
           "neutral": 0,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "SPY",
-        "mentions": 3,
-        "sentiment_score": 0.483,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 1,
           "total": 3
         }
       },
       {
-        "ticker": "QQQ",
+        "ticker": "SPY",
         "mentions": 2,
-        "sentiment_score": 0.725,
+        "sentiment_score": 0.4,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 73,
+        "sentiment_pct": 40,
         "counts": {
-          "bullish": 2,
+          "bullish": 1,
           "bearish": 0,
-          "neutral": 0,
+          "neutral": 1,
           "total": 2
         }
       },
@@ -123,11 +110,11 @@
         }
       },
       {
-        "ticker": "USO",
+        "ticker": "QQQ",
         "mentions": 1,
-        "sentiment_score": 0.65,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -139,15 +126,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.004,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "mentions": 4,
+        "sentiment_score": -0.158,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 16,
         "counts": {
-          "bullish": 2,
+          "bullish": 1,
           "bearish": 2,
           "neutral": 1,
-          "total": 5
+          "total": 4
         }
       },
       {
@@ -250,7 +237,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.75,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
