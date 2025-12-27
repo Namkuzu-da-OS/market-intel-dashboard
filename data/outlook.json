@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-27T00:43:58.413Z",
+  "timestamp": "2025-12-27T01:07:17.846Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,35 +36,19 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is BULLISH with MEDIUM conviction. Mega-cap tech shows sustained momentum and new all-time highs, supported by AI monetization and monetary policy easing narratives. However, this strength is heavily concentrated in large-cap indices, masking significant weakness in mid-cap growth and crypto assets—suggesting bifurcated conviction rather than broad-based bull market.\n\n📈 **Themes:** (1) AI infrastructure and mega-cap tech momentum sustaining despite year-end liquidity constraints; (2) Monetary policy easing and rate-sensitive sector rotation favoring rate beneficiaries; (3) Bifurcated market structure—mega-cap strength masking mid-cap and crypto deterioration, with low holiday volume amplifying volatility.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—active hedging), Put Wall $640 (153k OI, 7.3% away—dormant). Max Pain $687. Near support: $670 (45k OI, 2.9%—active), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—active hedging), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $620. Near resistance: $640 (31k OI, 2.6%—active), $625 (29k OI, 0.2%—active).",
-    "key_tickers": [
-      "NVDA",
-      "MSFT",
-      "AMZN",
-      "META",
-      "CRWD"
-    ],
-    "key_themes": [
-      "AI infrastructure monetization",
-      "Monetary policy easing and rate-sensitive rotation",
-      "Mega-cap tech momentum vs. mid-cap weakness bifurcation",
-      "Year-end liquidity constraints amplifying volatility",
-      "Geopolitical uncertainty (China-U.S. tensions)"
-    ],
-    "risk_factors": [
-      "Low holiday volume amplifying downside moves and liquidation cascades in growth/crypto assets",
-      "Geopolitical escalation (China-U.S. defense tensions) creating medium-term headwinds",
-      "Regulatory tightening and enterprise software earnings deterioration signaling cyclical weakness in tech"
-    ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: Watch $700 call wall (active resistance, 1.4% away). Support at $670 (active, 2.9% away). QQQ: Testing $630 call wall resistance (active, 1.0% away); $625 near-term resistance (active, 0.2% away). Both indices supported by max pain gravitational pull ($687 SPY, $620 QQQ).",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Hold above $670 support (active hedging zone) maintains bullish structure. $700 call wall remains primary resistance over 1-5 days; break above could target $730-$750 (dormant, 5.7%-8.6% away). QQQ: Consolidating near max pain $620; $630 call wall is near-term ceiling. Break above $630 targets $640 (2.6% away, active resistance). Downside floor: SPY $645 put wall (6.6%), QQQ $590 put wall (5.4%).",
-    "source_alignment": "ALIGNED"
+    "narrative": "```json\n{\n  \"ai_narrative\": \"📊 **Consensus:** Bullish momentum dominates near-term (77% X, 54% RSS) with strong mega-cap leadership, but structural weakness in breadth (mid-caps, crypto, commodities) signals profit-taking risk during low holiday volume—conviction is tactical rather than structural.\n\n📈 **Themes:** (1) Narrow liquidity-driven rally masking deteriorating breadth; (2) Rate-cut tailwinds offsetting guidance disappointment across software/fintech; (3) Capital spending acceleration as primary growth validator vs. regulatory uncertainty as structural headwind.\n\n🎯 **Levels:** SPY Call Wall $700 [146k OI, 1.4% away—ACTIVE], Put Wall $640 [153k OI, 7.3% away—DORMANT]; QQQ Call Wall $630 [33k OI, 1.0% away—ACTIVE], Put Wall $590 [164k OI, 5.4% away—DORMANT]; SPY Max Pain $687, QQQ Max Pain $620.\",\n  \"source_alignment\": \"MIXED\",\n  \"conflicts\": \"X & RSS bullish on continuation into year-end (momentum + rate tailwinds); YT identifies concurrent structural risks (regulatory, guidance cuts) that could trigger rotation; Chat provides no data. Conflict centers on whether breadth deterioration is early warning (RSS caution) or noise beneath headline strength (X conviction).\",\n  \"intraday_bias\": \"BULLISH\",\n  \"intraday_levels\": \"SPY: Resistance $700 (call wall, active hedging), Support $670 (2.9% away, active); QQQ: Resistance $630 (call wall, active hedging) + $625 (0.2% away, active), Support $590 (put wall, 5.4% away).\",\n  \"swing_bias\": \"BULLISH\",\n  \"swing_levels\": \"SPY: Rally target 6940-7000 range (X consensus), with $750 resistance (8.6% away, dormant) on conviction breakout; $645 support (6.6% away, dormant) as capitulation floor. QQQ: $640 as intermediate resistance (2.6% away, active), $585 as swing support (6.2% away, dormant).\",\n  \"key_tickers\": [\n    \"SPY\",\n    \"QQQ\",\n    \"NVDA\",\n    \"MSFT\",\n    \"ORCL\"\n  ],\n  \"key_themes\": [\n    \"Mega-cap momentum continuation anchored by AI/semiconductor strength\",\n    \"Breadth deterioration (mid-caps, crypto, commodities) masking narrow leadership\",\n    \"Rate-cut tailwinds offsetting corporate guidance cuts in fintech/software\",\n    \"Capital spending acceleration as primary growth validation metric\",\n    \"Holiday volume evaporation creating tactical exit risk despite bullish setup\"\n  ],\n  \"risk_factors\": [\n    \"Deteriorating breadth beneath headline indices signals profit-taking rather than conviction (classic low-volume behavior)\",\n    \"Fintech/enterprise software guidance cuts may represent systemic demand deceleration, not isolated weakness\",\n    \"Policy uncertainty (regulatory tightening on banking capital, geopolitical escalation thresholds) could trigger sector rotation or volatility spike\",\n    \"Year-end liquidity evaporation may amplify weakness if breadth continues eroding—any pullback becomes exit signal rather than dip-buy\",\n    \"Fed policy dissent and rate-cut timing communication risks—current optimism assumes dovish trajectory; hawkish signal reversal would invalidate rally\"\n  ]\n}\n```",
+    "key_tickers": [],
+    "key_themes": [],
+    "risk_factors": [],
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "No levels available",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "No levels available",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 177996
+    "generation_time_ms": 178854
   },
   "trending": {
     "macro": [
