@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-27T04:05:22.947Z",
+  "timestamp": "2025-12-27T04:29:15.511Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 62,
     "sources": {
       "social": {
-        "bullish": 75,
-        "bearish": 24,
-        "neutral": 121,
-        "total": 220,
+        "bullish": 70,
+        "bearish": 21,
+        "neutral": 116,
+        "total": 207,
         "pct": 34
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market exhibits bifurcated sentiment with bullish technical momentum in mega-cap AI leaders offset by structural bearish concerns around year-end liquidity, leverage, and regulatory headwinds. Conviction: MEDIUM. Bullish case concentrates on forward AI capital spending themes; bearish case anchors in concrete near-term pressures (crypto liquidation risk, profit-taking, geopolitical uncertainty, earnings revisions).\n\n📈 **Themes:** (1) AI-driven capital expenditure momentum and mega-cap breakout potential; (2) Year-end liquidity constraints, profit-taking pressure, and crypto leverage positioning creating asymmetric downside risk in mid-caps; (3) Regulatory tightening and earnings revisions in software/fintech/pharma vs. defensive positioning in utilities and AI enablers.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging 1.4% away), Put Wall $640 (153k OI - dormant 7.3% away). Max Pain $687. Near support: $670 (45k OI, active 2.9% away), $645 (126k OI, dormant 6.6% away). QQQ ($623.89): Call Wall $630 (33k OI - active 1.0% away), Put Wall $590 (164k OI - dormant 5.4% away). Max Pain $620. Near resistance: $640 (31k OI, active 2.6% away), $625 (29k OI, active 0.2% away). Per X/Twitter: $NVDA resistance $190-191, target $200.",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Bullish technical momentum in mega-cap tech and AI narratives compete against near-term headwinds from guidance deterioration, regulatory uncertainty, and shallow holiday liquidity. Risk-reward is balanced rather than directionally clear.\n\n📈 **Themes:** (1) AI and semiconductor sector momentum with elevated positioning, (2) Year-end/early-January liquidity vulnerability creating amplified volatility risk, (3) Guidance reset cycle and regulatory tightening creating tactical defensiveness despite structural bullish tailwinds, (4) Cryptocurrency leverage and forced liquidation risk offsetting recovery narratives.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging, 1.4% away), Put Wall $640 (153k OI - dormant, 7.3% away). Max Pain $687. Near active support: $670 (45k OI, 2.9% away). QQQ ($623.89): Call Wall $630 (33k OI - active hedging, 1.0% away), Put Wall $590 (164k OI - dormant, 5.4% away). Max Pain $620. Near active resistance: $625 (29k OI, 0.2% away), $640 (31k OI, 2.6% away). /ES: 6940 technical inflection per Twitter sources.",
     "key_tickers": [
       "NVDA",
+      "MU",
+      "SOL",
       "SPY",
-      "QQQ",
-      "IWM",
-      "BTC"
+      "QQQ"
     ],
     "key_themes": [
-      "AI capital spending acceleration and mega-cap momentum",
-      "Year-end liquidity constraints and profit-taking pressure",
-      "Regulatory tightening and earnings margin compression in software/fintech/pharma",
-      "Crypto leverage and liquidation risk (whale positioning)",
-      "Sector rotation: AI/utilities outperform vs. cyclicals/regulated sectors"
+      "AI momentum and semiconductor strength",
+      "Year-end liquidity vulnerability and volatility amplification",
+      "Guidance reset cycle competing with capex narratives",
+      "Cryptocurrency leverage and forced liquidation risk",
+      "Regulatory tightening and macro policy uncertainty"
     ],
     "risk_factors": [
-      "Year-end thin liquidity triggering forced selling and gap moves",
-      "Cryptocurrency whale liquidation risk ($53M+ unrealized losses) cascading to broader markets",
-      "Geopolitical escalation (Taiwan-China tension, China 15th Five-Year Plan uncertainty) triggering risk-off rotation",
-      "Earnings revisions continuing in enterprise software and fintech signaling margin compression",
-      "Policy/regulatory divergence uncertainty creating volatility spikes on statement/announcement cycles"
+      "Shallow holiday trading liquidity amplifying moves in either direction",
+      "Crypto leverage and forced liquidation cascade triggering risk-off cascade",
+      "Guidance deterioration in enterprise software and fintech creating spillover weakness",
+      "Geopolitical escalation triggering safe-haven flight",
+      "Technical breakdown through active support levels ($670 SPY, $620 QQQ) invalidating bullish setup"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY testing $700 call wall (active resistance 1.4% away); support at $670 (active, 2.9% away) and $640 (dormant support). QQQ squeezed between $625-630 active call walls with limited upside room; support at $620 (max pain) and $590 (dormant). Watch for liquidity-driven breakdowns into lower-OI zones given year-end thin conditions.",
-    "swing_bias": "NEUTRAL_WITH_BULLISH_LEAN",
-    "swing_levels": "SPY 1-5 day: Consolidation range $670-$700. Bullish breakout above $700 targets $730-$750 (dormant resistance, 5.7%-8.6% away). Bearish breakdown below $670 tests $645 (6.6% away) then $640 put wall (7.3%). QQQ 1-5 day: Tight consolidation $620-$630. Upside breakout above $630 toward $640 (2.6% away); downside support at $620 max pain then $590 (5.4% away).",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Active resistance at $700 Call Wall (146k OI). Active support at $670 (45k OI, 2.9% away). QQQ: Extremely tight - active resistance at $625 and $630 (62k combined OI within 1% band). Testing these walls will determine intraday direction; breakout above requires conviction on heavy volume given shallow liquidity.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Primary resistance $700-$750 (Call Wall active, then dormant resistance at 8.6%). Key support $670 (active), then $640 Put Wall (dormant, 7.3% away). Max Pain $687 provides gravitational pull. QQQ: Primary resistance $630-$640 (Call Walls active and near). Key support $620 (Max Pain), then $590 Put Wall (dormant, 5.4% away). Bullish conviction requires sustained moves above $700 SPY and $630 QQQ without reversal into shallow year-end liquidity.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 173717
+    "generation_time_ms": 168424
   },
   "trending": {
     "macro": [
@@ -180,41 +180,41 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 18,
-        "sentiment_score": 0.493,
+        "mentions": 17,
+        "sentiment_score": 0.474,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 49,
+        "sentiment_pct": 47,
         "counts": {
-          "bullish": 11,
+          "bullish": 10,
           "bearish": 0,
           "neutral": 7,
-          "total": 18
-        }
-      },
-      {
-        "ticker": "SPX",
-        "mentions": 6,
-        "sentiment_score": 0.515,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 52,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 6
+          "total": 17
         }
       },
       {
         "ticker": "TSLA",
-        "mentions": 6,
-        "sentiment_score": 0.397,
+        "mentions": 7,
+        "sentiment_score": 0.361,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "sentiment_pct": 36,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 3,
-          "total": 6
+          "neutral": 4,
+          "total": 7
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 5,
+        "sentiment_score": 0.474,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 47,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 5
         }
       },
       {
