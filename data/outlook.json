@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-28T21:45:35.536Z",
+  "timestamp": "2025-12-28T22:06:52.729Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 62,
     "sources": {
       "social": {
-        "bullish": 43,
-        "bearish": 29,
-        "neutral": 82,
+        "bullish": 40,
+        "bearish": 31,
+        "neutral": 83,
         "total": 154,
-        "pct": 28
+        "pct": 26
       },
       "news": {
         "bullish": 12,
-        "bearish": 3,
+        "bearish": 4,
         "neutral": 5,
-        "total": 20,
-        "pct": 60
+        "total": 21,
+        "pct": 57
       },
       "video": {
         "bullish": 1,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with a bearish lean (60-100% bullish across sources, but RSS and X note strong structural headwinds masking tactical strength). Conviction is MEDIUM—bullish sources lack specific catalysts, while bearish case anchors in measurable macro deterioration and options positioning stress signals.\n\n📈 **Themes:** (1) **Macro deterioration vs. tactical relief** – homebuyer activity weakness, trade volume declines, and Treasury delivery stress compete with precious metals strength and sector rotation dynamics; (2) **Bifurcated market with defensive rotation** – growth/tech strength in specific pockets offset by financial services tightening, healthcare guidance cuts, and discretionary spending softness; (3) **Margin/volatility compression** – options expiry dynamics and commodity margin concerns creating near-term whipsaw risk.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging, 1.4% away), Put Wall $640 (153k OI - dormant, 7.3% away). Max Pain $686. Near support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active, 1.0% away), Put Wall $590 (164k OI - dormant, 5.4% away). Max Pain $621. Near support: $585 (137k OI - dormant). /ES futures levels mentioned per X: 6978.6 (BAC support), 6847 (banking support threshold per Twitter analysis).",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Bullish sources (YouTube, Professional Trader, RSS News at 75%) emphasize precious metals strength and potential Fed policy accommodation, while bearish sources (X Twitter at 56% bullish, RSS structural concerns) highlight macro deterioration in trade volumes, housing demand, and treasury market stress. The market is bifurcated between near-term headwinds (regulatory tightening, earnings pressure, geopolitical risk) and longer-duration tailwinds (AI productivity, policy easing potential).\n\n📈 **Themes:** (1) Safe-haven rotation into precious metals and defensive sectors (utilities, healthcare, defense) as risk-off sentiment builds; (2) Regulatory and supervisory tightening creating near-term earnings guidance pressure across enterprise software, fintech, and growth names; (3) Geopolitical tension (Taiwan-China, Russia-Ukraine, Iran rhetoric) sustaining capital flight risk and volatility uncertainty; (4) Treasury market structural stress (delivery fails, yield trajectory uncertainty) anchoring valuation debates between growth and defensive positioning.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging 1.4% away), Put Wall $640 (153k OI - dormant 7.3% away). Max Pain $686. Near-term support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active 1.0% away), Put Wall $590 (164k OI - dormant 5.4% away). Max Pain $621. Near-term resistance: $640 (31k OI - active 2.6%), $625 (29k OI - active 0.2%). /ES: 6978.6 support per Twitter (near-term momentum test). Both indices show BULLISH_SUPPORT bias from options positioning despite qualitative bearish structural concerns.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BAC",
-      "MSTR",
+      "SLV",
+      "USO",
       "TLT"
     ],
     "key_themes": [
-      "Macro deterioration (housing, trade, credit stress)",
-      "Margin/volatility compression into year-end",
-      "Sector rotation toward defensive areas",
-      "Precious metals tactical strength",
-      "Banking sector tightening signals"
+      "Safe-haven rotation (precious metals outperformance)",
+      "Regulatory/supervisory tightening pressures",
+      "Trade volume deterioration and macro structural stress",
+      "Geopolitical tension and capital flight risk",
+      "Defensive sector rotation (utilities, healthcare, defense)"
     ],
     "risk_factors": [
-      "Commodity margin pressures and forced liquidations",
-      "Earnings guidance cuts cascading across sectors",
-      "Credit stability concerns if real estate weakness accelerates",
-      "Options expiry volatility and whipsaw intraday swings",
-      "Geopolitical escalation or peace resolution creating sudden safe-haven flows"
+      "Macro deterioration acceleration (trade volumes, housing demand collapsing further)",
+      "Regulatory cascades and earnings guidance revisions in Q1 2026",
+      "Geopolitical escalation (Taiwan-China, Iran rhetoric, Russia-Ukraine) triggering risk-off liquidation",
+      "Treasury market structural failure (delivery fails, yield spike) disrupting financial stability",
+      "Precious metals consolidation and margin increases unwinding leveraged positions"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Testing $700 call wall (active hedging zone); hold above $670 support (active). QQQ: Resistance $625-$630 (both active); watch hold above $620 near max pain. Watch for whipsaw into option expiry as margin pressures and volatility compression create intraday noise.",
+    "intraday_levels": "SPY: Watch for resistance at $700 call wall (146k OI, active hedging). Support at $670 (45k OI, active). QQQ: Resistance at $630 call wall (33k OI, active) and $625 (29k OI, very tight). Support at $590 put wall if approached. /ES: Test of 6978.6 support level per Twitter will determine near-term momentum. Expect choppy range-bound action near max pain ($686 SPY, $621 QQQ) with potential for consolidation rather than directional conviction.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY 1-5 day: Bias toward $686 max pain with downside risk toward $670 support, then $645 (dormant put wall activates if breached). QQQ: $621 max pain is gravitational; below that, $585 put wall becomes key support zone. Resistance capped near $630-$640. Expect choppy range with defensive sector leadership; structural strength insufficient to sustain rallies above active call walls.",
+    "swing_levels": "SPY: 5-day bias tilts bearish if breaks below $670 support (active level). Intermediate target $640 put wall if structural deterioration (trade, housing, regulatory) accelerates. Upside cap at $700 call wall with major resistance at $730-750 (dormant, high OI). QQQ: More vulnerable given tighter options structure. Resistance $630-640, support $590 put wall. A break below $625 (currently active) could accelerate bearish move toward $590. Sources warn earnings guidance cuts and regulatory overhang will persist through early January, suggesting defensive rotation extends beyond intraday horizon. Precious metals consolidation and geopolitical developments will signal 1-5 day directional bias.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 158151
+    "generation_time_ms": 161080
   },
   "trending": {
     "macro": [
@@ -231,11 +231,11 @@
         }
       },
       {
-        "ticker": "TGT",
+        "ticker": "DB",
         "mentions": 1,
-        "sentiment_score": 0.8,
+        "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
+        "sentiment_pct": 72,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -250,7 +250,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 28,
+    "sentiment_bullish_pct": 26,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
