@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-28T20:03:02.962Z",
+  "timestamp": "2025-12-28T20:33:20.123Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 64,
     "sources": {
       "social": {
-        "bullish": 36,
-        "bearish": 24,
-        "neutral": 73,
-        "total": 133,
+        "bullish": 39,
+        "bearish": 27,
+        "neutral": 80,
+        "total": 146,
         "pct": 27
       },
       "news": {
         "bullish": 12,
         "bearish": 5,
-        "neutral": 4,
-        "total": 21,
-        "pct": 57
+        "neutral": 5,
+        "total": 22,
+        "pct": 55
       },
       "video": {
         "bullish": 1,
@@ -27,60 +27,59 @@
         "pct": 100
       },
       "chat": {
-        "bullish": 3,
+        "bullish": 4,
         "bearish": 0,
         "neutral": 0,
-        "total": 3,
+        "total": 4,
         "pct": 100
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with a bullish lean (60-100% bullish across sources), but structural bearish risks create meaningful uncertainty. Conviction is MEDIUM—near-term momentum favors bulls, but earnings deterioration and geopolitical tail risks underpin defensive positioning.\n\n📈 **Themes:** (1) Precious metals and crypto institutional adoption narratives driving alternative asset flows; (2) Fed rate-cut expectations supporting risk assets despite earnings downgrades across fintech/software/pharma; (3) Technology sector divergence—AI/semiconductors decoupling upward while enterprise software faces margin compression; (4) Geopolitical escalation risks and Treasury market stress signals (delivery failures at 8-year highs) creating hedging demand.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—DORMANT). Max Pain $686. Near resistance: $730 (5.7% away), $750 (8.6% away). Near support: $670 (2.9% away—ACTIVE), $645 (6.6% away—DORMANT). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE hedging), Put Wall $590 (164k OI, 5.4% away—DORMANT). Max Pain $621. Near resistance: $640 (2.6%—ACTIVE), $625 (0.2%—ACTIVE). Near support: $585 (6.2% away—DORMANT). Both indices show BULLISH_SUPPORT bias with active dealer hedging near resistance.",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with bearish structural headwinds outweighing bullish rotation narratives. Conviction is MEDIUM - sources acknowledge both near-term tactical bounce potential and underlying fundamental weakness.\n\n📈 **Themes:** (1) International equity rotation and precious metals momentum as capital flows away from underperforming US speculative assets; (2) Earnings disappointment risk in fintech and enterprise software creating gap between macro tailwinds and micro corporate guidance; (3) Geopolitical tail-risk (escalation rhetoric, policy uncertainty) as asymmetric threat to risk-on positioning; (4) Bifurcated market behavior with consolidation more likely than sustained directional conviction.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging 1.4% away), Put Wall $640 (153k OI - dormant 7.3% away). Max Pain $686. Near support: $670 (45k OI - active 2.9% away), $645 (126k OI - dormant 6.6% away). QQQ ($623.89): Call Wall $630 (33k OI - active 1.0% away), Put Wall $590 (164k OI - dormant 5.4% away). Max Pain $621. Near resistance: $640 (31k OI - active 2.6% away), $625 (29k OI - active 0.2% away). Both ETFs show bullish support bias with active hedging clustered near current prices.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "MU",
-      "BAC",
-      "SLV"
+      "JPM",
+      "BAC"
     ],
     "key_themes": [
-      "Institutional crypto and precious metals adoption driving alternative asset flows",
-      "Fed rate-cut expectations supporting equities despite earnings downgrades",
-      "Technology sector divergence (AI/semiconductors vs. enterprise software margin compression)",
-      "Geopolitical escalation tail risks and Treasury market stress indicators",
-      "Post-rally consolidation cycles in momentum trades (metals, crypto) creating reversion risk"
+      "Earnings disappointment risk in fintech and enterprise software",
+      "International equity and precious metals rotation",
+      "Policy uncertainty and regulatory tightening headwinds",
+      "Geopolitical tail-risk asymmetry",
+      "Speculative asset class deterioration and low conviction"
     ],
     "risk_factors": [
-      "Earnings revisions acceleration downward in fintech, enterprise software, and pharma—could undermine bullish case",
-      "Geopolitical escalation (Iran rhetoric, Taiwan posture, Russia-Ukraine) could trigger sharp risk-off and break through Put Wall support",
-      "Treasury delivery failures at 8-year highs suggest financial system stress—canary-in-coal-mine indicator for broader instability",
-      "Crypto and precious metals consolidation paired with inverse ETF volume spikes hint at smart money frontrunning drawdown",
-      "Consumer spending weakness masked by discounting tactics—sustainability of growth narrative questionable if delinquencies accelerate"
+      "Corporate guidance misses spreading sector-wide despite Fed tailwinds",
+      "Geopolitical escalation (Iran rhetoric, Taiwan, Russia-Ukraine) triggering rapid risk-off",
+      "Banking sector support breaks confirming broader market stress and structural weakness",
+      "Retail demand weakness proving structural rather than transitory, impacting discretionary valuations",
+      "Treasury market stress (delivery failures at 8-year highs) signaling underlying liquidity/confidence concerns"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: Resistance at $700 (Call Wall, 146k OI—active dealer hedging). Support at $670 (2.9% away, active hedging zone). Max Pain $686 provides gravitational pull. QQQ: Resistance at $625 (0.2% away—immediately testing) and $630 (Call Wall, 33k OI). Support at $585 (5.4% away—dormant until approached). Watch for breakout above $630 in QQQ or sustained hold above $700 in SPY to confirm intraday bullish momentum.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Swing resistance at $730 (5.7% away, 48k OI—dormant, activates if approached) and $750 (8.6% away, 55k OI). Swing support at $670 (active), $645 (6.6% away, 126k OI—dormant), and $640 (Put Wall, 153k OI). QQQ: Swing resistance at $640 (2.6%, 31k OI—active), $650+ untested. Swing support at $585 (6.2%, 137k OI—dormant) and $590 (Put Wall, 164k OI). Both indices positioned to probe resistance over next 1-5 days with elevated dealer hedging active near current levels, suggesting momentum likely tests Call Walls before encountering sustained friction.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Resistance at $700 (active call wall, high OI), support at $670 (active put wall, 2.9% away). QQQ: Resistance at $630-$625 (active call walls clustered <1% away), support at $590 (dormant, 5.4% away). Watch for dealer hedging activation at call walls as primary driver of intraday movement. Max Pain gravitational pull: SPY $686, QQQ $621.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY 1-5 day outlook: Resistance at $700, $750 (dormant 8.6% away). Support holds at $670 (active), with breakdown risk to $645 (dormant 6.6% away) if structure breaks. Max Pain $686 suggests oscillation range. QQQ: Resistance $630-$640 (active cluster), support $590 (dormant 5.4% away). Bias toward lower lows before sustainable recovery per Twitter bearish thesis (bearish higher timeframe trends intact, below yearly opening levels). Expect consolidation with tactical bounces rather than sustained rallies.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 165938
+    "generation_time_ms": 160340
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 3,
-        "sentiment_score": 0.483,
+        "mentions": 4,
+        "sentiment_score": 0.542,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
+        "sentiment_pct": 54,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 1,
-          "total": 3
+          "total": 4
         }
       },
       {
@@ -94,6 +93,19 @@
           "bearish": 0,
           "neutral": 2,
           "total": 2
+        }
+      },
+      {
+        "ticker": "GLD",
+        "mentions": 1,
+        "sentiment_score": 0.72,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 72,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
         }
       },
       {
