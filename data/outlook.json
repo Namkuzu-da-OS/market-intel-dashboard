@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-28T22:06:52.729Z",
+  "timestamp": "2025-12-28T22:27:47.181Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 62,
     "sources": {
       "social": {
-        "bullish": 40,
-        "bearish": 31,
+        "bullish": 39,
+        "bearish": 30,
         "neutral": 83,
-        "total": 154,
+        "total": 152,
         "pct": 26
       },
       "news": {
-        "bullish": 12,
+        "bullish": 11,
         "bearish": 4,
         "neutral": 5,
-        "total": 21,
-        "pct": 57
+        "total": 20,
+        "pct": 55
       },
       "video": {
         "bullish": 1,
@@ -36,51 +36,51 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Bullish sources (YouTube, Professional Trader, RSS News at 75%) emphasize precious metals strength and potential Fed policy accommodation, while bearish sources (X Twitter at 56% bullish, RSS structural concerns) highlight macro deterioration in trade volumes, housing demand, and treasury market stress. The market is bifurcated between near-term headwinds (regulatory tightening, earnings pressure, geopolitical risk) and longer-duration tailwinds (AI productivity, policy easing potential).\n\n📈 **Themes:** (1) Safe-haven rotation into precious metals and defensive sectors (utilities, healthcare, defense) as risk-off sentiment builds; (2) Regulatory and supervisory tightening creating near-term earnings guidance pressure across enterprise software, fintech, and growth names; (3) Geopolitical tension (Taiwan-China, Russia-Ukraine, Iran rhetoric) sustaining capital flight risk and volatility uncertainty; (4) Treasury market structural stress (delivery fails, yield trajectory uncertainty) anchoring valuation debates between growth and defensive positioning.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging 1.4% away), Put Wall $640 (153k OI - dormant 7.3% away). Max Pain $686. Near-term support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active 1.0% away), Put Wall $590 (164k OI - dormant 5.4% away). Max Pain $621. Near-term resistance: $640 (31k OI - active 2.6%), $625 (29k OI - active 0.2%). /ES: 6978.6 support per Twitter (near-term momentum test). Both indices show BULLISH_SUPPORT bias from options positioning despite qualitative bearish structural concerns.",
+    "narrative": "📊 **Consensus:** Markets show mixed conviction with a slight bullish lean supported by Fed easing expectations and AI narratives, but this optimism is fragile and masks significant structural concerns including corporate guidance deterioration, Treasury market dysfunction, and demand destruction signals. Conviction is MEDIUM—sources agree on upside potential but highlight material downside risks that remain unpriced.\n\n📈 **Themes:** (1) Fed rate-cut expectations supporting equity valuations despite underlying macro weakness; (2) AI productivity tailwinds competing with enterprise software margin concerns and guidance cuts; (3) Safe-haven capital flows into precious metals signaling macro uncertainty and risk-off rotation; (4) Treasury market stress (delivery fails at 8-year highs) and geopolitical escalation (Iran tensions, Taiwan defense spending) creating tail risks; (5) Consumer demand deterioration masked by headline retail data, with homebuyer activity and trade volumes declining significantly.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active hedging, only 1.4% away), Put Wall $640 (153k OI—dormant support 7.3% away). Max Pain $686. Near support: $670 (45k OI, active). Near resistance: $750 (55k OI, dormant). QQQ ($623.89): Call Wall $630 (33k OI—active, 1.0% away), Put Wall $590 (164k OI—dormant 5.4% away). Max Pain $621. Near support: $585 (137k OI, dormant). /ES: 6978.60 support per Twitter; consolidation levels indicate sideways-to-down bias near-term.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "MSTR",
       "SLV",
-      "USO",
       "TLT"
     ],
     "key_themes": [
-      "Safe-haven rotation (precious metals outperformance)",
-      "Regulatory/supervisory tightening pressures",
-      "Trade volume deterioration and macro structural stress",
-      "Geopolitical tension and capital flight risk",
-      "Defensive sector rotation (utilities, healthcare, defense)"
+      "Fed rate-cut expectations and monetary easing narrative",
+      "AI productivity tailwinds vs. enterprise software margin pressure",
+      "Safe-haven precious metals demand signaling macro uncertainty",
+      "Treasury market dysfunction and systemic stress",
+      "Consumer demand destruction despite retail headline strength"
     ],
     "risk_factors": [
-      "Macro deterioration acceleration (trade volumes, housing demand collapsing further)",
-      "Regulatory cascades and earnings guidance revisions in Q1 2026",
-      "Geopolitical escalation (Taiwan-China, Iran rhetoric, Russia-Ukraine) triggering risk-off liquidation",
-      "Treasury market structural failure (delivery fails, yield spike) disrupting financial stability",
-      "Precious metals consolidation and margin increases unwinding leveraged positions"
+      "Treasury delivery fails at 8-year highs signal financial system stress",
+      "Corporate guidance cuts cascading through software and financial services could break bullish narrative",
+      "Geopolitical escalation (Iran, Taiwan, Russia-Ukraine) creating unpriced tail risk",
+      "Precious metals mean reversion if macro sentiment shifts, potentially liquidating leveraged positions",
+      "Homebuyer activity and trade volumes declining materially, signaling demand destruction that could pressure equities"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch for resistance at $700 call wall (146k OI, active hedging). Support at $670 (45k OI, active). QQQ: Resistance at $630 call wall (33k OI, active) and $625 (29k OI, very tight). Support at $590 put wall if approached. /ES: Test of 6978.6 support level per Twitter will determine near-term momentum. Expect choppy range-bound action near max pain ($686 SPY, $621 QQQ) with potential for consolidation rather than directional conviction.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: 5-day bias tilts bearish if breaks below $670 support (active level). Intermediate target $640 put wall if structural deterioration (trade, housing, regulatory) accelerates. Upside cap at $700 call wall with major resistance at $730-750 (dormant, high OI). QQQ: More vulnerable given tighter options structure. Resistance $630-640, support $590 put wall. A break below $625 (currently active) could accelerate bearish move toward $590. Sources warn earnings guidance cuts and regulatory overhang will persist through early January, suggesting defensive rotation extends beyond intraday horizon. Precious metals consolidation and geopolitical developments will signal 1-5 day directional bias.",
+    "intraday_levels": "SPY: Test resistance at $700 call wall (active hedging). Hold above $690 support. Break below $670 (45k OI) would signal intraday weakness toward $640 put wall. QQQ: Resistance at $630 call wall (active) and $625 (active, 29k OI). Support at $590 put wall if $620-$625 range breaks. Watch for volatility near max pain levels ($686 SPY, $621 QQQ).",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Primary support at $670 (active), secondary at $640 put wall. Resistance $700 (call wall, active), $750 (dormant). Swing traders favor long above $670 with target toward $750 if call wall breaks. QQQ: Support $590 put wall. Resistance $630-$640 zone (active). Bullish swing setup if $625 holds. Watch for mean reversion in precious metals to reset risk appetite and rotate capital back to equities.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 161080
+    "generation_time_ms": 160296
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 5,
-        "sentiment_score": 0.274,
+        "mentions": 4,
+        "sentiment_score": 0.18,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
+        "sentiment_pct": 18,
         "counts": {
-          "bullish": 2,
+          "bullish": 1,
           "bearish": 0,
           "neutral": 3,
-          "total": 5
+          "total": 4
         }
       },
       {
@@ -180,15 +180,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 5,
-        "sentiment_score": 0.01,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 1,
+        "mentions": 4,
+        "sentiment_score": -0.2,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 20,
         "counts": {
-          "bullish": 1,
+          "bullish": 0,
           "bearish": 1,
           "neutral": 3,
-          "total": 5
+          "total": 4
         }
       },
       {
