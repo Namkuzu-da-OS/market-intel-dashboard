@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-28T19:39:38.840Z",
+  "timestamp": "2025-12-28T20:03:02.962Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 68,
+    "confidence_pct": 64,
     "sources": {
       "social": {
-        "bullish": 35,
-        "bearish": 22,
-        "neutral": 70,
-        "total": 127,
-        "pct": 28
+        "bullish": 36,
+        "bearish": 24,
+        "neutral": 73,
+        "total": 133,
+        "pct": 27
       },
       "news": {
-        "bullish": 16,
-        "bearish": 4,
-        "neutral": 8,
-        "total": 28,
+        "bullish": 12,
+        "bearish": 5,
+        "neutral": 4,
+        "total": 21,
         "pct": 57
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is predominantly bullish (61-100% across sources), but bearish structural arguments present stronger foundational risk—creating a HIGH conviction mismatch between sentiment and systemic fragility. Consensus leans cautiously optimistic with underlying anxiety about contagion risks.\n\n📈 **Themes:** (1) Defensive rotation into precious metals amid geopolitical and policy uncertainty; (2) Enterprise software sector vulnerability from guidance cuts spreading to correlated sectors; (3) Treasury market settlement stress (delivery fails at 8-year highs) signaling potential liquidity fragility; (4) AI/automation momentum versus rate-sensitive cyclical headwinds; (5) Complacency and blow-off rally characteristics in select assets (crypto, commodities) despite macro headwinds.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging, 1.4% away), Put Wall $640 (153k OI - dormant, 7.3% away). Max Pain $686. Near support: $670 (45k OI, 2.9% - active), $645 (126k OI, 6.6% - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active hedging, 1.0% away), Put Wall $590 (164k OI - dormant, 5.4% away). Max Pain $621. Near support: $585 (137k OI, 6.2% - dormant). Near resistance: $640 (31k OI, 2.6% - active), $625 (29k OI, 0.2% - active).",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with a bullish lean (60-100% bullish across sources), but structural bearish risks create meaningful uncertainty. Conviction is MEDIUM—near-term momentum favors bulls, but earnings deterioration and geopolitical tail risks underpin defensive positioning.\n\n📈 **Themes:** (1) Precious metals and crypto institutional adoption narratives driving alternative asset flows; (2) Fed rate-cut expectations supporting risk assets despite earnings downgrades across fintech/software/pharma; (3) Technology sector divergence—AI/semiconductors decoupling upward while enterprise software faces margin compression; (4) Geopolitical escalation risks and Treasury market stress signals (delivery failures at 8-year highs) creating hedging demand.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—DORMANT). Max Pain $686. Near resistance: $730 (5.7% away), $750 (8.6% away). Near support: $670 (2.9% away—ACTIVE), $645 (6.6% away—DORMANT). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE hedging), Put Wall $590 (164k OI, 5.4% away—DORMANT). Max Pain $621. Near resistance: $640 (2.6%—ACTIVE), $625 (0.2%—ACTIVE). Near support: $585 (6.2% away—DORMANT). Both indices show BULLISH_SUPPORT bias with active dealer hedging near resistance.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "MU",
-      "SLV",
-      "ZSL"
+      "BAC",
+      "SLV"
     ],
     "key_themes": [
-      "Precious metals defensive rotation",
-      "Enterprise software guidance disappointment contagion",
-      "Treasury market liquidity fragility",
-      "AI momentum exhaustion risk",
-      "Geopolitical safe-haven demand"
+      "Institutional crypto and precious metals adoption driving alternative asset flows",
+      "Fed rate-cut expectations supporting equities despite earnings downgrades",
+      "Technology sector divergence (AI/semiconductors vs. enterprise software margin compression)",
+      "Geopolitical escalation tail risks and Treasury market stress indicators",
+      "Post-rally consolidation cycles in momentum trades (metals, crypto) creating reversion risk"
     ],
     "risk_factors": [
-      "Treasury delivery fails at 8-year highs signal systemic settlement stress",
-      "Record inverse commodity ETF volume ($ZSL) suggests blow-off positioning",
-      "Enterprise software sector guidance cuts spreading to correlated cyclicals",
-      "Geopolitical escalation rhetoric creating tail-risk uncertainty",
-      "Complacency levels (VIX 13.60) historically precede correction crashes"
+      "Earnings revisions acceleration downward in fintech, enterprise software, and pharma—could undermine bullish case",
+      "Geopolitical escalation (Iran rhetoric, Taiwan posture, Russia-Ukraine) could trigger sharp risk-off and break through Put Wall support",
+      "Treasury delivery failures at 8-year highs suggest financial system stress—canary-in-coal-mine indicator for broader instability",
+      "Crypto and precious metals consolidation paired with inverse ETF volume spikes hint at smart money frontrunning drawdown",
+      "Consumer spending weakness masked by discounting tactics—sustainability of growth narrative questionable if delinquencies accelerate"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Resistance at Call Wall $700 (active hedging zone, 146k OI). Support at $670 (active, 2.9% away, 45k OI) and $690 max pain. QQQ: Resistance at $630 Call Wall (33k OI active) and $625 (29k OI active, nearly at price). Support at $620-$621 max pain zone. Watch for breakout/breakdown at these narrow ranges given active gamma hedging.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY swing target: $670 support (active gamma level, 45k OI), with breakdown potential toward $645 (126k OI dormant support) if that fails. Resistance if rallied: $700 Call Wall activation, then $730/$750 (55k OI - dormant, would require significant momentum). QQQ: Consolidation between $625-$630 with breakdown bias toward $590 Put Wall (164k OI dormant support, 5.4% below price) if $620-$621 fails. 5-10% pullback aligns with bearish structural thesis (Treasury stress, guidance cuts, complacency exhaustion).",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: Resistance at $700 (Call Wall, 146k OI—active dealer hedging). Support at $670 (2.9% away, active hedging zone). Max Pain $686 provides gravitational pull. QQQ: Resistance at $625 (0.2% away—immediately testing) and $630 (Call Wall, 33k OI). Support at $585 (5.4% away—dormant until approached). Watch for breakout above $630 in QQQ or sustained hold above $700 in SPY to confirm intraday bullish momentum.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Swing resistance at $730 (5.7% away, 48k OI—dormant, activates if approached) and $750 (8.6% away, 55k OI). Swing support at $670 (active), $645 (6.6% away, 126k OI—dormant), and $640 (Put Wall, 153k OI). QQQ: Swing resistance at $640 (2.6%, 31k OI—active), $650+ untested. Swing support at $585 (6.2%, 137k OI—dormant) and $590 (Put Wall, 164k OI). Both indices positioned to probe resistance over next 1-5 days with elevated dealer hedging active near current levels, suggesting momentum likely tests Call Walls before encountering sustained friction.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 157204
+    "generation_time_ms": 165938
   },
   "trending": {
     "macro": [
@@ -224,7 +224,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 28,
+    "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
