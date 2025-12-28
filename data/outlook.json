@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-28T22:50:30.353Z",
+  "timestamp": "2025-12-28T23:14:06.135Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 63,
+    "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 37,
-        "bearish": 28,
-        "neutral": 85,
-        "total": 150,
-        "pct": 25
+        "bullish": 43,
+        "bearish": 27,
+        "neutral": 89,
+        "total": 159,
+        "pct": 27
       },
       "news": {
         "bullish": 11,
         "bearish": 4,
-        "neutral": 5,
-        "total": 20,
-        "pct": 55
+        "neutral": 6,
+        "total": 21,
+        "pct": 52
       },
       "video": {
         "bullish": 1,
@@ -36,51 +36,77 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Twitter sentiment runs 57% bullish but with strong bearish structural arguments; RSS News leans 73% bullish but emphasizes near-term execution risk; YouTube analysts show 100% bullish on precious metals but lack breadth. Professional trader data unavailable. Overall: cautiously bullish on longer-term themes, but significant near-term headwinds acknowledged across sources.\n\n📈 **Themes:** (1) Earnings quality deterioration and guidance revision risk in enterprise software and fintech sectors creating execution uncertainty; (2) Capital rotation into safe-haven assets (precious metals, hard assets) signaling risk-off positioning despite headline equity bullishness; (3) Regulatory tightening and policy uncertainty creating divergence between institutional conviction and near-term trading opportunities; (4) Geopolitical risk premium embedded in positioning with binary tail-risk potential for resolution or escalation.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4% away), Put Wall $640 (153k OI - dormant at 7.3% away). Max Pain $686. Near support: $670 (45k OI - active), $645 (126k OI - dormant). | QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0% away), $640 (31k OI - active at 2.6% away), Put Wall $590 (164k OI - dormant at 5.4% away). Max Pain $621. | Per Twitter: /ES_F support at $6978.6 cited as critical test point for equity continuation.",
+    "narrative": "📊 **Consensus:** Market sentiment is **MIXED with bullish technical momentum offset by bearish fundamental concerns**—conviction: MEDIUM. Twitter and YouTube analysts lean bullish on near-term technicals and momentum, while RSS News emphasizes earnings deterioration and regulatory headwinds as the dominant near-term driver. The market is effectively split between those betting on technical continuation into early 2026 and those hedging equity exposure due to present-day corporate guidance cuts.\n\n📈 **Themes:** (1) **Precious metals and commodity momentum** as inflation/uncertainty hedge, with institutional capital rotation into tangible assets; (2) **Tech/AI narrative resilience** supporting index technicals despite software sector earnings concerns; (3) **Regulatory and earnings headwind uncertainty** creating defensive positioning (utilities, safe-haven flows) despite long-term Fed accommodation backdrop; (4) **Year-end liquidity and options expiry volatility** amplifying intraday swings and mean-reversion risk.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active hedging, 1.4% away), Put Wall $640 (153k OI—dormant support, 7.3% away). Max Pain $686. Near support: $670 (45k OI, active), $645 (126k OI, dormant). QQQ ($623.89): Call Wall $630 (33k OI—active, 1.0% away), Put Wall $590 (164k OI—dormant, 5.4% away). Max Pain $621. Near resistance: $625 (29k OI, active), $640 (31k OI, active). /ES support per Twitter: 6978.6 (cited as critical technical level). Crypto proxy levels per Twitter: $MSTR $150.6 capitulation test.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "MSOS",
-      "Silver",
-      "JPM"
+      "IWM",
+      "MSTR",
+      "SLV"
     ],
     "key_themes": [
-      "Earnings revision risk and guidance deterioration",
-      "Safe-haven capital rotation and hard asset demand",
-      "Regulatory uncertainty and institutional positioning shifts",
-      "Max pain gravitational pull near expiration dates",
-      "Geopolitical risk premium and resolution optionality"
+      "precious_metals_momentum",
+      "AI_and_tech_narrative_resilience",
+      "earnings_deterioration_and_guidance_cuts",
+      "regulatory_tightening_and_banking_stress",
+      "year_end_liquidity_and_options_volatility"
     ],
     "risk_factors": [
-      "Enterprise software and fintech earnings misses cascading across index",
-      "CME margin increases (noted Dec 29 per Twitter) creating volatility in precious metals/derivatives",
-      "Geopolitical escalation (Iran tensions, Russia-Ukraine indicators, Taiwan risk) as binary tail event",
-      "Residential real estate continued deterioration (homebuyer participation at 12+ year lows per Twitter)",
-      "Treasury delivery stress and monetary system dysfunction signals creating unexpected volatility"
+      "CME_margin_implementation_forced_liquidation_risk",
+      "earnings_contagion_in_software_fintech_sectors",
+      "geopolitical_escalation_tail_risk_Ukraine_Taiwan",
+      "housing_weakness_and_trade_volume_deterioration",
+      "treasury_delivery_fail_rates_at_8_year_highs"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Resistance at $700 Call Wall (active hedging zone); support at $670 (active 45k OI support). QQQ: Resistance at $630 Call Wall and $640 (both active zones); support cluster at $625/$623.89 near-max-pain. Watch for testing but lack concrete daily catalysts suggests consolidation risk near max pain levels ($686 SPY, $621 QQQ).",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Downside target $670 (active support) with further weakness to $645 (dormant 126k OI put support) if institutional conviction breaks. Upside capped by $700 call wall (146k OI) with resistance extending to $730/$750 if wall penetrated. QQQ: Consolidation between $625-$640 likely near-term; break below $625 toward $590 put wall (164k OI) would confirm swing bearish thesis. /ES_F $6978.6 (per Twitter) remains critical support test—breach signals momentum toward lower levels.",
+    "intraday_levels": "SPY: Watch $700 call wall for resistance (active hedging), $670 support for hold (active). Test $690–$700 range. QQQ: $625–$630 narrow resistance zone (both active), $620 support. /ES 6978.6 support per Twitter—failure here invalidates bullish setup. Year-end expiry volatility likely—expect whipsaw between support/resistance rather than directional conviction.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Upside target $710–$750 on technical momentum (max pain $686 as gravitational pull). If $700 call wall is cleared, next resistance dormant at $730 (48k OI, 5.7% away). Downside: $670 (active support holds), breach below opens $645 dormant support (6.6% away). QQQ: Upside $630–$640 on momentum, with $625 as immediate resistance. Downside $590 put wall (5.4% away, dormant). 1–5 day bias favors upside into early January on technical setup, but with elevated liquidation risk from CME margin implementation and earnings concerns creating contained pullback risk.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 160044
+    "generation_time_ms": 163986
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 4,
-        "sentiment_score": 0.18,
+        "mentions": 5,
+        "sentiment_score": 0.304,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 18,
+        "sentiment_pct": 30,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 5
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 2,
+        "sentiment_score": 0.325,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
         "counts": {
           "bullish": 1,
           "bearish": 0,
-          "neutral": 3,
-          "total": 4
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "IWM",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
         }
       },
       {
@@ -97,35 +123,7 @@
         }
       },
       {
-        "ticker": "QQQ",
-        "mentions": 1,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "VOO",
-        "mentions": 1,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      }
-    ],
-    "crypto": [
-      {
-        "ticker": "BCH",
+        "ticker": "SPY",
         "mentions": 1,
         "sentiment_score": 0.15,
         "sentiment_label": "Bullish",
@@ -136,9 +134,24 @@
           "neutral": 1,
           "total": 1
         }
-      },
+      }
+    ],
+    "crypto": [
       {
         "ticker": "BTC",
+        "mentions": 2,
+        "sentiment_score": 0.15,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 15,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "BCH",
         "mentions": 1,
         "sentiment_score": 0.15,
         "sentiment_label": "Bullish",
@@ -192,24 +205,24 @@
         }
       },
       {
-        "ticker": "NVDA",
-        "mentions": 2,
-        "sentiment_score": 0.82,
+        "ticker": "JPM",
+        "mentions": 3,
+        "sentiment_score": 0.507,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
+        "sentiment_pct": 51,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 0,
-          "total": 2
+          "neutral": 1,
+          "total": 3
         }
       },
       {
-        "ticker": "JPM",
+        "ticker": "GOOGL",
         "mentions": 2,
-        "sentiment_score": 0.36,
+        "sentiment_score": 0.4,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 40,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -231,11 +244,11 @@
         }
       },
       {
-        "ticker": "DB",
+        "ticker": "NFLX",
         "mentions": 1,
-        "sentiment_score": 0.72,
+        "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
+        "sentiment_pct": 80,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -250,7 +263,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 25,
+    "sentiment_bullish_pct": 27,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
