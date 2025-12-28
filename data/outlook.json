@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-27T22:57:02.387Z",
+  "timestamp": "2025-12-28T06:54:33.131Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 74,
+    "confidence_pct": 61,
     "sources": {
       "social": {
-        "bullish": 37,
-        "bearish": 11,
-        "neutral": 60,
-        "total": 108,
-        "pct": 34
+        "bullish": 26,
+        "bearish": 19,
+        "neutral": 54,
+        "total": 99,
+        "pct": 26
       },
       "news": {
-        "bullish": 10,
-        "bearish": 6,
-        "neutral": 9,
-        "total": 25,
-        "pct": 40
+        "bullish": 6,
+        "bearish": 3,
+        "neutral": 7,
+        "total": 16,
+        "pct": 38
       },
       "video": {
-        "bullish": 0,
+        "bullish": 1,
         "bearish": 0,
-        "neutral": 3,
-        "total": 3,
-        "pct": 0
+        "neutral": 0,
+        "total": 1,
+        "pct": 100
       },
       "chat": {
         "bullish": 1,
@@ -36,154 +36,59 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets are split between near-term bullish momentum supported by rate-cut expectations and structural bearish concerns around earnings guidance deterioration, regulatory tightening, and elevated leverage. Conviction: MEDIUM—bullish technicals conflict with bearish fundamental deterioration.\n\n📈 **Themes:** (1) Earnings guidance reset cycle masquerading as stabilization—fintech sector showing contagion risk to broader enterprise software; (2) Monetary easing tailwind vs. regulatory headwinds—Fed rate cuts supporting valuations but capital requirement tightening pressuring financials; (3) AI infrastructure demand structural support vs. leverage unwinding risk—genuine CapEx trends offset by crypto/options positioning vulnerabilities.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging), Put Wall $640 (153k OI - dormant). Max Pain $686. Near support: $670 (45k OI, active). QQQ ($623.89): Call Wall $630 (33k OI - active hedging), Put Wall $590 (164k OI - dormant). Max Pain $621. Near resistance: $625, $640 (both active). Per X sources, /ES 6550 cited as bear trigger level (attributed to Twitter analysis, not verified current price).",
+    "narrative": "📊 **Consensus:** Market exhibits bifurcated sentiment with moderate conviction. Bullish structural narratives (AI capex, rate-cut expectations, deregulation) compete with near-term bearish pressures (earnings guidance cuts, geopolitical escalation, record debt levels). Overall bias is cautiously bullish near-term with elevated tail risks.\n\n📈 **Themes:** (1) AI infrastructure momentum and capex acceleration driving technology sector optionality; (2) Rate-cut expectations and accommodative policy supporting risk appetite; (3) Sector fragmentation—defensive rotation (utilities, treasuries) versus selective AI/tech exposure; (4) Geopolitical risk-off sentiment and supply-chain vulnerabilities; (5) Precious metals strength signaling safe-haven demand and potential inflation expectations.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—active hedging), Put Wall $640 (153k OI, 7.3% away—dormant). Max Pain $686. Near support: $670 (45k OI, 2.9%—active), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0%—active), Put Wall $590 (164k OI, 5.4%—dormant). Max Pain $621. Near resistance: $640 (31k OI, 2.6%—active), $625 (29k OI, 0.2%—active). Per Twitter sources: /ES noted 6550 as explicit bearish trigger with downside targets 5500–5100 if broken.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "FISERV",
-      "BTC",
-      "Hyperliquid"
+      "NVDA",
+      "SLV",
+      "BTC"
     ],
     "key_themes": [
-      "Earnings guidance reset cycle",
-      "Monetary easing backdrop with regulatory headwinds",
-      "Fintech-to-software contagion risk",
-      "Leverage unwinding vulnerability",
-      "Year-end seasonality vs. structural weakness"
+      "AI capex acceleration and infrastructure demand",
+      "Rate-cut expectations and accommodative policy environment",
+      "Precious metals strength and safe-haven demand",
+      "Sector fragmentation: defensive utilities vs. growth tech",
+      "Earnings guidance deterioration in software, fintech, and pharma"
     ],
     "risk_factors": [
-      "Earnings guidance deterioration spreading beyond fintech to enterprise software",
-      "Regulatory capital requirement announcements impacting banking sector guidance",
-      "Crypto leverage cascade risk (noted $53M underwater in whale positions)",
-      "Rapid sentiment shift from complacency to risk-off amid options positioning",
-      "Geopolitical escalation as exogenous volatility trigger"
+      "Geopolitical escalation (Russia-Ukraine, Taiwan-China) triggering risk-off rotation",
+      "Record global debt ($346T) and structural financial vulnerabilities; Treasury delivery failures signaling hidden stress",
+      "Earnings guidance cuts and Q4 demand deterioration not yet fully priced; sentiment extremes (complacency) preceding historical corrections",
+      "Mean-reversion risk in precious metals after extended rally; consolidation patterns may signal breakout or reversion",
+      "Regulatory tightening and policy uncertainty; California wealth tax outcome impacts venture/AI capex expectations"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $700 call wall (active dealer resistance). Below that, $670 active support zone. QQQ: $625-$630 zone compressed—test above $630 breaks call wall resistance; below $625 tests support. Watch for breakout/breakdown behavior around these tight ranges.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: If call wall at $700 fails to break decisively, pullback toward $670 support and max pain $686 likely over 1-5 days. Breach below $670 would target dormant put wall at $640. QQQ: Tight range $625-$630 suggests consolidation; breakdown below $625 would test $590 put wall support over swing timeframe. Per RSS analysis, earnings guidance trends and regulatory announcements over next days will determine if downside bias materializes.",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: Watch $700 call wall (active resistance at 1.4% distance); support at $670 (active, 2.9% below). QQQ: Watch $625–$630 call wall cluster (active resistance, <1% away); support at $620 (near max pain). Intraday bias supported by bullish sentiment across 3 of 4 sources and active call wall positioning suggesting dealer hedge activity.",
+    "swing_bias": "NEUTRAL_BULLISH",
+    "swing_levels": "SPY: $750 and $730 are dormant call walls (5.7–8.6% away) that activate if price sustains above $700. $645–$670 range marks active/dormant support zone—break of $645 targets dormant put wall at $640. QQQ: $640 call wall (active, 2.6% away) is immediate resistance; break targets $650+ (dormant levels). Below $620 targets $590 put wall (164k OI—significant support). 1–5 day outlook: Expect consolidation in $690–$700 range (SPY) or $623–$630 range (QQQ) with tactical breakout attempts. RSS bearish near-term guidance suggests weakness more probable than immediate breakout, but options structure (bullish put walls) implies dealer positioning for support.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 131827
+    "generation_time_ms": 162940
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 2,
-        "sentiment_score": 0.725,
+        "mentions": 3,
+        "sentiment_score": 0.483,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 73,
+        "sentiment_pct": 48,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "IWM",
-        "mentions": 1,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
+          "neutral": 1,
+          "total": 3
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 1,
-        "sentiment_score": 0.15,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 15,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      }
-    ],
-    "crypto": [
-      {
-        "ticker": "BTC",
-        "mentions": 1,
-        "sentiment_score": -0.75,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 75,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "ETH",
-        "mentions": 1,
-        "sentiment_score": -0.75,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 75,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "SOL",
-        "mentions": 1,
-        "sentiment_score": -0.75,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 75,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 1
-        }
-      }
-    ],
-    "other": [
-      {
-        "ticker": "TSLA",
         "mentions": 2,
-        "sentiment_score": 0.5,
+        "sentiment_score": 0.075,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "NVDA",
-        "mentions": 2,
-        "sentiment_score": 0.435,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 44,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "HOOD",
-        "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "sentiment_pct": 8,
         "counts": {
           "bullish": 0,
           "bearish": 0,
@@ -192,7 +97,49 @@
         }
       },
       {
-        "ticker": "BABA",
+        "ticker": "VOO",
+        "mentions": 1,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 1
+        }
+      }
+    ],
+    "crypto": [],
+    "other": [
+      {
+        "ticker": "NVDA",
+        "mentions": 3,
+        "sentiment_score": 0.787,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 79,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 2,
+        "sentiment_score": 0.425,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 43,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "SIL",
         "mentions": 1,
         "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
@@ -205,7 +152,20 @@
         }
       },
       {
-        "ticker": "SIL",
+        "ticker": "SILJ",
+        "mentions": 1,
+        "sentiment_score": 0.8,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 80,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      },
+      {
+        "ticker": "SIVR",
         "mentions": 1,
         "sentiment_score": 0.8,
         "sentiment_label": "Bullish",
@@ -224,7 +184,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 34,
+    "sentiment_bullish_pct": 26,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
