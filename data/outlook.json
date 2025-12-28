@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-28T22:27:47.181Z",
+  "timestamp": "2025-12-28T22:50:30.353Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 62,
+    "confidence_pct": 63,
     "sources": {
       "social": {
-        "bullish": 39,
-        "bearish": 30,
-        "neutral": 83,
-        "total": 152,
-        "pct": 26
+        "bullish": 37,
+        "bearish": 28,
+        "neutral": 85,
+        "total": 150,
+        "pct": 25
       },
       "news": {
         "bullish": 11,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets show mixed conviction with a slight bullish lean supported by Fed easing expectations and AI narratives, but this optimism is fragile and masks significant structural concerns including corporate guidance deterioration, Treasury market dysfunction, and demand destruction signals. Conviction is MEDIUM—sources agree on upside potential but highlight material downside risks that remain unpriced.\n\n📈 **Themes:** (1) Fed rate-cut expectations supporting equity valuations despite underlying macro weakness; (2) AI productivity tailwinds competing with enterprise software margin concerns and guidance cuts; (3) Safe-haven capital flows into precious metals signaling macro uncertainty and risk-off rotation; (4) Treasury market stress (delivery fails at 8-year highs) and geopolitical escalation (Iran tensions, Taiwan defense spending) creating tail risks; (5) Consumer demand deterioration masked by headline retail data, with homebuyer activity and trade volumes declining significantly.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active hedging, only 1.4% away), Put Wall $640 (153k OI—dormant support 7.3% away). Max Pain $686. Near support: $670 (45k OI, active). Near resistance: $750 (55k OI, dormant). QQQ ($623.89): Call Wall $630 (33k OI—active, 1.0% away), Put Wall $590 (164k OI—dormant 5.4% away). Max Pain $621. Near support: $585 (137k OI, dormant). /ES: 6978.60 support per Twitter; consolidation levels indicate sideways-to-down bias near-term.",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Twitter sentiment runs 57% bullish but with strong bearish structural arguments; RSS News leans 73% bullish but emphasizes near-term execution risk; YouTube analysts show 100% bullish on precious metals but lack breadth. Professional trader data unavailable. Overall: cautiously bullish on longer-term themes, but significant near-term headwinds acknowledged across sources.\n\n📈 **Themes:** (1) Earnings quality deterioration and guidance revision risk in enterprise software and fintech sectors creating execution uncertainty; (2) Capital rotation into safe-haven assets (precious metals, hard assets) signaling risk-off positioning despite headline equity bullishness; (3) Regulatory tightening and policy uncertainty creating divergence between institutional conviction and near-term trading opportunities; (4) Geopolitical risk premium embedded in positioning with binary tail-risk potential for resolution or escalation.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4% away), Put Wall $640 (153k OI - dormant at 7.3% away). Max Pain $686. Near support: $670 (45k OI - active), $645 (126k OI - dormant). | QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0% away), $640 (31k OI - active at 2.6% away), Put Wall $590 (164k OI - dormant at 5.4% away). Max Pain $621. | Per Twitter: /ES_F support at $6978.6 cited as critical test point for equity continuation.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "MSTR",
-      "SLV",
-      "TLT"
+      "MSOS",
+      "Silver",
+      "JPM"
     ],
     "key_themes": [
-      "Fed rate-cut expectations and monetary easing narrative",
-      "AI productivity tailwinds vs. enterprise software margin pressure",
-      "Safe-haven precious metals demand signaling macro uncertainty",
-      "Treasury market dysfunction and systemic stress",
-      "Consumer demand destruction despite retail headline strength"
+      "Earnings revision risk and guidance deterioration",
+      "Safe-haven capital rotation and hard asset demand",
+      "Regulatory uncertainty and institutional positioning shifts",
+      "Max pain gravitational pull near expiration dates",
+      "Geopolitical risk premium and resolution optionality"
     ],
     "risk_factors": [
-      "Treasury delivery fails at 8-year highs signal financial system stress",
-      "Corporate guidance cuts cascading through software and financial services could break bullish narrative",
-      "Geopolitical escalation (Iran, Taiwan, Russia-Ukraine) creating unpriced tail risk",
-      "Precious metals mean reversion if macro sentiment shifts, potentially liquidating leveraged positions",
-      "Homebuyer activity and trade volumes declining materially, signaling demand destruction that could pressure equities"
+      "Enterprise software and fintech earnings misses cascading across index",
+      "CME margin increases (noted Dec 29 per Twitter) creating volatility in precious metals/derivatives",
+      "Geopolitical escalation (Iran tensions, Russia-Ukraine indicators, Taiwan risk) as binary tail event",
+      "Residential real estate continued deterioration (homebuyer participation at 12+ year lows per Twitter)",
+      "Treasury delivery stress and monetary system dysfunction signals creating unexpected volatility"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Test resistance at $700 call wall (active hedging). Hold above $690 support. Break below $670 (45k OI) would signal intraday weakness toward $640 put wall. QQQ: Resistance at $630 call wall (active) and $625 (active, 29k OI). Support at $590 put wall if $620-$625 range breaks. Watch for volatility near max pain levels ($686 SPY, $621 QQQ).",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Primary support at $670 (active), secondary at $640 put wall. Resistance $700 (call wall, active), $750 (dormant). Swing traders favor long above $670 with target toward $750 if call wall breaks. QQQ: Support $590 put wall. Resistance $630-$640 zone (active). Bullish swing setup if $625 holds. Watch for mean reversion in precious metals to reset risk appetite and rotate capital back to equities.",
+    "intraday_levels": "SPY: Resistance at $700 Call Wall (active hedging zone); support at $670 (active 45k OI support). QQQ: Resistance at $630 Call Wall and $640 (both active zones); support cluster at $625/$623.89 near-max-pain. Watch for testing but lack concrete daily catalysts suggests consolidation risk near max pain levels ($686 SPY, $621 QQQ).",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Downside target $670 (active support) with further weakness to $645 (dormant 126k OI put support) if institutional conviction breaks. Upside capped by $700 call wall (146k OI) with resistance extending to $730/$750 if wall penetrated. QQQ: Consolidation between $625-$640 likely near-term; break below $625 toward $590 put wall (164k OI) would confirm swing bearish thesis. /ES_F $6978.6 (per Twitter) remains critical support test—breach signals momentum toward lower levels.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 160296
+    "generation_time_ms": 160044
   },
   "trending": {
     "macro": [
@@ -193,15 +193,15 @@
       },
       {
         "ticker": "NVDA",
-        "mentions": 3,
-        "sentiment_score": 0.787,
+        "mentions": 2,
+        "sentiment_score": 0.82,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 79,
+        "sentiment_pct": 82,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 0,
-          "total": 3
+          "total": 2
         }
       },
       {
@@ -250,7 +250,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 26,
+    "sentiment_bullish_pct": 25,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
