@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-28T21:00:44.445Z",
+  "timestamp": "2025-12-28T21:25:44.754Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 65,
     "sources": {
       "social": {
-        "bullish": 42,
-        "bearish": 28,
-        "neutral": 86,
-        "total": 156,
+        "bullish": 44,
+        "bearish": 29,
+        "neutral": 91,
+        "total": 164,
         "pct": 27
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets face a genuine bull-bear tug-of-war with **MIXED conviction (medium)**. Bullish sentiment dominates social and analyst commentary (60-100% bullish across sources), yet structural bearish fundamentals (housing deterioration, Treasury dysfunction, guidance cuts, geopolitical risk) present empirically stronger near-term headwinds. The consensus emerging across sources is a tactical bounce scenario followed by renewed selling pressure—a \"sell-the-rip\" environment where initial enthusiasm encounters deteriorating fundamentals.\n\n📈 **Themes:** (1) **Monetary accommodation vs. earnings weakness** — rate-cut optimism colliding with cascading guidance cuts and demand deterioration across enterprise software, fintech, and financials; (2) **Defensive capital rotation** — precious metals and safe-haven flows outpacing speculative assets, signaling institutional risk-off positioning despite bullish headline sentiment; (3) **Sector-specific fragility** — AI/growth names at froth levels while housing, consumer spending, and trade fundamentals show structural deterioration; (4) **Treasury and credit stress** — delivery fails and volatility suggesting systemic dysfunction beyond fixed income.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—dormant). Max Pain $686. Near support: $670 (45k OI, 2.9%—ACTIVE), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE hedging), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $621. Near resistance: $640 (31k OI, 2.6%—ACTIVE), $625 (29k OI, 0.2%—ACTIVE). VIX at 13.60 reflects suppressed volatility amid positioning fragility.",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with medium conviction. Bullish narratives dominate on AI/tech momentum and rate-cut tailwinds (60-100% bullish across X, RSS, YouTube, and professional sources), but bearish structural evidence—earnings deterioration, Treasury dysfunction, real estate weakness, and geopolitical tail risks—creates underlying fragility. Near-term consolidation with downside vulnerability is more probable than conviction upside.\n\n📈 **Themes:** (1) AI productivity disruption and mega-cap tech resilience driving sentiment; (2) Fed easing cycle and rate-cut expectations supporting cyclical recovery narrative; (3) Emerging markets and precious metals outperformance capturing capital rotation away from underperforming altcoins; (4) Earnings recession risk from cascading guidance cuts across fintech, software, and pharma offsetting rate optimism; (5) Systemic deleveraging pressure from Treasury delivery fails, real estate deterioration, and credit market stress building beneath low-volatility surface.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active hedging, 1.4% away), Put Wall $640 (153k OI—dormant, 7.3% away). Max Pain $686. Near support: $670 (45k OI, 2.9%—ACTIVE), $645 (126k OI, 6.6%—dormant). | QQQ ($623.89): Call Wall $630 (33k OI—active, 1.0% away), Put Wall $590 (164k OI—dormant, 5.4% away). Max Pain $621. Near support: $585 (137k OI, 6.2%—dormant). | /ES: 6,978.60 cited as resistance/support per Twitter sources.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "SQ",
-      "PYPL",
-      "AAPL"
+      "SLV",
+      "BTC",
+      "GLD"
     ],
     "key_themes": [
-      "Rate cuts vs. earnings deterioration (monetary relief hitting real weakness)",
-      "Defensive rotation (precious metals outpacing risk assets)",
-      "Guidance cut cascade across software/fintech/financials",
-      "Treasury dysfunction and credit stress signals",
-      "Housing/demand destruction as leading indicator of economic contraction"
+      "AI productivity tailwinds vs. earnings recession risk",
+      "Fed rate-cut cycle and monetary easing support",
+      "Precious metals outperformance and capital rotation",
+      "Treasury market dysfunction and credit stress indicators",
+      "Real estate deterioration and systemic deleveraging pressure"
     ],
     "risk_factors": [
-      "Geopolitical escalation triggering sustained risk-off flows",
-      "Cascade of guidance cuts accelerating beyond initial reporters",
-      "Treasury market dysfunction spreading to broader credit system",
-      "Whipsaw volatility: bullish sentiment vs. bearish fundamentals creates sharp reversals",
-      "Dealer hedging at $700 SPY Call Wall and $630 QQQ Call Wall could cap rallies sharply"
+      "Earnings guidance cuts cascading across fintech, software, and pharma trigger mean-reversion sell-off",
+      "Treasury delivery fails (8-year highs per Twitter) signal credit system stress beneath low-volatility surface",
+      "Geopolitical escalation (Iran, Taiwan) unpriced by complacent VIX (13.60)—tail-risk trigger",
+      "CME silver margin hike (December 29 per Twitter) catalyzes commodities volatility spillover",
+      "Real estate and housing volume collapse (pandemic lows per Twitter) accelerates deleveraging and consumer demand destruction"
     ],
-    "intraday_bias": "NEUTRAL-to-BEARISH",
-    "intraday_levels": "SPY: Testing active resistance at $700 (Call Wall, 146k OI). If broken, next dormant resistance $730 (48k OI, 5.7% away). Active support at $670 (45k OI, 2.9% away). Max Pain $686 provides gravitational pull. QQQ: Highly compressed—resistance cluster at $625-$630 (both ACTIVE: 29k + 33k OI). Any break above $630 faces dormant resistance $640 (31k OI). Support at max pain $621 with next level at $590 (164k OI, dormant). **Watch:** Bullish momentum may test $700 SPY / $630 QQQ, but breadth deterioration and dealer hedging at these walls likely cap rallies. Intraday whipsaw risk remains elevated.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Watch $700 call wall (active resistance, 1.4% away) for intraday cap. Support at $670 (active 2.9% level) acts as near-term floor. QQQ: $625-$630 zone represents compressed resistance (0.2-1.0% away, both ACTIVE). If breached, watch $640 (2.6% away). Intraday consolidation most probable; avoid conviction direction until levels break decisively.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Break below active support $670 targets dormant levels $645 (126k OI, 6.6% below price)—this is major consolidation zone. Put Wall at $640 (153k OI) becomes critical hold; breach opens door to $600s. Resistance: $700 Call Wall is hard ceiling for 1-3 day moves unless broad market relief. QQQ: Tighter range—$625-$630 band is noise. Real swing levels: resistance $640 (31k OI, 2.6% away), support $590 (164k OI, dormant—requires 5.4% move to activate). Precious metals strength (per YouTube analyst) suggests defensive rotations continue, supporting downside pressure on growth/cyclicals over next 1-5 days. Twitter's \"sideways-to-down bias over 1-3 months\" aligns with swing bearish outlook.",
+    "swing_levels": "SPY: Breakout above $700 call wall targets $730-$750 (5.7-8.6% away, dormant resistance). Breakdown below $670 support initiates move toward $645 then $640 put wall (6.6-7.3% away). Swing bias leans bearish because active call hedging at $700 should cap rallies, while accumulating structural deterioration (earnings, credit stress) favors lower prices over next 1-5 days. QQQ: $630 call wall is final resistance; $625 and $640 represent sequential resistance. Breakdown below $625 targets $590-$585 put wall (5.4-6.2% away). Max pain at $621 suggests week-end gravity toward that level.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 165934
+    "generation_time_ms": 162780
   },
   "trending": {
     "macro": [
