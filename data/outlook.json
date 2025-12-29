@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-29T03:10:02.991Z",
+  "timestamp": "2025-12-29T03:45:18.152Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 65,
+    "confidence_pct": 66,
     "sources": {
       "social": {
         "bullish": 77,
-        "bearish": 43,
-        "neutral": 134,
-        "total": 254,
-        "pct": 30
+        "bearish": 39,
+        "neutral": 130,
+        "total": 246,
+        "pct": 31
       },
       "news": {
         "bullish": 11,
-        "bearish": 8,
-        "neutral": 7,
+        "bearish": 9,
+        "neutral": 6,
         "total": 26,
         "pct": 42
       },
       "video": {
-        "bullish": 1,
+        "bullish": 0,
         "bearish": 0,
         "neutral": 2,
-        "total": 3,
-        "pct": 33
+        "total": 2,
+        "pct": 0
       },
       "chat": {
         "bullish": 5,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Sources present a MIXED outlook with near-term bearish pressure but longer-term bullish potential. Conviction is MEDIUM—multiple tailwinds (Fed easing, AI productivity, infrastructure demand) compete with immediate headwinds (regulatory tightening, sector guidance misses, geopolitical uncertainty, momentum divergence).\n\n📈 **Themes:** (1) Momentum Deterioration & Distribution Risk—breadth collapse (116 vs. 150+ stocks in bullish momentum) signals potential distribution despite all-time highs; (2) Regulatory & Earnings Headwinds—specific guidance cuts from software/fintech firms and enforcement actions creating near-term de-risking; (3) Precious Metals Exhaustion—silver's 182% YTD rally showing classic topping patterns with reversal already underway, testing support levels.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4%), Put Wall $640 (153k OI - dormant at 7.3%). Max Pain $686. Near support: $670 (45k OI - active at 2.9%), $645 (126k OI - dormant at 6.6%). QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0%), Put Wall $590 (164k OI - dormant at 5.4%). Max Pain $621. Near support: $585 (137k OI - dormant at 6.2%). Silver reversal point: $79.30 per source; Bitcoin ascending triangle formation mentioned as key watch point per source analysis.",
+    "narrative": "📊 **Consensus:** Mixed conviction with structural conflict between bullish sentiment (66% Twitter, 100% professional trader, 55% news) and bearish technical evidence. Overall bias is cautiously bullish in the near term, but with medium-to-low confidence due to deteriorating breadth and momentum divergence.\n\n📈 **Themes:** (1) Fed rate-cut expectations and monetary easing supporting risk-on positioning; (2) AI productivity narrative resilience as foundational support for tech mega-caps; (3) Precious metals exhaustion and retail leverage unwinding creating correction risks; (4) Market breadth deterioration masking strength in concentrated names—internal participation weakness despite S&P 500 ATHs.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4% away), Put Wall $640 (153k OI - dormant at 7.3% away). Max Pain $686. Near support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0% away), Put Wall $590 (164k OI - dormant at 5.4% away). Max Pain $621. Near resistance: $640 (31k OI), $625 (29k OI - active). Per Twitter analysis: /ES showing momentum breadth weakness with only 116 qualified names vs. 150+ expected; Silver at overbought extremes with $79.30 support critical; Bitcoin proxy MSTR at $150.60 support signaling crypto sector health.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NFLX",
       "SLV",
-      "BTC"
+      "MSTR",
+      "NFLX"
     ],
     "key_themes": [
-      "Momentum Breadth Deterioration",
-      "Precious Metals Exhaustion",
-      "Regulatory & Earnings Headwinds",
-      "Year-End Options Expiration Dynamics",
-      "Fed Easing & AI Productivity Tailwinds"
+      "Fed rate-cut expectations and monetary easing",
+      "AI productivity narrative and mega-cap concentration",
+      "Market breadth deterioration despite ATHs",
+      "Precious metals exhaustion and retail leverage unwinding",
+      "Earnings revisions trajectory uncertainty"
     ],
     "risk_factors": [
-      "Momentum divergence widening (116 vs 150+ stocks)—distribution risk masking all-time highs",
-      "Regulatory enforcement and sector-specific guidance cuts creating near-term margin pressure",
-      "Geopolitical uncertainty (Russia-Ukraine, Taiwan) and options expiration volatility amplifying downside",
-      "Precious metals reversal momentum could accelerate if support breaks (silver $79.30)",
-      "Consensus bullish case depends on macro data surprises; absent those, path of least resistance is downward"
+      "Geopolitical escalation (Ukraine, Taiwan defense) as binary downside trigger",
+      "Earnings disappointment spreading systemically beyond isolated weakness",
+      "Regulatory enforcement against financial institutions",
+      "Precious metals liquidation cascade if silver $79.30 support breaks",
+      "Breadth momentum failure to expand back toward 150+ names signals correction ahead"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Watch for active call wall resistance at $700 (146k OI); support at $670 (active hedging at 2.9%). QQQ: Resistance at $630 (33k OI) and $625 (29k OI - both active); watch for breakdown if momentum breadth deteriorates further. Silver and precious metals weakness may create risk-off pressure intraday. Testing support levels across equities likely given stated momentum divergence.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY testing active call wall resistance at $700 (146k OI). Active support holding at $670 (45k OI). QQQ near active resistance at $625 (29k OI) and $630 call wall. Watch for breakout above $700 SPY or breakdown below $670 to confirm directional conviction. No specific intraday levels from professional trader available.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Primary resistance $700, followed by dormant resistance at $730 (48k OI, 5.7%) and $750 (55k OI, 8.6%). Support deterioration would target $670 (active), then $645 (dormant, 6.6%), with major put wall support at $640. QQQ: Resistance at $630-$640 (active hedging); breakdown targets $590 put wall (164k OI) with further support at $585 (137k OI). 1-5 day horizon: expect testing of near-term support as precious metals exhaustion and momentum divergence play out; bullish reversal requires positive surprises on macro data.",
+    "swing_levels": "5-day consolidation with downside bias likely. SPY: $700 call wall acts as near-term ceiling; $670 active support must hold to prevent test of $645 dormant support (126k OI, 6.6% away). QQQ: $630 call wall resistance with $625 near-term pivot; if broken, $590 put wall (164k OI) provides structural support 5.4% below. Per Twitter: Silver $79.30 support critical—breach would validate bearish exhaustion thesis and trigger broader commodity/leveraged position unwind. Bitcoin proxy MSTR $150.60 hold signals crypto sector resilience or deterioration.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 129579
+    "generation_time_ms": 134830
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "QQQ",
-        "mentions": 6,
-        "sentiment_score": 0.358,
+        "mentions": 5,
+        "sentiment_score": 0.43,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 43,
         "counts": {
           "bullish": 3,
           "bearish": 0,
-          "neutral": 3,
-          "total": 6
+          "neutral": 2,
+          "total": 5
         }
       },
       {
@@ -110,24 +110,24 @@
         }
       },
       {
+        "ticker": "GLD",
+        "mentions": 3,
+        "sentiment_score": 0.24,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 24,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 3
+        }
+      },
+      {
         "ticker": "IWM",
         "mentions": 2,
         "sentiment_score": 0.475,
         "sentiment_label": "Bullish",
         "sentiment_pct": 48,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "GLD",
-        "mentions": 2,
-        "sentiment_score": 0.36,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -276,7 +276,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 30,
+    "sentiment_bullish_pct": 31,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
