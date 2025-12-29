@@ -1,30 +1,30 @@
 {
-  "timestamp": "2025-12-29T01:18:20.147Z",
+  "timestamp": "2025-12-29T02:02:13.507Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 64,
     "sources": {
       "social": {
-        "bullish": 64,
-        "bearish": 40,
-        "neutral": 115,
-        "total": 219,
-        "pct": 29
+        "bullish": 71,
+        "bearish": 42,
+        "neutral": 125,
+        "total": 238,
+        "pct": 30
       },
       "news": {
         "bullish": 11,
-        "bearish": 6,
+        "bearish": 7,
         "neutral": 7,
-        "total": 24,
-        "pct": 46
+        "total": 25,
+        "pct": 44
       },
       "video": {
         "bullish": 1,
         "bearish": 0,
-        "neutral": 1,
-        "total": 2,
-        "pct": 50
+        "neutral": 2,
+        "total": 3,
+        "pct": 33
       },
       "chat": {
         "bullish": 5,
@@ -36,50 +36,51 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets show MIXED conviction with bullish momentum narratives (62-100% bullish across sources) conflicting against bearish technical exhaustion signals and structural headwinds. Overall sentiment leans BULLISH on momentum but with MEDIUM-LOW conviction due to underlying weakness in breadth and earnings guidance.\n\n📈 **Themes:** (1) Momentum exhaustion vs. continuation—consecutive up moves and breakouts face technical reversal signals; (2) Regulatory tightening and earnings revision risk masking headline strength; (3) Rate-cut expectations providing tactical support but questioned by concurrent macro headwinds and positioning extremes.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active hedging, 1.4% resistance), Put Wall $640 (153k OI—dormant support, 7.3% away). Max Pain $686. Near support: $670 (45k OI—active), $645 (126k OI—dormant). QQQ ($623.89): Call Wall $630 (33k OI—active, 1.0% resistance), Put Wall $590 (164k OI—dormant, 5.4% away). Max Pain $621. Near resistance: $640 (31k OI), $625 (29k OI—both active).",
+    "narrative": "📊 **Consensus:** Market sentiment is mixed with HIGH conviction bearish signals in precious metals (silver showing technical exhaustion) contrasting with MEDIUM conviction bullish momentum in broad indices and commodities. Overall market bias is NEUTRAL-TO-BULLISH on equities but vulnerable to sector-specific correction.\n\n📈 **Themes:** (1) Precious metals overbought exhaustion vs. commodity supercycle narrative bifurcation; (2) Corporate earnings guidance deterioration in enterprise software and fintech creating valuation pressure; (3) Fed regulatory tightening and 'higher for longer' rates environment constraining leveraged sectors; (4) Momentum divergence warning (NASDAQ momentum screener at 116 names vs. normal 150+) signaling early breadth deterioration.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging, 1.4% away), Put Wall $640 (153k OI - dormant, 7.3% away). Max Pain $686. Near support: $670 (45k OI - active). QQQ ($623.89): Call Wall $630 (33k OI - active, 1.0% away), Put Wall $590 (164k OI - dormant, 5.4% away). Max Pain $621. Near resistance: $625 (29k OI - active). Silver: Record high $82.50 as key breakout/support level per Twitter analysis; December 29 CME margin requirement ($25,000) noted as potential liquidation catalyst.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "SLV",
-      "MSTR"
+      "NVDA",
+      "Enterprise Software sector",
+      "Precious Metals"
     ],
     "key_themes": [
-      "Momentum exhaustion and technical reversal signals",
-      "Breadth deterioration masking headline strength",
-      "Regulatory tightening and earnings revision pressure",
-      "Forced liquidation risk from margin requirement changes",
-      "Rate-cut expectations vs. macro headwind paradox"
+      "Precious metals overbought exhaustion",
+      "Earnings guidance deterioration in software/fintech",
+      "Fed regulatory tightening headwinds",
+      "Momentum breadth divergence warning",
+      "Commodity supercycle vs. correction debate"
     ],
     "risk_factors": [
-      "Exhaustion gaps and 7+ consecutive up days suggest mean reversion vulnerability",
-      "Breadth divergence (116 names in healthy uptrends vs. 150+ historical) indicates deteriorating participation",
-      "Regulatory enforcement and earnings guidance cuts represent near-term earnings risk",
-      "Forced liquidations ahead of margin requirement implementation could trigger cascade deleveraging",
-      "Options market positioning (bearish hedging) vs. bullish narrative suggests conviction is tactical, not structural"
+      "Silver forced liquidations from margin requirement increase (specific near-term catalyst per Twitter)",
+      "Corporate earnings revision cascade (RSS: enterprise software, fintech, pharma guidance cuts)",
+      "NASDAQ momentum screener deterioration (only 116 names vs. 150+ normal—early divergence signal)",
+      "Fed regulatory pressure on leveraged sectors constraining multiple expansion",
+      "Bifurcated market (indices resilient but commodity leveraged positions vulnerable)—systemic spillover risk if margin event cascades"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $700 call wall for resistance (active dealer hedging). Support at $670 (active) provides intermediate floor. QQQ: Resistance at $630 call wall and $625 (both active hedging zones). Intraday range likely contained by these active levels; breakout above $700 (SPY) or $630 (QQQ) would signal bullish conviction, while failure would test $670/$620 support.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: 5-day move targets $680 max pain as gravitational pull; failure to hold $700 call wall could accelerate toward $670 support (active), then $645 dormant put wall. Breakout above $700 would negate this, targeting $730-$750 dormant resistance. QQQ: Watch for breakdown below $625-$630 active resistance zone; failure here suggests swing toward $590 put wall support (dormant). Max pain at $621 suggests 1-5 day consolidation near current levels before directional break. Per source analysis: technical exhaustion and margin/liquidation catalysts favor corrective pullback over next 2-4 weeks.",
+    "intraday_levels": "SPY: Watch $700 call wall as resistance (146k OI, active hedging); support at $670 (45k OI, active). QQQ: $625-$630 range extremely tight (active hedging on both sides); watch for breakout direction. No specific intraday price levels from sources—monitor for breakout of consolidation.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Max Pain $686 acts as gravitational pull; bullish case holds above $670 (active support); resistance at $700 (call wall). Break above $700 targets $730-$750 (dormant resistance, 5.7-8.6% away). QQQ: Support at $590 (put wall, 164k OI, dormant); near-term resistance $630-$640 (call walls); max pain $621. Swing traders: watch for whether momentum breadth (NASDAQ 116 names) expands back toward 150+ (bullish) or continues contracting (bearish signal).",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 130341
+    "generation_time_ms": 126905
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 15,
-        "sentiment_score": 0.026,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 3,
+        "mentions": 17,
+        "sentiment_score": 0.079,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 8,
         "counts": {
-          "bullish": 4,
+          "bullish": 5,
           "bearish": 4,
-          "neutral": 7,
-          "total": 15
+          "neutral": 8,
+          "total": 17
         }
       },
       {
@@ -137,6 +138,19 @@
     ],
     "crypto": [
       {
+        "ticker": "ETH",
+        "mentions": 2,
+        "sentiment_score": 0.4,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 40,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      },
+      {
         "ticker": "BTC",
         "mentions": 2,
         "sentiment_score": 0.15,
@@ -176,19 +190,6 @@
         }
       },
       {
-        "ticker": "ETH",
-        "mentions": 1,
-        "sentiment_score": 0.15,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 15,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      },
-      {
         "ticker": "CIFR",
         "mentions": 1,
         "sentiment_score": 0,
@@ -205,19 +206,58 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 6,
-        "sentiment_score": -0.025,
+        "mentions": 7,
+        "sentiment_score": -0.021,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 3,
+        "sentiment_pct": 2,
         "counts": {
           "bullish": 1,
           "bearish": 1,
-          "neutral": 4,
-          "total": 6
+          "neutral": 5,
+          "total": 7
         }
       },
       {
         "ticker": "JPM",
+        "mentions": 4,
+        "sentiment_score": 0.58,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 58,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "ONDS",
+        "mentions": 4,
+        "sentiment_score": 0.275,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 28,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 3,
+        "sentiment_score": 0.527,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 53,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "NFLX",
         "mentions": 3,
         "sentiment_score": 0.507,
         "sentiment_label": "Bullish",
@@ -228,45 +268,6 @@
           "neutral": 1,
           "total": 3
         }
-      },
-      {
-        "ticker": "ONDS",
-        "mentions": 3,
-        "sentiment_score": 0.317,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "NVDA",
-        "mentions": 3,
-        "sentiment_score": 0.24,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 24,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "BABA",
-        "mentions": 2,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
       }
     ]
   },
@@ -275,7 +276,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 29,
+    "sentiment_bullish_pct": 30,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
