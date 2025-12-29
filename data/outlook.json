@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-29T16:51:41.071Z",
+  "timestamp": "2025-12-29T17:09:24.498Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -13,60 +13,60 @@
         "pct": 30
       },
       "news": {
-        "bullish": 25,
-        "bearish": 15,
-        "neutral": 14,
-        "total": 54,
-        "pct": 46
+        "bullish": 27,
+        "bearish": 16,
+        "neutral": 15,
+        "total": 58,
+        "pct": 47
       },
       "video": {
-        "bullish": 1,
+        "bullish": 2,
         "bearish": 0,
         "neutral": 3,
-        "total": 4,
-        "pct": 25
+        "total": 5,
+        "pct": 40
       },
       "chat": {
         "bullish": 6,
         "bearish": 1,
-        "neutral": 0,
-        "total": 7,
-        "pct": 86
+        "neutral": 1,
+        "total": 8,
+        "pct": 75
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market exhibits **MIXED conviction with bullish structural bias tempered by tactical fragility**. Sources show 79% aggregate bullish sentiment (111B Twitter, 25B RSS, 1B YouTube, 6B Trader = 143 bullish vs. 72 bearish combined), but conviction is MEDIUM—bullish narratives rest on intact support and upcoming catalysts, while bearish risks center on overbought technicals, holiday liquidity thinness, and precious metals liquidation cascade with historical systemic spillover precedent.\n\n📈 **Themes:** (1) **AI productivity and large-cap tech consolidation**—mega-cap mega-cap tech holding support levels with exceptional analyst conviction, positioned as accumulation opportunity rather than exhaustion. (2) **Rate policy uncertainty and financial-sector headwinds**—Fed communication clarity contested; banking supervision tightening and enterprise software guidance cuts creating sector bifurcation favoring growth over financials/healthcare. (3) **Crypto ecosystem volatility and metals liquidation risk**—precious metals liquidation cascade flagged as systemic barometer; Bitcoin support levels critical for ecosystem health signals. (4) **Thin holiday liquidity amplifying tactical risk**—year-end positioning creates gap-down vulnerability despite structural bullish case.\n\n🎯 **Levels:** **SPY ($686.97):** Call Wall $700 (150k OI—ACTIVE hedging, 1.9% away), Put Wall $630 (142k OI—dormant until approached, 8.3% away). Max Pain $689. Near support: $680 (60k OI—ACTIVE, 1.0% away), $645 (126k OI—dormant, 6.1% away). Net bias NEUTRAL. | **QQQ ($619.55):** Call Wall $620 (34k OI—ACTIVE hedging, 0.1% away), Put Wall $585 (137k OI—dormant, 5.6% away). Max Pain $623. Near resistance: $630 (33k OI—ACTIVE, 1.7% away), $640 (31k OI—ACTIVE, 3.3% away). Near support: $590 (77k OI—ACTIVE, 4.8% away). Net bias BULLISH_SUPPORT.",
+    "narrative": "📊 **Consensus:** Markets show MIXED conviction with bullish technicals (97% buy rating on mega-cap tech, support level holds) offset by bearish fundamentals (earnings disappointments, regulatory tightening, overbought conditions). Sentiment is MEDIUM conviction—consolidation expected with elevated downside risk.\n\n📈 **Themes:** (1) AI sector momentum and consolidation winners vs. laggards—structural capital deployment driving differentiation. (2) Rate policy uncertainty and forward-looking Fed easing creating bifurcation between rate-beneficiary sectors (utilities, financials) and structural headwind sectors (software, pharma, fintech). (3) Holiday liquidity thinness amplifying volatility vulnerability—thin trading environments creating cascading liquidation risk if key technical thresholds break.\n\n🎯 **Levels:** SPY ($687.30): Call Wall $700 (150k OI—active hedging 1.8% away), Put Wall $630 (142k OI—dormant support 8.3% away). Max Pain $689. Near support: $680 (60k OI, active 1.1% away), $645 (126k OI, dormant 6.2% away). QQQ ($620.13): Call Wall $630 (33k OI—active hedging 1.6% away), Put Wall $585 (137k OI—dormant support 5.7% away). Max Pain $623. Near support: $590 (77k OI, active 4.9% away), $574.78 (123k OI, dormant 7.3% away). Critical pivot: VIX at 15 threshold—break above signals gap-down risk. Bitcoin $84,500 support per X (crypto positioning stop-loss level).",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "GLD",
-      "SLV",
-      "BTC"
+      "BTC",
+      "AI sector leaders",
+      "Enterprise software/fintech names (unnamed in sources)"
     ],
     "key_themes": [
-      "AI sector momentum and mega-cap tech support holding",
-      "Rate policy uncertainty and sector bifurcation (growth vs. financials)",
-      "Precious metals liquidation as systemic risk barometer",
-      "Holiday liquidity fragility and gap-down vulnerability",
-      "Crypto ecosystem stability and options expiration mechanics"
+      "AI consolidation and durable winner identification",
+      "Earnings guidance revisions in software/fintech (bearish pressure)",
+      "Regulatory capital tightening in banking sector",
+      "Rate policy uncertainty and sector bifurcation (rate-sensitive vs. structural headwind)",
+      "Holiday liquidity amplifying volatility vulnerability"
     ],
     "risk_factors": [
-      "Precious metals cascading liquidation with historical precedent for 4% SPX spillover—watch GLD/SLV reversal confirmation",
-      "Holiday week thin liquidity amplifying gap-down execution risk despite structural bullish case",
-      "VIX pivot at 15.0 as determination point for volatility acceleration; current 14.71 near threshold",
-      "Enterprise software guidance weakness suggesting potential broader tech durability concerns beyond isolated SaaS models",
-      "Geopolitical tail risk (Taiwan-China, Russia-Ukraine escalation) could rapidly flip growth-favoring sentiment to safe-haven positioning"
+      "VIX break above 15 threshold triggers cascading liquidations (low liquidity environment amplifies volatility)",
+      "Earnings disappointments in enterprise software/fintech cascade sector weakness and narrative reversal",
+      "Regulatory announcements on banking capital/compliance constraints tighten financial sector profitability",
+      "Parabolic reversal in precious metals and overbought equity conditions signal technical vulnerability",
+      "Geopolitical escalation (Taiwan, Ukraine stalemate resolution, Russia peace deal finalization) introduces tail risk and energy market volatility"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Immediate resistance $700 (Call Wall, 150k OI—active dealer hedging), immediate support $680 (60k OI—active, 1.0% away). Break below $680 enters dormant support zone at $645 (6.1% away). QQQ: Immediate resistance $620 (Call Wall, 34k OI—active, essentially at-price), micro-resistance $630 (33k OI, 1.7% away). Support $590 (77k OI, 4.8% away). **Watch for:** Holiday liquidity whipsaw between $680-$700 SPY; QQQ Call Wall compression at $620 suggests tight trading range intraday.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "**SPY swing setup:** Bullish if holds support at $680/$645 (Max Pain $689 acts as gravitational anchor); bears need break and close below $645 to invalidate bullish thesis and target $630 Put Wall. **QQQ swing setup:** Bullish bias confirmed if QQQ holds $590 support and breaks above $630/$640 resistance cluster (31k-33k OI); these represent technical gatekeepers for multi-day move. Max Pain $623 QQQ suggests mean-reversion pull within 1-5 days. **Risk:** Metals liquidation cascade or gap-down execution in first 2 hours could trigger stop-loss cascade toward $645 SPY before recovering into Max Pain gravity.",
+    "intraday_levels": "SPY: Resistance at $700 (150k OI Call Wall—active hedging), immediate support $680 (60k OI, active 1.1% away). Break above $700 targets $730/$750 (dormant resistance, 6.2%/9.1% away). Break below $680 tests $645 (6.2% away). QQQ: Resistance at $630 (33k OI Call Wall—active), support $590 (77k OI, active 4.9% away). Watch VIX 15 threshold—break above signals volatility acceleration and gap-down risk.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Near-term consolidation 680–700 range likely, but 5-day breakdown risk toward $645 (126k OI Put Wall support, 6.2% away) if earnings or regulatory headwinds materialize. Daily close below $680 triggers test of $645. Rally above $700 faces $730/$750 resistance (dormant until approached). QQQ: $590 support (77k OI, active 4.9% away) is critical 1–5 day level. Break below $590 targets $574.78 (123k OI, 7.3% away). Sector rotation risk: Quality rally masking weakness in software, pharma, fintech—watchlist for earnings disappointments triggering broader weakness.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 181339
+    "generation_time_ms": 167968
   },
   "trending": {
     "macro": [
@@ -261,8 +261,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.71,
-    "pc_ratio": 1,
+    "vix": 14.51,
+    "pc_ratio": 1.14,
     "sentiment_bullish_pct": 30,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -271,7 +271,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.18,
-    "spread": 6.17,
+    "spread": 5.89,
     "position": 50
   },
   "action": {
