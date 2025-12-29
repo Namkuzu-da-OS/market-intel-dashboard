@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-29T00:41:09.434Z",
+  "timestamp": "2025-12-29T01:18:20.147Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 66,
+    "confidence_pct": 64,
     "sources": {
       "social": {
-        "bullish": 59,
-        "bearish": 35,
-        "neutral": 106,
-        "total": 200,
-        "pct": 30
+        "bullish": 64,
+        "bearish": 40,
+        "neutral": 115,
+        "total": 219,
+        "pct": 29
       },
       "news": {
         "bullish": 11,
-        "bearish": 4,
+        "bearish": 6,
         "neutral": 7,
-        "total": 22,
-        "pct": 50
+        "total": 24,
+        "pct": 46
       },
       "video": {
         "bullish": 1,
@@ -36,50 +36,50 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets show MIXED conviction with bearish structural arguments currently outweighing bullish narratives. Bearish thesis is grounded in concrete headwinds (exhaustion signals, breadth deterioration, guidance cuts, regulatory pressure), while bullish case relies on forward-looking stimulus hopes. Conviction: MEDIUM.\n\n📈 **Themes:** (1) Exhaustion and mean reversion risk in momentum trades—extended rallies showing deteriorating breadth and unsustainable positioning, (2) Macro headwinds masking sector concentration—trade volume declines and housing weakness contrasting with tech/precious metals strength, (3) Regulatory and operational uncertainty—guidance cuts and enforcement actions creating \"show me\" environment before risk-on resumes, (4) Volatility as defining characteristic—year-end positioning and margin dynamics could amplify moves in either direction.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, active hedging 1.4% away), Put Wall $640 (153k OI, dormant 7.3% away). Max Pain $686. Near support: $670 (45k OI, active 2.9% away), $645 (126k OI, dormant 6.6% away). | QQQ ($623.89): Call Wall $630 (33k OI, active 1.0% away), Put Wall $590 (164k OI, dormant 5.4% away). Max Pain $621. Near support: $585 (137k OI, dormant 6.2% away), resistance: $640 (31k OI, active 2.6% away), $625 (29k OI, active 0.2% away).",
+    "narrative": "📊 **Consensus:** Markets show MIXED conviction with bullish momentum narratives (62-100% bullish across sources) conflicting against bearish technical exhaustion signals and structural headwinds. Overall sentiment leans BULLISH on momentum but with MEDIUM-LOW conviction due to underlying weakness in breadth and earnings guidance.\n\n📈 **Themes:** (1) Momentum exhaustion vs. continuation—consecutive up moves and breakouts face technical reversal signals; (2) Regulatory tightening and earnings revision risk masking headline strength; (3) Rate-cut expectations providing tactical support but questioned by concurrent macro headwinds and positioning extremes.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active hedging, 1.4% resistance), Put Wall $640 (153k OI—dormant support, 7.3% away). Max Pain $686. Near support: $670 (45k OI—active), $645 (126k OI—dormant). QQQ ($623.89): Call Wall $630 (33k OI—active, 1.0% resistance), Put Wall $590 (164k OI—dormant, 5.4% away). Max Pain $621. Near resistance: $640 (31k OI), $625 (29k OI—both active).",
     "key_tickers": [
       "SPY",
       "QQQ",
       "SLV",
-      "ZSL"
+      "MSTR"
     ],
     "key_themes": [
-      "Exhaustion and breadth deterioration in momentum rallies",
-      "Macro headwinds (trade decline, housing weakness) vs. sector concentration risk",
-      "Regulatory/operational weakness creating 'show me' environment for bull case",
-      "Margin dynamics and year-end positioning volatility",
-      "Forward stimulus hopes vs. immediate guidance weakness disconnect"
+      "Momentum exhaustion and technical reversal signals",
+      "Breadth deterioration masking headline strength",
+      "Regulatory tightening and earnings revision pressure",
+      "Forced liquidation risk from margin requirement changes",
+      "Rate-cut expectations vs. macro headwind paradox"
     ],
     "risk_factors": [
-      "CME margin requirement increases (effective Dec 29 per X analysis) could force position unwinds in precious metals and leveraged trades",
-      "Breadth divergence below 116 momentum names signals broad participation failure despite index all-time highs",
-      "Guidance cuts from enterprise software leaders (Salesforce, Workday per RSS) could confirm demand weakness thesis and cascade revisions",
-      "Geopolitical escalation (Ukraine, Taiwan per RSS) could intensify safe-haven flows and risk-off rotation",
-      "Year-end volatility and expiration dynamics could amplify moves toward max pain ($686 SPY, $621 QQQ) or trigger liquidation cascades"
+      "Exhaustion gaps and 7+ consecutive up days suggest mean reversion vulnerability",
+      "Breadth divergence (116 names in healthy uptrends vs. 150+ historical) indicates deteriorating participation",
+      "Regulatory enforcement and earnings guidance cuts represent near-term earnings risk",
+      "Forced liquidations ahead of margin requirement implementation could trigger cascade deleveraging",
+      "Options market positioning (bearish hedging) vs. bullish narrative suggests conviction is tactical, not structural"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Testing resistance at $700 call wall (146k OI, active hedging)—break above faces $730/$750 dormant resistance. Support at $670 (45k OI, active). QQQ: Immediate friction at $625/$630 (combined active resistance, 62k OI)—support at $590 put wall if breaks lower. Watch for volatility into Asian/London sessions as margin dynamics activate.",
-    "swing_bias": "NEUTRAL_TO_BEARISH",
-    "swing_levels": "SPY 1-5 day: Consolidation likely between $670 support (active) and $700 resistance (active call wall). Break below $670 could target $645 dormant put support (126k OI). Break above $700 faces $730/$750 dormant resistance. | QQQ 1-5 day: $625-$630 resistance zone (active levels, 62k OI combined) likely caps upside; $590 put wall (164k OI, dormant) provides swing floor if momentum reverses. Max Pain gravity at SPY $686 and QQQ $621 suggests mean reversion toward these strikes by expiration.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Watch $700 call wall for resistance (active dealer hedging). Support at $670 (active) provides intermediate floor. QQQ: Resistance at $630 call wall and $625 (both active hedging zones). Intraday range likely contained by these active levels; breakout above $700 (SPY) or $630 (QQQ) would signal bullish conviction, while failure would test $670/$620 support.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: 5-day move targets $680 max pain as gravitational pull; failure to hold $700 call wall could accelerate toward $670 support (active), then $645 dormant put wall. Breakout above $700 would negate this, targeting $730-$750 dormant resistance. QQQ: Watch for breakdown below $625-$630 active resistance zone; failure here suggests swing toward $590 put wall support (dormant). Max pain at $621 suggests 1-5 day consolidation near current levels before directional break. Per source analysis: technical exhaustion and margin/liquidation catalysts favor corrective pullback over next 2-4 weeks.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 130540
+    "generation_time_ms": 130341
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 11,
-        "sentiment_score": 0.163,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 16,
+        "mentions": 15,
+        "sentiment_score": 0.026,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 3,
         "counts": {
           "bullish": 4,
-          "bearish": 2,
-          "neutral": 5,
-          "total": 11
+          "bearish": 4,
+          "neutral": 7,
+          "total": 15
         }
       },
       {
@@ -256,11 +256,11 @@
         }
       },
       {
-        "ticker": "MU",
+        "ticker": "BABA",
         "mentions": 2,
-        "sentiment_score": 0.685,
+        "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 69,
+        "sentiment_pct": 72,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -275,7 +275,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 30,
+    "sentiment_bullish_pct": 29,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
