@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-12-29T00:10:23.515Z",
+  "timestamp": "2025-12-29T00:41:09.434Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 55,
-        "bearish": 33,
-        "neutral": 101,
-        "total": 189,
-        "pct": 29
+        "bullish": 59,
+        "bearish": 35,
+        "neutral": 106,
+        "total": 200,
+        "pct": 30
       },
       "news": {
         "bullish": 11,
@@ -36,64 +36,76 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Markets are navigating conflicting signals with cautious optimism dominating near-term sentiment (73% bullish in news, 63% bullish on X), but conviction remains medium due to underlying structural concerns and momentum divergences. Bullish positioning is concentrated in forward-looking narratives rather than broad confirmation.\n\n📈 **Themes:** (1) Rate policy uncertainty and expectations for monetary accommodation driving tactical strength in growth/tech sectors; (2) Momentum divergence and breadth deterioration signaling potential exhaustion despite headline strength—only 116 stocks showing positive momentum vs. normal 150+; (3) Leverage and deleveraging dynamics in commodities (silver exhaustion at 182% YTD gains) and crypto positioning creating vulnerability to forced liquidations.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4% away), Put Wall $640 (153k OI - dormant at 7.3% away). Max Pain $686. Near support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0% away), Put Wall $590 (164k OI - dormant at 5.4% away). Max Pain $621. Near resistance: $640 (31k OI), $625 (29k OI - both active). Per X/Twitter: Bitcoin leverage support cited at $150-$156 levels on leveraged instruments; /ES futures mentioned in context of momentum breadth deterioration.",
+    "narrative": "📊 **Consensus:** Markets show MIXED conviction with bearish structural arguments currently outweighing bullish narratives. Bearish thesis is grounded in concrete headwinds (exhaustion signals, breadth deterioration, guidance cuts, regulatory pressure), while bullish case relies on forward-looking stimulus hopes. Conviction: MEDIUM.\n\n📈 **Themes:** (1) Exhaustion and mean reversion risk in momentum trades—extended rallies showing deteriorating breadth and unsustainable positioning, (2) Macro headwinds masking sector concentration—trade volume declines and housing weakness contrasting with tech/precious metals strength, (3) Regulatory and operational uncertainty—guidance cuts and enforcement actions creating \"show me\" environment before risk-on resumes, (4) Volatility as defining characteristic—year-end positioning and margin dynamics could amplify moves in either direction.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, active hedging 1.4% away), Put Wall $640 (153k OI, dormant 7.3% away). Max Pain $686. Near support: $670 (45k OI, active 2.9% away), $645 (126k OI, dormant 6.6% away). | QQQ ($623.89): Call Wall $630 (33k OI, active 1.0% away), Put Wall $590 (164k OI, dormant 5.4% away). Max Pain $621. Near support: $585 (137k OI, dormant 6.2% away), resistance: $640 (31k OI, active 2.6% away), $625 (29k OI, active 0.2% away).",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "MSTR",
-      "ZSL",
-      "SLV"
+      "SLV",
+      "ZSL"
     ],
     "key_themes": [
-      "Rate policy expectations",
-      "Momentum breadth divergence",
-      "Leverage/deleveraging dynamics",
-      "Tech sector resilience",
-      "Commodity exhaustion signals"
+      "Exhaustion and breadth deterioration in momentum rallies",
+      "Macro headwinds (trade decline, housing weakness) vs. sector concentration risk",
+      "Regulatory/operational weakness creating 'show me' environment for bull case",
+      "Margin dynamics and year-end positioning volatility",
+      "Forward stimulus hopes vs. immediate guidance weakness disconnect"
     ],
     "risk_factors": [
-      "Breadth deterioration (116 positive momentum stocks vs. 150+ norm) suggests rally lacks conviction",
-      "Silver and leveraged commodity positions vulnerable to forced unwinding; inverse ETF volume elevated",
-      "Structural headwinds (software demand weakness, regulatory enforcement, geopolitical tail risks) not yet priced into bullish headlines",
-      "Year-end options positioning and defensive hedging suggest traders not fully committing to continuation",
-      "Margin requirement changes and deleveraging mechanics could trigger sharp reversals despite sentiment alignment"
+      "CME margin requirement increases (effective Dec 29 per X analysis) could force position unwinds in precious metals and leveraged trades",
+      "Breadth divergence below 116 momentum names signals broad participation failure despite index all-time highs",
+      "Guidance cuts from enterprise software leaders (Salesforce, Workday per RSS) could confirm demand weakness thesis and cascade revisions",
+      "Geopolitical escalation (Ukraine, Taiwan per RSS) could intensify safe-haven flows and risk-off rotation",
+      "Year-end volatility and expiration dynamics could amplify moves toward max pain ($686 SPY, $621 QQQ) or trigger liquidation cascades"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $700 call wall for resistance activation (146k OI actively defended); hold of $670 support (45k OI active hedging) required to maintain bullish structure. QQQ: $630 and $625 resistance levels both active (33k and 29k OI); hold above $620 (near max pain) suggested. Risk-reward currently compressed between active levels.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Bullish structure supported by put wall at $640 (153k OI); path of least resistance toward $700 call wall if support holds. QQQ: Potential extension toward $640 (31k OI) if $625 resistance breaks; major support floor at $590 (164k OI - dormant until approached). Key risk: if either index closes below $670 (SPY) or $620 (QQQ), momentum deterioration thesis gains credibility and swing bias reverts to bearish.",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: Testing resistance at $700 call wall (146k OI, active hedging)—break above faces $730/$750 dormant resistance. Support at $670 (45k OI, active). QQQ: Immediate friction at $625/$630 (combined active resistance, 62k OI)—support at $590 put wall if breaks lower. Watch for volatility into Asian/London sessions as margin dynamics activate.",
+    "swing_bias": "NEUTRAL_TO_BEARISH",
+    "swing_levels": "SPY 1-5 day: Consolidation likely between $670 support (active) and $700 resistance (active call wall). Break below $670 could target $645 dormant put support (126k OI). Break above $700 faces $730/$750 dormant resistance. | QQQ 1-5 day: $625-$630 resistance zone (active levels, 62k OI combined) likely caps upside; $590 put wall (164k OI, dormant) provides swing floor if momentum reverses. Max Pain gravity at SPY $686 and QQQ $621 suggests mean reversion toward these strikes by expiration.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 127317
+    "generation_time_ms": 130540
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 9,
-        "sentiment_score": 0.182,
+        "mentions": 11,
+        "sentiment_score": 0.163,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 18,
+        "sentiment_pct": 16,
         "counts": {
           "bullish": 4,
           "bearish": 2,
-          "neutral": 3,
-          "total": 9
+          "neutral": 5,
+          "total": 11
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 4,
-        "sentiment_score": 0.325,
+        "mentions": 6,
+        "sentiment_score": 0.358,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 36,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 6
+        }
+      },
+      {
+        "ticker": "SPY",
+        "mentions": 3,
+        "sentiment_score": 0.267,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 27,
+        "counts": {
+          "bullish": 1,
           "bearish": 0,
           "neutral": 2,
-          "total": 4
+          "total": 3
         }
       },
       {
@@ -110,29 +122,16 @@
         }
       },
       {
-        "ticker": "SPY",
+        "ticker": "GLD",
         "mentions": 2,
-        "sentiment_score": 0.4,
+        "sentiment_score": 0.36,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
+        "sentiment_pct": 36,
         "counts": {
           "bullish": 1,
           "bearish": 0,
           "neutral": 1,
           "total": 2
-        }
-      },
-      {
-        "ticker": "GLD",
-        "mentions": 1,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
         }
       }
     ],
@@ -147,6 +146,19 @@
           "bullish": 0,
           "bearish": 0,
           "neutral": 2,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 2,
+        "sentiment_score": -0.325,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 0,
+          "bearish": 1,
+          "neutral": 1,
           "total": 2
         }
       },
@@ -177,15 +189,15 @@
         }
       },
       {
-        "ticker": "MSTR",
+        "ticker": "CIFR",
         "mentions": 1,
-        "sentiment_score": -0.65,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 65,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
         "counts": {
           "bullish": 0,
-          "bearish": 1,
-          "neutral": 0,
+          "bearish": 0,
+          "neutral": 1,
           "total": 1
         }
       }
@@ -193,15 +205,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 5,
-        "sentiment_score": -0.03,
+        "mentions": 6,
+        "sentiment_score": -0.025,
         "sentiment_label": "Neutral",
         "sentiment_pct": 3,
         "counts": {
           "bullish": 1,
           "bearish": 1,
-          "neutral": 3,
-          "total": 5
+          "neutral": 4,
+          "total": 6
         }
       },
       {
@@ -218,6 +230,32 @@
         }
       },
       {
+        "ticker": "ONDS",
+        "mentions": 3,
+        "sentiment_score": 0.317,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 32,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 3
+        }
+      },
+      {
+        "ticker": "NVDA",
+        "mentions": 3,
+        "sentiment_score": 0.24,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 24,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 3
+        }
+      },
+      {
         "ticker": "MU",
         "mentions": 2,
         "sentiment_score": 0.685,
@@ -229,32 +267,6 @@
           "neutral": 0,
           "total": 2
         }
-      },
-      {
-        "ticker": "ONDS",
-        "mentions": 2,
-        "sentiment_score": 0.475,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "RTY",
-        "mentions": 2,
-        "sentiment_score": 0.475,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
-        }
       }
     ]
   },
@@ -263,7 +275,7 @@
     "color": "text-muted",
     "vix": 13.6,
     "pc_ratio": 0.78,
-    "sentiment_bullish_pct": 29,
+    "sentiment_bullish_pct": 30,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
