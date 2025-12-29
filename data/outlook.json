@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-29T02:40:29.737Z",
+  "timestamp": "2025-12-29T03:10:02.991Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -8,8 +8,8 @@
       "social": {
         "bullish": 77,
         "bearish": 43,
-        "neutral": 133,
-        "total": 253,
+        "neutral": 134,
+        "total": 254,
         "pct": 30
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is cautiously bullish with medium conviction, but structural cracks are emerging beneath the surface. Macro narratives (monetary easing, AI productivity) clash with deteriorating micro fundamentals (guidance cuts, regulatory pressure, demand weakness).\n\n📈 **Themes:** (1) Rotation dynamics—metals and financials at new highs vs. breadth deterioration; (2) Momentum exhaustion signals in momentum sectors (silver showing 5-8% intraday reversals, fewer breadth participants despite SPX ATHs); (3) Geopolitical risk-off positioning coexisting with risk-on macro bets; (4) Year-end options expiration volatility and positioning exhaustion.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—active hedging), Put Wall $640 (153k OI, 7.3% away—dormant). Max Pain $686. Near active support: $670 (45k OI, 2.9%). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—active hedging), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $621. Near active resistance: $625 (29k OI, 0.2%), $640 (31k OI, 2.6%). Both indices show bullish support bias but active dealer hedging near immediate resistance suggests consolidation risk.",
+    "narrative": "📊 **Consensus:** Sources present a MIXED outlook with near-term bearish pressure but longer-term bullish potential. Conviction is MEDIUM—multiple tailwinds (Fed easing, AI productivity, infrastructure demand) compete with immediate headwinds (regulatory tightening, sector guidance misses, geopolitical uncertainty, momentum divergence).\n\n📈 **Themes:** (1) Momentum Deterioration & Distribution Risk—breadth collapse (116 vs. 150+ stocks in bullish momentum) signals potential distribution despite all-time highs; (2) Regulatory & Earnings Headwinds—specific guidance cuts from software/fintech firms and enforcement actions creating near-term de-risking; (3) Precious Metals Exhaustion—silver's 182% YTD rally showing classic topping patterns with reversal already underway, testing support levels.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4%), Put Wall $640 (153k OI - dormant at 7.3%). Max Pain $686. Near support: $670 (45k OI - active at 2.9%), $645 (126k OI - dormant at 6.6%). QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0%), Put Wall $590 (164k OI - dormant at 5.4%). Max Pain $621. Near support: $585 (137k OI - dormant at 6.2%). Silver reversal point: $79.30 per source; Bitcoin ascending triangle formation mentioned as key watch point per source analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "NFLX",
       "SLV",
-      "BTC",
-      "NFLX"
+      "BTC"
     ],
     "key_themes": [
-      "Momentum exhaustion and breadth deterioration",
-      "Rotation into metals/financials vs. structural demand weakness",
-      "Geopolitical risk hedging masking risk-on positioning",
-      "Fed monetary easing expectations vs. earnings guidance reality",
-      "Year-end options expiration volatility"
+      "Momentum Breadth Deterioration",
+      "Precious Metals Exhaustion",
+      "Regulatory & Earnings Headwinds",
+      "Year-End Options Expiration Dynamics",
+      "Fed Easing & AI Productivity Tailwinds"
     ],
     "risk_factors": [
-      "Guidance cuts in enterprise software, fintech, pharmaceuticals could trigger capitulation selling",
-      "Positioning exhaustion (silver intraday reversals 5-8%, fewer breadth participants) signals vulnerable rallies",
-      "Geopolitical tension (Taiwan, Ukraine) creating persistent safe-haven demand that may reverse risk-on flows",
-      "Options expiration dynamics and dealer hedging concentration near $700 SPY / $625–$630 QQQ could amplify pullback",
-      "Macro bullish catalysts (Fed cuts, AI adoption) remain forward-looking; deteriorating micro fundamentals are concrete"
+      "Momentum divergence widening (116 vs 150+ stocks)—distribution risk masking all-time highs",
+      "Regulatory enforcement and sector-specific guidance cuts creating near-term margin pressure",
+      "Geopolitical uncertainty (Russia-Ukraine, Taiwan) and options expiration volatility amplifying downside",
+      "Precious metals reversal momentum could accelerate if support breaks (silver $79.30)",
+      "Consensus bullish case depends on macro data surprises; absent those, path of least resistance is downward"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $700 call wall for resistance (146k OI, active dealer hedging). Support at $670 (active, 2.9% away, 45k OI). QQQ: Resistance at $625–$630 (call wall at $630 with 33k OI, 1.0% away; $625 with 29k OI). Watch for consolidation; breakout either direction depends on breadth confirmation. Monitor options expiration dynamics (Jan 2nd expirations cited in X summary).",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: Watch for active call wall resistance at $700 (146k OI); support at $670 (active hedging at 2.9%). QQQ: Resistance at $630 (33k OI) and $625 (29k OI - both active); watch for breakdown if momentum breadth deteriorates further. Silver and precious metals weakness may create risk-off pressure intraday. Testing support levels across equities likely given stated momentum divergence.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Potential consolidation 1–5 days with downside bias if rotation logic falters. If $700 call wall holds, watch for pullback toward $670–$675 (max pain zone). Below $670, $640 put wall becomes active support (153k OI). QQQ: Similar consolidation risk; $625–$630 is critical—break below $625 targets $590 put wall (164k OI, 5.4% away). Swing traders should prepare for mean reversion in overextended sectors (silver, crypto per X summary) while monitoring if mega-cap tech/financials hold near-term highs.",
+    "swing_levels": "SPY: Primary resistance $700, followed by dormant resistance at $730 (48k OI, 5.7%) and $750 (55k OI, 8.6%). Support deterioration would target $670 (active), then $645 (dormant, 6.6%), with major put wall support at $640. QQQ: Resistance at $630-$640 (active hedging); breakdown targets $590 put wall (164k OI) with further support at $585 (137k OI). 1-5 day horizon: expect testing of near-term support as precious metals exhaustion and momentum divergence play out; bullish reversal requires positive surprises on macro data.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 131401
+    "generation_time_ms": 129579
   },
   "trending": {
     "macro": [
