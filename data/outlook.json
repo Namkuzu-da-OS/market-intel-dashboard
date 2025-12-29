@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-29T11:25:50.791Z",
+  "timestamp": "2025-12-29T11:52:08.556Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -8,16 +8,16 @@
       "social": {
         "bullish": 78,
         "bearish": 36,
-        "neutral": 130,
-        "total": 244,
-        "pct": 32
+        "neutral": 136,
+        "total": 250,
+        "pct": 31
       },
       "news": {
-        "bullish": 18,
+        "bullish": 20,
         "bearish": 10,
         "neutral": 11,
-        "total": 39,
-        "pct": 46
+        "total": 41,
+        "pct": 49
       },
       "video": {
         "bullish": 1,
@@ -36,51 +36,51 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is predominantly bullish (68-100% across sources) with strong thematic tailwinds, but technical momentum shows signs of exhaustion. Conviction: MEDIUM—bullish narratives are not yet contradicted by price action, but underlying breadth and reversal patterns warrant caution.\n\n📈 **Themes:** (1) Rate-cut expectations and Fed policy accommodation supporting equities; (2) AI productivity gains and large-cap tech dominance (GOOG, AAPL, ORCL); (3) Cryptocurrency strength and potential asset rotation into risk-on positioning; (4) Regulatory headwinds in banking/fintech and software guidance deterioration creating sector selectivity; (5) Late-stage momentum exhaustion in sentiment-driven trades (silver, breadth deterioration at market highs).\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI - active hedging at 1.4% away), Put Wall $640 (153k OI - dormant at 7.3% away). Max Pain $686. Near support: $670 (45k OI - active), $645 (126k OI - dormant). QQQ ($623.89): Call Wall $630 (33k OI - active at 1.0% away), Put Wall $590 (164k OI - dormant at 5.4% away). Max Pain $621. Near resistance: $640 (31k OI), $625 (29k OI - both active). Per Twitter analysis: /ES technical setup showing potential for sharp reversal if support levels break.",
+    "narrative": "📊 **Consensus:** Market sentiment is MIXED with bearish structural concerns offsetting near-term bullish momentum. Conviction is MEDIUM—sources agree on fragility despite headline strength, but diverge on immediate direction and catalysts.\n\n📈 **Themes:** (1) Momentum divergence and distribution risk—broad market participation narrowing despite all-time highs; (2) Regulatory and earnings headwinds creating friction on growth sectors; (3) Precious metals exhaustion signaling potential broader liquidation and margin vulnerability; (4) Cryptocurrency momentum persisting but decoupling from equity direction; (5) Defensive positioning and flight-to-safety despite Fed easing narratives.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (150k OI, 1.4% away—ACTIVE hedging), Put Wall $630 (142k OI, 8.7% away—dormant). Max Pain $689. Near support (active): $680 (60k OI, 1.5%). Near support (dormant): $645 (126k OI, 6.6%). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE), Put Wall $585 (137k OI, 6.2% away—dormant). Max Pain $623. Near resistance (active): $640 (31k OI + 29k OI combined, 2.6%). Both indices show bullish support bias via max pain proximity and put wall positioning, but active call walls at $700 (SPY) and $630 (QQQ) present immediate resistance with gamma hedging engagement.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
       "GOOG",
+      "AAPL",
       "ORCL"
     ],
     "key_themes": [
-      "Rate-cut expectations and Fed accommodation",
-      "AI and large-cap tech dominance",
-      "Cryptocurrency rotation and risk-on positioning",
-      "Technical exhaustion in late-stage momentum trades",
-      "Regulatory and guidance headwinds in financials/software"
+      "Momentum divergence and declining breadth despite all-time highs",
+      "Regulatory tightening and enterprise software sector headwinds",
+      "Precious metals exhaustion and margin liquidation vulnerability",
+      "Cryptocurrency decoupling from equity weakness",
+      "Defensive positioning and flight-to-safety flows"
     ],
     "risk_factors": [
-      "Momentum exhaustion in breadth-negative setup at market highs",
-      "Geopolitical tensions unresolved (Ukraine, Taiwan escalation signals per RSS)",
-      "Regulatory tightening in banking/fintech impacting financial sector narratives",
-      "Cryptocurrency volatility and potential Bitcoin breakdown below support",
-      "Software sector guidance deterioration spreading beyond isolated names to sector-wide weakness"
+      "Distribution at all-time highs with narrowing participation (S&P 500 momentum screeners showing ~116 names vs. typical 150+)",
+      "Earnings guidance cuts cascading through interconnected software and fintech sectors",
+      "Geopolitical uncertainty creating persistent risk-off triggers and position liquidation potential",
+      "Margin call vulnerability signaled by precious metals parabolic exhaustion and violent reversals (silver 8% intraday swing on record volume)",
+      "Regulatory implementation (capital requirements, enforcement actions) pressuring growth-dependent sectors"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Resistance at $700 call wall (active hedging). Support at $670 (active). QQQ: Resistance at $625–$630 (active hedging zone). Support near Max Pain $621. Watch for breakout above call walls or consolidation within these tight bands given options expiration dynamics.",
+    "intraday_levels": "SPY: Immediate support at $680 (60k OI, 1.5% below—active hedging). Resistance at $700 (150k OI call wall, 1.4% above—active dealer hedging). Watch for gamma-driven moves between these levels as price oscillates around max pain ($689). QQQ: Immediate resistance at $630 (33k OI call wall, 1.0% above—active). Support near $625 (max pain proximity). Breakout above $630 or breakdown below $620 would signal directional conviction.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: 5-day consolidation expected near $686–$700 before potential test of $670 support (active GEX level). If $670 breaks, dormant support at $645 becomes target. QQQ: Near-term resistance at $630 call wall; breakdown below $621 (max pain) would target $590 put wall. Key inflection: Silver's 8% reversal and breadth warning at SPX highs historically precede 1–3 week corrections; watch for confirmation via Bitcoin strength deterioration.",
+    "swing_levels": "SPY: Consolidation expected between $680-$700 intraday, with swing-level risk to $645 (126k OI, 6.6% below—dormant support activates if approached). Break below $680 would target $630 (put wall, 8.7% away—major support floor). Upside to $730-$750 possible but requires breakout above $700 call wall with conviction. QQQ: Key support at $585 (137k OI put wall, 6.2% below). Break above $640 needed to invalidate bearish structure. Swing outlook favors pullback to $590-$600 range over 1-5 days given momentum divergence and distribution signals cited in RSS/Twitter.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 165077
+    "generation_time_ms": 161118
   },
   "trending": {
     "macro": [
       {
         "ticker": "SLV",
-        "mentions": 17,
-        "sentiment_score": 0.079,
+        "mentions": 18,
+        "sentiment_score": 0.074,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 8,
+        "sentiment_pct": 7,
         "counts": {
           "bullish": 5,
           "bearish": 4,
-          "neutral": 8,
-          "total": 17
+          "neutral": 9,
+          "total": 18
         }
       },
       {
@@ -205,6 +205,19 @@
         }
       },
       {
+        "ticker": "NVDA",
+        "mentions": 5,
+        "sentiment_score": 0.144,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 14,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 5
+        }
+      },
+      {
         "ticker": "JPM",
         "mentions": 4,
         "sentiment_score": 0.58,
@@ -214,19 +227,6 @@
           "bullish": 3,
           "bearish": 0,
           "neutral": 1,
-          "total": 4
-        }
-      },
-      {
-        "ticker": "NVDA",
-        "mentions": 4,
-        "sentiment_score": 0.18,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 18,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 3,
           "total": 4
         }
       },
@@ -261,9 +261,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.87,
+    "vix": 14.84,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 32,
+    "sentiment_bullish_pct": 31,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
