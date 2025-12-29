@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-12-29T04:59:17.802Z",
+  "timestamp": "2025-12-29T05:19:19.325Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 68,
     "sources": {
       "social": {
-        "bullish": 76,
+        "bullish": 77,
         "bearish": 35,
-        "neutral": 122,
+        "neutral": 121,
         "total": 233,
         "pct": 33
       },
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market sentiment is mixed-to-bullish (68% bullish on Twitter, 57% on RSS, 100% from professional trader fetersynergy) but undermined by significant technical divergence and breadth warnings. Conviction is MEDIUM—bullish narratives on valuation and structural themes (AI, crypto strength, commodity supercycle) clash with bearish technical signals (silver exhaustion, momentum divergence, earnings headwinds).\n\n📈 **Themes:** (1) **Momentum Divergence & Breadth Failure** — S&P 500 at all-time highs but only 116 qualified momentum names vs. 150+ in healthy uptrends, signaling underlying weakness. (2) **Precious Metals & Crypto Strength** — Silver near record highs, Bitcoin above $90K, Ethereum above $3K, but silver showing exhaustion patterns (7/9 consecutive up days, -5% intraday reversals). (3) **Earnings Guidance Under Pressure** — Enterprise software, fintech, and discretionary sectors facing guidance cuts; near-term execution challenges weighing on growth stocks despite long-term AI tailwinds. (4) **Policy Uncertainty** — Rate-cut expectations, regulatory tightening in banking, and geopolitical tension (Ukraine, Taiwan) creating macro headwinds masked by surface-level index strength.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI, 1.4% away—ACTIVE hedging), Put Wall $640 (153k OI, 7.3% away—dormant until approached). Max Pain $686. Near support: $670 (45k OI, 2.9%—ACTIVE), $645 (126k OI, 6.6%—dormant). QQQ ($623.89): Call Wall $630 (33k OI, 1.0% away—ACTIVE), Put Wall $590 (164k OI, 5.4% away—dormant). Max Pain $621. Near resistance: $640 (31k OI, 2.6%—ACTIVE), $625 (29k OI, 0.2%—ACTIVE). VIX: 13.60 (low volatility, complacency signals).",
+    "narrative": "📊 **Consensus:** Market sentiment is mixed with bullish momentum in mega-cap tech and cryptocurrencies offset by emerging exhaustion signals and deteriorating breadth. Conviction is MEDIUM—near-term upside bias supported by narrative tailwinds, but mechanical weakness in positioning and commodity mean-reversion risks temper conviction.\n\n📈 **Themes:** (1) AI productivity and mega-cap tech strength consolidating gains rather than extending; (2) Cryptocurrency consolidation at psychological round-number resistance (Bitcoin $90K, Ethereum $3K); (3) Breadth deterioration and exhaustion signals in commodity rallies (silver volatility) suggesting late-cycle concentration; (4) Rate policy and geopolitical risk uncertainty creating hedging behavior despite bullish headlines.\n\n🎯 **Levels:** SPY ($690.31): Call Wall $700 (146k OI—active), Put Wall $640 (153k OI—dormant). Max Pain $686. Near support: $670 (45k OI—active), $645 (126k OI—dormant). QQQ ($623.89): Call Wall $630 (33k OI—active), Put Wall $590 (164k OI—dormant). Max Pain $621. Near resistance: $640 (31k OI—active), $625 (29k OI—active). Per X: /ES support mentioned by traders; cryptocurrency resistance at round numbers ($90K BTC, $3K ETH) per sentiment data.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "SLV",
-      "BTC",
-      "ETH"
+      "GOOG",
+      "NFLX",
+      "BTC"
     ],
     "key_themes": [
-      "Momentum divergence & breadth failure masking index strength",
-      "Silver exhaustion & commodity consolidation risk",
-      "Earnings guidance downgrades in software/fintech/discretionary",
-      "Crypto strength narrative (Bitcoin $90K+, Ethereum $3K+) vs. macro uncertainty",
-      "Policy uncertainty—rate-cut timing, regulatory tightening, geopolitical risk"
+      "AI momentum and mega-cap consolidation",
+      "Breadth deterioration and concentration risk",
+      "Commodity mean-reversion (silver exhaustion)",
+      "Rate policy and geopolitical hedging uncertainty",
+      "Cryptocurrency psychological resistance"
     ],
     "risk_factors": [
-      "Breadth collapse—only 116 momentum names vs. 150+ in healthy trends signals underlying weakness",
-      "Silver exhaustion patterns (7/9 consecutive up days, intraday reversals) may trigger sharp reversal impacting commodities/crypto correlations",
-      "Earnings guidance cuts cascading across sectors; ISM data and forward guidance revisions could accelerate downgrades",
-      "Regulatory headwinds in banking and emerging policy friction may trigger sudden risk-off; geopolitical escalation (Ukraine, Taiwan) could spike safe-haven demand",
-      "Options max pain ($686 SPY, $621 QQQ) suggests trapped positioning—violent gamma moves possible if call/put walls breach"
+      "Deteriorating market breadth suggesting unsustainable gains concentration",
+      "Silver and commodity volatility signaling exhaustion and potential mean-reversion pullback",
+      "Institutional hedging despite bullish retail sentiment—classic divergence leading to volatility",
+      "Earnings guidance disappointments from software/fintech sector threatening IT spending narrative",
+      "Geopolitical escalation could trigger rapid rotation from growth to defensive sectors"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Watch for test of $700 call wall (active resistance, 1.4% away); if broken, faces $730-$750 dormant resistance. Support at $670 (active, 2.9% away) and $645 (dormant, 6.6% away). QQQ: Immediate resistance at $625-$630 (both active, 0.2%-1.0%); support at $590 (dormant, 5.4%). Silver exhaustion signals and momentum divergence favor intraday pullback or consolidation.",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Swing structure supports $686-$700 consolidation range (max pain + call wall). If call wall ($700) holds, expect rotation toward put wall support ($640, 7.3% below) over 1-5 days. QQQ: Range $621-$640 likely over 1-5 days (max pain at $621, call wall at $630, near resistance at $640). Professional trader bullish conviction suggests any dips may find buying interest; breadth/earnings risk could limit upside. Watch silver for confirmation of bearish exhaustion thesis—breakdown would validate risk-off scenario; hold above recent support confirms commodity/crypto narrative.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Testing active Call Wall resistance at $700; watch $670 active support hold. QQQ: Active resistance at $640 and $625 (both 2.6% and 0.2% away respectively); any break above $630 Call Wall would signal continuation. Support levels dormant until deeper pullback approaches $590.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Bias toward higher levels if $670 support holds and $700 resistance breaks; max pain $686 acts as gravitational anchor for 1-5 day consolidation. Watch for approach to $750 dormant resistance (8.6% away). QQQ: More constrained; $625-$630 represents tight consolidation zone; break above $630 opens path to $640, but put wall at $590 (164k OI) provides strong 5-day downside support if momentum reverses. Crypto: Per sources, Bitcoin and Ethereum at psychological resistance; silver volatility critical—breakdown would validate bearish exhaustion thesis.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 130454
+    "generation_time_ms": 131379
   },
   "trending": {
     "macro": [
@@ -152,15 +152,15 @@
       },
       {
         "ticker": "BTC",
-        "mentions": 3,
-        "sentiment_score": 0.317,
+        "mentions": 4,
+        "sentiment_score": 0.4,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 32,
+        "sentiment_pct": 40,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 2,
-          "total": 3
+          "total": 4
         }
       },
       {
