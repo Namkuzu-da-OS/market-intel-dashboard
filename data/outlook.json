@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-31T08:08:25.057Z",
+  "timestamp": "2025-12-31T08:35:44.065Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -8,16 +8,16 @@
       "social": {
         "bullish": 158,
         "bearish": 41,
-        "neutral": 224,
-        "total": 423,
+        "neutral": 223,
+        "total": 422,
         "pct": 37
       },
       "news": {
-        "bullish": 32,
+        "bullish": 31,
         "bearish": 15,
         "neutral": 15,
-        "total": 62,
-        "pct": 52
+        "total": 61,
+        "pct": 51
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish near-term with medium conviction - crypto and AI-exposed equities favored for Q1 2026, though operating within structurally overvalued conditions. Quantitative sentiment 79% bullish (X), 68% bullish (RSS), 100% bullish (YouTube), 80% bullish (Chat).\n\n📈 **Themes:** (1) Crypto technical bottoming signals and blockchain infrastructure adoption momentum, (2) AI/automation sector strength amid selective software earnings pressure, (3) Housing supply deficit and structural underbuilding tailwinds, (4) Valuation concerns at 218% market cap-to-GDP ratio with breadth deterioration warnings.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near active resistance: $630 (32k OI), $640 (31k OI). /ES: 6847 support mentioned per Twitter.",
+    "narrative": "📊 **Consensus:** Mixed bullish sentiment (medium conviction) - quantitative data shows 70%+ bullish across sources, but qualitative analysis reveals significant institutional caution and structural headwinds tempering near-term enthusiasm.\n\n📈 **Themes:** (1) Valuation extremes and institutional de-risking (Buffett's record cash position, defensive positioning) vs. anticipated monetary easing tailwinds, (2) Crypto/blockchain infrastructure momentum heading into January as risk appetite barometer, (3) Regulatory uncertainty across banking, stablecoins, and capital requirements creating sector-specific pressure.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI - active), $640 (100k OI - dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - immediate resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near resistance: $630 (32k OI), $640 (31k OI). /ES futures: 6847 support mentioned per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "TSLA",
+      "BTC",
       "ETH",
-      "BTC"
+      "TSLA"
     ],
     "key_themes": [
-      "Crypto technical bottoming and Q1 rally setup",
-      "AI/semiconductor momentum amid software sector pressure",
-      "Blockchain infrastructure adoption scaling",
-      "Valuation extremes and breadth deterioration warnings",
-      "Housing supply deficit structural tailwinds"
+      "Institutional de-risking and record cash positioning",
+      "Crypto/blockchain infrastructure momentum as risk barometer",
+      "Regulatory uncertainty across financial services and digital assets",
+      "Valuation extremes vs. anticipated monetary easing",
+      "Consumer cost pressures eroding purchasing power"
     ],
     "risk_factors": [
-      "Record 218% market cap-to-GDP valuation vulnerable to correction",
-      "Nasdaq breadth deterioration despite index strength signaling distribution",
-      "Earnings disappointments in enterprise software and fintech sectors",
-      "Regulatory headwinds including Fed capital requirements and stablecoin uncertainty",
-      "Consumer demand weakness evidenced in auto incentives and retail metrics"
+      "Record market cap-to-GDP ratios (218%) indicating extreme valuations",
+      "Regulatory tightening across banking capital requirements and stablecoin frameworks",
+      "Geopolitical tensions (Ukraine, Taiwan) creating binary risk events",
+      "Earnings guidance deterioration in enterprise software and fintech sectors",
+      "Disconnect between retail optimism and institutional defensive positioning"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $688 with $680 active support (60k OI) and $700 active resistance (144k OI). QQQ at Max Pain $620 with immediate resistance at Call Wall $620 (39k OI).",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Call Wall $700 (144k OI) major resistance, $730 (48k OI) and $750 (55k OI) dormant upside targets. Downside: $640 (100k OI) and $630 Put Wall (143k OI) key supports. QQQ: $630-$640 resistance zone (32k-31k OI), $590 (78k OI) and $580 (108k OI) dormant supports.",
+    "intraday_levels": "SPY: Call Wall resistance $700 (active hedging), support $680 (active). QQQ: Immediate resistance $620 (max pain gravity), support $590. Watch for price action around max pain levels as year-end expiration mechanics dominate.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Resistance $700 (call wall), $730 (dormant). Support $630 (put wall major), $640 (secondary). QQQ: Resistance $630-640 zone. Support $590 (active), $574.78 (put wall major). Breakdown below active support levels signals institutional de-risking acceleration.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 176817
+    "generation_time_ms": 182411
   },
   "trending": {
     "macro": [
@@ -248,7 +248,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.33,
+    "vix": 14.78,
     "pc_ratio": 0.82,
     "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
