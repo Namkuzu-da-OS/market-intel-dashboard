@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-31T07:18:37.382Z",
+  "timestamp": "2025-12-31T07:42:42.663Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 153,
+        "bullish": 156,
         "bearish": 41,
-        "neutral": 221,
-        "total": 415,
+        "neutral": 222,
+        "total": 419,
         "pct": 37
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction. Market shows institutional accumulation in tech/AI and improving retail sentiment, but faces structural headwinds from regulatory tightening, valuation extremes, and Fed hawkishness on 2026 rate cuts.\n\n📈 **Themes:** (1) AI/tech sector momentum driven by institutional capital deployment and venture positioning, (2) Regulatory enforcement pressure across banking and fintech creating sector headwinds, (3) Housing market normalization thesis dependent on credit easing and deregulatory actions.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI - active), $640 (100k OI - dormant). Near resistance: $730 (48k OI - dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near support: $590 (78k OI - active). Near resistance: $630 (32k OI - active), $640 (31k OI - active).",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction - Sources show 70-80% bullish sentiment, but structural concerns (record valuations, institutional de-risking) outweigh retail optimism. Market faces compression from regulatory headwinds and earnings disappointments despite growth narratives.\n\n📈 **Themes:** (1) Valuation extremes vs institutional positioning - Record market cap-to-GDP ratio (218%) clashing with Berkshire's 57% cash position signaling smart money caution. (2) Sector rotation pressure - Traditional risk assets facing regulatory tightening while alternative sectors (crypto, emerging markets) show bifurcated flows. (3) Policy uncertainty - Rate cut hesitation and regulatory enforcement creating directional ambiguity into Q1 2026.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI active), $640 (100k OI dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant). Max Pain $620. Near resistance: $630 (32k OI), $640 (31k OI). /ES: Nasdaq triple-top formation and technical breakdown warnings per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
-      "NVDA",
-      "BTC"
+      "BRK.B",
+      "AAPL"
     ],
     "key_themes": [
-      "AI/tech sector institutional accumulation",
-      "regulatory enforcement pressure",
-      "housing market normalization",
-      "cryptocurrency/stablecoin infrastructure",
-      "Fed rate policy uncertainty"
+      "Valuation extremes and institutional de-risking",
+      "Regulatory tightening and sector rotation",
+      "Rate policy uncertainty",
+      "AI/automation growth narratives",
+      "Housing market normalization"
     ],
     "risk_factors": [
-      "Valuation extremes at 218% market cap-to-GDP ratio",
-      "regulatory tightening across banking and fintech sectors",
-      "Fed hawkish stance on 2026 rate cuts",
-      "Nasdaq technical deterioration and triple top formation",
-      "year-end derivative positioning favoring downside protection"
+      "Record market cap-to-GDP ratio (218%) signaling overvaluation",
+      "Institutional cash positioning (Berkshire 57% cash, $381.7B) indicating defensive posture",
+      "Technical breakdowns (Nasdaq triple-top formation, precious metals reversals)",
+      "Earnings misses and margin pressure in software/enterprise sectors",
+      "Geopolitical tensions and regulatory enforcement actions"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $688 with active resistance at $700 (144k OI). Active support at $680 (60k OI). QQQ at Max Pain $620 with immediate call wall resistance.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Breakout above $700 Call Wall targets dormant $730 resistance (48k OI). Breakdown finds support at $640 (100k OI), then major Put Wall $630 (143k OI). QQQ: Clear $620 for $630-640 zone (32k-31k OI). Downside support at $590 (78k OI).",
+    "intraday_levels": "SPY: Call Wall resistance $700 (active hedging), support at $680 (60k OI active). QQQ: Call Wall resistance $620 (active), support at $590 (78k OI). Year-end low participation suggests range-bound action.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Resistance $700 (144k OI) then $730 (48k OI dormant). Support breakdown risk toward $640 (100k OI) then $630 Put Wall (143k OI). QQQ: Resistance $630-640 range. Support at $590 (78k OI) then $580 (108k OI) before $574.78 Put Wall.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 177483
+    "generation_time_ms": 183623
   },
   "trending": {
     "macro": [
