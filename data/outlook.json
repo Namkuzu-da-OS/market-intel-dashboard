@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-31T06:07:25.324Z",
+  "timestamp": "2025-12-31T06:32:16.768Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 78,
     "sources": {
       "social": {
         "bullish": 154,
-        "bearish": 40,
+        "bearish": 39,
         "neutral": 221,
-        "total": 415,
+        "total": 414,
         "pct": 37
       },
       "news": {
-        "bullish": 32,
+        "bullish": 31,
         "bearish": 15,
-        "neutral": 19,
-        "total": 66,
+        "neutral": 18,
+        "total": 64,
         "pct": 48
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - broad agreement on upside continuation into year-end supported by institutional flows and rate cut expectations, but structural concerns around valuation extremes and narrow technical formations temper enthusiasm.\n\n📈 **Themes:** (1) Rate policy trajectory and Fed communication dependency driving positioning flows, (2) AI and tech sector momentum sustaining despite valuation concerns and triple top pattern warnings, (3) Cryptocurrency infrastructure adoption and regulatory clarity supporting digital asset strength.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, active resistance 1.9% away), Put Wall $630 (143k OI, dormant support). Max Pain $688. Near support: $680 (60k OI active), $640 (100k OI dormant). QQQ ($619.43): Call Wall $620 (39k OI, immediate resistance 0.1% away), Put Wall $574.78 (122k OI, dormant support). Max Pain $620. Near resistance: $630 (32k OI active), $640 (31k OI active). /ES: Twitter mentions Nasdaq triple top formation as critical technical pivot.",
+    "narrative": "📊 **Consensus:** BEARISH with MEDIUM conviction. Sources show 70%+ bullish sentiment quantitatively, but qualitative analysis reveals stronger structural bearish arguments (record 218% US market cap-to-GDP, Nasdaq triple-top formation, earnings guidance cuts across fintech/software, consumer pressure from 50%+ cost increases).\n\n📈 **Themes:** (1) Valuation extremes and technical deterioration despite persistent bullish positioning, (2) AI infrastructure momentum vs. near-term earnings compression in enterprise software/fintech, (3) Regulatory tightening constraining banking/crypto sectors while stablecoin adoption expands, (4) Housing supply shortage narrative supporting real estate despite credit cycle uncertainty.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI - active), $640 (100k OI - dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near resistance: $630 (32k OI), $640 (31k OI). /ES futures: 6847 support per Twitter sources.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "GOOGL",
       "TSLA",
+      "NVDA",
       "BTC"
     ],
     "key_themes": [
-      "Rate cut expectations and Fed policy dependency",
-      "AI sector momentum and tech concentration",
-      "Cryptocurrency adoption and stablecoin infrastructure",
-      "Housing market supply/demand rebalancing",
-      "Valuation extremes and technical pattern warnings"
+      "valuation extremes and technical deterioration",
+      "AI infrastructure momentum vs earnings compression",
+      "regulatory tightening in fintech/banking/crypto",
+      "housing supply shortage structural thesis",
+      "consumer cost pressure and defensive positioning"
     ],
     "risk_factors": [
-      "Valuation extremes (S&P 500 218% market cap-to-GDP) creating fragile structure",
-      "Nasdaq triple top formation signaling potential reversal risk",
-      "Hawkish Fed guidance conflicting with rate cut expectations",
-      "Geopolitical escalation (Taiwan defense, Russia-Ukraine) as binary sentiment switches",
-      "Regulatory execution risk on banking capital requirements and crypto framework"
+      "Record 218% market cap-to-GDP ratio signaling overvaluation",
+      "Nasdaq triple-top formation with weakening breadth",
+      "Enterprise software/fintech earnings guidance cuts cascading",
+      "Regulatory crackdowns on banking and crypto operations",
+      "Consumer cost pressures (insurance +56%, utilities +49%) constraining spending"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $688 with immediate Call Wall resistance at $700 (144k OI). QQQ pinned at Max Pain $620 with minimal upside room to Call Wall. Active hedging dynamics suggest range-bound action.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Support zone $680-$688 (Max Pain gravity + active put support), upside target $700 Call Wall breakout. QQQ: Breakout above $620-$630 resistance cluster (71k combined OI) targets $640, downside protected by $590 (78k OI active support).",
-    "source_alignment": "ALIGNED"
+    "intraday_levels": "SPY $680 active support (60k OI), $700 active resistance (144k OI). QQQ pinned near $620 Call Wall/Max Pain (39k OI). Range-bound session likely as max pain gravitational pull dominates into year-end.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY $700 critical resistance (144k OI Call Wall), breakdown below $680 opens $640 (100k OI). QQQ faces $620-630 resistance cluster (39k + 32k OI), support at $590 (78k OI). Expect consolidation with downside bias testing lower bounds.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 180253
+    "generation_time_ms": 177951
   },
   "trending": {
     "macro": [
