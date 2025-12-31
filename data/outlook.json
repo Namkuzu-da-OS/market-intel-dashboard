@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-31T11:24:05.343Z",
+  "timestamp": "2025-12-31T11:53:08.256Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -8,15 +8,15 @@
       "social": {
         "bullish": 161,
         "bearish": 42,
-        "neutral": 225,
-        "total": 428,
+        "neutral": 226,
+        "total": 429,
         "pct": 38
       },
       "news": {
-        "bullish": 29,
+        "bullish": 30,
         "bearish": 16,
-        "neutral": 17,
-        "total": 62,
+        "neutral": 18,
+        "total": 64,
         "pct": 47
       },
       "video": {
@@ -36,51 +36,51 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish with medium conviction - structural headwinds outweigh forward-looking bullish catalysts, despite 79% bullish Twitter sentiment creating a contrarian setup.\n\n📈 **Themes:** (1) Valuation concerns and institutional de-risking (record market cap-to-GDP, Berkshire's 57% cash position), (2) Technical deterioration signals (Nasdaq breadth weakness, precious metals breakdown), (3) Earnings guidance pressure across financials and tech sectors conflicting with AI momentum narratives.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI), Max Pain $680. Near support: $680 (60k OI - active), $640 (100k OI). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - immediate resistance), Put Wall $574.78 (122k OI), Max Pain $615. Near resistance: $630 (32k OI), $640 (31k OI). Per Twitter: /ES futures support around 6860 (SPY ~$686 equivalent).",
+    "narrative": "📊 **Consensus:** Mixed sentiment with bullish bias - medium conviction. Sources show 65-100% bullish readings across platforms, but structural concerns about valuations and year-end positioning create hedged optimism rather than conviction.\n\n📈 **Themes:** (1) Crypto infrastructure adoption momentum with institutional flows and regulatory developments, (2) Year-end positioning dynamics creating thin liquidity and tactical opportunities, (3) Structural valuation concerns (US market cap-to-GDP 218%) versus rate policy tailwinds creating cross-currents.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (106k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $681. Active support: $680 (69k OI). QQQ ($619.43): Call Wall $620 (34k OI, 0.1% away - immediate resistance), Put Wall $574.78 (122k OI, 7.2% away). Max Pain $615. Active resistance cluster: $630-640 (33k-31k OI). /ES: S&P 500 support levels per Twitter technical analysis critical for triple-top pattern validation.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
-      "ETH",
-      "NVDA"
+      "GOOG",
+      "TKO"
     ],
     "key_themes": [
-      "Institutional de-risking and valuation concerns",
-      "Technical breadth deterioration vs bullish sentiment divergence",
-      "Earnings guidance pressure and demand softness",
-      "AI sector momentum narrative",
-      "Cryptocurrency consolidation patterns"
+      "Crypto institutional adoption and regulatory developments",
+      "Year-end liquidity and tactical positioning",
+      "Valuation concerns versus rate policy tailwinds",
+      "Housing supply deficit structural demand",
+      "Defensive sector rotation amid earnings uncertainty"
     ],
     "risk_factors": [
-      "Record valuation metrics (218% market cap-to-GDP) signaling potential bubble conditions",
-      "Institutional positioning shift from accumulation to distribution (Berkshire cash levels)",
-      "Earnings disappointment cascade across financials and tech sectors",
-      "Geopolitical escalation risks affecting semiconductor supply chains",
-      "Bullish sentiment extreme (79%) creating contrarian fade setup"
+      "Unprecedented valuation metrics (218% market cap-to-GDP) suggesting late-cycle positioning",
+      "Year-end thin liquidity amplifying volatility in either direction",
+      "Earnings disappointments and margin compression from regulatory tightening",
+      "Geopolitical friction (Taiwan, chip supply, Ukraine) driving safe-haven flows",
+      "Technical breakdown risk if S&P support fails validating triple-top pattern"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Resistance at $700 call wall (144k OI active hedging), immediate support at $680 (max pain, 60k OI). QQQ: Immediate resistance at $620 call wall (39k OI), support at $615 max pain",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Critical breakdown watch at $680-686 zone, major put wall support at $630. QQQ: Resistance band $620-630, dormant put wall support at $574.78. Watch for breaks below near-term support to confirm bearish structure",
-    "source_alignment": "CONFLICTING"
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: $680 active support (69k OI), $700 active resistance (106k OI). QQQ: $620 immediate resistance (34k OI), $615 max pain gravitational pull. Thin holiday liquidity favors trending direction but lacks conviction catalyst.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: $681 max pain target, $700 call wall key resistance test, $630 put wall major support if breakdown occurs. QQQ: $630-640 resistance cluster (33k-31k OI), $590 active support (78k OI), $574.78 put wall downside anchor.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 177548
+    "generation_time_ms": 192713
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 13,
-        "sentiment_score": 0.13,
+        "mentions": 12,
+        "sentiment_score": 0.141,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 13,
+        "sentiment_pct": 14,
         "counts": {
           "bullish": 4,
           "bearish": 2,
-          "neutral": 7,
-          "total": 13
+          "neutral": 6,
+          "total": 12
         }
       },
       {
@@ -167,28 +167,28 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 17,
-        "sentiment_score": 0.383,
+        "mentions": 16,
+        "sentiment_score": 0.407,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 38,
+        "sentiment_pct": 41,
         "counts": {
           "bullish": 9,
           "bearish": 1,
-          "neutral": 7,
-          "total": 17
+          "neutral": 6,
+          "total": 16
         }
       },
       {
         "ticker": "NVDA",
-        "mentions": 13,
-        "sentiment_score": 0.344,
+        "mentions": 12,
+        "sentiment_score": 0.372,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 34,
+        "sentiment_pct": 37,
         "counts": {
           "bullish": 7,
           "bearish": 1,
-          "neutral": 5,
-          "total": 13
+          "neutral": 4,
+          "total": 12
         }
       },
       {
@@ -235,7 +235,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.8,
+    "vix": 14.78,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
