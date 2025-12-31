@@ -1,22 +1,22 @@
 {
-  "timestamp": "2025-12-31T03:21:59.900Z",
+  "timestamp": "2025-12-31T03:47:04.606Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 151,
+        "bullish": 153,
         "bearish": 37,
-        "neutral": 217,
-        "total": 405,
+        "neutral": 221,
+        "total": 411,
         "pct": 37
       },
       "news": {
         "bullish": 31,
         "bearish": 17,
-        "neutral": 19,
-        "total": 67,
+        "neutral": 20,
+        "total": 68,
         "pct": 46
       },
       "video": {
@@ -36,37 +36,39 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - sentiment is 80% bullish on X/Twitter andChat, 65-67% bullish across RSS/YouTube, supported by concrete capital deployments and seasonal tailwinds, but tempered by structural valuation warnings and regulatory uncertainties.\n\n📈 **Themes:** (1) AI infrastructure dominance and mega-cap tech momentum driven by institutional capital commitments, (2) Monetary policy tailwinds with rate cut expectations supporting risk assets, (3) Sector bifurcation with geographic/regulatory divergence favoring U.S.-domiciled innovation over European exposure, (4) Housing structural recovery thesis based on supply deficits and credit easing.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, active resistance 1.9% away), Put Wall $630 (143k OI, dormant support). Max Pain $688. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, immediate resistance 0.1% away), Put Wall $574.78 (122k OI, dormant support). Max Pain $620. Near active resistance: $630 (32k OI). /ES levels per Twitter: monitoring for January seasonal strength in tech mega-caps.",
+    "narrative": "📊 **Consensus:** BULLISH with MEDIUM conviction - Sources show 65-81% bullish sentiment across platforms, but structural concerns (record valuations, narrow breadth, defensive positioning by smart money) temper high conviction. Bifurcated outlook where surface momentum conflicts with underlying fragility.\n\n📈 **Themes:** (1) Tech/AI sector leadership concentration risk - mega-cap strength masking breadth deterioration, (2) Rate policy expectations driving longer-term positioning despite near-term earnings execution concerns, (3) Year-end liquidity dynamics and options expiration mechanics creating tactical volatility.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant). Max Pain $620. Near active resistance: $630 (32k OI). /ES: 6847 support per Twitter analysis.",
     "key_tickers": [
-      "GOOG",
       "SPY",
       "QQQ",
+      "TSLA",
       "NVDA",
-      "MSFT"
+      "MSFT",
+      "GOOG",
+      "AAPL"
     ],
     "key_themes": [
-      "AI infrastructure and mega-cap tech leadership",
-      "Monetary policy easing and rate cut expectations",
-      "Sector rotation favoring U.S. innovation over European regulatory friction",
-      "Housing structural recovery",
-      "Stablecoin adoption and fintech innovation"
+      "Tech/AI sector concentration and leadership sustainability",
+      "Rate cut expectations versus earnings execution reality",
+      "Year-end positioning and liquidity dynamics",
+      "Valuation extremes and breadth deterioration",
+      "Geographic divergence US versus European equities"
     ],
     "risk_factors": [
-      "Record 218% U.S. market cap-to-GDP ratio signaling valuation extremes",
-      "European regulatory enforcement creating compliance friction and capital outflows",
-      "Geopolitical unpredictability and policy divergence",
-      "Institutional defensive positioning (Berkshire 57% cash, Buffett Apple reduction)",
-      "Earnings guidance execution risk amid elevated valuations"
+      "Record market cap-to-GDP ratio (218%) signaling valuation unsustainability",
+      "Narrow market breadth with mega-cap concentration masking weakness",
+      "Smart money defensiveness (Berkshire 57% cash, Buffett reducing AAPL)",
+      "Geopolitical tensions and regulatory uncertainty",
+      "Year-end liquidity gaps creating elevated volatility on light volume"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $688 with immediate resistance at $700 Call Wall (144k OI active hedging). QQQ pinned near Max Pain $620 with Call Wall resistance at same level (39k OI). Watch for dealer hedging dynamics at these active strikes.",
+    "intraday_levels": "SPY testing Max Pain $688 with active Call Wall resistance at $700. QQQ pinned near Max Pain $620 with immediate Call Wall resistance. Light holiday volume creates gap risk in either direction per Twitter analysis.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside target toward $700 Call Wall, downside support at $680 (60k OI active) then $640 (100k OI dormant). QQQ: Resistance cluster $620-$630-$640, support at $590 (78k OI) then $580 (108k OI). Bullish structure favors dip-buying toward support zones.",
+    "swing_levels": "SPY: $700 Call Wall major resistance to clear for continuation, $680 active support level. $630 Put Wall dormant major support if weakness accelerates. QQQ: $630-$640 resistance zone (32k-31k OI), $590 active support (78k OI). /ES 6847 support per Twitter.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 199520
+    "generation_time_ms": 196002
   },
   "trending": {
     "macro": [
@@ -180,15 +182,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 18,
-        "sentiment_score": 0.363,
+        "mentions": 19,
+        "sentiment_score": 0.378,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 38,
         "counts": {
-          "bullish": 9,
+          "bullish": 10,
           "bearish": 1,
           "neutral": 8,
-          "total": 18
+          "total": 19
         }
       },
       {
@@ -232,15 +234,15 @@
       },
       {
         "ticker": "ONDS",
-        "mentions": 6,
-        "sentiment_score": 0.728,
+        "mentions": 7,
+        "sentiment_score": 0.624,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 73,
+        "sentiment_pct": 62,
         "counts": {
           "bullish": 6,
           "bearish": 0,
-          "neutral": 0,
-          "total": 6
+          "neutral": 1,
+          "total": 7
         }
       }
     ]
