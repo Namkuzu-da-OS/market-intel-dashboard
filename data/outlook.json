@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-31T17:16:06.877Z",
+  "timestamp": "2025-12-31T17:50:11.486Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 74,
     "sources": {
       "social": {
-        "bullish": 145,
-        "bearish": 50,
-        "neutral": 224,
-        "total": 419,
+        "bullish": 151,
+        "bearish": 52,
+        "neutral": 225,
+        "total": 428,
         "pct": 35
       },
       "news": {
-        "bullish": 26,
+        "bullish": 27,
         "bearish": 15,
-        "neutral": 15,
-        "total": 56,
-        "pct": 46
+        "neutral": 18,
+        "total": 60,
+        "pct": 45
       },
       "video": {
         "bullish": 4,
@@ -27,73 +27,75 @@
         "pct": 50
       },
       "chat": {
-        "bullish": 5,
+        "bullish": 6,
         "bearish": 0,
         "neutral": 2,
-        "total": 7,
-        "pct": 71
+        "total": 8,
+        "pct": 75
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Modestly bullish with medium conviction. Sources converge on constructive sentiment (74% bullish Twitter, 63% bullish news, 100% bullish YouTube) supported by tax-loss harvesting season ending and global rate-cut tailwinds, though regulatory headwinds and technical resistance temper upside conviction.\n\n📈 **Themes:** (1) Tax-loss harvesting relief into year-end providing technical support, (2) Blockchain infrastructure modernization and stablecoin adoption as structural multi-year theme, (3) Regulatory uncertainty creating headwinds in fintech/banking while crypto policy clarity remains binary catalyst.\n\n🎯 **Levels:** SPY ($685.18): Call Wall $700 (106k OI, 2.2% away - active resistance), Put Wall $630 (143k OI, dormant support). Max Pain $681. Near support: $680 (69k OI, active). QQQ ($617.54): Call Wall $620 (34k OI, 0.4% away - active resistance), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near resistance: $630 (33k OI). /ES futures: Resistance levels per Twitter, watch for breakout confirmation. Bitcoin: Below VWAP and key moving averages per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - strong sentiment across sources (74% Twitter, 64% RSS, 100% YouTube/Chat) driven by institutional flows and year-end positioning dynamics, though structural concerns and technical weakness in crypto undercut confidence.\n\n📈 **Themes:** (1) AI/semiconductor momentum with institutional capital allocation continuing, (2) Accommodative monetary policy expectations with global rate-cutting cycle, (3) Crypto regulatory clarity narrative driving TradFi integration versus technical weakness in BTC/altcoins.\n\n🎯 **Levels:** SPY ($684.99): Call Wall $700 (106k OI, active resistance), Put Wall $630 (143k OI, dormant support). Max Pain $681. Near support: $680 (69k OI, active). QQQ ($617.40): Call Wall $620 (34k OI, active resistance), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near resistance: $630 (33k OI). BTC: $75K target per Twitter, trading below moving averages. COIN: $225 support per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
-      "MSTR",
-      "COIN"
+      "COIN",
+      "MU",
+      "PLTR",
+      "IBIT"
     ],
     "key_themes": [
-      "Tax-loss harvesting season ending",
-      "Blockchain/crypto infrastructure adoption",
-      "Global rate-cut cycle continuation",
-      "Regulatory policy uncertainty",
-      "Tech sector momentum sustainability"
+      "AI/semiconductor institutional capital flows",
+      "Global monetary policy easing cycle",
+      "Crypto regulatory clarity and TradFi adoption",
+      "Tax-loss harvesting season end positioning",
+      "Housing supply constraints"
     ],
     "risk_factors": [
-      "Bitcoin technical breakdown below key moving averages signaling crypto sector weakness",
-      "Regulatory tightening in banking/fintech creating near-term headwinds",
-      "Recent rally characterized as false breakout lacking conviction",
-      "Semiconductor supply-chain friction and export controls",
-      "K-shaped recovery fragmentation and macro uncertainty"
+      "Regulatory enforcement intensifying in banking and crypto sectors",
+      "Bitcoin technical breakdown below key moving averages",
+      "Fed rate-cut expectations versus hawkish communication risk",
+      "GPU cost inflation pressures",
+      "Elevated public debt and labor market friction"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 support (69k OI, active), $700 resistance (106k OI, active). QQQ: $615 max pain gravitational pull, $620 resistance (34k OI, immediate). VIX 14.57 suggests low volatility environment.",
+    "intraday_levels": "SPY: $680 active support (69k OI), $700 active resistance (106k OI). QQQ: $620 immediate resistance (34k OI). Max Pain gravitational pull: SPY $681, QQQ $615.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $681 max pain target, $700 call wall major resistance test, $630 put wall dormant support. QQQ: $615 max pain, $630-640 resistance zone (33k-31k OI), $590 active support (78k OI). Bitcoin: Watch for reclaim of moving average cluster per Twitter.",
+    "swing_levels": "SPY: Upside to $700 call wall, downside support $630 put wall (143k OI). QQQ: $630-640 resistance zone (33k-31k OI), $590 active support (78k OI). BTC: $75K technical target per Twitter.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 179844
+    "generation_time_ms": 184017
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 14,
-        "sentiment_score": -0.016,
+        "mentions": 15,
+        "sentiment_score": -0.005,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 2,
+        "sentiment_pct": 1,
         "counts": {
           "bullish": 2,
           "bearish": 3,
-          "neutral": 9,
-          "total": 14
+          "neutral": 10,
+          "total": 15
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 11,
-        "sentiment_score": 0.22,
+        "mentions": 12,
+        "sentiment_score": 0.214,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 22,
+        "sentiment_pct": 21,
         "counts": {
           "bullish": 4,
           "bearish": 1,
-          "neutral": 6,
-          "total": 11
+          "neutral": 7,
+          "total": 12
         }
       },
       {
@@ -180,28 +182,28 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 13,
-        "sentiment_score": 0.531,
+        "mentions": 14,
+        "sentiment_score": 0.446,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
+        "sentiment_pct": 45,
         "counts": {
           "bullish": 9,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 4,
-          "total": 13
+          "total": 14
         }
       },
       {
         "ticker": "ONDS",
-        "mentions": 12,
-        "sentiment_score": 0.63,
+        "mentions": 13,
+        "sentiment_score": 0.637,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 63,
+        "sentiment_pct": 64,
         "counts": {
-          "bullish": 10,
+          "bullish": 11,
           "bearish": 0,
           "neutral": 2,
-          "total": 12
+          "total": 13
         }
       },
       {
@@ -248,8 +250,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.57,
-    "pc_ratio": 0.92,
+    "vix": 14.7,
+    "pc_ratio": 0.94,
     "sentiment_bullish_pct": 35,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -258,7 +260,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 7.95,
-    "spread": 6.04,
+    "spread": 6.44,
     "position": 50
   },
   "action": {
