@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-31T08:35:44.065Z",
+  "timestamp": "2025-12-31T09:04:06.277Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 158,
-        "bearish": 41,
-        "neutral": 223,
-        "total": 422,
+        "bullish": 159,
+        "bearish": 42,
+        "neutral": 224,
+        "total": 425,
         "pct": 37
       },
       "news": {
         "bullish": 31,
-        "bearish": 15,
+        "bearish": 16,
         "neutral": 15,
-        "total": 61,
-        "pct": 51
+        "total": 62,
+        "pct": 50
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed bullish sentiment (medium conviction) - quantitative data shows 70%+ bullish across sources, but qualitative analysis reveals significant institutional caution and structural headwinds tempering near-term enthusiasm.\n\n📈 **Themes:** (1) Valuation extremes and institutional de-risking (Buffett's record cash position, defensive positioning) vs. anticipated monetary easing tailwinds, (2) Crypto/blockchain infrastructure momentum heading into January as risk appetite barometer, (3) Regulatory uncertainty across banking, stablecoins, and capital requirements creating sector-specific pressure.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI - active), $640 (100k OI - dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - immediate resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near resistance: $630 (32k OI), $640 (31k OI). /ES futures: 6847 support mentioned per Twitter analysis.",
+    "narrative": "📊 **Consensus:** MIXED/NEUTRAL with MEDIUM conviction - Sources present bifurcated outlook with bullish technicals/seasonality against bearish structural valuations and regulatory headwinds. Market showing indecision at year-end.\n\n📈 **Themes:** (1) Valuation extremes vs secular growth - US market cap-to-GDP at 218% record while AI/robotics/blockchain infrastructure promise multi-year tailwinds; (2) Regulatory tightening - Banking capital requirements, enterprise software guidance cuts, and fintech pressures creating sector-specific headwinds; (3) Institutional repositioning - Major players holding elevated cash (Berkshire 57% cash, $381.7B) while retail optimism persists on January seasonality.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant). Max Pain $620. Near active resistance: $630 (32k OI). Per Twitter: Precious metals breakdown confirmation, Nasdaq breadth deterioration near highs.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "TSLA",
       "BTC",
-      "ETH",
-      "TSLA"
+      "ETH"
     ],
     "key_themes": [
-      "Institutional de-risking and record cash positioning",
-      "Crypto/blockchain infrastructure momentum as risk barometer",
-      "Regulatory uncertainty across financial services and digital assets",
-      "Valuation extremes vs. anticipated monetary easing",
-      "Consumer cost pressures eroding purchasing power"
+      "Valuation extremes vs secular growth narratives",
+      "Regulatory tightening across banking/fintech/software",
+      "Institutional cash positioning vs retail optimism",
+      "AI/robotics/blockchain infrastructure tailwinds",
+      "January seasonality and technical setups"
     ],
     "risk_factors": [
-      "Record market cap-to-GDP ratios (218%) indicating extreme valuations",
-      "Regulatory tightening across banking capital requirements and stablecoin frameworks",
-      "Geopolitical tensions (Ukraine, Taiwan) creating binary risk events",
-      "Earnings guidance deterioration in enterprise software and fintech sectors",
-      "Disconnect between retail optimism and institutional defensive positioning"
+      "Record US market cap-to-GDP ratio 218% signaling overvaluation",
+      "Deteriorating market breadth despite headline strength",
+      "Regulatory enforcement cascading through enterprise software guidance cuts",
+      "Geopolitical tensions (Taiwan, Ukraine, semiconductor supply chains)",
+      "Fed 2026 rate-cut uncertainty with multiple officials signaling pause"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Call Wall resistance $700 (active hedging), support $680 (active). QQQ: Immediate resistance $620 (max pain gravity), support $590. Watch for price action around max pain levels as year-end expiration mechanics dominate.",
+    "intraday_levels": "SPY: $687 current, max pain gravity toward $688, call wall resistance $700. QQQ: Testing max pain $620 (call wall), support at $590 if breaks. VIX 14.87 suggests low volatility regime.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Resistance $700 (call wall), $730 (dormant). Support $630 (put wall major), $640 (secondary). QQQ: Resistance $630-640 zone. Support $590 (active), $574.78 (put wall major). Breakdown below active support levels signals institutional de-risking acceleration.",
+    "swing_levels": "SPY: Watch $700 call wall as major resistance (144k OI), $680 as near support (60k OI). Break below $680 targets $640 (100k OI). QQQ: $620 call wall caps upside, $590 support critical (78k OI), break targets $580 (108k OI). Precious metals breakdown signals risk-off.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 182411
+    "generation_time_ms": 184937
   },
   "trending": {
     "macro": [
@@ -248,8 +248,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.78,
-    "pc_ratio": 0.82,
+    "vix": 14.87,
+    "pc_ratio": 1,
     "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
