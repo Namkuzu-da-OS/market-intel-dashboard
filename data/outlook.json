@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-31T09:31:32.995Z",
+  "timestamp": "2025-12-31T09:55:00.644Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 160,
+        "bullish": 161,
         "bearish": 42,
-        "neutral": 227,
-        "total": 429,
-        "pct": 37
+        "neutral": 225,
+        "total": 428,
+        "pct": 38
       },
       "news": {
-        "bullish": 32,
-        "bearish": 16,
-        "neutral": 15,
+        "bullish": 30,
+        "bearish": 17,
+        "neutral": 16,
         "total": 63,
-        "pct": 51
+        "pct": 48
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Market displays cautious bullish positioning with medium-low conviction. Structural overvaluation concerns (218% market cap-to-GDP) and institutional de-risking (Buffett's $381.7B cash position) clash with technical reversal signals and crypto momentum, creating fragile near-term setup despite defensive dealer positioning.\n\n📈 **Themes:** (1) Institutional crypto adoption pathways versus regulatory uncertainty - stablecoin payment infrastructure growth competing with SEC enforcement actions, (2) Market valuation extremes and breadth deterioration - Nasdaq triple top formation with weakening internals despite headline strength, (3) Housing supply constraints and deregulatory tailwinds - measurable deficits creating multi-year structural support.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, active resistance 1.9% away), Put Wall $630 (143k OI, dormant support). Max Pain $680. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, active resistance 0.1% away), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near active resistance: $630 (32k OI), $640 (31k OI). /ES levels per Twitter: watching for breakout signals.",
+    "narrative": "📊 **Consensus:** BEARISH near-term (medium conviction) / BULLISH longer-term (low-medium conviction). Sources show tactical caution on Q1 2026 execution risk while acknowledging structural optimism for mid-2026.\n\n📈 **Themes:** (1) Valuation concerns vs. structural growth expectations - market cap-to-GDP at extreme levels versus emerging market adoption and infrastructure buildout, (2) Earnings health uncertainty - fintech/software guidance cuts and demand questions contrasting housing/payment infrastructure tailwinds, (3) Regulatory and policy uncertainty - Fed rate path hesitation, crypto ETF approval decisions, and credit cycle positioning.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, active resistance), Put Wall $630 (143k OI, dormant support). Max Pain $680. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, active resistance), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near active resistance: $630 (32k OI), $640 (31k OI). /ES: Nasdaq triple-top formation and breadth deterioration noted per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "AAPL",
       "TSLA",
-      "BTC"
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "Valuation extremes and institutional de-risking",
-      "Crypto institutional adoption versus regulatory enforcement",
-      "Housing supply constraints and structural deficits",
-      "Market breadth deterioration despite headline strength",
-      "Rate policy uncertainty and Fed communication dependence"
+      "Valuation extremes vs. growth expectations",
+      "Earnings quality and guidance trends",
+      "Regulatory uncertainty (Fed policy, crypto ETFs)",
+      "Housing and infrastructure cycles",
+      "Institutional positioning and insider behavior"
     ],
     "risk_factors": [
-      "Record 218% market cap-to-GDP ratio signaling overvaluation vulnerability",
-      "Institutional positioning headwinds - Buffett 57% cash, Apple reductions",
-      "Regulatory tightening across financial services and crypto (Fed supervisory framework, FHFA actions, SEC enforcement)",
-      "Earnings guidance cuts from bellwether firms (Workday, Fiserv) extending to broader sectors",
-      "Geopolitical flashpoints (Taiwan tensions, U.S.-China semiconductor friction) triggering flight-to-safety"
+      "Market cap-to-GDP at unprecedented levels (218%)",
+      "Earnings guidance cuts across fintech/software sectors",
+      "Fed rate cut hesitation and policy uncertainty",
+      "Nasdaq breadth deterioration and technical warnings",
+      "Geopolitical escalation risks"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $687 with immediate Call Wall resistance at $700 (144k OI), active support at $680 Max Pain (60k OI). QQQ pinned near $620 Call Wall (39k OI) creating tight range",
+    "intraday_levels": "SPY: $700 call wall resistance (active hedging), $680 support zone (max pain + active put support). QQQ: $620 call wall resistance (active hedging), $615 max pain gravitational pull",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Major Put Wall support at $630 (143k OI) if current levels fail, dormant resistance at $730 (48k OI). QQQ: Downside risk to $590 (78k OI) then $580 (108k OI) if $615 Max Pain breaks",
+    "swing_levels": "SPY: Watch $700 call wall breakthrough vs. $680-$630 support corridor test. QQQ: $620-$640 resistance cluster versus $590-$574.78 support zone. Nasdaq technical formation and breadth metrics critical",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 185165
+    "generation_time_ms": 178090
   },
   "trending": {
     "macro": [
@@ -248,9 +248,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.87,
+    "vix": 14.88,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 37,
+    "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
