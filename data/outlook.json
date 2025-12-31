@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-31T02:26:39.498Z",
+  "timestamp": "2025-12-31T02:57:16.067Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 150,
+        "bullish": 151,
         "bearish": 36,
-        "neutral": 210,
-        "total": 396,
+        "neutral": 215,
+        "total": 402,
         "pct": 38
       },
       "news": {
-        "bullish": 30,
+        "bullish": 31,
         "bearish": 17,
         "neutral": 19,
-        "total": 66,
-        "pct": 45
+        "total": 67,
+        "pct": 46
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** BULLISH with MEDIUM conviction - Sentiment leans optimistic (64-81% bullish across sources) driven by seasonality and mega-cap momentum, but underlying structural tensions (valuation extremes, regulatory headwinds, institutional defensiveness) create fragility.\n\n📈 **Themes:** (1) AI infrastructure and mega-cap tech momentum driving narrow leadership, (2) Monetary policy easing expectations vs. Fed hawkish pivot risk creating tactical uncertainty, (3) Year-end liquidity dynamics and January seasonality patterns as near-term catalysts, (4) Geographic/sectoral bifurcation (US housing/blockchain strength vs. European regulatory pressure).\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI active), $640 (100k OI dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near resistance: $630 (32k OI active). /ES: Triple Top formation risk on Nasdaq per Twitter; specific levels not quantified.",
+    "narrative": "📊 **Consensus:** Bifurcated market with bearish near-term bias transitioning to conditional bullish 2026 narrative - conviction: MEDIUM. Structural optimism conflicts with immediate technical deterioration and valuation extremes.\n\n📈 **Themes:** (1) Valuation extremes and market breadth deterioration despite mega-cap strength, (2) Regulatory uncertainty creating sector-specific divergence between U.S. growth assets and international exposures, (3) Liquidity dynamics and seasonal patterns creating near-term consolidation pressure.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI - active), $640 (100k OI - dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near resistance: $630 (32k OI - active). /ES: Nasdaq Triple Top formation monitoring per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "GOOG",
+      "GOOGL",
       "MSFT"
     ],
     "key_themes": [
-      "AI infrastructure momentum",
-      "January seasonality effects",
-      "Monetary policy uncertainty",
-      "Valuation extremes and positioning",
-      "Geographic bifurcation (US vs Europe)"
+      "Valuation extremes and breadth deterioration",
+      "Regulatory divergence US vs Europe",
+      "Liquidity dynamics and dealer positioning",
+      "AI sector concentration risk",
+      "Housing and crypto structural demand"
     ],
     "risk_factors": [
-      "Triple Top formation risk on Nasdaq",
-      "Institutional defensive positioning (Buffett 57% cash)",
-      "European regulatory tightening",
-      "Fed hawkish pivot potential",
-      "Deteriorating market internals despite mega-cap strength"
+      "Market cap-to-GDP at record 218% signaling valuation extreme",
+      "Institutional cash positioning (Berkshire 57% cash) suggesting defensive posture",
+      "Technical breakdown risks (Nasdaq Triple Top, declining breadth)",
+      "Regulatory uncertainty impact on international exposures",
+      "Fed policy communication and rate cut timing uncertainty"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 active support (60k OI), $700 active resistance (144k OI). QQQ: $620 immediate resistance (39k OI). Low volume year-end conditions favor range-bound action near Max Pain levels.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $688 Max Pain gravitational pull, $700 Call Wall major resistance test, $630 Put Wall major support if breakdown. QQQ: $620 Max Pain, $630-$640 resistance zone (32k-31k OI), $590 support (78k OI active).",
+    "intraday_levels": "SPY $680 active support (60k OI), $688 max pain gravitational pull, $700 active call wall resistance (144k OI). QQQ at $620 max pain with immediate call wall resistance (39k OI)",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY $700 major call wall resistance, $680-$688 consolidation zone, $640 secondary support if breakdown. QQQ $620-$630 resistance band (71k combined OI), $590 active put support (78k OI)",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 206902
+    "generation_time_ms": 196277
   },
   "trending": {
     "macro": [
@@ -180,15 +180,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 17,
-        "sentiment_score": 0.385,
+        "mentions": 18,
+        "sentiment_score": 0.363,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 39,
+        "sentiment_pct": 36,
         "counts": {
           "bullish": 9,
           "bearish": 1,
-          "neutral": 7,
-          "total": 17
+          "neutral": 8,
+          "total": 18
         }
       },
       {
