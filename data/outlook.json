@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-31T01:53:09.933Z",
+  "timestamp": "2025-12-31T02:26:39.498Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 147,
+        "bullish": 150,
         "bearish": 36,
-        "neutral": 199,
-        "total": 382,
+        "neutral": 210,
+        "total": 396,
         "pct": 38
       },
       "news": {
-        "bullish": 28,
+        "bullish": 30,
         "bearish": 17,
         "neutral": 19,
-        "total": 64,
-        "pct": 44
+        "total": 66,
+        "pct": 45
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates across sources (70%+ bullish readings), but with medium conviction due to significant structural concerns around valuation extremes and regulatory headwinds creating tension between near-term momentum and fundamental risks.\n\n📈 **Themes:** (1) AI infrastructure momentum and mega-cap tech dominance driving market leadership, (2) Rate policy uncertainty and liquidity cycle dynamics influencing risk appetite, (3) Valuation concentration risk at historical extremes creating defensive positioning among institutions.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI - active), $640 (100k OI). Near resistance: $730 (48k OI). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - immediate resistance), Put Wall $574.78 (122k OI, 7.2% away). Max Pain $620. Near resistance: $630 (32k OI), $640 (31k OI). Near support: $590 (78k OI).",
+    "narrative": "📊 **Consensus:** BULLISH with MEDIUM conviction - Sentiment leans optimistic (64-81% bullish across sources) driven by seasonality and mega-cap momentum, but underlying structural tensions (valuation extremes, regulatory headwinds, institutional defensiveness) create fragility.\n\n📈 **Themes:** (1) AI infrastructure and mega-cap tech momentum driving narrow leadership, (2) Monetary policy easing expectations vs. Fed hawkish pivot risk creating tactical uncertainty, (3) Year-end liquidity dynamics and January seasonality patterns as near-term catalysts, (4) Geographic/sectoral bifurcation (US housing/blockchain strength vs. European regulatory pressure).\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI active), $640 (100k OI dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant support). Max Pain $620. Near resistance: $630 (32k OI active). /ES: Triple Top formation risk on Nasdaq per Twitter; specific levels not quantified.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "GOOGL",
-      "PLTR"
+      "GOOG",
+      "MSFT"
     ],
     "key_themes": [
-      "AI infrastructure and mega-cap tech leadership",
-      "Rate policy and liquidity cycle dynamics",
-      "Valuation concentration risk and institutional defensive positioning",
-      "Credit conditions and housing market catalysts",
-      "Regulatory uncertainty impacting sentiment"
+      "AI infrastructure momentum",
+      "January seasonality effects",
+      "Monetary policy uncertainty",
+      "Valuation extremes and positioning",
+      "Geographic bifurcation (US vs Europe)"
     ],
     "risk_factors": [
-      "Record market cap-to-GDP ratio (218%) signaling valuation extremes",
-      "Corporate earnings guidance deterioration across multiple sectors",
-      "Regulatory tightening in banking and European markets creating headwinds",
-      "Institutional defensive positioning (Buffett 57% cash) despite retail optimism",
-      "Inflation persistence in consumer necessities pressuring Fed flexibility"
+      "Triple Top formation risk on Nasdaq",
+      "Institutional defensive positioning (Buffett 57% cash)",
+      "European regulatory tightening",
+      "Fed hawkish pivot potential",
+      "Deteriorating market internals despite mega-cap strength"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $688 with immediate Call Wall resistance at $700. QQQ pinned at Max Pain $620 with active resistance. Dealer hedging creating range-bound environment",
+    "intraday_levels": "SPY: $680 active support (60k OI), $700 active resistance (144k OI). QQQ: $620 immediate resistance (39k OI). Low volume year-end conditions favor range-bound action near Max Pain levels.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Break above $700 Call Wall targets $730, support zone $680-$688. QQQ: Break above $620-$630 resistance cluster opens $640, support at $590",
+    "swing_levels": "SPY: $688 Max Pain gravitational pull, $700 Call Wall major resistance test, $630 Put Wall major support if breakdown. QQQ: $620 Max Pain, $630-$640 resistance zone (32k-31k OI), $590 support (78k OI active).",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 199013
+    "generation_time_ms": 206902
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "SLV",
-        "mentions": 8,
-        "sentiment_score": 0.646,
+        "mentions": 9,
+        "sentiment_score": 0.663,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 66,
         "counts": {
-          "bullish": 7,
+          "bullish": 8,
           "bearish": 0,
           "neutral": 1,
-          "total": 8
+          "total": 9
         }
       },
       {
@@ -219,15 +219,15 @@
       },
       {
         "ticker": "SPX",
-        "mentions": 8,
-        "sentiment_score": 0.206,
+        "mentions": 9,
+        "sentiment_score": 0.183,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 21,
+        "sentiment_pct": 18,
         "counts": {
           "bullish": 2,
           "bearish": 0,
-          "neutral": 6,
-          "total": 8
+          "neutral": 7,
+          "total": 9
         }
       },
       {
