@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-31T04:09:28.283Z",
+  "timestamp": "2025-12-31T04:33:46.798Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -7,17 +7,17 @@
     "sources": {
       "social": {
         "bullish": 153,
-        "bearish": 37,
-        "neutral": 222,
-        "total": 412,
+        "bearish": 38,
+        "neutral": 224,
+        "total": 415,
         "pct": 37
       },
       "news": {
-        "bullish": 31,
+        "bullish": 33,
         "bearish": 17,
         "neutral": 20,
-        "total": 68,
-        "pct": 46
+        "total": 70,
+        "pct": 47
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Medium-conviction bullish sentiment for near-term tactical rally, but with structural caution from institutional positioning and valuation extremes. Quantitative sentiment shows 65-81% bullish across sources, but quality of conviction varies significantly.\n\n📈 **Themes:** (1) January seasonal strength and tech sector momentum (AI infrastructure, robotics adoption), (2) Rate policy uncertainty and Fed guidance impact on liquidity expectations, (3) Geographic divergence with US housing/crypto infrastructure outperformance vs European regulatory headwinds, (4) Institutional de-risking despite retail optimism creating sentiment divergence.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near active support: $680 (60k OI). Near active resistance: $750 (55k OI dormant), $730 (48k OI dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - immediate resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant). Max Pain $620. Near active resistance: $630 (32k OI), $640 (31k OI). Near active support: $590 (78k OI). /ES: Levels per Twitter include triple-top formation watch on Nasdaq, MACD crosses confirmed.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - sentiment is 70%+ bullish across all sources, but structural valuation concerns and defensive institutional positioning (Buffett $381.7B cash, Burry hedges) create cross-currents.\n\n📈 **Themes:** (1) AI/Robotaxi infrastructure deployment driving tech optimism, (2) January seasonality and liquidity cycle dynamics, (3) Rate policy uncertainty balancing against record stock market cap-to-GDP ratio (218%), (4) Housing/mortgage spread compression thesis and stablecoin adoption momentum.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near support: $680 (60k OI - active), $640 (100k OI - dormant). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI - dormant support). Max Pain $620. Near resistance: $630 (32k OI - active). /ES: No specific levels provided in Twitter summaries.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
-      "AAPL",
+      "GOOGL",
       "BTC"
     ],
     "key_themes": [
-      "January seasonal strength and tech momentum",
-      "Rate policy uncertainty and Fed guidance",
-      "Institutional de-risking vs retail optimism divergence",
-      "Geographic performance divergence (US vs Europe)",
-      "Valuation extremes and structural caution"
+      "AI and autonomous vehicle infrastructure momentum",
+      "January seasonality and liquidity cycle dynamics",
+      "Rate policy trajectory and monetary easing expectations",
+      "Valuation concerns at record market cap-to-GDP levels",
+      "Housing sector recovery and mortgage spread normalization"
     ],
     "risk_factors": [
-      "218% market cap-to-GDP ratio signaling valuation extremes",
-      "Earnings disappointments in fintech and software creating contagion risk",
-      "European regulatory tightening causing capital flight",
-      "Divergence between retail bullishness and institutional cash raising (Buffett positioning)",
-      "Year-end options expiration mechanics creating tactical volatility"
+      "Record 218% stock market cap-to-GDP ratio suggesting overvaluation",
+      "Institutional defensive positioning (Buffett $381.7B cash, Burry hedges)",
+      "Earnings guidance deterioration in enterprise software and fintech",
+      "Geopolitical tensions (Taiwan, Russia-Ukraine) creating risk-off potential",
+      "Regulatory enforcement acceleration increasing compliance costs across sectors"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Call Wall resistance at $700 with active dealer hedging creating drag. QQQ pinned near Max Pain $620 with immediate Call Wall resistance. Watch $680 SPY support (60k OI) for active hedging support if pullback occurs.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside capped near $700 Call Wall initially, then $730 (48k OI) if breakthrough occurs. Downside support dormant until $640 (100k OI), then major Put Wall $630 (143k OI). QQQ: Immediate resistance $620-$630 zone, upside target $640 (31k OI). Support activates $590 (78k OI), major floor $574.78 Put Wall (122k OI).",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: $680 active support (60k OI), $700 active resistance (144k OI). QQQ: $620 immediate resistance (39k OI at max pain), $590 support if breakdown (78k OI)",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: $688 max pain gravitational pull, $700 call wall major resistance test, $640 dormant support activates on weakness. QQQ: $630 next resistance (32k OI), $580-$590 support zone (186k combined OI)",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 197776
+    "generation_time_ms": 174391
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "SLV",
-        "mentions": 9,
-        "sentiment_score": 0.663,
+        "mentions": 10,
+        "sentiment_score": 0.517,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 66,
+        "sentiment_pct": 52,
         "counts": {
           "bullish": 8,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 1,
-          "total": 9
+          "total": 10
         }
       },
       {
