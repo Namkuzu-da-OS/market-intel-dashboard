@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-31T10:22:39.483Z",
+  "timestamp": "2025-12-31T10:51:46.517Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 77,
+    "confidence_pct": 76,
     "sources": {
       "social": {
-        "bullish": 163,
-        "bearish": 42,
-        "neutral": 226,
-        "total": 431,
+        "bullish": 161,
+        "bearish": 43,
+        "neutral": 224,
+        "total": 428,
         "pct": 38
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish near-term momentum with medium conviction, supported by technical setups and capital flows, but structural vulnerabilities create elevated tail risk for sharp reversal.\n\n📈 **Themes:** (1) Institutional flows and 401(k) deferrals supporting equity strength despite valuation concerns, (2) Crypto institutional adoption momentum with ETF approvals and blockchain payment infrastructure growth, (3) Fed rate policy uncertainty creating bifurcated positioning between defensive institutions and optimistic retail.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, active resistance), Put Wall $630 (143k OI, dormant support). Max Pain $680. Near active support: $680 (60k OI). Near active resistance: $730 (48k OI), $750 (55k OI dormant). QQQ ($619.43): Call Wall $620 (39k OI, active resistance), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near active resistance: $630 (32k OI), $640 (31k OI). Near active support: $590 (78k OI). /ES: 6847 support per Twitter.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with structural bearish lean amid near-term bullish technical setup - conviction: MEDIUM. Markets showing late-cycle tension between positive momentum/flows and elevated valuation concerns.\n\n📈 **Themes:** (1) Valuation extremes and institutional defensiveness (record market cap-to-GDP ratios, major cash hoarding), (2) Regulatory and policy uncertainty across banking, digital assets, and rate trajectory, (3) Sector rotation pressures from mega-cap tech to defensive positioning.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, dormant support). Max Pain $680. Near support: $680 (60k OI - active). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near resistance: $630 (32k OI). /ES: Nasdaq testing all-time highs forming potential triple top per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
-      "ETH",
-      "TSLA"
+      "TSLA",
+      "AAPL",
+      "BTC"
     ],
     "key_themes": [
-      "Institutional capital flows and 401k deferrals supporting equity strength",
-      "Crypto institutional adoption and ETF approval momentum",
-      "Fed rate policy uncertainty and defensive positioning",
-      "Valuation concerns and breadth deterioration warnings",
-      "Sector rotation between cyclicals and defensives"
+      "Valuation extremes and mega-cap vulnerability",
+      "Institutional defensiveness and cash positioning",
+      "Regulatory uncertainty across sectors",
+      "Technical momentum vs fundamental headwinds",
+      "Sector rotation from growth to defensive"
     ],
     "risk_factors": [
-      "Nasdaq breadth deterioration despite index strength signals underlying weakness",
-      "US stock market cap-to-GDP at record 218% creates valuation compression risk",
-      "Geopolitical escalation (Taiwan semiconductors, Russia-Ukraine) as primary volatility trigger",
-      "Fed hawkish pivot would pressure equity multiples and derail rate-cut thesis",
-      "Earnings disappointments in fintech and software sectors showing demand softness"
+      "Record market cap-to-GDP ratio (218%) signaling overvaluation",
+      "Major institutional cash hoarding (Buffett 57% cash allocation)",
+      "Banking supervisory tightening and credit stress",
+      "Geopolitical tensions impacting semiconductor supply chains",
+      "January rotation risk as year-end momentum fades"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Call Wall resistance at $700 (144k OI), support at Max Pain $680 (60k OI). QQQ at immediate Call Wall $620 (39k OI), support at $615 Max Pain",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside target $730-$750 zone if $700 Call Wall breaks, downside risk to $630 Put Wall if momentum fails. QQQ: $630-$640 resistance cluster (63k combined OI), $590 support level if pullback occurs",
+    "intraday_levels": "SPY testing $700 call wall resistance with active dealer hedging. QQQ at $620 call wall (39k OI) acting as immediate ceiling. Watch for breakdown below $680 SPY support or breakout confirmation above resistance.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: $700 major resistance (144k OI), $680 gravitational pull toward max pain, $630 put wall support if breakdown occurs. QQQ: $630 resistance zone, $590 support (78k OI active). Downside risk elevated into January rotation period.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 181922
+    "generation_time_ms": 183137
   },
   "trending": {
     "macro": [
@@ -219,15 +219,15 @@
       },
       {
         "ticker": "SPX",
-        "mentions": 9,
-        "sentiment_score": 0.183,
+        "mentions": 10,
+        "sentiment_score": 0.1,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 18,
+        "sentiment_pct": 10,
         "counts": {
           "bullish": 2,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 7,
-          "total": 9
+          "total": 10
         }
       },
       {
@@ -248,7 +248,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.92,
+    "vix": 14.86,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
