@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-31T16:44:10.469Z",
+  "timestamp": "2025-12-31T17:16:06.877Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 75,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 161,
+        "bullish": 145,
         "bearish": 50,
-        "neutral": 230,
-        "total": 441,
-        "pct": 37
+        "neutral": 224,
+        "total": 419,
+        "pct": 35
       },
       "news": {
-        "bullish": 28,
+        "bullish": 26,
         "bearish": 15,
-        "neutral": 16,
-        "total": 59,
-        "pct": 47
+        "neutral": 15,
+        "total": 56,
+        "pct": 46
       },
       "video": {
         "bullish": 4,
@@ -27,84 +27,86 @@
         "pct": 50
       },
       "chat": {
-        "bullish": 4,
-        "bearish": 1,
+        "bullish": 5,
+        "bearish": 0,
         "neutral": 2,
         "total": 7,
-        "pct": 57
+        "pct": 71
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bullish into year-end with medium conviction. Sources show 65-100% bullish sentiment across platforms, but technical resistance and year-end positioning dynamics create near-term headwinds despite structural tailwinds from rate cuts and institutional accumulation.\n\n📈 **Themes:** (1) Regulatory clarity expectations driving crypto infrastructure positioning and stablecoin adoption narratives, (2) Semiconductor and tech sector leadership continuing to drive indices despite K-shaped economy concentration concerns, (3) Year-end tax-loss selling creating tactical volatility while institutional players selectively accumulate in favored segments.\n\n🎯 **Levels:** SPY ($684.77): Call Wall $700 (106k OI, active resistance), Put Wall $630 (143k OI, dormant support). Max Pain $681. Near active support: $680 (69k OI). QQQ ($617.20): Call Wall $620 (34k OI, active resistance), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near active resistance: $630 (33k OI). /ES futures: WTD VWAP barriers mentioned per Twitter as key resistance levels.",
+    "narrative": "📊 **Consensus:** Modestly bullish with medium conviction. Sources converge on constructive sentiment (74% bullish Twitter, 63% bullish news, 100% bullish YouTube) supported by tax-loss harvesting season ending and global rate-cut tailwinds, though regulatory headwinds and technical resistance temper upside conviction.\n\n📈 **Themes:** (1) Tax-loss harvesting relief into year-end providing technical support, (2) Blockchain infrastructure modernization and stablecoin adoption as structural multi-year theme, (3) Regulatory uncertainty creating headwinds in fintech/banking while crypto policy clarity remains binary catalyst.\n\n🎯 **Levels:** SPY ($685.18): Call Wall $700 (106k OI, 2.2% away - active resistance), Put Wall $630 (143k OI, dormant support). Max Pain $681. Near support: $680 (69k OI, active). QQQ ($617.54): Call Wall $620 (34k OI, 0.4% away - active resistance), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near resistance: $630 (33k OI). /ES futures: Resistance levels per Twitter, watch for breakout confirmation. Bitcoin: Below VWAP and key moving averages per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "COIN",
-      "TSM",
-      "MU"
+      "BTC",
+      "MSTR",
+      "COIN"
     ],
     "key_themes": [
-      "Regulatory clarity expectations in crypto and stablecoin infrastructure",
-      "Semiconductor sector leadership and AI momentum",
-      "Year-end positioning volatility and tax-loss selling dynamics"
+      "Tax-loss harvesting season ending",
+      "Blockchain/crypto infrastructure adoption",
+      "Global rate-cut cycle continuation",
+      "Regulatory policy uncertainty",
+      "Tech sector momentum sustainability"
     ],
     "risk_factors": [
-      "Year-end tactical volatility as tax-loss selling and portfolio rebalancing create whipsaw conditions",
-      "Regulatory uncertainty around stablecoin policy and Fed supervisory framework changes",
-      "K-shaped economy concentration risk with gains limited to mega-cap tech while small-cap and biotech show deterioration",
-      "Geopolitical friction around chip export controls and trade restrictions",
-      "Technical resistance at active Call Walls ($700 SPY, $620 QQQ) capping near-term upside momentum"
+      "Bitcoin technical breakdown below key moving averages signaling crypto sector weakness",
+      "Regulatory tightening in banking/fintech creating near-term headwinds",
+      "Recent rally characterized as false breakout lacking conviction",
+      "Semiconductor supply-chain friction and export controls",
+      "K-shaped recovery fragmentation and macro uncertainty"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $680 active support (69k OI) with $700 Call Wall capping upside. QQQ facing immediate $620 resistance (34k OI). WTD VWAP barriers in major index futures per Twitter acting as near-term caps.",
+    "intraday_levels": "SPY: $680 support (69k OI, active), $700 resistance (106k OI, active). QQQ: $615 max pain gravitational pull, $620 resistance (34k OI, immediate). VIX 14.57 suggests low volatility environment.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside target $700 Call Wall if cleared, downside support $630 Put Wall (143k OI). QQQ: $630-$640 resistance zone (33k-31k OI), $590 active support (78k OI). COIN: $225 technical resistance per Twitter.",
+    "swing_levels": "SPY: $681 max pain target, $700 call wall major resistance test, $630 put wall dormant support. QQQ: $615 max pain, $630-640 resistance zone (33k-31k OI), $590 active support (78k OI). Bitcoin: Watch for reclaim of moving average cluster per Twitter.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 186494
+    "generation_time_ms": 179844
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 13,
-        "sentiment_score": 0.04,
+        "mentions": 14,
+        "sentiment_score": -0.016,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 4,
+        "sentiment_pct": 2,
         "counts": {
           "bullish": 2,
-          "bearish": 2,
+          "bearish": 3,
           "neutral": 9,
-          "total": 13
-        }
-      },
-      {
-        "ticker": "SLV",
-        "mentions": 10,
-        "sentiment_score": 0.508,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 51,
-        "counts": {
-          "bullish": 8,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 10
+          "total": 14
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 10,
-        "sentiment_score": 0.242,
+        "mentions": 11,
+        "sentiment_score": 0.22,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 24,
+        "sentiment_pct": 22,
         "counts": {
           "bullish": 4,
           "bearish": 1,
-          "neutral": 5,
-          "total": 10
+          "neutral": 6,
+          "total": 11
+        }
+      },
+      {
+        "ticker": "SLV",
+        "mentions": 9,
+        "sentiment_score": 0.476,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 48,
+        "counts": {
+          "bullish": 7,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 9
         }
       },
       {
@@ -136,40 +138,40 @@
     ],
     "crypto": [
       {
-        "ticker": "MSTR",
-        "mentions": 7,
-        "sentiment_score": 0.063,
+        "ticker": "BTC",
+        "mentions": 8,
+        "sentiment_score": 0.445,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 6,
+        "sentiment_pct": 45,
         "counts": {
-          "bullish": 4,
+          "bullish": 6,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 8
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "mentions": 6,
+        "sentiment_score": -0.043,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 4,
+        "counts": {
+          "bullish": 3,
           "bearish": 3,
           "neutral": 0,
-          "total": 7
+          "total": 6
         }
       },
       {
-        "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.592,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 59,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 5
-        }
-      },
-      {
-        "ticker": "COIN",
+        "ticker": "ETH",
         "mentions": 2,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
+        "sentiment_score": 0.685,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 69,
         "counts": {
-          "bullish": 1,
-          "bearish": 1,
+          "bullish": 2,
+          "bearish": 0,
           "neutral": 0,
           "total": 2
         }
@@ -178,41 +180,28 @@
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 14,
-        "sentiment_score": 0.539,
+        "mentions": 13,
+        "sentiment_score": 0.531,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 54,
+        "sentiment_pct": 53,
         "counts": {
-          "bullish": 10,
+          "bullish": 9,
           "bearish": 0,
           "neutral": 4,
-          "total": 14
-        }
-      },
-      {
-        "ticker": "ONDS",
-        "mentions": 13,
-        "sentiment_score": 0.635,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 64,
-        "counts": {
-          "bullish": 11,
-          "bearish": 0,
-          "neutral": 2,
           "total": 13
         }
       },
       {
-        "ticker": "TSLA",
-        "mentions": 9,
-        "sentiment_score": 0.152,
+        "ticker": "ONDS",
+        "mentions": 12,
+        "sentiment_score": 0.63,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 15,
+        "sentiment_pct": 63,
         "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 5,
-          "total": 9
+          "bullish": 10,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 12
         }
       },
       {
@@ -225,6 +214,19 @@
           "bullish": 6,
           "bearish": 0,
           "neutral": 2,
+          "total": 8
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 8,
+        "sentiment_score": 0.09,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 9,
+        "counts": {
+          "bullish": 2,
+          "bearish": 1,
+          "neutral": 5,
           "total": 8
         }
       },
@@ -246,9 +248,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.69,
-    "pc_ratio": 0.96,
-    "sentiment_bullish_pct": 37,
+    "vix": 14.57,
+    "pc_ratio": 0.92,
+    "sentiment_bullish_pct": 35,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -256,7 +258,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 7.95,
-    "spread": 6.31,
+    "spread": 6.04,
     "position": 50
   },
   "action": {
