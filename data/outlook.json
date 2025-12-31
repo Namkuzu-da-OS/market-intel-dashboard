@@ -1,23 +1,23 @@
 {
-  "timestamp": "2025-12-31T09:04:06.277Z",
+  "timestamp": "2025-12-31T09:31:32.995Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 159,
+        "bullish": 160,
         "bearish": 42,
-        "neutral": 224,
-        "total": 425,
+        "neutral": 227,
+        "total": 429,
         "pct": 37
       },
       "news": {
-        "bullish": 31,
+        "bullish": 32,
         "bearish": 16,
         "neutral": 15,
-        "total": 62,
-        "pct": 50
+        "total": 63,
+        "pct": 51
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** MIXED/NEUTRAL with MEDIUM conviction - Sources present bifurcated outlook with bullish technicals/seasonality against bearish structural valuations and regulatory headwinds. Market showing indecision at year-end.\n\n📈 **Themes:** (1) Valuation extremes vs secular growth - US market cap-to-GDP at 218% record while AI/robotics/blockchain infrastructure promise multi-year tailwinds; (2) Regulatory tightening - Banking capital requirements, enterprise software guidance cuts, and fintech pressures creating sector-specific headwinds; (3) Institutional repositioning - Major players holding elevated cash (Berkshire 57% cash, $381.7B) while retail optimism persists on January seasonality.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, 1.9% away - active resistance), Put Wall $630 (143k OI, 8.3% away - dormant support). Max Pain $688. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, 0.1% away - active resistance), Put Wall $574.78 (122k OI, 7.2% away - dormant). Max Pain $620. Near active resistance: $630 (32k OI). Per Twitter: Precious metals breakdown confirmation, Nasdaq breadth deterioration near highs.",
+    "narrative": "📊 **Consensus:** Market displays cautious bullish positioning with medium-low conviction. Structural overvaluation concerns (218% market cap-to-GDP) and institutional de-risking (Buffett's $381.7B cash position) clash with technical reversal signals and crypto momentum, creating fragile near-term setup despite defensive dealer positioning.\n\n📈 **Themes:** (1) Institutional crypto adoption pathways versus regulatory uncertainty - stablecoin payment infrastructure growth competing with SEC enforcement actions, (2) Market valuation extremes and breadth deterioration - Nasdaq triple top formation with weakening internals despite headline strength, (3) Housing supply constraints and deregulatory tailwinds - measurable deficits creating multi-year structural support.\n\n🎯 **Levels:** SPY ($687.01): Call Wall $700 (144k OI, active resistance 1.9% away), Put Wall $630 (143k OI, dormant support). Max Pain $680. Near active support: $680 (60k OI). QQQ ($619.43): Call Wall $620 (39k OI, active resistance 0.1% away), Put Wall $574.78 (122k OI, dormant support). Max Pain $615. Near active resistance: $630 (32k OI), $640 (31k OI). /ES levels per Twitter: watching for breakout signals.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "AAPL",
       "TSLA",
-      "BTC",
-      "ETH"
+      "BTC"
     ],
     "key_themes": [
-      "Valuation extremes vs secular growth narratives",
-      "Regulatory tightening across banking/fintech/software",
-      "Institutional cash positioning vs retail optimism",
-      "AI/robotics/blockchain infrastructure tailwinds",
-      "January seasonality and technical setups"
+      "Valuation extremes and institutional de-risking",
+      "Crypto institutional adoption versus regulatory enforcement",
+      "Housing supply constraints and structural deficits",
+      "Market breadth deterioration despite headline strength",
+      "Rate policy uncertainty and Fed communication dependence"
     ],
     "risk_factors": [
-      "Record US market cap-to-GDP ratio 218% signaling overvaluation",
-      "Deteriorating market breadth despite headline strength",
-      "Regulatory enforcement cascading through enterprise software guidance cuts",
-      "Geopolitical tensions (Taiwan, Ukraine, semiconductor supply chains)",
-      "Fed 2026 rate-cut uncertainty with multiple officials signaling pause"
+      "Record 218% market cap-to-GDP ratio signaling overvaluation vulnerability",
+      "Institutional positioning headwinds - Buffett 57% cash, Apple reductions",
+      "Regulatory tightening across financial services and crypto (Fed supervisory framework, FHFA actions, SEC enforcement)",
+      "Earnings guidance cuts from bellwether firms (Workday, Fiserv) extending to broader sectors",
+      "Geopolitical flashpoints (Taiwan tensions, U.S.-China semiconductor friction) triggering flight-to-safety"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $687 current, max pain gravity toward $688, call wall resistance $700. QQQ: Testing max pain $620 (call wall), support at $590 if breaks. VIX 14.87 suggests low volatility regime.",
+    "intraday_levels": "SPY testing $687 with immediate Call Wall resistance at $700 (144k OI), active support at $680 Max Pain (60k OI). QQQ pinned near $620 Call Wall (39k OI) creating tight range",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Watch $700 call wall as major resistance (144k OI), $680 as near support (60k OI). Break below $680 targets $640 (100k OI). QQQ: $620 call wall caps upside, $590 support critical (78k OI), break targets $580 (108k OI). Precious metals breakdown signals risk-off.",
+    "swing_levels": "SPY: Major Put Wall support at $630 (143k OI) if current levels fail, dormant resistance at $730 (48k OI). QQQ: Downside risk to $590 (78k OI) then $580 (108k OI) if $615 Max Pain breaks",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 184937
+    "generation_time_ms": 185165
   },
   "trending": {
     "macro": [
@@ -258,7 +258,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 7.95,
-    "spread": 17.37,
+    "spread": 2.46,
     "position": 50
   },
   "action": {
