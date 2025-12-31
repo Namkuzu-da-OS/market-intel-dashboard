@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Energy Sector Opportunities: AI-Driven Power Demand Creates $720B Investment Runway" />
+  <meta property="og:description" content="Data centers projected to consume 11.7% of U.S. power by 2030. The highest-edge opportunities lie in overlooked infrastructure—midstream pipelines, grid equipment, and utility contractors—where record backlogs haven&#039;t been fully priced." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/macro/2025-12/energy-sector-opportunities-ai-driven-power-demand-creates-720b-investment-runway.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/energy-sector-opportunities-ai-driven-power-demand-1767193793732.jpg" />
+  <meta property="article:published_time" content="2025-12-31" />
+  <meta property="article:section" content="macro" />
+  <meta property="article:tag" content="$BOTZ" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Energy Sector Opportunities: AI-Driven Power Demand Creates $720B Investment Runway" />
+  <meta name="twitter:description" content="Data centers projected to consume 11.7% of U.S. power by 2030. The highest-edge opportunities lie in overlooked infrastructure—midstream pipelines, grid equipment, and utility contractors—where record backlogs haven&#039;t been fully priced." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/energy-sector-opportunities-ai-driven-power-demand-1767193793732.jpg" />
+    <title>Energy Sector Opportunities: AI-Driven Power Demand | Investment Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0f1a;
+            --bg-secondary: #111827;
+            --bg-card: #1a2234;
+            --bg-highlight: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-gold: #f59e0b;
+            --accent-gold-dim: #d97706;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --border-color: #334155;
+            --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Header */
+        .report-header {
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .report-meta {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-label {
+            color: var(--text-secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem 3rem;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 400px;
+            background: radial-gradient(ellipse at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .sector-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+        }
+
+        .hero h1 span {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        /* Key Stats Banner */
+        .stats-banner {
+            max-width: 1400px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1px;
+            background: var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Table of Contents */
+        .toc {
+            max-width: 1400px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+        }
+
+        .toc-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .toc-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            background: var(--bg-highlight);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .toc-item:hover {
+            border-color: var(--accent-gold);
+            transform: translateX(4px);
+        }
+
+        .toc-number {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        .toc-text {
+            font-size: 0.95rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 3rem;
+        }
+
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .article-content {
+            max-width: 800px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 4rem;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-number {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            background: rgba(245, 158, 11, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(217, 119, 6, 0.05) 100%);
+            border-left: 3px solid var(--accent-gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+
+        /* Data Cards */
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .data-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-card-title {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .data-card-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .badge-bullish {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+        }
+
+        .badge-neutral {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent-blue);
+        }
+
+        .badge-caution {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-gold);
+        }
+
+        /* Stock Tables */
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .stock-table th {
+            text-align: left;
+            padding: 1rem;
+            background: var(--bg-highlight);
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stock-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .stock-table tr:hover td {
+            background: rgba(245, 158, 11, 0.03);
+        }
+
+        .ticker {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            color: var(--accent-gold);
+        }
+
+        .upside {
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+
+        .yield-badge {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Tier Cards */
+        .tier-section {
+            margin: 2rem 0;
+        }
+
+        .tier-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tier-badge {
+            font-size: 0.75rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tier-1 { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; }
+        .tier-2 { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); border: 1px solid var(--accent-blue); }
+        .tier-3 { background: rgba(139, 92, 246, 0.2); color: var(--accent-purple); border: 1px solid var(--accent-purple); }
+        .tier-4 { background: rgba(239, 68, 68, 0.2); color: var(--accent-red); border: 1px solid var(--accent-red); }
+
+        .tier-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .key-metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .key-metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .metric-value {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .metric-value.highlight {
+            color: var(--accent-gold);
+        }
+
+        /* Top Picks List */
+        .top-pick {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .top-pick:last-child {
+            border-bottom: none;
+        }
+
+        .pick-rank {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            width: 24px;
+        }
+
+        .pick-info {
+            flex: 1;
+        }
+
+        .pick-ticker {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .pick-name {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Risk Box */
+        .risk-box {
+            background: rgba(239, 68, 68, 0.05);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .risk-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .risk-list {
+            list-style: none;
+        }
+
+        .risk-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .risk-list li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            color: var(--accent-red);
+            font-size: 0.8rem;
+        }
+
+        /* Allocation Chart */
+        .allocation-chart {
+            display: flex;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .alloc-segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .alloc-infra { background: var(--accent-gold); flex: 45; }
+        .alloc-nuclear { background: var(--accent-blue); flex: 27.5; color: #fff; }
+        .alloc-uranium { background: var(--accent-green); flex: 17.5; }
+        .alloc-contrarian { background: var(--accent-purple); flex: 10; color: #fff; }
+
+        .alloc-legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+        }
+
+        .legend-dot.infra { background: var(--accent-gold); }
+        .legend-dot.nuclear { background: var(--accent-blue); }
+        .legend-dot.uranium { background: var(--accent-green); }
+        .legend-dot.contrarian { background: var(--accent-purple); }
+
+        /* Footer */
+        .report-footer {
+            max-width: 1400px;
+            margin: 4rem auto 0;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        .footer-logo {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 500;
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .report-meta {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .stats-banner, .toc, .main-content, .report-footer {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .report-header, .sidebar, .toc {
+                display: none;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="report-header">
+        <div class="header-content">
+            <div class="logo">Research Report</div>
+            <div class="report-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Published:</span>
+                    <span>December 31, 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Sector:</span>
+                    <span>Energy & Utilities</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Horizon:</span>
+                    <span>2026-2030</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="sector-badge">
+            <span>⚡</span>
+            AI Infrastructure Investment Thesis
+        </div>
+        <h1>Energy Sector Opportunities: AI-Driven Power Demand Creates <span>$720B Investment Runway</span></h1>
+        <p class="hero-subtitle">Data centers projected to consume 11.7% of U.S. power by 2030. The highest-edge opportunities lie in overlooked infrastructure—midstream pipelines, grid equipment, and utility contractors—where record backlogs haven't been fully priced.</p>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">165%</div>
+                <div class="stat-label">Projected DC Demand Growth</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$720B</div>
+                <div class="stat-label">Global Grid Investment</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$320B</div>
+                <div class="stat-label">2025 Hyperscaler Capex</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">10+ GW</div>
+                <div class="stat-label">Nuclear PPAs Signed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">4 Years</div>
+                <div class="stat-label">Transformer Lead Times</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="toc">
+        <div class="toc-card">
+            <div class="toc-title">Report Sections</div>
+            <div class="toc-grid">
+                <a href="#demand" class="toc-item">
+                    <span class="toc-number">01</span>
+                    <span class="toc-text">The Demand Supercycle</span>
+                </a>
+                <a href="#nuclear" class="toc-item">
+                    <span class="toc-number">02</span>
+                    <span class="toc-text">Nuclear: Baseload Play</span>
+                </a>
+                <a href="#uranium" class="toc-item">
+                    <span class="toc-number">03</span>
+                    <span class="toc-text">Uranium Fuel Cycle</span>
+                </a>
+                <a href="#gas" class="toc-item">
+                    <span class="toc-number">04</span>
+                    <span class="toc-text">Natural Gas Infrastructure</span>
+                </a>
+                <a href="#grid" class="toc-item">
+                    <span class="toc-number">05</span>
+                    <span class="toc-text">Grid Infrastructure Bottleneck</span>
+                </a>
+                <a href="#policy" class="toc-item">
+                    <span class="toc-number">06</span>
+                    <span class="toc-text">Policy Tailwinds</span>
+                </a>
+                <a href="#edge" class="toc-item">
+                    <span class="toc-number">07</span>
+                    <span class="toc-text">Edge Analysis</span>
+                </a>
+                <a href="#framework" class="toc-item">
+                    <span class="toc-number">08</span>
+                    <span class="toc-text">Investment Framework</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            <article class="article-content">
+                
+                <!-- Section 1: Demand -->
+                <section id="demand" class="section">
+                    <div class="section-header">
+                        <span class="section-number">01</span>
+                        <h2>Quantifying the Demand Supercycle</h2>
+                    </div>
+                    
+                    <p>The convergence of AI training, inference workloads, and hyperscaler expansion is driving unprecedented electricity demand. The International Energy Agency projects global data center electricity consumption will reach <strong>945 TWh by 2030</strong>—equivalent to Japan's total consumption today—representing a <strong>130% increase</strong> from 2024's 415 TWh.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Goldman Sachs projects U.S. data centers will grow from 3% of power consumption to 8% by 2030</strong>, contributing 90 basis points to a 2.4% overall demand CAGR after a decade of flat growth.</p>
+                    </div>
+                    
+                    <p>Hyperscaler capital expenditure validates this trajectory. Combined 2025 capex for Microsoft, Google, Amazon, and Meta is projected at <strong>$320 billion</strong>, up from $241 billion in 2024, with CreditSights forecasting $602 billion by 2026—approximately 75% directed toward AI infrastructure.</p>
+
+                    <h3>Regional Concentration Creates Acute Bottlenecks</h3>
+                    
+                    <p>Virginia's "Data Center Alley" in Loudoun County—the world's largest data center market—consumed <strong>26% of the state's total electricity</strong> in 2023, with Dominion Energy projecting an <strong>183% demand increase</strong> by 2040. Texas's ERCOT saw large load interconnection requests surge 270% in 2025, with data centers comprising 72.9% of all requests.</p>
+
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <span class="data-card-title">PJM Interconnection Queue Backlog</span>
+                            <span class="data-card-badge badge-caution">Critical Bottleneck</span>
+                        </div>
+                        <p style="margin-bottom: 0; font-size: 0.95rem;">The queue has swelled to <strong>130 GW</strong> of capacity-eligible projects, with timelines stretching from under 2 years in 2008 to <strong>8+ years today</strong>. This constraint favors existing generation assets and behind-the-meter solutions over new builds requiring interconnection.</p>
+                    </div>
+                </section>
+
+                <!-- Section 2: Nuclear -->
+                <section id="nuclear" class="section">
+                    <div class="section-header">
+                        <span class="section-number">02</span>
+                        <h2>Nuclear: The Irreplaceable Baseload Play</h2>
+                    </div>
+                    
+                    <p>Nuclear energy has emerged as the cornerstone of hyperscaler power strategies given its 24/7 carbon-free baseload characteristics. Major tech companies have signed <strong>10+ GW of nuclear PPAs</strong> in the past year, validating the thesis.</p>
+
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <span class="data-card-title">Constellation Energy (CEG)</span>
+                            <span class="data-card-badge badge-bullish">Dominant Position</span>
+                        </div>
+                        <table class="stock-table">
+                            <tr>
+                                <td><strong>Nuclear Fleet</strong></td>
+                                <td>21 GW from 23 units (largest U.S. fleet)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Microsoft Deal</strong></td>
+                                <td>20-year PPA, 835 MW Three Mile Island restart (2027)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Meta Deal</strong></td>
+                                <td>20-year agreement for 1.1 GW from Clinton</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Calpine Acquisition</strong></td>
+                                <td>$16.4B, creates ~60 GW combined capacity</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Valuation</strong></td>
+                                <td>41x trailing P/E (sector avg: 18x)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <p><strong>Vistra Corp (VST)</strong> offers similar nuclear exposure with Texas concentration, operating 6.4 GW of nuclear capacity including Comanche Peak. Its <strong>261% 2024 return</strong> (best in the S&P 500) pushed trailing P/E to 58x, though forward P/E of ~18x reflects expected earnings growth. Texas's ERCOT market could capture <strong>35-40% of incremental U.S. power demand</strong> by 2030.</p>
+
+                    <p><strong>Talen Energy (TLN)</strong> represents the highest-leverage nuclear play after restructuring its Amazon relationship into an $18 billion, 17-year front-of-the-meter PPA for 1,920 MW from Susquehanna. The deal projects <strong>50% cash flow per share growth</strong> by 2030-2032.</p>
+                </section>
+
+                <!-- Section 3: Uranium -->
+                <section id="uranium" class="section">
+                    <div class="section-header">
+                        <span class="section-number">03</span>
+                        <h2>Uranium Fuel Cycle: Structural Deficit</h2>
+                    </div>
+                    
+                    <p>The nuclear renaissance requires fuel, and supply-demand dynamics favor uranium producers. Goldman Sachs projects a <strong>1.91 billion pound cumulative deficit</strong> through 2045, with spot prices at ~$80/lb targeting $91/lb by end of 2026.</p>
+
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <span class="data-card-title">Cameco (CCJ)</span>
+                            <span class="data-card-badge badge-bullish">Tier-1 Assets</span>
+                        </div>
+                        <p style="margin-bottom: 0.75rem; font-size: 0.95rem;">World's largest publicly traded uranium producer with irreplaceable Tier-1 assets including McArthur River (world's highest-grade deposit) in geopolitically stable Canada. Contract pricing of $70-130/lb with ~$100 midpoint provides leverage to rising prices.</p>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <span class="data-card-title">Centrus Energy (LEU)</span>
+                            <span class="data-card-badge badge-caution">Strategic Monopoly</span>
+                        </div>
+                        <p style="margin-bottom: 0.75rem; font-size: 0.95rem;">The <strong>only U.S. company licensed to produce HALEU</strong> (high-assay low-enriched uranium)—required for all advanced reactor designs including TerraPower, X-energy, and Oklo. Finalist for ~$900 million in DOE task orders. Trades at ~50x trailing earnings with significant execution risk.</p>
+                    </div>
+                </section>
+
+                <!-- Section 4: Natural Gas -->
+                <section id="gas" class="section">
+                    <div class="section-header">
+                        <span class="section-number">04</span>
+                        <h2>Natural Gas: The Indispensable Transition Fuel</h2>
+                    </div>
+                    
+                    <p>Goldman Sachs projects <strong>60% of incremental data center demand</strong> will be met by natural gas, with 40% from renewables. The EIA projects <strong>18.7 GW of new CCGT capacity</strong> through 2028, with 10.6 GW targeted for 2028 alone.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Midstream pipelines offer the highest edge</strong>—indirect exposure where AI upside is "gravy to existing forecasts" rather than fully priced. 6-8% dividend yields with contracted revenue growth.</p>
+                    </div>
+
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Ticker</th>
+                                <th>Key Catalyst</th>
+                                <th>Yield</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Kinder Morgan</strong></td>
+                                <td><span class="ticker">KMI</span></td>
+                                <td>$9.3B backlog, 50% power-related, 1.6 Bcf/d for data centers</td>
+                                <td><span class="yield-badge">6.1%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Williams Companies</strong></td>
+                                <td><span class="ticker">WMB</span></td>
+                                <td>Transports 33% of U.S. gas; $5.1B Power Innovation strategy</td>
+                                <td><span class="yield-badge">4.8%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Energy Transfer</strong></td>
+                                <td><span class="ticker">ET</span></td>
+                                <td>Connected to 55-60% of Texas power plants; 26% upside to FV</td>
+                                <td><span class="yield-badge">8.2%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Section 5: Grid Infrastructure -->
+                <section id="grid" class="section">
+                    <div class="section-header">
+                        <span class="section-number">05</span>
+                        <h2>Grid Infrastructure: The Most Overlooked Bottleneck</h2>
+                    </div>
+                    
+                    <p>Transformer and switchgear shortages create a structural advantage for equipment manufacturers. Large power transformer lead times have extended to <strong>210 weeks (4 years)</strong> per NERC, with prices <strong>4-6x pre-2022 levels</strong>.</p>
+
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <span class="data-card-title">Vertiv Holdings (VRT)</span>
+                            <span class="data-card-badge badge-bullish">Pure-Play DC Infra</span>
+                        </div>
+                        <table class="stock-table">
+                            <tr>
+                                <td><strong>Backlog</strong></td>
+                                <td>$9.5 billion (up 30% YoY)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Book-to-Bill</strong></td>
+                                <td>1.4x (orders outpacing shipments)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Q3 2025 Orders</strong></td>
+                                <td>+60% YoY organic growth</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Capacity</strong></td>
+                                <td>Doubling switchgear/busway by end 2025</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <p><strong>Quanta Services (PWR)</strong> holds a record <strong>$39.2 billion backlog</strong> with revenues growing 21% YoY. <strong>MasTec (MTZ)</strong> offers similar tailwinds at lower valuation—<strong>$15.9 billion record backlog</strong> (up 24% YoY) while trading 33% below 2014 highs.</p>
+                </section>
+
+                <!-- Section 6: Policy -->
+                <section id="policy" class="section">
+                    <div class="section-header">
+                        <span class="section-number">06</span>
+                        <h2>Policy Tailwinds: Bipartisan Nuclear Support</h2>
+                    </div>
+                    
+                    <p>The Inflation Reduction Act's nuclear Production Tax Credit (Section 45U) provides <strong>$15/MWh</strong> for existing plants—estimated to deliver $30 billion through 2032. Nuclear is <strong>exempt from accelerated phaseouts</strong> affecting other clean energy technologies.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>DOE Loan Programs Office</strong> expected to deploy majority of authority toward nuclear projects. Already closed $1B loan for Constellation's TMI restart and $1.52B guarantee for Holtec's Palisades restart.</p>
+                    </div>
+
+                    <p>State-level support is strengthening: Illinois lifted its 30-year moratorium on new nuclear construction. Pennsylvania's Governor Shapiro actively supports the Three Mile Island restart. FERC Order 2023 reforms address interconnection bottlenecks through cluster studies and "first-ready, first-served" prioritization.</p>
+                </section>
+
+                <!-- Section 7: Edge Analysis -->
+                <section id="edge" class="section">
+                    <div class="section-header">
+                        <span class="section-number">07</span>
+                        <h2>Edge Analysis: Avoiding Crowded Trades</h2>
+                    </div>
+                    
+                    <p>The nuclear/utility AI trade has become <strong>one of the most crowded positions</strong>, with major quant funds increasing AI infrastructure holdings ~30-35% in Q3 2025. However, utility sector P/E premium versus the equal-weight S&P 500 stands at just 6%—historically normal—suggesting room for re-rating.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Morningstar's Stephen Ellis:</strong> "I prefer companies with more indirect exposure where any AI and data center upside is 'more gravy to existing forecasts versus risking disappointment with more expensive stocks.'"</p>
+                    </div>
+
+                    <h3>Contrarian Opportunities</h3>
+                    
+                    <p><strong>Edison International (EIX)</strong> trades at just <strong>9x earnings</strong> (half sector average) due to wildfire litigation overhang. A PEG ratio of 0.6 signals undervaluation. Positive resolution of liabilities could trigger significant re-rating.</p>
+
+                    <p><strong>Fluence Energy (FLNC)</strong>, the global grid-scale battery leader (Siemens/AES joint venture), trades at just <strong>0.6x sales</strong>—distressed pricing despite being global leader in storage critical for enabling intermittent renewables.</p>
+
+                    <div class="risk-box">
+                        <div class="risk-title">
+                            <span>⚠️</span>
+                            Key Risk Factors
+                        </div>
+                        <ul class="risk-list">
+                            <li><strong>Efficiency improvements</strong> could reduce power needs—Google reports substantial drops in electricity per AI query</li>
+                            <li><strong>Demand forecasts may not materialize</strong>—IEA's Headwinds Case sees demand plateauing at 700 TWh vs. 945 TWh</li>
+                            <li><strong>Interest rate sensitivity</strong> affects capital-intensive utilities relying on debt financing</li>
+                            <li><strong>Regulatory uncertainty</strong>—FERC rejected Talen's original Amazon behind-the-meter deal</li>
+                            <li><strong>Ratepayer backlash</strong>—Carnegie Mellon estimates 8% average electricity bill increases by 2030</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 8: Investment Framework -->
+                <section id="framework" class="section">
+                    <div class="section-header">
+                        <span class="section-number">08</span>
+                        <h2>Actionable Investment Framework</h2>
+                    </div>
+                    
+                    <!-- Tier 1 -->
+                    <div class="tier-section">
+                        <div class="tier-header">
+                            <span class="tier-badge tier-1">Tier 1</span>
+                            <span class="tier-description">Highest Conviction • Core Positions (5-7% each)</span>
+                        </div>
+                        <table class="stock-table">
+                            <thead>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Thesis</th>
+                                    <th>Entry</th>
+                                    <th>Catalyst</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="ticker">ET</span></td>
+                                    <td>Indirect AI exposure at value; <span class="upside">26% upside</span>; 8.2% yield</td>
+                                    <td>Current prices attractive</td>
+                                    <td>2025-26 DC contracts</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">KMI</span></td>
+                                    <td>50% of $9.3B backlog power-related; 6.1% yield</td>
+                                    <td>~$19, <span class="upside">16% upside</span></td>
+                                    <td>South System 4 (2028)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">MTZ</span></td>
+                                    <td>Record $15.9B backlog; 33% below 2014 highs</td>
+                                    <td>Current prices = value</td>
+                                    <td>Backlog growth 2026</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">CCJ</span></td>
+                                    <td>Tier-1 uranium assets; structural supply deficit</td>
+                                    <td>Accumulate on weakness</td>
+                                    <td>$91/lb uranium EOY 2026</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Tier 2 -->
+                    <div class="tier-section">
+                        <div class="tier-header">
+                            <span class="tier-badge tier-2">Tier 2</span>
+                            <span class="tier-description">High Conviction with Valuation Considerations (3-5% each)</span>
+                        </div>
+                        <table class="stock-table">
+                            <thead>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Thesis</th>
+                                    <th>Entry</th>
+                                    <th>Catalyst</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="ticker">CEG</span></td>
+                                    <td>Dominant nuclear fleet; multi-decade contracts</td>
+                                    <td>Pullbacks to $300-320</td>
+                                    <td>TMI restart 2027</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">VST</span></td>
+                                    <td>Texas positioning; nuclear + gas; integrated retail</td>
+                                    <td>Fwd P/E ~18x reasonable</td>
+                                    <td>$6.8-7.6B EBITDA 2026</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">VRT</span></td>
+                                    <td>Pure-play DC infrastructure; 1.4x book-to-bill</td>
+                                    <td>38x FY25 premium but justified</td>
+                                    <td>Capacity expansion</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">PWR</span></td>
+                                    <td>Dominant utility contractor; $39.2B backlog</td>
+                                    <td>Better on pullbacks</td>
+                                    <td>Multi-year transmission</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="tier-section">
+                        <div class="tier-header">
+                            <span class="tier-badge tier-3">Tier 3</span>
+                            <span class="tier-description">Contrarian & Speculative (2-3% each)</span>
+                        </div>
+                        <table class="stock-table">
+                            <thead>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Thesis</th>
+                                    <th>Entry</th>
+                                    <th>Catalyst</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="ticker">EIX</span></td>
+                                    <td>9x P/E; wildfire resolution potential</td>
+                                    <td>Current prices embed discount</td>
+                                    <td>Legal developments 2025-26</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">FLNC</span></td>
+                                    <td>0.6x sales; global storage leader mispriced</td>
+                                    <td>Accumulate on stabilization</td>
+                                    <td>Battery demand inflection</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">LEU</span></td>
+                                    <td>HALEU monopoly; national security thesis</td>
+                                    <td>Position size reflects risk</td>
+                                    <td>DOE awards 2025-26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Tier 4 -->
+                    <div class="tier-section">
+                        <div class="tier-header">
+                            <span class="tier-badge tier-4">Tier 4</span>
+                            <span class="tier-description">Avoid or Underweight at Current Valuations</span>
+                        </div>
+                        <table class="stock-table">
+                            <thead>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Concern</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="ticker">OKLO</span></td>
+                                    <td>$10B+ pre-revenue valuation; 5+ year commercialization timeline</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">SMR</span></td>
+                                    <td>Idaho project cancellation; ongoing execution challenges</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ticker">GEV</span></td>
+                                    <td>28% off January highs but turbine orders may peak; cyclical risk</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Recommended Allocation Framework</h3>
+                    
+                    <p>Total AI-energy allocation should not exceed <strong>25-30% of portfolio</strong>. Within this allocation:</p>
+
+                    <div class="data-card">
+                        <div class="allocation-chart">
+                            <div class="alloc-segment alloc-infra">45%</div>
+                            <div class="alloc-segment alloc-nuclear">28%</div>
+                            <div class="alloc-segment alloc-uranium">17%</div>
+                            <div class="alloc-segment alloc-contrarian">10%</div>
+                        </div>
+                        <div class="alloc-legend">
+                            <div class="legend-item">
+                                <span class="legend-dot infra"></span>
+                                Infrastructure (40-50%)
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot nuclear"></span>
+                                Nuclear Fleet (25-30%)
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot uranium"></span>
+                                Uranium Cycle (15-20%)
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot contrarian"></span>
+                                Contrarian (10-15%)
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>The investment horizon is <strong>multi-year</strong>. Near-term catalysts include 2026 earnings inflections at Vistra and Talen, additional hyperscaler nuclear PPAs through 2025-2026, and TMI/Palisades restarts in 2026-2027. The full demand thesis plays out through 2030 as IEA's projected 945 TWh materializes.</p>
+                </section>
+
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <div class="sidebar-title">Key Projections</div>
+                    <div class="key-metric">
+                        <span class="metric-label">DC Power Share 2030</span>
+                        <span class="metric-value highlight">11.7%</span>
+                    </div>
+                    <div class="key-metric">
+                        <span class="metric-label">DC Power Share 2024</span>
+                        <span class="metric-value">3.7%</span>
+                    </div>
+                    <div class="key-metric">
+                        <span class="metric-label">Global DC Demand 2030</span>
+                        <span class="metric-value">945 TWh</span>
+                    </div>
+                    <div class="key-metric">
+                        <span class="metric-label">New Gas Capacity</span>
+                        <span class="metric-value">18.7 GW</span>
+                    </div>
+                    <div class="key-metric">
+                        <span class="metric-label">Uranium Target Price</span>
+                        <span class="metric-value highlight">$91/lb</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <div class="sidebar-title">Top Picks by Category</div>
+                    
+                    <div style="font-size: 0.75rem; color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 500;">MIDSTREAM</div>
+                    <div class="top-pick">
+                        <span class="pick-rank">1</span>
+                        <div class="pick-info">
+                            <div class="pick-ticker">ET</div>
+                            <div class="pick-name">Energy Transfer</div>
+                        </div>
+                    </div>
+                    <div class="top-pick">
+                        <span class="pick-rank">2</span>
+                        <div class="pick-info">
+                            <div class="pick-ticker">KMI</div>
+                            <div class="pick-name">Kinder Morgan</div>
+                        </div>
+                    </div>
+
+                    <div style="font-size: 0.75rem; color: var(--accent-blue); margin: 1rem 0 0.5rem; font-weight: 500;">NUCLEAR</div>
+                    <div class="top-pick">
+                        <span class="pick-rank">1</span>
+                        <div class="pick-info">
+                            <div class="pick-ticker">CEG</div>
+                            <div class="pick-name">Constellation Energy</div>
+                        </div>
+                    </div>
+                    <div class="top-pick">
+                        <span class="pick-rank">2</span>
+                        <div class="pick-info">
+                            <div class="pick-ticker">VST</div>
+                            <div class="pick-name">Vistra Corp</div>
+                        </div>
+                    </div>
+
+                    <div style="font-size: 0.75rem; color: var(--accent-green); margin: 1rem 0 0.5rem; font-weight: 500;">INFRASTRUCTURE</div>
+                    <div class="top-pick">
+                        <span class="pick-rank">1</span>
+                        <div class="pick-info">
+                            <div class="pick-ticker">VRT</div>
+                            <div class="pick-name">Vertiv Holdings</div>
+                        </div>
+                    </div>
+                    <div class="top-pick">
+                        <span class="pick-rank">2</span>
+                        <div class="pick-info">
+                            <div class="pick-ticker">MTZ</div>
+                            <div class="pick-name">MasTec</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <div class="sidebar-title">Investment Horizon</div>
+                    <div class="key-metric">
+                        <span class="metric-label">Primary Window</span>
+                        <span class="metric-value">2026-2030</span>
+                    </div>
+                    <div class="key-metric">
+                        <span class="metric-label">Max Theme Allocation</span>
+                        <span class="metric-value highlight">25-30%</span>
+                    </div>
+                    <div class="key-metric">
+                        <span class="metric-label">Next Catalyst</span>
+                        <span class="metric-value">Q1 2026</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="report-footer">
+        <div class="footer-content">
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> This report is for informational purposes only and does not constitute investment advice. Past performance is not indicative of future results. Always conduct your own due diligence before making investment decisions.
+            </div>
+            <div class="footer-logo">Research Report • December 2025</div>
+        </div>
+    </footer>
+
+</body>
+</html>
