@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Intel&#039;s contrarian case: Value GPUs meet existential turnaround" />
+  <meta property="og:description" content="Intel&#039;s Value GPU Opportunity Meets Existential Turnaround" />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/macro/2025-12/intel-s-contrarian-case-value-gpus-meet-existential-turnaround.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/intel-s-contrarian-case-value-gpus-meet-existentia-1767226691870.jpg" />
+  <meta property="article:published_time" content="2025-12-31" />
+  <meta property="article:section" content="macro" />
+  <meta property="article:tag" content="$INTC" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Intel&#039;s contrarian case: Value GPUs meet existential turnaround" />
+  <meta name="twitter:description" content="Intel&#039;s Value GPU Opportunity Meets Existential Turnaround" />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/intel-s-contrarian-case-value-gpus-meet-existentia-1767226691870.jpg" />
+    <title>Intel Investment Analysis | Contrarian Thesis Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #111113;
+            --bg-tertiary: #18181b;
+            --bg-card: #1c1c1f;
+            --border-color: #27272a;
+            --border-accent: #3f3f46;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-purple: #8b5cf6;
+            --gradient-1: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            --gradient-2: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            --gradient-3: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            --font-serif: 'Instrument Serif', Georgia, serif;
+            --font-sans: 'DM Sans', -apple-system, sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.03;
+            background-image: 
+                linear-gradient(var(--text-muted) 1px, transparent 1px),
+                linear-gradient(90deg, var(--text-muted) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        .bg-gradient-orb {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .orb-1 {
+            top: -200px;
+            right: -200px;
+            background: var(--accent-blue);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-2 {
+            bottom: -200px;
+            left: -200px;
+            background: var(--accent-cyan);
+            animation: float 25s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(30px, 30px); }
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .nav-logo {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .nav-logo span {
+            color: var(--accent-cyan);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-date {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        .hero-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent-cyan);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards 0.2s;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            max-width: 900px;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards 0.4s;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards 0.6s;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards 0.8s;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .meta-label {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--text-muted);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .meta-value {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Key Metrics Strip */
+        .metrics-strip {
+            position: relative;
+            z-index: 1;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 0;
+            overflow: hidden;
+        }
+
+        .metrics-container {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .metric-card {
+            text-align: center;
+            min-width: 140px;
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-value.positive { color: var(--accent-emerald); }
+        .metric-value.negative { color: var(--accent-red); }
+        .metric-value.neutral { color: var(--accent-amber); }
+        .metric-value.highlight { 
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Main Content */
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 4rem;
+        }
+
+        @media (max-width: 1024px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Article Styles */
+        .article {
+            max-width: 720px;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--accent-cyan);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-label::before {
+            content: '';
+            width: 24px;
+            height: 1px;
+            background: var(--accent-cyan);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .article p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.0625rem;
+        }
+
+        .article strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+
+        /* Data Tables */
+        .data-table-wrapper {
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .data-table tr:hover td {
+            background: var(--bg-secondary);
+        }
+
+        .data-table .positive { color: var(--accent-emerald); }
+        .data-table .negative { color: var(--accent-red); }
+
+        /* Comparison Cards */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .comparison-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .comparison-card.featured {
+            border-color: var(--accent-cyan);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, transparent 100%);
+        }
+
+        .comparison-card h4 {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .comparison-card .price {
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .comparison-card .perf {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .comparison-card .badge {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            margin-top: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .badge.value { background: rgba(16, 185, 129, 0.2); color: var(--accent-emerald); }
+        .badge.premium { background: rgba(139, 92, 246, 0.2); color: var(--accent-purple); }
+        .badge.flagship { background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .toc-title {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .toc-list a:hover {
+            color: var(--text-primary);
+            background: var(--bg-tertiary);
+        }
+
+        .toc-list a::before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .toc-list a:hover::before {
+            opacity: 1;
+        }
+
+        /* Verdict Box */
+        .verdict-box {
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-tertiary) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .verdict-title {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+        }
+
+        .verdict-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .rating-bar {
+            flex: 1;
+            height: 6px;
+            background: var(--bg-primary);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .rating-fill {
+            height: 100%;
+            background: var(--gradient-3);
+            border-radius: 3px;
+            width: 35%;
+        }
+
+        .rating-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent-amber);
+        }
+
+        .verdict-targets {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .target {
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-primary);
+            border-radius: 8px;
+        }
+
+        .target-label {
+            font-size: 0.625rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.25rem;
+        }
+
+        .target-value {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .target.bull .target-value { color: var(--accent-emerald); }
+        .target.bear .target-value { color: var(--accent-red); }
+
+        /* Chart Container */
+        .chart-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .chart-title {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .bar-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bar-label {
+            width: 100px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 24px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--text-primary);
+            transition: width 1s ease;
+        }
+
+        .bar-fill.nvidia { background: var(--gradient-2); }
+        .bar-fill.amd { background: var(--accent-red); }
+        .bar-fill.intel { background: var(--gradient-1); }
+
+        /* Timeline */
+        .timeline {
+            margin: 2rem 0;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.25rem;
+            width: 10px;
+            height: 10px;
+            background: var(--bg-primary);
+            border: 2px solid var(--accent-cyan);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content p {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Bull/Bear Section */
+        .thesis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .thesis-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .thesis-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .thesis-card.bull {
+            border-top: 3px solid var(--accent-emerald);
+        }
+
+        .thesis-card.bear {
+            border-top: 3px solid var(--accent-red);
+        }
+
+        .thesis-card h4 {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .thesis-card.bull h4 { color: var(--accent-emerald); }
+        .thesis-card.bear h4 { color: var(--accent-red); }
+
+        .thesis-card ul {
+            list-style: none;
+        }
+
+        .thesis-card li {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .thesis-card li:last-child {
+            border-bottom: none;
+        }
+
+        .thesis-card li::before {
+            content: '→';
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        .footer {
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .footer-meta {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                padding: 6rem 1.5rem 3rem;
+            }
+            
+            .hero-meta {
+                gap: 1.5rem;
+            }
+            
+            .metrics-container {
+                gap: 2rem;
+            }
+            
+            .content {
+                padding: 3rem 1.5rem;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .live-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--accent-emerald);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .live-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent-emerald);
+            border-radius: 50%;
+            animation: pulse 2s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-gradient-orb orb-1"></div>
+    <div class="bg-gradient-orb orb-2"></div>
+
+    <nav class="nav">
+        <div class="nav-logo">Research<span>/</span>Analysis</div>
+        <ul class="nav-links">
+            <li><a href="#thesis">Thesis</a></li>
+            <li><a href="#gpu">GPU Analysis</a></li>
+            <li><a href="#fundamentals">Fundamentals</a></li>
+            <li><a href="#foundry">Foundry</a></li>
+            <li><a href="#verdict">Verdict</a></li>
+        </ul>
+        <div class="nav-date">Dec 2024</div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-label">Contrarian Investment Thesis</div>
+        <h1 class="hero-title">Intel's <em>Value GPU</em> Opportunity Meets Existential Turnaround</h1>
+        <p class="hero-subtitle">As Nvidia and AMD race upmarket, can Intel capture the value segment while executing one of the most ambitious turnarounds in semiconductor history?</p>
+        <div class="hero-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ticker</span>
+                <span class="meta-value">NASDAQ: INTC</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Current Price</span>
+                <span class="meta-value">~$20</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Market Cap</span>
+                <span class="meta-value">$86B</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Thesis Type</span>
+                <span class="meta-value">High-Risk Turnaround</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="metrics-strip">
+        <div class="metrics-container">
+            <div class="metric-card">
+                <div class="metric-value highlight">$249</div>
+                <div class="metric-label">Arc B580 MSRP</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value positive">+11%</div>
+                <div class="metric-label">vs RTX 4060 @ 1440p</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value negative">-$13.4B</div>
+                <div class="metric-label">FY24 Foundry Loss</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value neutral">$11.1B</div>
+                <div class="metric-label">Gov't Support</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value neutral">1.0x</div>
+                <div class="metric-label">Price/Book</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content">
+        <div class="content-grid">
+            <article class="article">
+                
+                <section class="section" id="thesis">
+                    <div class="section-label">Executive Summary</div>
+                    <h2 class="section-title">The Contrarian Case</h2>
+                    <p>Intel's Arc B580 has quietly become <strong>the best value GPU on the market</strong> at $249, outperforming Nvidia's RTX 4060 by 11% at 1440p while costing 17% less. But this success story masks a far more complex investment thesis.</p>
+                    <p>While the consumer GPU opportunity is real, it represents a sideshow to Intel's existential challenges: a foundry business hemorrhaging <strong>$13.4 billion annually</strong>, fierce competition from AMD and Nvidia, and a stock trading near book value.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Core Thesis:</strong> The bull case rests not on Arc GPUs capturing market share—Intel holds less than 1% of the discrete GPU market—but on whether the company can execute one of the most ambitious turnarounds in semiconductor history, backed by unprecedented government support.</p>
+                    </div>
+                </section>
+
+                <section class="section" id="gpu">
+                    <div class="section-label">GPU Business Analysis</div>
+                    <h2 class="section-title">Arc Battlemage: Genuine Value Disruption</h2>
+                    <p>Intel's Battlemage-generation Arc B580, launched December 2024, genuinely disrupts the budget GPU segment. The value proposition is compelling on paper and in benchmarks.</p>
+                    
+                    <div class="comparison-grid">
+                        <div class="comparison-card featured">
+                            <h4>Intel Arc B580</h4>
+                            <div class="price">$249</div>
+                            <div class="perf">12GB VRAM • 10-15% faster @ 1440p</div>
+                            <span class="badge value">Best Value</span>
+                        </div>
+                        <div class="comparison-card">
+                            <h4>Nvidia RTX 4060</h4>
+                            <div class="price">$299</div>
+                            <div class="perf">8GB VRAM • Baseline</div>
+                            <span class="badge premium">Mature Drivers</span>
+                        </div>
+                        <div class="comparison-card">
+                            <h4>AMD RX 9070 XT</h4>
+                            <div class="price">$599</div>
+                            <div class="perf">16GB VRAM • High-end</div>
+                            <span class="badge premium">Mid-High Tier</span>
+                        </div>
+                        <div class="comparison-card">
+                            <h4>Nvidia RTX 5090</h4>
+                            <div class="price">$1,999+</div>
+                            <div class="perf">32GB VRAM • Flagship</div>
+                            <span class="badge flagship">Enthusiast</span>
+                        </div>
+                    </div>
+
+                    <p>In demanding modern games like Horizon Forbidden West and Cyberpunk 2077, the B580's <strong>50% VRAM advantage</strong> (12GB vs 8GB) translates to 15-50% better performance. Ray tracing performance leads the RTX 4060 by approximately 28% at 1440p.</p>
+
+                    <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem;">Critical Limitations</h3>
+                    <p>However, the investment thesis faces significant constraints:</p>
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Market share is negligible.</strong> Intel holds ~1% of discrete GPU market. Nvidia controls 82-92%.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>No manufacturing cost advantage.</strong> Arc GPUs use TSMC 5nm/4nm—same foundry as AMD. Identical wafer costs.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Driver challenges persist.</strong> DX11/DX9 legacy games remain problematic.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>No high-end competitor.</strong> Nothing to challenge RTX 5080 ($999) or 5090 ($1,999).</li>
+                    </ul>
+
+                    <div class="chart-container">
+                        <div class="chart-title">Discrete GPU Market Share (2024)</div>
+                        <div class="bar-chart">
+                            <div class="bar-row">
+                                <span class="bar-label">Nvidia</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill nvidia" style="width: 88%;">88%</div>
+                                </div>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-label">AMD</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill amd" style="width: 11%;">11%</div>
+                                </div>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-label">Intel</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill intel" style="width: 1%;">~1%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>The discrete consumer GPU market totals approximately <strong>$12-16 billion annually</strong>. Even capturing 5% would generate only $600-800 million in revenue—meaningful for a GPU division, but marginal against Intel's $53 billion consolidated revenue.</p>
+                </section>
+
+                <section class="section" id="fundamentals">
+                    <div class="section-label">Financial Analysis</div>
+                    <h2 class="section-title">A Company in Distress</h2>
+                    <p>Intel's financial position has deteriorated sharply, raising questions about whether the company can sustain multi-year turnaround investments.</p>
+
+                    <div class="data-table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>FY2024</th>
+                                    <th>FY2021 (Peak)</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Revenue</td>
+                                    <td>$53.1B</td>
+                                    <td>$79.0B</td>
+                                    <td class="negative">-33%</td>
+                                </tr>
+                                <tr>
+                                    <td>Gross Margin</td>
+                                    <td>32.7%</td>
+                                    <td>55.4%</td>
+                                    <td class="negative">-22.7 ppts</td>
+                                </tr>
+                                <tr>
+                                    <td>Operating Margin</td>
+                                    <td>-22.0%</td>
+                                    <td>+24.6%</td>
+                                    <td class="negative">-46.6 ppts</td>
+                                </tr>
+                                <tr>
+                                    <td>Net Income</td>
+                                    <td>-$18.8B</td>
+                                    <td>$19.9B</td>
+                                    <td class="negative">Loss</td>
+                                </tr>
+                                <tr>
+                                    <td>Free Cash Flow</td>
+                                    <td>-$2.2B</td>
+                                    <td>+$11.3B</td>
+                                    <td class="negative">Negative</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>The Client Computing Group (PC CPUs) remains profitable at <strong>$10.9 billion operating income</strong> on $30.3 billion revenue. However, Intel Foundry lost <strong>$13.4 billion</strong> in FY2024 alone—erasing all product profitability and more.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Valuation Signal:</strong> Intel trades at approximately <strong>1.0x book value</strong>—a level typically reserved for companies investors believe cannot earn adequate returns on equity. For comparison, AMD trades at 4.5x book and Nvidia at 40x.</p>
+                    </div>
+
+                    <p>The company has <strong>$22 billion in liquidity</strong> against <strong>$50 billion in total debt</strong>. Intel <strong>suspended its dividend</strong> starting Q4 2024 and reduced headcount by 15,000+ employees (15% reduction), targeting $10 billion in cost savings.</p>
+                </section>
+
+                <section class="section" id="foundry">
+                    <div class="section-label">Strategic Pivot</div>
+                    <h2 class="section-title">The Foundry Bet Dwarfs Everything</h2>
+                    <p>Intel Foundry Services represents the actual high-stakes investment thesis. The company committed to becoming the world's <strong>second-largest foundry by 2030</strong>, requiring successful deployment of Intel's 18A (1.8nm-class) and 14A (1.4nm-class) process nodes.</p>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Late 2025</div>
+                            <div class="timeline-content">
+                                <h4>18A Volume Production</h4>
+                                <p>Intel became the first company to achieve volume production at the 2nm-class, technically ahead of TSMC. Panther Lake CPUs entered production.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2026-2027</div>
+                            <div class="timeline-content">
+                                <h4>Yield Improvement Target</h4>
+                                <p>18A yields must improve from 50-70% to industry-standard 70%+ levels. External customer volume production expected.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2027-2028</div>
+                            <div class="timeline-content">
+                                <h4>14A Production / Profitability</h4>
+                                <p>14A node enters production if sufficient customer commitments materialize. Foundry profitability targeted.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>The 18A node features two genuinely innovative technologies:</p>
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>RibbonFET:</strong> Intel's gate-all-around transistor architecture</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>PowerVia:</strong> Industry-first backside power delivery at scale, improving performance and density</li>
+                    </ul>
+
+                    <p>Intel claims 18A delivers <strong>25% frequency improvement or 36% power reduction</strong> versus Intel 3. However, external foundry revenue totaled just <strong>$8 million</strong> in Q3 2025 against $4.2 billion total segment revenue—nearly all from internal Intel products.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Critical Risk:</strong> Nvidia reportedly <strong>paused 18A testing</strong> due to yield concerns, and AMD remains uncommitted. Intel has stated that 14A development may be <strong>cancelled if insufficient external customers commit</strong>.</p>
+                    </div>
+                </section>
+
+                <section class="section" id="government">
+                    <div class="section-label">Government Support</div>
+                    <h2 class="section-title">The $11.1 Billion Backstop</h2>
+                    <p>The Trump Administration's decision to convert CHIPS Act funding into an equity stake fundamentally changed Intel's risk profile. In August 2025, the U.S. government purchased <strong>433.3 million shares at $20.47/share</strong>, acquiring a <strong>9.9% stake valued at $8.9 billion</strong>.</p>
+
+                    <div class="data-table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Support Type</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Equity Stake (9.9%)</td>
+                                    <td>$8.9B</td>
+                                    <td>Completed Aug 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>CHIPS Act (Disbursed)</td>
+                                    <td>$2.2B</td>
+                                    <td>Received</td>
+                                </tr>
+                                <tr>
+                                    <td>DoD Secure Enclave</td>
+                                    <td>$3.0B</td>
+                                    <td>Awarded</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total Government Support</strong></td>
+                                    <td><strong>$11.1B+</strong></td>
+                                    <td>—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>The equity structure eliminated clawback provisions and profit-sharing requirements from the original CHIPS Act grant. The government maintains passive ownership, voting alongside Intel's board. This positions Intel as a <strong>"national champion"</strong> with implicit government support—the only American company capable of manufacturing leading-edge logic chips domestically.</p>
+                </section>
+
+                <section class="section" id="pricing">
+                    <div class="section-label">Market Dynamics</div>
+                    <h2 class="section-title">The "Race to the Top" Requires Nuance</h2>
+                    <p>The contrarian narrative—that Nvidia and AMD are "racing to the top" on pricing, opening value segment opportunity for Intel—contains truth but oversimplifies market dynamics.</p>
+
+                    <p>Nvidia's RTX 50-series pricing reveals a <strong>segmented strategy</strong>. While the RTX 5090 increased 25% to $1,999 MSRP, the <strong>RTX 5080 actually decreased</strong> from $1,199 (4080 launch) to $999. The 5070 Ti ($749) and 5070 ($549) also undercut their predecessors.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Key Insight:</strong> Nvidia is extracting premium pricing only at the extreme enthusiast tier, not across the lineup. The mid-range remains competitive.</p>
+                    </div>
+
+                    <p>GPU pricing pressure stems from structural factors affecting <strong>all participants equally</strong>:</p>
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>TSMC wafer costs:</strong> ~15.9% annual increases, 4nm wafers at $18,000-$20,000</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>HBM memory costs:</strong> Rising 20% for 2026 as AI demand consumes capacity</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>DRAM prices:</strong> Tripled year-over-year by late 2025</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>AI allocation priority:</strong> Consumer gaming receives residual capacity after data center</li>
+                    </ul>
+
+                    <p>Intel faces <strong>identical TSMC cost pressures</strong> for Arc GPUs. The company's structural advantage exists only in CPUs (manufactured internally) and the future prospect of using Intel 18A for GPUs—which remains years away and unannounced.</p>
+                </section>
+
+                <section class="section" id="verdict">
+                    <div class="section-label">Investment Thesis</div>
+                    <h2 class="section-title">Bull vs. Bear: Limited Middle Ground</h2>
+                    
+                    <div class="thesis-grid">
+                        <div class="thesis-card bull">
+                            <h4>Bull Case ($45-52)</h4>
+                            <ul>
+                                <li>18A achieves industry-standard yields by 2027</li>
+                                <li>Wins 2-3 major external foundry customers beyond Microsoft/AWS frameworks</li>
+                                <li>Panther Lake and Clearwater Forest prove competitive</li>
+                                <li>AI PC refresh cycle stabilizes client computing</li>
+                                <li>Government backing bridges losses during transition</li>
+                                <li>At $45, trades at ~2x book—still below historical averages</li>
+                            </ul>
+                        </div>
+                        <div class="thesis-card bear">
+                            <h4>Bear Case ($18-25)</h4>
+                            <ul>
+                                <li>Persistent 18A yield problems continue beyond 2027</li>
+                                <li>No external foundry volume materializes</li>
+                                <li>Market share losses accelerate to AMD in servers (now 24-37%)</li>
+                                <li>Qualcomm/Apple gain PC share</li>
+                                <li>14A cancelled due to insufficient customer interest</li>
+                                <li>$95B fab investments become stranded assets</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>Analyst Consensus:</strong> Only 5-13% of analysts rate Intel a "Buy," with 20-33 "Hold" ratings. Average price target of $25-38 implies modest downside to flat returns from current levels.</p>
+                    </div>
+
+                    <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem;">Investment Timeframe</h3>
+                    <p><strong>This is not a swing trade.</strong> The thesis requires 2-3 years to validate as foundry yields improve, external customers (hopefully) ramp volume, and the structural transformation progresses. Investors must accept the possibility of total thesis failure if foundry execution falters—the government stake provides a floor but not a guarantee of returns.</p>
+                </section>
+
+                <section class="section">
+                    <div class="section-label">Conclusion</div>
+                    <h2 class="section-title">High Conviction Required</h2>
+                    <p>Intel presents a genuine contrarian opportunity for investors with <strong>high risk tolerance</strong> and <strong>multi-year time horizons</strong>. The Arc GPU thesis adds a compelling narrative—Intel's B580 is objectively the best value gaming GPU on the market—but the scale is insufficient to drive meaningful financial impact.</p>
+                    
+                    <p>The core thesis is foundry transformation: can Intel execute one of the most complex turnarounds in technology history while competing against TSMC's foundry dominance, AMD's chiplet innovation, and Nvidia's AI monopoly?</p>
+
+                    <p>Government support provides unusual downside protection, and trading near book value prices in significant pessimism. But the preponderance of analyst skepticism (87-97% non-Buy ratings) reflects genuine execution risk that cannot be dismissed.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Position Sizing:</strong> For the contrarian investor, Intel offers asymmetric upside if the foundry bet succeeds—but requires conviction that new CEO Lip-Bu Tan can deliver what Pat Gelsinger could not. Position sizing should reflect the lottery-ticket nature of the investment: meaningful if correct, but not portfolio-defining given the probability of continued struggles.</p>
+                    </div>
+                </section>
+
+            </article>
+
+            <aside class="sidebar">
+                <div class="toc">
+                    <div class="toc-title">Contents</div>
+                    <ul class="toc-list">
+                        <li><a href="#thesis">Executive Summary</a></li>
+                        <li><a href="#gpu">GPU Business Analysis</a></li>
+                        <li><a href="#fundamentals">Financial Fundamentals</a></li>
+                        <li><a href="#foundry">Foundry Strategy</a></li>
+                        <li><a href="#government">Government Support</a></li>
+                        <li><a href="#pricing">Pricing Dynamics</a></li>
+                        <li><a href="#verdict">Investment Thesis</a></li>
+                    </ul>
+                </div>
+
+                <div class="verdict-box">
+                    <div class="verdict-title">Risk Assessment</div>
+                    <div class="verdict-rating">
+                        <div class="rating-bar">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <span class="rating-label">HIGH</span>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">Multi-year turnaround with significant execution risk. Government backstop provides floor but not guarantee.</p>
+                    
+                    <div class="verdict-targets">
+                        <div class="target bull">
+                            <div class="target-label">Bull Target</div>
+                            <div class="target-value">$45-52</div>
+                        </div>
+                        <div class="target bear">
+                            <div class="target-label">Bear Target</div>
+                            <div class="target-value">$18-25</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toc" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, transparent 100%);">
+                    <div class="toc-title">Key Catalysts</div>
+                    <ul class="toc-list">
+                        <li><a href="#foundry" style="font-size: 0.8125rem;">Clearwater Forest Launch (H1 2026)</a></li>
+                        <li><a href="#foundry" style="font-size: 0.8125rem;">First External 18A Volume</a></li>
+                        <li><a href="#fundamentals" style="font-size: 0.8125rem;">Foundry Margin Improvement</a></li>
+                        <li><a href="#foundry" style="font-size: 0.8125rem;">14A Development Decision</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-disclaimer">This analysis is for informational purposes only and does not constitute investment advice. The author may hold positions in securities discussed. Past performance does not guarantee future results. Always conduct your own due diligence before making investment decisions.</p>
+            <p class="footer-meta">Research compiled December 2024 • Data sources include Intel Investor Relations, Tom's Hardware, Jon Peddie Research, and SEC filings</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate bar charts on scroll
+        const chartObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bars = entry.target.querySelectorAll('.bar-fill');
+                    bars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.style.width = bar.style.width;
+                        }, index * 150);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.chart-container').forEach(chart => {
+            chartObserver.observe(chart);
+        });
+
+        // Nav background on scroll
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 11, 0.95)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 11, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
