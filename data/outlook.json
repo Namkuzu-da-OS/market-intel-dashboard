@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-02T21:54:34.099Z",
+  "timestamp": "2026-01-02T22:22:49.765Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 159,
-        "bearish": 65,
-        "neutral": 132,
-        "total": 356,
+        "bullish": 164,
+        "bearish": 66,
+        "neutral": 136,
+        "total": 366,
         "pct": 45
       },
       "news": {
         "bullish": 41,
-        "bearish": 20,
+        "bearish": 21,
         "neutral": 23,
-        "total": 84,
-        "pct": 49
+        "total": 85,
+        "pct": 48
       },
       "video": {
         "bullish": 5,
@@ -36,64 +36,64 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed/cautious bullish - sources show 60-70% bullish sentiment across platforms but with structural deterioration warnings. Conviction: medium due to conflicting institutional behavior signals.\n\n📈 **Themes:** (1) AI sector momentum and technology leadership under scrutiny, (2) Institutional rotation dynamics with persistent selling despite bullish retail sentiment, (3) Rate policy expectations supporting risk assets amid defensive positioning.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $683. Near support: $680 (77k OI, active), $640 (100k OI). Near resistance: $700 (49k OI, active). QQQ ($613.12): Call Wall $620 (38k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $615. Near support: $590 (78k OI), $609 per Twitter. Near resistance: $625 (28k OI), $630 (34k OI). /ES futures: 6800 support, 6854-6872 resistance zone per Twitter. Twitter notes $684 put wall with 'zero bid' on rallies.",
+    "narrative": "📊 **Consensus:** Mixed with medium conviction - sources split between tactical bullish bounce expectations and structural bearish distribution signals. Institutional selling pressure conflicts with technical support levels.\n\n📈 **Themes:** (1) Institutional distribution vs. technical mean reversion - mega-cap tech seeing selling into rallies despite support levels, (2) Crypto infrastructure legitimization - congressional legislation and institutional product launches driving adoption narrative, (3) AI sector momentum - selective frontier tech strength amid broader growth stock weakness.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI), Put Wall $630 (143k OI). Max Pain $683. Near resistance: $700 (49k OI, active), $680 (77k OI, active support). QQQ ($613.12): Call Wall $620 (38k OI, active resistance), Put Wall $574.78 (116k OI). Max Pain $615. Near resistance: $630 (34k OI), $625 (28k OI). Near support: $590 (78k OI, active). /ES: 6800/6854/6838 support cascade per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "TSLA",
+      "NVDA",
       "BTC",
       "ETH"
     ],
     "key_themes": [
-      "AI sector momentum and valuation scrutiny",
-      "Institutional selling vs retail bullishness divergence",
-      "Rate cut expectations supporting risk assets",
-      "Crypto regulatory clarity and institutional adoption",
-      "Technology sector rotation and mega-cap deterioration"
+      "Institutional distribution patterns",
+      "Crypto regulatory framework and adoption",
+      "AI sector selective strength",
+      "Mega-cap tech weakness",
+      "Technical support testing"
     ],
     "risk_factors": [
-      "Institutional net selling for 12 consecutive quarters despite bullish sentiment",
-      "Technical support breakdown at critical levels (SPX 6800, QQQ 609)",
-      "Zero bid strength on rallies suggesting supply overwhelming demand",
-      "Banking sector stress and crypto counterparty risks",
-      "Geopolitical supply chain disruptions and China tensions"
+      "Institutional selling on rallies ('0 bid' behavior)",
+      "Berkshire 12-quarter net selling streak signals distribution",
+      "Crypto exchange security vulnerabilities and insider liquidation risks",
+      "Governance and regulatory execution uncertainty",
+      "Mega-cap growth stock technical deterioration"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 active support (77k OI), $683 Max Pain gravitational pull, $700 resistance (49k OI). QQQ: $609 support per Twitter, $615 Max Pain, $620 active Call Wall resistance (38k OI). /ES: 6800 support per Twitter",
+    "intraday_levels": "SPY: $680 active support (77k OI), $700 active resistance (49k OI). QQQ: $609 critical support per Twitter, $620 call wall resistance (38k OI). /ES: 6800 support per Twitter",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $630 Put Wall major support (143k OI), $640 secondary support (100k OI), $700-730 resistance zone. QQQ: $574.78 Put Wall (116k OI), $590 support (78k OI), $620-630 resistance cluster. Watch for breakdown below stated support levels signaling institutional capitulation",
+    "swing_levels": "SPY: $630 put wall major support (143k OI), $750 call wall resistance (55k OI). QQQ: $574.78 put wall support (116k OI), $620-630 resistance zone (38k-34k OI). /ES: 6854/6838 support levels per Twitter",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 215955
+    "generation_time_ms": 201744
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 21,
-        "sentiment_score": 0.027,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 3,
+        "mentions": 22,
+        "sentiment_score": 0.058,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 6,
         "counts": {
-          "bullish": 8,
+          "bullish": 9,
           "bearish": 8,
           "neutral": 5,
-          "total": 21
+          "total": 22
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 20,
-        "sentiment_score": 0.209,
+        "mentions": 21,
+        "sentiment_score": 0.233,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 21,
+        "sentiment_pct": 23,
         "counts": {
-          "bullish": 11,
+          "bullish": 12,
           "bearish": 6,
           "neutral": 3,
-          "total": 20
+          "total": 21
         }
       },
       {
@@ -180,15 +180,15 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 21,
-        "sentiment_score": -0.04,
+        "mentions": 22,
+        "sentiment_score": -0.005,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 4,
+        "sentiment_pct": 1,
         "counts": {
-          "bullish": 7,
+          "bullish": 8,
           "bearish": 9,
           "neutral": 5,
-          "total": 21
+          "total": 22
         }
       },
       {
@@ -258,7 +258,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.21,
-    "spread": 15.12,
+    "spread": 15.13,
     "position": 50
   },
   "action": {
