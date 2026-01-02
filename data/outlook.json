@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-01-02T20:43:46.266Z",
+  "timestamp": "2026-01-02T21:22:57.812Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 71,
+    "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 147,
-        "bearish": 55,
-        "neutral": 115,
-        "total": 317,
-        "pct": 46
+        "bullish": 155,
+        "bearish": 62,
+        "neutral": 124,
+        "total": 341,
+        "pct": 45
       },
       "news": {
         "bullish": 41,
@@ -28,85 +28,85 @@
       },
       "chat": {
         "bullish": 1,
-        "bearish": 3,
+        "bearish": 4,
         "neutral": 3,
-        "total": 7,
-        "pct": 14
+        "total": 8,
+        "pct": 13
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed with cautious-bearish lean (medium conviction). Twitter technicals show defensive positioning with critical support tests, while RSS reflects optimism on regulatory tailwinds and Fed easing—creating a tug-of-war between near-term technical weakness and structural bullish narratives.\n\n📈 **Themes:** (1) AI/semiconductor sector momentum showing institutional accumulation despite broader market weakness, (2) Regulatory policy uncertainty around digital assets and Fed capital requirements creating volatility, (3) Mega-cap tech health (Tesla weakness, Mag7 pressure) as key market leadership indicator, (4) Consumer sector deterioration emerging as macro headwind.\n\n🎯 **Levels:** SPY ($683.50): Call Wall $750 (55k OI, 9.7% away—dormant), Put Wall $630 (143k OI, 7.8% away—dormant). Max Pain $683. Active resistance: $700 (49k OI), Active support: $680 (77k OI). QQQ ($614.02): Call Wall $620 (38k OI, 1.0% away—ACTIVE hedging), Put Wall $574.78 (116k OI, 6.4% away—dormant). Max Pain $615. Active resistance: $625-630 zone, Active support: $590 (78k OI). /ES futures per Twitter: Support cluster 6872/6854/6838, Resistance 6913/6925/6938.",
+    "narrative": "📊 **Consensus:** MIXED sentiment with moderate conviction - bullish technical structure conflicts with bearish institutional positioning and low-liquidity conditions creating tactical volatility.\n\n📈 **Themes:** (1) AI sector momentum and mega-cap technology leadership under pressure, (2) Low-liquidity January environment creating exploitable inefficiencies vs. distribution signals, (3) Institutional de-risking and governance concerns offsetting technical support levels.\n\n🎯 **Levels:** SPY ($682.57): Call Wall $750 (55k OI, resistance), Put Wall $630 (143k OI, support). Max Pain $683. Near resistance: $700 (49k OI), $680 (77k OI). Near support: $640 (100k OI). QQQ ($613.05): Call Wall $620 (38k OI, active resistance), Put Wall $574.78 (116k OI, support). Max Pain $615. Near resistance: $630 (34k OI), $625 (28k OI). Near support: $590 (78k OI). /ES: 6854-6872 support range per Twitter, QQQ 609 level mentioned.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
       "MU",
-      "BTC"
+      "NVDA"
     ],
     "key_themes": [
-      "AI and semiconductor sector momentum",
-      "Mega-cap tech/Mag7 health deterioration",
-      "Regulatory policy uncertainty (digital assets, Fed capital rules)",
-      "Defensive positioning and elevated volatility",
-      "Consumer sector weakness"
+      "AI sector momentum and leadership rotation",
+      "Low-liquidity tactical volatility",
+      "Institutional de-risking and capitulation signals",
+      "Regulatory clarity on digital assets",
+      "Mega-cap technology support testing"
     ],
     "risk_factors": [
-      "Critical support breakdown in SPX 6838-6872 zone triggering institutional selling",
-      "Tesla and Mag7 technical weakness spreading to broader market",
-      "Regulatory policy disappointments or exchange security incidents reversing crypto optimism",
-      "Low-volume environment amplifying volatility and false breakouts",
-      "Consumer deterioration undermining Fed easing narrative"
+      "Institutional selling continuing (Berkshire 12 consecutive quarters of net sales per Twitter)",
+      "Mega-cap tech failed to hold gains on worst 2026 day",
+      "Consumer demand softening in China-exposed sectors",
+      "Low conviction bounces ('0 bid' per Twitter) suggesting weak institutional support",
+      "Governance and confidence erosion narratives gaining traction"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Max Pain gravity at $683, active support $680 (77k OI), active resistance $700 (49k OI). QQQ: Max Pain $615, ACTIVE call wall resistance $620 (38k OI) limiting upside, support $590. /ES per Twitter: 6872/6854 support tests critical.",
+    "intraday_levels": "SPY testing Max Pain $683 with $680 active support (77k OI) and $700 active resistance (49k OI). QQQ facing $620 call wall resistance (38k OI, 1.1% away) with $615 Max Pain gravity.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Put Wall $630 (143k OI) major support if current levels fail, Call Wall $750 (55k OI) caps rallies. QQQ: Put Wall $574.78 (116k OI) downside target, resistance zone $620-630. /ES per Twitter: Break below 6838 validates bearish setup, reclaim 6938 negates weakness. Tesla 442 resistance / 420 support per Twitter as Mag7 health indicator.",
+    "swing_levels": "SPY: Critical support $630 put wall (143k OI), upside capped at $750 call wall (55k OI). QQQ: Major support $574.78 put wall (116k OI), resistance $620-$630 zone. /ES: 6854-6872 support range per Twitter sources must hold to prevent acceleration lower.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 206750
+    "generation_time_ms": 204686
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 18,
-        "sentiment_score": -0.009,
+        "mentions": 21,
+        "sentiment_score": 0.027,
         "sentiment_label": "Neutral",
-        "sentiment_pct": 1,
+        "sentiment_pct": 3,
         "counts": {
-          "bullish": 6,
-          "bearish": 7,
+          "bullish": 8,
+          "bearish": 8,
           "neutral": 5,
-          "total": 18
+          "total": 21
         }
       },
       {
         "ticker": "QQQ",
-        "mentions": 17,
-        "sentiment_score": 0.245,
+        "mentions": 19,
+        "sentiment_score": 0.257,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 25,
+        "sentiment_pct": 26,
         "counts": {
-          "bullish": 10,
+          "bullish": 11,
           "bearish": 5,
-          "neutral": 2,
-          "total": 17
+          "neutral": 3,
+          "total": 19
         }
       },
       {
         "ticker": "IWM",
-        "mentions": 2,
-        "sentiment_score": 0.685,
+        "mentions": 3,
+        "sentiment_score": 0.697,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 69,
+        "sentiment_pct": 70,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 0,
-          "total": 2
+          "total": 3
         }
       }
     ],
@@ -219,15 +219,15 @@
       },
       {
         "ticker": "SPX",
-        "mentions": 9,
-        "sentiment_score": -0.101,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 10,
+        "mentions": 10,
+        "sentiment_score": -0.019,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 2,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 5,
           "neutral": 1,
-          "total": 9
+          "total": 10
         }
       },
       {
@@ -248,9 +248,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.56,
-    "pc_ratio": 0.86,
-    "sentiment_bullish_pct": 46,
+    "vix": 14.55,
+    "pc_ratio": 0.91,
+    "sentiment_bullish_pct": 45,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -258,7 +258,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.21,
-    "spread": 11.07,
+    "spread": 15.73,
     "position": 50
   },
   "action": {
