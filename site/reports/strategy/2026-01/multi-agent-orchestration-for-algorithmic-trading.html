@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Multi-Agent Orchestration for Algorithmic Trading" />
+  <meta property="og:description" content="A critical analysis of LLM-based trading systems: where cutting-edge research meets production reality, framework comparisons, and practical implementation guidance for quantitative traders." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/strategy/2026-01/multi-agent-orchestration-for-algorithmic-trading.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/multi-agent-orchestration-for-algorithmic-trading-1767379360327.jpg" />
+  <meta property="article:published_time" content="2026-01-02" />
+  <meta property="article:section" content="strategy" />
+  
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Multi-Agent Orchestration for Algorithmic Trading" />
+  <meta name="twitter:description" content="A critical analysis of LLM-based trading systems: where cutting-edge research meets production reality, framework comparisons, and practical implementation guidance for quantitative traders." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/multi-agent-orchestration-for-algorithmic-trading-1767379360327.jpg" />
+    <title>Multi-Agent Orchestration for Algorithmic Trading | Research Report 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0b0d;
+            --bg-secondary: #12141a;
+            --bg-tertiary: #1a1d26;
+            --bg-card: #161920;
+            --accent-cyan: #00d4ff;
+            --accent-cyan-dim: rgba(0, 212, 255, 0.15);
+            --accent-gold: #ffd700;
+            --accent-gold-dim: rgba(255, 215, 0, 0.1);
+            --accent-green: #00ff88;
+            --accent-red: #ff4757;
+            --text-primary: #e8eaed;
+            --text-secondary: #9aa0a6;
+            --text-muted: #5f6368;
+            --border-subtle: rgba(255, 255, 255, 0.06);
+            --border-accent: rgba(0, 212, 255, 0.3);
+            --gradient-mesh: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 212, 255, 0.15), transparent),
+                            radial-gradient(ellipse 60% 40% at 100% 50%, rgba(255, 215, 0, 0.08), transparent);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Noise texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 2rem;
+            background: var(--gradient-mesh);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, var(--bg-primary), transparent);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 70% 50% at 50% 50%, black, transparent);
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-cyan-dim);
+            border: 1px solid var(--border-accent);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-cyan);
+            margin-bottom: 2rem;
+            animation: fadeSlideUp 0.8s ease-out;
+        }
+
+        .tag::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .hero h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeSlideUp 0.8s ease-out 0.1s both;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin-bottom: 3rem;
+            animation: fadeSlideUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 4rem;
+            animation: fadeSlideUp 0.8s ease-out 0.3s both;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-value.gold { color: var(--accent-gold); }
+        .stat-value.green { color: var(--accent-green); }
+        .stat-value.red { color: var(--accent-red); }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            background: rgba(10, 11, 13, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-subtle);
+            z-index: 100;
+            padding: 1rem 2rem;
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-brand {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 6rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 1rem;
+        }
+
+        .section-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+        }
+
+        .section h2 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        /* Key Insight Boxes */
+        .insight-box {
+            background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+            border-left: 3px solid var(--accent-cyan);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .insight-box.warning {
+            border-left-color: var(--accent-gold);
+        }
+
+        .insight-box.critical {
+            border-left-color: var(--accent-red);
+        }
+
+        .insight-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-cyan);
+            margin-bottom: 0.75rem;
+        }
+
+        .insight-box.warning .insight-label { color: var(--accent-gold); }
+        .insight-box.critical .insight-label { color: var(--accent-red); }
+
+        .insight-box p {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3rem;
+        }
+
+        @media (max-width: 900px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .main-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .main-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+
+        .sidebar-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .comparison-table th {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            background: var(--bg-secondary);
+        }
+
+        .comparison-table td {
+            color: var(--text-secondary);
+        }
+
+        .comparison-table tr:hover td {
+            background: var(--bg-tertiary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .badge.excellent {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--accent-green);
+        }
+
+        .badge.good {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-cyan);
+        }
+
+        .badge.moderate {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--accent-gold);
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+        }
+
+        .code-block code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-primary);
+        }
+
+        .code-block .comment { color: var(--text-muted); }
+        .code-block .keyword { color: var(--accent-cyan); }
+        .code-block .string { color: var(--accent-gold); }
+        .code-block .function { color: var(--accent-green); }
+
+        /* Pull Quote */
+        .pull-quote {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.75rem;
+            font-style: italic;
+            color: var(--text-primary);
+            border-left: 2px solid var(--accent-gold);
+            padding-left: 2rem;
+            margin: 3rem 0;
+        }
+
+        /* Architecture Diagram */
+        .architecture-diagram {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .arch-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .arch-layers {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .arch-layer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .arch-layer-label {
+            width: 120px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: right;
+        }
+
+        .arch-boxes {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .arch-box {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-subtle);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+
+        .arch-box:hover {
+            border-color: var(--accent-cyan);
+            color: var(--text-primary);
+        }
+
+        .arch-box.highlight {
+            border-color: var(--accent-cyan);
+            background: var(--accent-cyan-dim);
+            color: var(--accent-cyan);
+        }
+
+        .arch-connector {
+            width: 2px;
+            height: 20px;
+            background: var(--border-subtle);
+            margin-left: 180px;
+        }
+
+        /* Asset Class Cards */
+        .asset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .asset-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .asset-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .asset-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .asset-card.crypto .asset-icon {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.1));
+        }
+
+        .asset-card.options .asset-icon {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 150, 255, 0.1));
+        }
+
+        .asset-card.equities .asset-icon {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 200, 100, 0.1));
+        }
+
+        .asset-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .asset-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .asset-metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-top: 1px solid var(--border-subtle);
+            font-size: 0.85rem;
+        }
+
+        .asset-metric span:first-child {
+            color: var(--text-muted);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-subtle);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent-cyan);
+            transform: translateX(-4px);
+        }
+
+        .timeline-duration {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-cyan);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-subtle);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .footer p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .comparison-table {
+                font-size: 0.8rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="tag">Research Report • January 2025</div>
+            <h1>Multi-Agent Orchestration for <span>Algorithmic Trading</span></h1>
+            <p class="hero-subtitle">A critical analysis of LLM-based trading systems: where cutting-edge research meets production reality, framework comparisons, and practical implementation guidance for quantitative traders.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-value">125.9%</div>
+                    <div class="stat-label">TradingAgents Backtest Returns</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value gold">97M+</div>
+                    <div class="stat-label">MCP Monthly SDK Downloads</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value green">322%</div>
+                    <div class="stat-label">AI Agent Token Growth Q4 2024</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value red">&lt;5μs</div>
+                    <div class="stat-label">HFT Latency Requirement</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-brand">MULTI-AGENT-TRADING.RESEARCH</div>
+            <div class="nav-links">
+                <a href="#executive-summary">Executive Summary</a>
+                <a href="#signal-generation">Signal Generation</a>
+                <a href="#frameworks">Frameworks</a>
+                <a href="#asset-classes">Asset Classes</a>
+                <a href="#implementation">Implementation</a>
+                <a href="#risks">Risks & Reality</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Executive Summary -->
+        <section id="executive-summary" class="section reveal">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>Executive Summary</h2>
+            </div>
+            
+            <div class="content-grid">
+                <div class="main-content">
+                    <p>The field of multi-agent trading systems has experienced explosive growth through 2024-2025, with frameworks like TradingAgents claiming <strong>125.9% cumulative returns</strong> versus 73.5% for the S&P 100. But these impressive backtest results mask significant gaps between research and production reality.</p>
+                    
+                    <div class="insight-box critical">
+                        <div class="insight-label">Critical Finding</div>
+                        <p>Multi-agent LLM trading systems remain <strong>research tools and experimental frameworks</strong>, not production-ready solutions. Verified production deployments making real trades are effectively non-existent.</p>
+                    </div>
+                    
+                    <p>The most valuable applications are in <strong>execution optimization, risk management, and research automation</strong>—not autonomous trading decisions. For experienced quantitative traders with working systematic approaches, the opportunity lies in augmenting existing systems rather than replacing them.</p>
+                    
+                    <p>This report provides a comprehensive analysis of the current state-of-the-art, framework comparisons, asset class suitability, and practical implementation guidance for integrating multi-agent capabilities into existing trading infrastructure.</p>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <div class="sidebar-title">Key Takeaways</div>
+                        <ul style="list-style: none; font-size: 0.9rem; color: var(--text-secondary);">
+                            <li style="margin-bottom: 0.75rem; padding-left: 1rem; border-left: 2px solid var(--accent-cyan);">Signal generation and research automation show strongest results</li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1rem; border-left: 2px solid var(--accent-gold);">LLM latency (seconds) vs HFT requirements (microseconds) creates fundamental mismatch</li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1rem; border-left: 2px solid var(--accent-green);">LangGraph recommended for trading due to explicit state management</li>
+                            <li style="padding-left: 1rem; border-left: 2px solid var(--accent-red);">Backtest claims deteriorate significantly in broader evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signal Generation Section -->
+        <section id="signal-generation" class="section reveal">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Signal Generation & Execution Analysis</h2>
+            </div>
+            
+            <div class="main-content">
+                <p>Multi-agent architectures have proven most effective for <strong>signal generation and research automation</strong>, where latency constraints are measured in minutes rather than microseconds.</p>
+                
+                <div class="architecture-diagram">
+                    <div class="arch-title">TradingAgents Architecture (UCLA/MIT)</div>
+                    <div class="arch-layers">
+                        <div class="arch-layer">
+                            <div class="arch-layer-label">Analysts</div>
+                            <div class="arch-boxes">
+                                <div class="arch-box">Fundamental</div>
+                                <div class="arch-box">Sentiment</div>
+                                <div class="arch-box">News</div>
+                                <div class="arch-box">Technical</div>
+                            </div>
+                        </div>
+                        <div class="arch-connector"></div>
+                        <div class="arch-layer">
+                            <div class="arch-layer-label">Researchers</div>
+                            <div class="arch-boxes">
+                                <div class="arch-box highlight">Bull Researcher</div>
+                                <div class="arch-box highlight">Bear Researcher</div>
+                            </div>
+                        </div>
+                        <div class="arch-connector"></div>
+                        <div class="arch-layer">
+                            <div class="arch-layer-label">Decision</div>
+                            <div class="arch-boxes">
+                                <div class="arch-box">Trader Agent</div>
+                                <div class="arch-box">Risk Manager</div>
+                            </div>
+                        </div>
+                        <div class="arch-connector"></div>
+                        <div class="arch-layer">
+                            <div class="arch-layer-label">Oversight</div>
+                            <div class="arch-boxes">
+                                <div class="arch-box">Fund Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>The dialectical approach—with bull and bear researchers engaging in structured debates—reduces individual agent bias through adversarial reasoning. Natural language decision trails provide unprecedented explainability for regulatory and debugging purposes.</p>
+                
+                <div class="insight-box warning">
+                    <div class="insight-label">Execution Limitation</div>
+                    <p><strong>Execution is where multi-agent LLM systems hit a fundamental wall.</strong> HFT requirements demand sub-microsecond latency (IBM/Mellanox: &lt;5μs average). LLM-based agents operate in the range of seconds to tens of seconds per decision.</p>
+                </div>
+                
+                <p class="pull-quote">"Latency bottlenecks: Current LLM-tool orchestration introduces delays unsuited for true microsecond HFT."<br><span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-style: normal;">— QuantAgent Paper</span></p>
+                
+                <p>The practical integration pattern emerging is a <strong>hybrid architecture</strong>: LLM agents recommend execution strategy based on order characteristics, traditional algorithms handle microsecond execution, and LLM agents perform post-trade analysis and strategy adjustment.</p>
+            </div>
+        </section>
+
+        <!-- Frameworks Section -->
+        <section id="frameworks" class="section reveal">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Framework Analysis & Recommendations</h2>
+            </div>
+            
+            <div class="main-content">
+                <p>Anthropic's <strong>Model Context Protocol (MCP)</strong>, launched November 2024 and donated to the Linux Foundation in December 2025, has achieved remarkable adoption with 97 million+ monthly SDK downloads and over 16,000 MCP servers deployed.</p>
+                
+                <div class="insight-box">
+                    <div class="insight-label">Recommendation</div>
+                    <p><strong>LangGraph emerges as the recommended framework for trading systems</strong> due to its graph-based state machine approach with durable execution—automatically persisting through failures and resuming.</p>
+                </div>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Framework</th>
+                            <th>State Management</th>
+                            <th>Parallel Execution</th>
+                            <th>Trading Fit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>LangGraph</strong></td>
+                            <td>First-class state machine, checkpointing</td>
+                            <td>DAG execution</td>
+                            <td><span class="badge excellent">Excellent</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CrewAI</strong></td>
+                            <td>Flows for explicit state</td>
+                            <td>Concurrent crews</td>
+                            <td><span class="badge good">Good</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Claude + MCP</strong></td>
+                            <td>External management required</td>
+                            <td>Subagent parallelism</td>
+                            <td><span class="badge moderate">Moderate</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>AutoGen v0.4</strong></td>
+                            <td>Context variables, session mgmt</td>
+                            <td>Actor model native</td>
+                            <td><span class="badge good">Good</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>CrewAI offers faster time-to-production (<strong>~2 weeks vs ~2 months for LangGraph</strong>) with role-based agent design that maps naturally to trading team structures. With $18M Series A funding and 60% Fortune 500 adoption, it's enterprise-proven.</p>
+                
+                <p>For GEX-based intraday systems specifically, <strong>LangGraph's explicit state transitions and human-in-the-loop capabilities</strong> at any state make it the strongest choice. The integration pattern would use Claude as nodes within LangGraph graphs, combining Claude's reasoning capabilities with LangGraph's orchestration strengths.</p>
+            </div>
+        </section>
+
+        <!-- Asset Classes Section -->
+        <section id="asset-classes" class="section reveal">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>Asset Class Suitability Analysis</h2>
+            </div>
+            
+            <div class="main-content">
+                <p>The cryptocurrency market has become the undisputed laboratory for multi-agent trading experimentation, but options trading presents underexplored potential particularly suited for GEX analysis.</p>
+                
+                <div class="asset-grid">
+                    <div class="asset-card crypto">
+                        <div class="asset-icon">₿</div>
+                        <h4>Cryptocurrency</h4>
+                        <p>Leading edge of multi-agent experimentation with permissionless access and 24/7 operation.</p>
+                        <div class="asset-metric">
+                            <span>Q4 2024 AI Token Growth</span>
+                            <span style="color: var(--accent-gold);">+322%</span>
+                        </div>
+                        <div class="asset-metric">
+                            <span>ai16z Market Cap</span>
+                            <span style="color: var(--accent-gold);">$2B</span>
+                        </div>
+                        <div class="asset-metric">
+                            <span>MEV Extraction (since 2020)</span>
+                            <span style="color: var(--accent-red);">$1.8B</span>
+                        </div>
+                    </div>
+                    
+                    <div class="asset-card options">
+                        <div class="asset-icon">⚡</div>
+                        <h4>Options Trading</h4>
+                        <p>Underexplored potential with multi-dimensional optimization mapping naturally to specialized agent roles.</p>
+                        <div class="asset-metric">
+                            <span>Slippage Reduction</span>
+                            <span style="color: var(--accent-green);">-15%</span>
+                        </div>
+                        <div class="asset-metric">
+                            <span>Hedge Construction Time</span>
+                            <span style="color: var(--accent-green);">-25%</span>
+                        </div>
+                        <div class="asset-metric">
+                            <span>GEX Analysis Fit</span>
+                            <span style="color: var(--accent-cyan);">Excellent</span>
+                        </div>
+                    </div>
+                    
+                    <div class="asset-card equities">
+                        <div class="asset-icon">📈</div>
+                        <h4>US Equities</h4>
+                        <p>Heavily regulated with machine-driven trading representing ~55% of volume.</p>
+                        <div class="asset-metric">
+                            <span>Machine Trading Volume</span>
+                            <span style="color: var(--text-primary);">~55%</span>
+                        </div>
+                        <div class="asset-metric">
+                            <span>Regulatory Framework</span>
+                            <span style="color: var(--accent-gold);">SEC/FINRA</span>
+                        </div>
+                        <div class="asset-metric">
+                            <span>MiFID II Compliance</span>
+                            <span style="color: var(--accent-gold);">Required (EU)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="margin: 2rem 0 1rem; font-family: 'Instrument Serif', serif;">Why Crypto Leads Experimentation</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                    <div style="background: var(--bg-card); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent-gold);">
+                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.25rem;">Permissionless Access</div>
+                        <div style="font-size: 0.95rem;">No regulatory gatekeepers</div>
+                    </div>
+                    <div style="background: var(--bg-card); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent-gold);">
+                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.25rem;">24/7/365 Operation</div>
+                        <div style="font-size: 0.95rem;">Matches AI's tireless nature</div>
+                    </div>
+                    <div style="background: var(--bg-card); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent-gold);">
+                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.25rem;">On-Chain Transparency</div>
+                        <div style="font-size: 0.95rem;">Complete transaction visibility</div>
+                    </div>
+                    <div style="background: var(--bg-card); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent-gold);">
+                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.25rem;">Smart Contracts</div>
+                        <div style="font-size: 0.95rem;">Native programmable execution</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Section -->
+        <section id="implementation" class="section reveal">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2>Practical Implementation</h2>
+            </div>
+            
+            <div class="content-grid">
+                <div class="main-content">
+                    <h3 style="font-family: 'Instrument Serif', serif; margin-bottom: 1rem;">Stack Integration</h3>
+                    
+                    <p><strong>QuestDB</strong> excels for this use case with ASOF JOINs that instantly match trades to market conditions and native Cryptofeed integration. Store GEX data with separate real-time and historical partitions.</p>
+                    
+                    <p><strong>Ollama deployment</strong> should prioritize Qwen2.5 7B (Q4_K_M quantization) for trading tasks—best tool-calling support with 128K context window while requiring only ~5-6GB VRAM. On RTX 4090, expect 128 tokens/second for 8B models.</p>
+                    
+                    <div class="code-block">
+                        <code>
+<span class="comment"># Quick start with TradingAgents</span>
+<span class="keyword">from</span> tradingagents.graph.trading_graph <span class="keyword">import</span> TradingAgentsGraph
+
+ta = TradingAgentsGraph(debug=<span class="keyword">True</span>, config=DEFAULT_CONFIG.<span class="function">copy</span>())
+_, decision = ta.<span class="function">propagate</span>(<span class="string">"NVDA"</span>, <span class="string">"2024-05-10"</span>)
+                        </code>
+                    </div>
+                    
+                    <p><strong>Redis</strong> provides optimal message queuing for intraday systems with sub-millisecond latency. Use Redis Streams for log-like message processing and pub/sub for agent signal propagation.</p>
+                    
+                    <h3 style="font-family: 'Instrument Serif', serif; margin: 2rem 0 1rem;">Realistic Implementation Timeline</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-duration">2-4 Weeks</div>
+                            <div class="timeline-title">Proof of Concept</div>
+                            <div class="timeline-desc">Basic agent architecture, initial integration with existing signals</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-duration">3-6 Months</div>
+                            <div class="timeline-title">Backtest Validation</div>
+                            <div class="timeline-desc">Robust testing across multiple periods and market conditions</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-duration">6-12 Months</div>
+                            <div class="timeline-title">Paper Trading</div>
+                            <div class="timeline-desc">Real-time execution without capital risk</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-duration">6-12 Months</div>
+                            <div class="timeline-title">Small Position Live Testing</div>
+                            <div class="timeline-desc">Limited capital deployment with extensive monitoring</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-duration">2+ Years Total</div>
+                            <div class="timeline-title">Production Deployment</div>
+                            <div class="timeline-desc">Full system deployment with mature risk controls</div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="font-family: 'Instrument Serif', serif; margin: 2rem 0 1rem;">Cost Optimization</h3>
+                    
+                    <p>Cloud API costs run approximately <strong>$0.05-0.25 per trading decision</strong> with full agent debate at GPT-4o pricing, dropping to $0.0015-0.03 with GPT-4o-mini.</p>
+                    
+                    <p>Local deployment breaks even at roughly <strong>$500/month API spend within 6-12 months</strong> considering RTX 4090 hardware investment ($1,600-2,000).</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem;">
+                        <div style="background: var(--bg-card); padding: 1rem; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.5rem; color: var(--accent-green); font-family: 'JetBrains Mono', monospace;">60-80%</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Semantic Caching Savings</div>
+                        </div>
+                        <div style="background: var(--bg-card); padding: 1rem; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.5rem; color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">10x</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Model Tiering Reduction</div>
+                        </div>
+                        <div style="background: var(--bg-card); padding: 1rem; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.5rem; color: var(--accent-gold); font-family: 'JetBrains Mono', monospace;">128 t/s</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">RTX 4090 8B Model Speed</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <div class="sidebar-title">Open Source Projects</div>
+                        <ul style="list-style: none; font-size: 0.85rem;">
+                            <li style="margin-bottom: 1rem;">
+                                <a href="https://github.com/AI4Finance-Foundation/FinRL" style="color: var(--accent-cyan); text-decoration: none;">FinRL</a>
+                                <div style="color: var(--text-muted); font-size: 0.8rem;">10K+ stars, comprehensive RL framework</div>
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <a href="https://github.com/TauricResearch/TradingAgents" style="color: var(--accent-cyan); text-decoration: none;">TradingAgents</a>
+                                <div style="color: var(--text-muted); font-size: 0.8rem;">LangGraph-based multi-agent framework</div>
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <a href="https://github.com/jpmorganchase/abides-jpmc-public" style="color: var(--accent-cyan); text-decoration: none;">ABIDES</a>
+                                <div style="color: var(--text-muted); font-size: 0.8rem;">JP Morgan's agent-based simulator</div>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AI4Finance-Foundation/FinGPT" style="color: var(--accent-cyan); text-decoration: none;">FinGPT</a>
+                                <div style="color: var(--text-muted); font-size: 0.8rem;">GPT-4 performance on single RTX 3090</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <div class="sidebar-title">Recommended Stack</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-subtle);">
+                                <span>Orchestration</span>
+                                <span style="color: var(--accent-cyan);">LangGraph</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-subtle);">
+                                <span>Local LLM</span>
+                                <span style="color: var(--accent-cyan);">Qwen2.5 7B</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-subtle);">
+                                <span>Time-Series DB</span>
+                                <span style="color: var(--accent-cyan);">QuestDB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-subtle);">
+                                <span>Message Queue</span>
+                                <span style="color: var(--accent-cyan);">Redis Streams</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
+                                <span>Cloud LLM</span>
+                                <span style="color: var(--accent-cyan);">Claude via MCP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risks Section -->
+        <section id="risks" class="section reveal">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2>Critical Gaps: Research vs Reality</h2>
+            </div>
+            
+            <div class="main-content">
+                <div class="insight-box critical">
+                    <div class="insight-label">Most Important Finding</div>
+                    <p><strong>Verified production deployments of LLM-based multi-agent trading systems making real trades remain effectively non-existent.</strong></p>
+                </div>
+                
+                <p>The FINSABER backtesting framework systematically evaluated prior claims and found dramatic deterioration:</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
+                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 71, 87, 0.3); padding: 1.5rem; border-radius: 8px;">
+                        <div style="font-size: 0.75rem; color: var(--accent-red); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">FinMem MSFT Returns</div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Reported: <span style="color: var(--accent-green);">+23.26%</span></div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Actual: <span style="color: var(--accent-red);">-22.04%</span></div>
+                    </div>
+                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 71, 87, 0.3); padding: 1.5rem; border-radius: 8px;">
+                        <div style="font-size: 0.75rem; color: var(--accent-red); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">NFLX Sharpe Ratio</div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Reported: <span style="color: var(--accent-green);">+2.017</span></div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Actual: <span style="color: var(--accent-red);">-0.478</span></div>
+                    </div>
+                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 215, 0, 0.3); padding: 1.5rem; border-radius: 8px;">
+                        <div style="font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Knight Capital Loss</div>
+                        <div style="font-size: 1.5rem; font-family: 'JetBrains Mono', monospace; color: var(--accent-red);">$440M</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted);">in 45 minutes</div>
+                    </div>
+                </div>
+                
+                <p>Institutional AI trading adoption is real—<strong>42% of multi-strategy hedge funds have implemented AI</strong> with 3-5% higher annualized returns. However, these are primarily traditional ML/RL systems focused on execution optimization and risk management—not LLM-based multi-agent systems making trading decisions.</p>
+                
+                <h3 style="font-family: 'Instrument Serif', serif; margin: 2rem 0 1rem;">Multi-Agent Coordination Failure Modes</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                    <div style="background: var(--bg-tertiary); padding: 1.25rem; border-radius: 8px;">
+                        <div style="font-weight: 600; margin-bottom: 0.5rem; color: var(--accent-red);">Miscoordination</div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Conflicting plans, unintended interference between agents</div>
+                    </div>
+                    <div style="background: var(--bg-tertiary); padding: 1.25rem; border-radius: 8px;">
+                        <div style="font-weight: 600; margin-bottom: 0.5rem; color: var(--accent-gold);">Conflict</div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Resource competition, escalation dynamics</div>
+                    </div>
+                    <div style="background: var(--bg-tertiary); padding: 1.25rem; border-radius: 8px;">
+                        <div style="font-weight: 600; margin-bottom: 0.5rem; color: var(--accent-cyan);">Collusion</div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">Unintended price fixing, market manipulation risks</div>
+                    </div>
+                </div>
+                
+                <div class="insight-box warning">
+                    <div class="insight-label">Security Research</div>
+                    <p>Research demonstrated "infectious jailbreak" where a single adversarial input compromised up to <strong>one million LLM agents</strong> through cascading interactions.</p>
+                </div>
+                
+                <h3 style="font-family: 'Instrument Serif', serif; margin: 2rem 0 1rem;">Strategic Recommendations</h3>
+                
+                <ol style="list-style-position: inside; color: var(--text-secondary);">
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;"><strong style="color: var(--text-primary);">Start with single-purpose agents.</strong> Microsoft's guidance: 70% of enterprise use cases can be handled by properly designed single agents.</li>
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;"><strong style="color: var(--text-primary);">Use TradingAgents as a learning reference, not production template.</strong> Claimed returns come from 6-month backtests on 5-10 stocks.</li>
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;"><strong style="color: var(--text-primary);">Prioritize explainability over performance.</strong> Natural language reasoning trails are more valuable than marginal alpha.</li>
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;"><strong style="color: var(--text-primary);">Implement conservative risk architecture from day one.</strong> Stop-loss ladders, exposure limits, circuit breakers are non-negotiable.</li>
+                    <li style="padding-left: 0.5rem;"><strong style="color: var(--text-primary);">Plan for realistic timelines.</strong> Production deployment realistically takes 2+ years from inception.</li>
+                </ol>
+                
+                <p class="pull-quote" style="margin-top: 3rem;">The path forward is augmentation, not automation. Multi-agent systems can enhance existing systematic approaches while you retain decision authority and risk control.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>About This Report</h4>
+                <p>This research report was compiled in January 2025, synthesizing academic research, production case studies, and technical documentation on multi-agent orchestration for algorithmic trading. The analysis focuses on practical implementation guidance for quantitative traders with existing systematic approaches.</p>
+            </div>
+            <div>
+                <h4>Key Frameworks</h4>
+                <ul class="footer-links">
+                    <li><a href="https://langchain-ai.github.io/langgraph/">LangGraph</a></li>
+                    <li><a href="https://www.crewai.com/">CrewAI</a></li>
+                    <li><a href="https://www.anthropic.com/news/model-context-protocol">Model Context Protocol</a></li>
+                    <li><a href="https://microsoft.github.io/autogen/">AutoGen</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Research Sources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://tradingagents-ai.github.io/">TradingAgents (UCLA/MIT)</a></li>
+                    <li><a href="https://github.com/AI4Finance-Foundation/FinRL">FinRL Framework</a></li>
+                    <li><a href="https://arxiv.org/abs/2412.20138">arXiv: Multi-Agent Trading</a></li>
+                    <li><a href="https://questdb.com/market-data/">QuestDB Market Data</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Research compiled January 2025 • Multi-Agent Trading Analysis</p>
+            <p style="font-family: 'JetBrains Mono', monospace;">v1.0.0</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            revealElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+        
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
