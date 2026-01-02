@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-01-02T20:04:40.343Z",
+  "timestamp": "2026-01-02T20:43:46.266Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 69,
+    "confidence_pct": 71,
     "sources": {
       "social": {
-        "bullish": 134,
-        "bearish": 54,
-        "neutral": 104,
-        "total": 292,
+        "bullish": 147,
+        "bearish": 55,
+        "neutral": 115,
+        "total": 317,
         "pct": 46
       },
       "news": {
-        "bullish": 39,
-        "bearish": 19,
-        "neutral": 21,
-        "total": 79,
+        "bullish": 41,
+        "bearish": 20,
+        "neutral": 23,
+        "total": 84,
         "pct": 49
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed with cautious bearish lean - medium conviction. Bullish sector rotation into semiconductors and energy contrasts with broad market weakness and institutional put positioning.\n\n📈 **Themes:** (1) Sector rotation into semiconductors and AI infrastructure driving selective strength, (2) Regulatory clarity expectations in digital assets and potential dovish Fed policy shifts, (3) Mega-cap tech deterioration signaling broader market fragility despite sector pockets of strength.\n\n🎯 **Levels:** SPY ($683.81): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $683. Near support: $680 (77k OI, active), $640 (100k OI). Near resistance: $700 (49k OI, active). QQQ ($614.55): Call Wall $620 (38k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $615. Near support: $590 (78k OI, active). Near resistance: $625 (28k OI, active), $630 (34k OI). /ES levels per Twitter: Support at 6872, 6854, 6838; Resistance at 6900; Target range 6888-6938 on bounce patterns. SPX resistance noted at 6900.",
+    "narrative": "📊 **Consensus:** Mixed with cautious-bearish lean (medium conviction). Twitter technicals show defensive positioning with critical support tests, while RSS reflects optimism on regulatory tailwinds and Fed easing—creating a tug-of-war between near-term technical weakness and structural bullish narratives.\n\n📈 **Themes:** (1) AI/semiconductor sector momentum showing institutional accumulation despite broader market weakness, (2) Regulatory policy uncertainty around digital assets and Fed capital requirements creating volatility, (3) Mega-cap tech health (Tesla weakness, Mag7 pressure) as key market leadership indicator, (4) Consumer sector deterioration emerging as macro headwind.\n\n🎯 **Levels:** SPY ($683.50): Call Wall $750 (55k OI, 9.7% away—dormant), Put Wall $630 (143k OI, 7.8% away—dormant). Max Pain $683. Active resistance: $700 (49k OI), Active support: $680 (77k OI). QQQ ($614.02): Call Wall $620 (38k OI, 1.0% away—ACTIVE hedging), Put Wall $574.78 (116k OI, 6.4% away—dormant). Max Pain $615. Active resistance: $625-630 zone, Active support: $590 (78k OI). /ES futures per Twitter: Support cluster 6872/6854/6838, Resistance 6913/6925/6938.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
-      "NVDA",
+      "MU",
       "BTC"
     ],
     "key_themes": [
-      "Semiconductor and AI sector momentum",
-      "Regulatory clarity expectations for digital assets",
-      "Mega-cap tech deterioration and volatility",
-      "Institutional put hedging and dealer positioning",
-      "Energy sector volume-driven strength"
+      "AI and semiconductor sector momentum",
+      "Mega-cap tech/Mag7 health deterioration",
+      "Regulatory policy uncertainty (digital assets, Fed capital rules)",
+      "Defensive positioning and elevated volatility",
+      "Consumer sector weakness"
     ],
     "risk_factors": [
-      "Mega-cap growth technical breakdown (Tesla 7-day losing streak)",
-      "Institutional put positioning at $1.9B signaling downside hedging",
-      "Thin liquidity conditions creating elevated volatility",
-      "Banking regulatory uncertainty and financial system supervision concerns",
-      "Choppy range-bound consolidation requiring disciplined entry/exit timing"
+      "Critical support breakdown in SPX 6838-6872 zone triggering institutional selling",
+      "Tesla and Mag7 technical weakness spreading to broader market",
+      "Regulatory policy disappointments or exchange security incidents reversing crypto optimism",
+      "Low-volume environment amplifying volatility and false breakouts",
+      "Consumer deterioration undermining Fed easing narrative"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $680 active support (77k OI), $700 active resistance (49k OI). QQQ: $590 support, $620 call wall resistance (38k OI). /ES: 6872 support per Twitter",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: $630 put wall major support (143k OI), $750 call wall major resistance (55k OI), $683 max pain gravitational pull. QQQ: $574.78 put wall support (116k OI), $620 call wall resistance (38k OI). /ES: 6838 breakdown level, 6900 resistance hurdle per Twitter",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Max Pain gravity at $683, active support $680 (77k OI), active resistance $700 (49k OI). QQQ: Max Pain $615, ACTIVE call wall resistance $620 (38k OI) limiting upside, support $590. /ES per Twitter: 6872/6854 support tests critical.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Put Wall $630 (143k OI) major support if current levels fail, Call Wall $750 (55k OI) caps rallies. QQQ: Put Wall $574.78 (116k OI) downside target, resistance zone $620-630. /ES per Twitter: Break below 6838 validates bearish setup, reclaim 6938 negates weakness. Tesla 442 resistance / 420 support per Twitter as Mag7 health indicator.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 205118
+    "generation_time_ms": 206750
   },
   "trending": {
     "macro": [
@@ -138,6 +138,19 @@
         }
       },
       {
+        "ticker": "COIN",
+        "mentions": 5,
+        "sentiment_score": 0.614,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 61,
+        "counts": {
+          "bullish": 4,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 5
+        }
+      },
+      {
         "ticker": "ETH",
         "mentions": 5,
         "sentiment_score": 0.564,
@@ -148,19 +161,6 @@
           "bearish": 0,
           "neutral": 1,
           "total": 5
-        }
-      },
-      {
-        "ticker": "COIN",
-        "mentions": 4,
-        "sentiment_score": 0.568,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 4
         }
       },
       {
@@ -180,28 +180,28 @@
     "other": [
       {
         "ticker": "TSLA",
-        "mentions": 19,
-        "sentiment_score": -0.119,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 12,
+        "mentions": 21,
+        "sentiment_score": -0.04,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 4,
         "counts": {
-          "bullish": 5,
+          "bullish": 7,
           "bearish": 9,
           "neutral": 5,
-          "total": 19
+          "total": 21
         }
       },
       {
         "ticker": "MU",
-        "mentions": 14,
-        "sentiment_score": 0.567,
+        "mentions": 16,
+        "sentiment_score": 0.594,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 57,
+        "sentiment_pct": 59,
         "counts": {
-          "bullish": 12,
+          "bullish": 14,
           "bearish": 2,
           "neutral": 0,
-          "total": 14
+          "total": 16
         }
       },
       {
@@ -231,16 +231,16 @@
         }
       },
       {
-        "ticker": "CRWV",
-        "mentions": 6,
-        "sentiment_score": 0.522,
+        "ticker": "SNDK",
+        "mentions": 7,
+        "sentiment_score": 0.659,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 52,
+        "sentiment_pct": 66,
         "counts": {
-          "bullish": 5,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 6
+          "bullish": 6,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 7
         }
       }
     ]
@@ -248,8 +248,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.51,
-    "pc_ratio": 0.84,
+    "vix": 14.56,
+    "pc_ratio": 0.86,
     "sentiment_bullish_pct": 46,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -258,7 +258,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.21,
-    "spread": 8.86,
+    "spread": 11.07,
     "position": 50
   },
   "action": {
