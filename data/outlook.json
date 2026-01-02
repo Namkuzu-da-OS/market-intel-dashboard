@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-01-02T21:22:57.812Z",
+  "timestamp": "2026-01-02T21:54:34.099Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 69,
     "sources": {
       "social": {
-        "bullish": 155,
-        "bearish": 62,
-        "neutral": 124,
-        "total": 341,
+        "bullish": 159,
+        "bearish": 65,
+        "neutral": 132,
+        "total": 356,
         "pct": 45
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** MIXED sentiment with moderate conviction - bullish technical structure conflicts with bearish institutional positioning and low-liquidity conditions creating tactical volatility.\n\n📈 **Themes:** (1) AI sector momentum and mega-cap technology leadership under pressure, (2) Low-liquidity January environment creating exploitable inefficiencies vs. distribution signals, (3) Institutional de-risking and governance concerns offsetting technical support levels.\n\n🎯 **Levels:** SPY ($682.57): Call Wall $750 (55k OI, resistance), Put Wall $630 (143k OI, support). Max Pain $683. Near resistance: $700 (49k OI), $680 (77k OI). Near support: $640 (100k OI). QQQ ($613.05): Call Wall $620 (38k OI, active resistance), Put Wall $574.78 (116k OI, support). Max Pain $615. Near resistance: $630 (34k OI), $625 (28k OI). Near support: $590 (78k OI). /ES: 6854-6872 support range per Twitter, QQQ 609 level mentioned.",
+    "narrative": "📊 **Consensus:** Mixed/cautious bullish - sources show 60-70% bullish sentiment across platforms but with structural deterioration warnings. Conviction: medium due to conflicting institutional behavior signals.\n\n📈 **Themes:** (1) AI sector momentum and technology leadership under scrutiny, (2) Institutional rotation dynamics with persistent selling despite bullish retail sentiment, (3) Rate policy expectations supporting risk assets amid defensive positioning.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $683. Near support: $680 (77k OI, active), $640 (100k OI). Near resistance: $700 (49k OI, active). QQQ ($613.12): Call Wall $620 (38k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $615. Near support: $590 (78k OI), $609 per Twitter. Near resistance: $625 (28k OI), $630 (34k OI). /ES futures: 6800 support, 6854-6872 resistance zone per Twitter. Twitter notes $684 put wall with 'zero bid' on rallies.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
-      "MU",
-      "NVDA"
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "AI sector momentum and leadership rotation",
-      "Low-liquidity tactical volatility",
-      "Institutional de-risking and capitulation signals",
-      "Regulatory clarity on digital assets",
-      "Mega-cap technology support testing"
+      "AI sector momentum and valuation scrutiny",
+      "Institutional selling vs retail bullishness divergence",
+      "Rate cut expectations supporting risk assets",
+      "Crypto regulatory clarity and institutional adoption",
+      "Technology sector rotation and mega-cap deterioration"
     ],
     "risk_factors": [
-      "Institutional selling continuing (Berkshire 12 consecutive quarters of net sales per Twitter)",
-      "Mega-cap tech failed to hold gains on worst 2026 day",
-      "Consumer demand softening in China-exposed sectors",
-      "Low conviction bounces ('0 bid' per Twitter) suggesting weak institutional support",
-      "Governance and confidence erosion narratives gaining traction"
+      "Institutional net selling for 12 consecutive quarters despite bullish sentiment",
+      "Technical support breakdown at critical levels (SPX 6800, QQQ 609)",
+      "Zero bid strength on rallies suggesting supply overwhelming demand",
+      "Banking sector stress and crypto counterparty risks",
+      "Geopolitical supply chain disruptions and China tensions"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing Max Pain $683 with $680 active support (77k OI) and $700 active resistance (49k OI). QQQ facing $620 call wall resistance (38k OI, 1.1% away) with $615 Max Pain gravity.",
+    "intraday_levels": "SPY: $680 active support (77k OI), $683 Max Pain gravitational pull, $700 resistance (49k OI). QQQ: $609 support per Twitter, $615 Max Pain, $620 active Call Wall resistance (38k OI). /ES: 6800 support per Twitter",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Critical support $630 put wall (143k OI), upside capped at $750 call wall (55k OI). QQQ: Major support $574.78 put wall (116k OI), resistance $620-$630 zone. /ES: 6854-6872 support range per Twitter sources must hold to prevent acceleration lower.",
+    "swing_levels": "SPY: $630 Put Wall major support (143k OI), $640 secondary support (100k OI), $700-730 resistance zone. QQQ: $574.78 Put Wall (116k OI), $590 support (78k OI), $620-630 resistance cluster. Watch for breakdown below stated support levels signaling institutional capitulation",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 204686
+    "generation_time_ms": 215955
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "QQQ",
-        "mentions": 19,
-        "sentiment_score": 0.257,
+        "mentions": 20,
+        "sentiment_score": 0.209,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 26,
+        "sentiment_pct": 21,
         "counts": {
           "bullish": 11,
-          "bearish": 5,
+          "bearish": 6,
           "neutral": 3,
-          "total": 19
+          "total": 20
         }
       },
       {
@@ -248,8 +248,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.55,
-    "pc_ratio": 0.91,
+    "vix": 14.51,
+    "pc_ratio": 0.88,
     "sentiment_bullish_pct": 45,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -258,7 +258,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.21,
-    "spread": 15.73,
+    "spread": 15.12,
     "position": 50
   },
   "action": {
