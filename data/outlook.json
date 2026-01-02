@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-01-02T22:22:49.765Z",
+  "timestamp": "2026-01-02T23:05:22.405Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 69,
+    "confidence_pct": 70,
     "sources": {
       "social": {
-        "bullish": 164,
-        "bearish": 66,
-        "neutral": 136,
-        "total": 366,
+        "bullish": 175,
+        "bearish": 67,
+        "neutral": 144,
+        "total": 386,
         "pct": 45
       },
       "news": {
-        "bullish": 41,
-        "bearish": 21,
+        "bullish": 42,
+        "bearish": 22,
         "neutral": 23,
-        "total": 85,
+        "total": 87,
         "pct": 48
       },
       "video": {
@@ -36,40 +36,56 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed with medium conviction - sources split between tactical bullish bounce expectations and structural bearish distribution signals. Institutional selling pressure conflicts with technical support levels.\n\n📈 **Themes:** (1) Institutional distribution vs. technical mean reversion - mega-cap tech seeing selling into rallies despite support levels, (2) Crypto infrastructure legitimization - congressional legislation and institutional product launches driving adoption narrative, (3) AI sector momentum - selective frontier tech strength amid broader growth stock weakness.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI), Put Wall $630 (143k OI). Max Pain $683. Near resistance: $700 (49k OI, active), $680 (77k OI, active support). QQQ ($613.12): Call Wall $620 (38k OI, active resistance), Put Wall $574.78 (116k OI). Max Pain $615. Near resistance: $630 (34k OI), $625 (28k OI). Near support: $590 (78k OI, active). /ES: 6800/6854/6838 support cascade per Twitter.",
+    "narrative": "📊 **Consensus:** Medium bearish conviction on near-term price action. Technical breakdown (QQQ 5-day losing streak, institutional selling) outweighs forward-looking bullish catalysts (regulatory tailwinds, consolidation patterns). However, sector rotation rather than capitulation suggests tactical bounces likely.\n\n📈 **Themes:** (1) Tech mega-cap vulnerability with sector rotation into selective semiconductors and crypto infrastructure, (2) Regulatory clarity expectations driving blockchain/crypto sentiment divergence, (3) Institutional distribution patterns creating resistance at elevated levels while tactical setups persist.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $683. Near support: $680 (77k OI, active). Near resistance: $700 (49k OI, active). QQQ ($613.12): Call Wall $620 (38k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $615. Near resistance: $625 (28k OI, active), $630 (34k OI, active). Near support: $590 (78k OI, active). /ES: 6872 support tested twice (per Twitter), lower targets 6854, 6838 if breakdown occurs.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
-      "BTC",
-      "ETH"
+      "TSLA",
+      "MSFT",
+      "GOOG",
+      "AMZN",
+      "MU",
+      "BTC"
     ],
     "key_themes": [
-      "Institutional distribution patterns",
-      "Crypto regulatory framework and adoption",
-      "AI sector selective strength",
-      "Mega-cap tech weakness",
-      "Technical support testing"
+      "Tech mega-cap distribution and sector rotation",
+      "Regulatory clarity expectations for crypto/blockchain",
+      "Institutional de-risking versus tactical technical setups",
+      "AI infrastructure momentum divergence",
+      "Banking sector supervisory tightening"
     ],
     "risk_factors": [
-      "Institutional selling on rallies ('0 bid' behavior)",
-      "Berkshire 12-quarter net selling streak signals distribution",
-      "Crypto exchange security vulnerabilities and insider liquidation risks",
-      "Governance and regulatory execution uncertainty",
-      "Mega-cap growth stock technical deterioration"
+      "QQQ 5-day losing streak signals momentum breakdown",
+      "SPY put wall at $684 and /ES 6872 support weakening - breaks confirm bearish thesis",
+      "Institutional selling (12 consecutive quarters per Berkshire) at elevated levels",
+      "Regulatory timeline delays could invalidate bullish crypto thesis",
+      "Geopolitical semiconductor friction and banking capital adequacy pressures"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 active support (77k OI), $700 active resistance (49k OI). QQQ: $609 critical support per Twitter, $620 call wall resistance (38k OI). /ES: 6800 support per Twitter",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: $680 active support (77k OI), $700 resistance (49k OI). QQQ: $620 call wall resistance (38k OI active), $590 support (78k OI). /ES: 6872 support per Twitter, watch 6854 breakdown level",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $630 put wall major support (143k OI), $750 call wall resistance (55k OI). QQQ: $574.78 put wall support (116k OI), $620-630 resistance zone (38k-34k OI). /ES: 6854/6838 support levels per Twitter",
+    "swing_levels": "SPY: $683 max pain gravitational pull, $700 resistance zone (49k OI), $680 critical support test. Put wall $630 (143k OI) major support if breakdown accelerates. QQQ: $615 max pain, $620-$630 resistance cluster (active hedging), $590 support holds or opens $574.78 put wall",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 201744
+    "generation_time_ms": 213320
   },
   "trending": {
     "macro": [
+      {
+        "ticker": "QQQ",
+        "mentions": 22,
+        "sentiment_score": 0.257,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 26,
+        "counts": {
+          "bullish": 13,
+          "bearish": 6,
+          "neutral": 3,
+          "total": 22
+        }
+      },
       {
         "ticker": "SPY",
         "mentions": 22,
@@ -81,19 +97,6 @@
           "bearish": 8,
           "neutral": 5,
           "total": 22
-        }
-      },
-      {
-        "ticker": "QQQ",
-        "mentions": 21,
-        "sentiment_score": 0.233,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 23,
-        "counts": {
-          "bullish": 12,
-          "bearish": 6,
-          "neutral": 3,
-          "total": 21
         }
       },
       {
@@ -113,15 +116,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 8,
-        "sentiment_score": 0.334,
+        "mentions": 9,
+        "sentiment_score": 0.377,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 33,
+        "sentiment_pct": 38,
         "counts": {
-          "bullish": 4,
+          "bullish": 5,
           "bearish": 1,
           "neutral": 3,
-          "total": 8
+          "total": 9
         }
       },
       {
@@ -165,15 +168,15 @@
       },
       {
         "ticker": "MSTR",
-        "mentions": 3,
-        "sentiment_score": 0.5,
+        "mentions": 4,
+        "sentiment_score": 0.555,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
+        "sentiment_pct": 56,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 1,
-          "total": 3
+          "total": 4
         }
       }
     ],
@@ -193,28 +196,28 @@
       },
       {
         "ticker": "MU",
-        "mentions": 16,
-        "sentiment_score": 0.594,
+        "mentions": 17,
+        "sentiment_score": 0.602,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 59,
+        "sentiment_pct": 60,
         "counts": {
-          "bullish": 14,
+          "bullish": 15,
           "bearish": 2,
           "neutral": 0,
-          "total": 16
+          "total": 17
         }
       },
       {
         "ticker": "NVDA",
-        "mentions": 14,
-        "sentiment_score": 0.284,
+        "mentions": 15,
+        "sentiment_score": 0.265,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 28,
+        "sentiment_pct": 27,
         "counts": {
           "bullish": 8,
           "bearish": 3,
-          "neutral": 3,
-          "total": 14
+          "neutral": 4,
+          "total": 15
         }
       },
       {
@@ -258,7 +261,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.21,
-    "spread": 15.13,
+    "spread": 15.14,
     "position": 50
   },
   "action": {
