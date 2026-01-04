@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-04T19:05:49.055Z",
+  "timestamp": "2026-01-04T19:29:29.624Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 71,
     "sources": {
       "social": {
-        "bullish": 67,
+        "bullish": 69,
         "bearish": 15,
-        "neutral": 110,
-        "total": 192,
+        "neutral": 116,
+        "total": 200,
         "pct": 35
       },
       "news": {
         "bullish": 7,
         "bearish": 7,
-        "neutral": 3,
-        "total": 17,
-        "pct": 41
+        "neutral": 4,
+        "total": 18,
+        "pct": 39
       },
       "video": {
         "bullish": 0,
@@ -28,45 +28,45 @@
       },
       "chat": {
         "bullish": 0,
-        "bearish": 8,
+        "bearish": 9,
         "neutral": 0,
-        "total": 8,
+        "total": 9,
         "pct": 0
       }
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment with medium conviction. X/Twitter shows 82% bullish positioning driven by ETF inflows and AI infrastructure narratives, while RSS News reflects cautious optimism on crypto legislation and institutional adoption. Chat shows complete bearish positioning (0% bullish) creating contrarian setup, though sample limited.\n\n📈 **Themes:** (1) AI infrastructure expansion and memory bottleneck solutions driving tech sector momentum, (2) Cryptocurrency institutional adoption via tokenization and anticipated regulatory clarity, (3) Macro strength evidenced by Fed loan growth and massive ETF inflows ($33B+) contrasted with emerging breadth deterioration in mega-caps and retail weakness.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $685. Near support: $680 (77k OI, active), $640 (100k OI). Near resistance: $700 (49k OI, active). QQQ ($613.12): Call Wall $620 (38k OI, active hedging), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Near support: $590 (78k OI, active). Near resistance: $625 (28k OI, active), $630 (34k OI). /ES: 6816 critical support per Twitter (bearish if broken), 6847 support mentioned.",
+    "narrative": "📊 **Consensus:** Market shows BULLISH structural momentum with medium conviction, supported by institutional positioning and AI infrastructure themes, but faces tactical vulnerability from technical breakdowns in secondary sectors and geopolitical/regulatory headwinds.\n\n📈 **Themes:** (1) AI infrastructure spending and semiconductor sector strength, (2) Deregulation expectations driving crypto/tech positioning, (3) Technical deterioration in SaaS, retail, and streaming sectors signaling narrowing rally breadth, (4) Banking sector stress and credit market vulnerabilities as emerging systemic risks.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI), Put Wall $630 (143k OI). Max Pain $685. Near resistance: $700 (49k OI), $680 (77k OI). Near support: $640 (100k OI). QQQ ($613.12): Call Wall $620 (38k OI), Put Wall $574.78 (116k OI). Max Pain $618. Near resistance: $630 (34k OI), $625 (28k OI). Near support: $590 (78k OI). /ES: 6816 support level per Twitter (critical Fair Value Gap), downside target 6550 mentioned.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
       "META",
-      "NFLX"
+      "SPX",
+      "BTC"
     ],
     "key_themes": [
-      "AI infrastructure and chip sector momentum",
-      "Cryptocurrency institutional adoption and regulatory tailwinds",
-      "ETF inflows and macro liquidity strength",
-      "Mega-cap concentration risk and breadth deterioration",
-      "Banking regulation and systemic vulnerabilities"
+      "AI infrastructure and semiconductor momentum",
+      "Deregulation expectations in crypto/tech",
+      "Technical breakdown in secondary sectors (SaaS, retail, streaming)",
+      "Banking sector stress and credit vulnerabilities",
+      "Geopolitical tensions (Iran, China-Taiwan)"
     ],
     "risk_factors": [
-      "SPX/ES break below 6816 support triggering Wave 4 correction thesis",
-      "Cryptocurrency exchange security incidents and contagion risk",
-      "Mega-cap technical breakdowns (META 200-day, NFLX weekly trendline)",
-      "Banking regulatory tightening and capital requirement changes",
-      "Geopolitical escalation (semiconductor restrictions, Venezuela/Iran tensions)"
+      "Technical breakdown accelerating below SPX 6816 support signaling Wave 4 correction",
+      "Legislative disappointment on digital asset regulation deflating crypto positioning",
+      "Cryptocurrency exchange security breaches reversing institutional adoption momentum",
+      "Banking sector capital adequacy stress and credit spread widening",
+      "Geopolitical escalation (semiconductor trade restrictions, Iran/Taiwan tensions) creating headline risk"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $680 active support (77k OI), $700 active resistance (49k OI). QQQ: $620 call wall active resistance (38k OI), $590 support (78k OI). /ES 6816 critical per Twitter sources.",
+    "intraday_levels": "SPY: Watch $680 active support (77k OI) and $685 Max Pain gravitational pull. QQQ: Testing $620 Call Wall resistance (38k OI, 1.1% away) with $618 Max Pain anchor. /ES: 6816 support per Twitter critical for maintaining uptrend",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside to Max Pain $685, then $700 resistance. Downside risk at $630 put wall (143k OI). QQQ: Testing toward Max Pain $618-620 call wall zone (38k OI), support at $590 then $574.78 put wall (116k OI). /ES 6816 invalidation level per Twitter.",
+    "swing_levels": "SPY: Upside toward $700 resistance (49k OI), downside risk accelerates below $680 toward $640 (100k OI). QQQ: Break above $620 opens $625-$630 zone, failure brings $590 support test (78k OI). /ES: Hold above 6816 maintains bullish structure, break targets 6550 per Twitter",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 167973
+    "generation_time_ms": 169745
   },
   "trending": {
     "macro": [
