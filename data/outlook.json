@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-01-04T16:36:08.248Z",
+  "timestamp": "2026-01-04T17:02:35.273Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 63,
+    "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 54,
-        "bearish": 20,
-        "neutral": 82,
+        "bullish": 56,
+        "bearish": 17,
+        "neutral": 83,
         "total": 156,
-        "pct": 35
+        "pct": 36
       },
       "news": {
         "bullish": 7,
@@ -36,40 +36,67 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with slight bearish tilt - market at technical inflection point testing critical support levels. Conviction: Medium, as bullish sector rotation into industrials/commodities conflicts with technical breakdown signals.\n\n📈 **Themes:** Technical support testing amid sector rotation from tech to industrials/energy; regulatory tightening across banking and crypto creating selective headwinds; AI infrastructure strength offset by consumer discretionary weakness; geopolitical uncertainty (Venezuela, Iran) adding volatility backdrop.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI), Put Wall $630 (143k OI), Max Pain $685. Near resistance $700 (49k OI), near support $680 (77k OI). QQQ ($613.12): Call Wall $620 (38k OI, active), Put Wall $574.78 (116k OI), Max Pain $618. Near resistance $625-$630, near support $590 (78k OI). /ES: 6816 critical support level per Twitter - daily close below confirms correction targets toward 6550.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish retail/crypto optimism conflicts with technical breakdown warnings and bearish institutional positioning. Sources split on directional bias.\n\n📈 **Themes:** (1) Critical technical support test underway with SPX/SPY testing key levels that determine continuation vs correction, (2) Crypto regulatory clarity and institutional adoption driving sector rotation into digital assets, (3) Geopolitical tensions (Venezuela, Iran, Colombia) creating risk-off catalysts that could accelerate downside moves.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI - dormant resistance), Put Wall $630 (143k OI - dormant support). Max Pain $685. Near active resistance: $700 (49k OI), $680 (77k OI). QQQ ($613.12): Call Wall $620 (38k OI - active resistance), Put Wall $574.78 (116k OI - dormant support). Max Pain $618. Near active resistance: $630 (34k OI), $625 (28k OI). Near active support: $590 (78k OI). /ES: 6816 critical support, 6550 downside target per Twitter analysis. META: $640 support (200-day MA) per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "META",
-      "NVDA",
-      "BTC"
+      "COIN",
+      "TAO"
     ],
     "key_themes": [
-      "Sector rotation from tech to industrials/commodities",
-      "AI infrastructure strength vs consumer discretionary weakness",
-      "Regulatory tightening across banking and crypto",
-      "Technical support testing at critical inflection points",
-      "Geopolitical uncertainty adding volatility"
+      "Critical technical support test",
+      "Crypto regulatory clarity and institutional adoption",
+      "Geopolitical risk escalation",
+      "AI sector momentum",
+      "Banking sector tightening concerns"
     ],
     "risk_factors": [
-      "SPX/ES daily close below 6816 triggering broader correction",
-      "Consumer discretionary execution risks and demand contraction signals",
-      "Regulatory implementation across banking supervision and crypto oversight",
-      "Geopolitical tensions (Venezuela intervention, Iran) escalating",
-      "National debt and fiscal policy uncertainty creating macro headwinds"
+      "SPX breakdown below 6816 triggering wave-4 correction to 6550",
+      "Geopolitical escalation (Venezuela, Iran, Colombia tensions)",
+      "Banking sector capital requirement tightening creating systemic stress",
+      "Crypto infrastructure vulnerabilities despite regulatory optimism",
+      "Retail-institutional sentiment divergence suggesting positioning risk"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 active support (77k OI), $685 max pain gravity, $700 resistance (49k OI). QQQ: $618 max pain, $620 call wall active resistance (38k OI), $590 support (78k OI). /ES: 6816 critical support per Twitter",
+    "intraday_levels": "SPY: Watch $680 (77k OI active support) and $700 (49k OI active resistance). QQQ: $620 call wall active resistance (38k OI), $590 support (78k OI). /ES: 6816 critical level per Twitter",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Put Wall $630 (143k OI) major support, Call Wall $750 (55k OI) upside cap. QQQ: $574.78 Put Wall (116k OI) downside target, $620-$630 resistance zone (38k-34k OI). /ES: 6550 correction target if 6816 breaks per Twitter. META: 640 (200-day MA) key hold level per Twitter",
-    "source_alignment": "MIXED"
+    "swing_levels": "SPY: Put Wall $630 (143k OI major support), resistance at $700-$730 range. QQQ: Put Wall $574.78 (116k OI), call resistance cluster $620-$630. /ES: 6550 downside target if 6816 breaks per Twitter. META: $640 support critical",
+    "source_alignment": "CONFLICTING"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 168193
+    "generation_time_ms": 169473
   },
   "trending": {
-    "macro": [],
+    "macro": [
+      {
+        "ticker": "GLD",
+        "mentions": 2,
+        "sentiment_score": 0,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 0,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "SLV",
+        "mentions": 1,
+        "sentiment_score": 0.65,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 65,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      }
+    ],
     "crypto": [
       {
         "ticker": "BTC",
@@ -197,7 +224,7 @@
     "color": "text-muted",
     "vix": 14.51,
     "pc_ratio": 0.72,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
