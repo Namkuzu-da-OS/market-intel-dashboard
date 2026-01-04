@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-04T17:02:35.273Z",
+  "timestamp": "2026-01-04T17:31:46.883Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 66,
     "sources": {
       "social": {
-        "bullish": 56,
-        "bearish": 17,
-        "neutral": 83,
-        "total": 156,
+        "bullish": 58,
+        "bearish": 20,
+        "neutral": 82,
+        "total": 160,
         "pct": 36
       },
       "news": {
         "bullish": 7,
-        "bearish": 9,
+        "bearish": 7,
         "neutral": 2,
-        "total": 18,
-        "pct": 39
+        "total": 16,
+        "pct": 44
       },
       "video": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish retail/crypto optimism conflicts with technical breakdown warnings and bearish institutional positioning. Sources split on directional bias.\n\n📈 **Themes:** (1) Critical technical support test underway with SPX/SPY testing key levels that determine continuation vs correction, (2) Crypto regulatory clarity and institutional adoption driving sector rotation into digital assets, (3) Geopolitical tensions (Venezuela, Iran, Colombia) creating risk-off catalysts that could accelerate downside moves.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI - dormant resistance), Put Wall $630 (143k OI - dormant support). Max Pain $685. Near active resistance: $700 (49k OI), $680 (77k OI). QQQ ($613.12): Call Wall $620 (38k OI - active resistance), Put Wall $574.78 (116k OI - dormant support). Max Pain $618. Near active resistance: $630 (34k OI), $625 (28k OI). Near active support: $590 (78k OI). /ES: 6816 critical support, 6550 downside target per Twitter analysis. META: $640 support (200-day MA) per Twitter.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with bullish momentum facing technical resistance - medium conviction. Crypto strength and AI themes support upside, but key technical levels show vulnerability.\n\n📈 **Themes:** (1) Crypto legitimization and Bitcoin approaching $100k milestone driving risk appetite, (2) AI/semiconductor infrastructure dominance maintaining mega-cap leadership, (3) Technical breakdown patterns at key support levels creating near-term volatility risk.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $685. Near resistance: $700 (49k OI, active), $680 (77k OI, active support). QQQ ($613.12): Call Wall $620 (38k OI, active resistance), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Near resistance: $625-630 (28-34k OI, active). /ES: 6816 support per Twitter (SPX Daily FVG); $META 640 support per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "META",
-      "COIN",
-      "TAO"
+      "BTC",
+      "NVDA"
     ],
     "key_themes": [
-      "Critical technical support test",
-      "Crypto regulatory clarity and institutional adoption",
-      "Geopolitical risk escalation",
-      "AI sector momentum",
-      "Banking sector tightening concerns"
+      "crypto_institutional_adoption",
+      "ai_semiconductor_leadership",
+      "technical_breakdown_risks",
+      "regulatory_clarity_catalysts",
+      "mega_cap_momentum"
     ],
     "risk_factors": [
-      "SPX breakdown below 6816 triggering wave-4 correction to 6550",
-      "Geopolitical escalation (Venezuela, Iran, Colombia tensions)",
-      "Banking sector capital requirement tightening creating systemic stress",
-      "Crypto infrastructure vulnerabilities despite regulatory optimism",
-      "Retail-institutional sentiment divergence suggesting positioning risk"
+      "technical_support_breaks_at_key_levels",
+      "q1_earnings_execution_risk",
+      "fed_policy_uncertainty",
+      "crypto_security_vulnerabilities",
+      "mega_cap_concentration_fragility"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Watch $680 (77k OI active support) and $700 (49k OI active resistance). QQQ: $620 call wall active resistance (38k OI), $590 support (78k OI). /ES: 6816 critical level per Twitter",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Put Wall $630 (143k OI major support), resistance at $700-$730 range. QQQ: Put Wall $574.78 (116k OI), call resistance cluster $620-$630. /ES: 6550 downside target if 6816 breaks per Twitter. META: $640 support critical",
-    "source_alignment": "CONFLICTING"
+    "intraday_levels": "SPY: $680 active support (77k OI), $700 resistance (49k OI). QQQ: $620 active resistance (38k OI). Testing Max Pain gravitational pull at SPY $685/QQQ $618.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Put Wall $630 (143k OI major support), Call Wall $750 (55k OI resistance). QQQ: Put Wall $574.78 (116k OI support), $625-630 resistance zone. /ES 6816 support level per Twitter analysis.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 169473
+    "generation_time_ms": 159886
   },
   "trending": {
     "macro": [
@@ -153,20 +153,20 @@
     ],
     "other": [
       {
-        "ticker": "AMD",
-        "mentions": 3,
-        "sentiment_score": 0.787,
+        "ticker": "NVDA",
+        "mentions": 4,
+        "sentiment_score": 0.795,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 79,
+        "sentiment_pct": 80,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 0,
-          "total": 3
+          "total": 4
         }
       },
       {
-        "ticker": "NVDA",
+        "ticker": "AMD",
         "mentions": 3,
         "sentiment_score": 0.787,
         "sentiment_label": "Bullish",
