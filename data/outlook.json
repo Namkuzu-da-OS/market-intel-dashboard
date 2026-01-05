@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-05T19:54:50.559Z",
+  "timestamp": "2026-01-05T20:25:07.858Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 129,
-        "bearish": 23,
-        "neutral": 151,
-        "total": 303,
+        "bullish": 134,
+        "bearish": 24,
+        "neutral": 152,
+        "total": 310,
         "pct": 43
       },
       "news": {
-        "bullish": 47,
+        "bullish": 48,
         "bearish": 19,
-        "neutral": 14,
-        "total": 80,
-        "pct": 59
+        "neutral": 16,
+        "total": 83,
+        "pct": 58
       },
       "video": {
         "bullish": 2,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - technically bullish momentum on indices (Dow 49k+) conflicts with structural macro headwinds (Japan 10Y yield 2.12%, labor market deterioration). Bifurcated market where tech/crypto infrastructure decouples from consumer/financial sector weakness.\n\n📈 **Themes:** (1) Crypto regulatory clarity driving institutional adoption momentum, (2) AI/semiconductor sector volatility post-tech showcases with mixed follow-through, (3) Japan bond market stress and global contagion risk, (4) Tax policy uncertainty (wealth tax proposals) reshaping institutional capital allocation.\n\n🎯 **Levels:** SPY ($688.31): Call Wall $750 (55k OI resistance, 9% away dormant), Put Wall $630 (143k OI support, 8.5% away dormant). Max Pain $683. Active near resistance: $700 (49k OI, 1.7%), $680 (82k OI, 1.2% support). QQQ ($618.22): Call Wall $641 (55k OI, 3.7% active resistance), Put Wall $574.78 (116k OI, 7% dormant support). Max Pain $615. Active levels: $627 (53k OI), $620 (39k OI resistance), $590 (78k OI support). /ES: 6920 SPX equivalent target per Twitter, 6847 support mentioned.",
+    "narrative": "📊 **Consensus:** Cautiously bullish with elevated hedging - bullish momentum supported by technical breakouts and institutional accumulation, but institutional put positioning and macro stress signals (Japan bond yields, labor market deterioration) suggest fragile trend with rising tail risk. Conviction: Medium.\n\n📈 **Themes:** (1) Growth/aerospace sector momentum with technical breakouts and accumulation patterns, (2) Crypto regulatory clarity tailwinds offset by exchange security vulnerabilities, (3) Institutional defensive positioning despite price strength - unusual timing of large ITM put accumulation signals seasoned players hedging tail risk.\n\n🎯 **Levels:** SPY ($687.66): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $683. Near resistance: $700 (49k OI, active), $680 (82k OI, active support). QQQ ($617.70): Call Wall $641 (55k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $615. Near resistance: $627 (53k OI), $620 (39k OI). Bitcoin per Twitter: $94k support level as bullish thesis confirmation. /ES per Twitter: watch dealer positioning near key strikes.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
-      "NVDA",
-      "AMD"
+      "ASTS",
+      "RKLB",
+      "SBUX"
     ],
     "key_themes": [
-      "Crypto regulatory tailwinds and institutional adoption",
-      "Japan bond market stress and global contagion risk",
-      "AI/semiconductor momentum exhaustion signals",
-      "Wealth tax policy uncertainty reshaping capital flows",
-      "Bifurcated market: tech/crypto strength vs consumer/financial weakness"
+      "Growth and aerospace sector technical momentum",
+      "Crypto regulatory clarity and institutional adoption",
+      "Defensive institutional hedging despite price strength",
+      "Japan bond yield stress and global liquidity concerns",
+      "Wealth migration and geographic capital flows"
     ],
     "risk_factors": [
-      "Japan 10Y yield at decade+ highs (2.12%) threatening global repricing",
-      "Labor market deterioration (9.3M multiple job holders) contradicting strength narrative",
-      "Failed post-catalyst momentum in chip leaders despite tech showcases",
-      "Wealth tax implementation creating institutional reallocation pressure",
-      "Banking supervision tightening and capital framework constraints"
+      "Japan 10Y yield at 1.12% (highest since 1999) signals global liquidity stress",
+      "Large institutional ITM put accumulation despite bullish price action",
+      "Cryptocurrency exchange security breaches and operational vulnerabilities",
+      "Labor market deterioration with 9.3M working multiple jobs",
+      "Geopolitical semiconductor restriction escalation and reciprocal responses"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $688 current, watch $700 active call resistance (49k OI), $680 active put support (82k OI). QQQ: $618 current, testing $620 active resistance (39k OI), $615 max pain gravitational pull",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $683 max pain target, $700 key resistance test (49k OI), downside risk toward $640 (100k OI). QQQ: $641 call wall major resistance (55k OI), $590 active support zone (78k OI), max pain $615 pull",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: $680 active support (82k OI), $700 active resistance (49k OI). QQQ: $620 immediate resistance (39k OI), watch $615 max pain gravity",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: $630 put wall major support (143k OI), $750 call wall resistance (55k OI). QQQ: $641 call wall resistance (55k OI), $590 support zone (78k OI). Bitcoin: $94k support per Twitter analysis",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 211359
+    "generation_time_ms": 217241
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "SPY",
-        "mentions": 3,
-        "sentiment_score": 0.72,
+        "mentions": 4,
+        "sentiment_score": 0.377,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
+        "sentiment_pct": 38,
         "counts": {
           "bullish": 3,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 0,
-          "total": 3
+          "total": 4
         }
       },
       {
@@ -127,13 +127,13 @@
       {
         "ticker": "COIN",
         "mentions": 8,
-        "sentiment_score": 0.194,
+        "sentiment_score": 0.104,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 19,
+        "sentiment_pct": 10,
         "counts": {
-          "bullish": 3,
+          "bullish": 2,
           "bearish": 1,
-          "neutral": 4,
+          "neutral": 5,
           "total": 8
         }
       },
@@ -177,11 +177,11 @@
         }
       },
       {
-        "ticker": "MARA",
+        "ticker": "CLSK",
         "mentions": 2,
-        "sentiment_score": 0.75,
+        "sentiment_score": 0.77,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 75,
+        "sentiment_pct": 77,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -191,19 +191,6 @@
       }
     ],
     "other": [
-      {
-        "ticker": "PLTR",
-        "mentions": 7,
-        "sentiment_score": 0.66,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 66,
-        "counts": {
-          "bullish": 6,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 7
-        }
-      },
       {
         "ticker": "ONDS",
         "mentions": 7,
@@ -255,14 +242,27 @@
           "neutral": 1,
           "total": 6
         }
+      },
+      {
+        "ticker": "PLTR",
+        "mentions": 6,
+        "sentiment_score": 0.65,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 65,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 6
+        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.8,
-    "pc_ratio": 1.12,
+    "vix": 14.97,
+    "pc_ratio": 1.17,
     "sentiment_bullish_pct": 43,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -271,7 +271,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.21,
-    "spread": 8.51,
+    "spread": 12.08,
     "position": 50
   },
   "action": {
