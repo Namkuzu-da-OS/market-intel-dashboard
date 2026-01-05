@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-01-05T19:08:34.064Z",
+  "timestamp": "2026-01-05T19:54:50.559Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 79,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 110,
-        "bearish": 21,
-        "neutral": 136,
-        "total": 267,
-        "pct": 41
+        "bullish": 129,
+        "bearish": 23,
+        "neutral": 151,
+        "total": 303,
+        "pct": 43
       },
       "news": {
-        "bullish": 44,
+        "bullish": 47,
         "bearish": 19,
-        "neutral": 15,
-        "total": 78,
-        "pct": 56
+        "neutral": 14,
+        "total": 80,
+        "pct": 59
       },
       "video": {
-        "bullish": 1,
+        "bullish": 2,
         "bearish": 1,
         "neutral": 5,
-        "total": 7,
-        "pct": 14
+        "total": 8,
+        "pct": 25
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed sentiment with tactical bullish setups conflicting with structural bearish headwinds - conviction: LOW. Technical uptrends remain intact, but macro stress signals (Japan credit markets, cooling U.S. labor) and regulatory uncertainty create fragile conditions vulnerable to rapid reversals.\n\n📈 **Themes:** (1) Technical continuation patterns vs. failed Santa Claus rally creating directional uncertainty, (2) Sector rotation into nuclear/energy and institutional crypto adoption offsetting broader growth/tech weakness, (3) Policy risk around wealth taxation and regulatory clarity creating structural headwinds for illiquid asset classes.\n\n🎯 **Levels:** SPY ($688.45): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $683. Active resistance: $700 (49k OI, 1.7% away), Active support: $680 (82k OI, 1.2% away). QQQ ($618.56): Call Wall $641 (55k OI, 3.6% - active hedging), Put Wall $574.78 (116k OI, dormant). Max Pain $615. Active resistance: $627 (53k OI), $620 (39k OI). Active support: $590 (78k OI). Per Twitter: SPY 690 GEX resistance level.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - technically bullish momentum on indices (Dow 49k+) conflicts with structural macro headwinds (Japan 10Y yield 2.12%, labor market deterioration). Bifurcated market where tech/crypto infrastructure decouples from consumer/financial sector weakness.\n\n📈 **Themes:** (1) Crypto regulatory clarity driving institutional adoption momentum, (2) AI/semiconductor sector volatility post-tech showcases with mixed follow-through, (3) Japan bond market stress and global contagion risk, (4) Tax policy uncertainty (wealth tax proposals) reshaping institutional capital allocation.\n\n🎯 **Levels:** SPY ($688.31): Call Wall $750 (55k OI resistance, 9% away dormant), Put Wall $630 (143k OI support, 8.5% away dormant). Max Pain $683. Active near resistance: $700 (49k OI, 1.7%), $680 (82k OI, 1.2% support). QQQ ($618.22): Call Wall $641 (55k OI, 3.7% active resistance), Put Wall $574.78 (116k OI, 7% dormant support). Max Pain $615. Active levels: $627 (53k OI), $620 (39k OI resistance), $590 (78k OI support). /ES: 6920 SPX equivalent target per Twitter, 6847 support mentioned.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "MDB",
-      "LIT",
-      "ONDS"
+      "BTC",
+      "NVDA",
+      "AMD"
     ],
     "key_themes": [
-      "Technical uptrend continuation vs breakdown risk",
-      "Nuclear/energy sector rotation strength",
-      "Institutional crypto adoption and regulatory framework uncertainty",
-      "Japan credit market stress signals",
-      "Wealth tax policy structural risk"
+      "Crypto regulatory tailwinds and institutional adoption",
+      "Japan bond market stress and global contagion risk",
+      "AI/semiconductor momentum exhaustion signals",
+      "Wealth tax policy uncertainty reshaping capital flows",
+      "Bifurcated market: tech/crypto strength vs consumer/financial weakness"
     ],
     "risk_factors": [
-      "Japan 10Y/30Y yield spikes signaling credit contagion potential",
-      "Failed Santa Claus rally and cooling U.S. labor market dynamics",
-      "Regulatory clarity disappointments in crypto infrastructure",
-      "Wealth tax policy adoption triggering forced liquidation in illiquid assets",
-      "Dealer hedging dynamics at active Call Wall levels (QQQ $641) creating technical resistance"
+      "Japan 10Y yield at decade+ highs (2.12%) threatening global repricing",
+      "Labor market deterioration (9.3M multiple job holders) contradicting strength narrative",
+      "Failed post-catalyst momentum in chip leaders despite tech showcases",
+      "Wealth tax implementation creating institutional reallocation pressure",
+      "Banking supervision tightening and capital framework constraints"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: 690 resistance (GEX level per Twitter), 680 support (82k OI active). QQQ: 620 resistance (39k OI), 615 support (Max Pain gravitational pull)",
+    "intraday_levels": "SPY: $688 current, watch $700 active call resistance (49k OI), $680 active put support (82k OI). QQQ: $618 current, testing $620 active resistance (39k OI), $615 max pain gravitational pull",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: 700 resistance (49k OI), 683 Max Pain target, 640 support zone (100k OI). QQQ: 641 Call Wall resistance (55k OI, active dealer hedging), 590-580 support corridor (78k-108k OI)",
-    "source_alignment": "CONFLICTING"
+    "swing_levels": "SPY: $683 max pain target, $700 key resistance test (49k OI), downside risk toward $640 (100k OI). QQQ: $641 call wall major resistance (55k OI), $590 active support zone (78k OI), max pain $615 pull",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 205541
+    "generation_time_ms": 211359
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "SPY",
-        "mentions": 2,
+        "mentions": 3,
         "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
         "sentiment_pct": 72,
         "counts": {
-          "bullish": 2,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 0,
-          "total": 2
+          "total": 3
         }
       },
       {
@@ -121,19 +121,6 @@
           "neutral": 2,
           "total": 2
         }
-      },
-      {
-        "ticker": "AGG",
-        "mentions": 1,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "crypto": [
@@ -151,6 +138,19 @@
         }
       },
       {
+        "ticker": "ETH",
+        "mentions": 5,
+        "sentiment_score": 0.738,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 74,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 5
+        }
+      },
+      {
         "ticker": "MSTR",
         "mentions": 5,
         "sentiment_score": 0.304,
@@ -164,16 +164,16 @@
         }
       },
       {
-        "ticker": "ETH",
-        "mentions": 4,
-        "sentiment_score": 0.723,
+        "ticker": "BTC",
+        "mentions": 3,
+        "sentiment_score": 0.673,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
+        "sentiment_pct": 67,
         "counts": {
-          "bullish": 4,
+          "bullish": 3,
           "bearish": 0,
           "neutral": 0,
-          "total": 4
+          "total": 3
         }
       },
       {
@@ -182,19 +182,6 @@
         "sentiment_score": 0.75,
         "sentiment_label": "Bullish",
         "sentiment_pct": 75,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "BTC",
-        "mentions": 2,
-        "sentiment_score": 0.65,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -218,6 +205,19 @@
         }
       },
       {
+        "ticker": "ONDS",
+        "mentions": 7,
+        "sentiment_score": 0.657,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 66,
+        "counts": {
+          "bullish": 6,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 7
+        }
+      },
+      {
         "ticker": "TSLA",
         "mentions": 7,
         "sentiment_score": 0.441,
@@ -227,6 +227,19 @@
           "bullish": 4,
           "bearish": 0,
           "neutral": 3,
+          "total": 7
+        }
+      },
+      {
+        "ticker": "NVDA",
+        "mentions": 7,
+        "sentiment_score": 0.331,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 4,
+          "bearish": 1,
+          "neutral": 2,
           "total": 7
         }
       },
@@ -242,32 +255,6 @@
           "neutral": 1,
           "total": 6
         }
-      },
-      {
-        "ticker": "ONDS",
-        "mentions": 6,
-        "sentiment_score": 0.647,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 6
-        }
-      },
-      {
-        "ticker": "NVDA",
-        "mentions": 6,
-        "sentiment_score": 0.27,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
-        "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 2,
-          "total": 6
-        }
       }
     ]
   },
@@ -275,8 +262,8 @@
     "label": "NEUTRAL",
     "color": "text-muted",
     "vix": 14.8,
-    "pc_ratio": 1.11,
-    "sentiment_bullish_pct": 41,
+    "pc_ratio": 1.12,
+    "sentiment_bullish_pct": 43,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -284,7 +271,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.21,
-    "spread": 7.17,
+    "spread": 8.51,
     "position": 50
   },
   "action": {
