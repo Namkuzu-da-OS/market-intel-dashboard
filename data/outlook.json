@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-05T05:05:47.852Z",
+  "timestamp": "2026-01-05T05:34:01.502Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 78,
+    "confidence_pct": 77,
     "sources": {
       "social": {
         "bullish": 121,
-        "bearish": 17,
-        "neutral": 180,
-        "total": 318,
-        "pct": 38
+        "bearish": 21,
+        "neutral": 185,
+        "total": 327,
+        "pct": 37
       },
       "news": {
-        "bullish": 15,
+        "bullish": 16,
         "bearish": 7,
         "neutral": 5,
-        "total": 27,
-        "pct": 56
+        "total": 28,
+        "pct": 57
       },
       "video": {
         "bullish": 0,
@@ -36,42 +36,39 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish with medium conviction. Higher-weighted sources (X, RSS) show bullish lean (88%, 68%), but lower-weighted YouTube and Chat signal caution/data gaps, creating structural uncertainty despite surface optimism.\n\n📈 **Themes:** (1) Geopolitical escalation impacting sector rotation (defense/aerospace vs. tech vulnerability), (2) AI momentum narrative shifting to \"agentic AI\" while pressuring legacy software/SaaS, (3) Regulatory clarity for digital assets vs. crypto counterparty risk concerns, (4) Rate policy uncertainty creating sector bifurcation.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $685. Near resistance: $700 (49k OI, active), $680 (77k OI, active support). QQQ ($613.12): Call Wall $620 (38k OI, active resistance), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Near resistance: $625 (28k OI), $630 (34k OI). Near support: $590 (78k OI, active). /ES: Critical test zone per Twitter, with sector-specific levels varying. BTC: Critical test anticipated per X sources.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with modest bullish structural bias but near-term execution risk elevated - conviction: MEDIUM. Institutional flows and crypto momentum contrast with mega-cap tech deterioration and defensive rotation signals.\n\n📈 **Themes:** (1) Agentic AI narrative shift driving semiconductor/crypto strength while pressuring SaaS, (2) Sector rotation from mega-cap tech into cyclicals/defense/cybersecurity, (3) Crypto institutional adoption acceleration amid regulatory clarity expectations, (4) Wealth tax policy contagion risk creating HNW behavioral shifts.\n\n🎯 **Levels:** SPY ($683.17): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $685. Active resistance: $700 (49k OI), active support: $680 (77k OI). QQQ ($613.12): Call Wall $620 (38k OI, active resistance), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Active resistance: $625-630, active support: $590. /ES levels per Twitter: watching technical tests at mega-cap support zones. BTC momentum targeting $97k breakout per source analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
+      "NFLX",
       "META",
-      "NVDA",
-      "COST",
       "MU",
-      "PLTR",
-      "COIN"
+      "RKLB"
     ],
     "key_themes": [
-      "Geopolitical escalation and sector rotation",
-      "AI momentum vs. legacy software displacement",
-      "Crypto regulatory clarity vs. counterparty risk",
-      "Rate policy uncertainty and sector bifurcation",
-      "Technical breakdowns in mega-cap names"
+      "Agentic AI sector rotation",
+      "Crypto institutional adoption",
+      "Mega-cap tech deterioration",
+      "Wealth tax policy risk",
+      "Defense/aerospace strength"
     ],
     "risk_factors": [
-      "Geopolitical escalation (South America, China-Taiwan, chip export restrictions)",
-      "Crypto exchange integrity and counterparty risk",
-      "Mega-cap technical breakdowns (NFLX trendline, META 200-day rejection)",
-      "Wealth taxation policy precedent risk",
-      "Fed policy friction and rate cut uncertainty",
-      "Sector-specific weakness in software/SaaS and consumer discretionary"
+      "Mega-cap tech support breakdown (NFLX/META) invalidating bullish structure",
+      "Wealth tax policy contagion triggering HNW capital flight",
+      "Crypto regulatory disappointment reversing institutional flows",
+      "Geopolitical escalation creating risk-off rotation",
+      "Options gamma flip if SPY breaks below $680 or QQQ below $590"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 active support (77k OI), $700 active resistance (49k OI). QQQ: $590 support (78k OI), $620 resistance (38k OI). Watch for Bitcoin reaction as volatility catalyst per X sources.",
+    "intraday_levels": "SPY: Active support $680 (77k OI), active resistance $700 (49k OI). QQQ: Active resistance $620-625 (38k-28k OI), support $590 (78k OI). Sunday positioning suggests range-bound Monday open awaiting directional catalysts.",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Put Wall $630 (143k OI) major support if tested, Call Wall $750 (55k OI) caps upside. QQQ: $574.78 Put Wall (116k OI) major support, $620-$630 Call Wall zone creates resistance ceiling. Sector-specific: META 200-day MA support, COST near 52-week lows per X analysis.",
-    "source_alignment": "CONFLICTING"
+    "swing_levels": "SPY: Major resistance at $700 (49k OI) then Call Wall $750 (55k OI), major support at Put Wall $630 (143k OI) with intermediate support $640-680. QQQ: Call Wall $620 (38k OI) capping upside, Put Wall $574.78 (116k OI) protecting downside. Watch mega-cap tech support tests per Twitter analysis for swing direction confirmation.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 197257
+    "generation_time_ms": 202057
   },
   "trending": {
     "macro": [
@@ -255,7 +252,7 @@
     "color": "text-muted",
     "vix": 14.51,
     "pc_ratio": 0.72,
-    "sentiment_bullish_pct": 38,
+    "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
