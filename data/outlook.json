@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-06T15:11:21.378Z",
+  "timestamp": "2026-01-06T16:31:41.848Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 86,
+    "confidence_pct": 84,
     "sources": {
       "social": {
-        "bullish": 153,
-        "bearish": 13,
-        "neutral": 113,
-        "total": 279,
+        "bullish": 164,
+        "bearish": 19,
+        "neutral": 117,
+        "total": 300,
         "pct": 55
       },
       "news": {
-        "bullish": 49,
-        "bearish": 21,
-        "neutral": 22,
-        "total": 92,
-        "pct": 53
+        "bullish": 53,
+        "bearish": 24,
+        "neutral": 25,
+        "total": 102,
+        "pct": 52
       },
       "video": {
         "bullish": 3,
@@ -36,37 +36,41 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium-high conviction. Multiple sources converge on AI/semiconductor strength and institutional positioning, though tempered by structural macro risks (liquidity drains, global bond stress) that could trigger volatility.\n\n📈 **Themes:** (1) AI infrastructure buildout pivoting toward memory/supply-constrained plays over flagship GPU names, (2) Regulatory clarity optimism in crypto/digital assets driving institutional adoption, (3) Liquidity withdrawal concerns (Treasury General Account drawdown, Japanese bond yields at multi-decade highs) creating macro fragility beneath bullish momentum.\n\n🎯 **Levels:** SPY ($688.14): Call Wall $750 (55k OI, 9.0% away - dormant), Put Wall $630 (143k OI, 8.4% away - dormant). Max Pain $687. Near resistance: $693 (48k OI, 0.7% - ACTIVE), $730 (48k OI). Near support: $680 (85k OI, 1.2% - ACTIVE). QQQ ($619.15): Call Wall $641 (55k OI, 3.5% away - active hedging), Put Wall $574.78 (116k OI, 7.2% away). Max Pain $618. Near resistance: $627 (53k OI, 1.3% - ACTIVE), $620 (38k OI, 0.1% - ACTIVE). Twitter mentions: SPY $690 resistance ($1.7B call wall), /ES support levels per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Bullish technical momentum confronting bearish macro headwinds creates near-term choppy consolidation with downside bias (conviction: medium). Structural optimism in AI/crypto themes clashes with liquidity drains and regulatory uncertainty.\n\n📈 **Themes:** (1) AI infrastructure supply constraints (memory chip shortages) driving positioning in indirect beneficiaries, (2) Institutional crypto adoption versus security/regulatory friction creating volatility, (3) Global liquidity tightening (TGA surge, Japanese yields) offsetting technical breakout attempts.\n\n🎯 **Levels:** SPY ($688.74): Call Wall $750 (55k OI), Put Wall $630 (143k OI). Max Pain $687. Near resistance: $693 (48k OI active), $730 (48k OI dormant). Near support: $680 (85k OI active), $640 (101k OI dormant). QQQ ($619.97): Call Wall $641 (55k OI active), Put Wall $574.78 (116k OI dormant). Max Pain $618. Near resistance: $620 (38k OI active), $627 (53k OI active). Near support: $590 (78k OI active). /ES: 6847 support per Twitter sentiment.",
     "key_tickers": [
       "SPY",
       "QQQ",
+      "AMD",
       "NVDA",
       "MCHP",
-      "MSTR"
+      "TSLA",
+      "ETH",
+      "SOL",
+      "BTC"
     ],
     "key_themes": [
-      "AI infrastructure supply constraints favoring memory manufacturers",
-      "Crypto regulatory clarity and institutional adoption",
-      "Macro liquidity withdrawal risks (Treasury drawdown, Japanese bond yields)",
-      "Semiconductor momentum sustainability",
-      "Bifurcated market (tech/crypto strength vs consumer/housing weakness)"
+      "AI infrastructure supply constraints",
+      "Institutional crypto adoption",
+      "Global liquidity tightening",
+      "Semiconductor sector rotation",
+      "Regulatory uncertainty resolution"
     ],
     "risk_factors": [
-      "$700B Treasury General Account liquidity drain creating systemic stress",
-      "Japanese 10Y yields at 2.12% (highest since 1999) threatening global bond market contagion",
-      "Semiconductor gap-and-crap pattern suggesting weakening conviction despite bullish narrative",
-      "Institutional put hedging (large ITM June SPY puts) indicating sophisticated tail risk positioning",
-      "Housing demand destruction and consumer discretionary weakness contradicting risk-on positioning"
+      "Treasury General Account liquidity drain reducing market support",
+      "Japanese bond yield surge signaling global monetary tightening",
+      "Crypto security breaches and regulatory enforcement actions",
+      "Fake breakout patterns in semiconductors post-momentum events",
+      "Crowded consensus positioning in memory chip shortage trade creating reversal risk"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: $680 support (85k OI, ACTIVE), $693 resistance (48k OI, ACTIVE). QQQ: $620 resistance (38k OI, ACTIVE), $618 Max Pain gravitational pull. Watch SPY $690 per Twitter as critical test.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $690 critical resistance per Twitter, $693-$730 resistance zone if breakthrough occurs. Support at $680 (ACTIVE hedging). QQQ: $641 Call Wall (3.5% away) major resistance with active dealer hedging, $590 support (78k OI). Downside risk accelerates below $680 SPY per institutional put hedging.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY $693 active call resistance, $680 active put support. QQQ $620-$627 resistance cluster, $590 support. Watch for breakout/breakdown confirmation at these active hedging levels",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY $690 call wall test critical (per Twitter), failure triggers pullback toward $680-$675 Max Pain zone. QQQ $641 call wall caps upside, downside risk toward $590 active support if momentum fades. Watch memory chip sector and crypto for leading weakness signals",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 174120
+    "generation_time_ms": 170367
   },
   "trending": {
     "macro": [
@@ -113,15 +117,15 @@
     "crypto": [
       {
         "ticker": "ETH",
-        "mentions": 3,
-        "sentiment_score": 0.79,
+        "mentions": 4,
+        "sentiment_score": 0.367,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 79,
+        "sentiment_pct": 37,
         "counts": {
           "bullish": 3,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 0,
-          "total": 3
+          "total": 4
         }
       },
       {
@@ -139,15 +143,15 @@
       },
       {
         "ticker": "SOL",
-        "mentions": 2,
-        "sentiment_score": 0.76,
+        "mentions": 3,
+        "sentiment_score": 0.223,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 76,
+        "sentiment_pct": 22,
         "counts": {
           "bullish": 2,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 0,
-          "total": 2
+          "total": 3
         }
       },
       {
@@ -193,15 +197,15 @@
       },
       {
         "ticker": "TSLA",
-        "mentions": 7,
-        "sentiment_score": 0.766,
+        "mentions": 8,
+        "sentiment_score": 0.564,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 77,
+        "sentiment_pct": 56,
         "counts": {
           "bullish": 7,
-          "bearish": 0,
+          "bearish": 1,
           "neutral": 0,
-          "total": 7
+          "total": 8
         }
       },
       {
@@ -218,6 +222,19 @@
         }
       },
       {
+        "ticker": "AMD",
+        "mentions": 6,
+        "sentiment_score": 0.345,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 35,
+        "counts": {
+          "bullish": 4,
+          "bearish": 1,
+          "neutral": 1,
+          "total": 6
+        }
+      },
+      {
         "ticker": "SPX",
         "mentions": 6,
         "sentiment_score": 0.337,
@@ -229,27 +246,14 @@
           "neutral": 3,
           "total": 6
         }
-      },
-      {
-        "ticker": "AMD",
-        "mentions": 5,
-        "sentiment_score": 0.27,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 27,
-        "counts": {
-          "bullish": 3,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 5
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.92,
-    "pc_ratio": 0.85,
+    "vix": 15.01,
+    "pc_ratio": 1.15,
     "sentiment_bullish_pct": 55,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -258,7 +262,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.84,
-    "spread": 5.41,
+    "spread": 5.14,
     "position": 50
   },
   "action": {
