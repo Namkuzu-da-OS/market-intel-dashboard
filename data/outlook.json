@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-07T03:35:35.352Z",
+  "timestamp": "2026-01-07T04:11:45.268Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 246,
-        "bearish": 43,
-        "neutral": 191,
-        "total": 480,
+        "bullish": 254,
+        "bearish": 46,
+        "neutral": 198,
+        "total": 498,
         "pct": 51
       },
       "news": {
-        "bullish": 52,
+        "bullish": 54,
         "bearish": 29,
         "neutral": 25,
-        "total": 106,
-        "pct": 49
+        "total": 108,
+        "pct": 50
       },
       "video": {
         "bullish": 5,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish bias with medium-high conviction, supported by technical strength at all-time highs and synchronized moving average alignment, though offset by valuation extremes and narrowing leadership concerns.\n\n📈 **Themes:** (1) AI infrastructure momentum and semiconductor supply constraints driving tech leadership, (2) Mega-cap divergence with NVDA/AAPL underperformance despite index strength signaling narrowing breadth, (3) Policy expectations around rate trajectory and energy supply expansion supporting equity multiples.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, resistance), Put Wall $630 (143k OI, support). Max Pain $687. Active resistance: $693 (48k OI, 0.2% away). Active support: $680 (85k OI, 1.7% away). QQQ ($623.42): Call Wall $641 (55k OI, 2.8% away - active hedging), Put Wall $574.78 (116k OI, support). Max Pain $618. Active resistance: $627 (53k OI), $630 (33k OI). /ES: 6900 support and 7000 upside target per Twitter; NDX triangle breakout/breakdown pivot per Twitter.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with cautious near-term pessimism but structural bullish undercurrents - conviction: MEDIUM. Valuations and technical exhaustion create tactical vulnerability despite regulatory tailwinds and supply-driven sector strength.\n\n📈 **Themes:** (1) AI infrastructure momentum vs valuation ceiling concerns - mega-cap divergence signaling distribution risk, (2) Crypto regulatory clarity narrative vs institutional flow skepticism - MSCI adoption offsetting ETF outflow pressure, (3) Semiconductor supply constraints through 2026 providing structural support despite near-term technical breakdown risks.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $687. Near resistance: $693 (48k OI, active). Near support: $680 (85k OI, active). QQQ ($623.42): Call Wall $641 (55k OI, active resistance), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Near resistance: $627 (53k OI), $630 (33k OI). /ES: ~6847 support per Twitter analysis. BTC: $92K liquidation zone per Twitter (fragility above this level).",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "AAPL",
-      "BTC"
+      "BTC",
+      "NDX"
     ],
     "key_themes": [
-      "AI infrastructure and semiconductor supply constraints",
-      "Mega-cap tech leadership divergence and market breadth concerns",
-      "Policy expectations around rate trajectory and energy supply",
-      "Valuation extremes and Shiller P/E warnings",
-      "Global rate pressure from Japan deleveraging risk"
+      "AI infrastructure supply constraints vs valuation extremes",
+      "Crypto regulatory tailwinds and institutional adoption narrative",
+      "Mega-cap divergence and breadth deterioration",
+      "Semiconductor supply-demand imbalance through 2026",
+      "Rate policy uncertainty and inflation trajectory"
     ],
     "risk_factors": [
-      "Valuation extremes mirroring bubble conditions with Shiller P/E at historic highs",
-      "Leadership divergence with NVDA/AAPL underperforming during ATH rallies indicating deteriorating internals",
-      "Japan 30-year yield hitting 3.527% signaling potential global deleveraging cascade",
-      "NDX triangle breakdown risk as technical reversal catalyst",
-      "Policy execution failures on energy supply expansion or Fed rate cut timeline delays"
+      "Technical breakdown risk - NDX multi-month triangle violation imminent per Twitter analysis",
+      "Valuation extremes - elevated Shiller P/E and AI bubble mentions suggesting sentiment exhaustion",
+      "Mega-cap participation failure - NVDA/AAPL not confirming new highs despite rally",
+      "BTC liquidation fragility above $92K zone indicating crypto vulnerability",
+      "Q1 earnings critical test for consumer discretionary and financials per RSS warnings"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: $693 active call resistance (48k OI), $680 active put support (85k OI). QQQ: $627-$630 active resistance zone (53k-33k OI), testing call wall at $641 (55k OI)",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Max Pain gravitational pull toward $687, upside capped near $730 dormant resistance (48k OI), downside protected by $630 put wall (143k OI). QQQ: Testing $641 call wall (55k OI) as key resistance, $574.78 put wall (116k OI) as major support. /ES 6900 critical support and 7000 target per Twitter",
-    "source_alignment": "ALIGNED"
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Active resistance $693 (48k OI), active support $680 (85k OI). QQQ: Active resistance $627-$630 zone (53k+33k OI), call wall pressure at $641 (55k OI). Max pain gravitational pull: SPY $687, QQQ $618",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Downside toward Max Pain $687 likely, dormant put wall support at $630 (143k OI) if weakness accelerates. QQQ: Call wall resistance $641 (55k OI) caps upside, dormant support at $590-$580 zone if technical breakdown materializes. Multi-week consolidation zone anticipated",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 170516
+    "generation_time_ms": 167992
   },
   "trending": {
     "macro": [
@@ -231,16 +231,16 @@
         }
       },
       {
-        "ticker": "MU",
-        "mentions": 9,
-        "sentiment_score": 0.626,
+        "ticker": "AMZN",
+        "mentions": 10,
+        "sentiment_score": 0.453,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 63,
+        "sentiment_pct": 45,
         "counts": {
           "bullish": 8,
-          "bearish": 1,
+          "bearish": 2,
           "neutral": 0,
-          "total": 9
+          "total": 10
         }
       }
     ]
