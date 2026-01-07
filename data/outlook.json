@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-07T01:54:48.566Z",
+  "timestamp": "2026-01-07T02:29:29.913Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 82,
+    "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 232,
-        "bearish": 38,
-        "neutral": 168,
-        "total": 438,
-        "pct": 53
+        "bullish": 239,
+        "bearish": 41,
+        "neutral": 176,
+        "total": 456,
+        "pct": 52
       },
       "news": {
         "bullish": 52,
-        "bearish": 26,
-        "neutral": 24,
-        "total": 102,
-        "pct": 51
+        "bearish": 27,
+        "neutral": 25,
+        "total": 104,
+        "pct": 50
       },
       "video": {
         "bullish": 5,
@@ -36,7 +36,7 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - multiple sources cite technical breakouts and institutional positioning, but bearish divergences in mega-caps and exhausted seasonal catalysts create near-term vulnerability.\n\n📈 **Themes:** (1) AI/semiconductor infrastructure demand driving tech strength despite supply constraints, (2) Institutional cryptocurrency adoption accelerating with regulatory clarity narratives, (3) Mega-cap underperformance during recent highs signaling potential rotation or exhaustion risk.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI), Put Wall $630 (143k OI). Max Pain $687. Near support: $680 (85k OI, active), $640 (101k OI, dormant). Near resistance: $693 (48k OI, active), $730 (48k OI, dormant). QQQ ($623.42): Call Wall $641 (55k OI, active hedging), Put Wall $574.78 (116k OI). Max Pain $618. Near resistance: $627 (53k OI), $630 (33k OI). /ES: 6900 level critical per Twitter for 7000 targets; 6847 support mentioned.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - market shows technical momentum and institutional accumulation but faces valuation extremes and critical technical decision points that elevate reversal risk.\n\n📈 **Themes:** (1) AI infrastructure and semiconductor supply constraints driving tech leadership, (2) Cryptocurrency institutional adoption momentum amid regulatory clarity developments, (3) Technical breakout tests and seasonal support window closure creating near-term volatility.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, resistance), Put Wall $630 (143k OI, support). Max Pain $687. Near support: $680 (85k OI, active), $640 (101k OI). Near resistance: $693 (48k OI, active). QQQ ($623.42): Call Wall $641 (55k OI, active resistance 2.8% away), Put Wall $574.78 (116k OI, support). Max Pain $618. Near resistance: $627 (53k OI, active), $630 (33k OI). /ES: 6900 support level and 6847 support per Twitter. NDX triangle breakout decision point imminent per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
@@ -45,55 +45,55 @@
       "BTC"
     ],
     "key_themes": [
-      "AI infrastructure and semiconductor supply constraints creating pricing power",
-      "Institutional cryptocurrency adoption with regulatory clarity expectations",
-      "Mega-cap divergence and seasonal momentum exhaustion risks",
-      "Commodity deflation narratives from energy policy shifts",
-      "Technical inflection points in major indices"
+      "AI infrastructure and semiconductor supply constraints",
+      "Cryptocurrency institutional adoption and regulatory clarity",
+      "Technical breakout decision points and dealer gamma positioning",
+      "Seasonal support window dynamics",
+      "Venezuela oil supply expansion and commodity disinflation"
     ],
     "risk_factors": [
-      "NDX triangle breakdown triggering broader market weakness",
-      "Mega-cap underperformance during ATH rally signaling bearish divergence",
-      "Cryptocurrency platform security breaches reversing institutional adoption narrative",
-      "Banking sector regulatory scrutiny creating financial stress",
-      "Semiconductor export controls disrupting supply chains and tech valuations"
+      "Valuation extremes and elevated Shiller P/E ratios signaling overextension",
+      "NDX triangle breakout failure could trigger cascading reversal",
+      "Mega-cap leadership divergence with NVDA and AAPL underperforming",
+      "Exchange security vulnerabilities and counterparty risks in crypto",
+      "Consumer weakness and weakening fundamentals in traditional sectors"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $693 active resistance (48k OI), $680 active support (85k OI). QQQ: $627 resistance (53k OI), $618 max pain support. Watch for breakdown signals given late-session timing.",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: $693 active resistance (48k OI), $680 active support (85k OI). QQQ: $627 active resistance (53k OI), watch $641 call wall (55k OI). /ES: 6900 support per Twitter",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $730 dormant resistance (48k OI), $640 dormant support (101k OI). QQQ: $641 call wall resistance (55k OI), $574.78 put wall support (116k OI). MU: $350 target with potential extension to 370-375 per Twitter analysis.",
-    "source_alignment": "MIXED"
+    "swing_levels": "SPY: $730 resistance (48k OI), $640 support (101k OI), Max Pain gravity toward $687. QQQ: $641 call wall major resistance (55k OI), $574.78 put wall major support (116k OI). Watch NDX triangle breakout per Twitter",
+    "source_alignment": "ALIGNED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 161745
+    "generation_time_ms": 163607
   },
   "trending": {
     "macro": [
       {
         "ticker": "QQQ",
-        "mentions": 13,
-        "sentiment_score": 0.484,
+        "mentions": 14,
+        "sentiment_score": 0.501,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 48,
+        "sentiment_pct": 50,
         "counts": {
-          "bullish": 9,
+          "bullish": 10,
           "bearish": 1,
           "neutral": 3,
-          "total": 13
+          "total": 14
         }
       },
       {
         "ticker": "SPY",
-        "mentions": 9,
-        "sentiment_score": 0.626,
+        "mentions": 10,
+        "sentiment_score": 0.635,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 63,
+        "sentiment_pct": 64,
         "counts": {
-          "bullish": 8,
+          "bullish": 9,
           "bearish": 1,
           "neutral": 0,
-          "total": 9
+          "total": 10
         }
       },
       {
@@ -193,15 +193,15 @@
       },
       {
         "ticker": "SPX",
-        "mentions": 12,
-        "sentiment_score": 0.528,
+        "mentions": 13,
+        "sentiment_score": 0.543,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
+        "sentiment_pct": 54,
         "counts": {
-          "bullish": 8,
+          "bullish": 9,
           "bearish": 0,
           "neutral": 4,
-          "total": 12
+          "total": 13
         }
       },
       {
@@ -250,7 +250,7 @@
     "color": "text-muted",
     "vix": 14.75,
     "pc_ratio": 1.15,
-    "sentiment_bullish_pct": 53,
+    "sentiment_bullish_pct": 52,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
