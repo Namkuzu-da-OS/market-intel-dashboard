@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-07T19:37:16.317Z",
+  "timestamp": "2026-01-07T20:21:26.725Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 78,
     "sources": {
       "social": {
-        "bullish": 313,
-        "bearish": 79,
-        "neutral": 286,
-        "total": 678,
+        "bullish": 324,
+        "bearish": 82,
+        "neutral": 302,
+        "total": 708,
         "pct": 46
       },
       "news": {
-        "bullish": 49,
-        "bearish": 28,
-        "neutral": 27,
-        "total": 104,
-        "pct": 47
+        "bullish": 52,
+        "bearish": 29,
+        "neutral": 31,
+        "total": 112,
+        "pct": 46
       },
       "video": {
         "bullish": 9,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Mixed-to-cautiously-bullish with medium conviction. Quantitative sentiment leans bullish (80% Twitter, 64% RSS, 100% YouTube), but qualitative analysis reveals fragmentation: tech/crypto strength masking internals deterioration and housing sector shock.\n\n📈 **Themes:** (1) Mega-cap tech and AI infrastructure momentum driving narrow leadership while breadth deteriorates, (2) Crypto regulatory clarity and institutional adoption acceleration creating sector rotation opportunities, (3) Housing policy shock triggering real estate selloffs contrasting with innovation-sector resilience.\n\n🎯 **Levels:** SPY ($692.59): Call Wall $750 (55k OI resistance, dormant), Put Wall $630 (143k OI support, dormant). Max Pain $690. Near resistance: $701 (51k OI, active), $693 (48k OI, active). Near support: $680 (121k OI, active). QQQ ($627.04): Call Wall $641 (56k OI resistance, active), Put Wall $574.78 (116k OI support, dormant). Max Pain $622. Near resistance: $650 (44k OI), $630 (31k OI). /ES per Twitter: 6990 support band vs 7007 rejection, watch 7000-7002 retest zone.",
+    "narrative": "📊 **Consensus:** Bullish bias with medium conviction - sentiment is 80% bullish on X, 64% RSS, 100% YouTube, but near-term policy headwinds and breadth deterioration create short-term turbulence within an otherwise constructive structure.\n\n📈 **Themes:** AI infrastructure expansion driving mega-cap tech strength, regulatory clarity expectations supporting crypto integration, policy uncertainty creating defensive rotation into bonds while sector-specific pressure hits real estate and defense contractors.\n\n🎯 **Levels:** SPY ($691.93): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $690. Near resistance: $701 (51k OI active), $693 (48k OI active). Near support: $680 (121k OI active). QQQ ($626.00): Call Wall $641 (56k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $622. Near resistance: $627 (52k OI active), $650 (44k OI). /ES: 7007 rejection and 6990 support band per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "GOOGL",
       "NVDA",
-      "BTC"
+      "CRWD",
+      "BX"
     ],
     "key_themes": [
-      "AI infrastructure and mega-cap tech leadership",
-      "Crypto institutional adoption and regulatory clarity",
-      "Housing sector policy shock creating rotation dynamics",
-      "Narrow market breadth masking internals deterioration",
-      "Macro liquidity normalization supporting risk assets"
+      "AI infrastructure and hardware expansion",
+      "Crypto regulatory clarity and institutional adoption",
+      "Policy uncertainty affecting real estate and defense sectors",
+      "Market breadth deterioration despite index strength",
+      "Defensive rotation into bonds"
     ],
     "risk_factors": [
-      "Deteriorating market breadth and advance/decline weakness beneath surface strength",
-      "Housing policy shock spreading to broader real estate and financial sectors",
-      "Options structure shows active resistance at current levels (SPY 693, QQQ 641)",
-      "Regulatory/geopolitical contingencies could derail crypto and tech momentum",
-      "Valuation compression risk if macro liquidity improvements disappoint"
+      "Policy headwinds from housing restrictions and defense contractor policy creating sector-specific damage",
+      "Market breadth weakness (negative ADD/VOLD) suggesting rally lacks broad participation",
+      "Crypto infrastructure vulnerabilities and exchange security risks",
+      "Consumer discretionary weakness signaling demand deterioration",
+      "Fed tightening and capital requirement pressures on banking sector"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: 693 active resistance (48k OI), 680 active support (121k OI). /ES: 6990 support per Twitter, 7000-7007 resistance zone. QQQ: 630 resistance (31k OI), watch 622 max pain gravitational pull.",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY resistance at $693 (48k OI active) and $701 (51k OI), support at $680 (121k OI). /ES rejection at 7007, support at 6990 per Twitter. QQQ resistance at $627 (52k OI active)",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: 701 resistance (51k OI), 680 support (121k OI), max pain gravity toward 690. QQQ: 641 call wall major resistance (56k OI), 622 max pain target. /ES: 6990 critical support per Twitter, hold above confirms bullish structure.",
+    "swing_levels": "SPY Call Wall $750 becomes active if approached, Put Wall $630 provides major downside protection. QQQ Call Wall $641 (56k OI) acting as near-term ceiling, Put Wall $574.78 as backstop. Watch SPY Max Pain $690 gravitational pull",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 164977
+    "generation_time_ms": 169714
   },
   "trending": {
     "macro": [
@@ -85,15 +85,15 @@
       },
       {
         "ticker": "SPY",
-        "mentions": 12,
-        "sentiment_score": 0.2,
+        "mentions": 13,
+        "sentiment_score": 0.185,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 20,
+        "sentiment_pct": 19,
         "counts": {
           "bullish": 6,
           "bearish": 4,
-          "neutral": 2,
-          "total": 12
+          "neutral": 3,
+          "total": 13
         }
       },
       {
@@ -261,8 +261,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15,
-    "pc_ratio": 0.97,
+    "vix": 14.98,
+    "pc_ratio": 0.98,
     "sentiment_bullish_pct": 46,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -271,7 +271,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.99,
-    "spread": 6.14,
+    "spread": 9.2,
     "position": 50
   },
   "action": {
