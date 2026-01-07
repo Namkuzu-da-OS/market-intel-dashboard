@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-01-07T12:14:37.081Z",
+  "timestamp": "2026-01-07T12:51:04.351Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 79,
     "sources": {
       "social": {
-        "bullish": 282,
-        "bearish": 59,
-        "neutral": 240,
-        "total": 581,
-        "pct": 49
+        "bullish": 284,
+        "bearish": 60,
+        "neutral": 246,
+        "total": 590,
+        "pct": 48
       },
       "news": {
-        "bullish": 64,
-        "bearish": 33,
+        "bullish": 66,
+        "bearish": 34,
         "neutral": 32,
-        "total": 129,
+        "total": 132,
         "pct": 50
       },
       "video": {
@@ -36,7 +36,7 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates retail narratives (83% Twitter, 66% News, 100% YouTube), but structural bearish warnings from institutional sources create medium conviction environment. Market at peak sentiment inflection with leverage extremes.\n\n📈 **Themes:** (1) AI infrastructure demand and semiconductor supply constraints driving selective tech strength, (2) Institutional crypto adoption and regulatory clarity expectations versus exchange security vulnerabilities, (3) Valuation extremes and sentiment saturation creating tactical reversal risk.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $690. Near resistance: $701 (51k OI), $693 (48k OI). Near support: $680 (121k OI). QQQ ($623.42): Call Wall $641 (56k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $622. Near resistance: $627 (52k OI), $630 (31k OI). /ES: Per Twitter, watch Japan 30-year yield 3.527% as deleveraging indicator. ETH: $3,400 resistance per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Bullish sentiment with medium conviction - structural AI/institutional crypto adoption themes offset by near-term valuation concerns and global yield pressures (83% Twitter bullish, 66% RSS bullish, 100% YouTube bullish).\n\n📈 **Themes:** (1) AI infrastructure monetization and semiconductor supply dynamics, (2) Institutional crypto legitimacy via tokenized products and digital asset legislation momentum, (3) Defensive rotation pressures from extreme tech valuations and Japan sovereign yield surge to 3.527%.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $690. Near resistance: $701 (51k OI), $693 (48k OI). Near support: $680 (121k OI). QQQ ($623.42): Call Wall $641 (56k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $622. Near resistance: $627 (52k OI), $630 (31k OI). /ES: Twitter mentions testing key levels with asymmetric risk environment. ETH: $3,400 resistance level per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
@@ -45,28 +45,28 @@
       "BTC"
     ],
     "key_themes": [
-      "AI infrastructure and semiconductor demand",
-      "Institutional crypto adoption and regulatory clarity",
-      "Sentiment extremes and valuation concerns",
-      "Exchange security vulnerabilities",
-      "Deflationary pressures from energy normalization"
+      "AI infrastructure and semiconductor supply constraints",
+      "Institutional cryptocurrency adoption and regulatory framework",
+      "Japan sovereign yield pressure and global deleveraging risk",
+      "Tech valuation extremes and defensive rotation",
+      "Commodity disinflation via Venezuela oil supply"
     ],
     "risk_factors": [
-      "Sentiment saturation at peak levels with historical correction parallels",
-      "Crypto exchange security breaches and liquidation cascades ($440M+ already liquidated)",
-      "Regulatory uncertainty despite legislative expectations",
-      "Japan 30-year yield deleveraging signal (3.527%)",
-      "Geopolitical semiconductor supply chain fragmentation"
+      "Japan 30-year yield at historic 3.527% creating global contagion vectors",
+      "Cryptocurrency exchange security incidents and infrastructure vulnerabilities",
+      "Extreme tech valuations with decade-high S&P short interest positioning",
+      "Execution risk on AI monetization thesis vs. current premium pricing",
+      "Banking capital requirement tightening constraining credit availability"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $693 resistance (48k OI, 0.2% away - active hedging), $680 support (121k OI, 1.7% away - active). QQQ: $627 resistance (52k OI, 0.6% away), Max Pain gravitational pull at $622.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Call Wall resistance $750 (55k OI) caps upside, Put Wall support $630 (143k OI) marks major breakdown level. QQQ: Call Wall $641 (56k OI, 2.8% away) active resistance, Put Wall $574.78 (116k OI) dormant support. ETH: $3,400 resistance per Twitter as critical technical level for 2-4 week direction.",
+    "intraday_levels": "SPY: $693 resistance (48k OI, 0.2% away active hedging), $680 support (121k OI, 1.7% away active). QQQ: $627 resistance (52k OI), testing near Max Pain $622. Watch for directional break from overnight positioning.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Upside target $701 (51k OI resistance), extended resistance $750 Call Wall. Downside support $680 then $640 (101k OI). QQQ: Key resistance $641 Call Wall (56k OI), support at $574.78 Put Wall. Watch $630 level (31k OI) for breakout confirmation.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 172665
+    "generation_time_ms": 166226
   },
   "trending": {
     "macro": [
@@ -113,15 +113,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 12,
-        "sentiment_score": 0.107,
+        "mentions": 13,
+        "sentiment_score": 0.111,
         "sentiment_label": "Bullish",
         "sentiment_pct": 11,
         "counts": {
           "bullish": 4,
           "bearish": 3,
-          "neutral": 5,
-          "total": 12
+          "neutral": 6,
+          "total": 13
         }
       },
       {
@@ -218,6 +218,19 @@
         }
       },
       {
+        "ticker": "MU",
+        "mentions": 10,
+        "sentiment_score": 0.645,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 65,
+        "counts": {
+          "bullish": 9,
+          "bearish": 1,
+          "neutral": 0,
+          "total": 10
+        }
+      },
+      {
         "ticker": "SNDK",
         "mentions": 10,
         "sentiment_score": 0.558,
@@ -229,28 +242,15 @@
           "neutral": 1,
           "total": 10
         }
-      },
-      {
-        "ticker": "AMZN",
-        "mentions": 10,
-        "sentiment_score": 0.453,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 45,
-        "counts": {
-          "bullish": 8,
-          "bearish": 2,
-          "neutral": 0,
-          "total": 10
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.14,
+    "vix": 15.07,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 49,
+    "sentiment_bullish_pct": 48,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
