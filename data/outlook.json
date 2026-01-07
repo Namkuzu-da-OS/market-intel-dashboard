@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-07T02:29:29.913Z",
+  "timestamp": "2026-01-07T03:01:31.334Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 81,
     "sources": {
       "social": {
-        "bullish": 239,
-        "bearish": 41,
-        "neutral": 176,
-        "total": 456,
+        "bullish": 243,
+        "bearish": 42,
+        "neutral": 181,
+        "total": 466,
         "pct": 52
       },
       "news": {
         "bullish": 52,
-        "bearish": 27,
+        "bearish": 29,
         "neutral": 25,
-        "total": 104,
-        "pct": 50
+        "total": 106,
+        "pct": 49
       },
       "video": {
         "bullish": 5,
@@ -36,7 +36,7 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - market shows technical momentum and institutional accumulation but faces valuation extremes and critical technical decision points that elevate reversal risk.\n\n📈 **Themes:** (1) AI infrastructure and semiconductor supply constraints driving tech leadership, (2) Cryptocurrency institutional adoption momentum amid regulatory clarity developments, (3) Technical breakout tests and seasonal support window closure creating near-term volatility.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, resistance), Put Wall $630 (143k OI, support). Max Pain $687. Near support: $680 (85k OI, active), $640 (101k OI). Near resistance: $693 (48k OI, active). QQQ ($623.42): Call Wall $641 (55k OI, active resistance 2.8% away), Put Wall $574.78 (116k OI, support). Max Pain $618. Near resistance: $627 (53k OI, active), $630 (33k OI). /ES: 6900 support level and 6847 support per Twitter. NDX triangle breakout decision point imminent per Twitter.",
+    "narrative": "📊 **Consensus:** Bullish sentiment with medium conviction - technical momentum and institutional flows support upside, but structural vulnerabilities and leadership gaps create fragility.\n\n📈 **Themes:** (1) AI/semiconductor sector momentum amid supply constraints, (2) Crypto institutional adoption and regulatory tailwinds, (3) Energy market shifts and inflation dynamics.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $687. Active resistance $693 (48k OI), Active support $680 (85k OI). QQQ ($623.42): Call Wall $641 (55k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Active resistance $627-630 (53k-33k OI). /ES futures: 6950-7000 resistance zone, NDX triangle support critical per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
@@ -45,28 +45,28 @@
       "BTC"
     ],
     "key_themes": [
-      "AI infrastructure and semiconductor supply constraints",
-      "Cryptocurrency institutional adoption and regulatory clarity",
-      "Technical breakout decision points and dealer gamma positioning",
-      "Seasonal support window dynamics",
-      "Venezuela oil supply expansion and commodity disinflation"
+      "AI/semiconductor momentum and supply constraints",
+      "Crypto institutional adoption and regulatory shifts",
+      "Technical breakout potential versus structural vulnerabilities",
+      "Energy market dynamics and inflation impact",
+      "Mega-cap tech leadership divergence"
     ],
     "risk_factors": [
-      "Valuation extremes and elevated Shiller P/E ratios signaling overextension",
-      "NDX triangle breakout failure could trigger cascading reversal",
-      "Mega-cap leadership divergence with NVDA and AAPL underperforming",
-      "Exchange security vulnerabilities and counterparty risks in crypto",
-      "Consumer weakness and weakening fundamentals in traditional sectors"
+      "Mega-cap tech underperformance despite broad index ATHs",
+      "Unsustainable debt dynamics and elevated valuations",
+      "NDX triangle support breakdown triggering reversals",
+      "Cryptocurrency infrastructure security vulnerabilities",
+      "Geopolitical escalation and semiconductor supply chain disruption"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: $693 active resistance (48k OI), $680 active support (85k OI). QQQ: $627 active resistance (53k OI), watch $641 call wall (55k OI). /ES: 6900 support per Twitter",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Active resistance $693 (48k OI), active support $680 (85k OI). QQQ: Active resistance $627 (53k OI), testing call wall $641 (55k OI). Watch for SPX 7000 test per Twitter.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $730 resistance (48k OI), $640 support (101k OI), Max Pain gravity toward $687. QQQ: $641 call wall major resistance (55k OI), $574.78 put wall major support (116k OI). Watch NDX triangle breakout per Twitter",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "SPY: Call wall $750 becomes relevant if momentum continues, max pain $687 gravitational pull. QQQ: Call wall $641 immediate resistance, put wall $574.78 backstop. /ES: 6950-7000 zone critical per Twitter, NDX triangle support decision point.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 163607
+    "generation_time_ms": 158751
   },
   "trending": {
     "macro": [
