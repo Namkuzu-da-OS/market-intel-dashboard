@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-01-07T20:21:26.725Z",
+  "timestamp": "2026-01-07T21:11:09.666Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 78,
+    "confidence_pct": 77,
     "sources": {
       "social": {
-        "bullish": 324,
-        "bearish": 82,
-        "neutral": 302,
-        "total": 708,
-        "pct": 46
+        "bullish": 339,
+        "bearish": 88,
+        "neutral": 323,
+        "total": 750,
+        "pct": 45
       },
       "news": {
-        "bullish": 52,
-        "bearish": 29,
+        "bullish": 54,
+        "bearish": 30,
         "neutral": 31,
-        "total": 112,
-        "pct": 46
+        "total": 115,
+        "pct": 47
       },
       "video": {
-        "bullish": 9,
+        "bullish": 10,
         "bearish": 0,
         "neutral": 2,
-        "total": 11,
-        "pct": 82
+        "total": 12,
+        "pct": 83
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish bias with medium conviction - sentiment is 80% bullish on X, 64% RSS, 100% YouTube, but near-term policy headwinds and breadth deterioration create short-term turbulence within an otherwise constructive structure.\n\n📈 **Themes:** AI infrastructure expansion driving mega-cap tech strength, regulatory clarity expectations supporting crypto integration, policy uncertainty creating defensive rotation into bonds while sector-specific pressure hits real estate and defense contractors.\n\n🎯 **Levels:** SPY ($691.93): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $690. Near resistance: $701 (51k OI active), $693 (48k OI active). Near support: $680 (121k OI active). QQQ ($626.00): Call Wall $641 (56k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $622. Near resistance: $627 (52k OI active), $650 (44k OI). /ES: 7007 rejection and 6990 support band per Twitter.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - market showing underlying strength with SPY at all-time highs, but policy headwinds (real estate/defense restrictions) creating near-term volatility and sector rotation pressures.\n\n📈 **Themes:** (1) Institutional crypto/blockchain adoption momentum with TradFi integration catalysts, (2) AI hardware commercialization and mega-cap tech resilience, (3) Policy uncertainty creating sector-specific pressure (real estate, defense) while M&A activity supports selective rotation.\n\n🎯 **Levels:** SPY ($689.98): Call Wall $750 (55k OI, dormant), Put Wall $630 (143k OI, dormant). Max Pain $690. Near resistance: $701 (51k OI), $693 (48k OI). Near support: $680 (121k OI). QQQ ($624.33): Call Wall $641 (56k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $622. Near resistance: $627 (52k OI), $630 (31k OI). /ES: $7007 resistance, $6990 support per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
-      "CRWD",
-      "BX"
+      "PLTR",
+      "ABBV",
+      "XBI"
     ],
     "key_themes": [
-      "AI infrastructure and hardware expansion",
-      "Crypto regulatory clarity and institutional adoption",
-      "Policy uncertainty affecting real estate and defense sectors",
-      "Market breadth deterioration despite index strength",
-      "Defensive rotation into bonds"
+      "Institutional crypto and blockchain infrastructure adoption",
+      "AI hardware commercialization and mega-cap tech strength",
+      "Policy-driven sector rotation (real estate/defense weakness, M&A-driven biotech inflows)",
+      "Regulatory clarity expectations (Fed accommodation, pro-crypto legislation)",
+      "Liquidity cycle normalization and capital reallocation"
     ],
     "risk_factors": [
-      "Policy headwinds from housing restrictions and defense contractor policy creating sector-specific damage",
-      "Market breadth weakness (negative ADD/VOLD) suggesting rally lacks broad participation",
-      "Crypto infrastructure vulnerabilities and exchange security risks",
-      "Consumer discretionary weakness signaling demand deterioration",
-      "Fed tightening and capital requirement pressures on banking sector"
+      "Policy uncertainty around institutional real estate restrictions and defense sector limitations creating immediate selling pressure",
+      "Banking capital requirement pressures and cryptocurrency exchange security vulnerabilities",
+      "Breadth divergence (negative ADD/VOLD) despite price strength signals potential exhaustion",
+      "Execution risk on TradFi blockchain adoption and AI hardware consumer adoption rates",
+      "Geopolitical semiconductor tensions and trade escalation risks"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY resistance at $693 (48k OI active) and $701 (51k OI), support at $680 (121k OI). /ES rejection at 7007, support at 6990 per Twitter. QQQ resistance at $627 (52k OI active)",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: $693 resistance (48k OI active), $690 max pain gravitational pull, $680 support (121k OI active). /ES: $7007 resistance, $6990 support per Twitter. Watch for breadth divergence continuation vs reversal.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY Call Wall $750 becomes active if approached, Put Wall $630 provides major downside protection. QQQ Call Wall $641 (56k OI) acting as near-term ceiling, Put Wall $574.78 as backstop. Watch SPY Max Pain $690 gravitational pull",
+    "swing_levels": "SPY: $701 key resistance (51k OI), $750 major call wall (dormant but significant), $680 near support, $630 major put wall (143k OI). QQQ: $641 call wall (56k OI active), $574.78 put wall (116k OI).",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 169714
+    "generation_time_ms": 164082
   },
   "trending": {
     "macro": [
@@ -206,54 +206,54 @@
       },
       {
         "ticker": "NVDA",
-        "mentions": 14,
-        "sentiment_score": 0.194,
+        "mentions": 15,
+        "sentiment_score": 0.188,
         "sentiment_label": "Bullish",
         "sentiment_pct": 19,
         "counts": {
           "bullish": 7,
           "bearish": 4,
-          "neutral": 3,
-          "total": 14
+          "neutral": 4,
+          "total": 15
         }
       },
       {
         "ticker": "TSLA",
-        "mentions": 12,
-        "sentiment_score": 0.36,
+        "mentions": 14,
+        "sentiment_score": 0.316,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 36,
+        "sentiment_pct": 32,
         "counts": {
           "bullish": 7,
           "bearish": 2,
-          "neutral": 3,
-          "total": 12
-        }
-      },
-      {
-        "ticker": "MU",
-        "mentions": 10,
-        "sentiment_score": 0.645,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
-        "counts": {
-          "bullish": 9,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 10
+          "neutral": 5,
+          "total": 14
         }
       },
       {
         "ticker": "INTC",
-        "mentions": 10,
-        "sentiment_score": 0.561,
+        "mentions": 12,
+        "sentiment_score": 0.542,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 56,
+        "sentiment_pct": 54,
+        "counts": {
+          "bullish": 9,
+          "bearish": 1,
+          "neutral": 2,
+          "total": 12
+        }
+      },
+      {
+        "ticker": "AMZN",
+        "mentions": 12,
+        "sentiment_score": 0.389,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 39,
         "counts": {
           "bullish": 8,
-          "bearish": 1,
-          "neutral": 1,
-          "total": 10
+          "bearish": 2,
+          "neutral": 2,
+          "total": 12
         }
       }
     ]
@@ -261,9 +261,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.98,
-    "pc_ratio": 0.98,
-    "sentiment_bullish_pct": 46,
+    "vix": 15.36,
+    "pc_ratio": 1.03,
+    "sentiment_bullish_pct": 45,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -271,7 +271,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.99,
-    "spread": 9.2,
+    "spread": 14.78,
     "position": 50
   },
   "action": {
