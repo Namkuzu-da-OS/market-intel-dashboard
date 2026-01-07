@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-01-06T23:24:18.356Z",
+  "timestamp": "2026-01-07T00:11:40.055Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 82,
     "sources": {
       "social": {
-        "bullish": 187,
-        "bearish": 30,
-        "neutral": 133,
-        "total": 350,
-        "pct": 53
+        "bullish": 212,
+        "bearish": 34,
+        "neutral": 149,
+        "total": 395,
+        "pct": 54
       },
       "news": {
-        "bullish": 49,
+        "bullish": 50,
         "bearish": 24,
-        "neutral": 20,
-        "total": 93,
+        "neutral": 21,
+        "total": 95,
         "pct": 53
       },
       "video": {
@@ -36,64 +36,68 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment with medium-high conviction across all sources (weighted average 81% bullish). Market exhibiting risk-on positioning driven by technical momentum and institutional flows, though lacking significant bearish counterargument creates analytical blind spots.\n\n📈 **Themes:** (1) AI infrastructure demand and semiconductor supply constraints driving tech sector leadership, (2) Crypto institutional adoption and regulatory clarity optimism supporting digital asset momentum, (3) Monetary policy expectations and rate trajectory influencing risk asset positioning.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI, 8.4% away - dormant), Put Wall $630 (143k OI, 8.9% away - dormant). Max Pain $687. Active resistance: $693 (48k OI), Active support: $680 (85k OI). QQQ ($623.42): Call Wall $641 (55k OI, 2.8% away - ACTIVE hedging), Put Wall $574.78 (116k OI, 7.8% away - dormant). Max Pain $618. Active resistance: $627 (53k OI), $630 (33k OI). /ES: Per Twitter, NDX channel support retest on Jan 7 critical inflection point.",
+    "narrative": "📊 **Consensus:** Bullish sentiment with medium-high conviction across all sources (86% X, 68% RSS, 100% YouTube), though structural divergences in mega-cap tech create fragility beneath surface momentum.\n\n📈 **Themes:** (1) Semiconductor/AI structural demand driving tech selectivity amid mega-cap divergences, (2) Institutional crypto adoption momentum (tokenization, legislative tailwinds) competing with regulatory uncertainty, (3) Precious metals breakout continuation (gold/silver) signaling macro inflation hedging or policy normalization expectations.\n\n🎯 **Levels:** SPY ($691.81): Call Wall $750 (55k OI), Put Wall $630 (143k OI). Max Pain $687. Near resistance: $693 (48k OI - ACTIVE). Near support: $680 (85k OI - ACTIVE). QQQ ($623.42): Call Wall $641 (55k OI - ACTIVE), Put Wall $574.78 (116k OI). Max Pain $618. Near resistance: $627 (53k OI), $630 (33k OI). /ES: Triangle breakout decision point per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "ETH",
-      "NFLX"
+      "XRP",
+      "AAPL",
+      "NFLX",
+      "OPEN",
+      "TSLA",
+      "AMD"
     ],
     "key_themes": [
-      "AI infrastructure demand and semiconductor supply constraints",
-      "Crypto institutional adoption and regulatory clarity",
-      "Rate policy uncertainty and monetary easing expectations",
-      "Tech sector leadership and mega-cap momentum",
-      "Options dealer positioning and max pain dynamics"
+      "AI/semiconductor structural demand and supply constraints",
+      "Institutional crypto adoption and tokenization momentum",
+      "Precious metals breakout continuation",
+      "Mega-cap tech leadership divergence",
+      "Sector rotation from traditional finance to growth/innovation assets"
     ],
     "risk_factors": [
-      "Mega-cap tech divergences (NVDA/AAPL underperformance) signaling potential leadership failure",
-      "NDX technical support breakdown risk at channel retest",
-      "Absence of bearish analysis creating consensus vulnerability to mean reversion",
-      "Regulatory headline risk in crypto and traditional finance sectors",
-      "Geopolitical tensions (US-China semiconductor policy, exchange security vulnerabilities)"
+      "Mega-cap tech divergence signaling potential leadership failure and broad reversal",
+      "Regulatory uncertainty in crypto despite legislative momentum",
+      "Geopolitical fragmentation affecting semiconductor supply chains and Venezuela crude policy execution",
+      "Banking sector capital requirements and structural weakness in rate-sensitive sectors",
+      "Overleveraged positioning in crypto/speculative assets creating liquidation risk"
     ],
-    "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: Active resistance $693 (48k OI), Active support $680 (85k OI), Max Pain gravitational pull toward $687. QQQ: Active resistance $627-$630 zone (53k+33k OI), testing Call Wall $641 (2.8% away with active dealer hedging). NDX channel support retest critical per Twitter.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Active resistance $693 (48k OI), active support $680 (85k OI). QQQ: Active resistance $641 Call Wall (55k OI), testing $627 (53k OI). Max Pain gravitational pull: SPY $687, QQQ $618.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside capped near $730 (48k OI, 5.5% away) before dormant Call Wall $750 activates. Downside protected by $680 active support, then $640 (101k OI) if breakdown occurs. QQQ: Call Wall $641 represents primary resistance with active hedging. Support strengthens at $590-$580 zone (78k+108k OI) if pullback materializes.",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "SPY: Call Wall resistance $750 (55k OI), Put Wall support $630 (143k OI). QQQ: Call Wall $641 (55k OI) as critical breakout level, Put Wall $574.78 (116k OI). Gold targeting $4,500+ per Twitter, silver targeting $82.50+ per Twitter.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 164055
+    "generation_time_ms": 170466
   },
   "trending": {
     "macro": [
       {
         "ticker": "QQQ",
-        "mentions": 12,
-        "sentiment_score": 0.456,
+        "mentions": 13,
+        "sentiment_score": 0.484,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 46,
+        "sentiment_pct": 48,
         "counts": {
-          "bullish": 8,
+          "bullish": 9,
           "bearish": 1,
           "neutral": 3,
-          "total": 12
+          "total": 13
         }
       },
       {
         "ticker": "SPY",
-        "mentions": 8,
-        "sentiment_score": 0.601,
+        "mentions": 9,
+        "sentiment_score": 0.626,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 60,
+        "sentiment_pct": 63,
         "counts": {
-          "bullish": 7,
+          "bullish": 8,
           "bearish": 1,
           "neutral": 0,
-          "total": 8
+          "total": 9
         }
       },
       {
@@ -152,15 +156,15 @@
       },
       {
         "ticker": "MSTR",
-        "mentions": 7,
-        "sentiment_score": 0.651,
+        "mentions": 8,
+        "sentiment_score": 0.657,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 66,
         "counts": {
-          "bullish": 6,
+          "bullish": 7,
           "bearish": 0,
           "neutral": 1,
-          "total": 7
+          "total": 8
         }
       },
       {
@@ -191,43 +195,43 @@
       },
       {
         "ticker": "XRP",
-        "mentions": 2,
-        "sentiment_score": 0.41,
+        "mentions": 3,
+        "sentiment_score": 0.54,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 41,
+        "sentiment_pct": 54,
         "counts": {
-          "bullish": 1,
+          "bullish": 2,
           "bearish": 0,
           "neutral": 1,
-          "total": 2
+          "total": 3
         }
       }
     ],
     "other": [
       {
         "ticker": "NVDA",
-        "mentions": 13,
-        "sentiment_score": 0.592,
+        "mentions": 14,
+        "sentiment_score": 0.56,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 59,
+        "sentiment_pct": 56,
         "counts": {
           "bullish": 11,
           "bearish": 1,
-          "neutral": 1,
-          "total": 13
+          "neutral": 2,
+          "total": 14
         }
       },
       {
         "ticker": "TSLA",
-        "mentions": 10,
-        "sentiment_score": 0.169,
+        "mentions": 11,
+        "sentiment_score": 0.228,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 17,
+        "sentiment_pct": 23,
         "counts": {
-          "bullish": 5,
+          "bullish": 6,
           "bearish": 3,
           "neutral": 2,
-          "total": 10
+          "total": 11
         }
       },
       {
@@ -257,15 +261,15 @@
         }
       },
       {
-        "ticker": "AMD",
+        "ticker": "RKLB",
         "mentions": 7,
-        "sentiment_score": 0.431,
+        "sentiment_score": 0.799,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 43,
+        "sentiment_pct": 80,
         "counts": {
-          "bullish": 5,
-          "bearish": 1,
-          "neutral": 1,
+          "bullish": 7,
+          "bearish": 0,
+          "neutral": 0,
           "total": 7
         }
       }
@@ -276,7 +280,7 @@
     "color": "text-muted",
     "vix": 14.75,
     "pc_ratio": 1.15,
-    "sentiment_bullish_pct": 53,
+    "sentiment_bullish_pct": 54,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -284,7 +288,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.84,
-    "spread": 15.79,
+    "spread": 15.81,
     "position": 50
   },
   "action": {
