@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-01-08T12:27:05.431Z",
+  "timestamp": "2026-01-08T13:03:26.553Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 74,
     "sources": {
       "social": {
-        "bullish": 181,
+        "bullish": 185,
         "bearish": 64,
-        "neutral": 200,
-        "total": 445,
+        "neutral": 203,
+        "total": 452,
         "pct": 41
       },
       "news": {
-        "bullish": 57,
-        "bearish": 24,
+        "bullish": 56,
+        "bearish": 23,
         "neutral": 27,
-        "total": 108,
+        "total": 106,
         "pct": 53
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish structural bias with near-term consolidation risk - medium conviction. Multiple sources cite institutional adoption and AI/semiconductor catalysts, but technical deterioration in crypto and narrow rally breadth suggest vulnerability to profit-taking.\n\n📈 **Themes:** (1) AI/semiconductor infrastructure demand driving mega-cap strength despite supply chain constraints, (2) Institutional crypto adoption via TradFi integration and regulatory clarity, (3) Bifurcated market with tech leadership while housing/consumer sectors show demand weakness.\n\n🎯 **Levels:** SPY ($689.58): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $690. Near resistance: $693 (52k OI), $701 (52k OI). Near support: $680 (122k OI). QQQ ($624.02): Call Wall $641 (55k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $624. Near resistance: $627 (54k OI), $630 (32k OI). Near support: $610 (83k OI). /ES: 6800s range per Twitter with rejection concerns noted.",
+    "narrative": "📊 **Consensus:** Mixed directional sentiment with medium conviction - bullish on thematic/structural narratives (AI infrastructure, crypto regulatory clarity, defense spending) but bearish on immediate technicals (failed breakouts, momentum deterioration, Bitcoin rejection cascades). Market bifurcating between institutional-grade assets and overleveraged retail positions.\n\n📈 **Themes:** (1) AI/semiconductor infrastructure maturation with institutional validation focus, (2) Cryptocurrency legislative clarity and TradFi integration driving sector strength, (3) Technical deterioration warnings across multiple asset classes despite fundamental bullish catalysts - concentration risk in mega-cap tech while traditional cyclicals face structural headwinds.\n\n🎯 **Levels:** SPY ($689.58): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $690. Near resistance: $693 (52k OI, active), $701 (52k OI, active). Near support: $680 (122k OI, active), $640 (101k OI, dormant). QQQ ($624.02): Call Wall $641 (55k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $624. Near resistance: $627 (54k OI), $630 (32k OI). Near support: $610 (83k OI, active). /ES: 94k rejection level noted per Twitter for crypto correlation impact.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
       "NVDA",
-      "AAPL"
+      "IVES"
     ],
     "key_themes": [
-      "AI and semiconductor infrastructure demand",
-      "Institutional crypto adoption and TradFi integration",
-      "Regulatory clarity catalysts",
-      "Technical consolidation after rally",
-      "Sector rotation from consumer/housing into tech"
+      "AI infrastructure and semiconductor demand cycles",
+      "Cryptocurrency regulatory clarity and institutional adoption",
+      "Technical breakdown signals vs fundamental bullish catalysts",
+      "Sector bifurcation - tech/defense strength vs consumer/banking weakness",
+      "Options positioning near max pain with dealer hedging dynamics"
     ],
     "risk_factors": [
-      "Bitcoin technical rejection signaling crypto momentum exhaustion",
-      "Narrow rally breadth concentrated in mega-cap tech",
-      "Housing market weakness and consumer demand destruction",
-      "On-chain crypto metrics deteriorating despite price strength",
-      "Geopolitical semiconductor supply chain risks"
+      "Bitcoin technical rejection cascading into altcoin liquidations",
+      "Failed breakouts across multiple asset classes signaling momentum exhaustion",
+      "Banking sector regulatory strain and capital requirement pressures",
+      "Metric divergence warnings in crypto fundamentals vs price action",
+      "Concentration risk in mega-cap tech with traditional cyclicals facing headwinds"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $693 resistance (52k OI), $680 support (122k OI). QQQ: $627 resistance (54k OI), $610 support (83k OI). Testing yesterday's highs with Max Pain gravitational pull toward $690/$624 respectively.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $701 resistance (52k OI), $680 key support (122k OI), $750 Call Wall dormant upside target. QQQ: $641 Call Wall major resistance (55k OI), $610 support (83k OI). Watch for consolidation before continuation higher.",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: Support $680 (122k OI active), resistance $693 (52k OI). QQQ: Support $610 (83k OI), resistance $627-$630 zone (54k-32k OI). Watch for breakdown continuation per Twitter technical warnings.",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: Major support zone $630-$640 (149k-101k OI), upside resistance $701-$750. QQQ: Call Wall resistance $641 (55k OI), downside Put Wall $574.78 (116k OI). Max Pain gravitational pull: SPY $690, QQQ $624.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 191568
+    "generation_time_ms": 193009
   },
   "trending": {
     "macro": [
@@ -113,15 +113,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 7,
-        "sentiment_score": 0.289,
+        "mentions": 6,
+        "sentiment_score": 0.312,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 29,
+        "sentiment_pct": 31,
         "counts": {
           "bullish": 4,
           "bearish": 1,
-          "neutral": 2,
-          "total": 7
+          "neutral": 1,
+          "total": 6
         }
       },
       {
@@ -192,6 +192,19 @@
         }
       },
       {
+        "ticker": "GOOGL",
+        "mentions": 8,
+        "sentiment_score": 0.454,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 45,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 8
+        }
+      },
+      {
         "ticker": "TSLA",
         "mentions": 8,
         "sentiment_score": 0.224,
@@ -203,26 +216,13 @@
           "neutral": 4,
           "total": 8
         }
-      },
-      {
-        "ticker": "AMZN",
-        "mentions": 7,
-        "sentiment_score": 0.53,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 53,
-        "counts": {
-          "bullish": 5,
-          "bearish": 0,
-          "neutral": 2,
-          "total": 7
-        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.76,
+    "vix": 15.75,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
