@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-08T22:44:02.438Z",
+  "timestamp": "2026-01-08T23:24:28.998Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 216,
-        "bearish": 76,
-        "neutral": 279,
-        "total": 571,
+        "bullish": 229,
+        "bearish": 78,
+        "neutral": 297,
+        "total": 604,
         "pct": 38
       },
       "news": {
         "bullish": 65,
         "bearish": 30,
-        "neutral": 33,
-        "total": 128,
-        "pct": 51
+        "neutral": 34,
+        "total": 129,
+        "pct": 50
       },
       "video": {
         "bullish": 7,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish near-term with medium-high conviction across sources. Structural vulnerabilities (household debt, crowded short volatility positioning, regulatory uncertainty) outweigh bullish catalysts (AI momentum, crypto infrastructure adoption, policy stimulus) that require longer timeframes to materialize.\n\n📈 **Themes:** (1) Policy uncertainty and regulatory tightening creating defensive positioning, (2) AI/semiconductor strength versus governance token obsolescence in crypto sector bifurcation, (3) Elevated volatility risk from crowded positioning and consumer debt stress at 2008-level ratios.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, 8.8% away - dormant), Put Wall $630 (149k OI, 8.6% away - dormant). Max Pain $690. Near resistance: $693 (52k OI, 0.5% - ACTIVE), $701 (52k OI, 1.7% - ACTIVE). Near support: $680 (122k OI, 1.4% - ACTIVE), $640 (101k OI, 7.2% - DORMANT). QQQ ($620.47): Call Wall $641 (55k OI, 3.3% away - active), Put Wall $574.78 (116k OI, 7.4% away - dormant). Max Pain $624. Near resistance: $627 (54k OI, 1.1% - ACTIVE), $630 (32k OI, 1.5% - ACTIVE). Near support: $610 (83k OI, 1.7% - ACTIVE). Bitcoin: $60,000 critical support level per Twitter. Apple testing support in 7-day downtrend per Twitter.",
+    "narrative": "📊 **Consensus:** Bullish sentiment dominates (70-75% across sources), but with medium-low conviction as near-term structural concerns and technical deterioration create tactical caution despite positive longer-term macro fundamentals.\n\n📈 **Themes:** (1) Regulatory clarity expectations in crypto/digital assets driving institutional adoption momentum; (2) Geopolitical supply chain reallocation favoring defense and nearshoring beneficiaries; (3) Technical vulnerability in mega-cap tech and elevated hedging activity ahead of options expiration creating near-term pressure.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, resistance), Put Wall $630 (149k OI, support). Max Pain $690. Near resistance: $693 (52k OI), $701 (52k OI). Near support: $680 (122k OI). QQQ ($620.47): Call Wall $641 (55k OI, resistance), Put Wall $574.78 (116k OI, support). Max Pain $624. Near resistance: $627 (54k OI), $630 (32k OI). Near support: $610 (83k OI). /ES: 6847 support per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "NVDA",
       "AAPL",
-      "BTC"
+      "TSLA",
+      "NVDA"
     ],
     "key_themes": [
-      "Policy uncertainty and regulatory tightening",
-      "Crypto sector bifurcation (infrastructure vs governance tokens)",
-      "Crowded positioning unwind risk",
-      "AI and semiconductor momentum",
-      "Consumer debt stress and household leverage"
+      "Regulatory clarity in digital assets and crypto",
+      "Geopolitical supply chain reallocation",
+      "Technical deterioration in mega-cap tech",
+      "Institutional hedging ahead of options expiration",
+      "Banking sector capital pressures"
     ],
     "risk_factors": [
-      "Household debt service at 30% of disposable income (highest since 2008)",
-      "Short volatility positioning vulnerable to rapid unwinding",
-      "Governance token structural obsolescence versus equity-like instruments",
-      "Treasury yield pressure from policy stimulus creating fragile environment",
-      "Tariff policy uncertainty creating binary event risk"
+      "Exchange security vulnerabilities and crypto infrastructure risks",
+      "Tariff escalation and trade policy uncertainty",
+      "Banking sector tightening and capital requirements",
+      "Governance token obsolescence as institutional capital reallocates",
+      "Elevated volatility through January options expiration creating technical pressure"
     ],
     "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $680 support (122k OI - ACTIVE), $693 resistance (52k OI - ACTIVE). QQQ: $610 support (83k OI - ACTIVE), $627 resistance (54k OI - ACTIVE). Watch for volatility expansion given crowded short vol positioning.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Test of $680 support likely, break below targets $640 zone (101k OI). Resistance at $701 (52k OI), then dormant Call Wall $750. QQQ: $610 key support, downside to $580 zone if breaks. Resistance at $630-$641 Call Wall (55k OI). Expect 3-5% correction per Twitter analysis before potential stabilization.",
+    "intraday_levels": "SPY: Watch $680 support (122k OI active hedging), resistance at $693 (52k OI). QQQ: Support at $610 (83k OI), resistance at $627 (54k OI). Testing near max pain levels with dealer hedging creating gravitational pull.",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: Key support zone $680-$630 corridor (PUT WALL 149k OI at $630 provides major floor), resistance at $701-$750 range (CALL WALL 56k OI caps upside). QQQ: Support $610-$574.78 (PUT WALL 116k OI), resistance $641 CALL WALL (55k OI). Consolidation likely between active hedging zones.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 187744
+    "generation_time_ms": 178538
   },
   "trending": {
     "macro": [
@@ -167,15 +167,15 @@
     "other": [
       {
         "ticker": "AAPL",
-        "mentions": 15,
-        "sentiment_score": 0.021,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 2,
+        "mentions": 17,
+        "sentiment_score": 0.057,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 6,
         "counts": {
-          "bullish": 4,
+          "bullish": 5,
           "bearish": 4,
-          "neutral": 7,
-          "total": 15
+          "neutral": 8,
+          "total": 17
         }
       },
       {
@@ -245,7 +245,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.86,
-    "spread": 18.59,
+    "spread": 18.73,
     "position": 50
   },
   "action": {
