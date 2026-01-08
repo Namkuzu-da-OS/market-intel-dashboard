@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Resource Wars &amp; Presidential Cycles" />
+  <meta property="og:description" content="Drawing parallels between Operation Ajax (1953) and current U.S. geopolitical positioning—through the lens of market cycles." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/macro/2026-01/resource-wars-presidential-cycles.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/resource-wars-presidential-cycles-1767855722239.jpg" />
+  <meta property="article:published_time" content="2026-01-07" />
+  <meta property="article:section" content="macro" />
+  <meta property="article:tag" content="$SPY, $QQQ" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Resource Wars &amp; Presidential Cycles" />
+  <meta name="twitter:description" content="Drawing parallels between Operation Ajax (1953) and current U.S. geopolitical positioning—through the lens of market cycles." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/resource-wars-presidential-cycles-1767855722239.jpg" />
+    <title>Resource Wars & Presidential Cycles | A Historical Pattern Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #111113;
+            --bg-card: #18181b;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent-gold: #d4a853;
+            --accent-gold-dim: #b8943f;
+            --accent-red: #dc2626;
+            --accent-green: #22c55e;
+            --accent-blue: #3b82f6;
+            --border: #27272a;
+            --border-subtle: #1f1f23;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+        /* Grain overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 6rem 0 4rem;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 400px;
+            background: radial-gradient(ellipse at 50% 0%, rgba(212, 168, 83, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 2rem;
+            height: 1px;
+            background: var(--accent-gold);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.75rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        h1 em {
+            font-style: italic;
+            color: var(--accent-gold);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            font-weight: 300;
+        }
+
+        .meta {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            gap: 3rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .meta-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .meta-value {
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* Main content */
+        main {
+            padding: 4rem 0;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 1.5rem;
+            background: var(--accent-gold);
+        }
+
+        h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        p strong {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* Timeline */
+        .timeline-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .timeline-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-gold), transparent);
+        }
+
+        .timeline-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 0.75rem 1.5rem;
+        }
+
+        .timeline-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .timeline-event {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .timeline-event:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .timeline-event em {
+            color: var(--accent-gold);
+            font-style: normal;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            text-align: left;
+            padding: 1rem 1.25rem;
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--accent-gold-dim);
+        }
+
+        .comparison-table td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border-subtle);
+            vertical-align: top;
+        }
+
+        .comparison-table tr:hover td {
+            background: rgba(212, 168, 83, 0.03);
+        }
+
+        .comparison-table td:first-child {
+            font-weight: 500;
+            color: var(--text-primary);
+            width: 160px;
+        }
+
+        .comparison-table td:nth-child(2),
+        .comparison-table td:nth-child(3) {
+            color: var(--text-secondary);
+        }
+
+        /* Stat Cards */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--card-accent, var(--accent-gold));
+        }
+
+        .stat-card.year-1 { --card-accent: #6366f1; }
+        .stat-card.year-2 { --card-accent: #f59e0b; }
+        .stat-card.year-3 { --card-accent: #22c55e; }
+        .stat-card.year-4 { --card-accent: #8b5cf6; }
+
+        .stat-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .stat-note {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Quote/Callout */
+        .callout {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.08), transparent);
+            border-left: 3px solid var(--accent-gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .callout cite {
+            display: block;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.875rem;
+            font-style: normal;
+            color: var(--text-muted);
+            margin-top: 1rem;
+        }
+
+        /* Resource Box */
+        .resource-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .resource-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+        }
+
+        .resource-card h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card.then h4 { color: var(--text-muted); }
+        .resource-card.now h4 { color: var(--accent-gold); }
+
+        .resource-list {
+            list-style: none;
+        }
+
+        .resource-list li {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .resource-list li:last-child {
+            border-bottom: none;
+        }
+
+        .resource-list li::before {
+            content: '→';
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+
+        /* Key Insight */
+        .insight-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin: 2.5rem 0;
+            position: relative;
+        }
+
+        .insight-box::before {
+            content: 'KEY INSIGHT';
+            position: absolute;
+            top: -0.6rem;
+            left: 1.5rem;
+            background: var(--bg-secondary);
+            padding: 0 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            color: var(--accent-gold);
+        }
+
+        .insight-box p {
+            margin: 0;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            font-weight: 400;
+        }
+
+        /* Sector Table */
+        .sector-table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+        }
+
+        .sector-table th {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sector-table td {
+            padding: 0.875rem 1rem;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.9rem;
+        }
+
+        .sector-table td:first-child {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .stance {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 2px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stance.overweight { background: rgba(34, 197, 94, 0.15); color: var(--accent-green); }
+        .stance.underweight { background: rgba(220, 38, 38, 0.15); color: var(--accent-red); }
+        .stance.neutral { background: rgba(161, 161, 170, 0.15); color: var(--text-secondary); }
+        .stance.tactical { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            max-width: 400px;
+            line-height: 1.6;
+        }
+
+        .footer-sources {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: right;
+        }
+
+        .footer-sources a {
+            color: var(--accent-gold-dim);
+            text-decoration: none;
+        }
+
+        .footer-sources a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .resource-box {
+                grid-template-columns: 1fr;
+            }
+
+            .meta {
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-sources {
+                text-align: left;
+            }
+
+            .timeline-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-date {
+                margin-bottom: 0.25rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="eyebrow">Pattern Analysis</div>
+            <h1>Resource Wars &<br><em>Presidential Cycles</em></h1>
+            <p class="subtitle">Drawing parallels between Operation Ajax (1953) and current U.S. geopolitical positioning—through the lens of market cycles.</p>
+            <div class="meta">
+                <div class="meta-item">
+                    <span class="meta-label">Analysis Date</span>
+                    <span class="meta-value">January 7, 2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Cycle Position</span>
+                    <span class="meta-value">Year 1 → Year 2</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Framework</span>
+                    <span class="meta-value">Presidential Election Cycle Theory</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>The Historical Precedent</h2>
+                <p>On August 19, 1953—just seven months into Eisenhower's first term—the CIA executed Operation Ajax, overthrowing Iran's democratically elected Prime Minister Mohammad Mossadegh. The stated reason was anti-communism. The actual driver was oil.</p>
+                
+                <div class="timeline-box">
+                    <div class="timeline-title">Operation Ajax Timeline — Year 1 of Eisenhower Administration</div>
+                    <div class="timeline-grid">
+                        <span class="timeline-date">Jan 20, 1953</span>
+                        <span class="timeline-event">Eisenhower inaugurated as 34th President</span>
+                        
+                        <span class="timeline-date">Mar-Apr 1953</span>
+                        <span class="timeline-event">CIA begins drafting coup plans; <em>$1M budget approved April 4</em></span>
+                        
+                        <span class="timeline-date">Jul 1, 1953</span>
+                        <span class="timeline-event">British PM Churchill approves joint operation</span>
+                        
+                        <span class="timeline-date">Jul 11, 1953</span>
+                        <span class="timeline-event">Eisenhower gives final authorization</span>
+                        
+                        <span class="timeline-date">Aug 15, 1953</span>
+                        <span class="timeline-event">First coup attempt fails; Shah flees to Rome</span>
+                        
+                        <span class="timeline-date">Aug 19, 1953</span>
+                        <span class="timeline-event"><em>Coup succeeds</em>; Mossadegh arrested, Shah restored</span>
+                    </div>
+                </div>
+
+                <p><strong>The dividend:</strong> American oil companies went from zero stake in Iranian oil to 40% ownership. Britain retained 40%, with the remainder split between Dutch and French interests. Resource control, not ideology, drove the operation.</p>
+            </section>
+
+            <section>
+                <h2>The Pattern Match</h2>
+                <p>The current administration's focus on Greenland, the Panama Canal, and broader Western Hemisphere dominance follows a strikingly similar pattern—both in timing and underlying motivation.</p>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>1953 Iran</th>
+                            <th>2025-26 Greenland/Panama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cycle Position</td>
+                            <td>Year 1 (months 2-8)</td>
+                            <td>Year 1 (ongoing)</td>
+                        </tr>
+                        <tr>
+                            <td>Stated Rationale</td>
+                            <td>Anti-communism, Soviet threat</td>
+                            <td>National security, China threat</td>
+                        </tr>
+                        <tr>
+                            <td>Actual Driver</td>
+                            <td>Oil control</td>
+                            <td>Rare earth minerals, trade routes</td>
+                        </tr>
+                        <tr>
+                            <td>Target Resources</td>
+                            <td>~40% of world's known oil reserves</td>
+                            <td>31 of 34 EU-designated critical minerals</td>
+                        </tr>
+                        <tr>
+                            <td>Rival Power</td>
+                            <td>USSR</td>
+                            <td>China</td>
+                        </tr>
+                        <tr>
+                            <td>Method</td>
+                            <td>Covert coup</td>
+                            <td>Economic pressure, negotiation, implied force</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Why Year 1 Enables Bold Moves</h2>
+                <p>New administrations act most aggressively early in their terms. The historical record suggests this is not coincidental—it's structural.</p>
+
+                <div class="resource-box">
+                    <div class="resource-card then">
+                        <h4>Political Capital Dynamics</h4>
+                        <ul class="resource-list">
+                            <li>Fresh electoral mandate provides cover</li>
+                            <li>Opposition party still reorganizing</li>
+                            <li>Maximum distance from accountability (midterms 22 months away)</li>
+                            <li>Actions framed as "correcting predecessor's mistakes"</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card now">
+                        <h4>Resource Targets — 2025</h4>
+                        <ul class="resource-list">
+                            <li>Lithium, graphite (EV batteries)</li>
+                            <li>Neodymium, cerium (tech manufacturing)</li>
+                            <li>Arctic shipping routes</li>
+                            <li>Panama Canal transit control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    "Eisenhower received only oral reports on the plan; he did not discuss it with his Cabinet or the NSC. He kept his distance and left no documents behind that could implicate the President."
+                    <cite>— CIA Historical Review, Operation TPAJAX</cite>
+                </div>
+
+                <p>The playbook hasn't changed: act boldly in Year 1, maintain plausible distance, let others execute. What has changed is the resource at stake—from oil to the critical minerals that power the AI and EV revolutions.</p>
+            </section>
+
+            <section>
+                <h2>Presidential Cycle Returns</h2>
+                <p>The Presidential Election Cycle Theory, first documented by Yale Hirsch in 1967, shows consistent patterns in market performance across the four-year cycle. Year 2—where we're headed—historically underperforms.</p>
+
+                <div class="stat-grid">
+                    <div class="stat-card year-1">
+                        <div class="stat-label">Year 1</div>
+                        <div class="stat-value">+7.9%</div>
+                        <div class="stat-note">Post-election</div>
+                    </div>
+                    <div class="stat-card year-2">
+                        <div class="stat-label">Year 2</div>
+                        <div class="stat-value">+4.6%</div>
+                        <div class="stat-note">Midterm year</div>
+                    </div>
+                    <div class="stat-card year-3">
+                        <div class="stat-label">Year 3</div>
+                        <div class="stat-value">+17.2%</div>
+                        <div class="stat-note">Pre-election</div>
+                    </div>
+                    <div class="stat-card year-4">
+                        <div class="stat-label">Year 4</div>
+                        <div class="stat-value">+7.3%</div>
+                        <div class="stat-note">Election year</div>
+                    </div>
+                </div>
+
+                <p><strong>Key statistic:</strong> Since 1943, the S&P 500 has posted positive returns in Year 3 of the presidential cycle 90% of the time—compared to 70% across all calendar years. The third year's average return (15-17%) is roughly 3-4x the second year's average.</p>
+
+                <div class="insight-box">
+                    <p>When experienced traders feel conflicted about market direction—as the original X thread expressed—it often signals that the market itself hasn't priced in the full range of outcomes. In Year 2, this uncertainty typically resolves toward volatility strategies outperforming directional bets.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>2026 Sector Framework</h2>
+                <p>If the historical pattern holds, we may see near-term volatility from geopolitical rhetoric, but eventual deals favoring U.S. resource access. Position accordingly.</p>
+
+                <table class="sector-table">
+                    <thead>
+                        <tr>
+                            <th>Sector</th>
+                            <th>Stance</th>
+                            <th>Rationale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Semis / AI Infrastructure</td>
+                            <td><span class="stance tactical">Tactical OW</span></td>
+                            <td>Capex cycle intact but volatile; buy dips</td>
+                        </tr>
+                        <tr>
+                            <td>Utilities / Power</td>
+                            <td><span class="stance overweight">Accumulate</span></td>
+                            <td>AI power demand + defensive characteristics</td>
+                        </tr>
+                        <tr>
+                            <td>Financials</td>
+                            <td><span class="stance tactical">Opportunistic</span></td>
+                            <td>Deregulation tailwind + higher-for-longer rates</td>
+                        </tr>
+                        <tr>
+                            <td>Healthcare</td>
+                            <td><span class="stance underweight">Underweight</span></td>
+                            <td>Policy uncertainty; wait for clarity</td>
+                        </tr>
+                        <tr>
+                            <td>Defense</td>
+                            <td><span class="stance neutral">Neutral → Long</span></td>
+                            <td>Geopolitical tensions support spending</td>
+                        </tr>
+                        <tr>
+                            <td>Critical Minerals</td>
+                            <td><span class="stance overweight">Overweight</span></td>
+                            <td>Direct beneficiary if resource push succeeds</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>The Thesis</h2>
+                <p>The Iran parallel is stronger than most realize. Resource-driven geopolitical moves disguised as security concerns is the American playbook—from 1953 to today. What's different:</p>
+
+                <div class="resource-box">
+                    <div class="resource-card then">
+                        <h4>1953 Outcome</h4>
+                        <ul class="resource-list">
+                            <li>U.S. oil companies gained 40% stake</li>
+                            <li>Iran became reliable Western ally for 26 years</li>
+                            <li>Blowback (1979 revolution) came a generation later</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card now">
+                        <h4>2025-26 Trajectory (If Pattern Holds)</h4>
+                        <ul class="resource-list">
+                            <li>Near-term volatility from rhetoric</li>
+                            <li>Eventual deals favor U.S. resource access</li>
+                            <li>Beneficiaries: rare earth miners, Arctic infrastructure, defense</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="insight-box">
+                    <p><strong>The 2026 playbook:</strong> Trade the range until midterms clarify direction, then get aggressive for the Year 3 rally. When you can't get a read, that's market information—position for volatility, not direction.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-note">
+                    <strong>Disclaimer:</strong> This analysis is for informational purposes only and does not constitute investment advice. Past performance does not guarantee future results. Presidential cycle patterns are historical observations, not predictive models.
+                </div>
+                <div class="footer-sources">
+                    <strong>Sources:</strong><br>
+                    <a href="https://www.eisenhowerlibrary.gov">Eisenhower Presidential Library</a><br>
+                    <a href="https://history.state.gov/historicaldocuments/frus1951-54Iran">U.S. State Dept. Historical Documents</a><br>
+                    Stock Trader's Almanac (Hirsch)<br>
+                    WT Wealth Management Research<br>
+                    Charles Schwab Center for Financial Research
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
