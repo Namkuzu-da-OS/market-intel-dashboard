@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-01-09T18:15:40.170Z",
+  "timestamp": "2026-01-09T19:05:37.475Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 76,
+    "confidence_pct": 75,
     "sources": {
       "social": {
-        "bullish": 222,
-        "bearish": 58,
-        "neutral": 297,
-        "total": 577,
-        "pct": 38
+        "bullish": 213,
+        "bearish": 60,
+        "neutral": 300,
+        "total": 573,
+        "pct": 37
       },
       "news": {
         "bullish": 52,
-        "bearish": 28,
+        "bearish": 29,
         "neutral": 18,
-        "total": 98,
+        "total": 99,
         "pct": 53
       },
       "video": {
         "bullish": 4,
-        "bearish": 3,
-        "neutral": 1,
+        "bearish": 2,
+        "neutral": 2,
         "total": 8,
         "pct": 50
       },
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish with medium conviction - fundamentally-driven downside risks outweigh momentum-based bullish sentiment, with structural headwinds (weak labor data, regulatory uncertainty, exchange security concerns) challenging technical optimism.\n\n📈 **Themes:** AI infrastructure and semiconductor dominance maintaining sectoral strength; crypto/blockchain transitioning through institutional adoption inflection with governance token pressure; labor market deterioration and rate policy uncertainty creating macro headwinds; regulatory acceleration (tariff policy, banking supervision, digital asset legislation) driving volatility.\n\n🎯 **Levels:** SPY ($694.21): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $688. Near resistance: $701 (52k OI, active). Near support: $680 (126k OI, active). QQQ ($626.07): Call Wall $627 (57k OI, active resistance), Put Wall $574.78 (116k OI, dormant). Max Pain $620. Near resistance: $641 (55k OI), $650 (42k OI). /ES: SPX gamma zone 6993-7000 per Twitter.",
+    "narrative": "📊 **Consensus:** Bullish sentiment with medium conviction - broad market hitting new all-time highs with strong breadth, but structural headwinds (employment weakness, crypto outflows, financial sector technical breakdowns) create asymmetric downside vulnerability. Market trading on competing narratives where sentiment leaders diverge from emerging stress signals.\n\n📈 **Themes:** (1) AI infrastructure momentum and institutional adoption driving tech leadership, (2) Crypto regulatory clarity timeline and mainstream brand integration offsetting institutional outflow concerns, (3) Financial sector technical deterioration and banking system pressures creating sector-specific weakness that could spread.\n\n🎯 **Levels:** SPY ($693.50): Call Wall $750 (56k OI, 8.1% away - dormant), Put Wall $630 (149k OI, 9.2% away - dormant). Max Pain $688. Near resistance: $701 (52k OI, 1.1% - ACTIVE), $730 (48k OI). Near support: $680 (126k OI, 1.9% - ACTIVE), $640 (101k OI). QQQ ($625.61): Call Wall $627 (57k OI, 0.2% away - active hedging), Put Wall $574.78 (116k OI). Max Pain $620. Near resistance: $641 (55k OI), $650 (42k OI). Net positioning shows BULLISH_SUPPORT structure across both indices.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "NVDA",
-      "MSFT",
-      "BTC"
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "AI infrastructure dominance",
-      "institutional crypto adoption inflection",
-      "labor market deterioration",
-      "regulatory uncertainty acceleration",
-      "bifurcated sector performance"
+      "AI infrastructure and semiconductor momentum",
+      "Crypto institutional adoption and regulatory clarity",
+      "Financial sector technical deterioration",
+      "Employment data weakness and economic deceleration signals",
+      "Real estate recovery and mortgage rate compression"
     ],
     "risk_factors": [
-      "weak December payroll data undermining rally sustainability",
-      "tariff policy Supreme Court ruling creating immediate volatility",
-      "cryptocurrency exchange security breaches eroding institutional confidence",
-      "financial sector technical breakdown constraining equity participation",
-      "governance token utility obsolescence as institutions demand equity-equivalent instruments"
+      "Financial sector breakdown spreading beyond banking to broader market contagion",
+      "Crypto ETF outflows continuing ($350M BTC, $183M ETH on Jan 9) signaling institutional rotation",
+      "Employment weakness deepening and invalidating soft-landing narrative",
+      "Security breaches and regulatory enforcement creating crypto exchange vulnerability",
+      "Sentiment-driven rally vulnerable to sharp reversal if execution disappoints on forward-looking catalysts"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $694 current with $701 active resistance (52k OI), $680 active support (126k OI). QQQ: $626 testing $627 call wall (57k OI, immediate resistance). Watch tariff ruling catalyst for volatility.",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Downside toward Max Pain $688, then $680 support zone. Resistance at $701-$730 corridor. QQQ: Call wall $627 capping upside, support dormant until $590-$580 zone if breakdown occurs.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: Active resistance $701 (52k OI), active support $680 (126k OI). QQQ: Immediate Call Wall resistance $627 (57k OI, 0.2% away with active dealer hedging). Max Pain gravitational pull: SPY $688, QQQ $620",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Upside target $730 (48k OI call level), key support zone $680-$640 (126k and 101k OI). QQQ: Resistance cluster $641-$650 (55k and 42k OI), major Put Wall support $574.78 (116k OI). Watch financial sector for confirmation of breakdown containment vs. spread",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 184921
+    "generation_time_ms": 188610
   },
   "trending": {
     "macro": [
@@ -113,28 +113,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 12,
-        "sentiment_score": 0.255,
+        "mentions": 13,
+        "sentiment_score": 0.187,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 26,
+        "sentiment_pct": 19,
         "counts": {
           "bullish": 6,
-          "bearish": 2,
+          "bearish": 3,
           "neutral": 4,
-          "total": 12
-        }
-      },
-      {
-        "ticker": "COIN",
-        "mentions": 2,
-        "sentiment_score": 0.4,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 40,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 2
+          "total": 13
         }
       }
     ],
@@ -166,19 +153,6 @@
         }
       },
       {
-        "ticker": "AAPL",
-        "mentions": 11,
-        "sentiment_score": 0.009,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 1,
-        "counts": {
-          "bullish": 4,
-          "bearish": 4,
-          "neutral": 3,
-          "total": 11
-        }
-      },
-      {
         "ticker": "META",
         "mentions": 10,
         "sentiment_score": 0.556,
@@ -188,6 +162,19 @@
           "bullish": 7,
           "bearish": 0,
           "neutral": 3,
+          "total": 10
+        }
+      },
+      {
+        "ticker": "AAPL",
+        "mentions": 10,
+        "sentiment_score": -0.005,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 1,
+        "counts": {
+          "bullish": 4,
+          "bearish": 4,
+          "neutral": 2,
           "total": 10
         }
       },
@@ -209,9 +196,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 14.62,
-    "pc_ratio": 0.92,
-    "sentiment_bullish_pct": 38,
+    "vix": 14.57,
+    "pc_ratio": 1.02,
+    "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
@@ -219,7 +206,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.65,
-    "spread": 4.1,
+    "spread": 5.2,
     "position": 50
   },
   "action": {
