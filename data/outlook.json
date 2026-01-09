@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-01-09T12:32:38.866Z",
+  "timestamp": "2026-01-09T13:06:12.788Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 74,
+    "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 219,
-        "bearish": 64,
-        "neutral": 270,
-        "total": 553,
+        "bullish": 213,
+        "bearish": 63,
+        "neutral": 261,
+        "total": 537,
         "pct": 40
       },
       "news": {
         "bullish": 53,
-        "bearish": 32,
+        "bearish": 34,
         "neutral": 29,
-        "total": 114,
+        "total": 116,
         "pct": 46
       },
       "video": {
-        "bullish": 5,
+        "bullish": 6,
         "bearish": 3,
         "neutral": 3,
-        "total": 11,
-        "pct": 45
+        "total": 12,
+        "pct": 50
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish structural themes (AI momentum, supply chain diversification, pro-crypto policy) dominate medium-term narratives, but near-term tactical headwinds (regulatory uncertainty, technical deterioration in financials, crypto security concerns) create consolidation bias with upside skew - conviction: medium.\n\n📈 **Themes:** (1) AI product validation and semiconductor supply chain realignment driving tech leadership, (2) Institutional blockchain adoption via regulated products amid crypto security/regulatory friction, (3) Sector bifurcation - growth/innovation outperforming traditional financials with tactical rotation into defense/energy.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $688. Near resistance: $693 (52k OI), $701 (52k OI). Near support: $680 (126k OI). QQQ ($620.47): Call Wall $627 (57k OI, active hedging), Put Wall $574.78 (116k OI, dormant). Max Pain $620. Near resistance: $630 (33k OI), $641 (55k OI). Near support: $590 (81k OI). /ES: 6847 support per Twitter. BTC: $60,000 level critical per Twitter technical analysis.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - sources show 61-77% bullish readings, but structural tailwinds (macro strength, policy stimulus) face near-term tactical headwinds from technical deterioration, elevated hedging activity, and regulatory pressures across crypto/tech sectors.\n\n📈 **Themes:** (1) AI infrastructure momentum vs. mega-cap technical breakdown - leadership bifurcation between semiconductor/autonomous driving strength and Apple/mega-cap weakness; (2) Crypto sector fragmentation - institutional adoption/regulatory clarity vs. security breaches and governance token stagnation; (3) Macro policy support (trade deficit improvements, GDP growth potential) colliding with consumer debt stress and Treasury yield pressures.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, 8.8% away - dormant), Put Wall $630 (149k OI, 8.6% away - dormant). Max Pain $688. Near resistance: $693 (52k OI, active), $701 (52k OI, active). Near support: $680 (126k OI, active). QQQ ($620.47): Call Wall $627 (57k OI, 1.1% away - active resistance), Put Wall $574.78 (116k OI, 7.4% away - dormant). Max Pain $620. Near resistance: $630 (33k OI), $641 (55k OI). Near support: $590 (81k OI, active). /ES: 6847 support per Twitter. Bitcoin: $60,000 support level per Twitter sentiment analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "AAPL",
-      "BTC",
-      "NVDA"
+      "NVDA",
+      "BTC"
     ],
     "key_themes": [
-      "AI product adoption and semiconductor supply chain diversification",
-      "Institutional blockchain adoption vs crypto regulatory/security headwinds",
-      "Sector bifurcation - tech/defense/energy outperforming financials",
-      "Policy uncertainty creating tactical consolidation",
-      "Retail investor discipline supporting market floors"
+      "AI infrastructure vs mega-cap technical breakdown",
+      "Crypto regulatory clarity vs security vulnerabilities",
+      "Macro policy support vs consumer debt stress",
+      "Sector rotation and leadership bifurcation",
+      "Options expiration hedging dynamics"
     ],
     "risk_factors": [
-      "Tariff policy uncertainty creating asymmetric downside exposure particularly in tech hardware",
-      "Crypto security contagion risk and regulatory tightening in digital assets",
-      "Financial sector technical deterioration signaling potential credit/capital availability concerns",
-      "Household debt at 30% of disposable income (highest since 2008) threatening consumer resilience",
-      "China-US trade friction escalation in semiconductors impacting supply chain thesis"
+      "Financial sector technical breakdown could cascade to broader equity liquidation",
+      "Consumer debt service ratios at 2008 levels (30% disposable income) threatening spending",
+      "Crypto security incidents and regulatory tightening creating execution risk",
+      "Elevated hedging activity and options expiration volatility ahead",
+      "Mega-cap leaders (Apple) showing 7-day downtrends threatening market leadership"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Support $688 (Max Pain gravitational pull), resistance $693. QQQ: Support $620 (Max Pain), resistance $627 (Call Wall active hedging). Watch for consolidation pattern continuation.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Support $680 (126k OI active), upside target $701 (52k OI resistance) then $750 (56k OI Call Wall if momentum extends). QQQ: Support $590 (81k OI), resistance $630-$641 zone. Breakout above QQQ $627 Call Wall signals dealer covering acceleration.",
+    "intraday_levels": "SPY: Watch $693 resistance (52k OI active), $680 support (126k OI active). QQQ: $627 call wall creating immediate resistance (57k OI), $620 max pain gravitational pull. Testing key levels with options hedging flow dominant.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Downside risk toward $680 support zone, then $640 (101k OI). Upside capped by $693-$701 resistance cluster before $750 call wall activates. QQQ: $627 call wall major resistance, $590 support (81k OI). Break below $590 opens path to $580 (108k OI).",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 177914
+    "generation_time_ms": 183971
   },
   "trending": {
     "macro": [
@@ -167,41 +167,15 @@
     "other": [
       {
         "ticker": "AAPL",
-        "mentions": 16,
-        "sentiment_score": 0.061,
+        "mentions": 15,
+        "sentiment_score": 0.065,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 6,
+        "sentiment_pct": 7,
         "counts": {
           "bullish": 5,
           "bearish": 4,
-          "neutral": 7,
-          "total": 16
-        }
-      },
-      {
-        "ticker": "GOOGL",
-        "mentions": 10,
-        "sentiment_score": 0.546,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 55,
-        "counts": {
-          "bullish": 7,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 10
-        }
-      },
-      {
-        "ticker": "ONDS",
-        "mentions": 10,
-        "sentiment_score": 0.498,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 50,
-        "counts": {
-          "bullish": 7,
-          "bearish": 1,
-          "neutral": 2,
-          "total": 10
+          "neutral": 6,
+          "total": 15
         }
       },
       {
@@ -229,13 +203,39 @@
           "neutral": 6,
           "total": 10
         }
+      },
+      {
+        "ticker": "GOOGL",
+        "mentions": 9,
+        "sentiment_score": 0.607,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 61,
+        "counts": {
+          "bullish": 7,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 9
+        }
+      },
+      {
+        "ticker": "OPEN",
+        "mentions": 9,
+        "sentiment_score": 0.438,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 44,
+        "counts": {
+          "bullish": 5,
+          "bearish": 0,
+          "neutral": 4,
+          "total": 9
+        }
       }
     ]
   },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.69,
+    "vix": 15.67,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 40,
     "summary": "Market is lacking clear direction. Wait for confirmation."
