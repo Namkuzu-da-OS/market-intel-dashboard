@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-01-08T23:24:28.998Z",
+  "timestamp": "2026-01-08T23:59:52.392Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 229,
-        "bearish": 78,
-        "neutral": 297,
-        "total": 604,
+        "bullish": 233,
+        "bearish": 79,
+        "neutral": 309,
+        "total": 621,
         "pct": 38
       },
       "news": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish sentiment dominates (70-75% across sources), but with medium-low conviction as near-term structural concerns and technical deterioration create tactical caution despite positive longer-term macro fundamentals.\n\n📈 **Themes:** (1) Regulatory clarity expectations in crypto/digital assets driving institutional adoption momentum; (2) Geopolitical supply chain reallocation favoring defense and nearshoring beneficiaries; (3) Technical vulnerability in mega-cap tech and elevated hedging activity ahead of options expiration creating near-term pressure.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, resistance), Put Wall $630 (149k OI, support). Max Pain $690. Near resistance: $693 (52k OI), $701 (52k OI). Near support: $680 (122k OI). QQQ ($620.47): Call Wall $641 (55k OI, resistance), Put Wall $574.78 (116k OI, support). Max Pain $624. Near resistance: $627 (54k OI), $630 (32k OI). Near support: $610 (83k OI). /ES: 6847 support per Twitter analysis.",
+    "narrative": "📊 **Consensus:** Bifurcated market with structural bullish tailwinds (macro stimulus, AI/healthcare themes) facing near-term tactical headwinds (options expiration mechanics, regulatory uncertainty, technical weakness in mega-caps). Conviction: Medium - sources agree on directional conflict between long-term optimism and short-term risks.\n\n📈 **Themes:** (1) Macro stimulus and fiscal support creating structural upside momentum toward elevated price targets, (2) Healthcare AI partnerships and tech sector evolution driving rotation opportunities, (3) Near-term volatility from options positioning, regulatory decisions, and mega-cap technical deterioration creating tactical trading risks.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $690. Near resistance: $693 (52k OI), $701 (52k OI). Near support: $680 (122k OI). QQQ ($620.47): Call Wall $641 (55k OI, active hedging), Put Wall $574.78 (116k OI, dormant). Max Pain $624. Near resistance: $627 (54k OI), $630 (32k OI). Near support: $610 (83k OI). /ES: Sub-$60k breakdown risk mentioned per Twitter for Bitcoin context.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "AAPL",
       "TSLA",
-      "NVDA"
+      "PLTR"
     ],
     "key_themes": [
-      "Regulatory clarity in digital assets and crypto",
-      "Geopolitical supply chain reallocation",
-      "Technical deterioration in mega-cap tech",
-      "Institutional hedging ahead of options expiration",
-      "Banking sector capital pressures"
+      "Macro stimulus and fiscal support dynamics",
+      "AI sector momentum and healthcare partnerships",
+      "Options expiration mechanics and volatility positioning",
+      "Regulatory uncertainty and enforcement actions",
+      "Mega-cap technical deterioration"
     ],
     "risk_factors": [
-      "Exchange security vulnerabilities and crypto infrastructure risks",
-      "Tariff escalation and trade policy uncertainty",
-      "Banking sector tightening and capital requirements",
-      "Governance token obsolescence as institutional capital reallocates",
-      "Elevated volatility through January options expiration creating technical pressure"
+      "Largest short volatility position since June 2024 into options expiration",
+      "Household debt at 30% of disposable income - highest since 2008",
+      "Banking sector margin compression and capital stress under Fed supervision",
+      "Mega-cap technical breakdown patterns (TSLA, PLTR, AAPL downtrends)",
+      "Regulatory enforcement actions and security vulnerabilities in crypto/tech sectors"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Watch $680 support (122k OI active hedging), resistance at $693 (52k OI). QQQ: Support at $610 (83k OI), resistance at $627 (54k OI). Testing near max pain levels with dealer hedging creating gravitational pull.",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Key support zone $680-$630 corridor (PUT WALL 149k OI at $630 provides major floor), resistance at $701-$750 range (CALL WALL 56k OI caps upside). QQQ: Support $610-$574.78 (PUT WALL 116k OI), resistance $641 CALL WALL (55k OI). Consolidation likely between active hedging zones.",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: $680 support (122k OI), $693 resistance (52k OI). QQQ: $610 support (83k OI), $627 resistance (54k OI). Max pain gravitational pull at SPY $690, QQQ $624",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: Put Wall support $630 (149k OI), Call Wall resistance $750 (56k OI). QQQ: Active Call Wall resistance $641 (55k OI), Put Wall support $574.78 (116k OI). Watch for breakdown if mega-cap technical weakness accelerates",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 178538
+    "generation_time_ms": 182413
   },
   "trending": {
     "macro": [
@@ -245,7 +245,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.86,
-    "spread": 18.73,
+    "spread": 18.78,
     "position": 50
   },
   "action": {
