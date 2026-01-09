@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-01-08T23:59:52.392Z",
+  "timestamp": "2026-01-09T11:28:04.091Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 73,
+    "confidence_pct": 72,
     "sources": {
       "social": {
-        "bullish": 233,
-        "bearish": 79,
-        "neutral": 309,
-        "total": 621,
+        "bullish": 228,
+        "bearish": 74,
+        "neutral": 294,
+        "total": 596,
         "pct": 38
       },
       "news": {
-        "bullish": 65,
-        "bearish": 30,
-        "neutral": 34,
-        "total": 129,
-        "pct": 50
+        "bullish": 48,
+        "bearish": 32,
+        "neutral": 30,
+        "total": 110,
+        "pct": 44
       },
       "video": {
-        "bullish": 7,
+        "bullish": 5,
         "bearish": 3,
-        "neutral": 5,
-        "total": 15,
-        "pct": 47
+        "neutral": 3,
+        "total": 11,
+        "pct": 45
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bifurcated market with structural bullish tailwinds (macro stimulus, AI/healthcare themes) facing near-term tactical headwinds (options expiration mechanics, regulatory uncertainty, technical weakness in mega-caps). Conviction: Medium - sources agree on directional conflict between long-term optimism and short-term risks.\n\n📈 **Themes:** (1) Macro stimulus and fiscal support creating structural upside momentum toward elevated price targets, (2) Healthcare AI partnerships and tech sector evolution driving rotation opportunities, (3) Near-term volatility from options positioning, regulatory decisions, and mega-cap technical deterioration creating tactical trading risks.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $690. Near resistance: $693 (52k OI), $701 (52k OI). Near support: $680 (122k OI). QQQ ($620.47): Call Wall $641 (55k OI, active hedging), Put Wall $574.78 (116k OI, dormant). Max Pain $624. Near resistance: $627 (54k OI), $630 (32k OI). Near support: $610 (83k OI). /ES: Sub-$60k breakdown risk mentioned per Twitter for Bitcoin context.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction. Multiple sources identify structural support from macro fundamentals and sector rotation, but acute technical vulnerabilities in financials and elevated volatility positioning create near-term friction against sustained broad rallies.\n\n📈 **Themes:** (1) AI/technology mega-cap resilience amid sector-specific capital rotation, (2) Institutional blockchain adoption and crypto infrastructure validation offsetting exchange security concerns, (3) Geopolitical supply chain restructuring driving defense and critical minerals exposure, (4) Financial sector technical deterioration as potential leading indicator of broader weakness.\n\n🎯 **Levels:** SPY ($689.51): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $688. Near resistance: $693 (52k OI), $701 (52k OI). Near support: $680 (122k OI). QQQ ($620.47): Call Wall $641 (55k OI, active), Put Wall $574.78 (116k OI, dormant). Max Pain $621. Near resistance: $627 (54k OI), $630 (32k OI). Near support: $610 (83k OI). /ES: 6847 support per Twitter (death cross pattern noted in crypto at sub-$60k).",
     "key_tickers": [
       "SPY",
       "QQQ",
       "AAPL",
       "TSLA",
-      "PLTR"
+      "BTC"
     ],
     "key_themes": [
-      "Macro stimulus and fiscal support dynamics",
-      "AI sector momentum and healthcare partnerships",
-      "Options expiration mechanics and volatility positioning",
-      "Regulatory uncertainty and enforcement actions",
-      "Mega-cap technical deterioration"
+      "AI and mega-cap technology rotation",
+      "Institutional blockchain adoption and crypto infrastructure",
+      "Geopolitical supply chain diversification",
+      "Financial sector technical weakness",
+      "Volatility positioning and options expiration flows"
     ],
     "risk_factors": [
-      "Largest short volatility position since June 2024 into options expiration",
-      "Household debt at 30% of disposable income - highest since 2008",
-      "Banking sector margin compression and capital stress under Fed supervision",
-      "Mega-cap technical breakdown patterns (TSLA, PLTR, AAPL downtrends)",
-      "Regulatory enforcement actions and security vulnerabilities in crypto/tech sectors"
+      "Asset manager short volatility positioning at highest since June 2024",
+      "Financial sector technical breakdown as potential leading indicator",
+      "Crypto exchange security breaches and counterparty risk concerns",
+      "Mega-cap technical deterioration despite bullish macro backdrop",
+      "Household debt service ratio stress at 30% of disposable income"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 support (122k OI), $693 resistance (52k OI). QQQ: $610 support (83k OI), $627 resistance (54k OI). Max pain gravitational pull at SPY $690, QQQ $624",
-    "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Put Wall support $630 (149k OI), Call Wall resistance $750 (56k OI). QQQ: Active Call Wall resistance $641 (55k OI), Put Wall support $574.78 (116k OI). Watch for breakdown if mega-cap technical weakness accelerates",
+    "intraday_levels": "SPY: Watch $680 support (122k OI active hedging), $693 resistance (52k OI). QQQ: $610 support (83k OI), $627 resistance (54k OI). VIX at 15.70 suggests muted volatility expectations but put hedging noted per Twitter.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: Max Pain $688 gravitational pull, $701 upside target (52k OI), $630 Put Wall major support if weakness emerges. QQQ: $641 Call Wall primary resistance (55k OI), $621 Max Pain anchor, $574.78 Put Wall downside protection. Monitor financial sector levels per YouTube for breakdown signals.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 182413
+    "generation_time_ms": 173898
   },
   "trending": {
     "macro": [
@@ -235,8 +235,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.45,
-    "pc_ratio": 1.1,
+    "vix": 15.7,
+    "pc_ratio": 1,
     "sentiment_bullish_pct": 38,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -244,8 +244,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 8.86,
-    "spread": 18.78,
+    "hv": 8.65,
+    "spread": 4.61,
     "position": 50
   },
   "action": {
