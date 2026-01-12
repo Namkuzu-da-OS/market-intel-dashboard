@@ -203,7 +203,7 @@
         }
       }
     ],
-    "other": [
+    "ai": [
       {
         "ticker": "NVDA",
         "mentions": 5,
@@ -231,19 +231,6 @@
         }
       },
       {
-        "ticker": "HIMS",
-        "mentions": 4,
-        "sentiment_score": 0.212,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 21,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 3,
-          "total": 4
-        }
-      },
-      {
         "ticker": "TSLA",
         "mentions": 3,
         "sentiment_score": 0.24,
@@ -257,6 +244,47 @@
         }
       },
       {
+        "ticker": "META",
+        "mentions": 2,
+        "sentiment_score": 0.72,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 72,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "AMZN",
+        "mentions": 2,
+        "sentiment_score": 0.325,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 33,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 1,
+          "total": 2
+        }
+      }
+    ],
+    "other": [
+      {
+        "ticker": "HIMS",
+        "mentions": 4,
+        "sentiment_score": 0.212,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 21,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 4
+        }
+      },
+      {
         "ticker": "WMT",
         "mentions": 2,
         "sentiment_score": 0.785,
@@ -265,6 +293,45 @@
         "counts": {
           "bullish": 2,
           "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "SPX",
+        "mentions": 2,
+        "sentiment_score": 0.76,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 76,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "ORCL",
+        "mentions": 2,
+        "sentiment_score": 0.725,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 73,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "JPM",
+        "mentions": 2,
+        "sentiment_score": 0.025,
+        "sentiment_label": "Neutral",
+        "sentiment_pct": 3,
+        "counts": {
+          "bullish": 1,
+          "bearish": 1,
           "neutral": 0,
           "total": 2
         }
