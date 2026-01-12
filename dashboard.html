@@ -373,6 +373,50 @@
                 </div>
             </section>
 
+            <!-- Trending Tickers Section -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <div class="card-title"><span class="text-accent">◆</span> TRENDING TICKERS</div>
+                    <span class="mono text-muted" style="font-size: 0.7rem;">24H SOCIAL MENTIONS</span>
+                </div>
+                <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">MACRO</div>
+                        <div id="trendingMacro"></div>
+                    </div>
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">CRYPTO</div>
+                        <div id="trendingCrypto"></div>
+                    </div>
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">STOCKS</div>
+                        <div id="trendingStocks"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Feed Section -->
+            <section class="card" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <div class="card-title"><span class="text-accent">◆</span> SOCIAL FEED</div>
+                    <div id="socialStats" class="mono text-muted" style="font-size: 0.7rem;"></div>
+                </div>
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem; color: var(--green);">
+                            <span style="margin-right: 0.5rem;">▲</span> BULLISH SIGNALS
+                        </div>
+                        <div id="bullishFeed" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+                    </div>
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem; color: var(--red);">
+                            <span style="margin-right: 0.5rem;">▼</span> BEARISH SIGNALS
+                        </div>
+                        <div id="bearishFeed" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Sentiment & Other Details (Bottom) -->
             <div class="grid grid-cols-12">
                 <!-- Sentiment Analysis -->
@@ -398,18 +442,20 @@
     <script>
         async function init() {
             try {
-                // Fetch both data sources in parallel
-                const [outlookRes, marketRes] = await Promise.all([
+                // Fetch all data sources in parallel
+                const [outlookRes, marketRes, socialRes] = await Promise.all([
                     fetch('data/outlook.json'),
-                    fetch('data/market.json')
+                    fetch('data/market.json'),
+                    fetch('data/social.json')
                 ]);
 
                 if (!outlookRes.ok || !marketRes.ok) throw new Error('Failed to load data');
 
                 const outlookData = await outlookRes.json();
                 const marketData = await marketRes.json();
+                const socialData = socialRes.ok ? await socialRes.json() : null;
 
-                renderDashboard(outlookData, marketData);
+                renderDashboard(outlookData, marketData, socialData);
 
                 // Update timestamp
                 const date = new Date(outlookData.timestamp);
@@ -435,10 +481,12 @@
             }
         }
 
-        function renderDashboard(outlook, market) {
+        function renderDashboard(outlook, market, social) {
             renderOutlook(outlook);
             renderSentiment(outlook.sentiment);
             renderRegime(outlook.regime);
+            renderTrendingTickers(outlook.trending);
+            if (social) renderSocialFeed(social);
         }
 
         function renderOutlook(data) {
@@ -509,6 +557,89 @@
                     </div>
                 </div>
             `;
+        }
+
+        function renderTrendingTickers(trending) {
+            if (!trending) return;
+
+            const renderTickerList = (tickers, containerId) => {
+                const container = document.getElementById(containerId);
+                if (!tickers || tickers.length === 0) {
+                    container.innerHTML = '<div class="text-muted mono" style="font-size: 0.8rem;">No data</div>';
+                    return;
+                }
+
+                container.innerHTML = tickers.map(t => {
+                    const sentColor = t.sentiment_label === 'Bullish' ? 'var(--green)' :
+                                     t.sentiment_label === 'Bearish' ? 'var(--red)' : 'var(--text-muted)';
+                    return `
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--border);">
+                            <div>
+                                <span class="mono" style="font-weight: 600; color: var(--accent);">${t.ticker}</span>
+                                <span class="mono text-muted" style="font-size: 0.7rem; margin-left: 0.5rem;">${t.mentions} mentions</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <div style="width: 40px; height: 4px; background: var(--bg-tertiary); border-radius: 2px; overflow: hidden;">
+                                    <div style="width: ${t.sentiment_pct}%; height: 100%; background: ${sentColor};"></div>
+                                </div>
+                                <span class="mono" style="font-size: 0.7rem; color: ${sentColor};">${t.sentiment_pct}%</span>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            };
+
+            renderTickerList(trending.macro, 'trendingMacro');
+            renderTickerList(trending.crypto, 'trendingCrypto');
+            renderTickerList(trending.other, 'trendingStocks');
+        }
+
+        function renderSocialFeed(social) {
+            if (!social) return;
+
+            // Update stats
+            document.getElementById('socialStats').textContent =
+                `${social.stats.total_analyzed} ANALYZED • ${social.stats.bullish_count} BULL • ${social.stats.bearish_count} BEAR`;
+
+            const renderPost = (post, isBullish) => {
+                const borderColor = isBullish ? 'var(--green)' : 'var(--red)';
+                const timeAgo = getTimeAgo(new Date(post.timestamp));
+
+                return `
+                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 6px; border-left: 3px solid ${borderColor};">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div>
+                                <span style="font-weight: 500; font-size: 0.85rem;">${post.author}</span>
+                                <span class="mono text-muted" style="font-size: 0.75rem; margin-left: 0.5rem;">${post.handle}</span>
+                            </div>
+                            <span class="mono text-muted" style="font-size: 0.7rem;">${timeAgo}</span>
+                        </div>
+                        <div style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin-bottom: 0.5rem;">
+                            ${post.content.length > 200 ? post.content.substring(0, 200) + '...' : post.content}
+                        </div>
+                        <div class="mono text-muted" style="font-size: 0.65rem; display: flex; gap: 1rem;">
+                            <span>♥ ${post.engagement.likes}</span>
+                            <span>↻ ${post.engagement.retweets}</span>
+                            <span>💬 ${post.engagement.replies}</span>
+                        </div>
+                    </div>
+                `;
+            };
+
+            document.getElementById('bullishFeed').innerHTML =
+                social.posts.bullish.slice(0, 5).map(p => renderPost(p, true)).join('');
+            document.getElementById('bearishFeed').innerHTML =
+                social.posts.bearish.slice(0, 5).map(p => renderPost(p, false)).join('');
+        }
+
+        function getTimeAgo(date) {
+            const seconds = Math.floor((new Date() - date) / 1000);
+            if (seconds < 60) return 'just now';
+            const minutes = Math.floor(seconds / 60);
+            if (minutes < 60) return `${minutes}m ago`;
+            const hours = Math.floor(minutes / 60);
+            if (hours < 24) return `${hours}h ago`;
+            return `${Math.floor(hours / 24)}d ago`;
         }
 
         document.addEventListener('DOMContentLoaded', init);
