@@ -8,24 +8,25 @@
     <style>
         :root {
             /* Mystical Theme - Gold on Deep Purple */
-            --bg-primary: #0d0b14;
-            --bg-secondary: #12101a;
-            --bg-tertiary: #1a1725;
-            --bg-card: rgba(26, 23, 37, 0.8);
-            --text-primary: #e8dcc8;
-            --text-secondary: #9a8b7a;
-            --text-muted: #6a5d4d;
-            --accent: #c9a227;
-            --accent-dim: #a88a1f;
-            --accent-glow: rgba(201, 162, 39, 0.2);
-            --accent-secondary: #e6bc2f;
+            --bg-primary: #0a0612;
+            --bg-secondary: #1a0a2e;
+            --bg-tertiary: #2d1b4e;
+            --bg-card: rgba(26, 10, 46, 0.8);
+            --ethereal-overlay: rgba(255, 255, 255, 0.1);
+            --text-primary: #f4e4a6;
+            --text-secondary: #d4af37;
+            --text-muted: rgba(244, 228, 166, 0.6);
+            --accent: #d4af37;
+            --accent-dim: #b8962f;
+            --accent-glow: rgba(212, 175, 55, 0.6);
+            --accent-secondary: #f4e4a6;
             --accent-purple: #a855f7;
             --accent-blue: #3b82f6;
             --accent-amber: #f59e0b;
             --green: #5fa777;
             --red: #c45c52;
-            --border: rgba(201, 162, 39, 0.15);
-            --border-hover: rgba(201, 162, 39, 0.35);
+            --border: rgba(212, 175, 55, 0.3);
+            --border-hover: rgba(212, 175, 55, 0.6);
             --font-display: 'Instrument Serif', Georgia, serif;
             --font-mono: 'IBM Plex Mono', monospace;
             --font-body: 'Outfit', sans-serif;
@@ -43,10 +44,11 @@
 
         body {
             font-family: var(--font-body);
-            background: var(--bg-primary);
+            background: radial-gradient(ellipse at center, #1a0a2e 0%, #0a0612 70%);
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
+            min-height: 100vh;
         }
 
         /* Sacred geometry background */
@@ -60,7 +62,7 @@
             pointer-events: none;
             opacity: 0.04;
             z-index: 0;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ccircle cx='200' cy='200' r='150' fill='none' stroke='%23c9a227' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='100' fill='none' stroke='%23c9a227' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='50' fill='none' stroke='%23c9a227' stroke-width='0.5'/%3E%3Cline x1='50' y1='200' x2='350' y2='200' stroke='%23c9a227' stroke-width='0.3'/%3E%3Cline x1='200' y1='50' x2='200' y2='350' stroke='%23c9a227' stroke-width='0.3'/%3E%3Cline x1='93' y1='93' x2='307' y2='307' stroke='%23c9a227' stroke-width='0.3'/%3E%3Cline x1='307' y1='93' x2='93' y2='307' stroke='%23c9a227' stroke-width='0.3'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ccircle cx='200' cy='200' r='150' fill='none' stroke='%23d4af37' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='100' fill='none' stroke='%23d4af37' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='50' fill='none' stroke='%23d4af37' stroke-width='0.5'/%3E%3Cline x1='50' y1='200' x2='350' y2='200' stroke='%23d4af37' stroke-width='0.3'/%3E%3Cline x1='200' y1='50' x2='200' y2='350' stroke='%23d4af37' stroke-width='0.3'/%3E%3Cline x1='93' y1='93' x2='307' y2='307' stroke='%23d4af37' stroke-width='0.3'/%3E%3Cline x1='307' y1='93' x2='93' y2='307' stroke='%23d4af37' stroke-width='0.3'/%3E%3C/svg%3E");
             background-size: 400px 400px;
             background-position: center;
         }
@@ -756,9 +758,9 @@
         <a href="index.html" class="logo">
             <div class="logo-mark">
                 <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 4 L36 34 L4 34 Z" stroke="#c9a227" stroke-width="1.5" fill="rgba(201,162,39,0.1)"/>
-                    <ellipse cx="20" cy="22" rx="7" ry="4" stroke="#c9a227" stroke-width="1.2" fill="none"/>
-                    <circle cx="20" cy="22" r="2" fill="#c9a227"/>
+                    <path d="M20 4 L36 34 L4 34 Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(201,162,39,0.1)"/>
+                    <ellipse cx="20" cy="22" rx="7" ry="4" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <circle cx="20" cy="22" r="2" fill="#d4af37"/>
                 </svg>
             </div>
             <span class="logo-text">Seeker</span>
