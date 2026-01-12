@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-01-12T12:26:50.237Z",
+  "timestamp": "2026-01-12T12:56:14.754Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "NEUTRAL",
-    "confidence_pct": 55,
+    "confidence_pct": 54,
     "sources": {
       "social": {
-        "bullish": 9,
-        "bearish": 10,
-        "neutral": 22,
-        "total": 41,
+        "bullish": 13,
+        "bearish": 14,
+        "neutral": 31,
+        "total": 58,
         "pct": 22
       },
       "news": {
-        "bullish": 28,
-        "bearish": 24,
+        "bullish": 30,
+        "bearish": 26,
         "neutral": 16,
-        "total": 68,
-        "pct": 41
+        "total": 72,
+        "pct": 42
       },
       "video": {
         "bullish": 7,
@@ -36,37 +36,38 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bearish with medium conviction. Near-term headwinds from regulatory uncertainty (stablecoin enforcement, DOJ speculation), financial sector weakness (credit card issuers down 3-11%), and crypto leverage unwinding dominate immediate sentiment, though institutional infrastructure buildout (derivatives, prediction markets) and mega-cap tech resilience provide selective support.\n\n📈 **Themes:** (1) Crypto infrastructure bifurcation - institutional capital flowing into derivatives/prediction markets while retail-driven assets face regulatory pressure and exchange security concerns; (2) Financial sector distress from credit card rate cap proposals creating defensive rotation into mega-cap technology; (3) Monetary policy uncertainty with Fed rate cut expectations diverging from concrete timeline, constraining risk appetite across consumer discretionary and traditional banking.\n\n🎯 **Levels:** SPY ($694.07): Call Wall $700 (45k OI, 0.9% away - ACTIVE resistance), Put Wall $630 (149k OI, 9.2% away - dormant). Max Pain $693. Near support: $680 (125k OI - ACTIVE). QQQ ($626.65): Call Wall $627 (57k OI, 0.1% away - ACTIVE resistance), Put Wall $574.78 (116k OI). Max Pain $625. Near resistance: $641 (56k OI), $650 (42k OI). /ES: 6847 support per Twitter sources.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with cautious bullish bias (medium conviction). Bullish structure dominates options positioning and institutional developments, but near-term headwinds from policy uncertainty and sector-specific damage create tactical caution.\n\n📈 **Themes:** (1) Institutional crypto adoption and regulatory clarity driving selective blockchain infrastructure strength, (2) Sector rotation pressure—tech/AI momentum versus financial sector stress from rate policy uncertainty, (3) Defensive positioning in precious metals as hedge against policy and leverage risks.\n\n🎯 **Levels:** SPY ($694.07): Call Wall $750 (56k OI, resistance), Put Wall $630 (149k OI, support). Max Pain $693. Near resistance: $700 (45k OI, ACTIVE). Near support: $680 (125k OI, ACTIVE). QQQ ($626.65): Call Wall $627 (57k OI, ACTIVE resistance), Put Wall $574.78 (116k OI, support). Max Pain $625. Near resistance: $641 (56k OI), $650 (42k OI). /ES: 6847 support mentioned per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
-      "ETH",
-      "WING"
+      "GOOGL",
+      "ORCL",
+      "SNOW",
+      "JPM"
     ],
     "key_themes": [
-      "Crypto infrastructure bifurcation - institutional derivatives vs retail pressure",
-      "Regulatory uncertainty - stablecoin enforcement and credit card rate caps",
-      "Financial sector distress and defensive rotation to mega-cap tech",
-      "Monetary policy timeline divergence constraining risk appetite",
-      "Prediction markets and privacy infrastructure as 2026 institutional entry points"
+      "Institutional crypto adoption and regulatory clarity",
+      "AI and tech sector momentum",
+      "Financial sector pressure from rate policy uncertainty",
+      "Precious metals defensive rotation",
+      "Labor market deterioration signals"
     ],
     "risk_factors": [
-      "Further stablecoin enforcement actions or exchange security breaches accelerating institutional retreat",
-      "Credit card rate cap proposal progression creating extended financial sector weakness",
-      "Fed rate cut timeline延期 widening gap between expectations and reality",
-      "Crypto leverage stress recurrence - $182M USDT freeze and BTC deposit emergency mechanisms suggest ongoing deleveraging",
-      "Congressional crypto legislation delays removing key bullish catalyst for institutional adoption"
+      "Policy uncertainty around rate caps pressuring financials",
+      "Crypto security vulnerabilities and leverage liquidation risks",
+      "Labor market stress with 242 applications per job opening",
+      "Geopolitical semiconductor export restrictions",
+      "Housing inventory pressure and discretionary consumption weakness"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: Active resistance at $700 (45k OI Call Wall), support at $680 (125k OI). QQQ: Immediate resistance at $627 (57k OI Call Wall - 0.1% away), watch Max Pain gravitational pull at $625. /ES: 6847 support level per Twitter sources",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: Major resistance zone $700-$730 (45k-48k OI), critical support corridor $680-$630 (125k-149k OI Put Wall). QQQ: Resistance band $641-$650 (56k-42k OI), major Put Wall support at $574.78 (116k OI). Crypto: Testing support zones per source analysis",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: $700 active resistance (45k OI), $680 active support (125k OI). QQQ: $627 immediate call wall resistance (57k OI), testing max pain $625. Watch for gravitational pull toward max pain levels.",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: $730 dormant resistance (48k OI), $640 dormant support (101k OI). QQQ: $641-650 resistance zone, $580-590 support zone activates on pullback. Bias supported by put wall positioning at $630 SPY (149k OI) and $574.78 QQQ (116k OI).",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 176537
+    "generation_time_ms": 168241
   },
   "trending": {
     "macro": [],
@@ -156,7 +157,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.23,
+    "vix": 16.06,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 22,
     "summary": "Market is lacking clear direction. Wait for confirmation."
