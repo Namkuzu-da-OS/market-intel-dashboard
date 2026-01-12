@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-01-12T11:34:31.796Z",
+  "timestamp": "2026-01-12T12:00:59.939Z",
   "hours_analyzed": 24,
   "sentiment": {
-    "overall": "BULLISH",
-    "confidence_pct": 60,
+    "overall": "NEUTRAL",
+    "confidence_pct": 57,
     "sources": {
       "social": {
-        "bullish": 6,
-        "bearish": 2,
-        "neutral": 9,
-        "total": 17,
-        "pct": 35
+        "bullish": 8,
+        "bearish": 6,
+        "neutral": 17,
+        "total": 31,
+        "pct": 26
       },
       "news": {
-        "bullish": 21,
-        "bearish": 19,
-        "neutral": 10,
-        "total": 50,
+        "bullish": 28,
+        "bearish": 24,
+        "neutral": 15,
+        "total": 67,
         "pct": 42
       },
       "video": {
@@ -36,44 +36,58 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** MIXED with medium conviction. Bullish sentiment dominates tactical positioning (75% Twitter, 78% YouTube, 53% RSS) but structural bearish risks create asymmetric downside. Sector-specific strength in tech/crypto infrastructure conflicts with financial sector regulatory headwinds.\n\n📈 **Themes:** (1) Institutional crypto adoption accelerating - blockchain infrastructure deployment and regulatory normalization driving capital flows; (2) AI/cloud sector momentum - analyst upgrades and technical setups in select names maintaining growth narrative; (3) Financial sector regulatory uncertainty - credit card rate cap proposals and Fed credibility concerns creating defensiveness; (4) Layer-1 blockchain competitive dynamics - capital concentration debate between distributed adoption vs. institutional efficiency.\n\n🎯 **Levels:** SPY ($694.07): Call Wall $750 (56k OI, 8.1% away - dormant), Put Wall $630 (149k OI, 9.2% away - dormant). Max Pain $689. Near resistance: $700 (39k OI - ACTIVE), $730 (48k OI - dormant). Near support: $680 (126k OI - ACTIVE), $640 (101k OI - dormant). QQQ ($626.65): Call Wall $627 (57k OI, 0.1% away - ACTIVE hedging), Put Wall $574.78 (116k OI, 8.3% away - dormant). Max Pain $621. Near resistance: $641 (55k OI - ACTIVE), $650 (42k OI - ACTIVE). Analyst price targets per Twitter: SNOW $286, ORCL $240, NOW $205.",
+    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - institutional crypto infrastructure adoption and precious metals breakouts provide upside catalysts, but regulatory acceleration, DeFi leverage concerns, and consumer weakness create material downside risks.\n\n📈 **Themes:** (1) Institutional crypto specialization across prediction markets, derivatives, and stablecoins driving sector-wide infrastructure maturation; (2) Precious metals breakout momentum with gold and silver positioning strengthening; (3) Regulatory uncertainty intensifying across crypto enforcement, banking supervision, and potential credit card rate cap legislation pressuring financials.\n\n🎯 **Levels:** SPY ($694.07): Call Wall $700 (45k OI, 0.9% away - ACTIVE resistance), Put Wall $630 (149k OI, 9.2% away - DORMANT support). Max Pain $693. Near support: $680 (125k OI - ACTIVE). QQQ ($626.65): Call Wall $627 (57k OI, 0.1% away - ACTIVE resistance creating immediate headwind), Put Wall $574.78 (116k OI - DORMANT). Max Pain $625. Near resistance: $641 (56k OI), $650 (42k OI). /ES: 6847 support per Twitter sentiment.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "SNOW",
       "ORCL",
       "NOW",
-      "BTC",
-      "ETH",
-      "SOL"
+      "COF",
+      "SYF",
+      "AXP"
     ],
     "key_themes": [
-      "Institutional crypto adoption and blockchain infrastructure",
-      "AI and cloud sector momentum with analyst upgrades",
-      "Financial sector regulatory uncertainty and credit market stress",
-      "Layer-1 blockchain competitive dynamics",
-      "Dovish monetary policy expectations supporting risk assets"
+      "Institutional crypto infrastructure adoption across prediction markets and derivatives",
+      "Precious metals breakout momentum",
+      "Regulatory enforcement acceleration in crypto and banking sectors",
+      "Consumer discretionary weakness",
+      "Tech sector selective strength with analyst upgrades"
     ],
     "risk_factors": [
-      "Credit card rate cap legislation threatening financial sector profitability",
-      "Fed Chair legal exposure and monetary policy credibility concerns",
-      "Ethereum-Solana competitive reallocation creating altcoin volatility",
-      "Geopolitical supply chain vulnerabilities in semiconductor sector",
-      "QQQ at immediate call wall resistance limiting near-term upside"
+      "DeFi leverage instability and stablecoin freezing incidents creating contagion risk",
+      "Crypto exchange security breaches demonstrating systemic counterparty vulnerabilities",
+      "Potential credit card rate cap legislation pressuring major financials (COF, SYF, AXP, JPM, BAC)",
+      "Consumer discretionary spending weakness signaling broader economic softness",
+      "Banking regulatory tightening and Fed supervisory guidance implementation"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 support (126k OI - ACTIVE), $700 resistance (39k OI - ACTIVE). QQQ: $627 immediate call wall resistance (57k OI - ACTIVE hedging), watch $621 max pain gravitational pull. Financial sector weakness may pressure broader indices despite tech strength.",
+    "intraday_levels": "SPY: $700 active call wall resistance (45k OI), $680 active put support (125k OI). QQQ: $627 immediate call wall resistance (57k OI at 0.1% away) creating strong headwind, testing Max Pain $625. Watch for breakout above SPY $700 or breakdown below $680 to establish directional conviction.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $689 max pain target zone, $730 upside resistance if momentum sustains (48k OI). QQQ: $641-$650 resistance band (55k-42k OI), $621 max pain support. Analyst targets: SNOW $286, ORCL $240, NOW $205 for sector-specific plays. Watch $680 SPY as key support for continuation.",
+    "swing_levels": "SPY: Upside targets $730 (48k OI, currently dormant) if $700 breaks, downside risk activates $640 support (101k OI) on breakdown. QQQ: $641-$650 resistance zone (56k and 42k OI) caps upside, $590-$580 support zone (81k and 108k OI) protects downside. Precious metals breakout continuation and institutional crypto infrastructure adoption support 1-5 day upside bias despite near-term regulatory noise.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 177773
+    "generation_time_ms": 173226
   },
   "trending": {
     "macro": [],
-    "crypto": [],
+    "crypto": [
+      {
+        "ticker": "BCH",
+        "mentions": 1,
+        "sentiment_score": 0.82,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 82,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 1
+        }
+      }
+    ],
     "other": [
       {
         "ticker": "PENGU",
@@ -102,7 +116,7 @@
         }
       },
       {
-        "ticker": "XAG",
+        "ticker": "GOOGL",
         "mentions": 1,
         "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
@@ -115,11 +129,11 @@
         }
       },
       {
-        "ticker": "CRWV",
+        "ticker": "WMT",
         "mentions": 1,
-        "sentiment_score": 0.65,
+        "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 72,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -128,11 +142,11 @@
         }
       },
       {
-        "ticker": "GEV",
+        "ticker": "XAG",
         "mentions": 1,
-        "sentiment_score": 0.65,
+        "sentiment_score": 0.72,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
+        "sentiment_pct": 72,
         "counts": {
           "bullish": 1,
           "bearish": 0,
@@ -145,9 +159,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.38,
+    "vix": 16.32,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 35,
+    "sentiment_bullish_pct": 26,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
