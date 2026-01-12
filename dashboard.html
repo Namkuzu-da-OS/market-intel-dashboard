@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Intelligence | Scout</title>
+    <title>Market Intelligence | Seeker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,27 +12,27 @@
         rel="stylesheet">
     <style>
         :root {
-            /* Scout Theme Palette */
-            --bg-primary: #07070a;
-            --bg-secondary: #0d0d12;
-            --bg-tertiary: #14141c;
-            --bg-card: #1a1a24;
+            /* Mystical Theme Palette - Gold on Deep Purple */
+            --bg-primary: #0d0b14;
+            --bg-secondary: #12101a;
+            --bg-tertiary: #1a1725;
+            --bg-card: rgba(26, 23, 37, 0.8);
 
-            --text-primary: #f0f0f5;
-            --text-secondary: #8a8a9a;
-            --text-muted: #5a5a6a;
+            --text-primary: #e8dcc8;
+            --text-secondary: #9a8b7a;
+            --text-muted: #6a5d4d;
 
-            --accent: #00e5bf;
-            --accent-dim: #00c5a5;
-            --accent-glow: rgba(0, 229, 191, 0.15);
-            --accent-secondary: #ff6b35;
+            --accent: #c9a227;
+            --accent-dim: #a88a1f;
+            --accent-glow: rgba(201, 162, 39, 0.2);
+            --accent-bright: #e6bc2f;
 
-            --green: #28c840;
-            --red: #ff5f57;
-            --orange: #febc2e;
+            --green: #5fa777;
+            --red: #c45c52;
+            --orange: #d4943a;
 
-            --border: rgba(255, 255, 255, 0.06);
-            --border-hover: rgba(255, 255, 255, 0.12);
+            --border: rgba(201, 162, 39, 0.15);
+            --border-hover: rgba(201, 162, 39, 0.35);
 
             /* Fonts */
             --font-display: 'Instrument Serif', Georgia, serif;
@@ -55,7 +55,7 @@
             overflow-x: hidden;
         }
 
-        /* Grain overlay */
+        /* Sacred geometry background */
         body::before {
             content: '';
             position: fixed;
@@ -64,9 +64,38 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            opacity: 0.03;
-            z-index: 1000;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.04;
+            z-index: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ccircle cx='200' cy='200' r='150' fill='none' stroke='%23c9a227' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='100' fill='none' stroke='%23c9a227' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='50' fill='none' stroke='%23c9a227' stroke-width='0.5'/%3E%3Cline x1='50' y1='200' x2='350' y2='200' stroke='%23c9a227' stroke-width='0.3'/%3E%3Cline x1='200' y1='50' x2='200' y2='350' stroke='%23c9a227' stroke-width='0.3'/%3E%3Cline x1='93' y1='93' x2='307' y2='307' stroke='%23c9a227' stroke-width='0.3'/%3E%3Cline x1='307' y1='93' x2='93' y2='307' stroke='%23c9a227' stroke-width='0.3'/%3E%3C/svg%3E");
+            background-size: 400px 400px;
+            background-position: center;
+        }
+
+        /* Floating particles container - behind content */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            color: var(--accent);
+            opacity: 0;
+            animation: float-particle 8s ease-in-out infinite;
+            font-size: 0.8rem;
+        }
+
+        @keyframes float-particle {
+            0% { opacity: 0; transform: translateY(100vh) rotate(0deg); }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { opacity: 0; transform: translateY(-10vh) rotate(360deg); }
         }
 
         /* Utilities */
@@ -120,6 +149,8 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 2rem;
+            position: relative;
+            z-index: 2;
         }
 
         /* Header */
@@ -128,9 +159,11 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 3rem;
-            padding: 1.5rem;
+            padding: 1.5rem 2rem;
             border-bottom: 1px solid var(--border);
-            background: var(--bg-secondary);
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, transparent 100%);
+            position: relative;
+            z-index: 10;
         }
 
         .logo {
@@ -142,34 +175,48 @@
         }
 
         .logo-mark {
-            width: 24px;
-            height: 24px;
-            border: 1px solid var(--accent);
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent);
-            font-family: var(--font-mono);
-            font-weight: 600;
-            font-size: 0.8rem;
+            position: relative;
+        }
+
+        /* SVG triangle with eye */
+        .logo-mark svg {
+            width: 32px;
+            height: 32px;
         }
 
         .logo-text {
             font-family: var(--font-display);
-            font-size: 1.25rem;
-            letter-spacing: -0.02em;
+            font-size: 1.4rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .logo-subtitle {
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin-left: 0.5rem;
+            letter-spacing: 0.05em;
         }
 
         .status-badge {
             font-family: var(--font-mono);
-            font-size: 0.75rem;
-            padding: 0.35rem 1rem;
-            background: rgba(0, 229, 191, 0.05);
+            font-size: 0.7rem;
+            padding: 0.4rem 1rem;
+            background: var(--accent-glow);
             border: 1px solid var(--accent-dim);
             color: var(--accent);
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            letter-spacing: 0.05em;
         }
 
         /* Grid */
@@ -199,14 +246,27 @@
             background: var(--bg-card);
             border: 1px solid var(--border);
             padding: 2rem;
-            border-radius: 8px;
+            border-radius: 2px;
             transition: all 0.3s ease;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .card::before {
+            content: '◇';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--accent);
+            font-size: 0.8rem;
+            background: var(--bg-primary);
+            padding: 0 0.5rem;
         }
 
         .card:hover {
             border-color: var(--border-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 30px var(--accent-glow);
         }
 
         .card-header {
@@ -219,15 +279,19 @@
         }
 
         .card-title {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            letter-spacing: 0.1em;
-            font-weight: 600;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            color: var(--accent);
+            letter-spacing: 0.2em;
+            font-weight: 500;
             text-transform: uppercase;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        .card-title .text-accent {
+            font-size: 0.6rem;
         }
 
         /* Market Cards */
@@ -242,7 +306,7 @@
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             padding: 1.5rem;
-            border-radius: 6px;
+            border-radius: 2px;
             text-align: center;
         }
 
@@ -250,13 +314,14 @@
             font-family: var(--font-display);
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
-            color: var(--text-primary);
+            color: var(--accent);
+            letter-spacing: 0.1em;
         }
 
         .market-card .price {
             font-family: var(--font-mono);
             font-size: 1.25rem;
-            color: var(--accent);
+            color: var(--text-primary);
             margin-bottom: 0.5rem;
         }
 
@@ -270,38 +335,70 @@
 
         /* Outlook */
         .outlook-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1.05rem;
+            line-height: 1.9;
             color: var(--text-secondary);
+            font-family: var(--font-body);
         }
 
         .outlook-content strong {
-            color: var(--text-primary);
-            font-weight: 600;
+            color: var(--accent-bright);
+            font-weight: 500;
         }
 
         /* Sentiment */
         .sentiment-meter {
-            height: 4px;
+            height: 3px;
             background: var(--bg-tertiary);
-            border-radius: 2px;
+            border-radius: 0;
             margin: 1rem 0;
             overflow: hidden;
+            position: relative;
+        }
+
+        .sentiment-meter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, var(--red) 0%, var(--orange) 50%, var(--green) 100%);
+            opacity: 0.2;
         }
 
         .sentiment-fill {
             height: 100%;
-            background: var(--accent);
-            border-radius: 2px;
+            background: linear-gradient(90deg, var(--accent-dim), var(--accent-bright));
+            border-radius: 0;
             transition: width 1s ease;
+            position: relative;
+            z-index: 1;
         }
 
         /* Loading/Error */
         .state-msg {
             text-align: center;
             padding: 4rem;
-            font-family: var(--font-mono);
+            font-family: var(--font-display);
+            font-style: italic;
             color: var(--text-muted);
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .state-msg::before {
+            content: '☼';
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
         }
 
         /* Responsive */
@@ -324,22 +421,35 @@
 </head>
 
 <body>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
     <div class="container">
         <header>
             <a href="site/index.html" class="logo">
-                <div class="logo-mark">S</div>
-                <span class="logo-text">Scout</span>
+                <div class="logo-mark">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Triangle -->
+                        <path d="M20 4 L36 34 L4 34 Z" stroke="#c9a227" stroke-width="1.5" fill="rgba(201,162,39,0.1)"/>
+                        <!-- Eye outer -->
+                        <ellipse cx="20" cy="22" rx="7" ry="4" stroke="#c9a227" stroke-width="1.2" fill="none"/>
+                        <!-- Pupil -->
+                        <circle cx="20" cy="22" r="2" fill="#c9a227"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Seeker</span>
+                <span class="logo-subtitle">of Hidden Patterns</span>
             </a>
             <div class="status-badge">
-                <span id="lastUpdated">CONNECTING...</span>
+                <span style="margin-right: 0.3rem;">✶</span>
+                <span id="lastUpdated">Connecting...</span>
             </div>
         </header>
 
-        <div id="loading" class="state-msg">INITIALIZING SYSTEMS...</div>
+        <div id="loading" class="state-msg">Consulting the Oracle...</div>
         <div id="error" class="state-msg" style="display: none; color: var(--red);">
-            CONNECTION FAILED<br>
-            <span style="font-size: 0.8rem; margin-top: 1rem; display: block;">Ensure you are running a local server
-                (e.g., python -m http.server)</span>
+            The Veil is Closed<br>
+            <span style="font-size: 0.8rem; margin-top: 1rem; display: block; font-style: normal;">Ensure you are running a local server</span>
         </div>
 
         <main id="mainContent" style="display: none;">
@@ -347,7 +457,7 @@
             <!-- AI Market Outlook (Top Priority) -->
             <section class="card" style="margin-bottom: 2rem;">
                 <div class="card-header">
-                    <div class="card-title"><span class="text-accent">◆</span> AI MARKET OUTLOOK</div>
+                    <div class="card-title"><span class="text-accent">◆</span> Market Divination</div>
                     <div id="sentimentBadge"></div>
                 </div>
                 <div id="outlookContent" class="outlook-content"></div>
@@ -355,19 +465,19 @@
                 <div class="grid grid-cols-12"
                     style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
                     <div class="col-span-4">
-                        <div class="card-title" style="margin-bottom: 1rem;">KEY TICKERS</div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">✶ Symbols of Focus</div>
                         <div id="keyTickers" class="flex" style="flex-wrap: wrap; gap: 0.5rem;"></div>
                     </div>
                     <div class="col-span-4">
-                        <div class="card-title" style="margin-bottom: 1rem;">THEMES</div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">✶ Emerging Themes</div>
                         <ul id="keyThemes"
-                            style="list-style: none; font-size: 0.9rem; font-family: var(--font-mono); color: var(--text-secondary);">
+                            style="list-style: none; font-size: 0.85rem; font-family: var(--font-body); color: var(--text-secondary); font-style: italic;">
                         </ul>
                     </div>
                     <div class="col-span-4">
-                        <div class="card-title" style="margin-bottom: 1rem;">RISKS</div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">✶ Shadows & Risks</div>
                         <ul id="riskFactors"
-                            style="list-style: none; font-size: 0.9rem; font-family: var(--font-mono); color: var(--text-secondary);">
+                            style="list-style: none; font-size: 0.85rem; font-family: var(--font-body); color: var(--text-secondary); font-style: italic;">
                         </ul>
                     </div>
                 </div>
@@ -376,8 +486,8 @@
             <!-- X List Analysis Section -->
             <section class="card" style="margin-bottom: 2rem;">
                 <div class="card-header">
-                    <div class="card-title"><span class="text-accent">◆</span> X LIST SIGNALS</div>
-                    <span class="mono text-muted" style="font-size: 0.7rem;">AI-ANALYZED SOCIAL FEEDS</span>
+                    <div class="card-title"><span class="text-accent">◆</span> Social Signals</div>
+                    <span class="mono text-muted" style="font-size: 0.65rem; font-style: italic;">Whispers from the Feeds</span>
                 </div>
                 <div id="listsContainer" class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
                     <div class="text-muted">Loading lists...</div>
@@ -389,7 +499,7 @@
                 <!-- Sentiment Analysis -->
                 <section class="col-span-8 card">
                     <div class="card-header">
-                        <div class="card-title"><span class="text-accent">◆</span> SENTIMENT ANALYSIS</div>
+                        <div class="card-title"><span class="text-accent">◆</span> Sentiment Alchemy</div>
                     </div>
                     <div id="sentimentDetails" class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;"></div>
                 </section>
@@ -397,7 +507,7 @@
                 <!-- Regime/IV (from Outlook data) -->
                 <section class="col-span-4 card">
                     <div class="card-header">
-                        <div class="card-title">MARKET REGIME</div>
+                        <div class="card-title"><span class="text-accent">◆</span> Market Regime</div>
                     </div>
                     <div id="regimeContent"></div>
                 </section>
@@ -473,11 +583,11 @@
 
             // Footer Lists
             document.getElementById('keyTickers').innerHTML = analysis.key_tickers.map(t =>
-                `<span class="mono" style="background: rgba(0,229,191,0.1); color: var(--accent); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">${t}</span>`
+                `<span class="mono" style="background: var(--accent-glow); color: var(--accent); padding: 3px 10px; border: 1px solid var(--border); font-size: 0.75rem; letter-spacing: 0.05em;">${t}</span>`
             ).join('');
 
-            document.getElementById('keyThemes').innerHTML = analysis.key_themes.map(t => `<li>> ${t}</li>`).join('');
-            document.getElementById('riskFactors').innerHTML = analysis.risk_factors.map(t => `<li>> ${t}</li>`).join('');
+            document.getElementById('keyThemes').innerHTML = analysis.key_themes.map(t => `<li style="margin-bottom: 0.4rem;"><span style="color: var(--accent); margin-right: 0.5rem;">◇</span>${t}</li>`).join('');
+            document.getElementById('riskFactors').innerHTML = analysis.risk_factors.map(t => `<li style="margin-bottom: 0.4rem;"><span style="color: var(--red); margin-right: 0.5rem;">◇</span>${t}</li>`).join('');
         }
 
 
@@ -486,40 +596,44 @@
             const container = document.getElementById('sentimentDetails');
             const s = sentiment.sources;
 
-            const renderSource = (label, obj) => {
+            const renderSource = (label, icon, obj) => {
                 return `
-                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 6px;">
+                    <div style="background: var(--bg-tertiary); padding: 1rem; border: 1px solid var(--border);">
                         <div class="flex justify-between items-center" style="margin-bottom: 0.5rem;">
-                            <span class="card-title" style="font-size: 0.7rem;">${label}</span>
-                            <span class="mono text-muted" style="font-size: 0.7rem;">${obj.total}</span>
+                            <span style="font-size: 0.7rem; color: var(--accent); letter-spacing: 0.1em;">${icon} ${label}</span>
+                            <span class="mono text-muted" style="font-size: 0.65rem;">${obj.total} readings</span>
                         </div>
                         <div class="sentiment-meter">
                             <div class="sentiment-fill" style="width: ${obj.pct}%"></div>
                         </div>
-                        <div class="flex justify-between mono" style="font-size: 0.65rem;">
-                            <span class="text-green">${obj.bullish} Bull</span>
-                            <span class="text-red">${obj.bearish} Bear</span>
+                        <div class="flex justify-between" style="font-size: 0.65rem;">
+                            <span style="color: var(--green);">▲ ${obj.bullish}</span>
+                            <span style="color: var(--red);">▼ ${obj.bearish}</span>
                         </div>
                     </div>
                 `;
             };
 
             container.innerHTML = `
-                ${renderSource('SOCIAL', s.social)}
-                ${renderSource('NEWS', s.news)}
-                ${renderSource('VIDEO', s.video)}
-                ${renderSource('OTHERS', s.chat)}
+                ${renderSource('Social', '✶', s.social)}
+                ${renderSource('News', '◆', s.news)}
+                ${renderSource('Video', '☼', s.video)}
+                ${renderSource('Other', '◇', s.chat)}
             `;
         }
 
         function renderRegime(regime) {
             if (!regime) return;
+            const regimeIcon = regime.label === 'BULLISH' ? '☼' : regime.label === 'BEARISH' ? '☾' : '◇';
+            const regimeColor = regime.label === 'BULLISH' ? 'var(--green)' : regime.label === 'BEARISH' ? 'var(--red)' : 'var(--accent)';
             document.getElementById('regimeContent').innerHTML = `
-                <div style="text-align: center; margin-top: 1rem;">
-                    <div class="mono" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem;">${regime.label}</div>
-                    <div class="text-muted" style="font-size: 0.9rem;">${regime.summary}</div>
-                    <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">
-                        VIX: ${regime.vix} • P/C: ${regime.pc_ratio}
+                <div style="text-align: center; padding: 1rem 0;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem; color: ${regimeColor};">${regimeIcon}</div>
+                    <div style="font-family: var(--font-display); font-size: 1.3rem; color: ${regimeColor}; letter-spacing: 0.1em; margin-bottom: 0.75rem;">${regime.label}</div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); font-style: italic; line-height: 1.6;">${regime.summary}</div>
+                    <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--text-muted);">
+                        <span style="margin-right: 1rem;">VIX ${regime.vix}</span>
+                        <span>P/C ${regime.pc_ratio}</span>
                     </div>
                 </div>
             `;
@@ -543,14 +657,15 @@
                 const tickersHtml = list.tickers.slice(0, 5).map(t => {
                     const sentColor = t.sentiment === 'bullish' ? 'var(--green)' :
                                      t.sentiment === 'bearish' ? 'var(--red)' : 'var(--text-muted)';
-                    const sentPct = Math.round((t.avg_sentiment_score + 1) * 50); // Convert -1 to 1 scale to 0-100
+                    const sentIcon = t.sentiment === 'bullish' ? '▲' :
+                                    t.sentiment === 'bearish' ? '▼' : '◇';
                     return `
-                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--border);">
                             <div>
-                                <span class="mono" style="font-weight: 600; color: var(--accent);">${t.symbol}</span>
-                                <span class="mono text-muted" style="font-size: 0.65rem; margin-left: 0.3rem;">${t.mention_count}</span>
+                                <span class="mono" style="font-weight: 500; color: var(--accent-bright); letter-spacing: 0.05em;">${t.symbol}</span>
+                                <span class="mono text-muted" style="font-size: 0.6rem; margin-left: 0.4rem;">×${t.mention_count}</span>
                             </div>
-                            <span class="mono" style="font-size: 0.7rem; color: ${sentColor};">${t.sentiment}</span>
+                            <span style="font-size: 0.65rem; color: ${sentColor};">${sentIcon}</span>
                         </div>
                     `;
                 }).join('');
@@ -558,27 +673,49 @@
                 // Build themes section (top 2)
                 const themesHtml = list.themes.slice(0, 2).map(t => {
                     const sentColor = t.sentiment === 'bullish' ? 'var(--green)' :
-                                     t.sentiment === 'bearish' ? 'var(--red)' : 'var(--text-muted)';
+                                     t.sentiment === 'bearish' ? 'var(--red)' : 'var(--accent-dim)';
                     return `
-                        <div style="font-size: 0.75rem; color: var(--text-secondary); padding: 0.3rem 0; border-left: 2px solid ${sentColor}; padding-left: 0.5rem; margin-bottom: 0.3rem;">
-                            ${t.theme.length > 60 ? t.theme.substring(0, 60) + '...' : t.theme}
+                        <div style="font-size: 0.7rem; color: var(--text-secondary); padding: 0.4rem 0; border-left: 2px solid ${sentColor}; padding-left: 0.6rem; margin-bottom: 0.3rem; font-style: italic;">
+                            ${t.theme.length > 55 ? t.theme.substring(0, 55) + '...' : t.theme}
                         </div>
                     `;
                 }).join('');
 
                 return `
-                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 6px;">
-                        <div class="card-title" style="margin-bottom: 0.75rem; font-size: 0.8rem; color: var(--accent);">
+                    <div style="background: var(--bg-tertiary); padding: 1.25rem; border: 1px solid var(--border); position: relative;">
+                        <div style="position: absolute; top: -6px; left: 1rem; background: var(--bg-primary); padding: 0 0.5rem; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase;">
                             ${list.list_name}
                         </div>
-                        ${tickersHtml || '<div class="text-muted" style="font-size: 0.75rem;">No tickers</div>'}
+                        <div style="margin-top: 0.5rem;">
+                            ${tickersHtml || '<div class="text-muted" style="font-size: 0.75rem; font-style: italic;">Awaiting signals...</div>'}
+                        </div>
                         ${themesHtml ? `<div style="margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid var(--border);">${themesHtml}</div>` : ''}
                     </div>
                 `;
             }).join('');
         }
 
-        document.addEventListener('DOMContentLoaded', init);
+        // Initialize floating particles
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const symbols = ['✶', '◇', '☼', '✦', '◆', '✧'];
+
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (6 + Math.random() * 4) + 's';
+                particle.style.fontSize = (0.5 + Math.random() * 0.5) + 'rem';
+                container.appendChild(particle);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            init();
+        });
     </script>
 </body>
 
