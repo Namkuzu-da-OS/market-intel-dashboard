@@ -373,51 +373,14 @@
                 </div>
             </section>
 
-            <!-- Trending Tickers Section -->
+            <!-- X List Analysis Section -->
             <section class="card" style="margin-bottom: 2rem;">
                 <div class="card-header">
-                    <div class="card-title"><span class="text-accent">◆</span> TRENDING TICKERS</div>
-                    <span class="mono text-muted" style="font-size: 0.7rem;">24H SOCIAL MENTIONS</span>
+                    <div class="card-title"><span class="text-accent">◆</span> X LIST SIGNALS</div>
+                    <span class="mono text-muted" style="font-size: 0.7rem;">AI-ANALYZED SOCIAL FEEDS</span>
                 </div>
-                <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
-                    <div>
-                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">MACRO</div>
-                        <div id="trendingMacro"></div>
-                    </div>
-                    <div>
-                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">CRYPTO</div>
-                        <div id="trendingCrypto"></div>
-                    </div>
-                    <div>
-                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">AI & TECH</div>
-                        <div id="trendingAI"></div>
-                    </div>
-                    <div>
-                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">OTHER</div>
-                        <div id="trendingOther"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Social Feed Section -->
-            <section class="card" style="margin-bottom: 2rem;">
-                <div class="card-header">
-                    <div class="card-title"><span class="text-accent">◆</span> SOCIAL FEED</div>
-                    <div id="socialStats" class="mono text-muted" style="font-size: 0.7rem;"></div>
-                </div>
-                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
-                    <div>
-                        <div class="card-title" style="margin-bottom: 1rem; color: var(--green);">
-                            <span style="margin-right: 0.5rem;">▲</span> BULLISH SIGNALS
-                        </div>
-                        <div id="bullishFeed" style="display: flex; flex-direction: column; gap: 1rem;"></div>
-                    </div>
-                    <div>
-                        <div class="card-title" style="margin-bottom: 1rem; color: var(--red);">
-                            <span style="margin-right: 0.5rem;">▼</span> BEARISH SIGNALS
-                        </div>
-                        <div id="bearishFeed" style="display: flex; flex-direction: column; gap: 1rem;"></div>
-                    </div>
+                <div id="listsContainer" class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                    <div class="text-muted">Loading lists...</div>
                 </div>
             </section>
 
@@ -447,19 +410,19 @@
         async function init() {
             try {
                 // Fetch all data sources in parallel
-                const [outlookRes, marketRes, socialRes] = await Promise.all([
+                const [outlookRes, marketRes, listsRes] = await Promise.all([
                     fetch('data/outlook.json'),
                     fetch('data/market.json'),
-                    fetch('data/social.json')
+                    fetch('data/lists.json')
                 ]);
 
                 if (!outlookRes.ok || !marketRes.ok) throw new Error('Failed to load data');
 
                 const outlookData = await outlookRes.json();
                 const marketData = await marketRes.json();
-                const socialData = socialRes.ok ? await socialRes.json() : null;
+                const listsData = listsRes.ok ? await listsRes.json() : null;
 
-                renderDashboard(outlookData, marketData, socialData);
+                renderDashboard(outlookData, marketData, listsData);
 
                 // Update timestamp
                 const date = new Date(outlookData.timestamp);
@@ -485,12 +448,11 @@
             }
         }
 
-        function renderDashboard(outlook, market, social) {
+        function renderDashboard(outlook, market, lists) {
             renderOutlook(outlook);
             renderSentiment(outlook.sentiment);
             renderRegime(outlook.regime);
-            renderTrendingTickers(outlook.trending);
-            if (social) renderSocialFeed(social);
+            if (lists) renderLists(lists);
         }
 
         function renderOutlook(data) {
@@ -563,88 +525,57 @@
             `;
         }
 
-        function renderTrendingTickers(trending) {
-            if (!trending) return;
+        function renderLists(listsData) {
+            if (!listsData || !listsData.lists) return;
 
-            const renderTickerList = (tickers, containerId) => {
-                const container = document.getElementById(containerId);
-                if (!tickers || tickers.length === 0) {
-                    container.innerHTML = '<div class="text-muted mono" style="font-size: 0.8rem;">No data</div>';
-                    return;
-                }
+            const container = document.getElementById('listsContainer');
+            if (!container) return;
 
-                container.innerHTML = tickers.map(t => {
-                    const sentColor = t.sentiment_label === 'Bullish' ? 'var(--green)' :
-                                     t.sentiment_label === 'Bearish' ? 'var(--red)' : 'var(--text-muted)';
+            const lists = listsData.lists.filter(l => l.tickers.length > 0 || l.themes.length > 0);
+
+            if (lists.length === 0) {
+                container.innerHTML = '<div class="text-muted">No list data available. Run the scraper to generate signals.</div>';
+                return;
+            }
+
+            container.innerHTML = lists.map(list => {
+                // Build tickers section
+                const tickersHtml = list.tickers.slice(0, 5).map(t => {
+                    const sentColor = t.sentiment === 'bullish' ? 'var(--green)' :
+                                     t.sentiment === 'bearish' ? 'var(--red)' : 'var(--text-muted)';
+                    const sentPct = Math.round((t.avg_sentiment_score + 1) * 50); // Convert -1 to 1 scale to 0-100
                     return `
-                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid var(--border);">
                             <div>
-                                <span class="mono" style="font-weight: 600; color: var(--accent);">${t.ticker}</span>
-                                <span class="mono text-muted" style="font-size: 0.7rem; margin-left: 0.5rem;">${t.mentions} mentions</span>
+                                <span class="mono" style="font-weight: 600; color: var(--accent);">${t.symbol}</span>
+                                <span class="mono text-muted" style="font-size: 0.65rem; margin-left: 0.3rem;">${t.mention_count}</span>
                             </div>
-                            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                <div style="width: 40px; height: 4px; background: var(--bg-tertiary); border-radius: 2px; overflow: hidden;">
-                                    <div style="width: ${t.sentiment_pct}%; height: 100%; background: ${sentColor};"></div>
-                                </div>
-                                <span class="mono" style="font-size: 0.7rem; color: ${sentColor};">${t.sentiment_pct}%</span>
-                            </div>
+                            <span class="mono" style="font-size: 0.7rem; color: ${sentColor};">${t.sentiment}</span>
                         </div>
                     `;
                 }).join('');
-            };
 
-            renderTickerList(trending.macro, 'trendingMacro');
-            renderTickerList(trending.crypto, 'trendingCrypto');
-            renderTickerList(trending.ai, 'trendingAI');
-            renderTickerList(trending.other, 'trendingOther');
-        }
-
-        function renderSocialFeed(social) {
-            if (!social) return;
-
-            // Update stats
-            document.getElementById('socialStats').textContent =
-                `${social.stats.total_analyzed} ANALYZED • ${social.stats.bullish_count} BULL • ${social.stats.bearish_count} BEAR`;
-
-            const renderPost = (post, isBullish) => {
-                const borderColor = isBullish ? 'var(--green)' : 'var(--red)';
-                const timeAgo = getTimeAgo(new Date(post.timestamp));
+                // Build themes section (top 2)
+                const themesHtml = list.themes.slice(0, 2).map(t => {
+                    const sentColor = t.sentiment === 'bullish' ? 'var(--green)' :
+                                     t.sentiment === 'bearish' ? 'var(--red)' : 'var(--text-muted)';
+                    return `
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); padding: 0.3rem 0; border-left: 2px solid ${sentColor}; padding-left: 0.5rem; margin-bottom: 0.3rem;">
+                            ${t.theme.length > 60 ? t.theme.substring(0, 60) + '...' : t.theme}
+                        </div>
+                    `;
+                }).join('');
 
                 return `
-                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 6px; border-left: 3px solid ${borderColor};">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                            <div>
-                                <span style="font-weight: 500; font-size: 0.85rem;">${post.author}</span>
-                                <span class="mono text-muted" style="font-size: 0.75rem; margin-left: 0.5rem;">${post.handle}</span>
-                            </div>
-                            <span class="mono text-muted" style="font-size: 0.7rem;">${timeAgo}</span>
+                    <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: 6px;">
+                        <div class="card-title" style="margin-bottom: 0.75rem; font-size: 0.8rem; color: var(--accent);">
+                            ${list.list_name}
                         </div>
-                        <div style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin-bottom: 0.5rem;">
-                            ${post.content.length > 200 ? post.content.substring(0, 200) + '...' : post.content}
-                        </div>
-                        <div class="mono text-muted" style="font-size: 0.65rem; display: flex; gap: 1rem;">
-                            <span>♥ ${post.engagement.likes}</span>
-                            <span>↻ ${post.engagement.retweets}</span>
-                            <span>💬 ${post.engagement.replies}</span>
-                        </div>
+                        ${tickersHtml || '<div class="text-muted" style="font-size: 0.75rem;">No tickers</div>'}
+                        ${themesHtml ? `<div style="margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid var(--border);">${themesHtml}</div>` : ''}
                     </div>
                 `;
-            };
-
-            document.getElementById('bullishFeed').innerHTML =
-                social.posts.bullish.slice(0, 5).map(p => renderPost(p, true)).join('');
-            document.getElementById('bearishFeed').innerHTML =
-                social.posts.bearish.slice(0, 5).map(p => renderPost(p, false)).join('');
-        }
-
-        function getTimeAgo(date) {
-            const seconds = Math.floor((new Date() - date) / 1000);
-            if (seconds < 60) return 'just now';
-            const minutes = Math.floor(seconds / 60);
-            if (minutes < 60) return `${minutes}m ago`;
-            const hours = Math.floor(minutes / 60);
-            if (hours < 24) return `${hours}h ago`;
-            return `${Math.floor(hours / 24)}d ago`;
+            }).join('');
         }
 
         document.addEventListener('DOMContentLoaded', init);
