@@ -161,6 +161,18 @@
             height: 36px;
         }
 
+        /* Animated eye in pyramid */
+        .eye-iris {
+            animation: look 4s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        @keyframes look {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-1.5px); }
+            75% { transform: translateX(1.5px); }
+        }
+
         .logo-text {
             font-family: var(--font-display);
             font-size: 1.5rem;
@@ -444,35 +456,35 @@
         }
 
         .feature-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(45, 27, 78, 0.6) 100%);
+            border: 1px solid var(--accent);
+            border-radius: 4px;
             padding: 2.5rem;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
+            backdrop-filter: blur(5px);
         }
 
         .feature-card::before {
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+            transition: left 0.5s ease;
         }
 
         .feature-card:hover {
-            border-color: var(--border-hover);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(45, 27, 78, 0.8) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px var(--accent-glow), inset 0 0 20px rgba(212, 175, 55, 0.1);
         }
 
         .feature-card:hover::before {
-            opacity: 1;
+            left: 100%;
         }
 
         .feature-icon {
@@ -520,18 +532,20 @@
         }
 
         .product-card {
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border);
-            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(45, 27, 78, 0.6) 100%);
+            border: 1px solid var(--accent);
+            border-radius: 4px;
             padding: 3rem;
             position: relative;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(5px);
         }
 
         .product-card:hover {
-            border-color: var(--accent);
-            box-shadow: 0 0 60px var(--accent-glow);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(45, 27, 78, 0.8) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px var(--accent-glow), inset 0 0 20px rgba(212, 175, 55, 0.1);
         }
 
         .product-badge {
@@ -918,9 +932,28 @@
         <div class="logo">
             <div class="logo-mark">
                 <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 4 L36 34 L4 34 Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(201,162,39,0.1)"/>
-                    <ellipse cx="20" cy="22" rx="7" ry="4" stroke="#d4af37" stroke-width="1.2" fill="none"/>
-                    <circle cx="20" cy="22" r="2" fill="#d4af37"/>
+                    <defs>
+                        <radialGradient id="irisGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#4a90d9"/>
+                            <stop offset="50%" stop-color="#1a4a7a"/>
+                            <stop offset="100%" stop-color="#0a1a2a"/>
+                        </radialGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Triangle -->
+                    <path d="M20 4 L36 34 L4 34 Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(10,6,18,0.8)" filter="url(#glow)"/>
+                    <!-- Eye outer -->
+                    <ellipse cx="20" cy="21" rx="7" ry="4" stroke="#d4af37" stroke-width="1" fill="#0a0612"/>
+                    <!-- Iris (animated) -->
+                    <circle class="eye-iris" cx="20" cy="21" r="3" fill="url(#irisGradient)"/>
+                    <!-- Pupil -->
+                    <circle class="eye-iris" cx="20" cy="21" r="1.2" fill="#0a0612"/>
                 </svg>
             </div>
             <span class="logo-text">Seeker</span>
@@ -1072,9 +1105,17 @@
             <div class="footer-brand">
                 <div class="logo-mark" style="width: 28px; height: 28px;">
                     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 4 L36 34 L4 34 Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(201,162,39,0.1)"/>
-                        <ellipse cx="20" cy="22" rx="7" ry="4" stroke="#d4af37" stroke-width="1.2" fill="none"/>
-                        <circle cx="20" cy="22" r="2" fill="#d4af37"/>
+                        <defs>
+                            <radialGradient id="irisGradient2" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#4a90d9"/>
+                                <stop offset="50%" stop-color="#1a4a7a"/>
+                                <stop offset="100%" stop-color="#0a1a2a"/>
+                            </radialGradient>
+                        </defs>
+                        <path d="M20 4 L36 34 L4 34 Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(10,6,18,0.8)"/>
+                        <ellipse cx="20" cy="21" rx="7" ry="4" stroke="#d4af37" stroke-width="1" fill="#0a0612"/>
+                        <circle class="eye-iris" cx="20" cy="21" r="3" fill="url(#irisGradient2)"/>
+                        <circle class="eye-iris" cx="20" cy="21" r="1.2" fill="#0a0612"/>
                     </svg>
                 </div>
                 <span class="footer-text">Seeker — Hidden Patterns Revealed</span>

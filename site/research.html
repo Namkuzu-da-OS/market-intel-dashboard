@@ -51,7 +51,7 @@
             min-height: 100vh;
         }
 
-        /* Sacred geometry background */
+        /* Starfield layer */
         body::before {
             content: '';
             position: fixed;
@@ -60,11 +60,69 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            opacity: 0.04;
             z-index: 0;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ccircle cx='200' cy='200' r='150' fill='none' stroke='%23d4af37' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='100' fill='none' stroke='%23d4af37' stroke-width='0.5'/%3E%3Ccircle cx='200' cy='200' r='50' fill='none' stroke='%23d4af37' stroke-width='0.5'/%3E%3Cline x1='50' y1='200' x2='350' y2='200' stroke='%23d4af37' stroke-width='0.3'/%3E%3Cline x1='200' y1='50' x2='200' y2='350' stroke='%23d4af37' stroke-width='0.3'/%3E%3Cline x1='93' y1='93' x2='307' y2='307' stroke='%23d4af37' stroke-width='0.3'/%3E%3Cline x1='307' y1='93' x2='93' y2='307' stroke='%23d4af37' stroke-width='0.3'/%3E%3C/svg%3E");
-            background-size: 400px 400px;
-            background-position: center;
+            background-image:
+                radial-gradient(2px 2px at 20px 30px, #d4af37, transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.5), transparent),
+                radial-gradient(1px 1px at 90px 40px, #f4e4a6, transparent),
+                radial-gradient(2px 2px at 160px 120px, #d4af37, transparent),
+                radial-gradient(1px 1px at 230px 80px, rgba(255,255,255,0.4), transparent),
+                radial-gradient(2px 2px at 300px 150px, #f4e4a6, transparent),
+                radial-gradient(1px 1px at 370px 50px, #d4af37, transparent),
+                radial-gradient(2px 2px at 450px 180px, rgba(255,255,255,0.5), transparent);
+            background-size: 500px 200px;
+            animation: twinkle 8s ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* Sacred geometry - rotating */
+        .sacred-geometry {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            pointer-events: none;
+            opacity: 0.12;
+            z-index: 0;
+            animation: rotate 120s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Floating particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            color: var(--accent);
+            opacity: 0;
+            animation: float-up linear forwards;
+            font-size: 0.8rem;
+        }
+
+        @keyframes float-up {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.7; }
+            90% { opacity: 0.7; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
         }
 
         /* Navigation */
@@ -101,6 +159,18 @@
         .logo-mark svg {
             width: 36px;
             height: 36px;
+        }
+
+        /* Animated eye in pyramid */
+        .eye-iris {
+            animation: look 4s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        @keyframes look {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-1.5px); }
+            75% { transform: translateX(1.5px); }
         }
 
         .logo-text {
@@ -232,22 +302,23 @@
         }
 
         .research-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(45, 27, 78, 0.6) 100%);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
             cursor: pointer;
             text-decoration: none;
             color: inherit;
             display: flex;
             flex-direction: column;
+            backdrop-filter: blur(5px);
         }
 
         .research-card:hover {
-            border-color: var(--border-hover);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(45, 27, 78, 0.8) 100%);
             transform: translateY(-4px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 30px var(--accent-glow), inset 0 0 20px rgba(212, 175, 55, 0.1);
         }
 
         .card-image {
@@ -753,14 +824,57 @@
 </head>
 
 <body>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Sacred Geometry - Metatron's Cube -->
+    <svg class="sacred-geometry" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <circle cx="100" cy="100" r="40" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <circle cx="100" cy="20" r="25" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <circle cx="169" cy="60" r="25" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <circle cx="169" cy="140" r="25" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <circle cx="100" cy="180" r="25" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <circle cx="31" cy="140" r="25" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <circle cx="31" cy="60" r="25" stroke="#d4af37" stroke-width="0.5" fill="none"/>
+        <line x1="100" y1="20" x2="169" y2="60" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="169" y1="60" x2="169" y2="140" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="169" y1="140" x2="100" y2="180" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="100" y1="180" x2="31" y2="140" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="31" y1="140" x2="31" y2="60" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="31" y1="60" x2="100" y2="20" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="100" y1="20" x2="100" y2="180" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="31" y1="60" x2="169" y2="140" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+        <line x1="169" y1="60" x2="31" y2="140" stroke="#d4af37" stroke-width="0.5" opacity="0.7"/>
+    </svg>
+
     <!-- Navigation -->
     <nav>
         <a href="index.html" class="logo">
             <div class="logo-mark">
                 <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 4 L36 34 L4 34 Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(201,162,39,0.1)"/>
-                    <ellipse cx="20" cy="22" rx="7" ry="4" stroke="#d4af37" stroke-width="1.2" fill="none"/>
-                    <circle cx="20" cy="22" r="2" fill="#d4af37"/>
+                    <defs>
+                        <radialGradient id="irisGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#4a90d9"/>
+                            <stop offset="50%" stop-color="#1a4a7a"/>
+                            <stop offset="100%" stop-color="#0a1a2a"/>
+                        </radialGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Triangle -->
+                    <path d="M20 4 L36 34 L4 34 Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(10,6,18,0.8)" filter="url(#glow)"/>
+                    <!-- Eye outer -->
+                    <ellipse cx="20" cy="21" rx="7" ry="4" stroke="#d4af37" stroke-width="1" fill="#0a0612"/>
+                    <!-- Iris (animated) -->
+                    <circle class="eye-iris" cx="20" cy="21" r="3" fill="url(#irisGradient)"/>
+                    <!-- Pupil -->
+                    <circle class="eye-iris" cx="20" cy="21" r="1.2" fill="#0a0612"/>
                 </svg>
             </div>
             <span class="logo-text">Seeker</span>
@@ -1688,6 +1802,27 @@
 
         // Check for shared report on page load
         window.addEventListener('DOMContentLoaded', checkForSharedReport);
+
+        // Initialize floating particles - continuous generation
+        (function initParticles() {
+            const container = document.getElementById('particles');
+            const symbols = ['✦', '◈', '◊', '✶'];
+
+            function createParticle() {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.bottom = '-20px';
+                particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
+                particle.style.opacity = Math.random() * 0.5 + 0.2;
+                container.appendChild(particle);
+                setTimeout(() => particle.remove(), 7000);
+            }
+
+            // Create particles every 800ms
+            setInterval(createParticle, 800);
+        })();
     </script>
 
 
