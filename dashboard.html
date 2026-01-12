@@ -379,7 +379,7 @@
                     <div class="card-title"><span class="text-accent">◆</span> TRENDING TICKERS</div>
                     <span class="mono text-muted" style="font-size: 0.7rem;">24H SOCIAL MENTIONS</span>
                 </div>
-                <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
                     <div>
                         <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">MACRO</div>
                         <div id="trendingMacro"></div>
@@ -389,8 +389,12 @@
                         <div id="trendingCrypto"></div>
                     </div>
                     <div>
-                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">STOCKS</div>
-                        <div id="trendingStocks"></div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">AI & TECH</div>
+                        <div id="trendingAI"></div>
+                    </div>
+                    <div>
+                        <div class="card-title" style="margin-bottom: 1rem; font-size: 0.7rem;">OTHER</div>
+                        <div id="trendingOther"></div>
                     </div>
                 </div>
             </section>
@@ -591,7 +595,8 @@
 
             renderTickerList(trending.macro, 'trendingMacro');
             renderTickerList(trending.crypto, 'trendingCrypto');
-            renderTickerList(trending.other, 'trendingStocks');
+            renderTickerList(trending.ai, 'trendingAI');
+            renderTickerList(trending.other, 'trendingOther');
         }
 
         function renderSocialFeed(social) {
