@@ -72,15 +72,41 @@
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 4,
-        "sentiment_score": 0.735,
+        "mentions": 6,
+        "sentiment_score": 0.732,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 74,
+        "sentiment_pct": 73,
         "counts": {
-          "bullish": 4,
+          "bullish": 6,
           "bearish": 0,
           "neutral": 0,
-          "total": 4
+          "total": 6
+        }
+      },
+      {
+        "ticker": "QQQ",
+        "mentions": 2,
+        "sentiment_score": 0.725,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 73,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
+        }
+      },
+      {
+        "ticker": "SLV",
+        "mentions": 2,
+        "sentiment_score": -0.075,
+        "sentiment_label": "Bearish",
+        "sentiment_pct": 8,
+        "counts": {
+          "bullish": 0,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 2
         }
       },
       {
@@ -113,15 +139,28 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 5,
-        "sentiment_score": 0.614,
+        "mentions": 6,
+        "sentiment_score": 0.648,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 61,
+        "sentiment_pct": 65,
         "counts": {
-          "bullish": 4,
+          "bullish": 5,
           "bearish": 0,
           "neutral": 1,
-          "total": 5
+          "total": 6
+        }
+      },
+      {
+        "ticker": "IREN",
+        "mentions": 4,
+        "sentiment_score": 0.438,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 44,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 4
         }
       },
       {
@@ -162,19 +201,6 @@
           "neutral": 0,
           "total": 1
         }
-      },
-      {
-        "ticker": "COIN",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
       }
     ],
     "other": [
@@ -192,50 +218,50 @@
         }
       },
       {
+        "ticker": "CRWV",
+        "mentions": 4,
+        "sentiment_score": 0.723,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 72,
+        "counts": {
+          "bullish": 4,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "HIMS",
+        "mentions": 4,
+        "sentiment_score": 0.212,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 21,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 3,
+          "total": 4
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "mentions": 3,
+        "sentiment_score": 0.24,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 24,
+        "counts": {
+          "bullish": 1,
+          "bearish": 0,
+          "neutral": 2,
+          "total": 3
+        }
+      },
+      {
         "ticker": "WMT",
         "mentions": 2,
         "sentiment_score": 0.785,
         "sentiment_label": "Bullish",
         "sentiment_pct": 79,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "SPX",
-        "mentions": 2,
-        "sentiment_score": 0.76,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 76,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "ORCL",
-        "mentions": 2,
-        "sentiment_score": 0.725,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 73,
-        "counts": {
-          "bullish": 2,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 2
-        }
-      },
-      {
-        "ticker": "META",
-        "mentions": 2,
-        "sentiment_score": 0.72,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
         "counts": {
           "bullish": 2,
           "bearish": 0,
@@ -248,8 +274,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.04,
-    "pc_ratio": 1.1,
+    "vix": 15.06,
+    "pc_ratio": 1.08,
     "sentiment_bullish_pct": 35,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -258,7 +284,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 8.88,
-    "spread": 7.98,
+    "spread": 10.65,
     "position": 50
   },
   "action": {
