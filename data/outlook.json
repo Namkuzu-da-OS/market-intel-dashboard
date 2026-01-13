@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-01-13T12:07:03.562Z",
+  "timestamp": "2026-01-13T12:43:28.778Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 68,
+    "confidence_pct": 70,
     "sources": {
       "social": {
-        "bullish": 123,
-        "bearish": 42,
-        "neutral": 189,
-        "total": 354,
-        "pct": 35
+        "bullish": 132,
+        "bearish": 39,
+        "neutral": 196,
+        "total": 367,
+        "pct": 36
       },
       "news": {
-        "bullish": 50,
-        "bearish": 39,
-        "neutral": 23,
-        "total": 112,
+        "bullish": 49,
+        "bearish": 37,
+        "neutral": 22,
+        "total": 108,
         "pct": 45
       },
       "video": {
         "bullish": 6,
         "bearish": 4,
-        "neutral": 1,
-        "total": 11,
-        "pct": 55
+        "neutral": 2,
+        "total": 12,
+        "pct": 50
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - structural tech/AI momentum and institutional adoption offset by geopolitical and policy execution risks creating a \"bifurcated market\" environment.\n\n📈 **Themes:** (1) AI infrastructure monetization and institutional blockchain adoption driving tech leadership, (2) Geopolitical risk premium (tariff policy, military action uncertainty) creating near-term volatility, (3) Fed policy credibility and independence questions generating macro uncertainty backdrop.\n\n🎯 **Levels:** SPY ($695.16): Call Wall $750 (56k OI, resistance), Put Wall $630 (149k OI, support). Max Pain $693. Near active levels: $700 resistance (45k OI), $680 support (125k OI). QQQ ($627.17): Call Wall $641 (56k OI, active resistance 2.2% away), Put Wall $574.78 (116k OI, dormant support). Max Pain $625. Near active: $650/$630 resistance (42k/33k OI). /ES: 6847 support per Twitter.",
+    "narrative": "📊 **Consensus:** Bearish with medium conviction - sources converge on near-term headwinds from geopolitical risk and policy uncertainty overriding technical momentum, though structural themes (AI, blockchain) remain intact for longer timeframes.\n\n📈 **Themes:** (1) Geopolitical risk premium (Iran military decisions, tariff implementation) creating defensive rotation pressure, (2) Fed policy independence concerns and rate trajectory uncertainty weighing on risk assets, (3) AI/blockchain institutional adoption as secular tailwind conflicting with near-term operational friction (security breaches, regulatory tightening).\n\n🎯 **Levels:** SPY ($695.16): Call Wall $750 (55k OI, 7.9% away - dormant), Put Wall $630 (149k OI, 9.4% away - dormant). Max Pain $695. Near resistance: $700 (44k OI, 0.7% - ACTIVE), $730 (48k OI). Near support: $680 (119k OI, 2.2% - ACTIVE), $640 (101k OI). QQQ ($627.17): Call Wall $641 (56k OI, 2.2% - active hedging), Put Wall $574.78 (116k OI, 8.4% away). Max Pain $626. Near resistance: $630 (31k OI, 0.5% - ACTIVE), $650 (42k OI). Near support: $610 (82k OI, 2.7% - ACTIVE). /ES: Triangle apex breakout level per Twitter. IREN: $78 target per Twitter. CLO: $0.73 support per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "MSFT",
-      "BTC",
-      "JUP"
+      "IREN",
+      "CLO",
+      "BTC"
     ],
     "key_themes": [
-      "AI infrastructure monetization and adoption cycle",
-      "Geopolitical risk premium and tariff policy uncertainty",
-      "Fed independence and policy credibility questions",
-      "Institutional crypto adoption and regulatory clarity",
-      "Tech sector capex burden and profitability"
+      "Geopolitical risk and policy uncertainty",
+      "Fed independence and rate policy trajectory",
+      "AI and blockchain institutional adoption",
+      "Technical breakouts vs macro headwinds",
+      "Defensive rotation and volatility elevation"
     ],
     "risk_factors": [
-      "Geopolitical escalation (tariff implementation, military action) creating binary tail risk events",
-      "Fed policy framework uncertainty and DOJ investigation impact on institutional credibility",
-      "AI infrastructure profitability concerns as datacenter capex burden tests earnings guidance",
-      "Regulatory tightening in crypto compliance and tech sector oversight",
-      "Consumer demand destruction from labor cost pressures and fiscal policy changes"
+      "Iran military decisions and tariff escalation creating immediate geopolitical shocks",
+      "Fed policy credibility erosion from political pressure on Powell",
+      "Crypto exchange security breaches and regulatory tightening constraining institutional flows",
+      "Labor market weakness (34% no-hire intent, declining worker share) undermining growth narrative",
+      "Consumer spending deterioration and insider selling signals pointing to operational weakness"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $700 resistance (45k OI, 0.7% away - active hedging), $693 max pain gravity, $680 support (125k OI, 2.2% away - active). QQQ: $630 resistance (33k OI, active), $625 max pain, watch $641 call wall (2.2% away).",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Upside target $730 (48k OI, 5.0% away - becomes active on approach), major resistance $750 call wall (56k OI). Downside support $680 active, then $640 dormant (101k OI, 7.9% away). QQQ: Major resistance $641 call wall (56k OI), extended $650 (42k OI). Support zone $590-$580 (81k-108k OI, dormant until 6-8% decline).",
+    "intraday_bias": "BEARISH",
+    "intraday_levels": "SPY: $700 resistance (ACTIVE, 44k OI), $680 support (ACTIVE, 119k OI). QQQ: $630 resistance (ACTIVE, 31k OI), $610 support (ACTIVE, 82k OI). Watch for volatility from geopolitical headlines.",
+    "swing_bias": "BEARISH",
+    "swing_levels": "SPY: $730 resistance zone (48k OI), $640 downside target (101k OI). QQQ: $641 call wall limiting upside (56k OI), $610 critical support. Max Pain gravitational pull: SPY $695, QQQ $626.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 182483
+    "generation_time_ms": 175775
   },
   "trending": {
     "macro": [
@@ -152,15 +152,15 @@
       },
       {
         "ticker": "IREN",
-        "mentions": 5,
-        "sentiment_score": 0.51,
+        "mentions": 6,
+        "sentiment_score": 0.558,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 51,
+        "sentiment_pct": 56,
         "counts": {
-          "bullish": 3,
+          "bullish": 4,
           "bearish": 0,
           "neutral": 2,
-          "total": 5
+          "total": 6
         }
       },
       {
@@ -206,15 +206,15 @@
     "ai": [
       {
         "ticker": "NVDA",
-        "mentions": 8,
-        "sentiment_score": 0.505,
+        "mentions": 9,
+        "sentiment_score": 0.521,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 51,
+        "sentiment_pct": 52,
         "counts": {
-          "bullish": 6,
+          "bullish": 7,
           "bearish": 0,
           "neutral": 2,
-          "total": 8
+          "total": 9
         }
       },
       {
@@ -341,17 +341,17 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.12,
-    "pc_ratio": 1.16,
-    "sentiment_bullish_pct": 35,
+    "vix": 15.25,
+    "pc_ratio": 1,
+    "sentiment_bullish_pct": 36,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 8.88,
-    "spread": 16.3,
+    "hv": 8.03,
+    "spread": 3.71,
     "position": 50
   },
   "action": {
