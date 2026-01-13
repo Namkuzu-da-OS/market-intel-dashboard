@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-13T13:54:35.609Z",
+  "timestamp": "2026-01-13T14:23:07.633Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -13,11 +13,11 @@
         "pct": 37
       },
       "news": {
-        "bullish": 54,
-        "bearish": 37,
-        "neutral": 21,
-        "total": 112,
-        "pct": 48
+        "bullish": 57,
+        "bearish": 38,
+        "neutral": 22,
+        "total": 117,
+        "pct": 49
       },
       "video": {
         "bullish": 7,
@@ -36,7 +36,7 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Tactical bullish with medium conviction. Near-term upside momentum driven by soft inflation data (CPI 2.7% headline) and institutional adoption themes, but underlying structural concerns (labor market weakness, margin pressures) create elevated reversal risk.\n\n📈 **Themes:** (1) AI infrastructure and institutional crypto adoption as primary rotation targets, (2) Regulatory clarity expectations supporting digital assets and blockchain infrastructure, (3) Bifurcated sector performance—tech/crypto decoupling from consumer discretionary weakness and banking supervisory pressure.\n\n🎯 **Levels:** SPY ($695.16): Call Wall $750 (55k OI, resistance), Put Wall $630 (149k OI, support). Max Pain $695. Near support: $680 (119k OI, active), $640 (101k OI). Near resistance: $700 (44k OI, active), $730 (48k OI). QQQ ($627.17): Call Wall $641 (56k OI, 2.2% away—active resistance), Put Wall $574.78 (116k OI, support). Max Pain $626. Near support: $610 (82k OI, active). Near resistance: $630 (31k OI, active), $650 (42k OI). /ES: 7,000+ breakout target, 6,990 current levels per Twitter.",
+    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - structural tailwinds (institutional adoption, policy expectations) support upside bias, but near-term uncertainty around Fed policy independence and upcoming economic data creates tactical volatility risk.\n\n📈 **Themes:** (1) Institutional crypto adoption and regulatory clarity expectations driving digital asset positioning, (2) AI infrastructure buildout and monetization validation themes across mega-cap tech, (3) Fed policy independence concerns creating macro uncertainty despite disinflation narrative support.\n\n🎯 **Levels:** SPY ($695.16): Call Wall $750 (55k OI, 7.9% away - dormant), Put Wall $630 (149k OI, 9.4% away - dormant). Max Pain $695. Active near resistance: $700 (44k OI, 0.7%). Active near support: $680 (119k OI, 2.2%). QQQ ($627.17): Call Wall $641 (56k OI, 2.2% away - active hedging), Put Wall $574.78 (116k OI, 8.4% away). Max Pain $626. Active resistance: $630 (31k OI, 0.5%), $650 (42k OI, 3.6%). Active support: $610 (82k OI, 2.7%). /ES: 6,998-7,007 support zone, 7,016-7,034 resistance targets per Twitter. Bitcoin: $94k breakout level per Twitter.",
     "key_tickers": [
       "SPY",
       "QQQ",
@@ -45,28 +45,28 @@
       "NVDA"
     ],
     "key_themes": [
-      "AI infrastructure adoption and datacenter buildout",
-      "Crypto regulatory clarity and institutional adoption",
-      "Consumer discretionary weakness and labor market deterioration",
-      "Sector rotation from traditional equities to digital assets",
-      "Fed policy uncertainty and inflation trajectory"
+      "Institutional crypto adoption and regulatory clarity expectations",
+      "AI infrastructure monetization validation",
+      "Fed policy independence and disinflation narrative",
+      "Dealer gamma hedging dynamics at key option strikes",
+      "Rate policy uncertainty and monetary easing expectations"
     ],
     "risk_factors": [
-      "CPI re-acceleration potential undermining soft-landing narrative",
-      "Fed independence concerns from DOJ investigation creating volatility asymmetry",
-      "Exchange security breaches and crypto operational risks",
-      "Labor market deterioration (workers at 53.8% GDP share, lowest since 1947)",
-      "Tech margin pressure from electricity cost accountability and supply chain complexity"
+      "Fed politicization creating policy unpredictability and institutional credibility concerns",
+      "Upcoming economic data releases potentially invalidating disinflation narrative",
+      "Technical resistance zones with active dealer hedging creating near-term caps",
+      "Consumer sector cyclical weakness (housing, discretionary spending)",
+      "Geopolitical semiconductor tensions and election cycle uncertainty"
     ],
     "intraday_bias": "BULLISH",
-    "intraday_levels": "SPY: $695 max pain gravitational pull, $700 active resistance (44k OI), $680 active support (119k OI). QQQ: $626 max pain, $630 active resistance (31k OI), $610 active support (82k OI). /ES: Testing 7,000 per Twitter",
-    "swing_bias": "NEUTRAL",
-    "swing_levels": "SPY: $730 dormant resistance (48k OI, 5% away), $640 secondary support (101k OI). QQQ: $641 call wall major resistance (56k OI), $580 dormant support (108k OI). Watch for crypto regulatory clarity impact and CPI data reactions",
+    "intraday_levels": "SPY: $695 Max Pain gravitational pull, $700 active call resistance (44k OI), $680 active put support (119k OI). QQQ: $626 Max Pain, $630 active resistance (31k OI), $610 active support (82k OI). /ES: 6,998-7,007 support per Twitter",
+    "swing_bias": "BULLISH",
+    "swing_levels": "SPY: $730 dormant resistance (48k OI, 5.0% away), $680 active support, $640 secondary support (101k OI). QQQ: $641 call wall (56k OI), $650 resistance (42k OI), $610 support. /ES: 7,016-7,034 upside targets per Twitter. Bitcoin: $94k breakout level per Twitter",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 183053
+    "generation_time_ms": 180205
   },
   "trending": {
     "macro": [
@@ -328,7 +328,7 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.26,
+    "vix": 15.02,
     "pc_ratio": 1,
     "sentiment_bullish_pct": 37,
     "summary": "Market is lacking clear direction. Wait for confirmation."
