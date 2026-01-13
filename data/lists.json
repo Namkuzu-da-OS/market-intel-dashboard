@@ -1,881 +1,854 @@
 {
-  "timestamp": "2026-01-13T13:18:16.865Z",
+  "timestamp": "2026-01-13T13:54:36.034Z",
   "lists": [
     {
       "list_id": "1479448773449314306",
       "list_name": "Technicals",
-      "generated_at": "2026-01-13T13:13:46.602Z",
+      "generated_at": "2026-01-13T13:49:49.332Z",
       "themes": [
         {
-          "id": 3853,
+          "id": 3891,
           "list_id": "1479448773449314306",
-          "theme": "Housing affordability crisis and economic headwinds",
+          "theme": "Technical analysis and key price levels",
+          "sentiment": "neutral",
+          "mention_count": 4,
+          "confidence": 0.75,
+          "generated_at": "2026-01-13T13:49:49.332Z"
+        },
+        {
+          "id": 3887,
+          "list_id": "1479448773449314306",
+          "theme": "Data center infrastructure and AI power demands",
+          "sentiment": "bullish",
+          "mention_count": 3,
+          "confidence": 0.85,
+          "generated_at": "2026-01-13T13:49:49.332Z"
+        },
+        {
+          "id": 3888,
+          "list_id": "1479448773449314306",
+          "theme": "Housing affordability crisis and real estate decline",
           "sentiment": "bearish",
           "mention_count": 3,
           "confidence": 0.9,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "generated_at": "2026-01-13T13:49:49.332Z"
         },
         {
-          "id": 3855,
+          "id": 3889,
           "list_id": "1479448773449314306",
-          "theme": "Data center infrastructure opportunity",
+          "theme": "High-risk equity trade ideas with exceptional returns",
           "sentiment": "bullish",
-          "mention_count": 3,
+          "mention_count": 2,
           "confidence": 0.8,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "generated_at": "2026-01-13T13:49:49.332Z"
         },
         {
-          "id": 3854,
+          "id": 3890,
           "list_id": "1479448773449314306",
-          "theme": "AI integration in government and defense",
-          "sentiment": "bullish",
+          "theme": "Macro employment concerns and labor market weakness",
+          "sentiment": "bearish",
           "mention_count": 2,
           "confidence": 0.85,
-          "generated_at": "2026-01-13T13:13:46.602Z"
-        },
-        {
-          "id": 3856,
-          "list_id": "1479448773449314306",
-          "theme": "Futures market technical setup and support levels",
-          "sentiment": "neutral",
-          "mention_count": 2,
-          "confidence": 0.75,
-          "generated_at": "2026-01-13T13:13:46.602Z"
-        },
-        {
-          "id": 3852,
-          "list_id": "1479448773449314306",
-          "theme": "Tech stock momentum with extreme gains",
-          "sentiment": "bullish",
-          "mention_count": 1,
-          "confidence": 0.95,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "generated_at": "2026-01-13T13:49:49.332Z"
         }
       ],
       "tickers": [
         {
-          "id": 3552,
+          "id": 3584,
+          "list_id": "1479448773449314306",
+          "symbol": "INTC",
+          "sentiment": "mixed",
+          "mention_count": 2,
+          "avg_sentiment_score": 0.5,
+          "generated_at": "2026-01-13T13:49:49.332Z"
+        },
+        {
+          "id": 3580,
+          "list_id": "1479448773449314306",
+          "symbol": "ES_F",
+          "sentiment": "bullish",
+          "mention_count": 1,
+          "avg_sentiment_score": 0.8,
+          "generated_at": "2026-01-13T13:49:49.332Z"
+        },
+        {
+          "id": 3581,
           "list_id": "1479448773449314306",
           "symbol": "NVDA",
           "sentiment": "bullish",
-          "mention_count": 2,
-          "avg_sentiment_score": 0.9,
-          "generated_at": "2026-01-13T13:13:46.602Z"
-        },
-        {
-          "id": 3553,
-          "list_id": "1479448773449314306",
-          "symbol": "INTC",
-          "sentiment": "bullish",
-          "mention_count": 2,
-          "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:13:46.602Z"
-        },
-        {
-          "id": 3554,
-          "list_id": "1479448773449314306",
-          "symbol": "ES_F",
-          "sentiment": "neutral",
           "mention_count": 1,
-          "avg_sentiment_score": 0.5,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "avg_sentiment_score": 0.9,
+          "generated_at": "2026-01-13T13:49:49.332Z"
         },
         {
-          "id": 3555,
+          "id": 3582,
+          "list_id": "1479448773449314306",
+          "symbol": "SLB",
+          "sentiment": "bullish",
+          "mention_count": 1,
+          "avg_sentiment_score": 0.95,
+          "generated_at": "2026-01-13T13:49:49.332Z"
+        },
+        {
+          "id": 3583,
           "list_id": "1479448773449314306",
           "symbol": "IREN",
           "sentiment": "bullish",
           "mention_count": 1,
-          "avg_sentiment_score": 0.9,
-          "generated_at": "2026-01-13T13:13:46.602Z"
-        },
-        {
-          "id": 3556,
-          "list_id": "1479448773449314306",
-          "symbol": "NASDAQ",
-          "sentiment": "bullish",
-          "mention_count": 1,
           "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "generated_at": "2026-01-13T13:49:49.332Z"
         }
       ],
       "signals": [
         {
-          "id": 3240,
+          "id": 3266,
           "list_id": "1479448773449314306",
           "signal_type": "price_target",
-          "content": "ES_F support levels: 6998, 7007; resistance 7016, 7022, 7034",
+          "content": "ES futures: support at 6998/7007, resistance 7016/7022/7034, watch 6993/6969-73 breakdown",
           "ticker": "ES_F",
-          "importance": 0.85,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "importance": 0.92,
+          "generated_at": "2026-01-13T13:49:49.332Z"
         },
         {
-          "id": 3241,
+          "id": 3267,
           "list_id": "1479448773449314306",
           "signal_type": "trade_idea",
-          "content": "NASDAQ threatening breakout over 23,705 with bullish follow-through potential",
+          "content": "NASDAQ threatening breakout over 23,705 with follow-through buying signal long setup",
           "ticker": "NASDAQ",
-          "importance": 0.8,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "importance": 0.88,
+          "generated_at": "2026-01-13T13:49:49.332Z"
         },
         {
-          "id": 3242,
+          "id": 3268,
           "list_id": "1479448773449314306",
           "signal_type": "alert",
-          "content": "Grok AI integration into Pentagon network alongside Google AI engine",
+          "content": "Condo prices posting biggest declines since 2012; housing affordability critical",
           "ticker": null,
-          "importance": 0.75,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "importance": 0.8,
+          "generated_at": "2026-01-13T13:49:49.332Z"
         },
         {
-          "id": 3243,
+          "id": 3269,
           "list_id": "1479448773449314306",
-          "signal_type": "warning",
-          "content": "No US states where full-time minimum wage workers afford modest two-bedroom apartment",
+          "signal_type": "observation",
+          "content": "34% advertised jobs have no actual hire intent; employment data reliability concern",
           "ticker": null,
-          "importance": 0.7,
-          "generated_at": "2026-01-13T13:13:46.602Z"
+          "importance": 0.75,
+          "generated_at": "2026-01-13T13:49:49.332Z"
         }
       ]
     },
     {
       "list_id": "1366729121678589959",
       "list_name": "Macro List",
-      "generated_at": "2026-01-13T13:14:03.157Z",
+      "generated_at": "2026-01-13T13:50:07.197Z",
       "themes": [
         {
-          "id": 3857,
+          "id": 3892,
           "list_id": "1366729121678589959",
-          "theme": "AI infrastructure and semiconductor leadership",
-          "sentiment": "bullish",
+          "theme": "Inflation data suggests rate cuts paused in 2026",
+          "sentiment": "neutral",
           "mention_count": 6,
           "confidence": 0.95,
-          "generated_at": "2026-01-13T13:14:03.157Z"
+          "generated_at": "2026-01-13T13:50:07.197Z"
         },
         {
-          "id": 3858,
+          "id": 3895,
           "list_id": "1366729121678589959",
-          "theme": "Data center electricity costs and policy pressure",
+          "theme": "Financial sector earnings beat expectations broadly",
           "sentiment": "mixed",
-          "mention_count": 4,
-          "confidence": 0.9,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3859,
-          "list_id": "1366729121678589959",
-          "theme": "2026 tech sector themes and growth areas",
-          "sentiment": "bullish",
-          "mention_count": 3,
-          "confidence": 0.85,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3860,
-          "list_id": "1366729121678589959",
-          "theme": "Market breadth strength and breakout signals",
-          "sentiment": "bullish",
           "mention_count": 3,
           "confidence": 0.8,
-          "generated_at": "2026-01-13T13:14:03.157Z"
+          "generated_at": "2026-01-13T13:50:07.197Z"
         },
         {
-          "id": 3861,
+          "id": 3893,
           "list_id": "1366729121678589959",
-          "theme": "Inflation concerns and central bank coordination",
-          "sentiment": "mixed",
-          "mention_count": 3,
+          "theme": "Precious metals surge; silver hits record highs",
+          "sentiment": "bullish",
+          "mention_count": 2,
+          "confidence": 0.9,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3894,
+          "list_id": "1366729121678589959",
+          "theme": "January leadership reveals 2026 sector themes",
+          "sentiment": "bullish",
+          "mention_count": 2,
+          "confidence": 0.85,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3896,
+          "list_id": "1366729121678589959",
+          "theme": "AI and emerging tech drive market leadership",
+          "sentiment": "bullish",
+          "mention_count": 2,
           "confidence": 0.75,
-          "generated_at": "2026-01-13T13:14:03.157Z"
+          "generated_at": "2026-01-13T13:50:07.197Z"
         }
       ],
       "tickers": [
         {
-          "id": 3557,
+          "id": 3585,
           "list_id": "1366729121678589959",
-          "symbol": "NVDA",
-          "sentiment": "bullish",
-          "mention_count": 4,
-          "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3558,
-          "list_id": "1366729121678589959",
-          "symbol": "MSFT",
-          "sentiment": "mixed",
-          "mention_count": 2,
-          "avg_sentiment_score": 0,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3559,
-          "list_id": "1366729121678589959",
-          "symbol": "RKLB",
-          "sentiment": "bullish",
-          "mention_count": 2,
-          "avg_sentiment_score": 0.8,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3560,
-          "list_id": "1366729121678589959",
-          "symbol": "SPY",
-          "sentiment": "bullish",
-          "mention_count": 2,
-          "avg_sentiment_score": 0.75,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3561,
-          "list_id": "1366729121678589959",
-          "symbol": "QQQ",
+          "symbol": "JPM",
           "sentiment": "bullish",
           "mention_count": 1,
           "avg_sentiment_score": 0.8,
-          "generated_at": "2026-01-13T13:14:03.157Z"
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3586,
+          "list_id": "1366729121678589959",
+          "symbol": "NVDA",
+          "sentiment": "bullish",
+          "mention_count": 1,
+          "avg_sentiment_score": 0.7,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3587,
+          "list_id": "1366729121678589959",
+          "symbol": "DAL",
+          "sentiment": "bearish",
+          "mention_count": 1,
+          "avg_sentiment_score": -0.8,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3588,
+          "list_id": "1366729121678589959",
+          "symbol": "LHX",
+          "sentiment": "bullish",
+          "mention_count": 1,
+          "avg_sentiment_score": 0.75,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3589,
+          "list_id": "1366729121678589959",
+          "symbol": "SPY",
+          "sentiment": "bullish",
+          "mention_count": 1,
+          "avg_sentiment_score": 0.85,
+          "generated_at": "2026-01-13T13:50:07.197Z"
         }
       ],
       "signals": [
         {
-          "id": 3244,
-          "list_id": "1366729121678589959",
-          "signal_type": "alert",
-          "content": "Trump pressuring major tech firms on datacenter electricity costs; Microsoft first target",
-          "ticker": "MSFT",
-          "importance": 0.92,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3245,
-          "list_id": "1366729121678589959",
-          "signal_type": "observation",
-          "content": "Market showing strongest breadth with indexes breaking multi-month bases; 51% stocks in stage 2 uptrends",
-          "ticker": "SPY",
-          "importance": 0.85,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3247,
-          "list_id": "1366729121678589959",
-          "signal_type": "warning",
-          "content": "Core CPI expected to firm to 2.8% in December, up from 2.6% in November",
-          "ticker": null,
-          "importance": 0.8,
-          "generated_at": "2026-01-13T13:14:03.157Z"
-        },
-        {
-          "id": 3246,
+          "id": 3270,
           "list_id": "1366729121678589959",
           "signal_type": "price_target",
-          "content": "$RKLB targeting $100+ breakout continuation",
-          "ticker": "RKLB",
-          "importance": 0.7,
-          "generated_at": "2026-01-13T13:14:03.157Z"
+          "content": "S&P 500 futures surge to 6,990; potential breakout to 7,000",
+          "ticker": "SPY",
+          "importance": 0.92,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3272,
+          "list_id": "1366729121678589959",
+          "signal_type": "observation",
+          "content": "Core CPI 2.6% vs 2.7% expected; rate cuts paused January FOMC",
+          "ticker": null,
+          "importance": 0.9,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3271,
+          "list_id": "1366729121678589959",
+          "signal_type": "alert",
+          "content": "Silver breaks above $87/oz for first time; up 210% in 13 months",
+          "ticker": null,
+          "importance": 0.88,
+          "generated_at": "2026-01-13T13:50:07.197Z"
+        },
+        {
+          "id": 3273,
+          "list_id": "1366729121678589959",
+          "signal_type": "trade_idea",
+          "content": "2026 leadership themes: Grid Power, AI Utility, Space, Nuclear, Drones",
+          "ticker": null,
+          "importance": 0.75,
+          "generated_at": "2026-01-13T13:50:07.197Z"
         }
       ]
     },
     {
       "list_id": "1361242639111135234",
       "list_name": "Focused",
-      "generated_at": "2026-01-13T13:14:20.133Z",
+      "generated_at": "2026-01-13T13:50:24.361Z",
       "themes": [
         {
-          "id": 3865,
+          "id": 3897,
           "list_id": "1361242639111135234",
-          "theme": "Crypto startup funding shift toward traction over seed rounds",
+          "theme": "Crypto market consolidation and breakout potential",
+          "sentiment": "bullish",
+          "mention_count": 4,
+          "confidence": 0.85,
+          "generated_at": "2026-01-13T13:50:24.361Z"
+        },
+        {
+          "id": 3898,
+          "list_id": "1361242639111135234",
+          "theme": "Regulatory developments favoring crypto markets",
+          "sentiment": "bullish",
+          "mention_count": 3,
+          "confidence": 0.8,
+          "generated_at": "2026-01-13T13:50:24.361Z"
+        },
+        {
+          "id": 3899,
+          "list_id": "1361242639111135234",
+          "theme": "Startup funding standards becoming more rigorous",
           "sentiment": "bearish",
           "mention_count": 3,
-          "confidence": 0.78,
-          "generated_at": "2026-01-13T13:14:20.133Z"
-        },
-        {
-          "id": 3862,
-          "list_id": "1361242639111135234",
-          "theme": "Cryptocurrency market structure and regulatory momentum",
-          "sentiment": "bullish",
-          "mention_count": 2,
-          "confidence": 0.85,
-          "generated_at": "2026-01-13T13:14:20.133Z"
-        },
-        {
-          "id": 3863,
-          "list_id": "1361242639111135234",
-          "theme": "Equity market technicals remain bullish with gamma support",
-          "sentiment": "bullish",
-          "mention_count": 2,
-          "confidence": 0.8,
-          "generated_at": "2026-01-13T13:14:20.133Z"
-        },
-        {
-          "id": 3864,
-          "list_id": "1361242639111135234",
-          "theme": "Prediction markets gaining mainstream adoption and credibility",
-          "sentiment": "bullish",
-          "mention_count": 2,
           "confidence": 0.75,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "generated_at": "2026-01-13T13:50:24.361Z"
         },
         {
-          "id": 3866,
+          "id": 3900,
           "list_id": "1361242639111135234",
-          "theme": "SEC regulatory scrutiny and naked short selling collusion",
-          "sentiment": "bearish",
-          "mention_count": 1,
-          "confidence": 0.72,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "theme": "Prediction markets entering mainstream adoption",
+          "sentiment": "bullish",
+          "mention_count": 2,
+          "confidence": 0.78,
+          "generated_at": "2026-01-13T13:50:24.361Z"
+        },
+        {
+          "id": 3901,
+          "list_id": "1361242639111135234",
+          "theme": "S&P 500 uptrend intact with bullish technicals",
+          "sentiment": "bullish",
+          "mention_count": 2,
+          "confidence": 0.82,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         }
       ],
       "tickers": [
         {
-          "id": 3562,
+          "id": 3590,
           "list_id": "1361242639111135234",
           "symbol": "BTC",
           "sentiment": "bullish",
           "mention_count": 2,
-          "avg_sentiment_score": 0.8,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "avg_sentiment_score": 0.85,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         },
         {
-          "id": 3563,
+          "id": 3591,
           "list_id": "1361242639111135234",
           "symbol": "IREN",
           "sentiment": "bullish",
           "mention_count": 2,
-          "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "avg_sentiment_score": 0.9,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         },
         {
-          "id": 3564,
+          "id": 3592,
           "list_id": "1361242639111135234",
           "symbol": "SPY",
           "sentiment": "bullish",
           "mention_count": 2,
-          "avg_sentiment_score": 0.75,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "avg_sentiment_score": 0.8,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         },
         {
-          "id": 3565,
+          "id": 3593,
           "list_id": "1361242639111135234",
-          "symbol": "MMTLP",
-          "sentiment": "bearish",
+          "symbol": "ES_F",
+          "sentiment": "bullish",
           "mention_count": 1,
-          "avg_sentiment_score": -0.7,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "avg_sentiment_score": 0.85,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         },
         {
-          "id": 3566,
+          "id": 3594,
           "list_id": "1361242639111135234",
           "symbol": "SLNO",
           "sentiment": "bullish",
           "mention_count": 1,
-          "avg_sentiment_score": 0.7,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "avg_sentiment_score": 0.75,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         }
       ],
       "signals": [
         {
-          "id": 3251,
+          "id": 3275,
           "list_id": "1361242639111135234",
-          "signal_type": "warning",
-          "content": "Senate Banking Democrats vote on market structure bill Thursday",
-          "ticker": null,
-          "importance": 0.78,
-          "generated_at": "2026-01-13T13:14:20.133Z"
-        },
-        {
-          "id": 3250,
-          "list_id": "1361242639111135234",
-          "signal_type": "observation",
-          "content": "$SPY showing $700 gamma exposure; bulls confident on upside",
-          "ticker": "SPY",
-          "importance": 0.73,
-          "generated_at": "2026-01-13T13:14:20.133Z"
-        },
-        {
-          "id": 3248,
-          "list_id": "1361242639111135234",
-          "signal_type": "price_target",
-          "content": "$IREN HTF buy signal active, targeting $78 high range area",
+          "signal_type": "trade_idea",
+          "content": "IREN showing strong HTF buy signal, target High Range ~$78",
           "ticker": "IREN",
-          "importance": 0.72,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "importance": 0.85,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         },
         {
-          "id": 3249,
+          "id": 3277,
           "list_id": "1361242639111135234",
           "signal_type": "alert",
-          "content": "$BTC needs breakout above 94k for trend confirmation",
+          "content": "Senate Banking Democrats voting on market structure bill Thursday",
+          "ticker": null,
+          "importance": 0.82,
+          "generated_at": "2026-01-13T13:50:24.361Z"
+        },
+        {
+          "id": 3274,
+          "list_id": "1361242639111135234",
+          "signal_type": "price_target",
+          "content": "BTC breakout above 94k level needed for continuation",
           "ticker": "BTC",
-          "importance": 0.68,
-          "generated_at": "2026-01-13T13:14:20.133Z"
+          "importance": 0.8,
+          "generated_at": "2026-01-13T13:50:24.361Z"
+        },
+        {
+          "id": 3276,
+          "list_id": "1361242639111135234",
+          "signal_type": "observation",
+          "content": "SPY maintaining 1D uptrend with bullish gamma exposure to 700",
+          "ticker": "SPY",
+          "importance": 0.78,
+          "generated_at": "2026-01-13T13:50:24.361Z"
         }
       ]
     },
     {
       "list_id": "2004538039243329816",
       "list_name": "Space",
-      "generated_at": "2026-01-13T13:14:35.121Z",
+      "generated_at": "2026-01-13T13:50:41.421Z",
       "themes": [
         {
-          "id": 3868,
+          "id": 3903,
           "list_id": "2004538039243329816",
-          "theme": "Scientific discoveries in space and cosmology",
+          "theme": "Quantum physics and cosmology discoveries",
           "sentiment": "neutral",
-          "mention_count": 12,
-          "confidence": 0.9,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "mention_count": 5,
+          "confidence": 0.85,
+          "generated_at": "2026-01-13T13:50:41.421Z"
         },
         {
-          "id": 3867,
+          "id": 3905,
           "list_id": "2004538039243329816",
-          "theme": "Starlink satellite deployment and Falcon 9 launches",
-          "sentiment": "bullish",
+          "theme": "Exoplanet and space exploration discoveries",
+          "sentiment": "neutral",
           "mention_count": 4,
-          "confidence": 0.95,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "confidence": 0.8,
+          "generated_at": "2026-01-13T13:50:41.421Z"
         },
         {
-          "id": 3871,
+          "id": 3902,
           "list_id": "2004538039243329816",
-          "theme": "Business payment processing delays and frustrations",
+          "theme": "SpaceX Starlink satellite deployment operations",
+          "sentiment": "bullish",
+          "mention_count": 3,
+          "confidence": 0.95,
+          "generated_at": "2026-01-13T13:50:41.421Z"
+        },
+        {
+          "id": 3906,
+          "list_id": "2004538039243329816",
+          "theme": "Payment processing and business operations friction",
           "sentiment": "bearish",
           "mention_count": 3,
-          "confidence": 0.85,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "confidence": 0.9,
+          "generated_at": "2026-01-13T13:50:41.421Z"
         },
         {
-          "id": 3870,
+          "id": 3904,
           "list_id": "2004538039243329816",
-          "theme": "Exoplanet discoveries and unusual compositions",
-          "sentiment": "neutral",
-          "mention_count": 2,
-          "confidence": 0.8,
-          "generated_at": "2026-01-13T13:14:35.121Z"
-        },
-        {
-          "id": 3869,
-          "list_id": "2004538039243329816",
-          "theme": "Earth's magnetic field weakening and anomalies",
+          "theme": "Earth's magnetic field weakening concerns",
           "sentiment": "bearish",
           "mention_count": 1,
           "confidence": 0.75,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "generated_at": "2026-01-13T13:50:41.421Z"
         }
       ],
       "tickers": [
         {
-          "id": 3567,
+          "id": 3595,
           "list_id": "2004538039243329816",
           "symbol": "SPCE",
           "sentiment": "bullish",
-          "mention_count": 4,
-          "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:14:35.121Z"
-        },
-        {
-          "id": 3568,
-          "list_id": "2004538039243329816",
-          "symbol": "CITI",
-          "sentiment": "bearish",
           "mention_count": 1,
-          "avg_sentiment_score": -0.9,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "avg_sentiment_score": 0.85,
+          "generated_at": "2026-01-13T13:50:41.421Z"
         }
       ],
       "signals": [
         {
-          "id": 3252,
+          "id": 3278,
           "list_id": "2004538039243329816",
           "signal_type": "observation",
-          "content": "SpaceX successfully deployed 29 Starlink satellites; operational execution confirmed",
+          "content": "SpaceX successfully deployed 29 Starlink satellites; consistent operational execution",
           "ticker": "SPCE",
-          "importance": 0.88,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "importance": 0.85,
+          "generated_at": "2026-01-13T13:50:41.421Z"
         },
         {
-          "id": 3253,
+          "id": 3279,
           "list_id": "2004538039243329816",
           "signal_type": "warning",
-          "content": "Earth's South Atlantic magnetic anomaly expanding rapidly; potential navigation system impacts",
+          "content": "Earth's magnetic South Atlantic anomaly expanding rapidly; space weather risk rising",
           "ticker": null,
-          "importance": 0.72,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "importance": 0.7,
+          "generated_at": "2026-01-13T13:50:41.421Z"
         },
         {
-          "id": 3254,
+          "id": 3280,
           "list_id": "2004538039243329816",
           "signal_type": "alert",
-          "content": "Business credit card processing delays spanning multiple months affecting event operations",
-          "ticker": "CITI",
-          "importance": 0.68,
-          "generated_at": "2026-01-13T13:14:35.121Z"
+          "content": "Business payment processing delays causing operational friction for space event organizer",
+          "ticker": null,
+          "importance": 0.65,
+          "generated_at": "2026-01-13T13:50:41.421Z"
         }
       ]
     },
     {
       "list_id": "2004538469146878152",
       "list_name": "Robotics",
-      "generated_at": "2026-01-13T13:14:51.100Z",
+      "generated_at": "2026-01-13T13:50:58.001Z",
       "themes": [
         {
-          "id": 3872,
+          "id": 3907,
           "list_id": "2004538469146878152",
-          "theme": "AI-powered wearable devices and smart rings",
+          "theme": "AI-powered wearables and edge computing devices",
           "sentiment": "bullish",
           "mention_count": 3,
           "confidence": 0.85,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "generated_at": "2026-01-13T13:50:58.001Z"
         },
         {
-          "id": 3873,
+          "id": 3910,
           "list_id": "2004538469146878152",
-          "theme": "Edge AI chips for medical and IoT devices",
-          "sentiment": "bullish",
-          "mention_count": 2,
+          "theme": "Apple-Google-OpenAI competitive dynamics in AI",
+          "sentiment": "bearish",
+          "mention_count": 3,
           "confidence": 0.8,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "generated_at": "2026-01-13T13:50:58.001Z"
         },
         {
-          "id": 3874,
+          "id": 3908,
           "list_id": "2004538469146878152",
-          "theme": "Humanoid robots with world model AI systems",
+          "theme": "Humanoid robots with world model architecture",
           "sentiment": "neutral",
           "mention_count": 2,
           "confidence": 0.75,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "generated_at": "2026-01-13T13:50:58.001Z"
         },
         {
-          "id": 3875,
+          "id": 3909,
           "list_id": "2004538469146878152",
-          "theme": "AI memory architecture and long-context solutions",
+          "theme": "LLM memory solutions and compression techniques",
           "sentiment": "neutral",
           "mention_count": 2,
           "confidence": 0.7,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "generated_at": "2026-01-13T13:50:58.001Z"
         },
         {
-          "id": 3876,
+          "id": 3911,
           "list_id": "2004538469146878152",
-          "theme": "Apple-Google competitive AI strategy shift",
-          "sentiment": "bearish",
-          "mention_count": 2,
-          "confidence": 0.75,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "theme": "Robotics integration in pharma and manufacturing",
+          "sentiment": "bullish",
+          "mention_count": 1,
+          "confidence": 0.72,
+          "generated_at": "2026-01-13T13:50:58.001Z"
         }
       ],
       "tickers": [
         {
-          "id": 3569,
-          "list_id": "2004538469146878152",
-          "symbol": "GOOGL",
-          "sentiment": "neutral",
-          "mention_count": 2,
-          "avg_sentiment_score": 0,
-          "generated_at": "2026-01-13T13:14:51.100Z"
-        },
-        {
-          "id": 3570,
+          "id": 3597,
           "list_id": "2004538469146878152",
           "symbol": "AAPL",
           "sentiment": "bearish",
-          "mention_count": 2,
-          "avg_sentiment_score": -0.5,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "mention_count": 3,
+          "avg_sentiment_score": -0.55,
+          "generated_at": "2026-01-13T13:50:58.001Z"
         },
         {
-          "id": 3571,
+          "id": 3598,
+          "list_id": "2004538469146878152",
+          "symbol": "GOOGL",
+          "sentiment": "mixed",
+          "mention_count": 2,
+          "avg_sentiment_score": 0,
+          "generated_at": "2026-01-13T13:50:58.001Z"
+        },
+        {
+          "id": 3596,
           "list_id": "2004538469146878152",
           "symbol": "NVDA",
           "sentiment": "bullish",
           "mention_count": 1,
-          "avg_sentiment_score": 0.8,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "avg_sentiment_score": 0.85,
+          "generated_at": "2026-01-13T13:50:58.001Z"
         }
       ],
       "signals": [
         {
-          "id": 3255,
-          "list_id": "2004538469146878152",
-          "signal_type": "observation",
-          "content": "Edge AI chip investment up 5.5% today; applications expanding to wearables and robotics",
-          "ticker": null,
-          "importance": 0.8,
-          "generated_at": "2026-01-13T13:14:51.100Z"
-        },
-        {
-          "id": 3256,
+          "id": 3282,
           "list_id": "2004538469146878152",
           "signal_type": "alert",
-          "content": "Apple pivots to Google for AI over OpenAI due to competitive threat; impacts AI product landscape",
+          "content": "Apple selecting Google over OpenAI for Siri suggests competitive market shift",
           "ticker": "AAPL",
-          "importance": 0.75,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "importance": 0.78,
+          "generated_at": "2026-01-13T13:50:58.001Z"
         },
         {
-          "id": 3257,
+          "id": 3281,
           "list_id": "2004538469146878152",
           "signal_type": "observation",
-          "content": "NVIDIA-Eli Lilly partnership expanding robotics and digital twins in clinical manufacturing",
+          "content": "Low-power AI edge chips up 5.5% on wearable and robotics demand",
+          "ticker": null,
+          "importance": 0.75,
+          "generated_at": "2026-01-13T13:50:58.001Z"
+        },
+        {
+          "id": 3283,
+          "list_id": "2004538469146878152",
+          "signal_type": "observation",
+          "content": "NVIDIA-Eli Lilly partnership expanding robotics into clinical development phases",
           "ticker": "NVDA",
-          "importance": 0.7,
-          "generated_at": "2026-01-13T13:14:51.100Z"
+          "importance": 0.72,
+          "generated_at": "2026-01-13T13:50:58.001Z"
         }
       ]
     },
     {
       "list_id": "1977021460201062758",
       "list_name": "AI",
-      "generated_at": "2026-01-13T13:15:07.058Z",
+      "generated_at": "2026-01-13T13:51:14.401Z",
       "themes": [
         {
-          "id": 3877,
+          "id": 3912,
           "list_id": "1977021460201062758",
-          "theme": "AI codification of tacit knowledge and white-collar work disruption",
+          "theme": "AI model capabilities and enterprise adoption expansion",
+          "sentiment": "bullish",
+          "mention_count": 8,
+          "confidence": 0.85,
+          "generated_at": "2026-01-13T13:51:14.401Z"
+        },
+        {
+          "id": 3914,
+          "list_id": "1977021460201062758",
+          "theme": "Hardware infrastructure for large-scale AI model deployment",
+          "sentiment": "bullish",
+          "mention_count": 4,
+          "confidence": 0.78,
+          "generated_at": "2026-01-13T13:51:14.401Z"
+        },
+        {
+          "id": 3913,
+          "list_id": "1977021460201062758",
+          "theme": "Knowledge work automation requires tacit knowledge codification",
           "sentiment": "neutral",
           "mention_count": 3,
-          "confidence": 0.85,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "confidence": 0.72,
+          "generated_at": "2026-01-13T13:51:14.401Z"
         },
         {
-          "id": 3879,
+          "id": 3915,
           "list_id": "1977021460201062758",
-          "theme": "AI capabilities in file operations and document handling",
+          "theme": "Multi-agent AI systems for enterprise operations",
           "sentiment": "bullish",
           "mention_count": 3,
-          "confidence": 0.82,
-          "generated_at": "2026-01-13T13:15:07.058Z"
-        },
-        {
-          "id": 3878,
-          "list_id": "1977021460201062758",
-          "theme": "Multi-agent AI systems and warehouse automation",
-          "sentiment": "bullish",
-          "mention_count": 2,
-          "confidence": 0.8,
-          "generated_at": "2026-01-13T13:15:07.058Z"
-        },
-        {
-          "id": 3880,
-          "list_id": "1977021460201062758",
-          "theme": "Hardware bottlenecks for large-scale AI model deployment",
-          "sentiment": "bullish",
-          "mention_count": 2,
-          "confidence": 0.78,
-          "generated_at": "2026-01-13T13:15:07.058Z"
-        },
-        {
-          "id": 3881,
-          "list_id": "1977021460201062758",
-          "theme": "AI model consolidation and competitive displacement",
-          "sentiment": "bearish",
-          "mention_count": 2,
           "confidence": 0.75,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "generated_at": "2026-01-13T13:51:14.401Z"
         }
       ],
       "tickers": [
         {
-          "id": 3572,
+          "id": 3599,
           "list_id": "1977021460201062758",
           "symbol": "NVDA",
           "sentiment": "bullish",
           "mention_count": 4,
           "avg_sentiment_score": 0.75,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "generated_at": "2026-01-13T13:51:14.401Z"
         },
         {
-          "id": 3573,
+          "id": 3600,
           "list_id": "1977021460201062758",
           "symbol": "AAPL",
           "sentiment": "bullish",
           "mention_count": 1,
           "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "generated_at": "2026-01-13T13:51:14.401Z"
         },
         {
-          "id": 3574,
+          "id": 3601,
           "list_id": "1977021460201062758",
           "symbol": "GOOGL",
           "sentiment": "bullish",
           "mention_count": 1,
           "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "generated_at": "2026-01-13T13:51:14.401Z"
         }
       ],
       "signals": [
         {
-          "id": 3260,
+          "id": 3285,
           "list_id": "1977021460201062758",
-          "signal_type": "observation",
-          "content": "Apple-Google Gemini partnership signals consolidation in foundation models space",
-          "ticker": "AAPL",
+          "signal_type": "alert",
+          "content": "Apple-Google Gemini partnership signals major shift in foundation model deployment strategy",
+          "ticker": null,
           "importance": 0.88,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "generated_at": "2026-01-13T13:51:14.401Z"
         },
         {
-          "id": 3258,
+          "id": 3284,
           "list_id": "1977021460201062758",
           "signal_type": "observation",
-          "content": "NVMe SSDs emerging as AI infrastructure bottleneck; specialized controllers needed",
+          "content": "High-IOPS NVMe SSDs becoming critical AI infrastructure bottleneck",
           "ticker": "NVDA",
           "importance": 0.82,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "generated_at": "2026-01-13T13:51:14.401Z"
         },
         {
-          "id": 3261,
+          "id": 3286,
           "list_id": "1977021460201062758",
           "signal_type": "observation",
-          "content": "LLM test-time training advances show models improving via context compression",
-          "ticker": "NVDA",
-          "importance": 0.76,
-          "generated_at": "2026-01-13T13:15:07.058Z"
-        },
-        {
-          "id": 3259,
-          "list_id": "1977021460201062758",
-          "signal_type": "warning",
-          "content": "AI models directly competing with startups built on same models",
+          "content": "Enterprise AI adoption constrained by tacit knowledge and organizational codification challenges",
           "ticker": null,
-          "importance": 0.74,
-          "generated_at": "2026-01-13T13:15:07.058Z"
+          "importance": 0.68,
+          "generated_at": "2026-01-13T13:51:14.401Z"
         }
       ]
     },
     {
       "list_id": "1430346349375938572",
       "list_name": "Crypto",
-      "generated_at": "2026-01-13T13:15:23.214Z",
+      "generated_at": "2026-01-13T13:51:32.161Z",
       "themes": [
         {
-          "id": 3882,
+          "id": 3916,
           "list_id": "1430346349375938572",
-          "theme": "Bitcoin accumulation and institutional adoption",
-          "sentiment": "bullish",
-          "mention_count": 5,
-          "confidence": 0.9,
-          "generated_at": "2026-01-13T13:15:23.214Z"
-        },
-        {
-          "id": 3883,
-          "list_id": "1430346349375938572",
-          "theme": "Technical consolidation breakout imminent",
-          "sentiment": "bullish",
-          "mention_count": 4,
-          "confidence": 0.85,
-          "generated_at": "2026-01-13T13:15:23.214Z"
-        },
-        {
-          "id": 3886,
-          "list_id": "1430346349375938572",
-          "theme": "Traditional markets integration into crypto",
+          "theme": "Macro conditions supporting crypto with softer inflation",
           "sentiment": "bullish",
           "mention_count": 3,
           "confidence": 0.85,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3884,
+          "id": 3918,
           "list_id": "1430346349375938572",
-          "theme": "Crypto regulatory tightening globally",
-          "sentiment": "bearish",
-          "mention_count": 2,
-          "confidence": 0.75,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "theme": "Institutional adoption and product launches accelerating",
+          "sentiment": "bullish",
+          "mention_count": 3,
+          "confidence": 0.82,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3885,
+          "id": 3917,
           "list_id": "1430346349375938572",
-          "theme": "Solana DeFi ecosystem growth and competition",
+          "theme": "Bitcoin consolidation and technical breakout setup imminent",
           "sentiment": "bullish",
           "mention_count": 2,
           "confidence": 0.8,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "generated_at": "2026-01-13T13:51:32.161Z"
+        },
+        {
+          "id": 3919,
+          "list_id": "1430346349375938572",
+          "theme": "Spot trading volume declining, long-term conviction fading",
+          "sentiment": "bearish",
+          "mention_count": 1,
+          "confidence": 0.7,
+          "generated_at": "2026-01-13T13:51:32.161Z"
+        },
+        {
+          "id": 3920,
+          "list_id": "1430346349375938572",
+          "theme": "Regulatory pressure increasing in emerging markets",
+          "sentiment": "bearish",
+          "mention_count": 1,
+          "confidence": 0.75,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         }
       ],
       "tickers": [
         {
-          "id": 3575,
+          "id": 3602,
           "list_id": "1430346349375938572",
           "symbol": "BTC",
           "sentiment": "bullish",
-          "mention_count": 6,
-          "avg_sentiment_score": 0.85,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "mention_count": 5,
+          "avg_sentiment_score": 0.75,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3577,
+          "id": 3604,
           "list_id": "1430346349375938572",
           "symbol": "CLO",
           "sentiment": "bullish",
-          "mention_count": 3,
+          "mention_count": 4,
           "avg_sentiment_score": 0.8,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3576,
+          "id": 3603,
           "list_id": "1430346349375938572",
           "symbol": "ETH",
           "sentiment": "bullish",
-          "mention_count": 1,
-          "avg_sentiment_score": 0.8,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "mention_count": 2,
+          "avg_sentiment_score": 0.7,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3578,
+          "id": 3605,
           "list_id": "1430346349375938572",
           "symbol": "EDU",
           "sentiment": "bullish",
           "mention_count": 1,
           "avg_sentiment_score": 0.75,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3579,
+          "id": 3606,
           "list_id": "1430346349375938572",
-          "symbol": "JUP",
+          "symbol": "XMR",
           "sentiment": "bullish",
           "mention_count": 1,
-          "avg_sentiment_score": 0.8,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "avg_sentiment_score": 0.7,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         }
       ],
       "signals": [
         {
-          "id": 3262,
-          "list_id": "1430346349375938572",
-          "signal_type": "price_target",
-          "content": "Bitcoin triangle consolidation apex approaching, expect 5%+ move on breakout",
-          "ticker": "BTC",
-          "importance": 0.9,
-          "generated_at": "2026-01-13T13:15:23.214Z"
-        },
-        {
-          "id": 3264,
+          "id": 3290,
           "list_id": "1430346349375938572",
           "signal_type": "observation",
-          "content": "MSTR $62B BTC holdings up $10B in profit at $90k, potential mispricing vs $46B marketcap",
-          "ticker": "MSTR",
-          "importance": 0.85,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "content": "BlackRock moving $320M crypto to Coinbase signals institutional accumulation",
+          "ticker": "BTC",
+          "importance": 0.88,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3263,
+          "id": 3287,
+          "list_id": "1430346349375938572",
+          "signal_type": "price_target",
+          "content": "Bitcoin triangle breakout at apex expected to yield 5%+ move",
+          "ticker": "BTC",
+          "importance": 0.85,
+          "generated_at": "2026-01-13T13:51:32.161Z"
+        },
+        {
+          "id": 3288,
           "list_id": "1430346349375938572",
           "signal_type": "trade_idea",
-          "content": "CLO support at $0.73, higher timeframes show bullish momentum with 65-70% win ratio",
+          "content": "CLO support at $0.73 with 65-70% win ratio trade setups forming",
           "ticker": "CLO",
-          "importance": 0.75,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "importance": 0.8,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         },
         {
-          "id": 3265,
+          "id": 3289,
           "list_id": "1430346349375938572",
           "signal_type": "alert",
-          "content": "Nigeria requiring crypto transactions linked to Tax/National IDs, regulatory headwind",
+          "content": "Japan 10Y yield jumps to 2.17%, highest since 1999. Macro headwind",
           "ticker": null,
-          "importance": 0.7,
-          "generated_at": "2026-01-13T13:15:23.214Z"
+          "importance": 0.75,
+          "generated_at": "2026-01-13T13:51:32.161Z"
         }
       ]
     }
