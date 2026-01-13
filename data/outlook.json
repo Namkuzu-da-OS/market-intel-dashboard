@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-01-13T00:33:54.068Z",
+  "timestamp": "2026-01-13T11:35:25.152Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
-    "confidence_pct": 64,
+    "confidence_pct": 67,
     "sources": {
       "social": {
-        "bullish": 118,
-        "bearish": 44,
-        "neutral": 185,
-        "total": 347,
+        "bullish": 120,
+        "bearish": 45,
+        "neutral": 190,
+        "total": 355,
         "pct": 34
       },
       "news": {
-        "bullish": 56,
-        "bearish": 54,
-        "neutral": 29,
-        "total": 139,
-        "pct": 40
+        "bullish": 49,
+        "bearish": 37,
+        "neutral": 23,
+        "total": 109,
+        "pct": 45
       },
       "video": {
-        "bullish": 12,
-        "bearish": 5,
-        "neutral": 11,
-        "total": 28,
-        "pct": 43
+        "bullish": 6,
+        "bearish": 4,
+        "neutral": 1,
+        "total": 11,
+        "pct": 55
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - structural catalysts (institutional blockchain adoption, AI infrastructure momentum) supported by broad market breadth and technical breakouts, but tempered by near-term policy implementation risks (tariff absorption, regulatory uncertainty) and geopolitical tension creating event-dependent volatility.\n\n📈 **Themes:** (1) AI/blockchain institutional adoption wave - Nasdaq validation role, tokenization infrastructure, agentic AI payment rails gaining legitimacy; (2) Policy implementation uncertainty - forced tech cost absorption, rate policy direction, regulatory clarity timeline affecting margin expectations; (3) Rotation mechanics - capital shifting from defensives into mega-cap tech/crypto infrastructure on anticipated regulatory tailwinds and monetary easing signals.\n\n🎯 **Levels:** SPY ($695.16): Call Wall $750 (56k OI, resistance 7.9% away), Put Wall $630 (149k OI, support 9.4% away). Max Pain $693. Near active resistance $700 (45k OI, 0.7% away), near active support $680 (125k OI, 2.2% away). QQQ ($627.17): Call Wall $641 (56k OI, active resistance 2.2% away), Put Wall $574.78 (116k OI, dormant support). Max Pain $625. Near resistance $630 (33k OI, 0.5% away). /ES: Per Twitter, Nasdaq breakout target above 23,705 mentioned for bullish continuation.",
+    "narrative": "📊 **Consensus:** Bullish sentiment with medium conviction - market at all-time highs with strong technicals (51%+ stocks in uptrends) but facing asymmetric tail risks from policy uncertainty and geopolitical tensions that could trigger sharp reversals.\n\n📈 **Themes:** (1) AI/technology adoption momentum driving mega-cap strength and institutional positioning; (2) Cryptocurrency regulatory clarity creating sector optimism despite recent ETF outflows; (3) Fed policy uncertainty and central bank independence concerns weighing on broader conviction; (4) Deteriorating labor market fundamentals (79-year low labor share) masking beneath surface strength.\n\n🎯 **Levels:** SPY ($695.16): Call Wall $750 (56k OI, 7.9% away - dormant), Put Wall $630 (149k OI, 9.4% away - dormant). Max Pain $693. Near resistance: $700 (45k OI, 0.7% - ACTIVE). Near support: $680 (125k OI, 2.2% - ACTIVE). QQQ ($627.17): Call Wall $641 (56k OI, 2.2% away - active hedging), Put Wall $574.78 (116k OI, 8.4% away - dormant). Max Pain $625. Near resistance: $630 (33k OI, 0.5% - ACTIVE). Near support: weak until $590-580 zone (81k-108k OI, dormant). /ES: Per Twitter analysis monitoring key technical zones for breakout confirmation.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "BTC",
-      "NVDA",
-      "JPM"
+      "RKLB",
+      "EDU",
+      "SHLS"
     ],
     "key_themes": [
-      "AI infrastructure and institutional blockchain adoption momentum",
-      "Policy implementation uncertainty and regulatory clarity timeline",
-      "Rotation from defensives into mega-cap tech and crypto",
-      "Fed policy credibility and monetary easing expectations",
-      "Geopolitical risk and tariff impact on margins"
+      "AI/technology sector momentum",
+      "cryptocurrency regulatory clarity and institutional adoption",
+      "Fed policy uncertainty and central bank independence",
+      "geopolitical escalation risks",
+      "deteriorating labor market fundamentals"
     ],
     "risk_factors": [
-      "Near-term tariff implementation forcing tech cost absorption and margin compression",
-      "Geopolitical escalation risk creating unpredictable volatility",
-      "Fed institutional credibility challenges affecting policy predictability",
-      "Regulatory timeline uncertainty delaying institutional capital deployment",
-      "Counterparty/exchange security risks in crypto infrastructure"
+      "Geopolitical escalation creating circuit-breaker potential for equities",
+      "Fed governance concerns and DOJ investigation compromising policy credibility",
+      "Narrow market breadth with tech/crypto masking consumer and banking sector weakness",
+      "Forced tech sector cost burdens from energy efficiency regulations",
+      "Asymmetric downside risk from leveraged positioning in speculative plays"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY testing $700 active call resistance (45k OI) with $680 active put support (125k OI). QQQ at Max Pain $625 with immediate $630 resistance (33k OI). Consolidation bias given proximity to Max Pain levels and conflicting policy signals.",
-    "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Target move toward $730 dormant resistance (48k OI) if $700 breaks, with $680 as key support hold. QQQ: $641 call wall (56k OI) major resistance zone, $625 Max Pain gravity, downside protected unless $620 breaks. Watch for rotation continuation into AI/crypto infrastructure on regulatory clarity.",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY: $700 active resistance (45k OI), $680 active support (125k OI). QQQ: $630 active resistance (33k OI), $641 call wall creating near-term ceiling. Watch for consolidation with upside bias per technicals.",
+    "swing_bias": "NEUTRAL",
+    "swing_levels": "SPY: $730 resistance (48k OI, dormant), $693 max pain gravitational pull, $630 put wall major support (149k OI). QQQ: $650 resistance (42k OI), $625 max pain target, $590-580 support zone (81k-108k OI). Elevated volatility expected - range-bound until catalysts provide directional clarity.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 192718
+    "generation_time_ms": 177650
   },
   "trending": {
     "macro": [
@@ -139,15 +139,15 @@
     "crypto": [
       {
         "ticker": "BTC",
-        "mentions": 8,
-        "sentiment_score": 0.608,
+        "mentions": 9,
+        "sentiment_score": 0.54,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 61,
+        "sentiment_pct": 54,
         "counts": {
           "bullish": 6,
           "bearish": 0,
-          "neutral": 2,
-          "total": 8
+          "neutral": 3,
+          "total": 9
         }
       },
       {
@@ -206,28 +206,15 @@
     "ai": [
       {
         "ticker": "NVDA",
-        "mentions": 8,
-        "sentiment_score": 0.505,
+        "mentions": 9,
+        "sentiment_score": 0.449,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 51,
+        "sentiment_pct": 45,
         "counts": {
           "bullish": 6,
           "bearish": 0,
-          "neutral": 2,
-          "total": 8
-        }
-      },
-      {
-        "ticker": "CRWV",
-        "mentions": 4,
-        "sentiment_score": 0.723,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
-        "counts": {
-          "bullish": 4,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 4
+          "neutral": 3,
+          "total": 9
         }
       },
       {
@@ -268,6 +255,19 @@
           "neutral": 1,
           "total": 4
         }
+      },
+      {
+        "ticker": "CRWV",
+        "mentions": 3,
+        "sentiment_score": 0.747,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 75,
+        "counts": {
+          "bullish": 3,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 3
+        }
       }
     ],
     "other": [
@@ -290,19 +290,6 @@
         "sentiment_score": 0.773,
         "sentiment_label": "Bullish",
         "sentiment_pct": 77,
-        "counts": {
-          "bullish": 3,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 3
-        }
-      },
-      {
-        "ticker": "ORCL",
-        "mentions": 3,
-        "sentiment_score": 0.723,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 72,
         "counts": {
           "bullish": 3,
           "bearish": 0,
@@ -334,6 +321,19 @@
           "bearish": 1,
           "neutral": 2,
           "total": 3
+        }
+      },
+      {
+        "ticker": "WMT",
+        "mentions": 2,
+        "sentiment_score": 0.785,
+        "sentiment_label": "Bullish",
+        "sentiment_pct": 79,
+        "counts": {
+          "bullish": 2,
+          "bearish": 0,
+          "neutral": 0,
+          "total": 2
         }
       }
     ]
