@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-01-14T11:42:10.162Z",
+  "timestamp": "2026-01-14T12:24:43.792Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
     "confidence_pct": 73,
     "sources": {
       "social": {
-        "bullish": 476,
-        "bearish": 168,
-        "neutral": 500,
-        "total": 1144,
-        "pct": 42
+        "bullish": 480,
+        "bearish": 169,
+        "neutral": 508,
+        "total": 1157,
+        "pct": 41
       },
       "news": {
-        "bullish": 58,
-        "bearish": 29,
-        "neutral": 20,
-        "total": 107,
-        "pct": 54
+        "bullish": 60,
+        "bearish": 27,
+        "neutral": 21,
+        "total": 108,
+        "pct": 56
       },
       "video": {
         "bullish": 3,
         "bearish": 3,
-        "neutral": 5,
-        "total": 11,
-        "pct": 27
+        "neutral": 4,
+        "total": 10,
+        "pct": 30
       },
       "chat": {
         "bullish": 0,
@@ -36,51 +36,51 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Bullish with medium conviction - technical momentum and pro-crypto regulatory tailwinds support near-term upside, but structural concerns around retail participation collapse and geopolitical risks temper confidence. Market exhibiting narrow leadership (tech/crypto) while traditional sectors lag.\n\n📈 **Themes:** (1) Cryptocurrency regulatory clarity as structural inflection point - institutional adoption accelerating despite retail outflows; (2) Technology sector momentum concentrated in mega-caps and AI-related names amid narrow breadth; (3) Systematic volatility containment (VIX ~17) enabling technical strategies while masking underlying participation deterioration.\n\n🎯 **Levels:** SPY ($693.77): Call Wall $700 (44k OI - ACTIVE resistance 0.9% away), Put Wall $630 (149k OI). Max Pain $694. Near support: $680 (119k OI - ACTIVE). QQQ ($626.24): Call Wall $627 (57k OI - ACTIVE immediate resistance), Put Wall $574.78 (116k OI). Max Pain $625. Near resistance: $641 (56k OI), $650 (42k OI). Bitcoin levels per Twitter: $93,500 support with $97,100 short liquidation trigger.",
+    "narrative": "📊 **Consensus:** Bullish with medium conviction - institutional flows and technical support holding despite elevated structural risks and breadth concerns.\n\n📈 **Themes:** (1) Crypto institutional adoption momentum with regulatory clarity tailwinds, (2) AI sector strength and infrastructure buildout, (3) Low volatility masking underlying leverage and participation concerns.\n\n🎯 **Levels:** SPY ($693.77): Call Wall $705 (45k OI, active), Put Wall $680 (143k OI, active). Max Pain $693. Near resistance: $730 (47k OI). QQQ ($626.24): Call Wall $641 (56k OI, active), Put Wall $610 (80k OI, active). Max Pain $626. Near resistance: $650 (42k OI). /ES: 6847 support per Twitter analysis.",
     "key_tickers": [
       "SPY",
       "QQQ",
       "BTC",
-      "NVDA",
-      "JPM"
+      "ETH",
+      "BABA"
     ],
     "key_themes": [
-      "Pro-crypto regulatory momentum and institutional adoption",
-      "Technology/AI sector concentration with narrow market breadth",
-      "Volatility regime stability enabling systematic strategies",
-      "Retail participation deterioration despite price strength",
-      "Geopolitical and supply chain disruption risks"
+      "Crypto institutional adoption and regulatory clarity",
+      "AI infrastructure monetization",
+      "Low volatility regime with hidden leverage concerns",
+      "Fed rate policy expectations",
+      "Market breadth deterioration warnings"
     ],
     "risk_factors": [
-      "Government shutdown deadline creating late-January political uncertainty",
-      "Banking sector supervisory tightening and credit spread pressures",
-      "Retail participation collapse signaling momentum without breadth",
-      "Geopolitical trade/tariff tensions threatening semiconductor supply chains",
-      "Crypto exchange security vulnerabilities and liquidity stress indicators ($12.6T repo exposure)"
+      "$12.6T repo exposure at all-time highs signaling structural leverage",
+      "Retail participation collapse potential in crypto markets",
+      "Founder liquidation cascades from tax implementation pressures",
+      "29% government shutdown probability creating binary event risk",
+      "Breadth weakness despite headline strength in select sectors"
     ],
-    "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $700 immediate resistance (44k OI Call Wall), $680 support (119k OI). QQQ: $627 active resistance (57k OI Call Wall at Max Pain), $610 support (82k OI)",
+    "intraday_bias": "BULLISH",
+    "intraday_levels": "SPY $705 resistance (active call wall), $680 support (active put wall). QQQ $641 resistance (active call wall), $610 support. Watch VIX stability near 17 level.",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: $730 resistance (48k OI), $680 support zone holding, $694 Max Pain gravitational pull. QQQ: $641-$650 resistance band, $610 support. Bitcoin: $97,100 breakout target per Twitter, $93,500 key support",
+    "swing_levels": "SPY $730 upside target if momentum continues, $680 critical support retest level. QQQ $650 resistance zone, $610 support. BTC $97,100 breakout level vs $93,500 support per Twitter. Monitor Max Pain gravitational pull at SPY $693/QQQ $626.",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 169654
+    "generation_time_ms": 172305
   },
   "trending": {
     "macro": [
       {
         "ticker": "SPY",
-        "mentions": 14,
-        "sentiment_score": 0.009,
+        "mentions": 15,
+        "sentiment_score": 0.008,
         "sentiment_label": "Neutral",
         "sentiment_pct": 1,
         "counts": {
           "bullish": 2,
           "bearish": 3,
-          "neutral": 9,
-          "total": 14
+          "neutral": 10,
+          "total": 15
         }
       },
       {
@@ -193,15 +193,15 @@
     "ai": [
       {
         "ticker": "NVDA",
-        "mentions": 32,
-        "sentiment_score": 0.288,
+        "mentions": 33,
+        "sentiment_score": 0.279,
         "sentiment_label": "Bullish",
-        "sentiment_pct": 29,
+        "sentiment_pct": 28,
         "counts": {
           "bullish": 20,
           "bearish": 8,
-          "neutral": 4,
-          "total": 32
+          "neutral": 5,
+          "total": 33
         }
       },
       {
@@ -219,15 +219,15 @@
       },
       {
         "ticker": "GOOGL",
-        "mentions": 11,
-        "sentiment_score": 0.695,
+        "mentions": 12,
+        "sentiment_score": 0.702,
         "sentiment_label": "Bullish",
         "sentiment_pct": 70,
         "counts": {
-          "bullish": 10,
+          "bullish": 11,
           "bearish": 0,
           "neutral": 1,
-          "total": 11
+          "total": 12
         }
       },
       {
@@ -328,9 +328,9 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 17.23,
+    "vix": 17.02,
     "pc_ratio": 1,
-    "sentiment_bullish_pct": 42,
+    "sentiment_bullish_pct": 41,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
   "iv_opportunity": {
