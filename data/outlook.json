@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-16T18:01:54.224Z",
+  "timestamp": "2026-01-16T18:16:07.279Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -13,18 +13,18 @@
         "pct": 0
       },
       "news": {
-        "bullish": 1465,
+        "bullish": 1467,
         "bearish": 799,
         "neutral": 738,
-        "total": 3002,
+        "total": 3004,
         "pct": 49
       },
       "video": {
         "bullish": 5,
-        "bearish": 3,
+        "bearish": 4,
         "neutral": 1,
-        "total": 9,
-        "pct": 56
+        "total": 10,
+        "pct": 50
       },
       "chat": {
         "bullish": 0,
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bearish with medium conviction. Multiple sources identify near-term downside bias driven by policy uncertainty and structural macro headwinds, though secular growth narratives in AI/tech provide longer-term support.\n\n📈 **Themes:** (1) Policy-driven inflation concerns creating valuation constraints and real rate compression risk, (2) AI/robotics secular transformation competing against immediate macro friction, (3) Defensive rotation and quality selectivity replacing momentum chasing as institutional capital becomes more tactical.\n\n🎯 **Levels:** SPY ($692.27): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $685. Near resistance: $700 (52k OI, active), $730 (48k OI, dormant). Near support: $680 (125k OI, active), $640 (101k OI, dormant). QQQ ($621.00): Call Wall $641 (56k OI, active hedging), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Near resistance: $627 (54k OI, active), $625 (41k OI, active). Near support: $590 (80k OI, active).",
+    "narrative": "📊 **Consensus:** Neutral-to-bearish with medium conviction. Sources identify structural headwinds materializing now (regulatory tightening, technical breakdowns, consumer weakness) offsetting longer-term bullish catalysts (AI infrastructure, institutional adoption) that remain unconfirmed.\n\n📈 **Themes:** (1) AI infrastructure momentum versus technical deterioration in mega-cap tech, (2) Regulatory uncertainty across crypto/fintech and Fed policy evolution, (3) Consumer demand softening versus institutional positioning for sectoral rotation.\n\n🎯 **Levels:** SPY ($692.44): Call Wall $750 (56k OI), Put Wall $630 (149k OI). Max Pain $685. Active resistance: $700 (52k OI), active support: $680 (125k OI). QQQ ($621.15): Call Wall $641 (56k OI), Put Wall $574.78 (116k OI). Max Pain $618. Active resistance: $627 (54k OI), $625 (41k OI). VIX: 15.66 suggests moderate complacency.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "JPM",
       "TSLA",
-      "SBUX"
+      "NVDA",
+      "BTC"
     ],
     "key_themes": [
-      "Policy inflation constraints and real rate compression",
-      "AI/robotics secular transformation vs immediate macro friction",
-      "Defensive rotation and quality selectivity",
-      "Regulatory enforcement pressures",
-      "Banking sector stress signals"
+      "AI infrastructure buildout versus mega-cap technical deterioration",
+      "Regulatory uncertainty (crypto adoption, Fed supervisory changes, semiconductor controls)",
+      "Consumer demand weakness and margin compression risks",
+      "Institutional positioning for sectoral rotation (biotech, financials, defensives)",
+      "Real rate repricing versus policy accommodation expectations"
     ],
     "risk_factors": [
-      "Fed/Treasury policy uncertainty creating valuation headwinds",
-      "Regulatory enforcement actions against crypto and capital requirements for banks",
-      "Geopolitical trade tensions and semiconductor export controls",
-      "Momentum exhaustion in speculative positioning",
-      "Credit spread widening and duration demand shifts"
+      "Technical breakdowns in mega-cap growth confirming broader market deterioration rather than consolidation",
+      "Regulatory tightening velocity (enforcement actions, margin adjustments) outpacing pro-growth policy implementation",
+      "Inflation pressures materializing from policy shifts (credit card caps, MBS purchases) pressuring valuations",
+      "Counterparty stability risks (exchange failures, custody vulnerabilities) triggering systemic contagion",
+      "Consumer spending weakness spreading beyond current pockets (Starbucks operational stress, housing market softness)"
     ],
-    "intraday_bias": "BEARISH",
-    "intraday_levels": "SPY: $680 support (125k OI active), $700 resistance (52k OI active). QQQ: $618 Max Pain gravitational pull, $625-$627 resistance zone (95k combined OI)",
+    "intraday_bias": "NEUTRAL",
+    "intraday_levels": "SPY: $680 support (125k OI active), $700 resistance (52k OI active). QQQ: $618 Max Pain gravitational pull, $625-$627 resistance cluster (active hedging).",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: $685 Max Pain target, $680 key support, breakdown toward $640 (101k OI) if support fails. QQQ: $618 Max Pain, $590 support if weakness extends, $641 Call Wall major resistance",
-    "source_alignment": "ALIGNED"
+    "swing_levels": "SPY: Downside to $680 then $685 Max Pain area, breakdown below $680 targets $640 (101k OI dormant support). QQQ: Testing $641 Call Wall (56k OI), failure opens $618-$610 zone. Upside capped until technical patterns resolve.",
+    "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 123997
+    "generation_time_ms": 142539
   },
   "trending": {
     "macro": [],
@@ -77,8 +77,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.71,
-    "pc_ratio": 0.99,
+    "vix": 15.66,
+    "pc_ratio": 1,
     "sentiment_bullish_pct": 0,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -87,7 +87,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 7.94,
-    "spread": 5.87,
+    "spread": 6.03,
     "position": 50
   },
   "action": {

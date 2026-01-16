@@ -582,7 +582,90 @@
             animation: slideOut 0.3s ease;
         }
 
+        /* Codex Notice Modal */
+        .codex-notice-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 6, 18, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
+        .codex-notice-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .codex-notice-box {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 2px solid var(--accent);
+            border-radius: 16px;
+            padding: 2.5rem;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3), 0 0 100px rgba(212, 175, 55, 0.1);
+            transform: scale(0.9);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            text-align: center;
+        }
+
+        .codex-notice-overlay.active .codex-notice-box {
+            transform: scale(1);
+        }
+
+        .codex-notice-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 20px var(--accent-glow));
+        }
+
+        .codex-notice-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .codex-notice-message {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .codex-notice-btn {
+            background: var(--accent);
+            color: var(--bg-primary);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .codex-notice-btn:hover {
+            background: var(--accent-dim);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(212, 175, 55, 0.6);
+        }
 
         /* Empty State */
         .empty-state {
@@ -851,6 +934,18 @@
         <line x1="169" y1="60" x2="31" y2="140" stroke="#d4af37" stroke-width="0.5" opacity="0.7"></line>
     </svg>
 
+    <!-- Codex Notice Modal -->
+    <div class="codex-notice-overlay" id="codexNoticeOverlay" onclick="if(event.target === this) closeCodexNotice();">
+        <div class="codex-notice-box">
+            <div class="codex-notice-icon">🔮</div>
+            <h2 class="codex-notice-title">The Codex — Temporarily Unavailable</h2>
+            <p class="codex-notice-message">
+                The Codex dashboard is currently down due to refactoring for X/Twitter API changes. We're working to bring it back soon with enhanced capabilities.
+            </p>
+            <button class="codex-notice-btn" onclick="closeCodexNotice()">Understood</button>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav>
         <a href="index.html" class="logo">
@@ -887,7 +982,7 @@
             <li><a href="index.html#products">Products</a></li>
             <li><a href="research.html" class="active">Research</a></li>
         </ul>
-        <a href="#" class="nav-cta" data-dashboard-link="">Launch Dashboard →</a>
+        <a href="#" class="nav-cta" style="opacity: 0.5; cursor: not-allowed; position: relative;" onclick="event.preventDefault(); showCodexNotice();" title="Temporarily unavailable - X API refactoring in progress">Launch Dashboard → <span style="font-size: 0.75em; opacity: 0.7;">(Temporarily Down)</span></a>
     </nav>
 
     <!-- Page Header -->
@@ -1571,7 +1666,7 @@
                 <span class="footer-text">Scout Market Intelligence</span>
             </div>
             <div class="footer-links">
-                <a href="#" data-dashboard-link="">Dashboard</a>
+                <a href="#" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="event.preventDefault(); showCodexNotice();" title="Temporarily unavailable - X API refactoring in progress">Dashboard (Down)</a>
                 <a href="index.html">Home</a>
                 <a href="https://github.com" target="_blank">GitHub</a>
             </div>
@@ -1677,10 +1772,29 @@
             }
         });
 
-        // Open Dashboard in Modal
+        // Open Dashboard in Modal (temporarily disabled)
         function openDashboardModal() {
-            openModalWith(DASHBOARD_URL, 'The Codex');
+            showCodexNotice();
         }
+
+        // Show/Close Codex Notice
+        function showCodexNotice() {
+            const overlay = document.getElementById('codexNoticeOverlay');
+            overlay.classList.add('active');
+        }
+
+        function closeCodexNotice() {
+            const overlay = document.getElementById('codexNoticeOverlay');
+            overlay.classList.remove('active');
+        }
+
+        // Close Codex notice on Escape key
+        document.addEventListener('keydown', (e) => {
+            const codexOverlay = document.getElementById('codexNoticeOverlay');
+            if (e.key === 'Escape' && codexOverlay && codexOverlay.classList.contains('active')) {
+                closeCodexNotice();
+            }
+        });
 
         // --- Share Link Functionality ---
         function showToast(message) {
