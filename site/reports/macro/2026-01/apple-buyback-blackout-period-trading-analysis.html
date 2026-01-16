@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Apple Buyback Blackout Period Trading Analysis" />
+  <meta property="og:description" content="14 years of data reveals a time-dependent pattern in AAPL&#039;s largest-in-history buyback program. The weakness is front-loaded—and the trade has flipped." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/macro/2026-01/apple-buyback-blackout-period-trading-analysis.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/apple-buyback-blackout-period-trading-analysis-1768586733193.jpg" />
+  <meta property="article:published_time" content="2026-01-16" />
+  <meta property="article:section" content="macro" />
+  <meta property="article:tag" content="$AAPL" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apple Buyback Blackout Period Trading Analysis" />
+  <meta name="twitter:description" content="14 years of data reveals a time-dependent pattern in AAPL&#039;s largest-in-history buyback program. The weakness is front-loaded—and the trade has flipped." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/apple-buyback-blackout-period-trading-analysis-1768586733193.jpg" />
+    <title>AAPL Buyback Blackout Analysis | Meatball Labs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0b0f;
+            --bg-secondary: #12131a;
+            --bg-card: #181920;
+            --bg-elevated: #1e1f28;
+            --border-subtle: rgba(255,255,255,0.06);
+            --border-accent: rgba(255,255,255,0.12);
+            --text-primary: #f0f2f5;
+            --text-secondary: #8b8fa3;
+            --text-muted: #5c6070;
+            --accent-green: #00d4a1;
+            --accent-green-dim: rgba(0,212,161,0.15);
+            --accent-red: #ff4757;
+            --accent-red-dim: rgba(255,71,87,0.15);
+            --accent-amber: #ffb347;
+            --accent-amber-dim: rgba(255,179,71,0.15);
+            --accent-blue: #4da6ff;
+            --accent-blue-dim: rgba(77,166,255,0.15);
+            --glow-green: 0 0 30px rgba(0,212,161,0.3);
+            --glow-red: 0 0 30px rgba(255,71,87,0.3);
+            --glow-amber: 0 0 30px rgba(255,179,71,0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Animated Background Grid */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10,11,15,0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-subtle);
+            z-index: 1000;
+            padding: 0 2rem;
+        }
+
+        .nav-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-brand-icon {
+            width: 60px;
+            height: 52px;
+            position: relative;
+        }
+
+        .pyramid-logo {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pyramid-logo .pyramid-shape {
+            fill: #0d0e12;
+            stroke: url(#goldGradient);
+            stroke-width: 1.5;
+        }
+
+        .pyramid-logo .eye-outer {
+            fill: none;
+            stroke: #c9a227;
+            stroke-width: 1.5;
+        }
+
+        .pyramid-logo .eye-white {
+            fill: #1a1a2e;
+        }
+
+        .pyramid-logo .iris {
+            fill: #1e90ff;
+            animation: irisMove 3s ease-in-out infinite;
+        }
+
+        .pyramid-logo .pupil {
+            fill: #0a0a14;
+            animation: irisMove 3s ease-in-out infinite;
+        }
+
+        @keyframes irisMove {
+            0%, 100% { transform: translateX(-2px); }
+            50% { transform: translateX(2px); }
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-link {
+            padding: 8px 16px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+            background: var(--bg-elevated);
+        }
+
+        .nav-link.active {
+            color: var(--accent-green);
+            background: var(--accent-green-dim);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 100px 2rem 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-accent);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            width: fit-content;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.6s ease-out 0.1s backwards;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin-bottom: 48px;
+            animation: fadeInUp 0.6s ease-out 0.2s backwards;
+        }
+
+        /* Key Metrics Row */
+        .metrics-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 48px;
+            animation: fadeInUp 0.6s ease-out 0.3s backwards;
+        }
+
+        .metric-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .metric-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+
+        .metric-value.positive { color: var(--accent-green); }
+        .metric-value.negative { color: var(--accent-red); }
+        .metric-value.amber { color: var(--accent-amber); }
+        .metric-value.blue { color: var(--accent-blue); }
+
+        .metric-subtext {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Timeline Visualization */
+        .timeline-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            animation: fadeInUp 0.6s ease-out 0.4s backwards;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+
+        .timeline-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .timeline-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-amber-dim);
+            color: var(--accent-amber);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .timeline-track {
+            position: relative;
+            height: 60px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .timeline-progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-red), var(--accent-amber), var(--accent-green));
+            border-radius: 8px;
+            transition: width 1.5s ease-out;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .timeline-marker-line {
+            width: 2px;
+            height: 40px;
+            background: var(--text-primary);
+        }
+
+        .timeline-marker-dot {
+            width: 12px;
+            height: 12px;
+            background: var(--text-primary);
+            border-radius: 50%;
+            box-shadow: var(--glow-amber);
+        }
+
+        .timeline-labels {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 4px;
+        }
+
+        .timeline-label {
+            text-align: center;
+            flex: 1;
+        }
+
+        .timeline-label-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .timeline-label-desc {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        /* Sections */
+        section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+        }
+
+        .section-header {
+            margin-bottom: 48px;
+        }
+
+        .section-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-green);
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .card-icon.green { background: var(--accent-green-dim); color: var(--accent-green); }
+        .card-icon.red { background: var(--accent-red-dim); color: var(--accent-red); }
+        .card-icon.amber { background: var(--accent-amber-dim); color: var(--accent-amber); }
+        .card-icon.blue { background: var(--accent-blue-dim); color: var(--accent-blue); }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* Data Tables */
+        .data-table-wrapper {
+            overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .data-table th {
+            background: var(--bg-elevated);
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .data-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-subtle);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:hover {
+            background: rgba(255,255,255,0.02);
+        }
+
+        .data-table .positive { color: var(--accent-green); }
+        .data-table .negative { color: var(--accent-red); }
+
+        /* Chart Container */
+        .chart-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        .chart-wrapper.tall {
+            height: 400px;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .chart-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .chart-legend {
+            display: flex;
+            gap: 16px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+        }
+
+        /* Recommendation Box */
+        .recommendation-box {
+            background: linear-gradient(135deg, rgba(0,212,161,0.1), rgba(77,166,255,0.1));
+            border: 2px solid var(--accent-green);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 48px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recommendation-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(0,212,161,0.1) 0%, transparent 50%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .recommendation-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .recommendation-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-green);
+            color: var(--bg-primary);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .recommendation-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .recommendation-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .rec-detail {
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .rec-detail-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .rec-detail-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        /* Phase Bars */
+        .phase-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .phase-indicator {
+            width: 4px;
+            height: 40px;
+            border-radius: 2px;
+        }
+
+        .phase-indicator.weakness { background: var(--accent-red); }
+        .phase-indicator.transition { background: var(--accent-amber); }
+        .phase-indicator.strength { background: var(--accent-green); }
+
+        .phase-content { flex: 1; }
+
+        .phase-name {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .phase-timing {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .phase-stats {
+            text-align: right;
+        }
+
+        .phase-return {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .phase-winrate {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-subtle);
+            padding: 48px 2rem;
+            margin-top: 80px;
+        }
+
+        .footer-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-brand {
+            font-weight: 600;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        /* Scroll animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .metrics-row { grid-template-columns: 1fr 1fr; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .recommendation-box { padding: 24px; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <div class="nav-brand-icon">
+                    <svg class="pyramid-logo" viewBox="0 0 60 52" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#d4af37"/>
+                                <stop offset="50%" style="stop-color:#c9a227"/>
+                                <stop offset="100%" style="stop-color:#b8962e"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Pyramid -->
+                        <polygon class="pyramid-shape" points="30,2 58,50 2,50"/>
+                        <!-- Eye ellipse outline -->
+                        <ellipse class="eye-outer" cx="30" cy="30" rx="14" ry="8"/>
+                        <!-- Eye white -->
+                        <ellipse class="eye-white" cx="30" cy="30" rx="13" ry="7"/>
+                        <!-- Iris (animated) -->
+                        <circle class="iris" cx="30" cy="30" r="5"/>
+                        <!-- Pupil (animated) -->
+                        <circle class="pupil" cx="30" cy="30" r="2"/>
+                    </svg>
+                </div>
+                Meatball Labs Research
+            </div>
+            <div class="nav-links">
+                <a href="#overview" class="nav-link active">Overview</a>
+                <a href="#thesis" class="nav-link">Thesis</a>
+                <a href="#timing" class="nav-link">Timing</a>
+                <a href="#january" class="nav-link">January Deep Dive</a>
+                <a href="#trade" class="nav-link">Trade Setup</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <!-- Hero Section -->
+        <section class="hero" id="overview">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <span class="mono">LIVE ANALYSIS • UPDATED JAN 16, 2026</span>
+            </div>
+            
+            <h1>Apple Buyback<br><span class="highlight">Blackout Period</span><br>Trading Analysis</h1>
+            
+            <p class="hero-subtitle">
+                14 years of data reveals a time-dependent pattern in AAPL's largest-in-history buyback program. 
+                The weakness is front-loaded—and the trade has flipped.
+            </p>
+
+            <div class="metrics-row">
+                <div class="metric-card">
+                    <div class="metric-label">Current Excess Return</div>
+                    <div class="metric-value negative">-5.84%</div>
+                    <div class="metric-subtext">2.9x worse than average</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Blackout Progress</div>
+                    <div class="metric-value blue">63%</div>
+                    <div class="metric-subtext">Day 22 of 35</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Expected Remaining</div>
+                    <div class="metric-value positive">+3.74%</div>
+                    <div class="metric-subtext">Late blackout + recovery</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Historical Win Rate</div>
+                    <div class="metric-value amber">77%</div>
+                    <div class="metric-subtext">Late phase + 15-day post</div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <div class="timeline-header">
+                    <div>
+                        <div class="timeline-title">January 2026 Blackout Timeline</div>
+                        <div style="color: var(--text-secondary); font-size: 0.9rem;">Earnings: January 29, 2026</div>
+                    </div>
+                    <div class="timeline-status">
+                        <span>●</span> Mid Blackout Phase
+                    </div>
+                </div>
+                
+                <div class="timeline-track">
+                    <div class="timeline-progress" id="timeline-progress"></div>
+                    <div class="timeline-marker" style="left: 63%;">
+                        <div class="timeline-marker-dot"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-labels">
+                    <div class="timeline-label">
+                        <div class="timeline-label-date" style="color: var(--accent-red);">Dec 25</div>
+                        <div class="timeline-label-desc">Blackout Start</div>
+                    </div>
+                    <div class="timeline-label">
+                        <div class="timeline-label-date">Jan 8</div>
+                        <div class="timeline-label-desc">Day 14</div>
+                    </div>
+                    <div class="timeline-label">
+                        <div class="timeline-label-date" style="color: var(--accent-amber);">Jan 16</div>
+                        <div class="timeline-label-desc">TODAY</div>
+                    </div>
+                    <div class="timeline-label">
+                        <div class="timeline-label-date">Jan 22</div>
+                        <div class="timeline-label-desc">Late Phase</div>
+                    </div>
+                    <div class="timeline-label">
+                        <div class="timeline-label-date" style="color: var(--accent-blue);">Jan 29</div>
+                        <div class="timeline-label-desc">Earnings</div>
+                    </div>
+                    <div class="timeline-label">
+                        <div class="timeline-label-date" style="color: var(--accent-green);">Feb 14</div>
+                        <div class="timeline-label-desc">Optimal Exit</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thesis Section -->
+        <section id="thesis" class="animate-on-scroll">
+            <div class="section-header">
+                <div class="section-number">01 — THE THESIS</div>
+                <h2 class="section-title">Why Blackout Periods Matter</h2>
+                <p class="section-subtitle">Apple operates the largest buyback program in corporate history, creating predictable supply/demand dynamics.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon blue">$</div>
+                        <div class="card-title">FY2025 Buybacks</div>
+                    </div>
+                    <div class="metric-value blue" style="font-size: 2.5rem; margin-bottom: 8px;">$90.7B</div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Approximately $20-25B per quarter, accounting for >10% of all S&P 500 buybacks</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon amber">📅</div>
+                        <div class="card-title">Blackout Duration</div>
+                    </div>
+                    <div class="metric-value amber" style="font-size: 2.5rem; margin-bottom: 8px;">35 Days</div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">5 weeks before earnings when Apple cannot repurchase shares (~25 trading days)</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon green">📊</div>
+                        <div class="card-title">Cumulative Since 2012</div>
+                    </div>
+                    <div class="metric-value green" style="font-size: 2.5rem; margin-bottom: 8px;">$650B+</div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Maximum daily buyback under Rule 10b-18: ~10.5M shares (~$2.7B)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timing Analysis Section -->
+        <section id="timing" class="animate-on-scroll">
+            <div class="section-header">
+                <div class="section-number">02 — KEY FINDING</div>
+                <h2 class="section-title">The Pattern Is Front-Loaded</h2>
+                <p class="section-subtitle">Weakness concentrates in early blackout. The trade REVERSES in the final week.</p>
+            </div>
+
+            <div class="phase-bar">
+                <div class="phase-indicator weakness"></div>
+                <div class="phase-content">
+                    <div class="phase-name">Early Blackout</div>
+                    <div class="phase-timing">Days 1-14 • Dec 25 - Jan 8</div>
+                </div>
+                <div class="phase-stats">
+                    <div class="phase-return negative">-1.99%</div>
+                    <div class="phase-winrate">23% win rate</div>
+                </div>
+            </div>
+
+            <div class="phase-bar">
+                <div class="phase-indicator transition"></div>
+                <div class="phase-content">
+                    <div class="phase-name">Mid Blackout</div>
+                    <div class="phase-timing">Days 15-28 • Jan 8 - Jan 22</div>
+                </div>
+                <div class="phase-stats">
+                    <div class="phase-return negative">-0.82%</div>
+                    <div class="phase-winrate">62% win rate</div>
+                </div>
+            </div>
+
+            <div class="phase-bar">
+                <div class="phase-indicator strength"></div>
+                <div class="phase-content">
+                    <div class="phase-name">Late Blackout</div>
+                    <div class="phase-timing">Days 29-35 • Jan 22 - Jan 29</div>
+                </div>
+                <div class="phase-stats">
+                    <div class="phase-return positive">+1.79%</div>
+                    <div class="phase-winrate">77% win rate</div>
+                </div>
+            </div>
+
+            <div class="phase-bar">
+                <div class="phase-indicator strength"></div>
+                <div class="phase-content">
+                    <div class="phase-name">Post-Earnings (15-day)</div>
+                    <div class="phase-timing">Days 36-50 • Jan 29 - Feb 14</div>
+                </div>
+                <div class="phase-stats">
+                    <div class="phase-return positive">+1.95%</div>
+                    <div class="phase-winrate">77% win rate</div>
+                </div>
+            </div>
+
+            <div class="chart-container" style="margin-top: 32px;">
+                <div class="chart-header">
+                    <div>
+                        <div class="chart-title">Intra-Blackout Cumulative Excess Return</div>
+                        <div class="chart-subtitle">January cycles average performance by day</div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="legend-dot" style="background: var(--accent-blue);"></div>
+                            Average
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot" style="background: rgba(255,255,255,0.2);"></div>
+                            Range
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="timingChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- January Deep Dive -->
+        <section id="january" class="animate-on-scroll">
+            <div class="section-header">
+                <div class="section-number">03 — JANUARY DEEP DIVE</div>
+                <h2 class="section-title">14 Years of January Cycles</h2>
+                <p class="section-subtitle">January shows the most consistent underperformance—but the current cycle has already exceeded historical weakness.</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div>
+                        <div class="chart-title">January Excess Returns (2013-2026)</div>
+                        <div class="chart-subtitle">AAPL return minus SPY return during blackout period</div>
+                    </div>
+                </div>
+                <div class="chart-wrapper tall">
+                    <canvas id="januaryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="cards-grid" style="margin-top: 32px;">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon red">⚠️</div>
+                        <div class="card-title">Regime Analysis</div>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.9rem;">
+                        Underperformance is concentrated when AAPL enters blackout already weak.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; padding: 12px; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 8px;">
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">Below 50-day MA</span>
+                        <span class="mono negative">-4.64% avg</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 8px;">
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">>10% off highs</span>
+                        <span class="mono negative">-4.64% avg</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px; background: var(--bg-secondary); border-radius: 8px;">
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">Strong regime</span>
+                        <span class="mono" style="color: var(--text-primary);">-0.32% avg</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon amber">📍</div>
+                        <div class="card-title">Current Position</div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 8px;">
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">Current Price</span>
+                        <span class="mono">~$229</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 8px;">
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">52-Week High</span>
+                        <span class="mono">$260.10</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 8px;">
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">Distance from High</span>
+                        <span class="mono negative">-12.0%</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px; background: var(--bg-secondary); border-radius: 8px;">
+                        <span style="color: var(--text-secondary); font-size: 0.85rem;">50-Day MA Status</span>
+                        <span class="mono negative">BELOW</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-table-wrapper" style="margin-top: 32px;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Earnings</th>
+                            <th>AAPL Return</th>
+                            <th>SPY Return</th>
+                            <th>Excess Return</th>
+                            <th>Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: rgba(255,179,71,0.1);">
+                            <td style="font-weight: 600;">2026</td>
+                            <td>Jan 29</td>
+                            <td class="negative">-5.56%</td>
+                            <td>+0.28%</td>
+                            <td class="negative">-5.84%</td>
+                            <td><span style="color: var(--accent-amber);">● IN PROGRESS</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>Jan 30</td>
+                            <td class="negative">-8.89%</td>
+                            <td>+0.08%</td>
+                            <td class="negative">-8.97%</td>
+                            <td class="negative">UNDERPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Feb 01</td>
+                            <td class="negative">-3.99%</td>
+                            <td>+3.70%</td>
+                            <td class="negative">-7.70%</td>
+                            <td class="negative">UNDERPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Feb 02</td>
+                            <td class="positive">+19.20%</td>
+                            <td>+7.54%</td>
+                            <td class="positive">+11.66%</td>
+                            <td class="positive">OUTPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Jan 27</td>
+                            <td class="negative">-3.38%</td>
+                            <td class="negative">-6.09%</td>
+                            <td class="positive">+2.71%</td>
+                            <td class="positive">OUTPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Jan 27</td>
+                            <td class="positive">+0.76%</td>
+                            <td>+0.68%</td>
+                            <td>+0.08%</td>
+                            <td>FLAT</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Jan 28</td>
+                            <td class="positive">+13.93%</td>
+                            <td>+2.01%</td>
+                            <td class="positive">+11.92%</td>
+                            <td class="positive">OUTPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>Jan 29</td>
+                            <td class="positive">+5.90%</td>
+                            <td>+9.65%</td>
+                            <td class="negative">-3.75%</td>
+                            <td class="negative">UNDERPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>Feb 01</td>
+                            <td class="negative">-6.18%</td>
+                            <td>+2.83%</td>
+                            <td class="negative">-9.01%</td>
+                            <td class="negative">UNDERPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2017</td>
+                            <td>Jan 31</td>
+                            <td class="positive">+9.61%</td>
+                            <td>+0.66%</td>
+                            <td class="positive">+8.95%</td>
+                            <td class="positive">OUTPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2016</td>
+                            <td>Jan 26</td>
+                            <td class="negative">-12.25%</td>
+                            <td class="negative">-7.07%</td>
+                            <td class="negative">-5.18%</td>
+                            <td class="negative">UNDERPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>Jan 27</td>
+                            <td class="positive">+5.65%</td>
+                            <td class="negative">-2.77%</td>
+                            <td class="positive">+8.42%</td>
+                            <td class="positive">OUTPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2014</td>
+                            <td>Jan 27</td>
+                            <td class="negative">-12.16%</td>
+                            <td class="negative">-2.84%</td>
+                            <td class="negative">-9.33%</td>
+                            <td class="negative">UNDERPERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>Jan 23</td>
+                            <td class="negative">-16.42%</td>
+                            <td>+4.87%</td>
+                            <td class="negative">-21.29%</td>
+                            <td class="negative">UNDERPERFORM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Post-Earnings Recovery -->
+        <section class="animate-on-scroll">
+            <div class="section-header">
+                <div class="section-number">04 — POST-EARNINGS</div>
+                <h2 class="section-title">Recovery Analysis</h2>
+                <p class="section-subtitle">Performance after January earnings when buybacks resume—15 days is the optimal holding period.</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div>
+                        <div class="chart-title">Post-Earnings Cumulative Excess Return</div>
+                        <div class="chart-subtitle">AAPL vs SPY performance after January earnings</div>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="recoveryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="data-table-wrapper" style="margin-top: 24px;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Window</th>
+                            <th>Avg Excess Return</th>
+                            <th>Win Rate</th>
+                            <th>Assessment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2-Day</td>
+                            <td class="positive">+0.80%</td>
+                            <td>53.8%</td>
+                            <td style="color: var(--text-muted);">Too short</td>
+                        </tr>
+                        <tr>
+                            <td>5-Day</td>
+                            <td class="positive">+0.79%</td>
+                            <td>61.5%</td>
+                            <td style="color: var(--text-muted);">Building</td>
+                        </tr>
+                        <tr>
+                            <td>10-Day</td>
+                            <td class="positive">+1.24%</td>
+                            <td>69.2%</td>
+                            <td style="color: var(--accent-amber);">Good</td>
+                        </tr>
+                        <tr style="background: rgba(0,212,161,0.1);">
+                            <td style="font-weight: 600;">15-Day ★</td>
+                            <td class="positive" style="font-weight: 600;">+1.95%</td>
+                            <td style="font-weight: 600;">76.9%</td>
+                            <td style="color: var(--accent-green); font-weight: 600;">OPTIMAL</td>
+                        </tr>
+                        <tr>
+                            <td>20-Day</td>
+                            <td class="positive">+1.40%</td>
+                            <td>69.2%</td>
+                            <td style="color: var(--text-muted);">Fading</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Trade Recommendation -->
+        <section id="trade" class="animate-on-scroll">
+            <div class="section-header">
+                <div class="section-number">05 — TRADE SETUP</div>
+                <h2 class="section-title">Current Recommendation</h2>
+                <p class="section-subtitle">The thesis has inverted. The weakness has occurred—now it's time to position for strength.</p>
+            </div>
+
+            <div class="recommendation-box">
+                <div class="recommendation-content">
+                    <div class="recommendation-label">
+                        <span>▲</span> RECOMMENDED ACTION
+                    </div>
+                    <h3 class="recommendation-title">BUY AAPL (Jan 16-22) → SELL (Feb 14)</h3>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 700px;">
+                        The early blackout weakness has already occurred and exceeded historical averages. 
+                        Late blackout historically shows +1.79% excess return, plus +1.95% in the 15 days post-earnings.
+                    </p>
+                    
+                    <div class="recommendation-details">
+                        <div class="rec-detail">
+                            <div class="rec-detail-label">Entry Window</div>
+                            <div class="rec-detail-value" style="color: var(--accent-blue);">Jan 16-22</div>
+                        </div>
+                        <div class="rec-detail">
+                            <div class="rec-detail-label">Expected Return</div>
+                            <div class="rec-detail-value" style="color: var(--accent-green);">+3.74%</div>
+                        </div>
+                        <div class="rec-detail">
+                            <div class="rec-detail-label">Exit Target</div>
+                            <div class="rec-detail-value" style="color: var(--accent-amber);">Feb 14</div>
+                        </div>
+                        <div class="rec-detail">
+                            <div class="rec-detail-label">Stop Loss</div>
+                            <div class="rec-detail-value" style="color: var(--accent-red);">200-MA / -5%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon green">📈</div>
+                        <div class="card-title">Option A: Direct Long</div>
+                    </div>
+                    <div style="background: var(--bg-secondary); border-radius: 8px; padding: 16px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.8;">
+                        Entry: ~$229 (Jan 16-22)<br>
+                        Target: +3.74% (~$238)<br>
+                        Exit: February 14, 2026<br>
+                        Stop: Below $220 or -5%<br>
+                        <span style="color: var(--accent-green);">R/R: ~1:2</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon blue">⚖️</div>
+                        <div class="card-title">Option B: Pairs Trade</div>
+                    </div>
+                    <div style="background: var(--bg-secondary); border-radius: 8px; padding: 16px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.8;">
+                        Long: $10,000 AAPL<br>
+                        Short: $10,000 SPY<br>
+                        Expected: ~$374 profit<br>
+                        Exit: February 14, 2026<br>
+                        <span style="color: var(--accent-blue);">Market Neutral</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon amber">📋</div>
+                        <div class="card-title">Option C: Call Spread</div>
+                    </div>
+                    <div style="background: var(--bg-secondary); border-radius: 8px; padding: 16px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.8;">
+                        Buy: Feb 21 $225 Call<br>
+                        Sell: Feb 21 $240 Call<br>
+                        Max Loss: Premium paid<br>
+                        Max Gain: $15 - premium<br>
+                        <span style="color: var(--accent-amber);">Defined Risk</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Factors -->
+            <div class="chart-container" style="margin-top: 32px;">
+                <div class="chart-header">
+                    <div>
+                        <div class="chart-title">Risk Factors</div>
+                        <div class="chart-subtitle">Key considerations for this trade setup</div>
+                    </div>
+                </div>
+                <div class="data-table-wrapper" style="border: none;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Risk</th>
+                                <th>Probability</th>
+                                <th>Impact</th>
+                                <th>Mitigation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Earnings miss</td>
+                                <td style="color: var(--text-secondary);">Low</td>
+                                <td class="negative">High</td>
+                                <td>Use defined-risk options</td>
+                            </tr>
+                            <tr>
+                                <td>Weak guidance</td>
+                                <td style="color: var(--accent-amber);">Medium</td>
+                                <td class="negative">High</td>
+                                <td>Historical data includes misses</td>
+                            </tr>
+                            <tr>
+                                <td>China revenue decline</td>
+                                <td style="color: var(--accent-amber);">Medium</td>
+                                <td style="color: var(--accent-amber);">Medium</td>
+                                <td>Already reflected in drawdown</td>
+                            </tr>
+                            <tr>
+                                <td>Broader market selloff</td>
+                                <td style="color: var(--accent-amber);">Medium</td>
+                                <td class="negative">High</td>
+                                <td>Use pairs trade</td>
+                            </tr>
+                            <tr>
+                                <td>Pattern failure</td>
+                                <td style="color: var(--text-secondary);">Always possible</td>
+                                <td class="negative">High</td>
+                                <td>Small position, stop loss</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Monthly Performance Heatmap -->
+        <section class="animate-on-scroll">
+            <div class="section-header">
+                <div class="section-number">06 — SEASONALITY</div>
+                <h2 class="section-title">Performance by Month</h2>
+                <p class="section-subtitle">July shows statistically significant outperformance. January is the weakest month.</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div>
+                        <div class="chart-title">Excess Return by Earnings Month</div>
+                        <div class="chart-subtitle">Average AAPL excess return during blackout periods (2012-2026)</div>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="monthlyChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    Meatball Labs Research · January 2026
+                </div>
+                <div class="footer-disclaimer">
+                    This report is for informational purposes only and does not constitute financial advice. 
+                    Past performance does not guarantee future results. Always conduct your own research before making investment decisions.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Animate timeline progress on load
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.getElementById('timeline-progress').style.width = '63%';
+            }, 500);
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Chart.js Configuration
+        Chart.defaults.color = '#8b8fa3';
+        Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+        Chart.defaults.font.family = "'Instrument Sans', sans-serif";
+
+        // January Historical Chart
+        const januaryCtx = document.getElementById('januaryChart').getContext('2d');
+        const januaryData = [
+            { year: '2013', excess: -21.29 },
+            { year: '2014', excess: -9.33 },
+            { year: '2015', excess: 8.42 },
+            { year: '2016', excess: -5.18 },
+            { year: '2017', excess: 8.95 },
+            { year: '2018', excess: -9.01 },
+            { year: '2019', excess: -3.75 },
+            { year: '2020', excess: 11.92 },
+            { year: '2021', excess: 0.08 },
+            { year: '2022', excess: 2.71 },
+            { year: '2023', excess: 11.66 },
+            { year: '2024', excess: -7.70 },
+            { year: '2025', excess: -8.97 },
+            { year: '2026*', excess: -5.84 }
+        ];
+
+        new Chart(januaryCtx, {
+            type: 'bar',
+            data: {
+                labels: januaryData.map(d => d.year),
+                datasets: [{
+                    label: 'Excess Return',
+                    data: januaryData.map(d => d.excess),
+                    backgroundColor: januaryData.map(d => 
+                        d.year === '2026*' ? 'rgba(255,179,71,0.8)' :
+                        d.excess >= 0 ? 'rgba(0,212,161,0.8)' : 'rgba(255,71,87,0.8)'
+                    ),
+                    borderColor: januaryData.map(d => 
+                        d.year === '2026*' ? '#ffb347' :
+                        d.excess >= 0 ? '#00d4a1' : '#ff4757'
+                    ),
+                    borderWidth: 2,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1e1f28',
+                        titleColor: '#f0f2f5',
+                        bodyColor: '#8b8fa3',
+                        borderColor: 'rgba(255,255,255,0.1)',
+                        borderWidth: 1,
+                        padding: 12,
+                        displayColors: false,
+                        callbacks: {
+                            label: (ctx) => `Excess Return: ${ctx.parsed.y.toFixed(2)}%`
+                        }
+                    },
+                    annotation: {
+                        annotations: {
+                            avgLine: {
+                                type: 'line',
+                                yMin: -2.02,
+                                yMax: -2.02,
+                                borderColor: '#ffb347',
+                                borderWidth: 2,
+                                borderDash: [6, 6],
+                                label: {
+                                    display: true,
+                                    content: 'Avg: -2.02%',
+                                    position: 'end'
+                                }
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false }
+                    },
+                    y: {
+                        grid: { color: 'rgba(255,255,255,0.04)' },
+                        ticks: {
+                            callback: (value) => value + '%'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Timing Chart (Intra-blackout)
+        const timingCtx = document.getElementById('timingChart').getContext('2d');
+        const timingDays = Array.from({length: 35}, (_, i) => i + 1);
+        
+        // Simulated cumulative return data based on phase averages
+        const cumulativeData = timingDays.map(day => {
+            if (day <= 14) return -1.99 * (day / 14);
+            else if (day <= 28) return -1.99 - 0.82 * ((day - 14) / 14);
+            else return -2.81 + 1.79 * ((day - 28) / 7);
+        });
+
+        new Chart(timingCtx, {
+            type: 'line',
+            data: {
+                labels: timingDays,
+                datasets: [{
+                    label: 'Cumulative Excess Return',
+                    data: cumulativeData,
+                    borderColor: '#4da6ff',
+                    backgroundColor: 'rgba(77,166,255,0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 0,
+                    pointHoverRadius: 6,
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1e1f28',
+                        titleColor: '#f0f2f5',
+                        bodyColor: '#8b8fa3',
+                        borderColor: 'rgba(255,255,255,0.1)',
+                        borderWidth: 1,
+                        padding: 12,
+                        callbacks: {
+                            title: (ctx) => `Day ${ctx[0].label}`,
+                            label: (ctx) => `Cumulative: ${ctx.parsed.y.toFixed(2)}%`
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Blackout Day', color: '#5c6070' },
+                        grid: { display: false },
+                        ticks: {
+                            callback: (value, index) => {
+                                if ([0, 13, 21, 27, 34].includes(index)) return index + 1;
+                                return '';
+                            }
+                        }
+                    },
+                    y: {
+                        title: { display: true, text: 'Excess Return (%)', color: '#5c6070' },
+                        grid: { color: 'rgba(255,255,255,0.04)' },
+                        ticks: { callback: (value) => value.toFixed(1) + '%' }
+                    }
+                }
+            }
+        });
+
+        // Recovery Chart
+        const recoveryCtx = document.getElementById('recoveryChart').getContext('2d');
+        const recoveryData = [
+            { day: 2, return: 0.80 },
+            { day: 5, return: 0.79 },
+            { day: 10, return: 1.24 },
+            { day: 15, return: 1.95 },
+            { day: 20, return: 1.40 }
+        ];
+
+        new Chart(recoveryCtx, {
+            type: 'line',
+            data: {
+                labels: recoveryData.map(d => `${d.day}-Day`),
+                datasets: [{
+                    label: 'Excess Return',
+                    data: recoveryData.map(d => d.return),
+                    borderColor: '#00d4a1',
+                    backgroundColor: 'rgba(0,212,161,0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 6,
+                    pointBackgroundColor: recoveryData.map((d, i) => 
+                        i === 3 ? '#00d4a1' : '#1e1f28'
+                    ),
+                    pointBorderColor: '#00d4a1',
+                    pointBorderWidth: 2,
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1e1f28',
+                        titleColor: '#f0f2f5',
+                        bodyColor: '#8b8fa3',
+                        borderColor: 'rgba(255,255,255,0.1)',
+                        borderWidth: 1,
+                        padding: 12,
+                        callbacks: {
+                            label: (ctx) => `Avg Excess: +${ctx.parsed.y.toFixed(2)}%`
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Days After Earnings', color: '#5c6070' },
+                        grid: { display: false }
+                    },
+                    y: {
+                        title: { display: true, text: 'Excess Return (%)', color: '#5c6070' },
+                        grid: { color: 'rgba(255,255,255,0.04)' },
+                        min: 0,
+                        max: 2.5,
+                        ticks: { callback: (value) => '+' + value.toFixed(1) + '%' }
+                    }
+                }
+            }
+        });
+
+        // Monthly Performance Chart
+        const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+        const monthlyData = [
+            { month: 'January', excess: -2.02, significant: false },
+            { month: 'February', excess: -1.68, significant: false },
+            { month: 'April', excess: -0.40, significant: false },
+            { month: 'May', excess: 2.08, significant: false },
+            { month: 'July', excess: 3.46, significant: true },
+            { month: 'August', excess: 1.69, significant: false },
+            { month: 'October', excess: 0.47, significant: false },
+            { month: 'November', excess: 3.35, significant: false }
+        ];
+
+        new Chart(monthlyCtx, {
+            type: 'bar',
+            data: {
+                labels: monthlyData.map(d => d.month),
+                datasets: [{
+                    label: 'Avg Excess Return',
+                    data: monthlyData.map(d => d.excess),
+                    backgroundColor: monthlyData.map(d => 
+                        d.significant ? 'rgba(0,212,161,1)' :
+                        d.excess >= 0 ? 'rgba(0,212,161,0.5)' : 'rgba(255,71,87,0.5)'
+                    ),
+                    borderColor: monthlyData.map(d => 
+                        d.significant ? '#00d4a1' :
+                        d.excess >= 0 ? '#00d4a1' : '#ff4757'
+                    ),
+                    borderWidth: 2,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1e1f28',
+                        titleColor: '#f0f2f5',
+                        bodyColor: '#8b8fa3',
+                        borderColor: 'rgba(255,255,255,0.1)',
+                        borderWidth: 1,
+                        padding: 12,
+                        callbacks: {
+                            afterLabel: (ctx) => {
+                                const data = monthlyData[ctx.dataIndex];
+                                return data.significant ? '★ Statistically Significant (p<0.05)' : '';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false }
+                    },
+                    y: {
+                        grid: { color: 'rgba(255,255,255,0.04)' },
+                        ticks: { callback: (value) => value + '%' }
+                    }
+                }
+            }
+        });
+
+        // Navigation active state
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
