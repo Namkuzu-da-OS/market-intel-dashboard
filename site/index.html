@@ -896,6 +896,110 @@
             border: none;
             background: white;
         }
+
+        /* Upgrade Notice Modal */
+        .upgrade-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 6, 18, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .upgrade-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .upgrade-box {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            padding: 3rem;
+            max-width: 480px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3), 0 0 100px rgba(212, 175, 55, 0.15);
+            transform: scale(0.9);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        .upgrade-overlay.active .upgrade-box {
+            transform: scale(1);
+        }
+
+        .upgrade-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                filter: drop-shadow(0 0 10px var(--accent-glow));
+                transform: scale(1);
+            }
+            50% {
+                filter: drop-shadow(0 0 25px var(--accent-glow));
+                transform: scale(1.05);
+            }
+        }
+
+        .upgrade-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .upgrade-message {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .upgrade-submessage {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .upgrade-btn {
+            background: var(--accent);
+            color: var(--bg-primary);
+            border: none;
+            padding: 0.85rem 2.5rem;
+            border-radius: 6px;
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .upgrade-btn:hover {
+            background: var(--accent-bright);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(212, 175, 55, 0.6);
+        }
     </style>
 </head>
 
@@ -1085,6 +1189,17 @@
         </div>
     </section>
 
+    <!-- Upgrade Notice Modal -->
+    <div class="upgrade-overlay" id="upgradeModal">
+        <div class="upgrade-box">
+            <span class="upgrade-icon">&#9881;</span>
+            <h2 class="upgrade-title">Upgrades in Progress</h2>
+            <p class="upgrade-message">The Codex is currently undergoing mystical enhancements. Our seers are weaving new patterns into the system.</p>
+            <p class="upgrade-submessage">Please check back soon.</p>
+            <button class="upgrade-btn" id="closeUpgrade">Understood</button>
+        </div>
+    </div>
+
     <!-- Dashboard Modal -->
     <div class="modal-overlay" id="dashboardModal">
         <div class="modal-container">
@@ -1177,7 +1292,45 @@
             observer.observe(card);
         });
 
-        // --- Dashboard Modal Logic ---
+        // --- Upgrade Modal Logic ---
+        const upgradeModal = document.getElementById('upgradeModal');
+        const closeUpgradeBtn = document.getElementById('closeUpgrade');
+
+        function openUpgradeModal() {
+            upgradeModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeUpgradeModal() {
+            upgradeModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // All dashboard links now show upgrade modal
+        document.querySelectorAll('[data-dashboard-link]').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                openUpgradeModal();
+            });
+        });
+
+        closeUpgradeBtn.addEventListener('click', closeUpgradeModal);
+
+        // Close on click outside
+        upgradeModal.addEventListener('click', (e) => {
+            if (e.target === upgradeModal) {
+                closeUpgradeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && upgradeModal.classList.contains('active')) {
+                closeUpgradeModal();
+            }
+        });
+
+        // --- Dashboard Modal Logic (disabled during upgrades) ---
         const modal = document.getElementById('dashboardModal');
         const iframe = document.getElementById('dashboardFrame');
         const closeBtn = document.getElementById('closeModal');
@@ -1191,39 +1344,18 @@
             document.body.style.overflow = 'hidden';
         }
 
-        // Open Dashboard in Modal
-        function openDashboardModal() {
-            openModalWith(DASHBOARD_URL, 'The Codex');
-        }
-
-        document.querySelectorAll('[data-dashboard-link]').forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault();
-                openDashboardModal();
-            });
-        });
-
-        // Close Modal
         function closeModal() {
             modal.classList.remove('active');
             setTimeout(() => {
-                iframe.src = ''; // Clear src to stop any active content
+                iframe.src = '';
             }, 300);
             document.body.style.overflow = '';
         }
 
         closeBtn.addEventListener('click', closeModal);
 
-        // Close on click outside
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
-                closeModal();
-            }
-        });
-
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.classList.contains('active')) {
                 closeModal();
             }
         });
