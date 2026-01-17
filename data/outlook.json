@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-17T11:26:27.238Z",
+  "timestamp": "2026-01-17T11:38:54.858Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -13,10 +13,10 @@
         "pct": 0
       },
       "news": {
-        "bullish": 1487,
+        "bullish": 1488,
         "bearish": 809,
         "neutral": 745,
-        "total": 3041,
+        "total": 3042,
         "pct": 49
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - sentiment shows bifurcation between tactical optimism on AI/tech leadership and structural macro concerns around policy-driven inflation and real rates.\n\n📈 **Themes:** (1) AI/robotics secular adoption driving tech leadership despite valuation concerns, (2) Monetary policy uncertainty with inflation persistence challenging Fed credibility and rate trajectory, (3) Retail participation collapse signaling potential exhaustion in speculative positioning.\n\n🎯 **Levels:** SPY ($691.66): Call Wall $750 (56k OI, 8.4% away - dormant), Put Wall $630 (149k OI, 8.9% away - dormant). Max Pain $693. Near support: $670 (81k OI, 3.1% - ACTIVE). QQQ ($621.26): Call Wall $650 (28k OI, 4.6% away - active hedging), Put Wall $574.78 (116k OI). Max Pain $625. Near resistance: $630 (27k OI, 1.4% - ACTIVE), $640 (26k OI, 3.0% - ACTIVE). Both showing BULLISH_SUPPORT bias with dealer positioning favoring downside protection.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with medium conviction - bullish structural themes (institutional crypto adoption, AI infrastructure) countered by operational headwinds (exchange security breaches, geopolitical semiconductor risks). Market exhibiting sector bifurcation rather than broad directional conviction.\n\n📈 **Themes:** (1) Institutional digital asset adoption and blockchain infrastructure integration, (2) AI/robotics enterprise deployment cycles and productivity narratives, (3) Defense and government-sponsored sector rotation amid geopolitical tensions, (4) Consumer discretionary pressure and retail participation concerns, (5) Rate policy uncertainty and fiscal-monetary dynamics.\n\n🎯 **Levels:** SPY ($691.66): Call Wall $750 (56k OI, 8.4% away - dormant), Put Wall $630 (149k OI, 8.9% away - dormant). Max Pain $693. Near active support: $670 (81k OI, 3.1%). QQQ ($621.26): Call Wall $650 (28k OI, 4.6% away - active hedging), Put Wall $574.78 (116k OI, 7.5% away - dormant). Max Pain $625. Near active resistance: $630 (27k OI, 1.4%), $640 (26k OI, 3.0%). Both showing bullish support bias per options structure.",
     "key_tickers": [
       "SPY",
       "QQQ",
-      "TSLA",
-      "NVDA",
-      "BTC"
+      "BTC",
+      "ETH",
+      "NVDA"
     ],
     "key_themes": [
-      "AI and robotics secular adoption",
-      "Monetary policy and inflation persistence",
-      "Retail participation collapse",
-      "Institutional crypto positioning",
-      "Real rate trajectory impact on growth multiples"
+      "Institutional crypto adoption and tokenization",
+      "AI enterprise spending and robotics commercialization",
+      "Sector rotation into defense/government-sponsored assets",
+      "Retail participation decline concerns",
+      "Rate policy and fiscal-monetary dynamics"
     ],
     "risk_factors": [
-      "Policy-driven inflation forcing Fed hawkish pivot",
-      "Real rates remaining structurally elevated compressing growth valuations",
-      "Retail capital exhaustion signaled by crypto/options volume decline",
-      "Geopolitical tensions (U.S.-China semiconductor, trade policy)",
-      "Exchange security vulnerabilities and regulatory tightening"
+      "Crypto exchange security breaches and counterparty risk",
+      "Geopolitical semiconductor supply chain tensions and export controls",
+      "Retail exhaustion limiting speculative rotation capacity",
+      "Fiscal policy implementation increasing long-term inflation expectations",
+      "Banking regulatory capital requirements and real estate price stability"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Max Pain gravity toward $693, active support at $670 (81k OI). QQQ: Testing $625 Max Pain with active resistance at $630 (27k OI). Range-bound positioning likely given weekend session.",
+    "intraday_levels": "SPY: Max Pain gravitational pull toward $693, active support at $670 (81k OI). QQQ: Active resistance at $630 (27k OI) and $640 (26k OI), testing toward Max Pain $625",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Support zone $670-$693 (Max Pain + active put positioning), upside resistance $730 (48k OI dormant). QQQ: Support $625 Max Pain, resistance band $630-$650 (active call walls, 27k-28k OI). Breakout above QQQ $650 would neutralize dealer resistance.",
+    "swing_levels": "SPY: Call Wall resistance at $750 (56k OI) dormant until approached, Put Wall support at $630 (149k OI) provides major downside protection. QQQ: Call Wall $650 (28k OI) near-term ceiling with active hedging, Put Wall $574.78 (116k OI) major support zone",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 132265
+    "generation_time_ms": 131089
   },
   "trending": {
     "macro": [],
