@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-17T06:48:50.799Z",
+  "timestamp": "2026-01-17T07:01:58.752Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -14,9 +14,9 @@
       },
       "news": {
         "bullish": 1486,
-        "bearish": 807,
+        "bearish": 808,
         "neutral": 745,
-        "total": 3038,
+        "total": 3039,
         "pct": 49
       },
       "video": {
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bearish with medium conviction - structural headwinds (regulatory tightening, retail participation collapse, policy-induced inflation) outweigh bullish AI/automation narratives in the near term, though sector bifurcation creates tactical opportunities.\n\n📈 **Themes:** (1) AI/automation sector dominance versus broader market valuation pressure from rising real yields, (2) Crypto structural weakness from retail exodus and exchange security vulnerabilities, (3) Regulatory inflection points in digital assets and banking supervision creating binary risk events.\n\n🎯 **Levels:** SPY ($691.66): Call Wall $750 (56k OI), Put Wall $630 (149k OI). Max Pain $685. Near resistance: $700 (52k OI, active), $730 (48k OI). Near support: $680 (125k OI, active), $640 (101k OI). QQQ ($621.26): Call Wall $641 (56k OI, active hedging), Put Wall $574.78 (116k OI). Max Pain $618. Near resistance: $627 (54k OI), $625 (41k OI). Near support: $590 (80k OI), $580 (108k OI).",
+    "narrative": "📊 **Consensus:** Bearish with medium conviction - market facing near-term consolidation pressure from structural headwinds (banking supervision, regulatory enforcement, demand destruction) despite longer-term bullish narratives around AI transformation and policy tailwinds.\n\n📈 **Themes:** (1) AI/robotics momentum as dominant transformational narrative driving selective mega-cap outperformance, (2) Macro policy uncertainty creating bifurcation between rate-sensitive assets and growth leaders, (3) Defensive rotation amid regulatory tightening in crypto/banking sectors and geopolitical trade friction.\n\n🎯 **Levels:** SPY ($691.66): Call Wall $750 (56k OI, 8.4% away - dormant), Put Wall $630 (149k OI, 8.9% away - dormant). Max Pain $685. Near resistance: $700 (52k OI, 1.2% - ACTIVE), $730 (48k OI). Near support: $680 (125k OI, 1.7% - ACTIVE), $640 (101k OI). QQQ ($621.26): Call Wall $641 (56k OI, 3.2% away - active), Put Wall $574.78 (116k OI, 7.5% away). Max Pain $618. Near resistance: $627 (54k OI), $625 (41k OI). Near support: $580 (108k OI), $590 (80k OI).",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
-      "TSM",
-      "BTC"
+      "BTC",
+      "ETH"
     ],
     "key_themes": [
-      "AI and automation sector leadership",
-      "Regulatory tightening in crypto and banking",
-      "Policy-induced inflation versus Fed credibility",
-      "Retail participation collapse in speculative assets",
-      "Sector bifurcation creating tactical opportunities"
+      "AI and robotics transformation narrative",
+      "Macro policy uncertainty and rate expectations",
+      "Regulatory enforcement and banking supervision tightening",
+      "Crypto sector demand destruction and contagion risks",
+      "Flight to quality and defensive rotation"
     ],
     "risk_factors": [
-      "Policy-driven inflation eroding real returns and raising discount rates",
-      "Crypto exchange security vulnerabilities and regulatory enforcement actions",
-      "Structural retail exodus from speculative assets evidenced by engagement collapse",
-      "Banking supervisory tightening and regional bank consolidation pressure",
-      "Rising real yields challenging equity valuations across sectors despite AI narratives"
+      "Banking sector capital requirements cascading into lending conditions",
+      "Fed rate defense materializing more aggressively than priced amid fiscal policy concerns",
+      "Cryptocurrency exchange security vulnerabilities and retail participation collapse",
+      "Geopolitical trade friction escalation around semiconductor exports",
+      "Earnings volatility creating bifurcation between AI leaders and broader market"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: $680 active support (125k OI), $700 active resistance (52k OI). QQQ: $625-627 active resistance zone (95k combined OI). Watch gravitational pull toward Max Pain levels ($685 SPY, $618 QQQ) into weekend.",
+    "intraday_levels": "SPY: $680 support (125k OI, ACTIVE hedging), $700 resistance (52k OI, ACTIVE). QQQ: $625-627 resistance cluster (combined 95k OI, ACTIVE)",
     "swing_bias": "BEARISH",
-    "swing_levels": "SPY: Key support $680 then $640 (101k OI). Resistance $700-730 corridor. QQQ: Critical resistance $641 Call Wall (56k OI), support $590-580 if weakness accelerates. Downside appears more probable with speculative sectors most vulnerable.",
+    "swing_levels": "SPY: Max Pain gravitational pull toward $685, upside capped near $730 (48k OI), downside support at $640 (101k OI) if $680 breaks. QQQ: Call Wall resistance $641 (56k OI), support zone $580-590 if current levels fail",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 134000
+    "generation_time_ms": 133144
   },
   "trending": {
     "macro": [],
