@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-17T03:05:57.599Z",
+  "timestamp": "2026-01-17T03:19:06.874Z",
   "hours_analyzed": 24,
   "sentiment": {
     "overall": "BULLISH",
@@ -36,37 +36,37 @@
     }
   },
   "analysis": {
-    "narrative": "📊 **Consensus:** Cautiously bullish with medium conviction - institutional flows and AI momentum provide structural support, but tactical volatility from earnings execution risk and regulatory friction creates fragile positioning.\n\n📈 **Themes:** AI/automation infrastructure buildout and enterprise adoption; cryptocurrency institutional adoption alongside regulatory uncertainty and security concerns; tactical earnings season volatility with focus on execution validation versus narrative valuation.\n\n🎯 **Levels:** SPY ($691.66): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Active resistance $700 (52k OI), active support $680 (125k OI). Max Pain $685. QQQ ($621.26): Call Wall $641 (56k OI, active), Put Wall $574.78 (116k OI, dormant). Active resistance $625-627 (41-54k OI), Max Pain $618. Both showing bullish support bias with nearby support levels active.",
+    "narrative": "📊 **Consensus:** Mixed sentiment with moderate conviction - bullish positioning on secular technology/digital asset catalysts balanced against near-term execution risks and retail capital exhaustion concerns.\n\n📈 **Themes:** (1) AI/robotics sector momentum as institutional adoption accelerates, (2) Digital asset regulatory clarity driving institutional positioning, (3) Earnings season volatility creating tactical rotation opportunities amid underlying macro uncertainty.\n\n🎯 **Levels:** SPY ($691.66): Call Wall $750 (56k OI, dormant), Put Wall $630 (149k OI, dormant). Max Pain $685. Near resistance: $700 (52k OI, active), $680 support (125k OI, active). QQQ ($621.26): Call Wall $641 (56k OI, active hedging), Put Wall $574.78 (116k OI, dormant). Max Pain $618. Near resistance: $625-627 (95k combined OI, active).",
     "key_tickers": [
       "SPY",
       "QQQ",
       "TSLA",
-      "ETH",
-      "BTC"
+      "BTC",
+      "NVDA"
     ],
     "key_themes": [
-      "AI and automation enterprise adoption",
-      "Cryptocurrency institutional flows and regulatory uncertainty",
-      "Earnings execution validation versus narrative valuations",
-      "Retail participation deterioration signals",
-      "Options-driven dealer positioning dynamics"
+      "AI and robotics adoption momentum",
+      "Digital asset regulatory clarity and institutional flows",
+      "Earnings season volatility and sector rotation",
+      "Monetary policy expectations and rate trajectory",
+      "Retail participation sustainability"
     ],
     "risk_factors": [
-      "Earnings disappointments failing to validate AI/growth narratives",
-      "Cryptocurrency exchange security breaches and regulatory crackdowns",
-      "Retail capital withdrawal continuing across speculative assets",
-      "Inflation policy shifts creating bond market real rate pressure",
-      "Banking sector consolidation and supervision tightening"
+      "Retail capital exhaustion limiting sustained rallies",
+      "Cryptocurrency exchange security vulnerabilities triggering confidence loss",
+      "Semiconductor export policy friction impacting supply chains",
+      "Inflationary policy pressures undermining dovish Fed expectations",
+      "Housing inventory absorption signaling consumer spending constraints"
     ],
     "intraday_bias": "NEUTRAL",
-    "intraday_levels": "SPY: Support $680 (125k OI active), resistance $700 (52k OI active). QQQ: Support at max pain $618, resistance $625-627 (active hedging zone)",
+    "intraday_levels": "SPY: $680 active support (125k OI), $700 active resistance (52k OI). QQQ: $618 Max Pain gravitational pull, $625-627 resistance cluster (95k OI)",
     "swing_bias": "BULLISH",
-    "swing_levels": "SPY: Major support $630 put wall (149k OI), upside targets toward $730-750 call wall cluster if momentum sustains. QQQ: Support $574.78 put wall (116k OI), resistance $641 call wall (56k OI). Watch max pain gravitational pull near $685 SPY / $618 QQQ",
+    "swing_levels": "SPY: $685 Max Pain target zone, $700 breakout level, $680 defense required. QQQ: $641 Call Wall major resistance, $618 Max Pain base support",
     "source_alignment": "MIXED"
   },
   "metadata": {
     "model": "AI Model",
-    "generation_time_ms": 134946
+    "generation_time_ms": 131528
   },
   "trending": {
     "macro": [],
