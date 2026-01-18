@@ -823,6 +823,109 @@
             border: none;
             background: white;
         }
+
+        /* Upgrade Notice Modal */
+        .upgrade-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(7, 7, 10, 0.9);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .upgrade-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .upgrade-box {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            padding: 3rem;
+            max-width: 480px;
+            text-align: center;
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.2),
+                        0 0 120px rgba(212, 175, 55, 0.1);
+            transform: scale(0.9);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        .upgrade-overlay.active .upgrade-box {
+            transform: scale(1);
+        }
+
+        .upgrade-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                filter: drop-shadow(0 0 10px var(--accent-glow));
+                transform: scale(1);
+            }
+            50% {
+                filter: drop-shadow(0 0 25px var(--accent-glow));
+                transform: scale(1.05);
+            }
+        }
+
+        .upgrade-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .upgrade-message {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .upgrade-submessage {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .upgrade-btn {
+            background: var(--accent);
+            color: var(--bg-primary);
+            border: none;
+            padding: 0.85rem 2.5rem;
+            border-radius: 6px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            cursor: pointer;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .upgrade-btn:hover {
+            background: var(--accent-bright);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(212, 175, 55, 0.6);
+        }
     </style>
 </head>
 
@@ -1560,7 +1663,16 @@
         </div>
     </div>
 
-
+    <!-- Upgrade Notice Modal -->
+    <div class="upgrade-overlay" id="upgradeModal">
+        <div class="upgrade-box">
+            <span class="upgrade-icon">&#9881;</span>
+            <h2 class="upgrade-title">Upgrades in Progress</h2>
+            <p class="upgrade-message">The Codex is currently undergoing mystical enhancements. Our seers are weaving new patterns into the system.</p>
+            <p class="upgrade-submessage">Please check back soon.</p>
+            <button class="upgrade-btn" id="closeUpgrade">Understood</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -1607,7 +1719,6 @@
         const iframe = document.getElementById('reportFrame');
         const closeBtn = document.getElementById('closeModal');
         const modalTitle = document.getElementById('modalTitle');
-        const DASHBOARD_URL = '../dashboard.html';
 
         function openModalWith(url, title) {
             iframe.src = url;
@@ -1643,13 +1754,35 @@
             });
         });
 
-        const dashboardLinks = document.querySelectorAll('[data-dashboard-link]');
+        // --- Upgrade Modal Logic ---
+        const upgradeModal = document.getElementById('upgradeModal');
+        const closeUpgradeBtn = document.getElementById('closeUpgrade');
 
-        dashboardLinks.forEach(link => {
+        function openUpgradeModal() {
+            upgradeModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeUpgradeModal() {
+            upgradeModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // All dashboard links now show upgrade modal
+        document.querySelectorAll('[data-dashboard-link]').forEach(link => {
             link.addEventListener('click', (event) => {
                 event.preventDefault();
-                openDashboardModal();
+                openUpgradeModal();
             });
+        });
+
+        closeUpgradeBtn.addEventListener('click', closeUpgradeModal);
+
+        // Close upgrade modal on click outside
+        upgradeModal.addEventListener('click', (e) => {
+            if (e.target === upgradeModal) {
+                closeUpgradeModal();
+            }
         });
 
         // Close Modal
@@ -1675,12 +1808,10 @@
             if (e.key === 'Escape' && modal.classList.contains('active')) {
                 closeModal();
             }
+            if (e.key === 'Escape' && upgradeModal.classList.contains('active')) {
+                closeUpgradeModal();
+            }
         });
-
-        // Open Dashboard in Modal
-        function openDashboardModal() {
-            openModalWith(DASHBOARD_URL, 'The Codex');
-        }
 
         // --- Share Link Functionality ---
         function showToast(message) {
