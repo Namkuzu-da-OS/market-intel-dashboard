@@ -68,151 +68,11 @@
     "model": "AI Model",
     "generation_time_ms": 161462
   },
-  "trending": {
-    "macro": [
-      {
-        "ticker": "RSP",
-        "mentions": 1,
-        "sentiment_score": 0.65,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "SPY",
-        "mentions": 1,
-        "sentiment_score": 0.65,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "VOO",
-        "mentions": 1,
-        "sentiment_score": 0.65,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 65,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      }
-    ],
-    "crypto": [
-      {
-        "ticker": "BTC",
-        "mentions": 1,
-        "sentiment_score": 0,
-        "sentiment_label": "Neutral",
-        "sentiment_pct": 0,
-        "counts": {
-          "bullish": 0,
-          "bearish": 0,
-          "neutral": 1,
-          "total": 1
-        }
-      }
-    ],
-    "ai": [
-      {
-        "ticker": "GOOGL",
-        "mentions": 1,
-        "sentiment_score": -0.65,
-        "sentiment_label": "Bearish",
-        "sentiment_pct": 65,
-        "counts": {
-          "bullish": 0,
-          "bearish": 1,
-          "neutral": 0,
-          "total": 1
-        }
-      }
-    ],
-    "other": [
-      {
-        "ticker": "INJ",
-        "mentions": 1,
-        "sentiment_score": 0.82,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 82,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "AVAV",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "KTOS",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "RCAT",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      },
-      {
-        "ticker": "RDW",
-        "mentions": 1,
-        "sentiment_score": 0.8,
-        "sentiment_label": "Bullish",
-        "sentiment_pct": 80,
-        "counts": {
-          "bullish": 1,
-          "bearish": 0,
-          "neutral": 0,
-          "total": 1
-        }
-      }
-    ]
-  },
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 15.86,
-    "pc_ratio": 1.04,
+    "vix": 17.45,
+    "pc_ratio": 0.78,
     "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -220,8 +80,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 7.87,
-    "spread": -0.27,
+    "hv": 9.86,
+    "spread": 7.98,
     "position": 50
   },
   "action": {
