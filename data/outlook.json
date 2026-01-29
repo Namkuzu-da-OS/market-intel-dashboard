@@ -71,8 +71,8 @@
   "regime": {
     "label": "NEUTRAL",
     "color": "text-muted",
-    "vix": 16.3,
-    "pc_ratio": 1.18,
+    "vix": 16.35,
+    "pc_ratio": 0.85,
     "sentiment_bullish_pct": 34,
     "summary": "Market is lacking clear direction. Wait for confirmation."
   },
@@ -80,8 +80,8 @@
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
-    "hv": 10.63,
-    "spread": 15.71,
+    "hv": 10.35,
+    "spread": 18.06,
     "position": 50
   },
   "action": {
