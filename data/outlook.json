@@ -71,8 +71,8 @@
   "regime": {
     "label": "RISK OFF",
     "color": "text-red",
-    "vix": 20.88,
-    "pc_ratio": 2.19,
+    "vix": 20.8,
+    "pc_ratio": 1.89,
     "sentiment_bullish_pct": 34,
     "summary": "High volatility or bearish sentiment. Reduce risk, hedge portfolios."
   },
@@ -81,7 +81,7 @@
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 10.41,
-    "spread": 22.54,
+    "spread": 21.34,
     "position": 50
   },
   "action": {
