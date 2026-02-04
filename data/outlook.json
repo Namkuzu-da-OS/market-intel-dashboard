@@ -69,22 +69,22 @@
     "generation_time_ms": 161462
   },
   "regime": {
-    "label": "NEUTRAL",
-    "color": "text-muted",
-    "vix": 19.03,
-    "pc_ratio": 1.38,
+    "label": "RISK OFF",
+    "color": "text-red",
+    "vix": 20.58,
+    "pc_ratio": 2.05,
     "sentiment_bullish_pct": 34,
-    "summary": "Market is lacking clear direction. Wait for confirmation."
+    "summary": "High volatility or bearish sentiment. Reduce risk, hedge portfolios."
   },
   "iv_opportunity": {
     "label": "FAIR VALUE",
     "color": "text-orange",
     "iv_rank": 30,
     "hv": 10.41,
-    "spread": 17.37,
+    "spread": 22.24,
     "position": 50
   },
   "action": {
-    "summary": "NEUTRAL: No clear edge. Cash is a position."
+    "summary": "DEFENSIVE: Risk-off. Buy puts for protection or reduce exposure."
   }
 }
