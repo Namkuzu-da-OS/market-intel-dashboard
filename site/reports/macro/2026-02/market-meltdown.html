@@ -1,0 +1,1270 @@
+
+
+market-report-2026-02-05.md
+122 lines
+
+md
+
+make this a kick ass  html report. dont suck
+
+10:25 PM
+
+Marshaled resources to craft compelling HTML report
+
+
+
+
+
+Here's your report — dark terminal aesthetic with red accent energy, animated elements, and clean data hierarchy. Hover the catalyst cards, toggle the sources, and it's fully responsive on mobile. Brutal day, brutal report.
+
+Market report 2026 02 05
+Code · HTML 
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Market report 2026 02 05 · HTML
+Copy
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modal Redirect Script - Redirects direct visits to research.html modal -->
+  <script>
+  (function() {
+      // Don't redirect if in iframe (already in modal)
+      if (window.self !== window.top) return;
+
+      // Get the relative path from current URL
+      // URL: .../site/reports/macro/2025-12/article.html
+      // We need: reports/macro/2025-12/article.html
+      var path = window.location.pathname;
+      var siteIndex = path.indexOf('/site/');
+      if (siteIndex === -1) return;
+
+      var relativePath = path.substring(siteIndex + 6); // Skip '/site/'
+      if (!relativePath.startsWith('reports/')) return;
+
+      // Build research.html URL in same directory structure
+      var basePath = path.substring(0, siteIndex + 6); // .../site/
+      window.location.replace(basePath + 'research.html?article=' + encodeURIComponent(relativePath));
+  })();
+  </script>
+  <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;padding:10px;background:#1a1a24;border-bottom:1px solid #333;text-align:center;z-index:9999;">
+          <a href="../../../research.html" style="color:#00e5bf;text-decoration:none;">← Back to Research Library</a>
+      </div>
+  </noscript>
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Market Meltdown" />
+  <meta property="og:description" content="Six converging catalysts drove the worst session of 2026. The S&amp;P 500 has gone negative for the year. Amazon&#039;s after-hours bomb will dominate tomorrow&#039;s open." />
+  <meta property="og:url" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/reports/macro/2026-02/market-meltdown.html" />
+  <meta property="og:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/market-meltdown-1770387581135.png" />
+  <meta property="article:published_time" content="2026-02-06" />
+  <meta property="article:section" content="macro" />
+  <meta property="article:tag" content="$SPY,$QQQ,$BTC" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Market Meltdown" />
+  <meta name="twitter:description" content="Six converging catalysts drove the worst session of 2026. The S&amp;P 500 has gone negative for the year. Amazon&#039;s after-hours bomb will dominate tomorrow&#039;s open." />
+  <meta name="twitter:image" content="https://namkuzu-da-os.github.io/market-intel-dashboard/site/assets/images/market-meltdown-1770387581135.png" />
+<title>Market Meltdown Report — February 5, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-card: #16161f;
+  --bg-card-hover: #1c1c28;
+  --red: #ff2b4e;
+  --red-dim: #ff2b4e33;
+  --red-glow: #ff2b4e18;
+  --green: #00e676;
+  --green-dim: #00e67633;
+  --gold: #ffd740;
+  --gold-dim: #ffd74033;
+  --blue: #448aff;
+  --blue-dim: #448aff22;
+  --text-primary: #e8e8ef;
+  --text-secondary: #8888a0;
+  --text-muted: #55556a;
+  --border: #222233;
+  --border-light: #2a2a3d;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Animated background grain */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scanline effect */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, var(--red-dim) 0%, transparent 70%);
+  pointer-events: none;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: translateX(-50%) scale(1); }
+  50% { opacity: 0.7; transform: translateX(-50%) scale(1.1); }
+}
+
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeSlideDown 0.8s ease-out;
+}
+
+.hero-tag .pulse-dot {
+  width: 8px; height: 8px;
+  background: var(--red);
+  border-radius: 50%;
+  animation: dotPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--red); }
+  50% { opacity: 0.6; box-shadow: 0 0 12px 4px var(--red-dim); }
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+  animation: fadeSlideDown 0.8s ease-out 0.1s both;
+}
+
+.hero h1 .red { color: var(--red); }
+
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: var(--text-secondary);
+  animation: fadeSlideDown 0.8s ease-out 0.2s both;
+}
+
+.hero-summary {
+  margin-top: 24px;
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 640px;
+  font-weight: 300;
+  animation: fadeSlideDown 0.8s ease-out 0.3s both;
+}
+
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── INDEX TICKER STRIP ── */
+.ticker-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 64px;
+  animation: fadeIn 0.8s ease-out 0.4s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ticker-item {
+  background: var(--bg-card);
+  padding: 28px 24px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.ticker-item:hover { background: var(--bg-card-hover); }
+
+.ticker-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ticker-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ticker-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.ticker-change.down { color: var(--red); }
+.ticker-change.up { color: var(--green); }
+.ticker-change.vix { color: var(--gold); }
+
+/* ── SECTIONS ── */
+.section {
+  margin-bottom: 64px;
+  opacity: 0;
+  animation: sectionReveal 0.6s ease-out forwards;
+}
+
+.section:nth-child(1) { animation-delay: 0.5s; }
+.section:nth-child(2) { animation-delay: 0.6s; }
+.section:nth-child(3) { animation-delay: 0.7s; }
+.section:nth-child(4) { animation-delay: 0.8s; }
+.section:nth-child(5) { animation-delay: 0.9s; }
+.section:nth-child(6) { animation-delay: 1.0s; }
+.section:nth-child(7) { animation-delay: 1.1s; }
+
+@keyframes sectionReveal {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--red);
+  background: var(--red-dim);
+  padding: 6px 12px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* ── CATALYST CARDS ── */
+.catalyst-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.catalyst-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.catalyst-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--red);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.catalyst-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+}
+
+.catalyst-card:hover::before { opacity: 1; }
+
+.catalyst-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--red);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.catalyst-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.catalyst-body {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.catalyst-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.catalyst-stat {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--red-dim);
+  color: var(--red);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin: 2px 2px;
+}
+
+.catalyst-stat.neutral {
+  background: var(--blue-dim);
+  color: var(--blue);
+}
+
+.catalyst-card.full-width {
+  grid-column: 1 / -1;
+}
+
+/* ── SPILLOVER TABLE ── */
+.data-table-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead th {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+
+.data-table tbody td {
+  padding: 14px 24px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+
+.data-table tbody tr:last-child td { border-bottom: none; }
+.data-table tbody tr:hover td { background: var(--bg-card-hover); }
+
+.data-table .asset-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.data-table .move-down { color: var(--red); font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+.data-table .move-up { color: var(--green); font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+.data-table .move-neutral { color: var(--text-secondary); font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+
+.data-table .detail {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* ── AMAZON BOMBSHELL ── */
+.bombshell {
+  background: linear-gradient(135deg, #1a0a0e 0%, #0f0a15 100%);
+  border: 1px solid #3a1525;
+  border-radius: 16px;
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bombshell::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--red-dim) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.bombshell-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  background: var(--gold-dim);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.bombshell h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.bombshell-stats {
+  display: flex;
+  gap: 32px;
+  margin: 24px 0;
+}
+
+.bombshell-stat {
+  text-align: center;
+}
+
+.bombshell-stat-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.bombshell-stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.bombshell p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* ── TOMORROW PREP ── */
+.tomorrow-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.prep-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.prep-card.featured {
+  border-color: var(--blue);
+  background: linear-gradient(135deg, var(--bg-card) 0%, #111125 100%);
+}
+
+.prep-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 12px;
+}
+
+.prep-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.prep-body {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.prep-body strong { color: var(--text-primary); }
+
+.consensus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.consensus-item {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.consensus-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.consensus-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.binary-outcomes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.outcome {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.outcome.bear {
+  background: var(--red-dim);
+  border: 1px solid #33151e;
+  color: var(--text-secondary);
+}
+
+.outcome.bull {
+  background: var(--green-dim);
+  border: 1px solid #0a3320;
+  color: var(--text-secondary);
+}
+
+.outcome-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.outcome.bear .outcome-label { color: var(--red); }
+.outcome.bull .outcome-label { color: var(--green); }
+
+/* ── FUTURES ── */
+.futures-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.future-item {
+  background: var(--bg-card);
+  padding: 20px;
+  text-align: center;
+}
+
+.future-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.future-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--red);
+}
+
+/* ── BIG PICTURE ── */
+.big-picture {
+  background: linear-gradient(135deg, var(--bg-card) 0%, #12121f 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px;
+}
+
+.big-picture p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.big-picture strong { color: var(--text-primary); }
+
+.hindenburg-alert {
+  margin-top: 24px;
+  background: var(--gold-dim);
+  border: 1px solid #3d3010;
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hindenburg-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.hindenburg-text {
+  font-size: 14px;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.key-level {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--blue-dim);
+  border: 1px solid #1a2244;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+/* ── MOVERS TABLE ── */
+.movers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.mover-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.mover-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-light);
+}
+
+.mover-ticker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.mover-name {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.mover-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--red);
+  margin: 10px 0 8px;
+}
+
+.mover-reason {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ── FOOTER ── */
+.report-footer {
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 80px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.footer-brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.footer-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: right;
+  line-height: 1.8;
+}
+
+.sources-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sources-toggle:hover {
+  color: var(--text-secondary);
+  border-color: var(--border-light);
+}
+
+.sources-list {
+  display: none;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 2;
+  columns: 2;
+  column-gap: 32px;
+}
+
+.sources-list.open { display: block; }
+
+.sources-list li {
+  break-inside: avoid;
+  list-style: none;
+  padding-left: 12px;
+  border-left: 2px solid var(--border);
+  margin-bottom: 4px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .ticker-strip { grid-template-columns: repeat(2, 1fr); }
+  .catalyst-grid { grid-template-columns: 1fr; }
+  .tomorrow-grid { grid-template-columns: 1fr; }
+  .movers-grid { grid-template-columns: 1fr; }
+  .bombshell-stats { flex-direction: column; gap: 16px; }
+  .bombshell { padding: 28px; }
+  .big-picture { padding: 28px; }
+  .consensus-grid { grid-template-columns: 1fr; }
+  .binary-outcomes { grid-template-columns: 1fr; }
+  .sources-list { columns: 1; }
+  .footer-top { flex-direction: column; gap: 16px; }
+  .footer-meta { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-tag">
+      <span class="pulse-dot"></span>
+      Market Alert — Sixth Decline in Seven Sessions
+    </div>
+    <h1>Market<br><span class="red">Meltdown.</span></h1>
+    <div class="hero-date">February 5, 2026 — Close of Business</div>
+    <p class="hero-summary">
+      Six converging catalysts drove the worst session of 2026. The S&P 500 has gone negative for the year. Amazon's after-hours bomb will dominate tomorrow's open.
+    </p>
+  </header>
+
+  <!-- TICKER STRIP -->
+  <div class="ticker-strip">
+    <div class="ticker-item">
+      <div class="ticker-label">Dow Jones</div>
+      <div class="ticker-value">48,908</div>
+      <div class="ticker-change down">▼ 592.58 (−1.20%)</div>
+    </div>
+    <div class="ticker-item">
+      <div class="ticker-label">S&P 500</div>
+      <div class="ticker-value">6,798</div>
+      <div class="ticker-change down">▼ −1.23%</div>
+    </div>
+    <div class="ticker-item">
+      <div class="ticker-label">Nasdaq</div>
+      <div class="ticker-value">22,540</div>
+      <div class="ticker-change down">▼ −1.59%</div>
+    </div>
+    <div class="ticker-item">
+      <div class="ticker-label">VIX</div>
+      <div class="ticker-value">20.91</div>
+      <div class="ticker-change vix">▲ +12.18%</div>
+    </div>
+  </div>
+
+  <!-- CATALYSTS -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">Six Converging Catalysts</h2>
+    </div>
+
+    <div class="catalyst-grid">
+
+      <div class="catalyst-card">
+        <div class="catalyst-num">CATALYST 01</div>
+        <div class="catalyst-title">JOLTS Data — Labor Market Cracking</div>
+        <div class="catalyst-body">
+          Job openings fell to <span class="catalyst-stat">6.54M</span> (down 386K), the lowest openings rate <span class="catalyst-stat">3.9%</span> since April 2020. Weekly jobless claims rose to <span class="catalyst-stat neutral">231K</span>. January layoff announcements hit <strong>108K — highest since 2009</strong>. The labor market is cooling faster than expected.
+        </div>
+      </div>
+
+      <div class="catalyst-card">
+        <div class="catalyst-num">CATALYST 02</div>
+        <div class="catalyst-title">AI Capex Sticker Shock (Alphabet)</div>
+        <div class="catalyst-body">
+          Alphabet reported solid earnings but guided <span class="catalyst-stat">$175–185B</span> in 2026 capex — more than double 2025 and far above the <span class="catalyst-stat neutral">$119.5B</span> estimate. This triggered a broad rethink of whether AI spending will ever generate adequate returns. <strong>GOOGL fell ~4%.</strong>
+        </div>
+      </div>
+
+      <div class="catalyst-card">
+        <div class="catalyst-num">CATALYST 03</div>
+        <div class="catalyst-title">Software "SaaSpocalypse"</div>
+        <div class="catalyst-body">
+          The AI spending fear cascaded into a full rout of software stocks. Piper Sandler downgraded <strong>Adobe, Freshworks, and Vertex</strong>. The WisdomTree Cloud Computing Fund is down <span class="catalyst-stat">~20% YTD</span> on fears that AI makes traditional SaaS obsolete.
+        </div>
+      </div>
+
+      <div class="catalyst-card">
+        <div class="catalyst-num">CATALYST 04</div>
+        <div class="catalyst-title">Qualcomm Guidance Miss + Memory Shortage</div>
+        <div class="catalyst-body">
+          Beat on earnings but guided weak, citing a <strong>global memory shortage</strong> — data center demand crowding out smartphone memory. BofA downgraded to Neutral, slashed target from <span class="catalyst-stat">$215 → $155</span>. Stock fell <span class="catalyst-stat">~8.5%</span>.
+        </div>
+      </div>
+
+      <div class="catalyst-card">
+        <div class="catalyst-num">CATALYST 05</div>
+        <div class="catalyst-title">Bitcoin Crash (−15%)</div>
+        <div class="catalyst-body">
+          Worst single-day drop since FTX. BTC briefly broke below <span class="catalyst-stat">$61,000</span> — down ~50% from Oct peak of ~$126K. Over <strong>$1B in leveraged positions liquidated</strong> in 24 hours. Treasury Secretary Bessent: government will <strong>not</strong> support crypto in a crash.
+        </div>
+      </div>
+
+      <div class="catalyst-card">
+        <div class="catalyst-num">CATALYST 06</div>
+        <div class="catalyst-title">Hawkish Fed Overhang (Warsh Nomination)</div>
+        <div class="catalyst-body">
+          Kevin Warsh's nomination as Fed Chair continues to weigh. Viewed as an inflation hawk, creating uncertainty about rate cuts. Fed funds at <span class="catalyst-stat neutral">3.50–3.75%</span>. Market had priced 2 cuts starting June — <strong>now less certain</strong>.
+        </div>
+      </div>
+
+      <div class="catalyst-card full-width" style="background: linear-gradient(135deg, var(--bg-card) 0%, #151520 100%);">
+        <div class="catalyst-num" style="color: var(--text-muted);">BACKGROUND DRAG</div>
+        <div class="catalyst-title">Tariff Overhang</div>
+        <div class="catalyst-body">
+          Effective US tariff rate at <span class="catalyst-stat neutral">~16.8%</span> (up from 2.5% in Jan 2025). Greenland-related tariff threat against Nordic/European nations still unresolved.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GLOBAL SPILLOVER -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Global Spillover</h2>
+    </div>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Asset</th>
+            <th>Level</th>
+            <th>Move</th>
+            <th>Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="asset-name">Gold</td>
+            <td class="detail">~$4,815/oz</td>
+            <td class="move-down">−4.6%</td>
+            <td class="detail">Liquidation selling</td>
+          </tr>
+          <tr>
+            <td class="asset-name">WTI Crude</td>
+            <td class="detail">~$63.50</td>
+            <td class="move-down">−2.0%</td>
+            <td class="detail">Demand concerns</td>
+          </tr>
+          <tr>
+            <td class="asset-name">US 10Y Yield</td>
+            <td class="detail">~4.28%</td>
+            <td class="move-down">↓</td>
+            <td class="detail">Flight to safety</td>
+          </tr>
+          <tr>
+            <td class="asset-name">US 30Y Yield</td>
+            <td class="detail">~4.86%</td>
+            <td class="move-down">−6bps</td>
+            <td class="detail">Duration bid</td>
+          </tr>
+          <tr>
+            <td class="asset-name">US Dollar (DXY)</td>
+            <td class="detail">~97.6</td>
+            <td class="move-up">▲ Strengthened</td>
+            <td class="detail">Safe haven</td>
+          </tr>
+          <tr>
+            <td class="asset-name">Kospi (Korea)</td>
+            <td class="detail">—</td>
+            <td class="move-down">−3.86%</td>
+            <td class="detail">Samsung −5.8%, SK Hynix −6.4%</td>
+          </tr>
+          <tr>
+            <td class="asset-name">Nikkei</td>
+            <td class="detail">—</td>
+            <td class="move-down">−0.88%</td>
+            <td class="detail">Moderate follow-through</td>
+          </tr>
+          <tr>
+            <td class="asset-name">Europe (Stoxx 600)</td>
+            <td class="detail">—</td>
+            <td class="move-up">+0.1%</td>
+            <td class="detail">Relatively insulated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- AMAZON BOMBSHELL -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">After-Hours Bombshell</h2>
+    </div>
+
+    <div class="bombshell">
+      <div class="bombshell-tag">⚡ AFTER HOURS</div>
+      <h3>Amazon Drops a $200B Bomb</h3>
+      <div class="bombshell-stats">
+        <div class="bombshell-stat">
+          <div class="bombshell-stat-value">−11%</div>
+          <div class="bombshell-stat-label">After-hours drop</div>
+        </div>
+        <div class="bombshell-stat">
+          <div class="bombshell-stat-value">$200B</div>
+          <div class="bombshell-stat-label">2026 Capex Guidance</div>
+        </div>
+        <div class="bombshell-stat">
+          <div class="bombshell-stat-value">$1.95</div>
+          <div class="bombshell-stat-label">EPS (missed $1.97)</div>
+        </div>
+      </div>
+      <p>
+        Revenue beat. AWS beat. But the <strong>$200 billion capex guidance</strong> and Q1 operating income below consensus sent shares spiraling. Combined with Alphabet's $175–185B guidance, hyperscaler AI spending now exceeds <strong>$500 billion</strong> with no clear return timeline. This will dominate tomorrow's open.
+      </p>
+    </div>
+  </section>
+
+  <!-- TOMORROW PREP -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Preparing for Tomorrow</h2>
+    </div>
+
+    <div class="tomorrow-grid">
+      <div class="prep-card featured">
+        <div class="prep-label">🎯 THE BIG EVENT — 8:30 AM ET</div>
+        <div class="prep-title">January Jobs Report</div>
+
+        <div class="consensus-grid">
+          <div class="consensus-item">
+            <div class="consensus-value">~65–70K</div>
+            <div class="consensus-label">New Jobs (est)</div>
+          </div>
+          <div class="consensus-item">
+            <div class="consensus-value">4.5%</div>
+            <div class="consensus-label">Unemployment (est)</div>
+          </div>
+          <div class="consensus-item">
+            <div class="consensus-value">+0.3%</div>
+            <div class="consensus-label">Wages MoM (est)</div>
+          </div>
+        </div>
+
+        <p class="prep-body" style="margin-bottom: 12px;">
+          <strong>Wild card:</strong> Includes annual benchmark revision to payrolls — could significantly rewrite recent history. This is a binary event:
+        </p>
+
+        <div class="binary-outcomes">
+          <div class="outcome bear">
+            <div class="outcome-label">↓ Weak Number</div>
+            Recession fears spike, but rate cut hopes rise. Bonds rally, growth sectors punished further.
+          </div>
+          <div class="outcome bull">
+            <div class="outcome-label">↑ Strong Number</div>
+            Growth relief, but rate cuts get pushed further out. Tech may stabilize, yields rise.
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="prep-card">
+          <div class="prep-label">10:00 AM ET</div>
+          <div class="prep-title">UMich Consumer Sentiment</div>
+          <p class="prep-body">Preliminary February reading. Watch for inflation expectations shift post-tariffs.</p>
+        </div>
+
+        <div class="prep-card">
+          <div class="prep-label">PRE-MARKET EARNINGS</div>
+          <div class="prep-title">~38 Companies</div>
+          <p class="prep-body">Philip Morris, Biogen, Cboe, Carlyle, Centene, AutoNation and more reporting before the bell.</p>
+        </div>
+
+        <div class="prep-card">
+          <div class="prep-label">FED SPEAKERS</div>
+          <div class="prep-title">Jefferson & Cook</div>
+          <p class="prep-body">Vice Chair Jefferson and Gov. Cook both scheduled in February. Timing TBC.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="futures-strip" style="margin-top: 24px;">
+      <div class="future-item">
+        <div class="future-label">S&P 500 Futures</div>
+        <div class="future-value">−0.6%</div>
+      </div>
+      <div class="future-item">
+        <div class="future-label">Nasdaq 100 Futures</div>
+        <div class="future-value">−1.1%</div>
+      </div>
+      <div class="future-item">
+        <div class="future-label">Dow Futures</div>
+        <div class="future-value">−0.4%</div>
+      </div>
+    </div>
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center;">These will reset at 8:30 AM with the jobs number</p>
+  </section>
+
+  <!-- BIG PICTURE -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">The Big Picture</h2>
+    </div>
+
+    <div class="big-picture">
+      <p>
+        The bull case isn't dead — strategists still have constructive year-end targets (<strong>Oppenheimer: 8,100</strong>, <strong>BofA: 7,100</strong>, Goldman expects <strong>2.8% global growth</strong>). But leadership is rotating out of mega-cap tech and AI names.
+      </p>
+      <p>
+        The market is repricing whether <strong>$500B+ in combined hyperscaler capex</strong> will generate returns. Small-caps and value sectors — <strong>energy, healthcare, industrials</strong> — are where the rotation is flowing.
+      </p>
+
+      <div class="hindenburg-alert">
+        <span class="hindenburg-icon">⚠️</span>
+        <span class="hindenburg-text">Hindenburg Omen triggered 3 times in 6 sessions — signaling deteriorating breadth despite ample liquidity.</span>
+      </div>
+
+      <div class="key-level">
+        📍 Key level to watch tomorrow: The 10-year Treasury yield reaction to the jobs report will set the tone for the entire session.
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTABLE MOVERS -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">06</span>
+      <h2 class="section-title">Notable Movers</h2>
+    </div>
+
+    <div class="movers-grid">
+      <div class="mover-card">
+        <div class="mover-ticker">PTON</div>
+        <div class="mover-name">Peloton</div>
+        <div class="mover-change">−28%</div>
+        <div class="mover-reason">Weak holiday quarter, soft guidance</div>
+      </div>
+      <div class="mover-card">
+        <div class="mover-ticker">EL</div>
+        <div class="mover-name">Estée Lauder</div>
+        <div class="mover-change">−19%</div>
+        <div class="mover-reason">Disappointing earnings</div>
+      </div>
+      <div class="mover-card">
+        <div class="mover-ticker">SNAP</div>
+        <div class="mover-name">Snap Inc.</div>
+        <div class="mover-change">−12%</div>
+        <div class="mover-reason">Weak earnings</div>
+      </div>
+      <div class="mover-card">
+        <div class="mover-ticker">AMZN</div>
+        <div class="mover-name">Amazon (After Hours)</div>
+        <div class="mover-change">−11%</div>
+        <div class="mover-reason">$200B capex, weak Q1 guidance</div>
+      </div>
+      <div class="mover-card">
+        <div class="mover-ticker">QCOM</div>
+        <div class="mover-name">Qualcomm</div>
+        <div class="mover-change">−8.5%</div>
+        <div class="mover-reason">Guidance miss, memory shortage, BofA downgrade</div>
+      </div>
+      <div class="mover-card">
+        <div class="mover-ticker">GOOGL</div>
+        <div class="mover-name">Alphabet</div>
+        <div class="mover-change">−4%</div>
+        <div class="mover-reason">$175–185B capex guidance spooked investors</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="report-footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">BigPic Solutions</div>
+        <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Market Intelligence Report</div>
+      </div>
+      <div class="footer-meta">
+        Report date: February 5, 2026<br>
+        Generated: Close of Business + After Hours
+      </div>
+    </div>
+
+    <button class="sources-toggle" onclick="document.getElementById('sources').classList.toggle('open'); this.querySelector('.arrow').textContent = document.getElementById('sources').classList.contains('open') ? '▲' : '▼';">
+      Sources & References <span class="arrow">▼</span>
+    </button>
+
+    <ul class="sources-list" id="sources">
+      <li>CNBC: Dow tumbles nearly 600 points, S&P 500 goes negative for 2026</li>
+      <li>CNBC: Amazon stock falls 10% on $200 billion spending forecast</li>
+      <li>CNBC: Qualcomm warns of global memory shortage</li>
+      <li>CNBC: Bitcoin drops 15%, worst since FTX</li>
+      <li>BLS: JOLTS Job Openings Release (Feb 5, 2026)</li>
+      <li>Yahoo Finance: Traders dump software stocks in "SaaSpocalypse"</li>
+      <li>Fortune: Alphabet plans record $185B AI spending</li>
+      <li>Tax Foundation: Trump Tariffs effective rate analysis</li>
+      <li>CME Group FedWatch Tool</li>
+      <li>Morningstar: US Stock Market Outlook February 2026</li>
+      <li>Morgan Stanley / Goldman Sachs / Oppenheimer 2026 outlooks</li>
+    </ul>
+  </footer>
+
+</div>
+
+</body>
+</html>
